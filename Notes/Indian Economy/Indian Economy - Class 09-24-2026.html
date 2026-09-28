@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Indian Economy - Class Notes | 24 September 2026</title>
+<style>
+  * { box-sizing: border-box; }
+  body { font-family: Calibri, sans-serif; font-size: 11pt; line-height: 1.6; max-width: 900px; margin: 20px auto; padding: 0 20px; color: #202124; }
+  h1 { font-size: 20pt; color: #1a1a1a; border-bottom: 2px solid #333; padding-bottom: 4px; margin-top: 30px; }
+  h2 { font-size: 16pt; color: #2b2b2b; margin-top: 28px; border-bottom: 1px solid #ddd; padding-bottom: 3px; }
+  h3 { font-size: 13pt; color: #3a3a3a; margin-top: 18px; }
+  p { margin: 8px 0; }
+  ul, ol { margin: 6px 0; padding-left: 28px; }
+  li { margin: 4px 0; }
+  a { color: #005ea6; overflow-wrap: anywhere; }
+  table { border-collapse: collapse; width: 100%; margin: 10px 0; }
+  caption { text-align: left; font-weight: bold; margin-bottom: 6px; }
+  th, td { border: 1px solid #999; padding: 6px 10px; text-align: left; vertical-align: top; overflow-wrap: break-word; }
+  th { background: #f0f0f0; }
+  .table-wrap { overflow-x: auto; }
+  .note, .exam, .verification { background: #fff8e1; border-left: 3px solid #f5a623; padding: 8px 12px; margin: 10px 0; }
+  .correction { background: #fff3e0; border-left: 3px solid #ef6c00; padding: 8px 12px; margin: 10px 0; }
+  .additional, .lead { background: #e8f5e9; border-left: 3px solid #2e7d32; padding: 8px 12px; margin: 10px 0; }
+  .formula { background: #f5f9fd; border-left: 3px solid #0078d4; padding: 10px 14px; margin: 12px 0; overflow-wrap: anywhere; }
+  .flow { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 10px; padding: 12px 0; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; }
+  .flow span { text-align: center; max-width: 100%; }
+  figure { margin: 16px 0; padding: 12px; border: 1px solid #bbb; background: #fff; }
+  figure h3 { margin-top: 0; text-align: center; }
+  figcaption { margin-top: 8px; color: #555; font-size: 9.5pt; }
+  .svg-wrap { overflow-x: auto; }
+  .svg-wrap svg { display: block; width: 100%; max-width: 650px; min-width: 480px; height: auto; margin: 0 auto; }
+  .diagram-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+  .diagram-grid.three { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+  .diagram-grid figure { min-width: 0; }
+  .diagram-grid svg { min-width: 210px; }
+  .diagram-grid.three figure { padding: 8px; }
+  .diagram-grid.three h3 { font-size: 11.5pt; }
+  .small { color: #555; font-size: 9.5pt; }
+  .options { list-style-type: lower-alpha; }
+  .answer { margin: 10px 0; padding: 6px 12px; border-left: 3px solid #0078d4; background: #f5f9fd; }
+  @media (max-width: 650px) {
+    body { padding: 0 12px; }
+    .table-wrap table { min-width: 540px; }
+    .diagram-grid, .diagram-grid.three { grid-template-columns: 1fr; gap: 0; }
+  }
+  @media print {
+    @page { size: A4; margin: 14mm; }
+    body { max-width: none; margin: 0; padding: 0; }
+    h1, h2, h3 { break-after: avoid; }
+    figure, tr, .formula, .answer { break-inside: avoid; }
+    thead { display: table-header-group; }
+    .table-wrap, .svg-wrap { overflow: visible; }
+    .table-wrap table, .svg-wrap svg { min-width: 0; }
+    a { color: inherit; text-decoration: none; }
+    p, li { orphans: 3; widows: 3; }
+  }
+</style>
+</head>
+<body>
+<main>
+<header>
+<h1>Indian Economy - Class Notes | 24 September 2026</h1>
+<p><strong>Topics:</strong> Production possibility curve (PPC) and marginal opportunity cost (MOC); concave, straight-line and convex PPCs; features and shifts of the PPC; theory of demand, law of demand and determinants of demand; exceptions (Giffen and Veblen goods); theory of supply, law of supply and determinants of supply; market equilibrium.</p>
+<p class="small">Class date: <time datetime="2026-09-24">24 September 2026</time>. Foundational microeconomics, not a current macroeconomic-data release. All numerical schedules below are <strong>hypothetical classroom examples</strong>, not observed Indian data; no base year or price series applies. Continues from <a href="Indian%20Economy%20-%20Class%2009-22-2026.html">Class Notes, 22 September 2026</a> (scarcity, opportunity cost, first PPC example).</p>
+<p class="note"><strong>[Correction]</strong> marks a substantive repair to the rough notes. <strong>[Additional]</strong> marks supporting explanation or examples added for understanding and exam value.</p>
+</header>
+
+<section id="ppc">
+<h2>1. Production Possibility Curve (PPC)</h2>
+<p class="lead">A <strong>PPC</strong> (also Production Possibility Frontier, PPF, or transformation curve) shows the <strong>maximum combinations of two goods</strong> that an economy can produce during a given period when all its resources are used <strong>fully and efficiently</strong>, with a <strong>given state of technology</strong>.</p>
+<p class="correction" id="c01"><strong>[Correction]</strong> The rough note says "all combinations... after using all its resources". The PPC shows the <strong>maximum</strong> (efficient) combinations only; combinations inside the curve are also possible but are not on the PPC. The basic model uses <strong>two</strong> goods (or two groups of goods) so the trade-off can be drawn; "two / more" applies only to the general idea.</p>
+<p><strong>Assumptions:</strong> resources are fixed in quantity and quality; technology is given; resources are fully and efficiently employed; resources are <strong>not equally efficient</strong> in producing both goods (this gives increasing MOC).</p>
+
+<h3>1.1 Class Example: Food and Clothes</h3>
+<div class="table-wrap"><table id="ppc-schedule">
+<caption>Production possibility schedule (hypothetical; units per period)</caption>
+<thead><tr><th scope="col">Point</th><th scope="col">Clothes (X)</th><th scope="col">Food (Y)</th><th scope="col">Food sacrificed for this extra cloth = MOC</th></tr></thead>
+<tbody>
+<tr><th scope="row">A</th><td>0</td><td>100</td><td>Not applicable (only food produced)</td></tr>
+<tr><th scope="row">B</th><td>1</td><td>90</td><td>100 - 90 = <strong>10</strong></td></tr>
+<tr><th scope="row">C</th><td>2</td><td>70</td><td>90 - 70 = <strong>20</strong></td></tr>
+<tr><th scope="row">D</th><td>3</td><td>40</td><td>70 - 40 = <strong>30</strong></td></tr>
+<tr><th scope="row">E</th><td>4</td><td>0</td><td>40 - 0 = <strong>40</strong></td></tr>
+</tbody></table></div>
+<p><strong>Total opportunity cost of producing 4 clothes = 100 units of food</strong> (10 + 20 + 30 + 40 = 100). This is correct in the rough notes.</p>
+<p class="additional"><strong>[Additional]</strong> Distinguish three measures: <strong>total</strong> opportunity cost of 4 clothes = 100 food; <strong>average</strong> opportunity cost = 100 / 4 = 25 food per cloth; <strong>marginal</strong> opportunity cost of the 4th cloth = 40 food. Exam questions often test which one is being asked.</p>
+
+<figure id="fig-ppc">
+<h3>Figure 1 - Concave PPC: Food vs Clothes</h3>
+<div class="svg-wrap"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 445" role="img" aria-labelledby="f1-title f1-desc">
+<title id="f1-title">Concave production possibility curve for food and clothes</title>
+<desc id="f1-desc">Clothes on the horizontal axis from 0 to 4 units; food on the vertical axis from 0 to 100 units. The curve joins A 0,100; B 1,90; C 2,70; D 3,40; E 4,0 and bows outward from the origin. Point U at 1 cloth and 40 food lies inside; point Z at 3 clothes and 70 food lies outside.</desc>
+<path d="M70 350 L70 50 C86.7 55.0 136.7 65.0 170.0 80.0 C203.3 95.0 236.7 115.0 270.0 140.0 C303.3 165.0 336.7 195.0 370.0 230.0 C403.3 265.0 453.3 330.0 470.0 350.0 Z" fill="#edf5ee"/>
+<g stroke="#d6d6d6" stroke-width="1"><path d="M70 275 H470 M70 200 H470 M70 125 H470 M70 50 H470"/><path d="M170 50 V350 M270 50 V350 M370 50 V350 M470 50 V350"/></g>
+<path d="M70 40 V350 H505" fill="none" stroke="#333" stroke-width="2"/>
+<path d="M70.0 50.0 C86.7 55.0 136.7 65.0 170.0 80.0 C203.3 95.0 236.7 115.0 270.0 140.0 C303.3 165.0 336.7 195.0 370.0 230.0 C403.3 265.0 453.3 330.0 470.0 350.0" fill="none" stroke="#12678a" stroke-width="3"/>
+<g fill="#12678a"><circle cx="70" cy="50" r="5"/><circle cx="170" cy="80" r="5"/><circle cx="270" cy="140" r="5"/><circle cx="370" cy="230" r="5"/><circle cx="470" cy="350" r="5"/></g>
+<circle cx="170" cy="230" r="6" fill="#26723c"/><circle cx="370" cy="140" r="6" fill="#b33439"/>
+<g font-family="Calibri, sans-serif" font-size="16" fill="#202124">
+<text x="70" y="17">Food (units)</text>
+<text x="215" y="420">Clothes (units)</text>
+<text x="52" y="372">0</text><text x="166" y="372">1</text><text x="266" y="372">2</text><text x="366" y="372">3</text><text x="466" y="372">4</text>
+<text x="42" y="280">25</text><text x="42" y="205">50</text><text x="42" y="130">75</text><text x="34" y="55">100</text>
+<text x="80" y="43">A (0, 100)</text><text x="176" y="70">B (1, 90)</text><text x="280" y="131">C (2, 70)</text><text x="380" y="223">D (3, 40)</text><text x="478" y="338">E (4, 0)</text>
+<text x="182" y="236" fill="#26723c">U (1, 40): inside</text><text x="382" y="136" fill="#b33439">Z (3, 70): outside</text>
+<text x="88" y="300">Attainable set</text>
+<text x="88" y="322" font-size="14">MOC rises: 10, 20, 30, 40</text>
+</g>
+</svg></div>
+<figcaption>Original diagram plotted from the hypothetical class schedule; the smooth curve passes through the five tabulated points. Shaded area = attainable combinations. U shows under-utilisation; Z is unattainable with present resources and technology. Conceptual basis: NCERT, <em>Introductory Microeconomics</em>, Chapter 1.</figcaption>
+</figure>
+</section>
+
+<section id="moc">
+<h2>2. Marginal Opportunity Cost (MOC)</h2>
+<p><strong>MOC</strong> is the amount of one good that must be sacrificed to produce <strong>one additional unit</strong> of another good. Along a PPC it is also called the <strong>marginal rate of transformation (MRT)</strong>.</p>
+<div class="formula">
+<strong>MOC of clothes = Food sacrificed / Extra clothes produced = -&#916;Food / &#916;Clothes</strong><br/>
+&#916;Food is negative when clothes increase, so the minus sign gives a positive sacrifice. Unit: units of food per unit of cloth.<br/>
+<strong>MOC = slope of the PPC (in absolute value).</strong>
+</div>
+<p class="additional"><strong>[Additional]</strong> MOC is measured in <strong>physical units of the forgone good</strong>, not in rupees. The rough-note phrase "extra units" should be read as "one extra unit" for a <em>marginal</em> measure; a sacrifice over several units is a total or average measure.</p>
+</section>
+
+<section id="ppc-shapes">
+<h2>3. Shape of the PPC: Three Cases</h2>
+<p>The shape of the PPC depends on how MOC behaves as more of the good on the X-axis is produced. The rough notes are correct on all three cases.</p>
+<div class="table-wrap"><table>
+<caption>Three hypothetical schedules (same end points: 100 food or 4 clothes)</caption>
+<thead><tr><th scope="col">Clothes</th><th scope="col">Food: increasing MOC</th><th scope="col">MOC</th><th scope="col">Food: constant MOC</th><th scope="col">MOC</th><th scope="col">Food: decreasing MOC</th><th scope="col">MOC</th></tr></thead>
+<tbody>
+<tr><td>0</td><td>100</td><td>-</td><td>100</td><td>-</td><td>100</td><td>-</td></tr>
+<tr><td>1</td><td>90</td><td>10</td><td>75</td><td>25</td><td>60</td><td>40</td></tr>
+<tr><td>2</td><td>70</td><td>20</td><td>50</td><td>25</td><td>30</td><td>30</td></tr>
+<tr><td>3</td><td>40</td><td>30</td><td>25</td><td>25</td><td>10</td><td>20</td></tr>
+<tr><td>4</td><td>0</td><td>40</td><td>0</td><td>25</td><td>0</td><td>10</td></tr>
+<tr><th scope="row">Shape</th><td colspan="2"><strong>Concave to origin</strong> (bowed outward)</td><td colspan="2"><strong>Straight line</strong></td><td colspan="2"><strong>Convex to origin</strong> (bowed inward)</td></tr>
+</tbody></table></div>
+<p class="small">Constant and decreasing schedules are [Additional] hypothetical examples created to illustrate the rough notes' second and third cases. In all three, total opportunity cost of 4 clothes is 100 food; only the <em>pattern</em> of MOC differs.</p>
+
+<div class="diagram-grid three">
+<figure id="fig-concave">
+<h3>Figure 2a - Increasing MOC</h3>
+<div class="svg-wrap"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 310" role="img" aria-labelledby="f2a-title f2a-desc">
+<title id="f2a-title">Concave PPC with increasing marginal opportunity cost</title>
+<desc id="f2a-desc">Curve through 0,100; 1,90; 2,70; 3,40; 4,0, bowed outward from the origin and becoming steeper.</desc>
+<path d="M45 20 V250 H310" fill="none" stroke="#333" stroke-width="2"/>
+<path d="M45.0 30.0 C55.0 33.7 85.0 41.0 105.0 52.0 C125.0 63.0 145.0 77.7 165.0 96.0 C185.0 114.3 205.0 136.3 225.0 162.0 C245.0 187.7 275.0 235.3 285.0 250.0" fill="none" stroke="#12678a" stroke-width="3"/>
+<g fill="#12678a"><circle cx="45" cy="30" r="4"/><circle cx="105" cy="52" r="4"/><circle cx="165" cy="96" r="4"/><circle cx="225" cy="162" r="4"/><circle cx="285" cy="250" r="4"/></g>
+<g font-family="Calibri, sans-serif" font-size="16" fill="#202124"><text x="50" y="16">Food</text><text x="215" y="295">Clothes</text><text x="31" y="268">0</text><text x="101" y="268">1</text><text x="161" y="268">2</text><text x="221" y="268">3</text><text x="281" y="268">4</text><text x="8" y="35">100</text><text x="17" y="145">50</text><text x="60" y="200">Concave</text></g>
+</svg></div>
+<figcaption>MOC 10, 20, 30, 40. Usual textbook case.</figcaption>
+</figure>
+<figure id="fig-straight">
+<h3>Figure 2b - Constant MOC</h3>
+<div class="svg-wrap"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 310" role="img" aria-labelledby="f2b-title f2b-desc">
+<title id="f2b-title">Straight-line PPC with constant marginal opportunity cost</title>
+<desc id="f2b-desc">Straight line through 0,100; 1,75; 2,50; 3,25; 4,0.</desc>
+<path d="M45 20 V250 H310" fill="none" stroke="#333" stroke-width="2"/>
+<path d="M45 30 L285 250" fill="none" stroke="#12678a" stroke-width="3"/>
+<g fill="#12678a"><circle cx="45" cy="30" r="4"/><circle cx="105" cy="85" r="4"/><circle cx="165" cy="140" r="4"/><circle cx="225" cy="195" r="4"/><circle cx="285" cy="250" r="4"/></g>
+<g font-family="Calibri, sans-serif" font-size="16" fill="#202124"><text x="50" y="16">Food</text><text x="215" y="295">Clothes</text><text x="31" y="268">0</text><text x="101" y="268">1</text><text x="161" y="268">2</text><text x="221" y="268">3</text><text x="281" y="268">4</text><text x="8" y="35">100</text><text x="17" y="145">50</text><text x="60" y="220">Straight line</text></g>
+</svg></div>
+<figcaption>MOC 25 at every step; resources equally efficient in both uses.</figcaption>
+</figure>
+<figure id="fig-convex">
+<h3>Figure 2c - Decreasing MOC</h3>
+<div class="svg-wrap"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 310" role="img" aria-labelledby="f2c-title f2c-desc">
+<title id="f2c-title">Convex PPC with decreasing marginal opportunity cost</title>
+<desc id="f2c-desc">Curve through 0,100; 1,60; 2,30; 3,10; 4,0, bowed inward toward the origin and becoming flatter.</desc>
+<path d="M45 20 V250 H310" fill="none" stroke="#333" stroke-width="2"/>
+<path d="M45.0 30.0 C55.0 44.7 85.0 92.3 105.0 118.0 C125.0 143.7 145.0 165.7 165.0 184.0 C185.0 202.3 205.0 217.0 225.0 228.0 C245.0 239.0 275.0 246.3 285.0 250.0" fill="none" stroke="#12678a" stroke-width="3"/>
+<g fill="#12678a"><circle cx="45" cy="30" r="4"/><circle cx="105" cy="118" r="4"/><circle cx="165" cy="184" r="4"/><circle cx="225" cy="228" r="4"/><circle cx="285" cy="250" r="4"/></g>
+<g font-family="Calibri, sans-serif" font-size="16" fill="#202124"><text x="50" y="16">Food</text><text x="215" y="295">Clothes</text><text x="31" y="268">0</text><text x="101" y="268">1</text><text x="161" y="268">2</text><text x="221" y="268">3</text><text x="281" y="268">4</text><text x="8" y="35">100</text><text x="17" y="145">50</text><text x="160" y="120">Convex</text></g>
+</svg></div>
+<figcaption>MOC 40, 30, 20, 10. Theoretical case.</figcaption>
+</figure>
+</div>
+<p class="small">Figures 2a-2c: original diagrams plotted from the hypothetical schedules above, drawn to the same scale (food 0-100, clothes 0-4 units per period). No empirical data.</p>
+<p class="exam"><strong>Exam point:</strong> the <strong>normal</strong> PPC is concave to the origin because MOC increases - resources are specialised and not equally efficient in producing both goods. As more clothes are produced, resources better suited to food are shifted, so more food is lost per extra cloth.</p>
+</section>
+
+<section id="ppc-features">
+<h2>4. Features of the PPC</h2>
+<ol>
+<li><strong>Downward sloping:</strong> resources are limited, so producing more of one good requires sacrificing some of the other.</li>
+<li><strong>Concave to the origin</strong> due to <strong>increasing MOC</strong>. Decreasing MOC gives a convex PPC; constant MOC gives a straight line.</li>
+<li><strong>Points on, inside and outside:</strong>
+<ul>
+<li><strong>On</strong> the PPC (A-E): full and efficient utilisation of resources.</li>
+<li><strong>Inside</strong> (U): under-utilisation or inefficient use - for example, unemployment or idle factories.</li>
+<li><strong>[Additional] Outside</strong> (Z): unattainable with existing resources and technology.</li>
+</ul></li>
+<li><strong>Outward shift:</strong> an increase in resources (labour force, capital stock, new mineral discoveries) or improvement in technology increases productive capacity and <strong>shifts the PPC outward (away from the origin)</strong>. This represents <strong>economic growth</strong>.</li>
+<li><strong>Inward shift:</strong> a decrease in resources or deterioration of technology decreases productive capacity and <strong>shifts the PPC inward (towards the origin)</strong>.</li>
+</ol>
+<p class="correction" id="c02"><strong>[Correction]</strong> "Shift PPC upwards to the right" is better stated as an <strong>outward shift (rightward and upward, away from the origin)</strong>; similarly an inward shift is towards the origin. [Additional] A shift need not be parallel: technology that improves only cloth production pivots the PPC outward along the clothes axis only.</p>
+<p class="correction" id="c03"><strong>[Correction]</strong> "War, pandemic" as examples: <strong>war</strong> that destroys factories, infrastructure and lives reduces resources and <strong>shifts the PPC inward</strong>. A <strong>pandemic lockdown</strong> that temporarily idles workers and machines mainly moves actual output to a point <strong>inside the existing PPC</strong>; the PPC itself shifts inward only if productive capacity is lost (deaths, lasting health damage, permanent closure of firms). Similarly, unemployment is a point inside, not an inward shift.</p>
+
+<figure id="fig-ppc-shift">
+<h3>Figure 3 - Outward and Inward Shifts of the PPC</h3>
+<div class="svg-wrap"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-labelledby="f3-title f3-desc">
+<title id="f3-title">Outward and inward shifts of a production possibility curve</title>
+<desc id="f3-desc">Three concave frontiers. The solid original PPC lies in the middle. A dashed green PPC farther from the origin shows an outward shift due to more resources or better technology. A dotted red PPC closer to the origin shows an inward shift due to loss of resources.</desc>
+<path d="M70 30 V330 H560" fill="none" stroke="#333" stroke-width="2"/>
+<path d="M70 60 Q300 70 490 330" fill="none" stroke="#26723c" stroke-width="3" stroke-dasharray="9 5"/>
+<path d="M70 130 Q250 145 390 330" fill="none" stroke="#12678a" stroke-width="3"/>
+<path d="M70 200 Q180 210 280 330" fill="none" stroke="#b33439" stroke-width="3" stroke-dasharray="3 4"/>
+<path d="M248 180 L282 142 M270 146 L282 142 L279 154" fill="none" stroke="#26723c" stroke-width="2"/>
+<path d="M232 196 L190 230 M193 219 L190 230 L201 229" fill="none" stroke="#b33439" stroke-width="2"/>
+<g font-family="Calibri, sans-serif" font-size="16" fill="#202124">
+<text x="74" y="22">Food</text><text x="500" y="360">Clothes</text><text x="50" y="348">0</text>
+<path d="M360 45 H395" stroke="#26723c" stroke-width="3" stroke-dasharray="9 5"/><text x="402" y="50">Outward shift (growth)</text>
+<path d="M360 72 H395" stroke="#12678a" stroke-width="3"/><text x="402" y="77">Original PPC</text>
+<path d="M360 99 H395" stroke="#b33439" stroke-width="3" stroke-dasharray="3 4"/><text x="402" y="104">Inward shift (resources lost)</text>
+</g>
+</svg></div>
+<figcaption>Original qualitative schematic; no numerical scale or empirical data. Outward: more resources or better technology. Inward: destruction or loss of resources, for example war damage. Based on the PPC model in NCERT, <em>Introductory Microeconomics</em>, Chapter 1.</figcaption>
+</figure>
+</section>
+
+<section id="demand">
+<h2>5. Theory of Demand</h2>
+<p class="lead"><strong>Demand</strong> is the quantity of a commodity that consumers are <strong>willing and able to purchase</strong> at a given price during a given period of time.</p>
+<p class="correction" id="c04"><strong>[Correction]</strong> Demand is a <strong>flow</strong>, so it is stated "per period" (per day, week or month), not at "a given point of time". Desire alone is not demand: it needs <strong>desire + ability to pay + willingness to pay</strong> (effective demand). In the rough schedule, "100 id the purchase power" is read as <strong>quantity demanded of 100 units at Rs 10</strong>; quantity demanded is not the same as purchasing power.</p>
+
+<h3>5.1 Law of Demand</h3>
+<p>According to the <strong>law of demand</strong>, other things remaining constant (<em>ceteris paribus</em>), when the price of a commodity rises, its quantity demanded falls, and when its price falls, quantity demanded rises. Price and quantity demanded are <strong>inversely related</strong>.</p>
+<div class="table-wrap"><table id="demand-schedule">
+<caption>Demand schedule (hypothetical class example)</caption>
+<thead><tr><th scope="col">Point</th><th scope="col">Price (Rs per unit)</th><th scope="col">Quantity demanded (units per period)</th></tr></thead>
+<tbody>
+<tr><th scope="row">a</th><td>30</td><td>20</td></tr>
+<tr><th scope="row">b</th><td>20</td><td>70</td></tr>
+<tr><th scope="row">c</th><td>10</td><td>100</td></tr>
+</tbody></table></div>
+
+<figure id="fig-demand">
+<h3>Figure 4 - Demand Curve</h3>
+<div class="svg-wrap"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 445" role="img" aria-labelledby="f4-title f4-desc">
+<title id="f4-title">Downward-sloping demand curve from the class schedule</title>
+<desc id="f4-desc">Quantity demanded on the horizontal axis from 0 to 120 units; price on the vertical axis from 0 to 40 rupees. Points a at 20 units and Rs 30, b at 70 units and Rs 20, and c at 100 units and Rs 10 are joined by a downward-sloping line labelled D.</desc>
+<g stroke="#d6d6d6" stroke-width="1"><path d="M70 275 H490 M70 200 H490 M70 125 H490 M70 50 H490"/><path d="M140 50 V350 M210 50 V350 M280 50 V350 M350 50 V350 M420 50 V350 M490 50 V350"/></g>
+<path d="M70 40 V350 H510" fill="none" stroke="#333" stroke-width="2"/>
+<polyline points="140,125 315,200 420,275" fill="none" stroke="#12678a" stroke-width="3"/>
+<g fill="#12678a"><circle cx="140" cy="125" r="5"/><circle cx="315" cy="200" r="5"/><circle cx="420" cy="275" r="5"/></g>
+<g font-family="Calibri, sans-serif" font-size="16" fill="#202124">
+<text x="70" y="25">Price (Rs per unit)</text>
+<text x="160" y="420">Quantity demanded (units per period)</text>
+<text x="52" y="372">0</text><text x="131" y="372">20</text><text x="201" y="372">40</text><text x="271" y="372">60</text><text x="341" y="372">80</text><text x="407" y="372">100</text><text x="477" y="372">120</text>
+<text x="42" y="280">10</text><text x="42" y="205">20</text><text x="42" y="130">30</text><text x="42" y="55">40</text>
+<text x="150" y="112">a (20 units, Rs 30)</text><text x="325" y="190">b (70 units, Rs 20)</text><text x="330" y="305">c (100 units, Rs 10)</text>
+<text x="440" y="268" font-weight="bold">D</text>
+</g>
+</svg></div>
+<figcaption>Original diagram plotted from the hypothetical class schedule; the three tabulated points are joined by straight segments for illustration. Price on the Y-axis and quantity on the X-axis by convention. Conceptual basis: NCERT, <em>Introductory Microeconomics</em>, Chapter 2.</figcaption>
+</figure>
+
+<p class="additional"><strong>[Additional] Why the demand curve slopes downward:</strong> (i) <strong>substitution effect</strong> - the good becomes cheaper relative to substitutes; (ii) <strong>income effect</strong> - a lower price raises real income (purchasing power); (iii) <strong>diminishing marginal utility</strong> - consumers buy additional units only at lower prices; (iv) new buyers enter the market at lower prices.</p>
+
+<h3>5.2 Movement along vs Shift of the Demand Curve</h3>
+<p class="correction" id="c05"><strong>[Correction]</strong> A rise in quantity due to a fall in the good's own price is <strong>expansion (extension) of quantity demanded</strong>, and a fall due to a rise in price is <strong>contraction of quantity demanded</strong>. Both are <strong>movements along the same demand curve</strong>. When a <strong>non-price factor</strong> (income, related-good prices, tastes) changes, the whole curve shifts: this is an <strong>increase</strong> (rightward shift) or <strong>decrease</strong> (leftward shift) <strong>in demand</strong>.</p>
+<div class="table-wrap"><table>
+<thead><tr><th scope="col">Cause</th><th scope="col">Terminology</th><th scope="col">Diagram</th></tr></thead>
+<tbody>
+<tr><td>Own price falls</td><td>Expansion / extension of quantity demanded</td><td>Downward movement along the same curve</td></tr>
+<tr><td>Own price rises</td><td>Contraction of quantity demanded</td><td>Upward movement along the same curve</td></tr>
+<tr><td>Favourable change in a non-price factor</td><td>Increase in demand</td><td>Curve shifts to the right</td></tr>
+<tr><td>Unfavourable change in a non-price factor</td><td>Decrease in demand</td><td>Curve shifts to the left</td></tr>
+</tbody></table></div>
+<div class="diagram-grid">
+<figure id="fig-demand-move">
+<h3>Figure 5a - Movement along D</h3>
+<div class="svg-wrap"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 310" role="img" aria-labelledby="f5a-title f5a-desc">
+<title id="f5a-title">Movement along a demand curve</title>
+<desc id="f5a-desc">A single downward-sloping demand curve. A fall in price from P1 to P2 moves the consumer from point a to point b on the same curve, an expansion of quantity demanded from Q1 to Q2.</desc>
+<path d="M45 20 V250 H318" fill="none" stroke="#333" stroke-width="2"/>
+<path d="M75 50 L285 225" fill="none" stroke="#12678a" stroke-width="3"/>
+<path d="M45 87.5 H120 V250 M45 179 H230 V250" fill="none" stroke="#888" stroke-width="1.5" stroke-dasharray="5 4"/>
+<g fill="#12678a"><circle cx="120" cy="87.5" r="4.5"/><circle cx="230" cy="179" r="4.5"/></g>
+<path d="M140 92 L205 146 M193 144 L205 146 L200 135" fill="none" stroke="#26723c" stroke-width="2"/>
+<g font-family="Calibri, sans-serif" font-size="15" fill="#202124"><text x="48" y="16">Price</text><text x="210" y="290">Quantity</text><text x="16" y="92">P1</text><text x="16" y="184">P2</text><text x="111" y="268">Q1</text><text x="221" y="268">Q2</text><text x="112" y="78">a</text><text x="238" y="176">b</text><text x="288" y="218" font-weight="bold">D</text><text x="160" y="80" fill="#26723c">a to b: expansion</text><text x="160" y="100" fill="#b33439">b to a: contraction</text></g>
+</svg></div>
+<figcaption>Only the good's own price changes. Qualitative schematic.</figcaption>
+</figure>
+<figure id="fig-demand-shift">
+<h3>Figure 5b - Shift of D</h3>
+<div class="svg-wrap"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 310" role="img" aria-labelledby="f5b-title f5b-desc">
+<title id="f5b-title">Shift of a demand curve</title>
+<desc id="f5b-desc">Two parallel downward-sloping demand curves D1 and D2. At the same price P0, quantity demanded rises from Q1 on D1 to Q2 on D2, showing an increase in demand caused by a non-price factor.</desc>
+<path d="M45 20 V250 H318" fill="none" stroke="#333" stroke-width="2"/>
+<path d="M60 60 L230 225" fill="none" stroke="#12678a" stroke-width="3"/>
+<path d="M130 60 L300 225" fill="none" stroke="#26723c" stroke-width="3" stroke-dasharray="9 5"/>
+<path d="M45 140 H212 M142 140 V250 M212 140 V250" fill="none" stroke="#888" stroke-width="1.5" stroke-dasharray="5 4"/>
+<path d="M150 128 L200 128 M190 122 L200 128 L190 134" fill="none" stroke="#26723c" stroke-width="2"/>
+<g font-family="Calibri, sans-serif" font-size="15" fill="#202124"><text x="48" y="16">Price</text><text x="210" y="290">Quantity</text><text x="16" y="145">P0</text><text x="133" y="268">Q1</text><text x="203" y="268">Q2</text><text x="190" y="220" font-weight="bold">D1</text><text x="304" y="234" font-weight="bold">D2</text><text x="175" y="50" fill="#26723c">D1 to D2: increase</text><text x="175" y="70" fill="#b33439">D2 to D1: decrease</text></g>
+</svg></div>
+<figcaption>Price unchanged; income, related-good prices or tastes change. Qualitative schematic.</figcaption>
+</figure>
+</div>
+
+<h3>5.3 Other Factors Affecting Demand</h3>
+<p>The good's <strong>own price</strong> is the first factor (it causes movement along the curve). The other factors shift the curve:</p>
+<ol>
+<li><strong>Income of the consumer</strong>
+<ul>
+<li><strong>Normal goods:</strong> demand rises when income rises and falls when income falls (positive income relationship).</li>
+<li><strong>Inferior goods:</strong> demand falls when income rises and rises when income falls (negative income relationship). As income rises, consumers switch to preferred alternatives.</li>
+</ul>
+<p class="additional"><strong>[Additional]</strong> "Inferior" describes the <strong>response to income</strong>, not necessarily poor physical quality. The same good can be normal for a low-income consumer and inferior for a higher-income consumer (NCERT).</p></li>
+<li><strong>Prices of related goods</strong>
+<ul>
+<li><strong>Substitute goods</strong> can be used in place of one another (for example, tea and coffee). If the price of a substitute <strong>rises</strong>, demand for the given good <strong>rises</strong>; if it <strong>falls</strong>, demand <strong>falls</strong> (direct relationship).</li>
+<li><strong>Complementary goods</strong> are used together to satisfy a want (for example, tea and sugar; car and petrol). If the price of a complement <strong>rises</strong>, demand for the given good <strong>falls</strong>; if it <strong>falls</strong>, demand <strong>rises</strong> (inverse relationship).</li>
+</ul>
+<p class="correction" id="c06"><strong>[Correction]</strong> The correct term is <strong>complementary</strong> goods (goods that complete each other), not "complimentary" (free of charge). This is a frequent spelling-and-meaning confusion.</p></li>
+<li><strong>Tastes and preferences:</strong> a <strong>favourable</strong> change (fashion, advertising, health awareness) increases demand; an <strong>unfavourable</strong> change decreases it.</li>
+<li><strong>[Additional] Other factors:</strong> expectations about future prices or income; size and composition of population (number of buyers); distribution of income; availability of credit; season and weather; government policy such as taxes on consumers.</li>
+</ol>
+<div class="table-wrap"><table>
+<caption>[Additional] Quick reference: direction of shift of the demand curve for good X</caption>
+<thead><tr><th scope="col">Change</th><th scope="col">Normal good</th><th scope="col">Inferior good</th></tr></thead>
+<tbody>
+<tr><td>Consumer income rises</td><td>Shift right (increase)</td><td>Shift left (decrease)</td></tr>
+<tr><td>Consumer income falls</td><td>Shift left</td><td>Shift right</td></tr>
+</tbody></table></div>
+<div class="table-wrap"><table>
+<thead><tr><th scope="col">Change</th><th scope="col">Effect on demand for X</th></tr></thead>
+<tbody>
+<tr><td>Price of a substitute of X rises</td><td>Shift right (increase)</td></tr>
+<tr><td>Price of a complement of X rises</td><td>Shift left (decrease)</td></tr>
+<tr><td>Favourable change in tastes</td><td>Shift right</td></tr>
+<tr><td>Expected future price of X rises</td><td>Shift right now (buyers purchase earlier)</td></tr>
+</tbody></table></div>
+
+<h3>5.4 Exceptions to the Law of Demand</h3>
+<ol>
+<li><strong>Giffen goods:</strong> a special type of <strong>inferior good</strong> whose quantity demanded rises when its price rises and falls when its price falls, so the demand curve slopes upward over that range.
+<p class="correction" id="c07"><strong>[Correction]</strong> Giffen goods are not defined as "very poor-quality" goods. The defining condition is economic: the good is <strong>inferior</strong>, and its <strong>negative income effect is strong enough to outweigh the substitution effect</strong>. This typically needs the good to be a staple taking a large share of a poor consumer's budget: when its price rises, the consumer can no longer afford better food and buys even more of the staple. <strong>Every Giffen good is inferior, but most inferior goods are not Giffen goods.</strong></p></li>
+<li><strong>Veblen goods:</strong> status or prestige goods bought for <strong>conspicuous consumption</strong> (show-off). A higher price increases their appeal as a status symbol, so quantity demanded may rise with price. Examples often cited: designer jewellery, luxury watches.
+<p class="correction" id="c08"><strong>[Correction]</strong> Not every luxury good is a Veblen good. Most luxuries still follow the law of demand; a Veblen good is one where the <strong>high price itself</strong> is the source of desirability. The term comes from Thorstein Veblen's <em>The Theory of the Leisure Class</em> (1899).</p></li>
+<li><strong>[Additional] Other commonly listed exceptions:</strong> expectation of a further price rise (speculative buying); goods judged by price as a signal of quality (ignorance effect); emergencies such as war or natural disasters.</li>
+</ol>
+<p class="exam"><strong>Common trap:</strong> buying more when prices rise because <strong>further rises are expected</strong> reflects a change in <strong>expectations</strong> - a non-price factor that shifts demand - not a true upward-sloping demand curve. Similarly, <strong>necessities</strong> (salt, life-saving medicines) whose quantity changes little with price have <strong>inelastic</strong> demand; that is not an exception to the law of demand.</p>
+</section>
+
+<section id="supply">
+<h2>6. Theory of Supply</h2>
+<p class="lead"><strong>Supply</strong> is the quantity of a commodity that producers are <strong>willing and able to offer for sale</strong> at a given price during a given period of time.</p>
+<p class="correction" id="c09"><strong>[Correction]</strong> Add "able" and "during a given period": supply is a flow per period, not "at a point of time". [Additional] <strong>Supply is not the same as stock</strong>: stock is the total quantity available with producers at a point of time; supply is the part of it actually offered for sale at a given price.</p>
+
+<h3>6.1 Law of Supply</h3>
+<p>According to the <strong>law of supply</strong>, other things remaining constant, when the price of a commodity rises, quantity supplied rises, and when the price falls, quantity supplied falls. Price and quantity supplied are <strong>directly (positively) related</strong>.</p>
+<div class="table-wrap"><table id="supply-schedule">
+<caption>Supply schedule (hypothetical class example)</caption>
+<thead><tr><th scope="col">Point</th><th scope="col">Price (Rs per unit)</th><th scope="col">Quantity supplied (units per period)</th></tr></thead>
+<tbody>
+<tr><th scope="row">a</th><td>10</td><td>50</td></tr>
+<tr><th scope="row">b</th><td>20</td><td>70</td></tr>
+<tr><th scope="row">c</th><td>30</td><td>150</td></tr>
+</tbody></table></div>
+<p class="correction" id="c10"><strong>[Correction]</strong> "Supply curve: it is upward curve" should read: the supply curve is <strong>upward sloping from left to right</strong> (positive slope). It may be drawn as a straight line or a curve.</p>
+
+<figure id="fig-supply">
+<h3>Figure 6 - Supply Curve</h3>
+<div class="svg-wrap"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 445" role="img" aria-labelledby="f6-title f6-desc">
+<title id="f6-title">Upward-sloping supply curve from the class schedule</title>
+<desc id="f6-desc">Quantity supplied on the horizontal axis from 0 to 160 units; price on the vertical axis from 0 to 40 rupees. Points a at 50 units and Rs 10, b at 70 units and Rs 20, and c at 150 units and Rs 30 are joined by an upward-sloping line labelled S.</desc>
+<g stroke="#d6d6d6" stroke-width="1"><path d="M70 275 H510 M70 200 H510 M70 125 H510 M70 50 H510"/><path d="M125 50 V350 M180 50 V350 M235 50 V350 M290 50 V350 M345 50 V350 M400 50 V350 M455 50 V350 M510 50 V350"/></g>
+<path d="M70 40 V350 H530" fill="none" stroke="#333" stroke-width="2"/>
+<polyline points="207.5,275 262.5,200 482.5,125" fill="none" stroke="#b36b00" stroke-width="3"/>
+<g fill="#b36b00"><circle cx="207.5" cy="275" r="5"/><circle cx="262.5" cy="200" r="5"/><circle cx="482.5" cy="125" r="5"/></g>
+<g font-family="Calibri, sans-serif" font-size="16" fill="#202124">
+<text x="70" y="25">Price (Rs per unit)</text>
+<text x="170" y="420">Quantity supplied (units per period)</text>
+<text x="52" y="372">0</text><text x="116" y="372">20</text><text x="171" y="372">40</text><text x="226" y="372">60</text><text x="281" y="372">80</text><text x="332" y="372">100</text><text x="387" y="372">120</text><text x="442" y="372">140</text><text x="497" y="372">160</text>
+<text x="42" y="280">10</text><text x="42" y="205">20</text><text x="42" y="130">30</text><text x="42" y="55">40</text>
+<text x="218" y="298">a (50 units, Rs 10)</text><text x="275" y="222">b (70 units, Rs 20)</text><text x="370" y="108">c (150 units, Rs 30)</text>
+<text x="494" y="130" font-weight="bold">S</text>
+</g>
+</svg></div>
+<figcaption>Original diagram plotted from the hypothetical class schedule; the three tabulated points are joined by straight segments for illustration. Conceptual basis: NCERT, <em>Introductory Microeconomics</em>, Chapter 4.</figcaption>
+</figure>
+<p class="additional"><strong>[Additional] Why the supply curve slopes upward:</strong> a higher price makes production more profitable and covers the <strong>rising marginal cost</strong> of producing extra units; existing firms produce more and new producers may enter.</p>
+
+<h3>6.2 Other Factors Affecting Supply</h3>
+<ol>
+<li><strong>Technology:</strong> improved technology lowers cost per unit, so supply <strong>increases</strong>; outdated technology reduces supply.</li>
+<li><strong>Cost of raw materials (input prices):</strong> if input costs rise, supply <strong>falls</strong>; if they fall, supply <strong>rises</strong>.</li>
+<li><strong>Taxes and subsidies on a product:</strong> a <strong>subsidy</strong> to producers lowers their effective cost, so supply <strong>increases</strong> (curve shifts right). A <strong>per-unit tax</strong> (for example, excise duty) raises the effective cost, so supply <strong>decreases</strong> (curve shifts left).
+<p class="correction" id="c11"><strong>[Correction]</strong> The rough note on subsidy and tax was incomplete ("if subsidy is"). It is completed above following the standard NCERT treatment of a unit tax: a tax shifts supply left, and a subsidy works in the opposite direction.</p></li>
+<li><strong>[Additional] Other factors:</strong> prices of other goods the firm could produce with the same resources; number of firms in the market; expectations of future prices; natural factors such as weather (especially for agriculture); goals of the firm.</li>
+</ol>
+<p class="additional"><strong>[Additional]</strong> As with demand: a change in the good's own price causes <strong>expansion / contraction of quantity supplied</strong> (movement along S); a change in any other factor causes <strong>increase / decrease in supply</strong> (shift of S).</p>
+<div class="diagram-grid">
+<figure id="fig-supply-move">
+<h3>Figure 7a - Movement along S</h3>
+<div class="svg-wrap"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 310" role="img" aria-labelledby="f7a-title f7a-desc">
+<title id="f7a-title">Movement along a supply curve</title>
+<desc id="f7a-desc">A single upward-sloping supply curve. A rise in price from P1 to P2 moves the producer from point a to point b on the same curve, an expansion of quantity supplied from Q1 to Q2.</desc>
+<path d="M45 20 V250 H318" fill="none" stroke="#333" stroke-width="2"/>
+<path d="M60 225 L285 55" fill="none" stroke="#b36b00" stroke-width="3"/>
+<path d="M45 187 H110 V250 M45 96.6 H230 V250" fill="none" stroke="#888" stroke-width="1.5" stroke-dasharray="5 4"/>
+<g fill="#b36b00"><circle cx="110" cy="187" r="4.5"/><circle cx="230" cy="96.6" r="4.5"/></g>
+<path d="M132 182 L205 126 M193 128 L205 126 L200 137" fill="none" stroke="#26723c" stroke-width="2"/>
+<g font-family="Calibri, sans-serif" font-size="15" fill="#202124"><text x="48" y="16">Price</text><text x="210" y="290">Quantity</text><text x="16" y="192">P1</text><text x="16" y="101">P2</text><text x="101" y="268">Q1</text><text x="221" y="268">Q2</text><text x="120" y="206">a</text><text x="220" y="88">b</text><text x="288" y="52" font-weight="bold">S</text><text x="55" y="45" fill="#26723c">a to b: expansion</text><text x="55" y="65" fill="#b33439">b to a: contraction</text></g>
+</svg></div>
+<figcaption>Only the good's own price changes. Qualitative schematic.</figcaption>
+</figure>
+<figure id="fig-supply-shift">
+<h3>Figure 7b - Shift of S: Tax vs Subsidy</h3>
+<div class="svg-wrap"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 310" role="img" aria-labelledby="f7b-title f7b-desc">
+<title id="f7b-title">Shifts of a supply curve due to a tax or a subsidy</title>
+<desc id="f7b-desc">Three parallel upward-sloping supply curves. S0 is the original. S1 to the left shows a decrease in supply after a per-unit tax or higher input costs. S2 to the right shows an increase in supply after a subsidy or better technology. At the same price, quantity supplied is lower on S1 and higher on S2.</desc>
+<path d="M45 20 V250 H318" fill="none" stroke="#333" stroke-width="2"/>
+<path d="M55 220 L205 70" fill="none" stroke="#b33439" stroke-width="3" stroke-dasharray="3 4"/>
+<path d="M110 220 L260 70" fill="none" stroke="#b36b00" stroke-width="3"/>
+<path d="M165 220 L315 70" fill="none" stroke="#26723c" stroke-width="3" stroke-dasharray="9 5"/>
+<path d="M45 145 H240" fill="none" stroke="#888" stroke-width="1.5" stroke-dasharray="5 4"/>
+<path d="M190 153 L232 153 M224 148 L232 153 L224 158" fill="none" stroke="#26723c" stroke-width="2"/>
+<path d="M180 137 L138 137 M146 132 L138 137 L146 142" fill="none" stroke="#b33439" stroke-width="2"/>
+<g font-family="Calibri, sans-serif" font-size="15" fill="#202124"><text x="48" y="16">Price</text><text x="210" y="290">Quantity</text><text x="16" y="150">P0</text><text x="190" y="62" font-weight="bold">S1</text><text x="247" y="62" font-weight="bold">S0</text><text x="302" y="62" font-weight="bold">S2</text><text x="50" y="50" fill="#b33439">Tax: S0 to S1</text><text x="220" y="210" fill="#26723c">Subsidy:</text><text x="220" y="229" fill="#26723c">S0 to S2</text></g>
+</svg></div>
+<figcaption>S1: decrease in supply (per-unit tax, higher input costs). S2: increase in supply (subsidy, better technology). Qualitative schematic.</figcaption>
+</figure>
+</div>
+</section>
+
+<section id="equilibrium">
+<h2>7. Market Equilibrium</h2>
+<p class="lead"><strong>Market equilibrium</strong> occurs at the price at which <strong>quantity demanded equals quantity supplied</strong>. This price is the <strong>equilibrium (market-clearing) price</strong>, and the quantity bought and sold is the <strong>equilibrium quantity</strong>. Graphically, it is the point where the demand and supply curves intersect.</p>
+<p class="correction" id="c12"><strong>[Correction]</strong> "Quality demanded" should be <strong>quantity demanded</strong>. [Additional] The standard model assumes a perfectly competitive market with flexible prices; the market reaches equilibrium through price adjustment, not by a decision of any single buyer or seller.</p>
+
+<h3>7.1 Class Example: Combining the Two Schedules</h3>
+<div class="table-wrap"><table id="equilibrium-schedule">
+<caption>Market schedule (hypothetical; combines the demand and supply schedules above)</caption>
+<thead><tr><th scope="col">Price (Rs per unit)</th><th scope="col">Quantity demanded</th><th scope="col">Quantity supplied</th><th scope="col">Market situation</th><th scope="col">Pressure on price</th></tr></thead>
+<tbody>
+<tr><td>10</td><td>100</td><td>50</td><td><strong>Excess demand</strong> = 100 - 50 = 50 (shortage)</td><td>Buyers compete; price <strong>rises</strong></td></tr>
+<tr><td><strong>20</strong></td><td><strong>70</strong></td><td><strong>70</strong></td><td><strong>Equilibrium</strong>: Qd = Qs</td><td>No tendency to change</td></tr>
+<tr><td>30</td><td>20</td><td>150</td><td><strong>Excess supply</strong> = 150 - 20 = 130 (surplus)</td><td>Sellers compete; price <strong>falls</strong></td></tr>
+</tbody></table></div>
+<p><strong>Equilibrium price = Rs 20 per unit; equilibrium quantity = 70 units per period.</strong></p>
+
+<figure id="fig-equilibrium">
+<h3>Figure 8 - Market Equilibrium</h3>
+<div class="svg-wrap"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 445" role="img" aria-labelledby="f8-title f8-desc">
+<title id="f8-title">Demand and supply curves intersecting at the equilibrium point</title>
+<desc id="f8-desc">Quantity on the horizontal axis from 0 to 160 units; price on the vertical axis from 0 to 40 rupees. The downward-sloping demand curve D and upward-sloping supply curve S intersect at E, at a price of Rs 20 and quantity of 70 units. At Rs 10 there is excess demand of 50 units; at Rs 30 there is excess supply of 130 units.</desc>
+<g stroke="#e0e0e0" stroke-width="1"><path d="M70 275 H510 M70 200 H510 M70 125 H510 M70 50 H510"/><path d="M125 50 V350 M180 50 V350 M235 50 V350 M290 50 V350 M345 50 V350 M400 50 V350 M455 50 V350 M510 50 V350"/></g>
+<path d="M70 40 V350 H530" fill="none" stroke="#333" stroke-width="2"/>
+<path d="M70 200 H262.5 V350" fill="none" stroke="#666" stroke-width="1.5" stroke-dasharray="5 4"/>
+<path d="M207.5 275 H345" stroke="#7b1fa2" stroke-width="4"/>
+<path d="M125 125 H482.5" stroke="#7b1fa2" stroke-width="4" stroke-opacity="0.55"/>
+<polyline points="125,125 262.5,200 345,275" fill="none" stroke="#12678a" stroke-width="3"/>
+<polyline points="207.5,275 262.5,200 482.5,125" fill="none" stroke="#b36b00" stroke-width="3"/>
+<g fill="#12678a"><circle cx="125" cy="125" r="4.5"/><circle cx="345" cy="275" r="4.5"/></g>
+<g fill="#b36b00"><circle cx="207.5" cy="275" r="4.5"/><circle cx="482.5" cy="125" r="4.5"/></g>
+<circle cx="262.5" cy="200" r="7" fill="#202124"/>
+<g font-family="Calibri, sans-serif" font-size="16" fill="#202124">
+<text x="70" y="25">Price (Rs per unit)</text>
+<text x="190" y="420">Quantity (units per period)</text>
+<text x="52" y="372">0</text><text x="116" y="372">20</text><text x="171" y="372">40</text><text x="226" y="372">60</text><text x="281" y="372">80</text><text x="332" y="372">100</text><text x="387" y="372">120</text><text x="442" y="372">140</text><text x="497" y="372">160</text>
+<text x="42" y="280">10</text><text x="42" y="205">20</text><text x="42" y="130">30</text><text x="42" y="55">40</text>
+<text x="100" y="118" font-weight="bold" fill="#12678a">D</text><text x="492" y="120" font-weight="bold" fill="#b36b00">S</text>
+<text x="256" y="182" font-weight="bold">E</text>
+<text x="78" y="192">P* = Rs 20</text><text x="268" y="342">Q* = 70</text>
+<text x="282" y="302" fill="#7b1fa2">Excess demand = 50: price rises</text>
+<text x="190" y="112" fill="#7b1fa2">Excess supply = 130: price falls</text>
+</g>
+</svg></div>
+<figcaption>Original diagram plotted from the hypothetical class demand and supply schedules (tabulated points joined by straight segments). Purple bars show the gap between quantity demanded and quantity supplied at Rs 10 and Rs 30. Conceptual basis: NCERT, <em>Introductory Microeconomics</em>, Chapter 5.</figcaption>
+</figure>
+
+<div class="flow" role="img" aria-label="Price below equilibrium leads to excess demand, which raises price until quantity demanded equals quantity supplied. Price above equilibrium leads to excess supply, which lowers price until equilibrium.">
+<span>Price &lt; P*</span><b aria-hidden="true">&#8594;</b><span>Excess demand</span><b aria-hidden="true">&#8594;</b><span>Price rises</span><b aria-hidden="true">&#8594;</b><span><strong>Qd = Qs at P*</strong></span><b aria-hidden="true">&#8592;</b><span>Price falls</span><b aria-hidden="true">&#8592;</b><span>Excess supply</span><b aria-hidden="true">&#8592;</b><span>Price &gt; P*</span>
+</div>
+
+<h3>7.2 [Additional] Effect of Shifts on Equilibrium</h3>
+<div class="table-wrap"><table>
+<thead><tr><th scope="col">Change (other curve unchanged)</th><th scope="col">Equilibrium price</th><th scope="col">Equilibrium quantity</th><th scope="col">Example</th></tr></thead>
+<tbody>
+<tr><td>Increase in demand (D shifts right)</td><td>Rises</td><td>Rises</td><td>Festival season raises demand for sweets</td></tr>
+<tr><td>Decrease in demand (D shifts left)</td><td>Falls</td><td>Falls</td><td>Health scare reduces demand for a food item</td></tr>
+<tr><td>Increase in supply (S shifts right)</td><td>Falls</td><td>Rises</td><td>Bumper harvest of a vegetable</td></tr>
+<tr><td>Decrease in supply (S shifts left)</td><td>Rises</td><td>Falls</td><td>Crop damage from unseasonal rain</td></tr>
+</tbody></table></div>
+<p class="exam"><strong>Exam point:</strong> when <strong>both</strong> curves shift in the same direction, the effect on quantity is certain but the effect on price depends on the relative size of the shifts (and vice versa when they shift in opposite directions).</p>
+</section>
+
+<section id="key-facts">
+<h2>Key Facts for Prelims</h2>
+<ul>
+<li>PPC = <strong>maximum</strong> combinations of two goods with given resources and technology, fully and efficiently used. Also called PPF or transformation curve.</li>
+<li>Slope of PPC = <strong>MOC = MRT</strong>. Normal PPC is <strong>concave</strong> to the origin (increasing MOC); straight line = constant MOC; convex = decreasing MOC.</li>
+<li>Point inside PPC = unemployment / under-utilisation; outside = unattainable; outward shift = growth of resources or technology.</li>
+<li>Law of demand: price and quantity demanded are <strong>inversely</strong> related, <em>ceteris paribus</em>. Law of supply: <strong>directly</strong> related.</li>
+<li>Own-price change = movement (expansion / contraction). Non-price change = shift (increase / decrease).</li>
+<li>Substitutes: price of Y up, demand for X up. Complements: price of Y up, demand for X down.</li>
+<li>Normal good: income up, demand up. Inferior good: income up, demand down.</li>
+<li><strong>Giffen good</strong> = inferior good where negative income effect &gt; substitution effect; upward-sloping demand. <strong>Veblen good</strong> = status good; high price itself adds appeal.</li>
+<li>Per-unit tax shifts supply <strong>left</strong>; subsidy shifts supply <strong>right</strong>.</li>
+<li>Equilibrium: Qd = Qs. Below P* = excess demand (shortage); above P* = excess supply (surplus).</li>
+</ul>
+</section>
+
+<section id="mains">
+<h2>Mains Points</h2>
+<ul>
+<li><strong>PPC and policy choice:</strong> every allocation (defence vs welfare, consumption vs capital goods, food crops vs cash crops) involves an opportunity cost. Choosing more capital goods today can shift the PPC outward in future.</li>
+<li><strong>Growth vs utilisation:</strong> unemployment and idle capacity place an economy inside its PPC. Policies that improve utilisation raise output without new resources; policies on education, infrastructure and R&amp;D shift the PPC outward.</li>
+<li><strong>Price signals:</strong> demand-supply analysis explains price spikes in perishable goods after supply shocks (weather, transport disruption) and why buffer stocks or imports are used to shift supply.</li>
+<li><strong>Taxes and subsidies:</strong> indirect taxes shift supply left, tending to raise prices; producer subsidies shift supply right. The final incidence on buyers and sellers depends on elasticities.</li>
+<li><strong>Limits of the model:</strong> Giffen and Veblen goods, expectations and imperfect information show that the law of demand rests on the <em>ceteris paribus</em> assumption.</li>
+</ul>
+</section>
+
+<section id="data-trends">
+<h2>Data and Trends to Remember</h2>
+<p><strong>No official or time-sensitive statistic is used in today's notes.</strong> All numbers are hypothetical teaching schedules, so no reference period, base year or official source applies. Numbers to remember from the class examples:</p>
+<ul>
+<li>PPC: food 100, 90, 70, 40, 0 against clothes 0-4; MOC 10, 20, 30, 40; total opportunity cost of 4 clothes = 100 food; average = 25.</li>
+<li>Demand: Rs 10 = 100 units, Rs 20 = 70, Rs 30 = 20.</li>
+<li>Supply: Rs 10 = 50 units, Rs 20 = 70, Rs 30 = 150.</li>
+<li>Equilibrium: <strong>Rs 20, 70 units</strong>; excess demand 50 at Rs 10; excess supply 130 at Rs 30.</li>
+</ul>
+</section>
+
+<section id="traps">
+<h2>Common Traps / Confusions</h2>
+<div class="table-wrap"><table>
+<thead><tr><th scope="col">Confusion</th><th scope="col">Correct position</th></tr></thead>
+<tbody>
+<tr><td>PPC shows all possible combinations</td><td>It shows <strong>maximum</strong> combinations; inside points are possible but inefficient.</td></tr>
+<tr><td>Unemployment shifts the PPC inward</td><td>It moves the economy to a point <strong>inside</strong> the same PPC.</td></tr>
+<tr><td>Concave vs convex</td><td>Normal PPC is <strong>concave</strong> to the origin (bowed out) because MOC increases.</td></tr>
+<tr><td>"Increase in demand" when price falls</td><td>A price fall causes <strong>expansion of quantity demanded</strong>; "increase in demand" means a shift.</td></tr>
+<tr><td>Complimentary vs complementary</td><td><strong>Complementary</strong> goods are used together; "complimentary" means free.</td></tr>
+<tr><td>Inferior means poor quality</td><td>Inferior means demand falls as income rises.</td></tr>
+<tr><td>All inferior goods are Giffen goods</td><td>All Giffen goods are inferior; not vice versa.</td></tr>
+<tr><td>Every luxury is a Veblen good</td><td>Only where the high price itself is the attraction.</td></tr>
+<tr><td>Necessities violate the law of demand</td><td>They have <strong>inelastic</strong> demand; quantity still does not rise with price.</td></tr>
+<tr><td>Supply = stock</td><td>Supply is the part of stock offered for sale at a given price.</td></tr>
+<tr><td>A tax shifts the supply curve right</td><td>A per-unit tax shifts supply <strong>left</strong>; a subsidy shifts it right.</td></tr>
+</tbody></table></div>
+</section>
+
+<section id="revision">
+<h2>30-Second Revision</h2>
+<p class="lead">PPC = maximum output combinations; slope = MOC; concave (rising MOC), straight (constant), convex (falling). On = efficient, inside = idle resources, outside = unattainable; growth shifts it out, destruction shifts it in. Demand: inverse price-quantity relation; own price moves along, income / related prices / tastes shift the curve; Giffen and Veblen are exceptions. Supply: direct relation; technology, input costs, taxes and subsidies shift it. Equilibrium where Qd = Qs; class example Rs 20 and 70 units.</p>
+</section>
+
+<section id="pyqs">
+<h2>Previous Year Questions (PYQs)</h2>
+<p class="small">Question text follows the <a href="https://www.drishtiias.com/prelims/prelims-subject-wise-compilation-gs-paper-1/prelims-gspaperi-subject-wise-economy">Drishti IAS subject-wise Prelims compilation</a>. The official UPSC papers could not be opened during verification, so the answers were cross-checked against at least two independent coaching compilations (LotusArise, Edukemy, GKToday, Vajiram &amp; Ravi) rather than UPSC's own key: <strong>[Verification Required]</strong> against the official key.</p>
+
+<h3>Q1. UPSC CSE Prelims 2021 (GS Paper I) - Determinants of demand</h3>
+<p>Consider the following statements:<br/>Other things remaining unchanged, market demand for a good might increase if</p>
+<ol><li>Price of its substitute increase</li><li>Price of its complement increase</li><li>The good is an inferior good and income of the consumers increases</li><li>Its price falls</li></ol>
+<p>Which of the above statements are correct?</p>
+<ol class="options"><li>1 and 4 only</li><li>2, 3 and 4 only</li><li>1, 3 and 4 only</li><li>1, 2 and 3 only</li></ol>
+<p class="answer"><strong>Answer: (a) 1 and 4 only.</strong> A dearer substitute shifts demand for the good right (1 correct). A dearer complement shifts it left (2 wrong). For an inferior good, rising income reduces demand (3 wrong). A fall in own price raises quantity demanded along the curve (4 accepted; strictly this is an expansion of quantity demanded, see <a href="#c05">Section 5.2</a>).</p>
+
+<h3>Q2. UPSC CSE Prelims 2018 (GS Paper I) - Opportunity cost</h3>
+<p>If a commodity is provided free to the public by the Government, then</p>
+<ol class="options"><li>the opportunity cost is zero.</li><li>the opportunity cost is ignored.</li><li>the opportunity cost is transferred from the consumers of the product to the tax-paying public.</li><li>the opportunity cost is transferred from the consumers of the product to the Government.</li></ol>
+<p class="answer"><strong>Answer: (c).</strong> Resources used to provide the good still have alternative uses, so opportunity cost is not zero. It is financed by taxpayers rather than paid by consumers. This builds on the <a href="Indian%20Economy%20-%20Class%2009-22-2026.html#opportunity-cost">22 September class on opportunity cost</a> and the PPC idea that every output has a cost in forgone alternatives.</p>
+
+<h3>Q3. UPSC CSE Prelims 2020 (GS Paper I) - Price determination</h3>
+<p>Which of the following factors/policies were affecting the price of rice in India in the recent past?</p>
+<ol><li>Minimum Support Price</li><li>Government's trading</li><li>Government's stockpiling</li><li>Consumer subsidies</li></ol>
+<p>Select the correct answer using the code given below:</p>
+<ol class="options"><li>1, 2 and 4 only</li><li>1, 3 and 4 only</li><li>2 and 3 only</li><li>1, 2, 3 and 4</li></ol>
+<p class="answer"><strong>Answer: (d) 1, 2, 3 and 4.</strong> Market price comes from demand and supply. MSP and procurement/stockpiling reduce the supply available in the open market and put a floor under farm prices. Government sales (for example, open-market sales) add to supply. Consumer subsidies (public distribution) affect effective demand in the open market.</p>
+
+<h3>Q4. UPSC CSE Prelims 2013 (GS Paper I) - Equilibrium applied to the money market</h3>
+<p>Supply of money remaining the same when there is an increase in demand for money, there will be</p>
+<ol class="options"><li>a fall in the level of prices</li><li>an increase in the rate of interest</li><li>a decrease in the rate of interest</li><li>an increase in the level of income and employment</li></ol>
+<p class="answer"><strong>Answer: (b).</strong> Same logic as <a href="#equilibrium">market equilibrium</a>: with supply fixed, a rightward shift in demand raises the equilibrium "price". In the money market that price is the rate of interest. (An application of the idea; the question itself is a macroeconomics question.)</p>
+
+<p class="verification"><strong>[No verified PYQ found for this topic]</strong> Production possibility curve; Giffen and Veblen goods; law of supply and its determinants (technology, input costs, taxes, subsidies); pure microeconomic market equilibrium with excess demand or excess supply. Searches covered Prelims compilations from 2011 onward. UPSC Mains and the Economics optional paper were not searched.</p>
+</section>
+
+<section id="corrections">
+<h2>Corrections Made</h2>
+<ol>
+<li><a href="#c01">PPC definition</a>: maximum (not all) combinations; basic model uses two goods.</li>
+<li><a href="#c02">Direction of shift</a>: outward / inward relative to the origin; shifts need not be parallel.</li>
+<li><a href="#c03">War vs pandemic</a>: temporary idling is a point inside the PPC; only loss of capacity shifts it inward.</li>
+<li><a href="#c04">Demand definition</a>: flow per period; effective demand; "100 id the purchase power" read as quantity demanded.</li>
+<li><a href="#c05">Expansion / contraction terminology</a>: applies to quantity demanded along the curve; increase / decrease means a shift.</li>
+<li><a href="#c06">Complementary goods</a>: spelling and meaning.</li>
+<li><a href="#c07">Giffen goods</a>: defined by income effect outweighing substitution effect, not by poor quality.</li>
+<li><a href="#c08">Veblen goods</a>: not every luxury good.</li>
+<li><a href="#c09">Supply definition</a>: willing and able, per period; supply vs stock.</li>
+<li><a href="#c10">Supply curve</a>: upward sloping (positive slope).</li>
+<li><a href="#c11">Tax and subsidy</a>: incomplete note completed.</li>
+<li><a href="#c12">Market equilibrium</a>: "quality" corrected to quantity.</li>
+</ol>
+</section>
+
+<section id="visuals">
+<h2>Visual Representations Required / Recommended</h2>
+<p><strong>[All necessary visual representations included]</strong></p>
+<ul>
+<li><a href="#fig-ppc">Figure 1</a> - Concave PPC for the food-clothes schedule (requested in rough notes).</li>
+<li><a href="#fig-concave">Figures 2a</a>, <a href="#fig-straight">2b</a>, <a href="#fig-convex">2c</a> - Concave, straight-line and convex PPCs with examples (requested).</li>
+<li><a href="#fig-ppc-shift">Figure 3</a> - Outward and inward PPC shifts.</li>
+<li><a href="#fig-demand">Figure 4</a> - Demand curve for the class schedule (requested).</li>
+<li><a href="#fig-demand-move">Figures 5a</a>, <a href="#fig-demand-shift">5b</a> - Movement along vs shift of demand.</li>
+<li><a href="#fig-supply">Figure 6</a> - Supply curve for the class schedule.</li>
+<li><a href="#fig-supply-move">Figures 7a</a>, <a href="#fig-supply-shift">7b</a> - Movement along vs shift of supply (tax / subsidy).</li>
+<li><a href="#fig-equilibrium">Figure 8</a> - Market equilibrium with excess demand and excess supply (requested).</li>
+</ul>
+</section>
+
+<section id="sources">
+<h2>Open Sources / Further Reading</h2>
+<ul>
+<li><a href="https://ncert.nic.in/textbook/pdf/leec101.pdf">NCERT, Introductory Microeconomics (Class XII), Chapter 1: Introduction - central problems, PPC, opportunity cost</a></li>
+<li><a href="https://ncert.nic.in/textbook/pdf/leec102.pdf">NCERT, Introductory Microeconomics, Chapter 2: Theory of Consumer Behaviour - demand, normal/inferior goods, substitutes/complements, shifts</a></li>
+<li><a href="https://ncert.nic.in/textbook/pdf/leec104.pdf">NCERT, Introductory Microeconomics, Chapter 4: The Theory of the Firm under Perfect Competition - supply curve and its determinants, unit tax</a></li>
+<li><a href="https://ncert.nic.in/textbook/pdf/leec105.pdf">NCERT, Introductory Microeconomics, Chapter 5: Market Equilibrium - excess demand/supply and shifts</a></li>
+<li><a href="https://openstax.org/books/principles-economics-3e/pages/2-2-the-production-possibilities-frontier-and-social-choices">OpenStax, Principles of Economics 3e, 2.2: The Production Possibilities Frontier and Social Choices</a></li>
+<li><a href="https://openstax.org/books/principles-economics-3e/pages/3-1-demand-supply-and-equilibrium-in-markets-for-goods-and-services">OpenStax, Principles of Economics 3e, 3.1: Demand, Supply, and Equilibrium in Markets</a></li>
+<li><a href="https://openstax.org/books/principles-economics-3e/pages/3-2-shifts-in-demand-and-supply-for-goods-and-services">OpenStax, Principles of Economics 3e, 3.2: Shifts in Demand and Supply</a></li>
+<li><a href="https://upsc.gov.in/examinations/previous-question-papers">UPSC, Previous Question Papers (official)</a></li>
+<li><a href="https://www.drishtiias.com/prelims/prelims-subject-wise-compilation-gs-paper-1/prelims-gspaperi-subject-wise-economy">Drishti IAS, Prelims GS Paper I subject-wise compilation: Economy (PYQ text)</a></li>
+<li><a href="https://edukemy.com/blog/upsc-prelims-2021-question-54/">Edukemy, UPSC Prelims 2021 Question 54: determinants of demand (answer cross-check)</a></li>
+<li><a href="https://www.gktoday.in/question/if-a-commodity-is-provided-free-to-the-public-by-the-government-then-912189">GKToday, UPSC Prelims 2018: free commodity and opportunity cost (answer cross-check)</a></li>
+<li><a href="https://vajiramandravi.com/upsc-exam/which-of-the-following-factors-policies-were-affecting-the-price-of-rice-in-india-in-the-recent-past/">Vajiram &amp; Ravi, UPSC Prelims 2020: factors affecting the price of rice (answer cross-check)</a></li>
+<li><a href="https://lotusarise.com/qna/upsc/q-supply-of-money-remaining-the-same-when-there-is-an-increase-in-demand-for-money-there-will-be">LotusArise, UPSC Prelims 2013: demand for money and the rate of interest (answer cross-check)</a></li>
+</ul>
+</section>
+
+</main>
+</body>
+</html>
