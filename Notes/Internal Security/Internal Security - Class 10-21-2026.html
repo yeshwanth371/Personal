@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Internal Security - Class Notes | 21 October 2026</title>
+<style>
+  * { box-sizing: border-box; }
+  body { font-family: Calibri, sans-serif; font-size: 11pt; line-height: 1.6; max-width: 900px; margin: 20px auto; padding: 0 20px; color: #202124; }
+  h1 { font-size: 20pt; color: #1a1a1a; border-bottom: 2px solid #333; padding-bottom: 4px; margin-top: 30px; }
+  h2 { font-size: 16pt; color: #2b2b2b; margin-top: 28px; border-bottom: 1px solid #ddd; padding-bottom: 3px; }
+  h3 { font-size: 13pt; color: #3a3a3a; margin-top: 18px; }
+  h4 { font-size: 11.5pt; color: #3a3a3a; margin: 14px 0 4px; }
+  p { margin: 8px 0; }
+  ul, ol { margin: 6px 0; padding-left: 28px; }
+  li { margin: 4px 0; }
+  a { color: #005ea6; overflow-wrap: anywhere; }
+  table { border-collapse: collapse; width: 100%; margin: 10px 0; }
+  caption { text-align: left; font-weight: bold; margin-bottom: 6px; }
+  th, td { border: 1px solid #999; padding: 6px 10px; text-align: left; vertical-align: top; overflow-wrap: break-word; }
+  th { background: #f0f0f0; }
+  .table-wrap { overflow-x: auto; }
+  .note, .exam, .verification { background: #fff8e1; border-left: 3px solid #f5a623; padding: 8px 12px; margin: 10px 0; }
+  .correction { background: #fff3e0; border-left: 3px solid #ef6c00; padding: 8px 12px; margin: 10px 0; }
+  .additional, .lead { background: #e8f5e9; border-left: 3px solid #2e7d32; padding: 8px 12px; margin: 10px 0; }
+  .flow { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 10px; padding: 12px 0; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; }
+  .flow span { text-align: center; max-width: 100%; }
+  .flow .box { border: 1px solid #888; background: #f7f7f7; padding: 6px 10px; border-radius: 4px; flex: 1 1 150px; }
+  figure { margin: 16px 0; padding: 12px; border: 1px solid #bbb; background: #fff; }
+  figure h3 { margin-top: 0; text-align: center; }
+  figcaption { margin-top: 8px; color: #555; font-size: 9.5pt; }
+  .cols3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+  .cols4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+  .tile { border: 1px solid #888; border-radius: 4px; padding: 8px; background: #f5f9fd; font-size: 10.5pt; }
+  .tile.p1 { background: #e8f5e9; border-color: #2e7d32; }
+  .tile.p2 { background: #f5f9fd; border-color: #0078d4; }
+  .tile.p3 { background: #fff3e0; border-color: #ef6c00; }
+  .small { color: #555; font-size: 9.5pt; }
+  .answer { margin: 10px 0; padding: 6px 12px; border-left: 3px solid #0078d4; background: #f5f9fd; }
+  @media (max-width: 650px) {
+    body { padding: 0 12px; }
+    .cols3, .cols4 { grid-template-columns: 1fr; }
+    .table-wrap table { min-width: 540px; }
+  }
+  @media print {
+    @page { size: A4; margin: 14mm; }
+    body { max-width: none; margin: 0; padding: 0; }
+    h1, h2, h3, h4 { break-after: avoid; }
+    figure, tr, .answer, .tile { break-inside: avoid; }
+    thead { display: table-header-group; }
+    .table-wrap { overflow: visible; }
+    .table-wrap table { min-width: 0; }
+    a { color: inherit; text-decoration: none; }
+    p, li { orphans: 3; widows: 3; }
+  }
+</style>
+</head>
+<body>
+<main>
+<header>
+<h1>Internal Security - Class Notes | 21 October 2026</h1>
+<p><strong>Topics:</strong> North-East India, continued - <strong>Manipur</strong> (constitutional history, ILP and Sixth Schedule confusion, demography, the ethnic conflict since May 2023 and its causes, President's Rule, the Suspension of Operations pact, Naga-Kuki tensions of 2026) and a <strong>critical analysis of AFSPA</strong> (provisions, necessity, criticism, committees, Supreme Court judgments, Manipur status), followed by <strong>government initiatives</strong> for the North-East (connectivity, cultural integration, political development).</p>
+<p class="small">Notes for the class of <time datetime="2026-10-21">21 October 2026</time>, prepared on 21 October 2026. This note <strong>continues the North-East topic</strong> of <a href="Internal%20Security%20-%20Class%2010-19-2026.html">the 19 October note</a>, which did not cover Manipur and which already holds the Nagaland-linked AFSPA history (Section 2 and the Oting case study). Earlier daily notes were not edited.</p>
+<p class="note"><strong>[Correction]</strong> marks a substantive repair to the rough notes. <strong>[Additional]</strong> marks supporting facts added for exam value. <strong>[Verification Required]</strong> marks a point that could not be confirmed from an official source. <strong>Verification limit:</strong> official sources (MHA notifications, India Code, Supreme Court judgments, Parliament answers) were <strong>not opened as text</strong>. Facts were cross-checked through web-search summaries that cite news reports and explainers. Everything dated 2025-2026 rests on <strong>news reports only</strong> and may change; figures differ between sources and are attributed. Manipur is an active, sensitive situation: claims of blame are attributed, not asserted, and no community is treated as collectively responsible.</p>
+</header>
+
+<section id="overview">
+<h2>1. Manipur at a Glance</h2>
+<p class="lead">Manipur's conflict is <strong>ethnic and territorial in character, layered on drugs, land, migration and arms</strong> - it is not a classic secessionist insurgency alone. Since 3 May 2023 it has moved through three phases: <strong>Meitei vs Kuki-Zo</strong> (2023-25), <strong>central rule and a security-reset</strong> (Feb 2025 - Feb 2026), and a new <strong>Naga vs Kuki-Zo</strong> fault line (from Feb 2026).</p>
+<div class="table-wrap"><table id="manipur-snapshot">
+<caption>Manipur quick profile (from class notes, with corrections)</caption>
+<thead><tr><th scope="col">Item</th><th scope="col">Position</th></tr></thead>
+<tbody>
+<tr><td>Political status</td><td>Princely state with its own constitution (1947) &#8594; merged with India (1949) &#8594; full State (1972)</td></tr>
+<tr><td>Language</td><td>Manipuri (Meiteilon) - added to the Eighth Schedule by the 71st Amendment, 1992</td></tr>
+<tr><td>Special regimes</td><td><strong>Inner Line Permit</strong> (extended Dec 2019); <strong>Article 371C</strong> (Hill Areas Committee). Manipur is <strong>not</strong> a Sixth Schedule State (C2)</td></tr>
+<tr><td>Main communities</td><td><strong>Meitei</strong> (valley, mostly non-ST), <strong>Naga</strong> and <strong>Kuki-Zo</strong> (hills, Scheduled Tribes)</td></tr>
+<tr><td>Core conflict (2023)</td><td>Meitei vs Kuki-Zo: ST demand, land, identity, drugs, forest eviction, migration</td></tr>
+<tr><td>New conflict (2026)</td><td>Naga vs Kuki-Zo: territorial claims, administrative demands, blockades</td></tr>
+<tr><td>Security law</td><td>AFSPA in force in most of the State (Imphal valley police stations excluded; number reported as 13 or 19 - C10)</td></tr>
+</tbody></table></div>
+
+<h3>1.1 Timeline</h3>
+<figure id="fig-manipur-timeline">
+<h3>Figure 1. Manipur: from monarchy to the 2026 Naga-Kuki fault line</h3>
+<div class="flow">
+<span class="box"><strong>1947</strong><br/>Manipur State Constitution Act (constitutional monarchy)</span><span>&#8594;</span>
+<span class="box"><strong>1949</strong><br/>Merger with Indian Union (Part C State)</span><span>&#8594;</span>
+<span class="box"><strong>1956 / 1972</strong><br/>Union Territory; full State from 21 Jan 1972</span><span>&#8594;</span>
+<span class="box"><strong>1992</strong><br/>Manipuri in Eighth Schedule (71st Amendment)</span><span>&#8594;</span>
+<span class="box"><strong>2008</strong><br/>Suspension of Operations (SoO) with Kuki groups</span><span>&#8594;</span>
+<span class="box"><strong>Dec 2019</strong><br/>ILP extended to Manipur</span><span>&#8594;</span>
+<span class="box"><strong>3 May 2023</strong><br/>Ethnic violence begins</span><span>&#8594;</span>
+<span class="box"><strong>13 Feb 2025</strong><br/>President's Rule</span><span>&#8594;</span>
+<span class="box"><strong>4 Sep 2025</strong><br/>SoO revised</span><span>&#8594;</span>
+<span class="box"><strong>4 Feb 2026</strong><br/>President's Rule revoked; new government</span><span>&#8594;</span>
+<span class="box"><strong>Feb 2026 onward</strong><br/>Naga-Kuki tensions, blockades</span>
+</div>
+<figcaption>Dates compiled from encyclopaedic and news summaries (not official documents). Not to scale. Sources in the final section.</figcaption>
+</figure>
+<p class="correction" id="c01"><strong>[Correction]</strong> The rough notes list "1947 - Constitutional monarchy; 1949 - Indian Union; 1972 - Manipur; 1992 - Manipuri (8th Schedule - 71 CAA 1992)". Clarified: (1) in <strong>1947</strong> the Maharaja's rule was converted into a constitutional monarchy under the <strong>Manipur State Constitution Act, 1947</strong>, with an elected assembly (first elections 1948) <strong>[Additional]</strong>; (2) the <strong>Merger Agreement</strong> was signed on 21 September 1949 and took effect on 15 October 1949; Manipur was administered as a <strong>Part C State</strong>, then a <strong>Union Territory (1956)</strong>, and became a full <strong>State on 21 January 1972</strong> under the North-Eastern Areas (Reorganisation) Act, 1971 <strong>[Additional; Verification Required: exact dates]</strong>; (3) "71 CAA" means the <strong>Constitution (71st Amendment) Act, 1992</strong> - not the Citizenship Amendment Act; it added <strong>Manipuri, Konkani and Nepali</strong> to the Eighth Schedule <strong>[Additional]</strong>.</p>
+</section>
+
+<section id="constitution">
+<h2>2. Special Regimes: ILP, Sixth Schedule and Article 371C</h2>
+<ul>
+<li><strong>Inner Line Permit (ILP):</strong> a travel permit regime for <strong>Indian citizens from outside</strong> the protected State, created under the <strong>Bengal Eastern Frontier Regulation, 1873</strong>. It was extended to Manipur by a Presidential order on <strong>11 December 2019</strong> (Adaptation of Laws (Amendment) Order, 2019), after a long demand to protect indigenous people from in-migration. It now covers <strong>Arunachal Pradesh, Nagaland, Mizoram and Manipur</strong>.</li>
+<li><strong>Sixth Schedule (Articles 244(2), 275(1)):</strong> autonomous district and regional councils for tribal areas of <strong>Assam, Meghalaya, Tripura and Mizoram</strong> only.</li>
+<li><strong>Manipur's hills:</strong> governed through <strong>Article 371C</strong> (27th Amendment, 1971): a <strong>Hill Areas Committee</strong> of the legislators from the hill districts, with the Governor having a special responsibility for its working. Six hill <strong>autonomous district councils</strong> exist under the <strong>Manipur (Hill Areas) District Councils Act, 1971</strong>, which are weaker than Sixth Schedule councils; hill groups have long demanded stronger autonomy <strong>[Additional; Verification Required: number and powers]</strong>.</li>
+</ul>
+<p class="correction" id="c02"><strong>[Correction]</strong> The rough notes say "2020 - Inner line permit" and "For Inner line permit and 6th schedule states - Arunachal Pradesh, Nagaland, Mizoram, Manipur". Corrected: the ILP order was issued in <strong>December 2019</strong> (the regime became operational in Manipur from about 1 January 2020 <strong>[Verification Required]</strong>). The four-State list is correct for <strong>ILP only</strong>. The <strong>Sixth Schedule</strong> states are <strong>Assam, Meghalaya, Tripura and Mizoram</strong>; <strong>Manipur and Nagaland are not Sixth Schedule states</strong> (Manipur: Article 371C; Nagaland: Article 371A). Mizoram is the only State with <em>both</em>. Also: ILP is a <strong>permit</strong>, not a "permission to enter the area" for local residents, and it applies to Indian citizens (foreigners need separate permits).</p>
+</section>
+
+<section id="demography">
+<h2>3. Demography and Geography</h2>
+<div class="table-wrap"><table id="demography-table">
+<caption>Communities of Manipur (Census 2011 unless stated; approximate)</caption>
+<thead><tr><th scope="col">Community</th><th scope="col">Share of population</th><th scope="col">Area and status</th><th scope="col">Faith (generally)</th></tr></thead>
+<tbody>
+<tr><td><strong>Meitei</strong></td><td>about 53% (class notes: 65%; see C3)</td><td>Imphal valley (about 10% of the State's area); mostly <strong>not</strong> Scheduled Tribe</td><td>Hinduism (Vaishnavism) and the indigenous <strong>Sanamahi</strong> faith</td></tr>
+<tr><td><strong>Naga</strong> tribes</td><td>about 18-24% (class notes: 18%; sources vary)</td><td>Hills; <strong>ST</strong></td><td>Mostly Christianity</td></tr>
+<tr><td><strong>Kuki-Zo</strong> tribes</td><td>about 15-16% (class notes: 15%; sources vary)</td><td>Hills; <strong>ST</strong></td><td>Mostly Christianity</td></tr>
+<tr><td>All Scheduled Tribes</td><td>about 41%</td><td>Hill districts (about 90% of the area)</td><td>-</td></tr>
+</tbody></table></div>
+<p class="correction" id="c03"><strong>[Correction]</strong> The rough notes give the Meitei share as "approximately 65%". The <strong>2011 Census</strong> figure usually cited is <strong>about 53%</strong> (Meiteis are concentrated in the valley, which is about 10% of the State's <em>area</em>; the notes' "about 10% extent" refers to area, not population). Naga and Kuki-Zo percentages vary by source and classification (Census counts individual tribes); retain 18% and 15% only as approximate <strong>[Verification Required]</strong>. The notes' "generally Christianity" and "Hinduism" are tendencies, not absolutes: Meiteis also follow Sanamahism, and <strong>Meitei Pangals (Muslims)</strong> are about 8% of the State <strong>[Additional]</strong>.</p>
+<p class="verification"><strong>[Visual Representation Recommended: schematic map (not to scale) of the Imphal valley and hill districts (Naga-majority north and east; Kuki-Zo-majority south and west) with the National Highways NH-2 and NH-37, to show why highway blockades isolate communities; to be drawn from an authoritative public map, not invented here because district boundaries are politically sensitive]</strong></p>
+</section>
+
+<section id="conflict-2023">
+<h2>4. The Ethnic Conflict Since May 2023</h2>
+
+<h3>4.1 The Trigger</h3>
+<ul>
+<li>On <strong>27 March 2023</strong> the <strong>Manipur High Court</strong> directed the State to consider the Meitei demand for <strong>Scheduled Tribe</strong> status "expeditiously, preferably within four weeks", and to send a recommendation to the Union.</li>
+<li>A <strong>Tribal Solidarity March</strong> in Churachandpur on <strong>3 May 2023</strong> opposing the order was followed by clashes, which spread across the State <strong>[Additional]</strong>.</li>
+<li>In <strong>May 2023</strong> the <strong>Supreme Court</strong> termed the High Court's direction wrong because only <strong>Parliament</strong> can modify the ST list (Articles 341 and 342; <em>State of Maharashtra v. Milind</em>, 2000). In <strong>February 2024</strong> the High Court <strong>deleted paragraph 17(iii)</strong> of its March 2023 order.</li>
+</ul>
+<p class="correction" id="c04"><strong>[Correction]</strong> The notes say the High Court "directed the state for having the provisions for identifying giving ST status". More exactly, the High Court asked the State to <em>consider</em> and <em>recommend</em> Meitei inclusion; the actual power of inclusion lies with <strong>Parliament through a law amending the Constitution (Scheduled Tribes) Order</strong>, and the High Court itself withdrew the direction in <strong>February 2024</strong>. The ST demand therefore remains a <em>political</em>, not a judicial, question. It was the <strong>trigger</strong>, not the only cause (Section 4.2).</p>
+
+<h3>4.2 The Five Causes in the Notes (with Analysis)</h3>
+<ol>
+<li><strong>ST status:</strong> Meiteis demand ST status to protect their identity, language and land against in-migration. <strong>Nagas and Kuki-Zo</strong> oppose it, citing the <strong>Lokur Committee (1965)</strong> and <strong>Bhuria Commission</strong> criteria. These criteria (indications of primitive traits, distinctive culture, geographical isolation, shyness of contact with the community at large, and backwardness) are meant for <strong>marginalised and isolated communities</strong>. Tribal groups also fear that a numerically and politically dominant community would compete for ST-reserved jobs, seats and land.</li>
+<li><strong>Land:</strong> tribal land in the hills cannot be transferred to non-tribals (protection under the Manipur Land Revenue and Land Reforms Act, 1960 <strong>[Verification Required: section]</strong>), while tribals can buy land anywhere, including the valley. Meiteis, with about 10% of the area, see this as <strong>asymmetrical</strong>; tribals see it as a protective, constitutional safeguard.</li>
+<li><strong>Language:</strong> <strong>Manipuri (Meiteilon)</strong> is the State's official language and lingua franca but tribal communities have their own languages (Tangkhul, Thadou, Paite and others) and find it hard to identify with a Meitei-language identity.</li>
+<li><strong>Faith and identity:</strong> differences between the largely Hindu/Sanamahi Meitei and the largely Christian hill tribes add to perceptions of separateness. This is an <em>aggravating</em> factor, not a root cause; religion is not the same as communalism.</li>
+<li><strong>Drugs and organised crime:</strong> the notes argue that the conflict began soon after the State's <strong>crackdown on drug production (from 2018's "War on Drugs", intensified with poppy destruction and forest evictions in early 2023)</strong>, so organised criminals are fuelling it. <strong>Analytical interpretation, not established fact</strong>: Manipur lies near the <strong>Golden Triangle</strong>, poppy cultivation and drug trafficking are real problems, but blame for the violence is disputed by all sides and no court finding attributes the conflict to drug networks.</li>
+</ol>
+<p class="correction" id="c05"><strong>[Correction]</strong> The notes cite the "lokur committee and Bhuria commission" without detail. The <strong>Lokur Committee (1965)</strong> was the Advisory Committee on the Revision of the SC/ST Lists; its five indicators are the standard ST test in practice. The <strong>Bhuria Commission</strong> is the Commission on Scheduled Areas and Scheduled Tribes (2002-04) <strong>[Verification Required: which Bhuria body and what it said on Meitei status]</strong>. The notes' phrase "marginalised and isolated" summarises the indicators; it is not a statutory test. Meitei groups argue that the community lost its tribal identity after the 1949 merger <strong>[Verification Required]</strong>.</p>
+<p class="correction" id="c07"><strong>[Correction]</strong> "Manipuri is actually the language of the Meitei community" is accurate (Meiteilon or Meeteilon) but incomplete: it is the State's official language and lingua franca, and its Eighth Schedule inclusion in 1992 followed a long Meitei movement. Difficulty in associating with it is a <em>perception</em> reported by hill groups, which is why a three-language policy for schools and a protection of tribal languages are policy issues, not a legal defect.</p>
+<p class="correction" id="c06"><strong>[Correction]</strong> Note 5 in the rough notes states "this cannot be merely a coincidence" and gives organised criminals a "direct role". Retained as an <strong>argument</strong>, not as proven. Timing alone is not causation; a balanced answer should call drugs and forest-eviction policy one <strong>contributing</strong> factor, alongside the ST demand, land, identity, a weak political settlement of the hills, and arms looted from police armouries in 2023 <strong>[Additional; Verification Required: number of weapons looted]</strong>.</p>
+
+<h3>4.3 Cause-Impact-Response Chain</h3>
+<figure id="fig-chain">
+<h3>Figure 2. Manipur conflict: drivers, impacts and responses</h3>
+<div class="cols3">
+<div class="tile p3"><strong>Drivers</strong><br/>ST demand and HC order (trigger); land asymmetry; language and faith differences; drug economy and forest-eviction drives; porous Myanmar border and refugee inflow after 2021; competing homeland and administrative demands</div>
+<div class="tile p2"><strong>Impacts</strong><br/>Deaths and missing persons; internal displacement; geographic separation of valley and hills; blockades of national highways; looted arms; loss of trust in State police; erosion of livelihoods and education</div>
+<div class="tile p1"><strong>Responses</strong><br/>Central forces and Unified Command; President's Rule (Feb 2025 - Feb 2026); revised SoO (Sep 2025); fencing and end of free movement with Myanmar; Supreme Court monitoring (relief, highways); political outreach and representative government</div>
+</div>
+<figcaption>Schematic summary prepared from the class notes and the sources in the last section; not an official classification.</figcaption>
+</figure>
+
+<h3>4.4 Impact Figures (reported)</h3>
+<div class="table-wrap"><table id="impact-figures">
+<caption>Reported conflict figures, May 2023 onwards (news reports; official breakdowns not opened)</caption>
+<thead><tr><th scope="col">Indicator</th><th scope="col">Figure</th><th scope="col">Reference</th></tr></thead>
+<tbody>
+<tr><td>Killed</td><td>about 306 (and 49 missing)</td><td>Reported as presented to the Manipur Assembly, up to 31 Aug 2026; State-wide, all ethnicities</td></tr>
+<tr><td>Displaced</td><td>about 58,800-60,000 (official); higher estimates exist</td><td>As of 30 Mar 2026; State government data reported by news</td></tr>
+<tr><td>Conflict-related deaths in the 2026 Naga-Kuki phase</td><td>about 84 (73 of them Naga and Kuki)</td><td>Feb to 11 Oct 2026; one news compilation; <strong>[Verification Required]</strong></td></tr>
+</tbody></table></div>
+<p class="small">All figures are counts of people killed or displaced, not of convictions or established culpability. Different sources count missing persons, camp deaths and ethnicity differently.</p>
+</section>
+
+<section id="response">
+<h2>5. Government Response and Peace Process</h2>
+<h3>5.1 Constitutional and Executive Measures</h3>
+<ul>
+<li><strong>Article 355</strong> gives the Union the duty to protect every State against internal disturbance; public order is a State subject (Entry 1, List II), so the Centre normally acts <em>in aid of</em> the State.</li>
+<li><strong>President's Rule (Article 356)</strong> was imposed on <strong>13 February 2025</strong> after the Chief Minister's resignation, with the Assembly kept in suspended animation. It was <strong>revoked on 4 February 2026</strong> and a new government was sworn in under Chief Minister <strong>Yumnam Khemchand Singh</strong>, with Kuki and Naga Deputy Chief Ministers (news reports) <strong>[Verification Required]</strong>. Under Article 356(4), approval by Parliament is needed every six months and the total period is capped at one year unless the conditions in Article 356(5) are met <strong>[Additional]</strong>.</li>
+<li><strong>Security architecture [Additional]:</strong> a Unified Command headed by a Security Adviser (from May 2023), deployment of the Army, Assam Rifles and CAPFs, and a three-member Commission of Inquiry under Justice Ajai Lamba (June 2023) <strong>[Verification Required]</strong>.</li>
+<li><strong>Supreme Court role [Additional]:</strong> relief and rehabilitation oversight (including a committee of former High Court judges headed by Justice Gita Mittal, 2023) and, in 2026, directions on the <strong>reopening of blocked highways</strong>; the Manipur government told the Court on 28 September 2026 that the NH-2 blockade had been removed <strong>[Verification Required]</strong>.</li>
+</ul>
+
+<h3>5.2 Suspension of Operations (SoO)</h3>
+<ul>
+<li><strong>Background:</strong> SoO is a <strong>ceasefire-type pact</strong> signed in <strong>2008</strong> among the Union Government, the Manipur Government and Kuki armed groups grouped under the <strong>Kuki National Organisation (KNO)</strong> and <strong>United People's Front (UPF)</strong> (about 24 groups). Designated camps, weapons storage and a monitoring body (the <strong>Joint Monitoring Group</strong>) are part of it.</li>
+<li><strong>Revised pact (reported 4 September 2025):</strong> (1) camps to be <strong>reduced in number and relocated away from highways, populated areas, and a reasonable distance from the Myanmar and inter-State borders</strong>; (2) <strong>foreign nationals to be removed</strong> from cadre lists; (3) <strong>weapons to be deposited</strong> in nearby CRPF/BSF camps; (4) <strong>stipends only via Aadhaar-linked bank accounts</strong> and only for verified cadres present at inspection; (5) <strong>strict verification</strong> by the JMG; (6) no violence, recruitment, extortion or ties with other armed groups; (7) acceptance of the <strong>Constitution and India's sovereignty</strong>; (8) the pact is reported to run for <strong>one year</strong> and can be reviewed or suspended for violations <strong>[Verification Required: duration, camp numbers and renewal status]</strong>.</li>
+</ul>
+<p class="correction" id="c08"><strong>[Correction]</strong> The notes say "In 2025, the SoO was revised" and describe the signatories loosely. Corrected and clarified: the original pact dates from <strong>2008</strong>; <strong>KNO and UPF are umbrella bodies of about 24 groups</strong>; the notes' four features match the reported revision (monitoring, relocation, financial verification, constitutional loyalty). SoO is <strong>not a peace accord</strong>: a political settlement is a separate, pending track. The Kuki-Zo side reportedly seeks a <strong>Union Territory with a legislature</strong> <strong>[Verification Required]</strong>, which the Meitei and Naga sides and the State's territorial-integrity position oppose.</p>
+<p class="note"><strong>Common confusion:</strong> SoO (Kuki groups, Manipur; JMG monitoring) is different from the <strong>NSCN (IM) ceasefire</strong> (Nagaland; CFMG). Both are <strong>ceasefires</strong>, not settlements. SoO is also not the Free Movement Regime or the Framework Agreement.</p>
+
+<h3>5.3 The Naga-Kuki Tension (2026)</h3>
+<ul>
+<li>Since <strong>February 2026</strong> (a local altercation in the Ukhrul area is reported as the starting point), tensions between <strong>Nagas</strong> and <strong>Kuki-Zo</strong> have produced killings, hostage-taking, village burning and <strong>economic blockades</strong> on national highways in hill districts such as Ukhrul, Kamjong, Kangpokpi and Senapati <strong>[Verification Required: districts and events]</strong>.</li>
+<li><strong>Reasons given in the notes:</strong> competing <strong>territorial claims</strong> in mixed hill areas (Naga homeland claims versus Kuki-Zo "Kukiland"/UT demands); conflicting <strong>political aspirations</strong> (Naga final settlement with NSCN (IM), Kuki-Zo demand for a separate administration); <strong>ethnic identity</strong> questions; and the legacy of the <strong>violent Kuki-Naga clashes of the 1990s</strong>.</li>
+<li><strong>Recent pressures:</strong> displacement, resource and land competition, blockades and demands for <strong>separate administrative arrangements</strong>.</li>
+</ul>
+<p class="correction" id="c09"><strong>[Correction]</strong> The notes say "violent 1990 clashes". The Kuki-Naga clashes are generally dated <strong>1992-1997</strong> (a period of roughly a thousand deaths and hundreds of villages affected, per secondary sources); a single year "1990" is imprecise <strong>[Verification Required: dates and casualty figures]</strong>. The notes' "Feb 2026" start is retained, based on news reports.</p>
+<p class="additional"><strong>[Additional]</strong> <strong>Why it matters for internal security:</strong> the 2026 phase breaks the earlier valley versus hill picture, so a single "Meitei vs tribal" frame no longer explains the State. It links back to <strong>Nagalim</strong> (19 October note, Section 2.3) and to the Naga final settlement: any accord that alters Manipur's territory needs the <strong>consent of the State</strong> (Article 3 requires reference to the State legislature, whose views are not binding).</p>
+</section>
+
+<section id="afspa">
+<h2>6. Critical Analysis of AFSPA</h2>
+<p class="lead">The <strong>Armed Forces (Special Powers) Act, 1958</strong> gives the armed forces extended powers in areas declared <strong>"disturbed"</strong>. It exists because the armed forces, deployed beyond their primary role (external defence), need <strong>legal certainty</strong> against asymmetrical threats; it is criticised because the same certainty can limit <strong>accountability</strong>.</p>
+
+<h3>6.1 Origin and Coverage</h3>
+<ul>
+<li>The Act was first enacted in <strong>1958</strong> for <strong>Assam and Manipur</strong> (the Naga Hills then part of Assam) and extended to the other North-Eastern States by the 1972 amendment. A separate <strong>Armed Forces (Jammu and Kashmir) Special Powers Act, 1990</strong> applies to J&amp;K. A 1983 Act for Punjab and Chandigarh was withdrawn in 1997 <strong>[Additional]</strong>.</li>
+<li><strong>Current coverage (reported):</strong> Nagaland, Assam, most of Manipur (valley police stations excluded) and parts of Arunachal Pradesh (Tirap, Changlang and Longding and some police-station areas). Meghalaya (2018) and Tripura (2015) are fully out. The MHA renews notifications every <strong>six months</strong>; the notification for Manipur was reported on 25 September 2026 for 1 October 2026 to 31 March 2027, excluding the jurisdiction of <strong>13 police stations</strong> in five valley districts, whereas the earlier exclusion was widely reported as <strong>19 police stations</strong> <strong>[Verification Required: current number and list]</strong>.</li>
+</ul>
+<p class="correction" id="c10"><strong>[Correction]</strong> The notes say "1958 - Arunachal Pradesh, Assam, Nagaland, Manipur; 1990 - J&amp;K". Corrected: 1958 is the year of the Act for <strong>Assam and Manipur</strong>, extended to all North-East states in 1972; the four States listed are where it is in force <strong>today</strong> (Arunachal only partly; Manipur excluding valley police stations). The <strong>1990 Act is a separate Act for J&amp;K</strong>. See also C2 of the 19 October note.</p>
+
+<h3>6.2 Key Provisions</h3>
+<div class="table-wrap"><table id="afspa-sections">
+<caption>AFSPA, 1958: important sections (summary; official text not opened)</caption>
+<thead><tr><th scope="col">Section</th><th scope="col">Content</th><th scope="col">Note</th></tr></thead>
+<tbody>
+<tr><td><strong>3</strong></td><td>Declaration of a <strong>disturbed area</strong> by notification of the <strong>Governor of the State/Administrator of the UT</strong> or the <strong>Central Government</strong>, where the situation is so disturbed and dangerous that armed forces are needed in aid of the civil power</td><td>The Act's wording refers to "differences or disputes between members of different religious, racial, language or regional groups or castes or communities" - highly relevant for an ethnic conflict such as Manipur. In practice the MHA also reviews and renews notifications</td></tr>
+<tr><td><strong>4</strong></td><td>Special powers: (a) <strong>use force, even causing death</strong>, against persons breaching orders on assembly of five or more persons or on carrying arms, <strong>after due warning</strong>; (b) <strong>destroy</strong> arms dumps, hideouts and training camps; (c) <strong>arrest without warrant</strong> on reasonable suspicion of a cognizable offence; (d) <strong>enter and search</strong> premises without warrant to arrest, rescue or recover arms; (e) <strong>stop, search and seize</strong> vehicles and vessels</td><td>Powers may be used by officers and non-commissioned ranks specified in the section. Lethal force is conditional on <strong>prohibited acts and due warning</strong></td></tr>
+<tr><td><strong>5</strong> [Additional]</td><td>Persons arrested must be <strong>handed over to the nearest police station with the least possible delay</strong>, with a report</td><td>The Act does not authorise prolonged military custody</td></tr>
+<tr><td><strong>6</strong></td><td><strong>Protection</strong>: no prosecution, suit or legal proceeding against persons acting under the Act <strong>without the previous sanction of the Central Government</strong></td><td>A shield against <em>routine</em> litigation, not blanket immunity (6.4)</td></tr>
+</tbody></table></div>
+<p class="correction" id="c11"><strong>[Correction]</strong> (1) The notes say "search / seal any premises without any warrant"; Section 4 empowers <strong>entering and searching</strong> premises for stated purposes and <strong>destroying</strong> hideouts and dumps, not sealing premises generally. (2) "May use force even to an extent which may cause lethal injury" applies only in the situations in Section 4(a) and after due warning. (3) Section 5 (hand over to police) was missing and is added.</p>
+
+<figure id="fig-afspa-flow">
+<h3>Figure 3. AFSPA: declaration, powers and safeguards</h3>
+<div class="flow">
+<span class="box"><strong>Section 3</strong><br/>Area declared disturbed (Governor or Centre)</span><span>&#8594;</span>
+<span class="box"><strong>Review</strong><br/>Renewed about every six months (SC, 1997)</span><span>&#8594;</span>
+<span class="box"><strong>Section 4</strong><br/>Use of force, arrest, search, seizure, destruction of hideouts</span><span>&#8594;</span>
+<span class="box"><strong>Section 5</strong><br/>Hand over arrested persons to police promptly</span><span>&#8594;</span>
+<span class="box"><strong>Section 6</strong><br/>Prosecution only with Central sanction</span>
+</div>
+<figcaption>Schematic of the statutory sequence and the judicial safeguards. Based on secondary summaries; the official Act and judgment texts were not opened.</figcaption>
+</figure>
+
+<h3>6.3 Necessity versus Criticism</h3>
+<div class="table-wrap"><table id="necessity-criticism">
+<caption>Why AFSPA exists and why it is contested</caption>
+<thead><tr><th scope="col">Necessity (case for)</th><th scope="col">Criticism (case against)</th></tr></thead>
+<tbody>
+<tr><td><strong>Asymmetrical threats:</strong> insurgents and armed groups operate among the population, blend in and use terrain and borders, so the armed forces need flexible powers</td><td><strong>Human rights violations:</strong> alleged fake encounters, custodial deaths and sexual violence (for example, the Manorama case, 2004, Manipur)</td></tr>
+<tr><td><strong>Beyond the primary area of responsibility:</strong> internal security is not the armed forces' primary role, so they need special powers when deployed in aid of the civil power</td><td><strong>Delegation of State responsibility:</strong> declaring an area disturbed shifts the primary burden from the police to the Army, normalising military presence in civil life</td></tr>
+<tr><td><strong>Protection from legal hurdles:</strong> legal immunity ensures that personnel are <strong>not entangled</strong> in prolonged litigation during operations</td><td><strong>Immunity</strong> under Section 6 is seen as impunity because sanction is rarely granted (see 6.4)</td></tr>
+<tr><td><strong>Life versus liberty trade-off:</strong> with AFSPA, life is protected at the cost of some liberty; without it, liberty exists under a continuous threat to life</td><td><strong>Operational efficiency:</strong> long AFSPA postings affect training and readiness; personnel need re-training to be battle-ready again</td></tr>
+</tbody></table></div>
+<p class="correction" id="c12"><strong>[Correction]</strong> The rough notes say legal immunity is provided "to ensure that the personnels are entangled in the legal hurdles". The intended meaning is that personnel are <strong>not</strong> entangled; the "not" is missing. The line on the "life and liberty" trade-off is retained as one analytical argument, not a legal test.</p>
+
+<h3>6.4 Views of Committees and the Supreme Court</h3>
+<div class="table-wrap"><table id="afspa-committees">
+<caption>Committees and judgments on AFSPA</caption>
+<thead><tr><th scope="col">Body</th><th scope="col">Year</th><th scope="col">Position</th></tr></thead>
+<tbody>
+<tr><td><strong>Justice B.P. Jeevan Reddy Committee</strong></td><td>constituted 2004; report 2005</td><td>Recommended <strong>repeal of AFSPA</strong> and inclusion of necessary provisions in the <strong>UAPA</strong>, to balance human rights and operational freedom</td></tr>
+<tr><td><strong>Justice Santosh Hegde Commission</strong></td><td>2013 (appointed by the Supreme Court)</td><td>Examined six Manipur encounters; reportedly found them not genuine; recommended repeal, calling AFSPA a symbol of oppression <strong>[Verification Required]</strong></td></tr>
+<tr><td><strong>Justice J.S. Verma Committee</strong></td><td>2013</td><td>On criminal-law reform after the 2012 Delhi case; recommended review of AFSPA and that <strong>sexual violence by armed forces personnel be brought under ordinary criminal law</strong></td></tr>
+<tr><td><strong>Second ARC</strong> [Additional]</td><td>2007</td><td>Also recommended repeal (public order report) <strong>[Verification Required]</strong></td></tr>
+<tr><td><strong>Naga People's Movement of Human Rights v. Union of India</strong></td><td>1997</td><td>Upheld AFSPA as <strong>constitutional</strong> but set safeguards: periodic review, "Do's and Don'ts" for forces, no absolute immunity</td></tr>
+<tr><td><strong>Extra Judicial Execution Victim Families Association v. Union of India</strong></td><td>2016</td><td>No <strong>blanket immunity</strong>: allegations of excessive or retaliatory force in grave violations must be investigated and an <strong>FIR can be registered</strong>; the Court also pointed to the use of AFSPA being a temporary measure</td></tr>
+</tbody></table></div>
+<p class="correction" id="c13"><strong>[Correction]</strong> The notes say the 1997 judgment held that "legal immunity is not absolute" and the 2016 judgment that "FIR can be registered". Clarified: registration of an FIR and an <strong>investigation</strong> are permitted in cases of alleged excessive force, but <strong>prosecution</strong> of personnel acting under the Act still requires the Central Government's <strong>Section 6 sanction</strong>. The Reddy Committee was <strong>constituted in 2004</strong> (after the Manorama case) and <strong>reported in 2005</strong>, so "2004" in the notes is the constitution date <strong>[Verification Required]</strong>.</p>
+
+<p class="additional"><strong>[Additional]</strong> <strong>Balanced assessment:</strong> The Court accepted AFSPA's validity (Union entries on armed forces and Article 355) but insisted on <strong>review, accountability and proportionality</strong>. Partial withdrawal (Tripura 2015, Meghalaya 2018, valley areas of Manipur and parts of Assam and Nagaland from 2022) is the official route of "calibrated dilution" when violence falls; the resurgence of violence in Manipur since 2023 shows that withdrawal can be reversed in notified areas. Links to the Oting case study (19 October note) show the consequences of weak accountability.</p>
+</section>
+
+<section id="initiatives">
+<h2>7. Government Initiatives for the North-East</h2>
+<p class="lead">Internal security in the North-East is addressed through <strong>three tracks</strong> beyond force: <strong>connectivity</strong> (physical integration), <strong>cultural assimilation</strong> (emotional integration) and <strong>political development</strong> (institutional accommodation).</p>
+<div class="table-wrap"><table id="initiatives-table">
+<caption>Initiatives (corrected names and context)</caption>
+<thead><tr><th scope="col">Track</th><th scope="col">Initiative</th><th scope="col">Key point</th></tr></thead>
+<tbody>
+<tr><td rowspan="3"><strong>1. Connectivity</strong></td><td><strong>Air:</strong> <strong>UDAN</strong> (Ude Desh ka Aam Nagrik) <strong>Regional Connectivity Scheme</strong></td><td>Subsidised regional flights; North-East airports and helipads receive priority</td></tr>
+<tr><td><strong>PM Gati Shakti</strong> National Master Plan (2021)</td><td>Integrated planning of roads, rail, ports, waterways and airports</td></tr>
+<tr><td><strong>International:</strong> <strong>Kaladan Multi-Modal Transit Transport Project</strong> (Kolkata - Sittwe - Paletwa - Mizoram); India-Myanmar-Thailand Trilateral Highway</td><td>Reduces dependence on the Siliguri Corridor and supports Act East <strong>[Additional]</strong></td></tr>
+<tr><td rowspan="3"><strong>2. Cultural assimilation</strong></td><td><strong>Ek Bharat Shreshtha Bharat</strong> (2015)</td><td>Pairing of States and Union Territories for cultural exchange</td></tr>
+<tr><td><strong>Three-language formula</strong> (NEP 2020)</td><td>Language flexibility; States choose the three languages, with no language imposed <strong>[Additional]</strong></td></tr>
+<tr><td><strong>Festivals:</strong> Hornbill Festival (Nagaland, December), food and art fairs</td><td>Showcase of local culture and tourism</td></tr>
+<tr><td rowspan="5"><strong>3. Political development</strong></td><td><strong>Ministry of DoNER</strong> (Department 2001, Ministry 2004)</td><td>Nodal ministry for North-East development <strong>[Additional; Verification Required: year]</strong></td></tr>
+<tr><td><strong>Sixth Schedule</strong></td><td>Autonomous councils (Assam, Meghalaya, Tripura, Mizoram) - <strong>not Manipur</strong></td></tr>
+<tr><td><strong>Inner Line Permit</strong></td><td>Protects indigenous populations from in-migration (Section 2)</td></tr>
+<tr><td><strong>Articles 371A, 371B, 371C</strong></td><td>Nagaland, Assam and Manipur special provisions; 371C covers Manipur's Hill Areas Committee</td></tr>
+<tr><td><strong>PM-DevINE</strong> (Prime Minister's Development Initiative for North East Region) and the <strong>North Eastern Council (NEC)</strong></td><td>PM-DevINE: centrally funded infrastructure and social projects (announced 2022); NEC: statutory regional planning body under the NEC Act, 1971 <strong>[Verification Required: funding and chair]</strong></td></tr>
+</tbody></table></div>
+<p class="correction" id="c14"><strong>[Correction]</strong> Spelling and naming in the rough notes: "xaladan mulyi corridor" &#8594; <strong>Kaladan Multi-Modal Transit Transport Project</strong>; "Ek Bharat Shrestha Bharat" &#8594; <strong>Ek Bharat Shreshtha Bharat</strong>; "Horn bill" &#8594; <strong>Hornbill</strong> Festival; "PM-Devine" &#8594; <strong>PM-DevINE</strong>; "DONER" &#8594; <strong>DoNER</strong>. The Kaladan project is a transit corridor to Mizoram and is <strong>not</strong> the Free Movement Regime or a Manipur route.</p>
+<p class="exam"><strong>Exam point:</strong> development and connectivity are <strong>complements, not substitutes</strong>, for political settlement and accountable policing. Peace dividends are fragile where land, identity and political representation remain unresolved (Manipur 2023, Naga-Kuki 2026).</p>
+</section>
+
+<section id="prelims">
+<h2>Key Facts for Prelims</h2>
+<ul>
+<li>Manipur: State Constitution Act 1947; merger 1949; State 1972; <strong>Manipuri in Eighth Schedule by 71st Amendment (1992)</strong> along with Konkani and Nepali.</li>
+<li>ILP under the <strong>Bengal Eastern Frontier Regulation, 1873</strong>; Manipur added by the Presidential order of <strong>Dec 2019</strong>; ILP States: <strong>Arunachal, Nagaland, Mizoram, Manipur</strong>.</li>
+<li>Sixth Schedule: <strong>Assam, Meghalaya, Tripura, Mizoram</strong>. <strong>Article 371C</strong> (Manipur Hill Areas Committee) and <strong>371A</strong> (Nagaland).</li>
+<li>ST list changes need an <strong>Act of Parliament</strong> (Articles 341 and 342); courts cannot add communities (<em>State of Maharashtra v. Milind</em>, 2000).</li>
+<li>High Court order <strong>27 March 2023</strong>; violence from <strong>3 May 2023</strong>; HC deleted the para in <strong>Feb 2024</strong>.</li>
+<li>President's Rule: <strong>13 Feb 2025 - 4 Feb 2026</strong>.</li>
+<li>SoO: 2008; <strong>KNO and UPF</strong> (about 24 groups); revised <strong>Sep 2025</strong>; monitored by the <strong>JMG</strong>.</li>
+<li>AFSPA: 1958 Act (Assam and Manipur; North-East by 1972); <strong>J&amp;K Act 1990</strong>; Section 3 (disturbed area), 4 (powers), 5 (hand over to police), 6 (sanction).</li>
+<li>Committees: <strong>Reddy (repeal, UAPA), Santosh Hegde, Verma</strong>; Cases: <strong>Naga People's Movement of Human Rights (1997)</strong> and <strong>EEVFAM (2016)</strong>.</li>
+</ul>
+</section>
+
+<section id="mains">
+<h2>Mains Points</h2>
+<ul>
+<li><strong>Manipur is a governance and trust problem before a law-and-order problem:</strong> the High Court order was only the trigger; unresolved land, identity, hill-autonomy and representation issues, and loss of trust in the State police, sustained the violence.</li>
+<li><strong>The conflict has changed shape:</strong> valley versus hills (2023) to Naga versus Kuki-Zo (2026). Peace needs <strong>all</strong> communities at the table; talks with one group alone create new fault lines.</li>
+<li><strong>SoO shows the limits of ceasefires:</strong> a ceasefire without a political settlement and without verification invites grievance (camp location, foreign cadres, financial flows); the 2025 revisions respond to this but need independent monitoring.</li>
+<li><strong>Federal and constitutional dimensions:</strong> Article 355 versus State autonomy; President's Rule as a stop-gap; the Supreme Court as a monitor of relief and highways; Article 3 and territorial integrity in Naga and Kuki demands.</li>
+<li><strong>AFSPA:</strong> necessary only where armed groups operate and the police cannot cope, but it should be <strong>area-specific, time-bound, reviewed and accountable</strong>; Section 6 sanction should not become a shield; calibrated withdrawal (valley areas) with investigation of past cases builds trust.</li>
+<li><strong>Balanced way forward:</strong> (1) rehabilitation and return of displaced people; (2) police reform, recovery of looted arms and impartial law enforcement; (3) inclusive dialogue with Meitei, Naga, Kuki-Zo and civil society; (4) credible, independent monitoring of SoO; (5) strengthening hill autonomous councils and addressing land safeguards by consent; (6) border management and action against drug networks; (7) restoration of free highway movement with Supreme Court monitoring; (8) development projects (Kaladan, rail, air) as <strong>supplement</strong>, not a substitute.</li>
+</ul>
+</section>
+
+<section id="traps">
+<h2>Common Traps / Confusions</h2>
+<ul>
+<li><strong>ILP is not the Sixth Schedule.</strong> Manipur has ILP and Article 371C, <strong>not</strong> the Sixth Schedule. Mizoram has both.</li>
+<li>The ST list is changed by <strong>Parliament</strong>, not by the High Court or the State; the HC direction was withdrawn in 2024.</li>
+<li>Meitei share is <strong>about 53%</strong> (Census 2011), not 65%.</li>
+<li><strong>71st Amendment 1992</strong> is not the Citizenship Amendment Act; it concerns the Eighth Schedule.</li>
+<li><strong>SoO</strong> (Kuki groups; JMG) is different from the <strong>NSCN (IM) ceasefire</strong> (CFMG) and from the <strong>Framework Agreement</strong>; SoO is not a political settlement.</li>
+<li>AFSPA <strong>1958</strong> is for the North-East; the <strong>1990 Act</strong> is a separate J&amp;K Act; the Section 6 sanction applies to <strong>prosecution</strong>, not to registering an FIR or investigation.</li>
+<li>The Court upheld AFSPA but did <strong>not</strong> grant blanket immunity; "AFSPA means the Army can kill anyone" is wrong - force needs prohibited acts and due warning.</li>
+<li>Drug link to the conflict is an <strong>analytical claim</strong>, not a finding.</li>
+<li>Kaladan is a <strong>Myanmar transit route to Mizoram</strong>, not a free-movement regime.</li>
+</ul>
+</section>
+
+<section id="revision">
+<h2>30-Second Revision</h2>
+<p class="lead"><strong>Manipur:</strong> 1947 monarchy &#8594; 1949 merger &#8594; State 1972 &#8594; Manipuri 8th Schedule 1992 (71st Amendment) &#8594; ILP Dec 2019 (not Sixth Schedule; Art 371C) &#8594; HC order 27 Mar 2023 (deleted Feb 2024) &#8594; violence 3 May 2023 (causes: ST demand, land, language, faith, drugs) &#8594; President's Rule 13 Feb 2025 - 4 Feb 2026 &#8594; SoO 2008, revised Sep 2025 (camps, foreigners, finance, loyalty) &#8594; Naga-Kuki tension from Feb 2026 (territory, aspirations, 1992-97 legacy, blockades; SC action). <strong>AFSPA:</strong> 1958 (Assam, Manipur; NE 1972); J&amp;K 1990; Sec 3 declare, 4 powers (warned force, arrest, search, seize), 5 hand to police, 6 sanction; Reddy 2005 (repeal, UAPA), Hegde 2013, Verma 2013; SC 1997 (valid, not absolute) and 2016 (no blanket immunity; FIR allowed). <strong>Initiatives:</strong> UDAN, Gati Shakti, Kaladan; EBSB, NEP three-language, Hornbill; DoNER, Sixth Schedule, ILP, Art 371A/B/C, PM-DevINE, NEC.</p>
+</section>
+
+<section id="pyqs">
+<h2>Previous Year Questions (PYQs)</h2>
+<p class="small">The official UPSC papers were not opened. Wording is a <strong>paraphrase</strong> from secondary compilations. <strong>[Verification Required]</strong> check exact wording, marks and word limits on the UPSC archive.</p>
+
+<h3>Q1. Mains 2017, GS Paper III</h3>
+<p>Paraphrase: the North-East has had insurgency for a long time; analyse the major reasons for the survival of armed insurgency in the region (also used in the 19 October note).</p>
+<p class="answer"><strong>Suggested answer approach [Additional]:</strong> isolation and alienation, identity and homeland claims, migration and land, splinter groups and partial accords, external sanctuaries and arms, drug and extortion economies (Sections 4 and 5; link with the 19 October note). Study guidance, not an official marking scheme.</p>
+
+<h3>Q2. Mains 2025, GS Paper III (15 marks, 250 words, as listed by a compilation)</h3>
+<p>Paraphrase: what are the major challenges to internal security and the peace process in the North-Eastern States, and map the peace accords and agreements of the past decade?</p>
+<p class="answer"><strong>Suggested answer approach [Additional]:</strong> use the Manipur conflict, SoO revision and Naga-Kuki shift (Sections 4-5) with the accords timeline in the 19 October note; end with the way forward in Mains Points.</p>
+
+<p class="verification"><strong>[No verified PYQ found for this topic]</strong> for a standalone AFSPA question or a Manipur-specific question in the official UPSC papers. One search summary listed AFSPA questions for 2015, 2017 and 2021, but these could not be traced to an official source and are <strong>not included</strong>. Use the AFSPA material (Section 6) for any generic human-rights-versus-security question.</p>
+<p class="small">Sources: <a href="https://vajiramandravi.com/upsc-exam/upsc-mains-internal-security-pyqs/">Vajiram and Ravi - UPSC Mains Internal Security PYQs (secondary)</a>; <a href="https://www.shankariasparliament.com/mainspyqanalysis/mains-pyqs-gs-iii-2025-q-19-20">Shankar IAS - Mains GS III 2025 Q19-20 (secondary)</a>.</p>
+</section>
+
+<section id="corrections">
+<h2>Corrections Made</h2>
+<ol>
+<li><a href="#c01">C1: 1947 constitution, 1949 merger, 1972 statehood; "71 CAA" is the 71st Constitution Amendment, 1992.</a></li>
+<li><a href="#c02">C2: ILP order Dec 2019 (not 2020); ILP is not the Sixth Schedule; Manipur is not a Sixth Schedule State.</a></li>
+<li><a href="#c03">C3: Meitei share about 53% (not 65%); Naga and Kuki-Zo shares approximate.</a></li>
+<li><a href="#c04">C4: High Court order asked the State to consider ST inclusion; only Parliament can decide; para deleted Feb 2024.</a></li>
+<li><a href="#c05">C5: Lokur Committee (1965) and Bhuria Commission details; the criteria are indicators, not a statutory test.</a></li>
+<li><a href="#c06">C6: The drug-trafficking link is an argument, not a proven cause.</a></li>
+<li><a href="#c07">C7: Manipuri (Meiteilon) is the official language and lingua franca; hill-group difficulty is a perception.</a></li>
+<li><a href="#c08">C8: SoO dates from 2008; KNO and UPF are umbrella bodies; revised Sep 2025; SoO is not a settlement.</a></li>
+<li><a href="#c09">C9: Kuki-Naga clashes are dated 1992-97, not "1990".</a></li>
+<li><a href="#c10">C10: AFSPA 1958 for Assam and Manipur; North-East by 1972; J&amp;K 1990 is a separate Act; Arunachal only partly covered.</a></li>
+<li><a href="#c11">C11: Section 4 powers worded precisely; Section 5 added.</a></li>
+<li><a href="#c12">C12: "entangled" should read "not entangled".</a></li>
+<li><a href="#c13">C13: FIR and investigation allowed, but prosecution needs Section 6 sanction; Reddy Committee 2004/2005.</a></li>
+<li><a href="#c14">C14: Kaladan, Ek Bharat Shreshtha Bharat, Hornbill, PM-DevINE, DoNER spellings.</a></li>
+</ol>
+<p class="additional"><strong>[Additional]</strong> items include the constitutional history, ILP and Article 371C detail, the Tribal Solidarity March and Supreme Court intervention on the ST order, reported impact figures, President's Rule timeline, Unified Command and Commissions, Supreme Court monitoring of relief and highways, AFSPA Sections 3 and 5 details, Second ARC, the Manorama case, calibrated withdrawal and the initiatives table (PM-DevINE, NEC, Trilateral Highway).</p>
+</section>
+
+<section id="sources">
+<h2>Open Sources / Further Reading</h2>
+<p class="small">Official documents (MHA notifications, India Code Act text, Supreme Court judgments) were not opened; the links below are open secondary and news sources used for cross-checking, to be verified against official records. Retrieval date: 21 October 2026.</p>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Armed_Forces_(Special_Powers)_Act">Wikipedia - Armed Forces (Special Powers) Act, 1958 (secondary; coverage and history)</a></li>
+<li><a href="https://www.morungexpress.com/centre-extends-afspa-in-disturbed-areas-of-manipur-nagaland-arunachal-pradesh-by-six-months">Morung Express - Centre extends AFSPA in disturbed areas of Manipur, Nagaland, Arunachal by six months (news)</a></li>
+<li><a href="https://www.livemint.com/news/india/manipur-mha-declares-majority-of-state-as-disturbed-area-under-afspa-for-6-month-from-october-1-what-does-it-mean-11790341459663.html">Mint - Manipur: MHA declares majority of State as disturbed area under AFSPA from 1 October (news)</a></li>
+<li><a href="https://www.thehindu.com/news/national/inner-line-permit-regime-extended-to-manipur/article30275736.ece">The Hindu - Inner Line Permit regime extended to Manipur (Dec 2019, news)</a></li>
+<li><a href="https://www.scconline.com/blog/post/2019/12/11/the-adaptation-of-laws-amendment-order-2019-notified-by-president/">SCC Online - The Adaptation of Laws (Amendment) Order, 2019 notified by the President (Dec 2019)</a></li>
+<li><a href="https://www.tribuneindia.com/news/india/manipur-high-court-deletes-order-on-st-status-to-meitei-community-593502">The Tribune - Manipur High Court deletes order on ST status to Meitei community (Feb 2024, news)</a></li>
+<li><a href="https://www.thehindu.com/news/national/revised-soo-pact-with-kuki-zo-groups-requires-them-to-get-aadhaar-cards/article70013541.ece">The Hindu - Revised SoO pact with Kuki-Zo groups (Sept 2025, news)</a></li>
+<li><a href="https://www.imphaltimes.com/news/soo-agreement-with-kno-upf-extended-with-revised-ground-rules/">Imphal Times - SoO agreement with KNO, UPF extended with revised ground rules (Sept 2025, news)</a></li>
+<li><a href="https://newsonair.gov.in/presidents-rule-revoked-in-manipur/">Akashvani News - President's Rule revoked in Manipur (Feb 2026)</a></li>
+<li><a href="https://www.thehindu.com/news/national/manipur/manipur-government-formation-what-led-to-presidents-rule-in-the-strife-hit-state-the-story-so-far/article70586228.ece">The Hindu - What led to President's Rule in Manipur: the story so far</a></li>
+<li><a href="https://www.ndtv.com/india-news/kuki-naga-clashes-shift-manipur-violence-to-new-hill-districts-12196144">NDTV - Kuki-Naga clashes shift Manipur violence to new hill districts (2026, news)</a></li>
+<li><a href="https://frontline.thehindu.com/the-nation/manipur-naga-kuki-conflict/article71253612.ece">Frontline - Manipur's new ethnic faultline: Nagas, Kukis and blockades (2026)</a></li>
+<li><a href="https://www.hrw.org/news/2026/09/03/india-renewed-ethnic-violence-in-manipur">Human Rights Watch - India: Renewed ethnic violence in Manipur (3 Sept 2026)</a></li>
+<li><a href="https://www.barandbench.com/news/litigation/supreme-court-asks-kuki-zo-naga-groups-to-work-towards-reopening-blocked-manipur-highways">Bar and Bench - Supreme Court asks Kuki-Zo and Naga groups to work towards reopening blocked highways (2026)</a></li>
+<li><a href="https://www.imphaltimes.com/news/10-nagas-killed-in-recent-naga-kuki-clashes-overall-death-toll-reaches-306-in-manipur-violence/">Imphal Times - Overall death toll reaches 306 in Manipur violence (2026, news; figure attributed)</a></li>
+<li><a href="https://www.drishtiias.com/loksabha-rajyasabha-discussions/indepth-6th-schedule-and-ilp">Drishti IAS - In-depth: 6th Schedule and ILP (secondary)</a></li>
+<li><a href="https://www.mha.gov.in/">Ministry of Home Affairs - official site (not opened; check notifications, annual report and Manipur situation updates)</a></li>
+</ul>
+</section>
+</main>
+</body>
+</html>

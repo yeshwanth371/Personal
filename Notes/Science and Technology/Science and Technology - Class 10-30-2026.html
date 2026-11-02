@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Science and Technology - Class Notes | 30 October 2026</title>
+<style>
+  * { box-sizing: border-box; }
+  body { font-family: Calibri, sans-serif; font-size: 11pt; line-height: 1.6; max-width: 900px; margin: 20px auto; padding: 0 20px; color: #202124; }
+  h1 { font-size: 20pt; color: #1a1a1a; border-bottom: 2px solid #333; padding-bottom: 4px; margin-top: 30px; }
+  h2 { font-size: 16pt; color: #2b2b2b; margin-top: 28px; border-bottom: 1px solid #ddd; padding-bottom: 3px; }
+  h3 { font-size: 13pt; color: #3a3a3a; margin-top: 18px; }
+  p { margin: 8px 0; }
+  ul, ol { margin: 6px 0; padding-left: 28px; }
+  li { margin: 4px 0; }
+  a { color: #005ea6; overflow-wrap: anywhere; }
+  table { border-collapse: collapse; width: 100%; margin: 10px 0; table-layout: fixed; }
+  caption { text-align: left; font-weight: bold; margin-bottom: 6px; }
+  th, td { border: 1px solid #999; padding: 6px 10px; text-align: left; vertical-align: top; overflow-wrap: anywhere; }
+  th { background: #f0f0f0; }
+  .table-wrap { overflow-x: auto; }
+  .note, .exam, .verification { background: #fff8e1; border-left: 3px solid #f5a623; padding: 8px 12px; margin: 10px 0; overflow-wrap: anywhere; }
+  .correction { background: #fff3e0; border-left: 3px solid #ef6c00; padding: 8px 12px; margin: 10px 0; }
+  .additional, .lead { background: #e8f5e9; border-left: 3px solid #2e7d32; padding: 8px 12px; margin: 10px 0; }
+  .flow { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 10px; padding: 12px 0; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; }
+  .flow span { text-align: center; max-width: 100%; }
+  .flow .box { border: 1px solid #888; background: #f7f7f7; padding: 6px 10px; border-radius: 4px; flex: 1 1 120px; }
+  figure { margin: 16px 0; padding: 12px; border: 1px solid #bbb; background: #fff; }
+  figure h3 { margin-top: 0; text-align: center; }
+  figcaption { margin-top: 8px; color: #555; font-size: 9.5pt; }
+  svg { max-width: 100%; height: auto; display: block; margin: 0 auto; }
+  .cols2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  .cols3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+  .cols4 { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
+  .tile { border: 1px solid #888; border-radius: 4px; padding: 8px; background: #f5f9fd; font-size: 10.5pt; }
+  .tile.p1 { background: #e8f5e9; border-color: #2e7d32; }
+  .tile.p2 { background: #f5f9fd; border-color: #0078d4; }
+  .tile.p3 { background: #fff3e0; border-color: #ef6c00; }
+  .tile.p4 { background: #fdecea; border-color: #c62828; }
+  .small { color: #555; font-size: 9.5pt; }
+  .answer { margin: 10px 0; padding: 6px 12px; border-left: 3px solid #0078d4; background: #f5f9fd; }
+  @media (max-width: 650px) {
+    body { padding: 0 12px; }
+    .cols2, .cols3, .cols4 { grid-template-columns: 1fr; }
+    .flow { flex-direction: column; align-items: stretch; }
+    .flow .box { flex: none; }
+    th, td { padding: 6px; }
+  }
+  @media print {
+    @page { size: A4; margin: 14mm; }
+    body { max-width: none; margin: 0; padding: 0; }
+    h1, h2, h3 { break-after: avoid; }
+    figure, tr, .answer, .tile { break-inside: avoid; }
+    thead { display: table-header-group; }
+    .table-wrap { overflow: visible; }
+    a { color: inherit; text-decoration: none; }
+    p, li { orphans: 3; widows: 3; }
+  }
+</style>
+</head>
+<body>
+<main>
+<header>
+<h1>Science and Technology - Class Notes | 30 October 2026</h1>
+<p><strong>Topics:</strong> Space (syllabus map only); Energy - 1a. Nuclear energy (continued): laser inertial confinement fusion (class account and corrections), evaluation of fusion power (advantages, challenges, helium-3 and Chandrayaan-4); the SHANTI Act, 2025 (private participation, reserved activities, liability tiers, supplier recourse, regulator and redressal bodies).</p>
+<p class="small">Note date: <time datetime="2026-10-30">30 October 2026</time>. <strong>Continuation:</strong> this note continues Syllabus item 1a from the <em>26 October</em> note (Sections 1-4), the <em>27 October</em> note (Sections 5-10, which already introduced the SHANTI Act in Section 10.5), the <em>28 October</em> note (Sections 11-16) and the <em>29 October 2026</em> note (Sections 17-21, which already introduced laser inertial confinement in Section 21); numbering therefore starts at <strong>Section 22</strong>. Figures continue from Figure 19.</p>
+<p class="note"><strong>Reading key:</strong> <strong>[Correction]</strong> repairs a substantive claim; <strong>[Additional]</strong> identifies supporting material or study guidance; <strong>[Verification Required]</strong> retains useful but unresolved material. Sources were consulted on <strong>30 October 2026</strong>. Opened in full or in relevant part: the PRS Legislative Research summary of the SHANTI Bill, the Wikipedia pages on the SHANTI Act and on LIFE (Laser Inertial Fusion Energy), and the LLNL, ITER and ISRO material cited. Only <strong>search-result summaries</strong> were read for the AIP and ScienceDirect capsule abstracts, the SHANTI commentary sites and the Chandrayaan-4 status pages, so those items are marked secondary. The text of the Act (PRS PDF), the PIB press note, the NSG and DAE draft-rules pages and the official UPSC papers could <strong>not</strong> be opened. The rough notes gave the Space block only as a table of headings and left the heading "Significance:" empty; both are handled openly below. Minor spelling and typing repairs were made silently. No private rough notes were uploaded for research.</p>
+</header>
+
+<section id="space">
+<h2>22. Space: Syllabus Map (headings only; no class content supplied)</h2>
+<p>The rough notes opened with a table of headings for the Space block and gave no explanatory content. It is preserved below as a <strong>map of topics to be covered</strong>; expansions of abbreviations are interpretive <strong>[Additional]</strong> and nothing here is a statement about missions or status.</p>
+<div class="table-wrap"><table>
+<caption>Space block as written in the rough notes</caption>
+<thead><tr><th scope="col">Block</th><th scope="col">Items written</th><th scope="col">Interpreted expansion [Additional]</th></tr></thead>
+<tbody>
+<tr><td><strong>Launch vehicles of ISRO</strong></td><td>ELV, RLV</td><td>Expendable Launch Vehicles; Reusable Launch Vehicles.</td></tr>
+<tr><td><strong>Satellites</strong></td><td>EOS, CMS, Nav</td><td>Earth Observation Satellites; "CMS" most likely communication satellites (ISRO uses CMS designations) <strong>[Verification Required]</strong>; navigation satellites.</td></tr>
+<tr><td><strong>Space exploration</strong></td><td>1. Particle physics; Lunar exploration; Mars exploration; Gaganyaan; BAS; GW and LIGO; Telescope</td><td>Lunar and Mars missions; Gaganyaan (human spaceflight); BAS is read as Bharatiya Antariksh Station (India's planned space station) <strong>[Verification Required]</strong>; GW and LIGO = gravitational-wave astronomy and the LIGO detectors; telescopes. The placement of "particle physics" under this heading is as written and its scope is unclear.</td></tr>
+<tr><td><strong>Role of private sector</strong></td><td>(heading only)</td><td>To be covered.</td></tr>
+<tr><td><strong>Space pollution</strong></td><td>(heading only)</td><td>Space debris and related issues; to be covered.</td></tr>
+</tbody></table></div>
+<p class="verification" id="v-spacemap"><strong>[Verification Required]</strong> Every item above needs a dated source (ISRO, Department of Space, IN-SPACe, NSIL) when it is taught; none was researched today. The only space item discussed in this note is Chandrayaan-4 in connection with helium-3 (Section 24.2).</p>
+</section>
+
+<section id="laser">
+<h2>23. Laser Inertial Confinement Fusion: the Class Account Checked</h2>
+<p class="small">Recap: the principle, the NIF indirect-drive steps and the ignition results were set out in the 29 Oct note, Section 21 (Figures 17 and 18). This section records the class's version, corrects it, and adds the LIFE power-plant idea.</p>
+
+<h3>23.1 What the class described</h3>
+<ul>
+<li>At the <strong>Lawrence Livermore National Laboratory (LLNL)</strong> the world's most powerful laser, with <strong>192 lasers</strong>, forms the <strong>National Ignition Facility (NIF)</strong>.</li>
+<li>All the lasers were directed on a capsule with an outer layer of lead, then a layer of plastic or diamond or beryllium, and an innermost <strong>frozen pellet of deuterium and tritium</strong>. The lasers hit the beryllium layer, causing <strong>ablation</strong>, which creates inward pressure compressing the frozen hydrogen isotopes to about 1000 times the liquid density at a temperature of about 1000 C, so that <strong>fusion</strong> gives helium and neutrons.</li>
+<li>The helium "changed into alpha particles" to heat the remaining hydrogen isotopes and create more plasma; the neutrons struck a lead shell to heat it, and that heat was used to make electricity; tritium is also produced and can be used as fuel.</li>
+<li>Electricity by this approach is called <strong>LIFE (Laser Inertial Fusion Energy)</strong>.</li>
+<li>In one experiment the input-output ratio was <strong>1 : 1.59</strong>; the whole experiment lasts a few picoseconds and can be repeated several times a day.</li>
+</ul>
+
+<figure>
+<h3>Figure 19. NIF Target for Indirect Drive (schematic cross-section) [Additional]</h3>
+<svg viewBox="0 0 760 330" role="img" aria-label="Laser beams enter both ends of a gold-lined hollow cylinder called a hohlraum; inside, a small capsule has an outer ablator layer, a frozen deuterium-tritium ice layer, and deuterium-tritium gas at the centre.">
+<defs><marker id="arr19" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#c62828"/></marker></defs>
+<g font-family="Calibri, sans-serif" font-size="12" text-anchor="middle">
+<line x1="40" y1="40" x2="200" y2="165" stroke="#c62828" stroke-width="2" marker-end="url(#arr19)"/>
+<line x1="40" y1="230" x2="200" y2="165" stroke="#c62828" stroke-width="2" marker-end="url(#arr19)"/>
+<line x1="720" y1="40" x2="560" y2="165" stroke="#c62828" stroke-width="2" marker-end="url(#arr19)"/>
+<line x1="720" y1="230" x2="560" y2="165" stroke="#c62828" stroke-width="2" marker-end="url(#arr19)"/>
+<text x="80" y="30" fill="#c62828">laser beams (192 in all; 4 drawn)</text>
+<text x="680" y="30" fill="#c62828">laser beams</text>
+<rect x="200" y="90" width="360" height="150" rx="18" fill="#fff8e1" stroke="#b8860b" stroke-width="3"/>
+<text x="380" y="82" font-weight="bold">Hohlraum: hollow cylinder with a gold (high-Z) wall</text>
+<text x="380" y="118" font-size="11" fill="#8a6d00">beams heat the wall; the wall emits soft X-rays</text>
+<circle cx="380" cy="170" r="44" fill="#e3f2fd" stroke="#0078d4" stroke-width="2"/>
+<circle cx="380" cy="170" r="30" fill="#bbdefb" stroke="#0078d4"/>
+<circle cx="380" cy="170" r="16" fill="#ffffff" stroke="#0078d4"/>
+<rect x="30" y="268" width="14" height="14" fill="#e3f2fd" stroke="#0078d4"/><text x="50" y="280" text-anchor="start">Ablator: plastic, diamond (HDC) or beryllium</text>
+<rect x="290" y="268" width="14" height="14" fill="#bbdefb" stroke="#0078d4"/><text x="310" y="280" text-anchor="start">Frozen D-T ice layer</text>
+<rect x="470" y="268" width="14" height="14" fill="#ffffff" stroke="#0078d4"/><text x="490" y="280" text-anchor="start">D-T gas at the centre</text>
+<text x="380" y="312" font-size="11" fill="#555">X-rays ablate the outer layer; the reaction force implodes the capsule (capsule radius is about 1 mm)</text>
+</g>
+</svg>
+<figcaption>Schematic, not to scale. Indirect drive as described in <a href="#s-llnl">LLNL</a> (192 beams, hohlraum, peppercorn-sized capsule, implosion over 400 km/s) and in abstracts of <a href="#s-capsule">a Physics of Plasmas paper</a> (plastic, high-density carbon and beryllium ablators tested) and <a href="#s-diamond">a ScienceDirect paper</a> (high-Z cavity, capsule of about 1 mm radius with a D-T ice layer). Layer thicknesses are not shown.</figcaption>
+</figure>
+
+<h3>23.2 Class statements checked</h3>
+<div class="table-wrap"><table>
+<caption id="c-laser">Class statements on laser inertial fusion against verified sources</caption>
+<thead><tr><th scope="col">Class statement</th><th scope="col">Verified or refined position</th></tr></thead>
+<tbody>
+<tr><td>192 lasers at NIF; "world's most powerful laser"</td><td>NIF fires <strong>up to 192 beams</strong> from one laser system (LLNL). The superlative was not checked <strong>[Verification Required]</strong>. LLNL gives a laser energy to the target of about 1.9-2.2 MJ in the shots it describes (29 Oct note, Figure 18).</td></tr>
+<tr><td>Capsule has an <strong>outer layer of lead</strong></td><td><strong>[Correction]</strong> No lead layer appears in the descriptions opened. The capsule sits inside a hollow cylinder (hohlraum) whose wall is <strong>gold or another heavy (high-Z) metal</strong>; the capsule itself has an <strong>ablator</strong> shell, then D-T ice, then D-T gas (<a href="#s-diamond">ScienceDirect abstract</a>; <a href="#s-life">LIFE/NIF target description</a>).</td></tr>
+<tr><td>Next layer "plastic or diamond or beryllium"</td><td>Correct as the <strong>ablator</strong> choices: glow-discharge polymer (plastic), <strong>high-density carbon (diamond)</strong> and <strong>beryllium</strong> have been tested on NIF (<a href="#s-capsule">AIP abstract</a>). One capsule has one of these, not all.</td></tr>
+<tr><td>Lasers "hit the beryllium layer"</td><td><strong>[Correction]</strong> In NIF's <strong>indirect drive</strong> the beams strike the <strong>hohlraum wall</strong>, which emits soft X-rays; the X-rays ablate the capsule (<a href="#s-llnl">LLNL</a>). Hitting the capsule directly is <strong>direct drive</strong>, a different scheme (standard knowledge).</td></tr>
+<tr><td>Compressed to 1000 times liquid density at about 1000 C</td><td><strong>[Correction]</strong> A temperature of 1000 C is far too low: fusion needs of the order of <strong>150 million C</strong> (<a href="#s-iterfew">ITER</a>), and the hot spot of an imploded NIF capsule is at temperatures of that order <strong>[Verification Required]</strong> for the exact NIF figure. The "1000 times liquid density" was not found in the sources opened <strong>[Verification Required]</strong>.</td></tr>
+<tr><td>Helium "changed into alpha particles"</td><td><strong>[Correction]</strong> An <strong>alpha particle is the helium-4 nucleus</strong> (LLNL); it is not a later change. In D-T fusion the alpha carries about 3.5 MeV and heats the fuel, the neutron about 14.1 MeV (29 Oct note, Figure 15). When alpha heating beats losses a burn wave spreads: this is <strong>ignition</strong> (LLNL).</td></tr>
+<tr><td>Neutrons hit a <strong>lead shell</strong> to give heat; tritium also produced</td><td><strong>[Correction]</strong> In the LIFE power-plant designs the neutrons are absorbed in a <strong>liquid lithium (or lithium-beryllium fluoride, "FLiBe") blanket</strong> that carries the heat to steam generators and <strong>breeds tritium</strong> from the lithium (<a href="#s-life">Wikipedia, LIFE</a>, secondary). Lead is not the breeding material. The tritium point is correct.</td></tr>
+<tr><td>The approach is called LIFE</td><td>Correct as a name: <strong>LIFE (Laser Inertial Fusion Energy)</strong> was an LLNL effort from <strong>2008 to 2013</strong>; it began as a fusion-fission hybrid and moved to a pure-fusion design; it was <strong>cancelled in 2013</strong> after NIF's first ignition campaign failed (<a href="#s-life">Wikipedia</a>, secondary). LLNL's March 2026 review describes renewed work on laser-driven fusion energy plant concepts (<a href="#s-llnlstr">LLNL STR, search summary</a>). LIFE is a <strong>concept</strong>, not a plant.</td></tr>
+<tr><td>Input : output = 1 : 1.59</td><td><strong>[Correction]</strong> LLNL's first ignition shot (5 Dec 2022) gave 3.15 MJ from 2.05 MJ: 3.15 / 2.05 = <strong>1.54</strong> (about 1.5). The later records are 3.88 / 2.05 = 1.89 and 8.6 / 2.08 = 4.13 (29 Oct note, Figure 18). The value 1.59 was not matched to any shot <strong>[Verification Required]</strong>.</td></tr>
+<tr><td>Experiment lasts a few <strong>picoseconds</strong></td><td><strong>[Correction]</strong> The laser pulse lasts nanoseconds (billionths of a second) and the burn lasts a fraction of a nanosecond; a few picoseconds is too short. Standard knowledge, not stated in the LLNL page opened <strong>[Verification Required]</strong>.</td></tr>
+<tr><td>Can be repeated several times a day</td><td><strong>[Correction]</strong> NIF manages <strong>less than one shot per day</strong> (a 2014 LLNL newsletter, via <a href="#s-life">Wikipedia</a>, secondary; current rate <strong>[Verification Required]</strong>). A power plant would need about a dozen shots <strong>per second</strong>; LIFE assumed about 15 targets a second.</td></tr>
+</tbody></table></div>
+
+<figure>
+<h3>Figure 20. How a LIFE Plant Was Meant to Make Electricity (concept) [Additional]</h3>
+<div class="flow"><span class="box"><strong>Diode-pumped lasers</strong><br/>fire about 15 times a second</span><span>&rarr;</span><span class="box"><strong>Target capsule</strong> in hohlraum implodes and fuses (D-T)</span><span>&rarr;</span><span class="box"><strong>Alpha</strong> heats fuel; <strong>neutrons</strong> escape</span><span>&rarr;</span><span class="box"><strong>Liquid lithium or FLiBe blanket</strong> absorbs neutrons, gets hot, breeds <strong>tritium</strong></span><span>&rarr;</span><span class="box"><strong>Steam turbine</strong> &rarr; electricity</span></div>
+<div class="flow"><span class="box" style="border-color:#2e7d32;background:#e8f5e9"><strong>Tritium loop:</strong> tritium bred in the blanket is extracted and made into new fuel pellets</span></div>
+<figcaption>Concept diagram of a design that was never built. Details (15 targets a second, liquid lithium or FLiBe, two designs: hybrid and pure fusion) are from the <a href="#s-life">Wikipedia article on LIFE</a> (secondary, citing LLNL papers). The same page states NIF's flashtube-pumped lasers drew over 400 MJ to make 1.8 MJ of ultraviolet light, and that LIFE aimed at diode lasers with about 18% efficiency; <strong>[Verification Required]</strong> against LLNL papers.</figcaption>
+</figure>
+<p class="additional"><strong>[Additional] Size of the remaining gap:</strong> the same secondary article says a laser-driven power plant would need a target gain of about <strong>25 to 50</strong> to recover generation losses and the large driver power, against the best NIF target gain of <strong>4.13</strong> (8.6 MJ from 2.08 MJ, 7 Apr 2025; <a href="#s-llnl">LLNL</a>). Also, NIF's first priority is stockpile stewardship (29 Oct note). Ignition is a science result; a power plant also needs efficient lasers, cheap mass-produced targets, a repetition rate of several shots a second and a durable chamber.</p>
+</section>
+
+<section id="fusioneval">
+<h2>24. Evaluation of Fusion Power</h2>
+<h3>24.1 Advantages (class list, checked)</h3>
+<div class="table-wrap"><table>
+<caption>Fission versus fusion: the class's four points</caption>
+<thead><tr><th scope="col">Point</th><th scope="col">Class statement</th><th scope="col">Refined position</th></tr></thead>
+<tbody>
+<tr><td><strong>1. Waste</strong></td><td>Fission leaves solid nuclear waste; fusion's by-product is helium, an inert gas, and sometimes tritium, which is the fuel.</td><td>Helium is inert and tritium is a fuel. LLNL says laser fusion could give electricity "without carbon emissions, long-lived nuclear waste, or the risk of meltdowns" (<a href="#s-llnlpath">LLNL, search summary</a>). See <a href="#c-fus-waste">correction</a>.</td></tr>
+<tr><td><strong>2. Resources</strong></td><td>Fission needs scarce, geopolitically exposed resources; fusion uses deuterium and tritium, harvested from seawater and made in the lab.</td><td>Deuterium comes from water; <strong>tritium is not harvested from seawater</strong> but bred from lithium (ITER notes the world supply of tritium is not enough for power plants; <a href="#s-iterfew">ITER</a>).</td></tr>
+<tr><td><strong>3. Proliferation</strong></td><td>Fission always carries proliferation risk, "not possible" with fusion plants.</td><td>See <a href="#c-fus-prolif">correction</a>: much lower, not zero.</td></tr>
+<tr><td><strong>4. Climate</strong></td><td>Fusion can help decarbonise energy and combat climate change.</td><td>Fusion is carbon-free in operation (<a href="#s-iterfew">ITER</a>), but no device has yet produced net electricity; the contribution is long-term (D-T operation at ITER is planned for 2039; 29 Oct note).</td></tr>
+</tbody></table></div>
+<p class="correction" id="c-fus-waste"><strong>[Correction]</strong> "Helium and tritium only" understates the waste. The 14 MeV fusion neutrons make the <strong>structural materials of the reactor radioactive (activation)</strong>, which will need management as low- or intermediate-level waste, and tritium itself is radioactive and must be contained (29 Oct note, Section 20.5). The fair statement is that fusion avoids <strong>long-lived high-level spent fuel</strong> and the chain-reaction (meltdown) hazard, not that it has no radioactive waste. <strong>[Verification Required]</strong> the waste classification of fusion materials.</p>
+<p class="correction" id="c-fus-prolif"><strong>[Correction]</strong> A pure D-T fusion plant has <strong>no uranium enrichment or plutonium reprocessing</strong> stage, so the proliferation risk is much lower than in fission, but "not possible" is too strong: fusion neutrons can breed fissile material from uranium or thorium in a blanket, and the original LIFE design was a <strong>fusion-fission hybrid</strong> that used the neutrons to fission fuel (<a href="#s-life">Wikipedia, LIFE</a>). Tritium handling also has safeguards implications <strong>[Verification Required]</strong>.</p>
+
+<h3>24.2 Challenges to commercial fusion power (class list, checked)</h3>
+<ol>
+<li><strong>Tritium supply.</strong> Tritium is scarce and expensive (class; no price was verified, <strong>[Verification Required]</strong>) and radioactive, so a stockpile decays. Its half-life is about <strong>12.3 years</strong> (class: about 13 years; standard nuclear data, <strong>[Verification Required]</strong>). ITER will test breeding blankets because supply would not cover future plants (<a href="#s-iterfew">ITER</a>).</li>
+<li><strong>Alternative fuel: helium-3.</strong> The class suggests helium-3 (He-3), reported to be abundant on the Moon, and links this to space-agency programmes to bring back lunar soil, giving <strong>Chandrayaan-4</strong> as an example. See <a href="#c-he3">correction</a>.</li>
+<li><strong>Industrial base.</strong> A tokamak needs about <strong>one million components</strong> (<a href="#s-iterfew">ITER</a>), and very few countries have the industrial base to build at that scale. The class asks how fusion power plants would then be installed across the globe; this is an open question, and ITER's own in-kind delivery model (about nine-tenths of project value delivered as components, buildings or systems) is how the Members shared the work (29 Oct note, Section 20.4).</li>
+<li><strong>Sustained plasma.</strong> To produce power the plasma must be held at about 150 million C for up to <strong>300 s</strong> (class), which is <strong>yet to be demonstrated</strong>. See <a href="#c-300s">correction</a>.</li>
+</ol>
+<p class="correction" id="c-he3"><strong>[Correction]</strong> (i) <strong>Chandrayaan-4</strong> is ISRO's <strong>lunar sample-return</strong> mission: Cabinet approval on 18 Sep 2024 at Rs 2,104.06 crore, two LVM3 launches with in-orbit docking, to bring 2-3 kg of south-polar material to Earth (<a href="#s-azmth">secondary report</a>); the ISRO page describes it as <strong>"planned for launch in the 2027-2028 timeframe"</strong> (<a href="#s-ch4isro">ISRO National Science Meet page</a>). It has <strong>not launched</strong> as of 30 Oct 2026. Its stated purposes are sample-return technology, support to future crewed missions and scientific study of lunar samples (<a href="#s-ch4pib">PIB, Sep 2024, search summary</a>); <strong>helium-3 supply is not stated as an objective</strong> in the sources opened. (ii) That the Moon holds He-3 usable as fusion fuel is the class's claim and was <strong>not verified</strong>; D-He3 fusion is also much harder than D-T because it needs far higher temperatures (standard physics, <strong>[Verification Required]</strong>). (iii) "All major space agencies have a programme" for this purpose was not verified.</p>
+<p class="correction" id="c-300s"><strong>[Correction]</strong> The class combines two ideas. For <strong>KSTAR</strong>, the stated goal after its 2023 tungsten divertor was <strong>100 million C for 300 s by 2026</strong>, against a reported 48 s at 100 million C (<a href="#s-itertok">ITER</a>; 29 Oct note). For <strong>ITER</strong> the design aim is Q = 10, 500 MW of fusion power from 50 MW of heating (<a href="#s-iterfew">ITER</a>); the 300 s figure for ITER's pulses was not confirmed in the sources opened <strong>[Verification Required]</strong>. What has not been shown by any device is <strong>net fusion power gain (Q &gt; 1) in a tokamak</strong>: JET's best was Q = 0.67, and long-pulse results at lower temperature (EAST, 1,066 s, secondary) do not change this.</p>
+<figure>
+<h3>Figure 21. Fusion Challenges and What Each Result Does and Does Not Show [Additional]</h3>
+<div class="table-wrap"><table>
+<thead><tr><th scope="col">Result (date)</th><th scope="col">What it shows</th><th scope="col">What it does not show</th></tr></thead>
+<tbody>
+<tr><td>NIF: 3.15 MJ from 2.05 MJ (5 Dec 2022); 8.6 MJ (7 Apr 2025)</td><td>Ignition and target gain above 1 in laser fusion</td><td>Net electricity; a repetition rate of seconds; gain of 25 to 50</td></tr>
+<tr><td>JET: 16 MW from 24 MW (1997, Q = 0.67)</td><td>D-T fusion power in a tokamak</td><td>Q above 1 in a magnetic device</td></tr>
+<tr><td>KSTAR: 48 s at 100 million C (Dec 2023-Feb 2024, secondary)</td><td>Long hot pulses with a tungsten divertor</td><td>300 s; 150 million C; fusion gain</td></tr>
+<tr><td>EAST: 1,066 s H-mode (Jan 2025, secondary)</td><td>Very long confinement</td><td>Reactor-level temperature or fusion gain</td></tr>
+<tr><td>ITER: all core components on site (2 Oct 2026)</td><td>Assembly progress</td><td>Plasma; D-T operation is planned for 2039</td></tr>
+</tbody></table></div>
+<figcaption>Summary table drawn from the 29 Oct note (<a href="#s-iterfew">ITER</a>, <a href="#s-llnl">LLNL</a>; EAST and KSTAR are secondary reports). Statuses are as of 30 Oct 2026.</figcaption>
+</figure>
+</section>
+
+<section id="shanti">
+<h2>25. The SHANTI Act, 2025 (revision with the class's details)</h2>
+<p class="small">Recap: the 27 Oct note (Sections 7-10) compared the CLND Act, 2010 with the SHANTI Act and could not verify the liability amounts. The PRS Legislative Research summary of the Bill now confirms the main numbers and the new bodies; the full Act text was still not opened.</p>
+
+<h3>25.1 Name, background and why the Act was needed</h3>
+<ul>
+<li><strong>Full name:</strong> the <strong>Sustainable Harnessing and Advancement of Nuclear Energy for Transforming India (SHANTI) Act, 2025</strong> (Act No. 39 of 2025). The class spells it "SHAANTI" and abbreviates the name; the Act's own spelling is SHANTI.</li>
+<li><strong>Timeline:</strong> introduced in Lok Sabha 15 Dec 2025; passed Lok Sabha 17 Dec; passed Rajya Sabha 18 Dec; assent 20 Dec 2025 (<a href="#s-prs">PRS</a>; <a href="#s-wikishanti">Wikipedia</a>). A law-firm note says it came into effect on 21 Dec 2025 (<a href="#s-nrf">Norton Rose Fulbright</a>, search summary). The Department of Atomic Energy released the <strong>draft SHANTI Rules and Regulations for public consultation from 14 Aug to 4 Sep 2026</strong> (<a href="#s-wikishanti">Wikipedia</a>, secondary; DAE page not opened).</li>
+<li><strong>Target (class):</strong> the <strong>Nuclear Energy Mission</strong>, announced in the Union Budget <strong>2025-26</strong> (the class writes "20-26 budget"), aims at <strong>100 GW of nuclear capacity by 2047</strong>. Present capacity is <strong>8.8 GW</strong> (8.78 GW, NPCIL; <a href="#s-pibnem">PIB, 23 Jul 2026</a>; 27 Oct note).</li>
+<li><strong>Problem (class):</strong> nuclear power was a monopoly of central public-sector entities (<strong>NPCIL</strong>, <strong>ASHVINI</strong>, <strong>BHAVINI</strong>); even in the best case they could reach only part of the target, so private operators were to be allowed.</li>
+<li><strong>Repeals:</strong> the <strong>Atomic Energy Act, 1962</strong> (under which licences for the main activities could go only to a central-government entity or government companies) and the <strong>Civil Liability for Nuclear Damage Act, 2010</strong> (<a href="#s-prs">PRS</a>).</li>
+</ul>
+<p class="correction" id="c-46"><strong>[Correction]</strong> The class says "in the best case scenario they can achieve 46% of the target". The PIB roadmap (23 Jul 2026, 27 Oct note) says <strong>NPCIL</strong> would add capacity to about <strong>54 GW</strong> by 2047, i.e. <strong>about 54% of 100 GW</strong>, and the <strong>balance of about 46 GW</strong> must come from other agencies (other public-sector enterprises, State governments, the private sector and joint ventures). Arithmetic: 22 + 32 = 54; 100 - 54 = 46. So 46% is the <em>gap</em>, not what the PSUs can reach.</p>
+
+<h3>25.2 Private participation and reserved activities</h3>
+<ul>
+<li><strong>Who may be licensed (PRS):</strong> for specified activities the Government may now also grant licences to (i) any other company <strong>except a company incorporated outside India</strong>, (ii) joint ventures between government entities and private companies, and (iii) any other person expressly permitted by the Government. These activities include <strong>building, owning or operating a nuclear power plant or reactor</strong> and <strong>fabrication, transport, trade or storage of nuclear fuel</strong>. Any activity involving radiation exposure needs a <strong>safety authorisation from the AERB</strong>.</li>
+<li><strong>Foreign and private equity (class):</strong> private equity capped at 49%, the FDI limit also 49%, and the limit for both together also 49%, the rest with central-government PSUs; private operators to be notified separately.</li>
+<li><strong>Exclusive to the Central Government (class):</strong> (a) uranium enrichment, (b) reprocessing of spent fuel, (c) production and upgradation of heavy water, (d) disposal of waste, (e) separation of isotopes; in exceptional circumstances a private operator might be allowed to enrich uranium.</li>
+</ul>
+<div class="table-wrap"><table>
+<caption>Class claims on private participation against sources opened</caption>
+<thead><tr><th scope="col">Class claim</th><th scope="col">What the sources opened say</th><th scope="col">Status</th></tr></thead>
+<tbody>
+<tr><td>Private sector may invest and operate</td><td>PRS: licences to Indian-incorporated companies, joint ventures and others permitted; PIB (27 Oct note): "opens the nuclear energy sector to private participation".</td><td>Confirmed</td></tr>
+<tr><td>Cap of 49% (private equity; FDI; combined)</td><td>The PRS summary states no percentage. A commentary site says private companies with <strong>up to 49 percent foreign equity</strong> (<a href="#s-invariant">Invariant</a>, search summary, secondary). The class's three separate 49% limits are not seen in any source.</td><td><strong>[Verification Required]</strong> (see <a href="#c-equity">correction</a>)</td></tr>
+<tr><td>Enrichment and isotope separation reserved to the Centre; exceptions possible</td><td>Wikipedia, section 3: reserves "enrichment or isotopic separation of prescribed or radioactive substance, unless otherwise notified" for the Central Government (<a href="#s-wikishanti">secondary</a>).</td><td>Confirmed (secondary), exception matches "unless otherwise notified"</td></tr>
+<tr><td>Reprocessing, heavy water production/upgradation and waste disposal reserved</td><td>Not found in the sources opened.</td><td><strong>[Verification Required]</strong></td></tr>
+</tbody></table></div>
+<p class="correction" id="c-equity"><strong>[Correction]</strong> The class presents "private equity 49%", "FDI 49%" and "both together 49%" as three limits; a single combined limit would be the plausible meaning, but even that is <strong>not confirmed</strong> by the PRS summary or the Act text. The PRS summary excludes only <em>companies incorporated outside India</em> from the new licences. Equity limits may sit in rules or in FDI policy rather than in the Act. <strong>[Verification Required]</strong> against the Act, the draft rules and DPIIT FDI policy.</p>
+
+<h3>25.3 Liability: from a flat cap to a graded cap</h3>
+<figure>
+<h3>Figure 22. Operator Liability Limit: CLND Act versus SHANTI Act (Rs crore) [Additional]</h3>
+<svg viewBox="0 0 760 205" role="img" aria-label="Bar chart of operator liability limits in rupees crore: CLND Act 2010 flat 1,500 crore; SHANTI Act lowest tier 100 crore; SHANTI Act highest tier 3,000 crore.">
+<g font-family="Calibri, sans-serif" font-size="13">
+<text x="10" y="42">CLND Act, 2010 (flat)</text>
+<rect x="250" y="24" width="150" height="24" fill="#ef6c00"/><text x="408" y="42">Rs 1,500 crore</text>
+<text x="10" y="82">SHANTI Act: lowest tier</text>
+<rect x="250" y="64" width="10" height="24" fill="#2e7d32"/><text x="268" y="82">Rs 100 crore</text>
+<text x="10" y="122">SHANTI Act: highest tier</text>
+<rect x="250" y="104" width="300" height="24" fill="#2e7d32"/><text x="558" y="122">Rs 3,000 crore</text>
+<line x1="250" y1="16" x2="250" y2="138" stroke="#555"/>
+<text x="250" y="160" font-size="11" fill="#555">Bar length = 0.1 px per Rs crore. Tier depends on thermal power capacity.</text>
+<text x="250" y="176" font-size="11" fill="#555">Intermediate tiers were not itemised in the sources opened.</text>
+<text x="250" y="192" font-size="11" fill="#555">Source: PRS summary of the Bill. CLND cap applies to reactors of 10 MWth or above.</text>
+</g>
+</svg>
+<figcaption>Data: <a href="#s-prs">PRS Legislative Research, SHANTI Bill summary</a> (the 2010 Act specified "a maximum liability of Rs 1,500 crore for a nuclear reactor with thermal power capacity of 10 megawatt or above"; the Bill "specifies a tiered structure, with liability limit ranging from Rs 100 crore to Rs 3,000 crore based on power capacity"). The Act text could not be opened to confirm that the Act matches the Bill.</figcaption>
+</figure>
+<ul>
+<li><strong>CLND Act, 2010 (class and PRS):</strong> a <strong>flat Rs 1,500 crore</strong> on the operator, which the class says deterred private participation.</li>
+<li><strong>SHANTI Act (class and PRS):</strong> a <strong>graded</strong> liability in proportion to the capacity of the reactor, <strong>Rs 100 crore to Rs 3,000 crore</strong>. The no-fault principle, the operator's insurance requirement and the Claims Commissioner or Commission are <strong>retained</strong> (PRS). The Bill also extends cover to <strong>nuclear damage in a foreign state</strong> from incidents in India, subject to conditions (PRS) <strong>[Additional]</strong>.</li>
+</ul>
+
+<h3>25.4 Right of recourse against suppliers</h3>
+<ul>
+<li><strong>Under the 2010 Act (PRS and class):</strong> the operator has a right of recourse (to recover some or all compensation) when (i) the contract provides for it, (ii) the incident arises from supply of <strong>defective equipment or materials</strong> (the class: a latent or patent defect), or (iii) it is caused by a <strong>deliberate act intended to cause damage</strong> (the class: an act of omission or commission by the supplier's employee). The class gives the sum as Rs 1,500 crore.</li>
+<li><strong>Why suppliers objected (class):</strong> US, French and Japanese suppliers saw <strong>open-ended liability</strong>, and the clause conflicted with the international nuclear liability regime, including the <strong>Convention on Supplementary Compensation (CSC)</strong> that India joined in <strong>2016</strong>. The CSC ratification year was not re-verified <strong>[Verification Required]</strong>; a commentary site also says India ratified in 2016 (<a href="#s-vajiram">Vajiram and Ravi, search summary</a>).</li>
+<li><strong>SHANTI Act (PRS):</strong> the Bill <strong>removes the right of recourse on the ground of supply of defective equipment or materials</strong>.</li>
+</ul>
+<p class="correction" id="c-recourse"><strong>[Correction]</strong> The class says the SHANTI Act "removed the right of recourse". Per PRS, only <strong>one ground</strong> (supply of defective equipment or materials) is removed; the contract-based and deliberate-act grounds are <strong>not</strong> reported as removed. This reading rests on the PRS summary of the <em>Bill</em>; the Act text was not opened <strong>[Verification Required]</strong>. This refines the 27 Oct note, which left the recourse treatment open.</p>
+
+<h3>25.5 Multi-tier compensation (class)</h3>
+<div class="flow"><span class="box"><strong>Tier 1</strong><br/>Operator + Government<br/>not to exceed <strong>300 million SDR</strong><br/>(Government share from a nuclear liability fund, class: built by a cess)</span><span>&rarr;</span><span class="box"><strong>Tier 2</strong><br/>Funds under the <strong>CSC</strong> (international pooled contributions)</span></div>
+<ul>
+<li><strong>SDR</strong> = Special Drawing Right, the IMF's unit of account; its rupee value changes daily <strong>[Additional]</strong>.</li>
+<li>The PRS summary says only that the Government bears excess liability beyond the operator's limit; it does not give the 300 million SDR figure, the fund or the CSC tier. The two-tier structure matches the CSC's design (a national first tier, then an international second tier) and the 27 Oct note's report that the Act aligns liability with the CSC. The SDR figure, the cess-funded fund and the working of Tier 2 are <strong>[Verification Required]</strong> against the Act text.</li>
+</ul>
+<p class="correction" id="c-tiers"><strong>[Correction]</strong> The class says Tier 1 is "the responsibility of the operator and the Government, not exceeding 300 million SDR" and that the operator's liability is Rs 100-3,000 crore. These two numbers are consistent only if the <strong>operator's share is a part of the 300 million SDR first tier</strong> and the Government meets the rest. Whether a cess funds it was not verified. Present the tiers as the class's structure until the Act text is checked.</p>
+
+<h3>25.6 Regulator and redressal bodies</h3>
+<div class="table-wrap"><table>
+<caption>Institutions under the SHANTI Act (PRS summary of the Bill)</caption>
+<thead><tr><th scope="col">Body</th><th scope="col">Role</th><th scope="col">Class statement</th></tr></thead>
+<tbody>
+<tr><td><strong>Atomic Energy Regulatory Board (AERB)</strong></td><td>Given <strong>statutory recognition</strong>; ensures safe use of radiation and nuclear energy; a chairperson, one whole-time member and up to seven part-time members; appointed by the Government on the recommendation of a search-cum-selection committee set up by the Atomic Energy Commission; initial term three years, extendable up to three years.</td><td>"ARV" as a statutory autonomous body (read as AERB; autonomy is the class's word, the PRS summary says "statutory recognition").</td></tr>
+<tr><td><strong>Claims Commissioner or Commission for nuclear damage</strong></td><td>Adjudicates victims' compensation claims; the 2010 Act's provision is <strong>retained</strong>.</td><td>"Nuclear damages claims commissioner".</td></tr>
+<tr><td><strong>Atomic Energy Redressal Advisory Council (AERAC)</strong></td><td>Hears <strong>appeals against orders or decisions of the Central Government or the AERB</strong>; chaired by the Chairperson of the Atomic Energy Commission; members include the Director of BARC, the AERB Chairperson and the Chairperson of the Central Electricity Authority; appeals against its decisions lie before the <strong>Appellate Tribunal for Electricity</strong>.</td><td>"Atomic energy grievance redressal council" for the redressal of grievances.</td></tr>
+</tbody></table></div>
+<p class="correction" id="c-bodies"><strong>[Correction]</strong> (i) "ARV" is read as the <strong>AERB</strong>. (ii) The body is the <strong>Atomic Energy Redressal Advisory Council</strong>, not a "grievance redressal council", and it hears <strong>appeals against Government or AERB decisions</strong> (for example licensing and safety orders), while <strong>victims' compensation claims</strong> go to the Claims Commissioner or Commission. (iii) The AERB is statutory but its members are appointed by the Government through a committee set up by the Atomic Energy Commission, which some commentators note limits independence <strong>[Additional; opinion, attribute when quoted]</strong>.</p>
+
+<h3>25.7 Significance (the class left this heading empty) [Additional]</h3>
+<ul>
+<li><strong>Capacity:</strong> opens nuclear power to Indian companies and joint ventures to help close the roughly 46 GW gap in the 100 GW target.</li>
+<li><strong>International alignment and supplier confidence:</strong> graded liability, removal of the defective-equipment recourse ground and alignment with the CSC address the obstacle that, per PIB, kept foreign vendors away (27 Oct note; Jaitapur and Kovvada remain only proposed, 28 Oct note).</li>
+<li><strong>Regulation:</strong> statutory status for the AERB and a dedicated appeal route (AERAC, then the Appellate Tribunal for Electricity).</li>
+<li><strong>Concerns:</strong> commentators argue that the Rs 3,000 crore ceiling is small against potential damage and that reduced supplier accountability weakens the safety incentive (for example a Takshashila paper titled "Shanti Act advances reform, streamlines and dilutes liability", <a href="#s-wikishanti">cited on Wikipedia</a>; <a href="#s-hindu">The Hindu explainer</a>). The Supreme Court was reported in May 2026 to be examining the Rs 3,000 crore cap and whether courts are precluded from fixing suitable compensation (<a href="#s-sc">Rediff, 19 May 2026</a>, search summary; outcome <strong>[Verification Required]</strong>).</li>
+<li><strong>Still to come:</strong> final Rules and Regulations (draft consultation closed 4 Sep 2026) will fix licensing, safety authorisation and many details.</li>
+</ul>
+</section>
+
+<section id="prelims">
+<h2>Key Facts for Prelims</h2>
+<ul>
+<li><strong>NIF:</strong> LLNL; up to 192 beams; indirect drive: laser &rarr; hohlraum (gold, high-Z) &rarr; X-rays &rarr; ablation of capsule; ablators: plastic, diamond (HDC), beryllium; capsule has D-T ice. Ignition 5 Dec 2022 (3.15 MJ from 2.05 MJ, gain about 1.5); record 8.6 MJ (7 Apr 2025, gain 4.13).</li>
+<li><strong>Alpha particle = helium-4 nucleus;</strong> D-T fusion gives alpha (3.5 MeV) and neutron (14.1 MeV).</li>
+<li><strong>LIFE:</strong> Laser Inertial Fusion Energy, LLNL 2008-2013, cancelled 2013; a concept, not a plant; blanket of liquid lithium or FLiBe breeds tritium. NIF fires less than once a day; a plant needs several shots a second.</li>
+<li><strong>Fusion vs fission:</strong> no chain reaction, no long-lived high-level spent fuel, deuterium from water, tritium bred from lithium; but neutron activation waste, tritium scarcity (half-life about 12.3 years), no net electricity yet. Proliferation risk is lower, not nil.</li>
+<li><strong>Helium-3:</strong> a possible alternative fuel (class); needs much higher temperatures than D-T; its lunar supply is unverified.</li>
+<li><strong>Chandrayaan-4:</strong> ISRO lunar sample-return mission; Cabinet approval 18 Sep 2024 (Rs 2,104.06 crore, secondary); two LVM3 launches; 2-3 kg from the south-polar region; ISRO page: planned 2027-2028; not launched as of 30 Oct 2026.</li>
+<li><strong>SHANTI Act, 2025</strong> (Sustainable Harnessing and Advancement of Nuclear Energy for Transforming India): Act 39 of 2025; LS 17 Dec, RS 18 Dec, assent 20 Dec 2025; repeals the Atomic Energy Act, 1962 and the CLND Act, 2010.</li>
+<li><strong>Licences:</strong> Government plus Indian companies and joint ventures for building and operating plants and for nuclear fuel fabrication, transport, trade and storage; companies incorporated outside India excluded; enrichment and isotopic separation reserved to the Centre "unless otherwise notified"; AERB safety authorisation for radiation activities.</li>
+<li><strong>Liability:</strong> CLND flat Rs 1,500 crore (reactors of 10 MWth and above); SHANTI Rs 100-3,000 crore by capacity; no-fault and Claims Commissioner retained; recourse ground of defective equipment removed; the class's SDR 300 million first tier and CSC second tier are unverified.</li>
+<li><strong>Bodies:</strong> AERB statutory (chair, one whole-time and up to seven part-time members; three-year term extendable by up to three years); AERAC (chair: AEC chairperson) hears appeals; appeal to the Appellate Tribunal for Electricity.</li>
+<li><strong>Nuclear Energy Mission:</strong> Budget 2025-26; 100 GW by 2047; NPCIL path about 54 GW and the balance about 46 GW from others; capacity 8.78 GW.</li>
+<li><strong>Space block:</strong> headings only (ELV, RLV; EOS, CMS, Nav; lunar and Mars exploration, Gaganyaan, BAS, GW and LIGO, telescope; private sector; space pollution).</li>
+</ul>
+</section>
+
+<section id="mains">
+<h2>Mains Points</h2>
+<p class="small"><strong>[Additional]</strong> Analytical synthesis and suggested way forward, not official conclusions.</p>
+<ul>
+<li><strong>Laser fusion: a real science milestone, a long road to power.</strong> NIF's ignition and the 4.13 target gain show that fusion can release more energy than reaches the target; but a plant needs a gain of the order of 25 to 50, lasers that are efficient, several shots a second and cheap targets. Keep the scientific claim (ignition) apart from the engineering claim (electricity).</li>
+<li><strong>Fusion in the energy mix:</strong> its merits are fuel abundance, no chain reaction and carbon-free operation; its limits are tritium supply, neutron-damaged materials, scale of the industrial base and long timelines (ITER D-T in 2039). India's sensible position is to <strong>stay engaged</strong> (ITER membership, ADITYA-U, SST-1) while relying on fission, renewables and SMRs for the 2047 and 2070 goals.</li>
+<li><strong>Space resources hype versus evidence:</strong> helium-3 on the Moon is frequently cited but unproven as a practical fusion fuel; Chandrayaan-4's declared objectives are sample-return technology and science. Policy should not be justified by unverified resource claims.</li>
+<li><strong>SHANTI Act: capacity, capital and consent.</strong> Opening the sector to Indian private companies and joint ventures can mobilise capital and delivery capacity for the 46 GW gap; graded liability and the removal of one recourse ground make supplier participation easier. The trade-off is lower supplier accountability and a liability ceiling that critics find low, so victims' remedies, insurance and a strong, independent regulator are the safeguards that matter.</li>
+<li><strong>Federal and institutional design:</strong> a statutory AERB with government-appointed members, an advisory appeal council chaired by the Atomic Energy Commission's chairperson, and appeals to a power-sector tribunal raise questions of regulatory independence and expertise. The final Rules should address them.</li>
+<li><strong>Strategic control:</strong> keeping enrichment and isotopic separation with the Centre protects the strategic and safeguards interests (27 and 29 Oct notes on safeguards and the NSG); how exceptions are notified will matter.</li>
+<li><strong>Way forward:</strong> (i) finalise the SHANTI Rules with clear licensing, equity, insurance and waste provisions; (ii) publish the Act's liability tiers and the working of the CSC tier; (iii) keep the regulator transparent and well resourced; (iv) pursue fusion through ITER and domestic tokamaks with a technology-transfer plan; (v) state mission objectives and resource claims (such as helium-3) only with evidence.</li>
+</ul>
+</section>
+
+<section id="traps">
+<h2>Common Traps / Confusions</h2>
+<ul>
+<li><strong>NIF's capsule has no lead layer;</strong> the hohlraum wall is gold (high-Z), the capsule has an ablator, D-T ice and D-T gas.</li>
+<li><strong>Indirect versus direct drive:</strong> NIF's beams hit the hohlraum wall, not the capsule.</li>
+<li><strong>Alpha particle = helium-4 nucleus;</strong> alphas heat the fuel, neutrons carry the heat out.</li>
+<li><strong>1000 C is not a fusion temperature;</strong> fusion needs about 150 million C.</li>
+<li><strong>NIF gain is target gain,</strong> not wall-plug efficiency, and NIF fires less than once a day.</li>
+<li><strong>LIFE was a cancelled concept,</strong> not an operating plant.</li>
+<li><strong>Tritium is bred, not harvested from seawater;</strong> deuterium is the one in water.</li>
+<li><strong>Fusion is not waste-free or proliferation-proof;</strong> it is far lower on both counts than fission.</li>
+<li><strong>Chandrayaan-4 has not launched</strong> and is not stated to be a helium-3 mission.</li>
+<li><strong>SHANTI, not "SHAANTI";</strong> it repeals both the Atomic Energy Act, 1962 and the CLND Act, 2010.</li>
+<li><strong>46 GW is the gap, not the PSUs' share;</strong> NPCIL's path is about 54 GW.</li>
+<li><strong>Recourse:</strong> only the "defective equipment" ground is reported as removed, not recourse as a whole.</li>
+<li><strong>AERAC hears appeals;</strong> victims' claims go to the Claims Commissioner.</li>
+<li><strong>Do not state a 49% limit as law</strong> until the Act text or rules are checked.</li>
+</ul>
+</section>
+
+<section id="revision">
+<h2>30-Second Revision</h2>
+<p><strong>Laser fusion:</strong> NIF (LLNL) fires up to 192 beams into a gold hohlraum; X-rays ablate a capsule (ablator: plastic, diamond or beryllium; D-T ice inside); implosion; alpha (helium-4) heating; ignition 5 Dec 2022 (3.15 MJ from 2.05 MJ), record 8.6 MJ (gain 4.13); LIFE (2008-2013) was the plant concept (lithium or FLiBe blanket, tritium breeding), cancelled; a plant needs gain 25-50 and several shots a second. <strong>Fusion evaluation:</strong> no long-lived spent fuel, deuterium plentiful, carbon-free; but tritium scarce (half-life about 12.3 years), activation waste, huge component base, 150 million C for long pulses unproven; helium-3 and Chandrayaan-4 (planned 2027-28) are unverified as a fuel route. <strong>SHANTI Act 2025:</strong> repeals the Atomic Energy Act 1962 and CLND Act 2010; Indian companies and joint ventures can build and operate; enrichment reserved to the Centre; liability Rs 100-3,000 crore by capacity (was flat Rs 1,500 crore); defective-equipment recourse removed; AERB statutory; AERAC hears appeals; 100 GW by 2047 with about 46 GW from non-NPCIL entities.</p>
+</section>
+
+<section id="pyqs">
+<h2>Previous Year Questions (PYQs)</h2>
+<p class="note"><strong>Source status:</strong> the Prelims item below is from <a href="#s-pmf16">PMF IAS</a>, a secondary compilation, with options and answer as shown there; the Mains item was listed by ForumIAS and not re-opened today. The <strong>official UPSC papers and answer keys were not opened</strong>, so the answer is secondary and marked <strong>[Verification Required]</strong>. <strong>[No verified PYQ found for laser inertial confinement, helium-3 or the SHANTI Act and nuclear liability in this session.]</strong> Suggested approaches are <strong>[Additional]</strong> study guidance, not an official marking scheme.</p>
+<ol>
+<li><strong>2016 | UPSC CSE Prelims | General Studies Paper 1.</strong> <strong>Question (as listed):</strong> India is an important member of the "International Thermonuclear Experimental Reactor". If this experiment succeeds, what is the immediate advantage for India? (a) It can use thorium in place of uranium for power generation. (b) It can attain a global role in satellite navigation. (c) It can drastically improve the efficiency of its fission reactors in power generation. (d) It can build fusion reactors for power generation. <a href="https://www.pmfias.com/iter-advantage-for-india-pyq-2016/">Verify 2016 question and answer</a>.
+<p class="answer"><strong>Answer (secondary): (d).</strong> Link to Section 24: magnetic confinement at ITER is one route to fusion power; laser fusion (Section 23) is the other. Thorium (a) belongs to the fission three-stage programme. <strong>[Verification Required]</strong> against the official key.</p></li>
+<li><strong>2018 | UPSC CSE Mains | General Studies III.</strong> <strong>Paraphrase:</strong> Should India expand its nuclear energy programme given growing energy needs? Discuss facts and fears. <a href="https://forumias.com/blog/gs3pyq/#UPSC_IAS_Mains_2018_General_Studies_III">Verify 2018 GS III question 16</a> (listed as 15 marks, 250 words; not re-opened today).<p class="answer"><strong>Suggested answer approach [Additional]:</strong> Facts: 8.78 GW, the 100 GW by 2047 mission, SHANTI Act opening the sector to Indian companies, statutory AERB. Fears: liability ceiling and reduced supplier accountability, regulator independence, safety, waste, cost. Conclude with the final Rules, strong regulation and a diversified mix including fusion research.</p></li>
+</ol>
+</section>
+
+<section id="corrections">
+<h2>Corrections Made</h2>
+<p>Substantive changes are marked where they occur. Typographical and spelling repairs were made silently and are not listed.</p>
+<ul>
+<li><a href="#c-laser">Laser fusion class account:</a> no lead layer (gold hohlraum); indirect drive; 1000 C wrong (about 150 million C needed); alpha = helium-4 nucleus; lithium or FLiBe blanket not lead; gain 1.54 not 1.59; pulse in nanoseconds; NIF fires less than once a day.</li>
+<li><a href="#c-fus-waste">Fusion waste:</a> activated materials and tritium remain; only long-lived high-level spent fuel is avoided.</li>
+<li><a href="#c-fus-prolif">Proliferation:</a> much lower, not "not possible"; LIFE hybrid design used fission blankets.</li>
+<li><a href="#c-he3">Helium-3 and Chandrayaan-4:</a> sample-return mission planned 2027-28; He-3 not a stated objective; D-He3 needs far higher temperatures.</li>
+<li><a href="#c-300s">300 s plasma:</a> KSTAR goal versus ITER aim; no tokamak has shown Q &gt; 1.</li>
+<li><a href="#c-46">46%:</a> the gap to be filled by non-NPCIL entities, not the PSUs' share (NPCIL about 54 GW).</li>
+<li><a href="#c-equity">49% cap:</a> not confirmed; only foreign-incorporated companies are excluded from new licences (PRS).</li>
+<li><a href="#c-recourse">Recourse:</a> only the defective-equipment ground is reported as removed.</li>
+<li><a href="#c-tiers">Tiers:</a> SDR 300 million, fund and CSC tier unverified.</li>
+<li><a href="#c-bodies">Bodies:</a> AERB (not "ARV"); AERAC hears appeals; Claims Commissioner handles victims' claims.</li>
+</ul>
+<p class="verification"><strong>Open verification register:</strong> classification of "CMS", "BAS" and the Space block items; "world's most powerful laser" claim; NIF hot-spot temperature and compressed density; laser pulse and burn durations; current NIF shot rate; LIFE blanket details and efficiency figures; the 1.59 ratio; tritium price and half-life value; He-3 abundance and mining feasibility; "all major agencies" programmes; ITER 300 s pulse; CSC ratification year; SDR 300 million tier, nuclear liability fund and cess; Act text matching the Bill (liability tiers and recourse); 49% equity or FDI limit; reservation of reprocessing, heavy water and waste disposal; commencement date (21 Dec 2025); outcome of the Supreme Court hearing; final Rules; official UPSC answer keys. These are <strong>not silently discarded or treated as verified facts</strong>.</p>
+<p><strong>[Additional] Additions summary:</strong> Space syllabus map, NIF target schematic, class-versus-verified table for laser fusion, LIFE concept flow, fusion challenge-result table, SHANTI timeline, equity and reserved-activity check table, liability bar chart, recourse comparison, tier flow, institution table and a significance section for the heading the class left empty.</p>
+</section>
+
+<section id="visuals">
+<h2>Visual Representations Required / Recommended</h2>
+<ul>
+<li><strong>Included:</strong> <a href="#laser">Figure 19</a> (NIF target schematic), <a href="#laser">Figure 20</a> (LIFE concept flow), <a href="#fusioneval">Figure 21</a> (fusion results and limits), <a href="#shanti">Figure 22</a> (operator liability limits).</li>
+<li><strong>Space block:</strong> no visual is needed because only headings were supplied (<a href="#v-spacemap">marker in Section 22</a>); visuals should be planned when the Space topics are taught.</li>
+</ul>
+<p><strong>[All necessary visual representations included]</strong> (no recommended visuals are outstanding).</p>
+</section>
+
+<section id="sources">
+<h2>Open Sources / Further Reading</h2>
+<p class="small">HTTPS public sources consulted on 30 October 2026. Items marked "search summary" were read only as search-result snippets or abstracts; the SHANTI Act text, the PIB press note, DAE draft-rules page and the official UPSC papers could not be opened.</p>
+<ol>
+<li id="s-prs"><a href="https://prsindia.org/billtrack/the-sustainable-harnessing-and-advancementof-nuclear-energy-for-transforming-india-bill-2025">PRS Legislative Research: SHANTI Bill, 2025 (summary)</a> - licences, liability tiers Rs 100-3,000 crore, recourse, AERB, AERAC; Bill dates (the Act PDF linked on that page could not be read).</li>
+<li id="s-wikishanti"><a href="https://en.wikipedia.org/wiki/SHANTI_Act,_2025">Wikipedia: SHANTI Act, 2025</a> (secondary; Act number, repeals, section 3 and 17, draft rules consultation 14 Aug-4 Sep 2026; page edited 29 Oct 2026).</li>
+<li id="s-nrf"><a href="https://www.nortonrosefulbright.com/en/knowledge/publications/dbff80e4/shanti-act-2025-rewiring-india-s-nuclear-liability-and-regulatory-architecture">Norton Rose Fulbright: SHANTI Act 2025 - rewiring India's nuclear liability and regulatory architecture</a> (Dec 2025; search summary; commencement 21 Dec 2025).</li>
+<li id="s-invariant"><a href="https://invariant-ai.com/india-shanti-act-bharat-smr">Invariant: India nuclear compliance, SHANTI Act and BSR guide</a> (commentary; search summary; 49 per cent foreign equity).</li>
+<li id="s-hindu"><a href="https://www.thehindu.com/news/national/shanti-actwho-is-liable-for-nuclear-incidents-under-the-newlaw/article70442951.ece">The Hindu: SHANTI Act - who is liable for nuclear incidents under the new law?</a> (search summary).</li>
+<li id="s-sc"><a href="https://www.rediff.com/news/report/rs-3000-cr-cap-on-nuclear-liability-very-sensitive-legislative-policy-issue-says-supreme-court/20260519.htm">Rediff: Rs 3,000 crore cap on nuclear liability - Supreme Court (19 May 2026)</a> (search summary).</li>
+<li id="s-vajiram"><a href="https://vajiramandravi.com/current-affairs/ambiguities-in-civil-liability-for-nuclear-damage-act-clnda-2010/">Vajiram and Ravi: Ambiguities in the Civil Liability for Nuclear Damage Act, 2010</a> (secondary; CSC ratified in 2016; search summary).</li>
+<li id="s-pibnem"><a href="https://www.pib.gov.in/PressReleasePage.aspx?PRID=2288294">PIB: Parliament Question - Progress under Nuclear Energy Mission</a> (23 Jul 2026) - 100 GW roadmap (from the 27 Oct note).</li>
+<li id="s-llnl"><a href="https://lmf.llnl.gov/science/achieving-fusion-ignition">LLNL: Achieving Fusion Ignition (NIF)</a> - 192 beams, indirect drive, alpha particle definition, ignition results (opened 30 Oct 2026).</li>
+<li id="s-llnlpath"><a href="https://lmf.llnl.gov/news/fusion-ignition-and-the-path-to-inertial-fusion-energy">LLNL: Fusion ignition and the path to inertial fusion energy</a> (search summary; "without carbon emissions, long-lived nuclear waste, or the risk of meltdowns").</li>
+<li id="s-llnlstr"><a href="https://str.llnl.gov/str-march-2026/pursuit-higher-power">LLNL Science and Technology Review, March 2026: The Pursuit of Higher Power</a> (search summary; LIFE-type plant concepts).</li>
+<li id="s-life"><a href="https://en.wikipedia.org/wiki/Laser_Inertial_Fusion_Energy">Wikipedia: Laser Inertial Fusion Energy (LIFE)</a> (secondary; 2008-2013, hybrid and pure designs, lithium or FLiBe, 15 targets a second, NIF shot rate, cancellation; page edited 24 Jan 2026).</li>
+<li id="s-capsule"><a href="https://pubs.aip.org/aip/pop/article/25/3/032703/1060319/Capsule-physics-comparison-of-National-Ignition">AIP Physics of Plasmas: capsule physics comparison of NIF implosion designs using plastic, high-density carbon and beryllium ablators</a> (2018; abstract, search summary).</li>
+<li id="s-diamond"><a href="https://www.sciencedirect.com/science/article/pii/S1574181824000867">ScienceDirect: Study of shocks and ablation front in diamond ablator during a capsule implosion</a> (abstract, search summary; high-Z cavity, D-T ice layer).</li>
+<li id="s-iterfew"><a href="https://www.iter.org/few-lines">ITER Organization: In a Few Lines</a> - 150 million C, tritium supply, one million components, Q = 10 (from the 29 Oct note).</li>
+<li id="s-itertok"><a href="https://www.iter.org/fusion-energy/international-tokamak-research">ITER Organization: International tokamak research</a> - KSTAR 300 s goal (from the 29 Oct note).</li>
+<li id="s-ch4isro"><a href="https://www.isro.gov.in/ISRO_Nationalsciencemeet_ch4.html">ISRO: National Science Meet on Chandrayaan-4 lunar sample science</a> (search summary; planned launch in the 2027-2028 timeframe).</li>
+<li id="s-ch4pib"><a href="https://pib.gov.in/PressReleasePage.aspx?PRID=2055983">PIB: Chandrayaan-4 approval press note</a> (search summary; technologies for crewed missions, sample return and scientific analysis).</li>
+<li id="s-azmth"><a href="https://azmth.space/moon/missions/chandrayaan-4">Azmth: Chandrayaan-4 mission facts</a> (secondary; approval 18 Sep 2024 at Rs 2,104.06 crore; 2-3 kg sample; search summary).</li>
+<li id="s-pmf16"><a href="https://www.pmfias.com/iter-advantage-for-india-pyq-2016/">PMF IAS: Prelims PYQ 2016 - ITER, advantage for India</a> (secondary compilation).</li>
+</ol>
+</section>
+</main>
+</body>
+</html>

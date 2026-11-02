@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Science and Technology - Class Notes | 29 October 2026</title>
+<style>
+  * { box-sizing: border-box; }
+  body { font-family: Calibri, sans-serif; font-size: 11pt; line-height: 1.6; max-width: 900px; margin: 20px auto; padding: 0 20px; color: #202124; }
+  h1 { font-size: 20pt; color: #1a1a1a; border-bottom: 2px solid #333; padding-bottom: 4px; margin-top: 30px; }
+  h2 { font-size: 16pt; color: #2b2b2b; margin-top: 28px; border-bottom: 1px solid #ddd; padding-bottom: 3px; }
+  h3 { font-size: 13pt; color: #3a3a3a; margin-top: 18px; }
+  p { margin: 8px 0; }
+  ul, ol { margin: 6px 0; padding-left: 28px; }
+  li { margin: 4px 0; }
+  a { color: #005ea6; overflow-wrap: anywhere; }
+  table { border-collapse: collapse; width: 100%; margin: 10px 0; table-layout: fixed; }
+  caption { text-align: left; font-weight: bold; margin-bottom: 6px; }
+  th, td { border: 1px solid #999; padding: 6px 10px; text-align: left; vertical-align: top; overflow-wrap: anywhere; }
+  th { background: #f0f0f0; }
+  .table-wrap { overflow-x: auto; }
+  .note, .exam, .verification { background: #fff8e1; border-left: 3px solid #f5a623; padding: 8px 12px; margin: 10px 0; overflow-wrap: anywhere; }
+  .correction { background: #fff3e0; border-left: 3px solid #ef6c00; padding: 8px 12px; margin: 10px 0; }
+  .additional, .lead { background: #e8f5e9; border-left: 3px solid #2e7d32; padding: 8px 12px; margin: 10px 0; }
+  .flow { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 10px; padding: 12px 0; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; }
+  .flow span { text-align: center; max-width: 100%; }
+  .flow .box { border: 1px solid #888; background: #f7f7f7; padding: 6px 10px; border-radius: 4px; flex: 1 1 120px; }
+  figure { margin: 16px 0; padding: 12px; border: 1px solid #bbb; background: #fff; }
+  figure h3 { margin-top: 0; text-align: center; }
+  figcaption { margin-top: 8px; color: #555; font-size: 9.5pt; }
+  svg { max-width: 100%; height: auto; display: block; margin: 0 auto; }
+  .cols2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  .cols3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+  .cols4 { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
+  .tile { border: 1px solid #888; border-radius: 4px; padding: 8px; background: #f5f9fd; font-size: 10.5pt; }
+  .tile.p1 { background: #e8f5e9; border-color: #2e7d32; }
+  .tile.p2 { background: #f5f9fd; border-color: #0078d4; }
+  .tile.p3 { background: #fff3e0; border-color: #ef6c00; }
+  .tile.p4 { background: #fdecea; border-color: #c62828; }
+  .small { color: #555; font-size: 9.5pt; }
+  .answer { margin: 10px 0; padding: 6px 12px; border-left: 3px solid #0078d4; background: #f5f9fd; }
+  @media (max-width: 650px) {
+    body { padding: 0 12px; }
+    .cols2, .cols3, .cols4 { grid-template-columns: 1fr; }
+    .flow { flex-direction: column; align-items: stretch; }
+    .flow .box { flex: none; }
+    th, td { padding: 6px; }
+  }
+  @media print {
+    @page { size: A4; margin: 14mm; }
+    body { max-width: none; margin: 0; padding: 0; }
+    h1, h2, h3 { break-after: avoid; }
+    figure, tr, .answer, .tile { break-inside: avoid; }
+    thead { display: table-header-group; }
+    .table-wrap { overflow: visible; }
+    a { color: inherit; text-decoration: none; }
+    p, li { orphans: 3; widows: 3; }
+  }
+</style>
+</head>
+<body>
+<main>
+<header>
+<h1>Science and Technology - Class Notes | 29 October 2026</h1>
+<p><strong>Topics:</strong> Energy - 1a. Nuclear energy (continued): Stage 3 thorium (resource, advantages, challenges, BARC reactor designs: ADS, CHTR, AHWR, molten salt); India's nuclear weapons programme (tests, NSG, doctrine, command, triad); Fusion power (principle, tokamak and magnetic confinement, ITER and other projects); laser inertial confinement.</p>
+<p class="small">Note date: <time datetime="2026-10-29">29 October 2026</time>. <strong>Continuation:</strong> this note continues Syllabus item 1a from the <em>26 October 2026</em> note (Sections 1-4), the <em>27 October 2026</em> note (Sections 5-10) and the <em>28 October 2026</em> note (Sections 11-16, which already introduced Stage 3 thorium in Section 15); numbering therefore starts at <strong>Section 17</strong>. Figures continue from Figure 13.</p>
+<p class="note"><strong>Reading key:</strong> <strong>[Correction]</strong> repairs a substantive claim; <strong>[Additional]</strong> identifies supporting material or study guidance; <strong>[Verification Required]</strong> retains useful but unresolved material. Sources were consulted on <strong>29 October 2026</strong>. Pages opened in full or in relevant part: ITER Organization (overview, milestones, international tokamak research), LLNL (NIF ignition), the MEA statement of 5 Sep 2008 (via a mirror), and PMF IAS question pages. For CHTR, ANEEL, thorium resources, EAST, KSTAR and INS Aridhaman only <strong>search-result summaries or abstracts</strong> were read, so those items are marked secondary. The official NSG site, the PIB document on nuclear technology, Lok Sabha annexures and the UPSC official papers could <strong>not</strong> be opened. The class gave two items only as headings (a figure for the accelerator-driven system, and "Laser Inertial Confinement"); the figure was drawn (Figure 13) and the laser section was written from verified sources as <strong>[Additional]</strong>. Minor spelling and typing repairs were made silently. No private rough notes were uploaded for research.</p>
+</header>
+
+<section id="thorium2">
+<h2>17. Stage 3 Continued: Thorium Resource, Advantages and Challenges</h2>
+<p class="small">Recap: thorium-232 is <strong>fertile</strong>, not fissile; it is converted to <strong>U-233</strong> after neutron capture (28 Oct note, Section 15). This section adds the class's resource figures, advantages and challenges.</p>
+
+<h3>17.1 Resource base</h3>
+<ul>
+<li><strong>Where:</strong> thorium occurs in <strong>monazite</strong> in coastal beach sands, notably <strong>Kerala</strong> and <strong>Odisha</strong> (also Tamil Nadu and Andhra Pradesh).</li>
+<li><strong>How much (official estimates):</strong> the Atomic Minerals Directorate for Exploration and Research (AMD, DAE) was reported in Feb 2026 to have estimated <strong>13.15 million tonnes (Mt) of monazite across 8 states</strong> (<a href="#s-monazite">Business Line, Feb 2026</a>, secondary). An earlier Lok Sabha reply (search summary) gave about <strong>11.93 Mt monazite containing about 1.07 Mt thorium</strong> (<a href="#s-monazite">Lok Sabha annexure</a>; the annexure itself could not be opened; whether the figure is thorium metal or thorium oxide was not confirmed). <strong>[Verification Required]</strong> the form (Th or ThO<sub>2</sub>) and the current figure.</li>
+<li><strong>Uranium for comparison:</strong> AMD has established <strong>4,42,800 t in-situ U<sub>3</sub>O<sub>8</sub></strong> (<a href="#s-pibpfbr">PIB, 5 Aug 2026</a>, from the 28 Oct note). <strong>[Additional]</strong> Arithmetic: U<sub>3</sub>O<sub>8</sub> is about 84.8% uranium by mass (3 x 238.03 / (3 x 238.03 + 8 x 16.00)), so 4,42,800 t U<sub>3</sub>O<sub>8</sub> holds about 3.75 lakh t of uranium; natural uranium is about 0.72% U-235, so the fissile U-235 in it is only about <strong>2,700 t</strong>.</li>
+</ul>
+<p class="correction" id="c-th-numbers"><strong>[Correction]</strong> The class compares "U-235 deposits about 70,000 tons" with "thorium 748,000 tons". U-235 is an <strong>isotope</strong> (0.72% of natural uranium), not a deposit; resources are quoted for <strong>uranium (as U<sub>3</sub>O<sub>8</sub> or U metal)</strong> and for <strong>thorium or monazite</strong>. Neither 70,000 t nor 748,000 t was found in the official sources opened; the AMD figures above are the verified ones. Compare like with like (uranium vs thorium), not "U-235 vs thorium". <strong>[Verification Required]</strong> the origin of the class numbers.</p>
+
+<h3>17.2 Advantages of thorium (class list, refined)</h3>
+<div class="table-wrap"><table>
+<caption>Class advantages with qualifications</caption>
+<thead><tr><th scope="col">Class statement</th><th scope="col">Refined position</th></tr></thead>
+<tbody>
+<tr><td>1. More abundant than U-235</td><td>True in the sense that India's thorium (monazite) resource is large relative to its uranium resource, and thorium is roughly three times as abundant as uranium in the Earth's crust (<a href="#s-wikiahwr">Wikipedia, AHWR</a>, secondary, from the 28 Oct note). See <a href="#c-th-numbers">correction above</a> for the figures.</td></tr>
+<tr><td>2. Per unit mass, Th gives more energy than U-235</td><td>See <a href="#c-th-energy">correction</a>: the gain is in how much of the <em>mined mineral</em> can be burnt, not in energy per atom fissioned.</td></tr>
+<tr><td>3. Waste is less harmful</td><td>Thorium cycles produce much less long-lived <strong>transuranic</strong> waste (Pu, Am, Cm) but fission products remain radioactive; "less harmful" is relative (28 Oct note, Section 15.1).</td></tr>
+<tr><td>4. "U-235 emits high levels of radiation; it has the best neutron efficiency"</td><td>See <a href="#c-th-neutron">correction</a>.</td></tr>
+</tbody></table></div>
+<p class="correction" id="c-th-energy"><strong>[Correction]</strong> Fissioning one atom of U-233 or U-235 releases similar energy (about 200 MeV; standard knowledge). Thorium's advantage is <strong>resource utilisation</strong>: natural uranium has only 0.72% fissile U-235, whereas essentially all Th-232 is fertile and can be converted to U-233 once a breeding system exists. So "per unit mass" must read "per unit of mined mineral, once converted", as in the 2012 Prelims question (28 Oct note, PYQ 1).</p>
+<p class="correction" id="c-th-neutron"><strong>[Correction]</strong> The class attaches "high radiation" and "best neutron efficiency" to U-235. The relevant property is <strong>neutron yield per neutron absorbed (eta)</strong>: <strong>U-233 has the highest eta of the fissile isotopes in the thermal-neutron spectrum</strong> (about 2.2-2.3, against about 2.0-2.1 for U-235 and Pu-239; standard reactor physics, not opened today), which is why thorium can breed even in a thermal reactor. This is a property of the <strong>thorium-U-233 cycle</strong>. <strong>[Verification Required]</strong> the numerical eta values against a nuclear-data source. Also, the thorium-uranium-233 route produces <strong>U-232 contamination</strong>, which makes the fuel more radioactive to handle (17.3).</p>
+
+<h3>17.3 Challenges in using thorium</h3>
+<ol>
+<li><strong>Fertile, so it needs a driver.</strong> Th-232 cannot sustain a chain reaction alone; it must be irradiated together with a <strong>fissile driver</strong> (U-235, Pu-239 or later U-233) to be turned into U-233. In the three-stage programme the driver is Pu-239 from Stage 1 and Stage 2 (28 Oct note, Figure 8).
+<p class="additional"><strong>[Additional] ANEEL (class example):</strong> <strong>ANEEL</strong> (Advanced Nuclear Energy for Enriched Life) is a thoria-urania mixed-oxide fuel made by the US company <strong>Clean Core Thorium Energy (CCTE)</strong>, using <strong>high-assay low-enriched uranium (HALEU)</strong> as the driver and a burnable neutron absorber, designed as a drop-in replacement for natural-uranium bundles in PHWR/CANDU reactors (<a href="#s-aneel">ScienceDirect abstracts</a>; <a href="#s-ntpc">NTPC press release</a>, titled "NTPC and CCTE to advance thorium-based ANEEL fuel for PHWRs"; the Canadian Nuclear Laboratories fuel-fabrication tie-up is reported by <a href="#s-aneelie">The Indian Express</a>; all secondary or company sources, dates not verified). HALEU means uranium enriched above 5% and below 20% U-235 (standard definition); the class says 5-20%; a neutronics paper describes ANEEL with enrichment up to about 16%. It still needs <strong>enrichment</strong>, so it depends on HALEU supply, unlike the closed-cycle plan of Stages 1-3. It is a private-sector fuel concept, <strong>not</strong> part of the DAE's three-stage design. <strong>[Verification Required]</strong> start dates and the status of any Indian demonstration.</p></li>
+<li><strong>Reprocessing difficulty.</strong> Thorium dioxide (thoria) fuel is chemically very inert; it dissolves in nitric acid only with a small fluoride (hydrofluoric acid) addition in the THOREX process (standard knowledge, <strong>[Verification Required]</strong>). The recovered U-233 is accompanied by U-232, whose decay products emit strong gamma rays, so handling needs shielded <strong>remote-handled</strong> facilities.</li>
+<li><strong>Protactinium step.</strong> The chain is Th-232 + n &rarr; Th-233 &rarr; <strong>Pa-233</strong> &rarr; U-233 (Figure 13). Pa-233 is not fissile, has a half-life of about 27 days, and can absorb another neutron and be lost instead of decaying to U-233, hurting breeding.</li>
+<li><strong>Geopolitical.</strong> Advanced reprocessing and enrichment technology sits under the NSG's controlled transfers; India's NSG membership bid has been opposed by China and some others (Section 19.3).</li>
+<li><strong>Bootstrap problem.</strong> Thorium can only be used at scale after enough fast breeder capacity exists to make the starting fissile material (28 Oct note, Section 15.4). At present only <strong>one commercial-scale prototype</strong> (the 500 MWe PFBR) has reached first criticality (6 Apr 2026); the 40 MWt FBTR is a research reactor.</li>
+</ol>
+<p class="correction" id="c-reproc"><strong>[Correction]</strong> The class says "U-233 does not readily dissolve in acids like hydrofluoric and nitric" and that it "turns into protactinium which is not fissile". Corrected: it is the <strong>thoria fuel matrix</strong> that resists dissolution (needs nitric acid with fluoride); <strong>U-233 itself</strong> is a fissile uranium isotope; <strong>Pa-233</strong> is an intermediate between Th-233 and U-233, not a decay product of U-233. The radioactivity problem arises mainly from <strong>U-232 and its daughters</strong>.</p>
+<p class="correction" id="c-bootstrap"><strong>[Correction]</strong> (i) "China and 9 other countries" opposing the NSG bid: the count of objecting states was not found in the sources opened <strong>[Verification Required]</strong>. (ii) "Only 1 FBR which has just started the operations": PFBR attained <strong>first criticality</strong> (start of a sustained chain reaction), not commercial power operation, and FBTR is a separate research FBR (28 Oct note, correction on criticality).</p>
+</section>
+
+<section id="barcth">
+<h2>18. BARC's Thorium Reactor Designs</h2>
+<div class="table-wrap"><table>
+<caption>Thorium-related designs named in the class (status as of 29 Oct 2026)</caption>
+<thead><tr><th scope="col">Design</th><th scope="col">Class description</th><th scope="col">Verified / refined position</th><th scope="col">Status</th></tr></thead>
+<tbody>
+<tr><td><strong>ADS</strong> (Accelerator Driven System)</td><td>Sub-critical; protons from an accelerator hit lead; neutrons feed the core. BARC and Fermilab building "HISPA"; first meant for waste conversion, now also for power.</td><td>Principle in Section 18.1 and Figure 13. The Indian Institutions-Fermilab Collaboration (IIFC) on superconducting proton accelerators was noted in the 28 Oct note (Wikipedia, BARC). The name <strong>"HISPA"</strong> (High Intensity Superconducting Proton Accelerator) was <strong>not</strong> found in a source opened today <strong>[Verification Required]</strong>.</td><td>R&amp;D. No ADS power plant is reported (28 Oct note, Section 15.2).</td></tr>
+<tr><td><strong>CHTR</strong> (Compact High Temperature Reactor)</td><td>Th-232/U-233 fuel; lead-bismuth coolant; beryllium oxide moderator; non-electrical: desalination and hydrogen.</td><td><strong>Confirmed</strong> by the IAEA INIS record: U-233-thorium fuelled, <strong>lead-bismuth cooled</strong>, <strong>beryllium oxide moderated</strong>, initially about <strong>100 kWth</strong>, <strong>1000 C</strong>, TRISO-coated particle fuel, core life about 15 years, passive safety, a compact power pack for remote areas not connected to the grid, and a technology demonstrator for a hydrogen-focused programme (<a href="#s-chtr">IAEA INIS</a>; <a href="#s-chtrslide">IAEA 2007 slide</a>; secondary summaries).</td><td>Design / technology demonstrator; no reactor built (not verified in an official source today).</td></tr>
+<tr><td><strong>AHWR</strong> (Advanced Heavy Water Reactor)</td><td>Th-232/U-233 fuel; heavy-water moderator; light-water coolant; 300 MW; R&amp;D.</td><td>Consistent with the 28 Oct note (Section 15.2): about 300 MWe, boiling light-water coolant by natural circulation, no unit under construction.</td><td>Design; no unit under construction.</td></tr>
+<tr><td><strong>Molten salt reactor</strong> (India: IMSBR)</td><td>Fuel and coolant both molten; graphite moderator; molten material solidifies in an accident.</td><td>Salt fuel at low pressure and high temperature; graphite moderation is a class statement for the thermal-spectrum design <strong>[Verification Required]</strong>. See <a href="#c-msr2">correction</a>.</td><td>BARC design/R&amp;D (28 Oct note).</td></tr>
+</tbody></table></div>
+
+<h3>18.1 Accelerator Driven System: principle and the thorium chain</h3>
+<figure>
+<h3>Figure 13. ADS Neutron Source and the Thorium-to-U-233 Chain [Additional]</h3>
+<svg viewBox="0 0 760 290" role="img" aria-label="Top row: proton accelerator sends protons to a lead target where spallation releases neutrons, which enter a sub-critical core containing thorium-232. Bottom row: thorium-232 captures a neutron to become thorium-233 (half-life about 22 minutes), beta decay gives protactinium-233 (half-life about 27 days), beta decay gives fissile uranium-233.">
+<defs><marker id="arr13" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#555"/></marker></defs>
+<g font-family="Calibri, sans-serif" font-size="12" text-anchor="middle">
+<rect x="10" y="20" width="200" height="70" fill="#f5f9fd" stroke="#0078d4"/>
+<text x="110" y="45" font-weight="bold" font-size="13">Proton accelerator</text><text x="110" y="64">superconducting,</text><text x="110" y="80">high intensity</text>
+<line x1="210" y1="55" x2="280" y2="55" stroke="#555" marker-end="url(#arr13)"/><text x="245" y="47" font-size="11">protons</text>
+<rect x="280" y="20" width="200" height="70" fill="#fff3e0" stroke="#ef6c00"/>
+<text x="380" y="45" font-weight="bold" font-size="13">Heavy-metal target</text><text x="380" y="64">lead: spallation</text><text x="380" y="80">releases neutrons</text>
+<line x1="480" y1="55" x2="550" y2="55" stroke="#555" marker-end="url(#arr13)"/><text x="515" y="47" font-size="11">neutrons</text>
+<rect x="550" y="20" width="200" height="70" fill="#fdecea" stroke="#c62828"/>
+<text x="650" y="45" font-weight="bold" font-size="13">Sub-critical core</text><text x="650" y="64">Th-232 + fissile driver</text><text x="650" y="80">k<tspan font-size="9" dy="3">eff</tspan><tspan dy="-3"> &lt; 1</tspan></text>
+<path d="M650 90 V120 H95 V150" fill="none" stroke="#555" marker-end="url(#arr13)"/>
+<text x="372" y="115" font-size="11" fill="#555">neutron capture in thorium inside the core</text>
+<rect x="10" y="150" width="170" height="80" fill="#f7f7f7" stroke="#888"/>
+<text x="95" y="180" font-weight="bold" font-size="13">Th-232</text><text x="95" y="198">fertile, not fissile</text><text x="95" y="214">+ neutron</text>
+<line x1="180" y1="190" x2="205" y2="190" stroke="#555" marker-end="url(#arr13)"/>
+<rect x="205" y="150" width="170" height="80" fill="#f7f7f7" stroke="#888"/>
+<text x="290" y="176" font-weight="bold" font-size="13">Th-233</text><text x="290" y="194">half-life about 22 min</text><text x="290" y="210">then beta decay</text>
+<line x1="375" y1="190" x2="400" y2="190" stroke="#555" marker-end="url(#arr13)"/>
+<rect x="400" y="150" width="170" height="80" fill="#f7f7f7" stroke="#888"/>
+<text x="485" y="170" font-weight="bold" font-size="13">Pa-233</text><text x="485" y="187">half-life about 27 days</text><text x="485" y="203">then beta decay</text><text x="485" y="219" font-size="11">(can absorb a neutron instead)</text>
+<line x1="570" y1="190" x2="595" y2="190" stroke="#555" marker-end="url(#arr13)"/>
+<rect x="595" y="150" width="155" height="80" fill="#e8f5e9" stroke="#2e7d32"/>
+<text x="672" y="180" font-weight="bold" font-size="13">U-233</text><text x="672" y="198">fissile: fuel for</text><text x="672" y="214">later stages</text>
+<text x="380" y="276" font-size="11" fill="#555">Switch the accelerator off and the external neutron supply stops: the sub-critical core cannot sustain the reaction.</text>
+</g>
+</svg>
+<figcaption>Schematic, not to scale. Redrawn from the class marker "PA -> Pb -> Th -> U". Half-lives are standard nuclear data and were not re-checked against a table today (<strong>[Verification Required]</strong>). Principle of the accelerator, target and sub-critical core follows the class and the 28 Oct note (<a href="#s-wikibarc">Wikipedia, BARC</a>, secondary).</figcaption>
+</figure>
+<ul>
+<li><strong>Sub-critical</strong> means the effective multiplication factor k<sub>eff</sub> is <strong>below 1</strong>: each generation has fewer neutrons than the last, so the reaction dies unless external neutrons are supplied. The accelerator supplies them through <strong>spallation</strong> in a heavy-metal target.</li>
+<li><strong>Uses:</strong> burn thorium with a smaller fissile inventory; transmute long-lived waste; inherent shutdown by switching off the accelerator.</li>
+</ul>
+<p class="correction" id="c-ads"><strong>[Correction]</strong> (i) The class says the core is sub-critical because "the quantity of fissile material is less than the critical mass". Sub-criticality is a property of the whole core (fuel amount, geometry, absorbers and neutron leakage), summarised by k<sub>eff</sub> &lt; 1; a smaller amount of fuel is one way to get there. (ii) The class says ADS were meant "to convert nuclear waste into stable elements". Transmutation turns long-lived minor actinides into <strong>shorter-lived</strong> products (and some stable ones), not wholly stable elements (28 Oct note, Section 15.3). (iii) The Indian Fermilab partnership is the <strong>IIFC</strong>; "HISPA" is unverified (table above).</p>
+
+<h3>18.2 Hydrogen from the CHTR (class)</h3>
+<ul>
+<li>High-temperature heat (about 1000 C outlet, 28 Oct note: INIS) can drive <strong>thermochemical water splitting</strong> to make hydrogen, and can also supply heat for desalination (class). The IAEA INIS record describes the CHTR as a compact power pack for remote areas and a technology demonstrator for a hydrogen-focused Indian programme.</li>
+<li><strong>Target users (class):</strong> petroleum refining, fertiliser, and iron and steel industries, which today use hydrogen produced from fossil fuels, releasing CO<sub>2</sub>.</li>
+</ul>
+<p class="correction" id="c-h2"><strong>[Correction]</strong> The class says industrial hydrogen today comes from "coal gasification". Most hydrogen worldwide comes from <strong>steam reforming of natural gas</strong> (called "grey" hydrogen); coal gasification is a route used in some countries including parts of fertiliser production. The point that conventional hydrogen causes CO<sub>2</sub> emissions stands. <strong>[Verification Required]</strong> India's route-wise share (not opened). Do not confuse the 100 kWth CHTR with the HTGCR of the Nuclear Energy Mission (28 Oct note, correction on CHTR versus HTGCR).</p>
+
+<h3>18.3 Molten salt reactor (class)</h3>
+<p class="correction" id="c-msr2"><strong>[Correction]</strong> The class says that in an accident "the molten material will solidify after coming in contact with air". Molten-salt designs rely on <strong>freeze-plug or gravity-drain</strong> features: fuel salt drains to a tank where it <strong>cools and solidifies</strong>, and the salt operates near atmospheric pressure so there is no high-pressure steam to burst a vessel. Contact with air is not the safety mechanism, and such features are <strong>design claims</strong> for a technology not yet shown at power-plant scale (28 Oct note, correction on molten-salt reactors). <strong>[Additional]</strong> China's experimental thorium molten-salt reactor TMSR-LF1 (2 MWt, first criticality 11 Oct 2023) is a research prototype (<a href="#s-wikitmsr">Wikipedia, TMSR-LF1</a>, from the 28 Oct note).</p>
+</section>
+
+<section id="weapons">
+<h2>19. India's Nuclear Weapons Programme, the NSG and Doctrine</h2>
+<p class="small">Why this fits here: the same research reactors, plutonium and safeguards issues covered in Sections 5-14 (27 and 28 Oct notes) sit behind the weapons programme and the NSG debate. Defence content uses only publicly declared positions; no classified capability is stated.</p>
+
+<h3>19.1 Tests and delivery systems</h3>
+<div class="table-wrap"><table>
+<caption>Milestones in India's weapons programme (public record)</caption>
+<thead><tr><th scope="col">Date</th><th scope="col">Event</th><th scope="col">Notes</th></tr></thead>
+<tbody>
+<tr><td>18 May 1974</td><td><strong>Pokhran-I</strong>, code-named <strong>"Smiling Buddha"</strong>; described by PM Indira Gandhi as a <strong>"peaceful nuclear explosion"</strong>.</td><td>Single plutonium fission device; class gives an officially stated yield of about <strong>12 kt TNT equivalent</strong>. <strong>[Verification Required]</strong> yield (estimates differ) and date (standard knowledge, not opened today).</td></tr>
+<tr><td>1975</td><td>London meetings create the informal <strong>Nuclear Suppliers Group</strong> (early name "London Club"), formed in reaction to the 1974 test.</td><td>Class statement (Section 19.3).</td></tr>
+<tr><td>1983</td><td><strong>Integrated Guided Missile Development Programme (IGMDP)</strong> began; produced <strong>Prithvi</strong> and <strong>Agni</strong> nuclear-capable missiles.</td><td>Class; IGMDP also produced other missiles (Akash, Nag, Trishul; standard knowledge, <strong>[Verification Required]</strong>).</td></tr>
+<tr><td>11 and 13 May 1998</td><td><strong>Pokhran-II / Operation Shakti</strong>: three tests on 11 May (fission, thermonuclear, sub-kilotonne) and two sub-kilotonne devices on 13 May.</td><td>Expected thermonuclear yield about <strong>45 kt</strong> is the Indian position; some experts abroad argued it under-performed (class). See <a href="#c-pok2">correction</a>.</td></tr>
+<tr><td>May 1998</td><td>Pakistan's <strong>Chagai</strong> tests.</td><td>Class says "a few days later"; see correction.</td></tr>
+<tr><td>1999 / Jan 2003</td><td>Draft doctrine by the National Security Advisory Board (made public 1999); doctrine adopted in <strong>January 2003</strong>.</td><td>Convener K. Subrahmanyam (class).</td></tr>
+<tr><td>2018</td><td><strong>INS Arihant</strong> completes its first deterrence patrol, completing the triad (class).</td><td>Arihant was commissioned in 2016 (<a href="#s-aridhaman">India Today, 3 Apr 2026</a>).</td></tr>
+<tr><td>Aug 2024 / Apr 2026</td><td><strong>INS Arighaat</strong> (Aug 2024) and <strong>INS Aridhaman</strong> (reported commissioned on <strong>3 Apr 2026</strong>) inducted.</td><td>Aridhaman's induction was low-profile; reports quote a Defence Minister post on X (<a href="#s-aridhaman">India Today</a>, secondary). <strong>[Verification Required]</strong> against an official MoD or PIB statement.</td></tr>
+</tbody></table></div>
+<p class="correction" id="c-pok2"><strong>[Correction]</strong> (i) Pakistan's Chagai tests were on <strong>28 and 30 May 1998</strong>, about two and a half weeks after 11 May, not "a few days" (standard knowledge, <strong>[Verification Required]</strong>). (ii) The class gives the 1983 IGMDP as producing "Prithvi and Agni"; the programme also covered other missile types, so the statement is incomplete rather than wrong. (iii) Pokhran-I was a <strong>plutonium</strong> device using plutonium produced in a research reactor (CIRUS, 28 Oct note, Section 12) <strong>[Additional; Verification Required]</strong>. (iv) India's yields are Indian official figures; they should be quoted as such, not as independently verified.</p>
+
+<h3>19.2 The Nuclear Suppliers Group (NSG)</h3>
+<ul>
+<li><strong>What:</strong> a group of nuclear supplier countries that controls transfer of nuclear and nuclear-related dual-use material and technology through guidelines; <strong>decisions by consensus</strong> (class). The count of participating governments is reported as <strong>48</strong> (<a href="#s-nsg">secondary compilation</a>; the NSG website could not be opened <strong>[Verification Required]</strong>).</li>
+<li><strong>Supply conditions (class):</strong> for a non-nuclear-weapon country to receive nuclear technology from NSG members it must accept <strong>full-scope safeguards</strong> (all present and future facilities under IAEA inspection) and adhere to the <strong>NPT</strong> or an equivalent binding commitment. See <a href="#c-nsgcond">correction</a>.</li>
+<li><strong>Membership factors (class):</strong> (a) ability to supply items covered by the guidelines; (b) compliance with the guidelines; (c) enforcement of a legally based domestic export-control system; (d) support for international efforts to prevent proliferation of weapons of mass destruction; (e) being a party to the NPT, or to a nuclear-weapon-free-zone treaty, and in full compliance.</li>
+</ul>
+<div class="table-wrap"><table>
+<caption>Nuclear-weapon-free-zone treaties named in the class</caption>
+<thead><tr><th scope="col">Treaty</th><th scope="col">Region</th></tr></thead>
+<tbody>
+<tr><td>Treaty of <strong>Pelindaba</strong></td><td>Africa</td></tr>
+<tr><td>Treaty of <strong>Semipalatinsk</strong></td><td>Central Asia</td></tr>
+<tr><td>Treaty of <strong>Bangkok</strong></td><td>South-East Asia</td></tr>
+<tr><td>Treaty of <strong>Tlatelolco</strong></td><td>Latin America and the Caribbean</td></tr>
+<tr><td>Treaty of <strong>Rarotonga</strong></td><td>South Pacific</td></tr>
+</tbody></table></div>
+<p class="correction" id="c-nsgcond"><strong>[Correction]</strong> The class presents full-scope safeguards and NPT adherence as two conditions for receiving NSG technology. Standard knowledge: the NSG's <strong>supply condition</strong> (since 1992) is <strong>full-scope IAEA safeguards</strong> in the recipient state; <strong>NPT (or nuclear-weapon-free-zone) membership</strong> is a criterion for <strong>NSG membership</strong> and for transfers of enrichment and reprocessing items. The 2008 waiver relaxed the first for India. <strong>[Verification Required]</strong> against NSG guideline documents (INFCIRC/254), which were not opened.</p>
+
+<h3>19.3 India and the NSG: from waiver to membership bid</h3>
+<div class="flow"><span class="box"><strong>1974</strong> test &rarr; NSG formed (1975)</span><span>&rarr;</span><span class="box"><strong>Sep 2008</strong> India-specific <em>clean waiver</em> (consensus)</span><span>&rarr;</span><span class="box"><strong>2010-2011</strong> liability Act; NSG tightens ENR transfer guidelines</span><span>&rarr;</span><span class="box"><strong>2015</strong> India Nuclear Insurance Pool</span><span>&rarr;</span><span class="box"><strong>2016</strong> Seoul plenary: membership bid blocked</span></div>
+<ul>
+<li><strong>2008 waiver:</strong> the NSG held a plenary in Vienna on 4-5 Sep 2008 (45 members at the time, class) to consider an exception for India. On <strong>5 Sep 2008</strong> External Affairs Minister Pranab Mukherjee stated that India remained committed to a <strong>voluntary, unilateral moratorium on nuclear testing</strong>, affirmed its <strong>no-first-use</strong> policy, would work for a multilateral <strong>Fissile Material Cut-off Treaty</strong>, would not transfer <strong>enrichment and reprocessing</strong> technology, had comprehensive export controls (WMD Act 2005), would conclude an <strong>Additional Protocol</strong> with the IAEA, and was interested in participating as a <strong>supplier of thorium-based fuel</strong> (<a href="#s-mea08">MEA statement, 5 Sep 2008</a>, read via a mirror). The waiver followed (6 Sep 2008). The USA proposed the exemption; it was supported by all members including China (member since 2004) (class). India is the <strong>only country</strong> to receive this type of "clean waiver" (class; <strong>[Verification Required]</strong>).</li>
+<li><strong>2010-2011:</strong> India passed the Civil Liability for Nuclear Damage Act in 2010, and differences with the US emerged (class); in 2011 the NSG tightened guidelines on transfer of enrichment and reprocessing technology to countries outside the NPT (class). Note: the 2010 Act has since been repealed by the SHANTI Act 2025 (27 Oct note, Sections 7-9).</li>
+<li><strong>2015:</strong> the <strong>India Nuclear Insurance Pool</strong> was created to cover liability concerns of operators and suppliers (class).</li>
+<li><strong>2016, Seoul plenary:</strong> India's application was opposed by <strong>China</strong> and a few others: the Chinese stand was that India has not signed the NPT and the rules should not be changed for one country; India argued for a <strong>performance-based</strong> rather than criteria-based assessment; China then proposed a <strong>two-step approach</strong> for non-NPT states (India and Pakistan). Class view: China wants Pakistan admitted together so that it can export reactors to Pakistan and support the China-Pakistan Economic Corridor (a Belt and Road project); many members are unwilling to admit Pakistan because of its proliferation record (the A.Q. Khan network).</li>
+<li><strong>India's strategy (class):</strong> ask friendly countries (USA, France, Japan) to persuade objectors and improve bilateral relations with sceptics; the class judges that isolating China has a low probability of success.</li>
+<li><strong>Benefits of membership (class):</strong> (i) export of nuclear technology and nuclear diplomacy in Asia and Africa; (ii) fuel imports from countries such as <strong>Namibia</strong> (a Pelindaba party) that face restrictions on exports to India; (iii) better access to cutting-edge technology to push Stage 3 (thorium) towards commercialisation; (iv) faster non-fossil capacity for the <strong>net-zero by 2070</strong> commitment.</li>
+</ul>
+<p class="correction" id="c-insp"><strong>[Correction]</strong> (i) The class says the 2015 pool covers "the liability of the operator and the supplier". The pool is a risk-sharing arrangement set up so that suppliers' exposure under the 2010 Act's recourse provisions is insured; the exact structure and the sum (reported as Rs 1,500 crore, via GIC Re) were <strong>not verified</strong> <strong>[Verification Required]</strong>. (ii) The class lists the 2011 tightening and 2016 events from memory; dates of the 2011 guideline text and the number of objecting states were not found in the sources opened. (iii) The Namibia point is consistent with the safeguards condition in the Pelindaba treaty, but Namibia is not on the DAE bilateral-agreement list used in the 27 Oct note, and no official supply restriction statement was opened <strong>[Verification Required]</strong>.</p>
+
+<h3>19.4 Doctrine: components and No First Use (NFU)</h3>
+<p>The National Security Advisory Board, under <strong>K. Subrahmanyam</strong>, drafted a nuclear doctrine (made public in 1999) which was <strong>adopted in January 2003</strong> (class). India states that its weapons are meant to <strong>deter</strong>, not to attack.</p>
+<ol>
+<li><strong>No first use:</strong> India will not be the first to use nuclear weapons, but if attacked it will respond with <strong>massive retaliation</strong> to inflict unacceptable damage. This needs <strong>second-strike capability</strong> and therefore a <strong>triad</strong> (land, air and sea), in particular a ballistic-missile submarine. India retains the option of <strong>nuclear retaliation against a major biological or chemical attack</strong> on India or Indian forces anywhere (class). During drafting there were three schools: <em>rationalists</em> (for NFU), <em>maximalists</em> (first use), <em>rejectionists</em> (decide as the situation demands) (class). In 2010 NSA Shivshankar Menon described the policy as "no first use against non-nuclear-weapon states" (class, <strong>[Verification Required]</strong>).</li>
+<li><strong>Non-use against non-nuclear-weapon states</strong> (except as in the biological/chemical clause above).</li>
+<li><strong>Self-imposed moratorium on nuclear testing.</strong></li>
+<li><strong>Credible minimum deterrence:</strong> a minimum number of weapons enough for unacceptable damage; judging "unacceptable" needs an understanding of the adversary's economy, polity, defence and society.</li>
+<li><strong>Decision-making: Nuclear Command Authority.</strong> The <strong>Political Council</strong> (chaired by the Prime Minister) takes the final decision; the <strong>Executive Council</strong> (chaired by the National Security Adviser) supports it; execution is by the <strong>Strategic Forces Command (SFC)</strong>, headed by an officer of Air Marshal or equivalent rank, which holds the weapons, missiles and aircraft. The SFC is one of two tri-service commands (the other is the <strong>Andaman and Nicobar Command</strong>) (class; <strong>[Verification Required]</strong> that no other tri-service command has since been created).</li>
+</ol>
+<figure>
+<h3>Figure 14. Nuclear Command Authority and the Triad [Additional]</h3>
+<div class="flow"><span class="box"><strong>Political Council</strong><br/>chair: Prime Minister<br/>final decision</span><span>&rarr;</span><span class="box"><strong>Executive Council</strong><br/>chair: National Security Adviser<br/>advice and directions</span><span>&rarr;</span><span class="box"><strong>Strategic Forces Command</strong><br/>head: Air Marshal or equivalent<br/>executes</span></div>
+<div class="cols3">
+<div class="tile p1"><strong>Land</strong><br/>Prithvi and Agni missiles (IGMDP, 1983 onward)</div>
+<div class="tile p2"><strong>Air</strong><br/>nuclear-capable aircraft; platforms not officially itemised in the sources opened</div>
+<div class="tile p4"><strong>Sea</strong><br/>SSBNs: INS Arihant (2016; K-15 missiles), INS Arighaat (Aug 2024), INS Aridhaman (reported 3 Apr 2026)</div>
+</div>
+<figcaption>Schematic. Command structure and triad as described in the class. Submarine details from <a href="#s-aridhaman">India Today (3 Apr 2026)</a>, a secondary report; no official specifications are stated here. The class adds that the government approved building nuclear-powered <em>attack</em> submarines in 2024 (<strong>[Verification Required]</strong>).</figcaption>
+</figure>
+<p class="correction" id="c-triad"><strong>[Correction]</strong> The class says the triad was completed "when INS Arihant completed its first deterrence patrol in 2018" and mentions only Arighaat (2024). Arihant was <strong>commissioned in 2016</strong> and reportedly completed the first patrol in 2018; a third SSBN, <strong>INS Aridhaman</strong>, was reported as commissioned on <strong>3 Apr 2026</strong> (secondary; no official release opened). Triad status as of 29 Oct 2026 therefore: three SSBNs reported, one unconfirmed officially.</p>
+
+<h3>19.5 Merits and demerits of NFU (class)</h3>
+<div class="table-wrap"><table>
+<caption>Arguments on India's NFU</caption>
+<thead><tr><th scope="col">For retaining NFU</th><th scope="col">For moving to first use (class)</th></tr></thead>
+<tbody>
+<tr><td>Minimises the chance of nuclear war; first-use postures raise it.</td><td>China has numerical advantage in weapons; first use might neutralise it.</td></tr>
+<tr><td>Avoids an arms race; first use needs more warheads and missiles.</td><td>India's numbers of missiles and weapons are much better than in 2003, so a first-use posture could be sustained.</td></tr>
+<tr><td>Spares leaders pressure to strike first; a shift would need structural changes in the arsenal.</td><td>Pakistan uses terrorism as an instrument of state policy (proxy war), which some argue first use could address.</td></tr>
+<tr><td>Was an important factor behind the clean waiver and the cooperation agreements.</td><td></td></tr>
+<tr><td>If NFU is dropped, China and Pakistan may draw closer; there is a risk of nuclear material reaching terror groups (class cites views attributed to former US President Obama, <strong>[Verification Required]</strong>).</td><td></td></tr>
+</tbody></table></div>
+<ul>
+<li><strong>Who declares NFU (class):</strong> India and China declare NFU. North Korea and Pakistan reject it, fearing being overwhelmed by a bigger adversary even in a conventional war. The UK, France and the USA retain first use (the USA because of NATO and treaties with Japan and South Korea; if the US moved to NFU, Japan and South Korea might consider their own weapons). The Soviet Union declared NFU in 1982; Russia dropped it in 1993 because its conventional capability had declined (<strong>[Verification Required]</strong>, standard knowledge).</li>
+<li><strong>Class conclusion:</strong> rather than change NFU, India should strengthen its nuclear triad and ballistic missile defence. No Indian Prime Minister since 2003 has said the government is contemplating a change; the latest position is that India remains committed to NFU (class). <strong>[Additional; Verification Required]</strong> In Aug 2019 the Defence Minister said what happens in future depends on circumstances; this is reported secondarily and was not opened today.</li>
+</ul>
+</section>
+
+<section id="fusion">
+<h2>20. Fusion Power</h2>
+<h3>20.1 Principle</h3>
+<ul>
+<li><strong>Nuclear fusion</strong> (also called a <strong>thermonuclear reaction</strong>) is the energy source of the Sun and stars: light nuclei (hydrogen isotopes) combine to form a heavier nucleus (helium), releasing a neutron and energy. The mass of the product is slightly less than the sum of the reactants; the difference is released as energy (E = mc<sup>2</sup>) (<a href="#s-llnl">LLNL</a>).</li>
+<li><strong>Why explored:</strong> to address resource and environmental constraints; fusion is a clean, carbon-free option (class; <a href="#s-iterfew">ITER</a>).</li>
+<li><strong>Fuel:</strong> the easiest reaction in the laboratory is <strong>deuterium + tritium (D-T)</strong>, which has the highest energy gain at the "lowest" temperatures (<a href="#s-iterfew">ITER</a>).</li>
+<li><strong>Three conditions</strong> (ITER): very high temperature (of the order of <strong>150,000,000 C</strong>); sufficient plasma density; sufficient confinement time.</li>
+</ul>
+<figure>
+<h3>Figure 15. Deuterium-Tritium Fusion Reaction [Additional]</h3>
+<svg viewBox="0 0 760 200" role="img" aria-label="Deuterium (one proton, one neutron) and tritium (one proton, two neutrons) fuse into a helium-4 nucleus carrying 3.5 MeV and a neutron carrying 14.1 MeV, together 17.6 MeV.">
+<defs><marker id="arr15" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#555"/></marker></defs>
+<g font-family="Calibri, sans-serif" font-size="12" text-anchor="middle">
+<circle cx="70" cy="80" r="34" fill="#e3f2fd" stroke="#0078d4"/><text x="70" y="78" font-weight="bold" font-size="14">D</text><text x="70" y="94" font-size="11">1p + 1n</text>
+<text x="70" y="136">deuterium</text>
+<text x="130" y="86" font-size="20">+</text>
+<circle cx="190" cy="80" r="38" fill="#e3f2fd" stroke="#0078d4"/><text x="190" y="78" font-weight="bold" font-size="14">T</text><text x="190" y="94" font-size="11">1p + 2n</text>
+<text x="190" y="136">tritium</text>
+<line x1="250" y1="80" x2="360" y2="80" stroke="#555" marker-end="url(#arr15)"/>
+<text x="305" y="68" font-size="11">about 150 million C</text><text x="305" y="102" font-size="11">in a plasma</text>
+<circle cx="450" cy="80" r="40" fill="#fff3e0" stroke="#ef6c00"/><text x="450" y="78" font-weight="bold" font-size="14">He-4</text><text x="450" y="94" font-size="11">2p + 2n</text>
+<text x="450" y="136" font-weight="bold">3.5 MeV</text><text x="450" y="152" font-size="11">stays in plasma: self-heating</text>
+<text x="525" y="86" font-size="20">+</text>
+<circle cx="595" cy="80" r="16" fill="#e8f5e9" stroke="#2e7d32"/><text x="595" y="85" font-weight="bold">n</text>
+<text x="640" y="136" font-weight="bold">14.1 MeV</text><text x="640" y="152" font-size="11">escapes: captured as heat in the blanket</text>
+<text x="380" y="186" font-size="11" fill="#555">Total energy released per reaction: 3.5 + 14.1 = 17.6 MeV</text>
+</g>
+</svg>
+<figcaption>Schematic, not to scale. Reaction and the 150 million C condition follow <a href="#s-iterfew">ITER</a>; the energy split (3.5 MeV, 14.1 MeV) is standard fusion physics and was not opened in a source today (<strong>[Verification Required]</strong>). Tritium is bred from lithium in a blanket (neutron + Li-6 gives tritium + helium; standard knowledge); ITER states the world's tritium supply is not enough for future power plants and will test breeding blankets.</figcaption>
+</figure>
+<div class="table-wrap"><table>
+<caption>Fission versus fusion (concept comparison)</caption>
+<thead><tr><th scope="col">Feature</th><th scope="col">Nuclear fission</th><th scope="col">Nuclear fusion</th></tr></thead>
+<tbody>
+<tr><td>Process</td><td>Heavy nucleus splits (U-235, Pu-239, U-233)</td><td>Light nuclei combine (D + T)</td></tr>
+<tr><td>Self-sustaining chain reaction</td><td>Yes (critical, k<sub>eff</sub> = 1)</td><td>No chain reaction; plasma must be kept hot and confined, and stops if conditions are lost</td></tr>
+<tr><td>Fuel</td><td>Uranium, plutonium, thorium route</td><td>Deuterium and tritium (tritium bred from lithium)</td></tr>
+<tr><td>Status</td><td>Commercial</td><td>Experimental; ITER will not produce electricity (ITER)</td></tr>
+</tbody></table></div>
+
+<h3>20.2 Magnetic confinement: plasma and the tokamak</h3>
+<ul>
+<li><strong>Plasma</strong> is often called the fourth state of matter: at extreme temperatures <strong>electrons are separated from nuclei</strong> and the gas becomes charged (<a href="#s-iterfew">ITER</a>). Fusion plasmas are the environment in which light elements can fuse.</li>
+<li><strong>Principle:</strong> a charged particle in a magnetic field is forced to spiral along the field lines, so strong magnetic fields can hold hot plasma away from the vessel walls.</li>
+<li><strong>Tokamak:</strong> a doughnut-shaped (<strong>toroidal</strong>) vacuum chamber surrounded by magnetic coils. The word is a Russian acronym for "toroidal chamber with magnetic coils"; it was first developed in Soviet research in the late 1950s (<a href="#s-iterfew">ITER</a>). Energy of fusion is absorbed as heat in the walls and, like a conventional plant, can drive steam turbines in a future power plant.</li>
+<li><strong>Goal:</strong> to raise the plasma temperature to about 150 million C so that fusion occurs, and to obtain more fusion power than the heating power put in. The measure is <strong>Q = fusion power / heating power</strong>: ITER is designed for <strong>Q = 10</strong>, i.e. <strong>500 MW of fusion power from 50 MW of heating power</strong>; the JET record in 1997 was 16 MW from 24 MW (Q = 0.67) (<a href="#s-iterfew">ITER</a>).</li>
+</ul>
+<figure>
+<h3>Figure 16. Tokamak Cross-Section (poloidal view) [Additional]</h3>
+<svg viewBox="0 0 760 340" role="img" aria-label="Poloidal cross-section of a tokamak: a D-shaped plasma inside a vacuum vessel with blanket, surrounded by D-shaped toroidal field coils, with a central solenoid on the machine axis, poloidal field coils outside, and a divertor at the bottom.">
+<g font-family="Calibri, sans-serif" font-size="12">
+<line x1="110" y1="10" x2="110" y2="320" stroke="#999" stroke-dasharray="5 4"/>
+<text x="116" y="24" fill="#555">machine axis</text>
+<rect x="150" y="70" width="34" height="190" fill="#e3f2fd" stroke="#0078d4"/>
+<path d="M230 20 C 530 20 530 300 230 300 Z" fill="none" stroke="#0078d4" stroke-width="6"/>
+<path d="M262 50 C 470 50 470 270 262 270 Z" fill="#eceff1" stroke="#607d8b" stroke-width="3"/>
+<path d="M290 85 C 410 85 410 235 290 235 Z" fill="#ffe0b2" stroke="#ef6c00" stroke-width="2"/>
+<text x="318" y="165" fill="#8a4b00" font-weight="bold">Plasma</text>
+<rect x="300" y="252" width="66" height="8" fill="#2e7d32"/>
+<rect x="486" y="60" width="18" height="36" fill="#c8e6c9" stroke="#2e7d32"/>
+<rect x="486" y="224" width="18" height="36" fill="#c8e6c9" stroke="#2e7d32"/>
+<text x="167" y="284" text-anchor="middle">Central solenoid</text><text x="167" y="300" text-anchor="middle" font-size="11">drives plasma current</text>
+<line x1="504" y1="78" x2="536" y2="78" stroke="#555"/><text x="540" y="74">Poloidal field coils</text><text x="540" y="90" font-size="11">shape and position the plasma</text>
+<line x1="449" y1="127" x2="536" y2="127" stroke="#555"/><text x="540" y="123">Toroidal field coils</text><text x="540" y="139" font-size="11">main confining field</text>
+<line x1="414" y1="186" x2="536" y2="186" stroke="#555"/><text x="540" y="182">Vacuum vessel + blanket</text><text x="540" y="198" font-size="11">absorb neutron heat, breed tritium</text>
+<line x1="333" y1="260" x2="333" y2="312" stroke="#555"/><text x="346" y="326">Divertor: exhausts heat and helium ash</text>
+</g>
+</svg>
+<figcaption>Schematic, not to scale; simplified and not an engineering drawing of any named machine. The toroidal field is produced by the coils; a current driven in the plasma by the central solenoid adds a poloidal field, so the field lines twist helically (standard tokamak physics, <strong>[Verification Required]</strong> against an ITER machine page). Components follow the <a href="#s-iterfew">ITER overview</a> and <a href="#s-itertok">international tokamak research</a> pages.</figcaption>
+</figure>
+<p class="verification" id="v-itermachine"><strong>[Visual Representation Recommended: a labelled engineering cross-section of the ITER tokamak (cryostat, toroidal and poloidal field coils, central solenoid, vacuum vessel, blanket modules, divertor) with the ITER Organization's own drawing as source, to complement the simplified schematic above.]</strong></p>
+<p class="correction" id="c-plasma"><strong>[Correction]</strong> The class says plasma is formed "when an atom disintegrates into charged particles" and that a charged particle in a magnetic field "moves clockwise or anticlockwise". Better: at very high temperature the atom is <strong>ionised</strong> (electrons and nuclei separate; ITER); in a magnetic field the particle <strong>gyrates in a spiral along the field line</strong> (the sense of rotation depends on the sign of its charge). "Tokamak (cylindrical)" is <strong>toroidal</strong> (doughnut-shaped).</p>
+
+<h3>20.3 Major projects (class list, checked)</h3>
+<div class="table-wrap"><table>
+<caption>Tokamaks named in the class (status as of 29 Oct 2026)</caption>
+<thead><tr><th scope="col">Device</th><th scope="col">Place / body</th><th scope="col">Class statement</th><th scope="col">Verified or refined</th></tr></thead>
+<tbody>
+<tr><td><strong>ITER</strong></td><td>Cadarache (Saint-Paul-lez-Durance), southern France</td><td>At Cadarache, south France; members India, Japan, South Korea, UK, EU, Russia, US, China; first international scientific project joined by India as a full shareholder (2005).</td><td>See Section 20.4 and <a href="#c-iter-members">correction</a>.</td></tr>
+<tr><td><strong>ADITYA / ADITYA-U</strong></td><td>Institute for Plasma Research (IPR), Gujarat</td><td>Indian project.</td><td>India's <strong>first indigenously designed and fabricated tokamak</strong>; operating since <strong>1989</strong>; upgraded from limiter to <strong>divertor</strong> configuration (<a href="#s-itertok">ITER</a>).</td></tr>
+<tr><td><strong>SST-1</strong> (Steady State Superconducting Tokamak)</td><td>IPR, Gujarat</td><td>Indian project.</td><td>Fully commissioned in <strong>2013</strong>; discharges up to about 500 ms with plasma current above 75,000 A at a central field of 1.5 T (<a href="#s-itertok">ITER</a>).</td></tr>
+<tr><td><strong>KSTAR</strong> (Korea Superconducting Tokamak Advanced Research)</td><td>National Fusion Research Institute, Daejeon, South Korea</td><td>Heated plasma to 100 million C for 30 s.</td><td>First plasma 2008; tungsten divertor installed 2023 (goal: 100 million C for 300 s by 2026) (<a href="#s-itertok">ITER</a>). The <strong>30 s</strong> was the 2021 record; a Dec 2023-Feb 2024 campaign reported <strong>48 s at 100 million C</strong> (<a href="#s-kstar">secondary report</a>). See <a href="#c-kstar">correction</a>.</td></tr>
+<tr><td><strong>JET</strong> (Joint European Torus)</td><td>Culham, UK</td><td>Joint EU torus, UK.</td><td>World's largest and most powerful tokamak from 1983 to 2023; first controlled D-T fusion power 1991; 16 MW record 1997; final campaign autumn 2023; moved to repurposing and decommissioning in 2024 (<a href="#s-itertok">ITER</a>). <strong>Retired.</strong></td></tr>
+<tr><td><strong>EAST</strong> (Experimental Advanced Superconducting Tokamak, "artificial sun")</td><td>Institute of Plasma Physics, Hefei, China</td><td>Heated plasma to 120 million C for 101 s.</td><td>First plasma 2006; fully superconducting; H-mode held for more than 400 s (ITER page). A sustained H-mode of <strong>1,066 s</strong> (Jan 2025) is reported secondarily (<a href="#s-east">Fusion Energy News</a>). The 101 s at 120 million C (2021) was not found in the sources opened <strong>[Verification Required]</strong>.</td></tr>
+<tr><td><strong>JT-60SA</strong></td><td>Naka, Japan (Japan and Euratom, Broader Approach)</td><td>Biggest tokamak at present, by Japan and EU.</td><td>First plasma <strong>Oct 2023</strong>; "now the largest operating tokamak in the world"; Guinness record for plasma volume (<a href="#s-itertok">ITER</a>; <a href="#s-itermile">milestones</a>).</td></tr>
+</tbody></table></div>
+<p class="correction" id="c-kstar"><strong>[Correction]</strong> Records are time-sensitive and are quoted with a date: KSTAR's <strong>30 s</strong> at 100 million C is the 2021 value; <strong>48 s</strong> was reported for the Dec 2023-Feb 2024 campaign. The same secondary report also mentions a 102 s plasma duration in that campaign, which is a different measure from the 48 s at 100 million C; do not mix the two numbers. <strong>[Verification Required]</strong> against KFE or NFRI.</p>
+<p class="correction" id="c-east"><strong>[Correction]</strong> "EAST / Art Sun" in the class is "EAST, nicknamed the artificial sun". The class's 120 million C for 101 s was not confirmed; the verified long-pulse result is the more than 400 s H-mode (ITER page) and the secondary report of 1,066 s. Duration records (long pulse) and fusion-energy records (JET, NIF) are different achievements: long-pulse tokamak experiments on EAST and KSTAR do not produce net fusion energy.</p>
+<p class="correction" id="c-jet"><strong>[Correction]</strong> The class names the device "joint EU torus" and lists it as current. JET is the <strong>Joint European Torus</strong>, hosted in the <strong>UK</strong>, and ended operations in 2023 (decommissioning from 2024). The UK left Euratom after Brexit and is no longer an ITER participant.</p>
+
+<h3>20.4 ITER</h3>
+<div class="table-wrap"><table>
+<caption>ITER fact sheet (ITER Organization pages, opened 29 Oct 2026)</caption>
+<thead><tr><th scope="col">Item</th><th scope="col">Detail</th></tr></thead>
+<tbody>
+<tr><td>Name and goal</td><td>"The Way" in Latin; world's largest tokamak; prove feasibility of fusion as a large-scale carbon-free energy source; investigate <strong>burning plasmas</strong> where helium nuclei produced by fusion sustain the temperature.</td></tr>
+<tr><td>Site</td><td>Cadarache area, Saint-Paul-lez-Durance, southern France; 42-hectare site; construction since 2010.</td></tr>
+<tr><td>Members</td><td><strong>Seven</strong>: China, European Union (via Euratom), India, Japan, Korea, Russia, United States. ITER Agreement concluded <strong>2006</strong>; ITER Organization formally created 2007; site decision 2005. The UK left after Brexit (no new contracts); Switzerland is a participant via Fusion for Energy (from 1 Jan 2026) but not a Member.</td></tr>
+<tr><td>Cost sharing</td><td>Europe <strong>45.6%</strong>; each of China, India, Japan, Korea, Russia, USA <strong>9.1%</strong> (ITER, rounded); about nine-tenths of the value is delivered in kind (components, systems, buildings).</td></tr>
+<tr><td>Performance target</td><td>Q = 10: <strong>500 MW fusion power from 50 MW heating</strong>; will not generate electricity; will test tritium breeding blankets; licensed as a nuclear operator in France in 2012.</td></tr>
+<tr><td>Schedule (2024 baseline, approved in overall approach by ITER Council, Nov 2024)</td><td>Cryostat closure 2033; <strong>Start of Research Operation 2034</strong> (hydrogen and D-D plasmas); <strong>full magnetic energy 2036</strong> (3-year delay vs 2016); <strong>D-T operation 2039</strong> (4-year delay vs 2016).</td></tr>
+<tr><td>Progress</td><td>All core tokamak components (cryostat, magnets, vacuum vessel) were on site by <strong>2 Oct 2026</strong>, when vacuum vessel sector 2 arrived from Europe (<a href="#s-itermile">ITER milestones</a>).</td></tr>
+</tbody></table></div>
+<p class="correction" id="c-iter-members"><strong>[Correction]</strong> The class lists the <strong>UK</strong> as an ITER member. The seven Members are <strong>China, the EU, India, Japan, Korea, Russia and the USA</strong>; the UK discontinued participation after leaving Euratom (<a href="#s-iterfew">ITER</a>). Third-country cooperation agreements exist (Australia, Kazakhstan, Canada MoU, Thailand), but these are not Members. The ITER site also gives a larger figure of "33-35 nations" because it counts all EU member states.</p>
+<p class="correction" id="c-iter-india"><strong>[Correction]</strong> The class says ITER was "the first international scientific project joined by India as a full-fledged shareholder (2005)" and that India is represented by "BARC, Institute for Plasma Research and Saha Institute of Nuclear Physics". ITER's milestone list records that India became the <strong>7th Member</strong> (2005); India's share is 9.1% and mostly in kind. The "first international project" claim was <strong>not verified</strong> (India joined other international projects earlier, standard knowledge). India's ITER work is run by the domestic agency <strong>ITER-India at the Institute for Plasma Research</strong> (a DAE institution) (standard knowledge); the roles of BARC and SINP were not verified. <strong>[Verification Required]</strong></p>
+
+<h3>20.5 Issues in fusion</h3>
+<ul>
+<li><strong>Not yet a power source:</strong> no device has produced net electricity; ITER is a plasma-physics and technology experiment.</li>
+<li><strong>Schedule and cost risk:</strong> ITER's first research operation has slipped to 2034 and D-T operation to 2039 (2024 baseline).</li>
+<li><strong>Tritium supply and breeding;</strong> neutron damage to materials; heat exhaust to the divertor; remote maintenance (ITER).</li>
+<li><strong>Advantages (class and ITER):</strong> fuel abundant (deuterium from water), no chain reaction, carbon-free, safety demonstrated through nuclear licensing of ITER in France (2012). Fusion still produces <strong>activated structural material and tritium</strong> to be managed <strong>[Additional]</strong>.</li>
+</ul>
+</section>
+
+<section id="laser">
+<h2>21. Laser Inertial Confinement Fusion (ICF)</h2>
+<p class="note"><strong>Class gap:</strong> the rough notes had only the heading "Laser Inertial confinement" with no content. This section is entirely <strong>[Additional]</strong>, written from the LLNL National Ignition Facility (NIF) page. No Indian laser-fusion programme was verified in the sources opened <strong>[Verification Required]</strong>.</p>
+<h3>21.1 Principle</h3>
+<ul>
+<li>In <strong>inertial confinement</strong> the fuel is compressed and heated so quickly that fusion occurs before the fuel can fly apart: it is held by its own <strong>inertia</strong>.</li>
+<li>In NIF's <strong>indirect drive</strong>, up to <strong>192 laser beams</strong> are fired into a centimetre-sized hollow cylinder called a <strong>hohlraum</strong>, producing soft X-rays that ablate the surface of a peppercorn-sized capsule of frozen hydrogen isotopes; the rocket-like implosion exceeds <strong>400 km/s</strong> (<a href="#s-llnl">LLNL</a>).</li>
+<li><strong>Ignition</strong> (LLNL definition): the heating by alpha particles from fusion in the central hot spot overcomes the cooling losses, so a burn wave spreads into the surrounding cold fuel; practically, the fusion yield exceeds the laser energy delivered to the target.</li>
+</ul>
+<figure>
+<h3>Figure 17. How Laser Inertial Confinement Works (NIF indirect drive) [Additional]</h3>
+<div class="flow"><span class="box"><strong>192 laser beams</strong><br/>enter the hohlraum</span><span>&rarr;</span><span class="box"><strong>Soft X-rays</strong><br/>fill the hohlraum and ablate the capsule surface</span><span>&rarr;</span><span class="box"><strong>Implosion</strong><br/>over 400 km/s compresses and heats the D-T fuel</span><span>&rarr;</span><span class="box"><strong>Hot spot ignites</strong><br/>alpha heating; burn wave</span><span>&rarr;</span><span class="box"><strong>Fusion yield</strong><br/>measured in MJ</span></div>
+<figcaption>Schematic. Steps as described by <a href="#s-llnl">LLNL</a>.</figcaption>
+</figure>
+
+<h3>21.2 NIF results</h3>
+<figure>
+<h3>Figure 18. NIF Fusion Yield in the 11 Ignition Experiments, Dec 2022 to Jun 2026 [Additional]</h3>
+<svg viewBox="0 0 760 340" role="img" aria-label="Horizontal bar chart of fusion yield in megajoules for the eleven NIF ignition experiments from 5 December 2022 (3.15) to 20 June 2026 (7.9); the record is 8.6 MJ on 7 April 2025; a dashed line marks 2.05 MJ, the laser energy of the first ignition shot.">
+<g font-family="Calibri, sans-serif" font-size="12">
+<text x="10" y="22" font-weight="bold">Fusion yield (MJ) by experiment date</text>
+<line x1="110" y1="30" x2="110" y2="300" stroke="#555"/>
+<line x1="192" y1="30" x2="192" y2="300" stroke="#c62828" stroke-dasharray="5 4"/>
+<text x="198" y="320" fill="#c62828" font-size="11">dashed line: 2.05 MJ laser energy of the 5 Dec 2022 shot (reference)</text>
+<text x="10" y="53">5 Dec 2022</text><rect x="110" y="40" width="126" height="16" fill="#0078d4"/><text x="242" y="53">3.15</text>
+<text x="10" y="77">30 Jul 2023</text><rect x="110" y="64" width="155.2" height="16" fill="#0078d4"/><text x="271" y="77">3.88</text>
+<text x="10" y="101">8 Oct 2023</text><rect x="110" y="88" width="96" height="16" fill="#0078d4"/><text x="212" y="101">2.4</text>
+<text x="10" y="125">30 Oct 2023</text><rect x="110" y="112" width="136" height="16" fill="#0078d4"/><text x="252" y="125">3.4</text>
+<text x="10" y="149">12 Feb 2024</text><rect x="110" y="136" width="208" height="16" fill="#0078d4"/><text x="324" y="149">5.2 (estimated)</text>
+<text x="10" y="173">18 Nov 2024</text><rect x="110" y="160" width="164" height="16" fill="#0078d4"/><text x="280" y="173">4.1</text>
+<text x="10" y="197">23 Feb 2025</text><rect x="110" y="184" width="200" height="16" fill="#0078d4"/><text x="316" y="197">5.0</text>
+<text x="10" y="221">7 Apr 2025</text><rect x="110" y="208" width="344" height="16" fill="#2e7d32"/><text x="460" y="221" font-weight="bold">8.6 (record; gain 4.13)</text>
+<text x="10" y="245">22 Jun 2025</text><rect x="110" y="232" width="96" height="16" fill="#0078d4"/><text x="212" y="245">2.4 (LANL-led team)</text>
+<text x="10" y="269">1 Oct 2025</text><rect x="110" y="256" width="140" height="16" fill="#0078d4"/><text x="256" y="269">3.5</text>
+<text x="10" y="293">20 Jun 2026</text><rect x="110" y="280" width="316" height="16" fill="#0078d4"/><text x="432" y="293">7.9 (gain about 3.8)</text>
+</g>
+</svg>
+<figcaption>Data: <a href="#s-llnl">LLNL, "Achieving Fusion Ignition"</a>, opened 29 Oct 2026, LLNL graphic dated Jul 2026 showing 11 ignition experiments. Unit: megajoules of fusion energy yield; bar length = 40 px per MJ. Yields have measurement uncertainties (for example +/- 0.45 MJ for the 8.6 MJ shot). The laser energy delivered to the target was about 1.9-2.2 MJ in the shots where LLNL gives it; the dashed line is only a reference. <strong>Target gain</strong> = fusion yield / laser energy on target (for example 8.6 / 2.08 = 4.13).</figcaption>
+</figure>
+<ul>
+<li><strong>5 Dec 2022:</strong> ignition: <strong>3.15 MJ</strong> of fusion energy from <strong>2.05 MJ</strong> of laser energy delivered to the target (target gain about 1.5) (<a href="#s-llnl">LLNL</a>).</li>
+<li><strong>7 Apr 2025:</strong> record <strong>8.6 MJ</strong> (+/- 0.45 MJ) from 2.08 MJ, target gain 4.13. <strong>20 Jun 2026:</strong> eleventh ignition, <strong>7.9 MJ</strong> (+/- 0.4 MJ), gain about 3.8.</li>
+<li><strong>Purpose:</strong> LLNL describes NIF as vital for maintaining the safety and effectiveness of the US nuclear arsenal (stockpile stewardship) and as improving the prospects for inertial fusion energy.</li>
+</ul>
+<p class="additional"><strong>[Additional] Important distinction:</strong> NIF's "gain" counts only the laser energy that reaches the target, <strong>not the much larger electrical energy</strong> used to power the lasers, and the facility fires an experiment, not a continuous power plant. It is therefore a <strong>scientific</strong> breakeven (ignition) and not an energy-producing plant. Likewise, JET's Q = 0.67 and ITER's Q = 10 refer to fusion power versus plasma heating power, not to electricity from the grid.</p>
+<div class="table-wrap"><table>
+<caption>Magnetic confinement versus inertial confinement</caption>
+<thead><tr><th scope="col">Feature</th><th scope="col">Magnetic confinement (tokamak)</th><th scope="col">Inertial confinement (laser)</th></tr></thead>
+<tbody>
+<tr><td>How fuel is held</td><td>Magnetic fields confine hot plasma for seconds to minutes</td><td>Fuel's own inertia holds it for a tiny instant during implosion</td></tr>
+<tr><td>Mode</td><td>Long pulses; steady-state ambition</td><td>Repeated short pulses (one implosion per shot)</td></tr>
+<tr><td>Examples</td><td>ITER, JT-60SA, EAST, KSTAR, ADITYA-U, SST-1</td><td>NIF (USA)</td></tr>
+<tr><td>Key milestone</td><td>JET 16 MW (1997); ITER target Q = 10</td><td>NIF ignition 5 Dec 2022; record 8.6 MJ (7 Apr 2025)</td></tr>
+</tbody></table></div>
+</section>
+
+<section id="prelims">
+<h2>Key Facts for Prelims</h2>
+<ul>
+<li><strong>Thorium:</strong> Th-232 is fertile; Th-232 + n &rarr; Th-233 &rarr; Pa-233 &rarr; U-233. Monazite beach sands (Kerala, Odisha). AMD: 13.15 Mt monazite in 8 states (Feb 2026, secondary). U-233 has the best neutron yield in the thermal spectrum.</li>
+<li><strong>Challenges:</strong> fertile (needs a driver: HALEU in ANEEL, Pu-239 in Stage 2); thoria dissolves only with fluoride; U-232 gamma makes handling remote; bootstrap problem (needs FBR capacity); NSG limits technology.</li>
+<li><strong>ANEEL:</strong> thoria-urania MOX with HALEU, by US company Clean Core Thorium Energy; for PHWR/CANDU bundles. <strong>HALEU:</strong> above 5% and below 20% U-235.</li>
+<li><strong>ADS:</strong> sub-critical (k<sub>eff</sub> &lt; 1); proton accelerator + lead target (spallation); India-Fermilab IIFC. <strong>CHTR:</strong> 100 kWth, U-233/thorium TRISO fuel, lead-bismuth coolant, BeO moderator, hydrogen focus. <strong>AHWR:</strong> about 300 MWe, heavy-water moderator, light-water coolant. <strong>Molten salt:</strong> low pressure, high temperature.</li>
+<li><strong>Weapons programme:</strong> Pokhran-I 18 May 1974 "Smiling Buddha" (plutonium, official yield about 12 kt); Pokhran-II 11 and 13 May 1998 (5 tests, thermonuclear claim about 45 kt); IGMDP 1983 (Prithvi, Agni); doctrine adopted Jan 2003.</li>
+<li><strong>Doctrine:</strong> NFU + massive retaliation; non-use against non-nuclear-weapon states; moratorium on testing; credible minimum deterrence; Nuclear Command Authority: Political Council (PM) and Executive Council (NSA); Strategic Forces Command executes. Retaliation option against major CBW attack.</li>
+<li><strong>SSBNs:</strong> INS Arihant (commissioned 2016; first deterrence patrol 2018; K-15), INS Arighaat (Aug 2024), INS Aridhaman (reported 3 Apr 2026, not officially confirmed in sources opened).</li>
+<li><strong>NSG:</strong> formed 1975 after the 1974 test; consensus; 2008 clean waiver (6 Sep 2008) after India's 5 Sep commitments; 2016 Seoul plenary blocked India's bid (China). NWFZ treaties: Pelindaba (Africa), Semipalatinsk (Central Asia), Bangkok (SE Asia), Tlatelolco (Latin America), Rarotonga (South Pacific).</li>
+<li><strong>Fusion:</strong> D + T &rarr; He-4 + n (17.6 MeV); about 150 million C; plasma = ionised gas; tokamak = toroidal chamber with magnetic coils (Russian acronym).</li>
+<li><strong>ITER:</strong> Cadarache, France; <strong>7 Members</strong> (China, EU, India, Japan, Korea, Russia, USA; <strong>not the UK</strong>); Q = 10 (500 MW from 50 MW); no electricity; Start of Research Operation 2034, D-T 2039; India's share 9.1%; Europe 45.6%; all core components on site 2 Oct 2026.</li>
+<li><strong>Indian tokamaks:</strong> ADITYA (1989; ADITYA-U divertor) and SST-1 (superconducting, 2013), both at IPR, Gujarat.</li>
+<li><strong>Others:</strong> JT-60SA (Japan, largest operating, first plasma Oct 2023); JET (UK; retired 2023); KSTAR (Korea; 48 s at 100 million C reported); EAST (China; 1,066 s H-mode reported).</li>
+<li><strong>NIF:</strong> ignition 5 Dec 2022 (3.15 MJ from 2.05 MJ); record 8.6 MJ on 7 Apr 2025; 11 ignition shots to 20 Jun 2026.</li>
+</ul>
+</section>
+
+<section id="mains">
+<h2>Mains Points</h2>
+<p class="small"><strong>[Additional]</strong> Analytical synthesis and suggested way forward, not official conclusions.</p>
+<ul>
+<li><strong>Thorium: resource advantage, time disadvantage.</strong> India's thorium resource is large, but its use depends on Stage 2 capacity and on mastering reprocessing and remote fuel handling; options such as HALEU-thorium fuels (ANEEL) could add thorium to existing PHWRs sooner but rely on enrichment and foreign supply.</li>
+<li><strong>Multiple parallel bets:</strong> ADS, CHTR (hydrogen/process heat), AHWR and molten salt are complementary; each should have clear milestones, because several remain at design or R&amp;D stage.</li>
+<li><strong>Technology denial and diplomacy:</strong> the NSG clean waiver (2008) opened trade but not membership; membership would help exports, fuel access and thorium-technology credibility, but progress is hostage to China-Pakistan linkage. A balanced approach: keep bilateral NCAs, build criteria-based claims (export controls, safeguards record) and avoid linkage with Pakistan.</li>
+<li><strong>Doctrine and stability:</strong> NFU and credible minimum deterrence reduce arms-race pressure and support India's "responsible nuclear power" image; a second-strike triad (SSBNs) strengthens the logic of NFU. The debate on revising NFU should weigh China's numbers, Pakistan's posture and the cost of losing the diplomatic gains linked to the doctrine.</li>
+<li><strong>Fusion: long-horizon science, near-term participation.</strong> ITER membership gives India access to the technology and training at a 9.1% share; ADITYA-U and SST-1 build domestic capability; commercial fusion electricity is not expected in the near term (ITER D-T in 2039). Fusion should complement, not replace, fission and renewables in the 2047 and 2070 targets.</li>
+<li><strong>Science versus engineering:</strong> distinguish duration records (EAST, KSTAR), energy-gain records (NIF target gain) and power-plant readiness; media headlines often conflate them.</li>
+<li><strong>Way forward:</strong> (i) complete PFBR commissioning and then commercial FBRs to unlock thorium; (ii) fund thorium fuel demonstrations in PHWRs and AHWR/CHTR prototypes; (iii) strengthen reprocessing and remote-handling capability; (iv) continue NSG outreach and non-proliferation credibility; (v) keep fusion participation tied to technology transfer (superconducting magnets, cryogenics, materials) and a national roadmap; (vi) maintain transparency about doctrine and command and control.</li>
+</ul>
+</section>
+
+<section id="traps">
+<h2>Common Traps / Confusions</h2>
+<ul>
+<li><strong>U-235 is not a "deposit";</strong> compare uranium and thorium resources, not U-235 and thorium.</li>
+<li><strong>Thorium is fertile, not fissile;</strong> Pa-233 is an intermediate; U-233 is the fissile product.</li>
+<li><strong>ANEEL is a US company's HALEU-thorium fuel,</strong> not an Indian Stage 3 design.</li>
+<li><strong>CHTR (100 kWth, hydrogen/remote power) is not AHWR (300 MWe) and not HTGCR.</strong></li>
+<li><strong>ADS is sub-critical (k<sub>eff</sub> &lt; 1)</strong> and needs an accelerator; it is not a critical reactor.</li>
+<li><strong>The UK is not an ITER member;</strong> the EU is, through Euratom.</li>
+<li><strong>ITER will not produce electricity;</strong> Q = 10 means 10 times the heating power input, not grid output.</li>
+<li><strong>JET is retired;</strong> JT-60SA is the largest operating tokamak.</li>
+<li><strong>Long-pulse records (EAST, KSTAR) are not energy-gain records;</strong> NIF's gain counts laser energy on target only.</li>
+<li><strong>NSG waiver (2008) is not NSG membership;</strong> India still has no membership.</li>
+<li><strong>NFU is not "no use ever":</strong> India reserves massive retaliation if attacked and a nuclear option against a major biological or chemical attack.</li>
+<li><strong>Pokhran-I (1974) was a plutonium fission device;</strong> Pokhran-II (1998) had five tests including a thermonuclear claim.</li>
+<li><strong>The doctrine was drafted in 1999 and adopted in January 2003;</strong> do not mix with 1998.</li>
+</ul>
+</section>
+
+<section id="revision">
+<h2>30-Second Revision</h2>
+<p><strong>Thorium (Stage 3):</strong> fertile Th-232 &rarr; U-233 via Pa-233; needs a fissile driver (HALEU in ANEEL, Pu-239 in Stage 2); thoria is hard to dissolve and U-232 needs remote handling; bootstrap problem; NSG limits technology. BARC designs: ADS (sub-critical, accelerator + lead target), CHTR (100 kWth, lead-bismuth, BeO, hydrogen), AHWR (300 MWe), molten salt. <strong>Weapons and NSG:</strong> Pokhran-I 1974 (Smiling Buddha) &rarr; NSG 1975; IGMDP 1983; Pokhran-II 1998; doctrine adopted 2003 (NFU, massive retaliation, credible minimum deterrence, NCA: PM-chaired Political Council + NSA-chaired Executive Council, SFC); SSBNs Arihant, Arighaat, Aridhaman; NSG clean waiver Sep 2008, bid blocked at Seoul 2016. <strong>Fusion:</strong> D + T at about 150 million C in a tokamak; ITER (Cadarache; 7 members, not the UK; Q = 10; research operation 2034, D-T 2039); India's ADITYA-U and SST-1 at IPR; JT-60SA largest operating; NIF ignition 2022, record 8.6 MJ (2025).</p>
+</section>
+
+<section id="pyqs">
+<h2>Previous Year Questions (PYQs)</h2>
+<p class="note"><strong>Source status:</strong> the three Prelims questions below were found on <a href="https://www.pmfias.com/category/upsc-cse-prelims-pyqs/prelims-pyqs-science-and-technology/prelims-pyqs-nuclear-energy/">PMF IAS</a>, a secondary compilation, with options and answers as shown there. The <strong>official UPSC papers and answer keys were not opened</strong>, so each answer is secondary and marked <strong>[Verification Required]</strong> against the official key. <strong>[No verified Mains PYQ found for the NSG, nuclear doctrine or fusion topics in this session.]</strong> The Mains questions on nuclear science and the fast breeder programme (2017, 2018 GS III) are already listed in the 28 Oct note and apply to the earlier sections. The 2012 Prelims thorium question (28 Oct note) also applies to Section 17.</p>
+<ol>
+<li><strong>2016 | UPSC CSE Prelims | General Studies Paper 1.</strong> <strong>Question (as listed):</strong> India is an important member of the "International Thermonuclear Experimental Reactor". If this experiment succeeds, what is the immediate advantage for India? (a) It can use thorium in place of uranium for power generation. (b) It can attain a global role in satellite navigation. (c) It can drastically improve the efficiency of its fission reactors in power generation. (d) It can build fusion reactors for power generation. <a href="https://www.pmfias.com/iter-advantage-for-india-pyq-2016/">Verify 2016 question and answer</a>.
+<p class="answer"><strong>Answer (secondary): (d).</strong> Link to Section 20.4: ITER is a fusion experiment; if it succeeds it shows the way to fusion power plants. Thorium (a) belongs to the fission three-stage programme (Section 17). <strong>[Verification Required]</strong> against the official key.</p></li>
+<li><strong>2008 | UPSC CSE Prelims | General Studies Paper 1.</strong> <strong>Question (as listed):</strong> In which one of the following locations is the International Thermonuclear Experimental Reactor (ITER) project to be built? (a) Northern Spain (b) Southern France (c) Eastern Germany (d) Southern Italy. <a href="https://www.pmfias.com/iter-cadarache-southern-france-upsc-prelims-pyq-2008/">Verify 2008 question and answer</a>.
+<p class="answer"><strong>Answer (secondary): (b) Southern France</strong> (Cadarache). Link to Section 20.4. <strong>[Verification Required]</strong> against the official key.</p></li>
+<li><strong>2007 | UPSC CSE Prelims | General Studies Paper 1.</strong> <strong>Question (as listed):</strong> Recently, the European Union and other six countries including India signed the International Thermonuclear Experimental Reactor (ITER) project. Which one of the following was not a signatory to it? (a) Canada (b) China (c) Japan (d) USA. <a href="https://www.pmfias.com/iter-signatories-upsc-prelims-pyq-2007/">Verify 2007 question and answer</a>.
+<p class="answer"><strong>Answer (secondary): (a) Canada.</strong> Link to Section 20.4 and <a href="#c-iter-members">correction</a>: the seven Members are China, the EU, India, Japan, Korea, Russia and the USA; Canada has only a Memorandum of Understanding (2020) with ITER, not Membership. <strong>[Verification Required]</strong> against the official key.</p></li>
+</ol>
+</section>
+
+<section id="corrections">
+<h2>Corrections Made</h2>
+<p>Substantive changes are marked where they occur. Typographical and spelling repairs were made silently and are not listed.</p>
+<ul>
+<li><a href="#c-th-numbers">Resource numbers:</a> U-235 is an isotope, not a deposit; class figures 70,000 t and 748,000 t not found in official sources.</li>
+<li><a href="#c-th-energy">Energy per mass:</a> thorium's gain is resource utilisation, not energy per atom.</li>
+<li><a href="#c-th-neutron">Neutron efficiency:</a> U-233 has the best thermal eta, not U-235.</li>
+<li><a href="#c-reproc">Reprocessing:</a> thoria matrix resists dissolution; U-232 gives the gamma problem; Pa-233 is an intermediate.</li>
+<li><a href="#c-bootstrap">NSG opposition and "only 1 FBR":</a> objector count unverified; PFBR at first criticality; FBTR is a research reactor.</li>
+<li><a href="#c-ads">ADS:</a> sub-criticality is k<sub>eff</sub> &lt; 1; waste is transmuted to shorter-lived products; HISPA unverified.</li>
+<li><a href="#c-h2">Hydrogen:</a> mostly from natural gas reforming; coal gasification in some cases.</li>
+<li><a href="#c-msr2">Molten salt safety:</a> freeze-plug or drain features, not "contact with air".</li>
+<li><a href="#c-pok2">Weapons timeline:</a> Chagai tests on 28 and 30 May 1998; IGMDP incomplete list; Pokhran-I plutonium device.</li>
+<li><a href="#c-nsgcond">NSG conditions:</a> full-scope safeguards for supply; NPT or NWFZ membership for NSG membership.</li>
+<li><a href="#c-insp">Insurance pool and NSG events:</a> pool structure, objector count and Namibia claim unverified.</li>
+<li><a href="#c-triad">Triad:</a> Arihant commissioned 2016; Aridhaman reported 3 Apr 2026.</li>
+<li><a href="#c-plasma">Plasma and tokamak:</a> ionisation, helical gyration, toroidal (not cylindrical).</li>
+<li><a href="#c-kstar">KSTAR:</a> 30 s (2021) versus 48 s (2023-24 campaign).</li>
+<li><a href="#c-east">EAST:</a> "artificial sun"; 101 s claim unverified; long pulse is not energy gain.</li>
+<li><a href="#c-jet">JET:</a> Joint European Torus, UK, retired in 2023.</li>
+<li><a href="#c-iter-members">ITER members:</a> UK is not a member.</li>
+<li><a href="#c-iter-india">India and ITER:</a> 7th Member in 2005; "first international project" and agency roles unverified.</li>
+</ul>
+<p class="verification"><strong>Open verification register:</strong> thorium resource figure form (Th or ThO<sub>2</sub>) and current value; origin of class numbers 70,000 t and 748,000 t; eta values; ANEEL start dates and Indian demonstration status; THOREX details; Th-233 and Pa-233 half-lives; HISPA name; CHTR status in an official source; Pokhran-I yield and date; IGMDP details; NSG participant count and conditions (INFCIRC/254); 2011 guideline date; INIP structure and size; number of states opposing in 2016; Namibia supply restriction; Chagai dates; Menon 2010 and 2019 statements; NCA and tri-service command status; Soviet and Russian NFU dates; Aridhaman official commissioning; 2024 SSN approval; KSTAR and EAST record details; JET fusion-energy record; ITER-India agency roles; "first international project" claim; D-T energy split; tokamak field description; India's laser-fusion programme; official UPSC answer keys. These are <strong>not silently discarded or treated as verified facts</strong>.</p>
+<p><strong>[Additional] Additions summary:</strong> thorium-to-U-233 and ADS figure, CHTR verification, uranium-versus-thorium arithmetic, weapons timeline table, NSG membership factors and NWFZ table, NCA and triad figure, NFU argument table, D-T reaction figure, fission-versus-fusion table, tokamak schematic, tokamak project table, ITER fact sheet, ICF principle and NIF yield chart, and the magnetic-versus-inertial confinement table.</p>
+</section>
+
+<section id="visuals">
+<h2>Visual Representations Required / Recommended</h2>
+<ul>
+<li><strong>Included:</strong> <a href="#barcth">Figure 13</a> (thorium chain and ADS), <a href="#weapons">Figure 14</a> (Nuclear Command Authority and triad), <a href="#fusion">Figure 15</a> (D-T reaction), <a href="#fusion">Figure 16</a> (tokamak cross-section), <a href="#laser">Figure 17</a> (laser inertial confinement steps), <a href="#laser">Figure 18</a> (NIF ignition yields).</li>
+<li><strong>Recommended (not included):</strong> <a href="#v-itermachine">ITER engineering cross-section</a> - <span class="verification" style="display:inline"><strong>[Visual Representation Recommended: labelled engineering cross-section of the ITER tokamak from the ITER Organization, to complement the simplified schematic.]</strong></span></li>
+</ul>
+<p><strong>[All necessary visual representations included]</strong> (one non-essential visual is recommended above).</p>
+</section>
+
+<section id="sources">
+<h2>Open Sources / Further Reading</h2>
+<p class="small">HTTPS public sources consulted on 29 October 2026. Items marked "search summary" were read only as search-result snippets or abstracts; the NSG website, the PIB nuclear-technology document, Lok Sabha annexures and the UPSC official papers could not be opened.</p>
+<ol>
+<li id="s-iterfew"><a href="https://www.iter.org/few-lines">ITER Organization: In a Few Lines</a> - members, Q = 10, 150 million C, tokamak definition, cost shares, 2024 baseline, UK and Switzerland status (page updated 1 Jan 2026).</li>
+<li id="s-itermile"><a href="https://www.iter.org/proj/itermilestones">ITER Organization: On the Road to ITER (milestones)</a> - India becomes 7th Member, JT-60SA inaugurated, all core tokamak components on site (2 Oct 2026).</li>
+<li id="s-itertok"><a href="https://www.iter.org/fusion-energy/international-tokamak-research">ITER Organization: International tokamak research</a> - ADITYA-U, SST-1, KSTAR, EAST, JET, JT-60SA.</li>
+<li id="s-llnl"><a href="https://lmf.llnl.gov/science/achieving-fusion-ignition">LLNL: Achieving Fusion Ignition (NIF)</a> - 5 Dec 2022 ignition; record 8.6 MJ (7 Apr 2025); 11th ignition on 20 Jun 2026; hohlraum and indirect-drive description.</li>
+<li id="s-mea08"><a href="https://worldjpn.net/documents/texts/JPSA/20080905.D1E.html">Statement by External Affairs Minister Pranab Mukherjee on the Civil Nuclear Initiative, 5 Sep 2008</a> (MEA text via "The World and Japan" database, a mirror) - NFU, testing moratorium, FMCT, ENR non-transfer, Additional Protocol.</li>
+<li id="s-chtr"><a href="https://inis.iaea.org/records/j4n72-b9959">IAEA INIS: The Indian high temperature reactor programme</a> (search summary) - CHTR: U-233-thorium, lead-bismuth cooled, beryllium oxide moderated, about 100 kWth, 15-year core.</li>
+<li id="s-chtrslide"><a href="https://www-pub.iaea.org/MTCD/Meetings/PDFplus/2007/cn152/cn152p/Dulera%20India%20The%20Indian%20High%20Temperature%20Reactor%20Programme.pdf">IAEA 2007 presentation: The Indian High Temperature Reactor Programme</a> (search summary) - CHTR 100 kWth, 1000 C, TRISO, hydrogen focus.</li>
+<li id="s-aneel"><a href="https://www.sciencedirect.com/science/article/pii/S0029549324002139">ScienceDirect: Neutronic analysis of high burnup thorium-HALEU fuels in PHWR</a> (abstract; search summary) - ANEEL name, HALEU up to 16%.</li>
+<li id="s-ntpc"><a href="https://ntpc.co.in/media/press-releases/ntpc-and-ccte-advance-thorium-based-aneeltm-fuel-phwrs">NTPC press release: NTPC and CCTE to advance thorium-based ANEEL fuel for PHWRs</a> (search summary; date not verified).</li>
+<li id="s-aneelie"><a href="https://indianexpress.com/article/business/clean-core-thorium-energy-cnl-aneel-fuel-india-ntpc-nuclear-power-10642652/">The Indian Express: Clean Core, Canada's CNL pact to produce ANEEL fuel</a> (search summary).</li>
+<li id="s-monazite"><a href="https://www.thehindubusinessline.com/markets/commodities/amd-estimates-1315-million-tonne-monazite-in-beach-sand-deposits-across-8-states-reddy/article70582677.ece">The Hindu BusinessLine: AMD estimates 13.15 million tonnes monazite in 8 states</a> (Feb 2026; search summary); and <a href="https://sansad.in/getFile/loksabhaquestions/annex/10/AU183.pdf?source=pqals">Lok Sabha annexure (DAE)</a> (11.93 Mt monazite; search summary, not opened).</li>
+<li id="s-aridhaman"><a href="https://www.indiatoday.in/india/story/india-commissions-third-nuclear-submarine-ins-aridhaman-boosting-strategic-deterrence-2891280-2026-04-03">India Today: India commissions third nuclear submarine INS Aridhaman</a> (3 Apr 2026; search summary; secondary).</li>
+<li id="s-kstar"><a href="https://morningoverview.com/a-korean-reactor-held-plasma-at-100-million-degrees-for-102-seconds/">Morning Overview: KSTAR held plasma at 100 million degrees</a> (secondary; 48 s within a 102 s campaign result; search summary).</li>
+<li id="s-east"><a href="https://www.fusionenergynews.com/story/east-sustains-h-mode-plasma-for-1066-seconds-new-world-record">Fusion Energy News: EAST sustains H-mode plasma for 1,066 seconds</a> (secondary; search summary).</li>
+<li id="s-nsg"><a href="https://maargxupsc.com/study-material/international-relations/nuclear-suppliers-group-nsg-and-indias-membership-bid/">MaargX UPSC: NSG and India's membership bid</a> (secondary; 48 participating governments; official NSG site not opened).</li>
+<li id="s-pibpfbr"><a href="https://pib.gov.in/PressReleasePage.aspx?PRID=2294812&amp;reg=48&amp;lang=1">PIB: Parliament Question - Prototype Fast Breeder Reactor</a> (5 Aug 2026) - 4,42,800 t U<sub>3</sub>O<sub>8</sub> (from the 28 Oct note).</li>
+<li id="s-wikibarc"><a href="https://en.wikipedia.org/wiki/Bhabha_Atomic_Research_Centre">Wikipedia: Bhabha Atomic Research Centre</a> (secondary; ADS and IIFC, from the 28 Oct note).</li>
+<li id="s-wikiahwr"><a href="https://en.wikipedia.org/wiki/Advanced_heavy-water_reactor">Wikipedia: Advanced heavy-water reactor</a> (secondary; thorium abundance, AHWR status, from the 28 Oct note).</li>
+<li id="s-wikitmsr"><a href="https://en.wikipedia.org/wiki/TMSR-LF1">Wikipedia: TMSR-LF1</a> (secondary; from the 28 Oct note).</li>
+<li id="s-pmf"><a href="https://www.pmfias.com/category/upsc-cse-prelims-pyqs/prelims-pyqs-science-and-technology/prelims-pyqs-nuclear-energy/">PMF IAS: Prelims PYQs on nuclear energy</a> (secondary compilation; 2016, 2008 and 2007 ITER questions).</li>
+</ol>
+</section>
+</main>
+</body>
+</html>

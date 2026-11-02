@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Internal Security - Class Notes | 17 October 2026</title>
+<style>
+  * { box-sizing: border-box; }
+  body { font-family: Calibri, sans-serif; font-size: 11pt; line-height: 1.6; max-width: 900px; margin: 20px auto; padding: 0 20px; color: #202124; }
+  h1 { font-size: 20pt; color: #1a1a1a; border-bottom: 2px solid #333; padding-bottom: 4px; margin-top: 30px; }
+  h2 { font-size: 16pt; color: #2b2b2b; margin-top: 28px; border-bottom: 1px solid #ddd; padding-bottom: 3px; }
+  h3 { font-size: 13pt; color: #3a3a3a; margin-top: 18px; }
+  h4 { font-size: 11.5pt; color: #3a3a3a; margin: 14px 0 4px; }
+  p { margin: 8px 0; }
+  ul, ol { margin: 6px 0; padding-left: 28px; }
+  li { margin: 4px 0; }
+  a { color: #005ea6; overflow-wrap: anywhere; }
+  table { border-collapse: collapse; width: 100%; margin: 10px 0; }
+  caption { text-align: left; font-weight: bold; margin-bottom: 6px; }
+  th, td { border: 1px solid #999; padding: 6px 10px; text-align: left; vertical-align: top; overflow-wrap: break-word; }
+  th { background: #f0f0f0; }
+  .table-wrap { overflow-x: auto; }
+  .note, .exam, .verification { background: #fff8e1; border-left: 3px solid #f5a623; padding: 8px 12px; margin: 10px 0; }
+  .correction { background: #fff3e0; border-left: 3px solid #ef6c00; padding: 8px 12px; margin: 10px 0; }
+  .additional, .lead { background: #e8f5e9; border-left: 3px solid #2e7d32; padding: 8px 12px; margin: 10px 0; }
+  .flow { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 10px; padding: 12px 0; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; }
+  .flow span { text-align: center; max-width: 100%; }
+  .flow .box { border: 1px solid #888; background: #f7f7f7; padding: 6px 10px; border-radius: 4px; flex: 1 1 150px; }
+  figure { margin: 16px 0; padding: 12px; border: 1px solid #bbb; background: #fff; }
+  figure h3 { margin-top: 0; text-align: center; }
+  figcaption { margin-top: 8px; color: #555; font-size: 9.5pt; }
+  .cols3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+  .cols4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+  .tile { border: 1px solid #888; border-radius: 4px; padding: 8px; background: #f5f9fd; font-size: 10.5pt; }
+  .tile b.big { display: block; font-size: 18pt; color: #005ea6; line-height: 1.1; }
+  .tile.p1 { background: #e8f5e9; border-color: #2e7d32; }
+  .tile.p2 { background: #f5f9fd; border-color: #0078d4; }
+  .tile.p3 { background: #fff3e0; border-color: #ef6c00; }
+  .small { color: #555; font-size: 9.5pt; }
+  .options { list-style-type: lower-alpha; }
+  .answer { margin: 10px 0; padding: 6px 12px; border-left: 3px solid #0078d4; background: #f5f9fd; }
+  @media (max-width: 650px) {
+    body { padding: 0 12px; }
+    .cols3, .cols4 { grid-template-columns: 1fr; }
+    .table-wrap table { min-width: 540px; }
+  }
+  @media print {
+    @page { size: A4; margin: 14mm; }
+    body { max-width: none; margin: 0; padding: 0; }
+    h1, h2, h3, h4 { break-after: avoid; }
+    figure, tr, .answer, .tile { break-inside: avoid; }
+    thead { display: table-header-group; }
+    .table-wrap { overflow: visible; }
+    .table-wrap table { min-width: 0; }
+    a { color: inherit; text-decoration: none; }
+    p, li { orphans: 3; widows: 3; }
+  }
+</style>
+</head>
+<body>
+<main>
+<header>
+<h1>Internal Security - Class Notes | 17 October 2026</h1>
+<p><strong>Topics:</strong> Left Wing Extremism (LWE) continued - origin and organisations (recap), causes (recap), innovative solutions, National Policy and Action Plan, security front (forces and schemes), SAMADHAN, the Vishwas-Nirman-Jan Kalyan strategy and "Naxal-free" status; India's post-Operation Sindoor counter-terror approach (offensive defence, hot pursuit, surgical strike).</p>
+<p class="small">Notes for the class of <time datetime="2026-10-17">17 October 2026</time>, prepared and fact-checked on 20 October 2026. This is the <strong>second</strong> Internal Security class note and <strong>continues the LWE topic</strong> from <a href="Internal%20Security%20-%20Class%2010-16-2026.html">the 16 October 2026 note</a>, which already holds the origin timeline, the lineage diagram, the district-count chart, case studies (Salwa Judum, Niyamgiri) and the gaps and way forward. This note keeps every idea in the rough notes, corrects them, and avoids repeating those figures.</p>
+<p class="note"><strong>[Correction]</strong> marks a substantive repair to the rough notes. <strong>[Additional]</strong> marks supporting explanation or examples added for exam value. <strong>[Verification Required]</strong> marks a point that could not be confirmed from an official source: the MHA and PIB pages could not be read as text during preparation (one PIB PDF was downloaded but its text could not be extracted; other PIB pages returned access errors), so several points rest on secondary sources that cite official statements.</p>
+</header>
+
+<section id="recap">
+<h2>1. LWE: Meaning, Origin and Organisations (Recap with Corrections)</h2>
+<p class="lead"><strong>Left Wing Extremism (LWE)</strong> is a violent movement that draws on Marxist-Leninist-Maoist ideas. It seeks to overthrow the State through armed struggle (a "protracted people's war") and to establish a classless society. It began as a violent conflict between landless labourers and landowners at <strong>Naxalbari</strong> (Darjeeling district, West Bengal) in <strong>1967</strong>. Peaceful left-wing politics and lawful tribal or farmer protest are <em>not</em> LWE.</p>
+
+<div class="table-wrap"><table id="people">
+<caption>Key people and organisations</caption>
+<thead><tr><th scope="col">Name</th><th scope="col">Role</th></tr></thead>
+<tbody>
+<tr><td><strong>Charu Majumdar</strong></td><td>Ideologue ("father of Indian Naxalism"). His <strong>Historic Eight Documents</strong> (1965-67) rejected parliamentary politics and argued for armed agrarian revolution; the last of them is associated with the "annihilation of class enemies" line</td></tr>
+<tr><td><strong>Kanu Sanyal, Jangal Santhal</strong></td><td>Leaders of the 1967 Naxalbari uprising. Sanyal announced the new party at a Kolkata rally in 1969</td></tr>
+<tr><td><strong>CPI (Marxist-Leninist)</strong></td><td>Founded <strong>22 April 1969</strong> under Charu Majumdar</td></tr>
+<tr><td><strong>People's War Group (PWG)</strong></td><td>Andhra Pradesh; founded 1980 by <strong>Kondapalli Seetharamaiah</strong></td></tr>
+<tr><td><strong>Maoist Communist Centre (MCC)</strong></td><td>Bihar-Jharkhand belt; associated with <strong>Kanai Chatterjee</strong></td></tr>
+<tr><td><strong>CPI (Maoist)</strong></td><td>Formed <strong>21 September 2004</strong> by the merger of PWG and MCC; declared a terrorist organisation under the UAPA, 1967 on <strong>22 June 2009</strong></td></tr>
+</tbody></table></div>
+
+<p class="correction" id="c01"><strong>[Correction]</strong> (1) The rough notes name "murder manual" as a work of Charu Majumdar. No work with that title could be verified; his foundational writings are the <strong>Historic Eight Documents</strong>, whose "annihilation line" is the likely meaning <strong>[Verification Required]</strong>. (2) "Kanu Sanyal formed CPI (ML)": the party was founded under <strong>Charu Majumdar's</strong> leadership; Sanyal made the public announcement. (3) The 2004 merger was of <strong>PWG and MCC</strong> only (the rough notes also list "CPI ML"). (4) The 2009 action was a <strong>declaration as a terrorist organisation and listing in the UAPA Schedule</strong> (PWG, MCC and fronts were already banned); it is not a first-time ban.</p>
+<p class="correction" id="c02"><strong>[Correction]</strong> The notes' "by 2004, more than 30,000 trained Naxals in more than 30 outfits" and "126 districts in 10 states by 2013" could not be verified from an official source <strong>[Verification Required]</strong>. The 16 October note gives 126 districts for 2010; the reference year for the peak count differs between sources, so quote it as "about 126 districts in 10 states at its peak" until the MHA figure is confirmed. The MCC's founding year is given variously as 1969 (as the Dakshin Desh group) and 1975 (as the MCC) <strong>[Verification Required]</strong>.</p>
+</section>
+
+<section id="causes">
+<h2>2. Causes of the Rise of LWE (Recap with Corrections)</h2>
+<p>LWE is mainly a <strong>development and governance</strong> problem in <strong>Jal-Jangal-Zameen</strong> (water, forest, land) that an armed ideology exploited. The causes in the notes:</p>
+<ol>
+<li><strong>Failed land reforms:</strong> ceilings were too high; reforms were not applied retrospectively, so landlords had already transferred land; ground-level officials sided with landowners.</li>
+<li><strong>Skewed economic development:</strong> trickle-down growth did not reach tribal and remote areas; direct poverty-removal programmes suffered from leakages.</li>
+<li><strong>Regional imbalance, displacement and poor rehabilitation:</strong> industry and mining in mineral-rich forest areas displaced tribals with little or no compensation; backward areas stayed backward.</li>
+<li><strong>No grievance redressal and weak State presence:</strong> a trust deficit created a vacuum that armed groups used for their own interests.</li>
+</ol>
+<p class="correction" id="c03"><strong>[Correction]</strong> <strong>Land ceiling in Uttar Pradesh:</strong> the notes say the ceiling was 15 acres per individual until 1973, then 12.5 acres per family. The UP Imposition of Ceiling on Land Holdings Act, 1960 set the ceiling at about <strong>40 acres per family</strong> (for fair-quality land); the 1972 amendment, in force from 1973, cut it to <strong>12.5 acres per family</strong> <strong>[Verification Required: confirm from the India Code text]</strong>. The point for the exam is unchanged: the original ceilings were too high and arrived late.</p>
+<p class="correction" id="c04"><strong>[Correction]</strong> <strong>Land redistributed:</strong> the study credited to "A R Bandopadyay" (11% of land could have been redistributed, 1.1% actually was) could not be traced to a source <strong>[Verification Required]</strong>. Use it only with the words "according to one study". <strong>West Bengal:</strong> the note says communist leaders' "vested interests fuelled the violence". This is an analytical claim; a neutral statement is that land reform in West Bengal was partial in 1967 and tenancy and landlord conflicts in the Naxalbari area led to the uprising. <strong>Tribal displacement:</strong> STs are 8.6% of the population (Census 2011); the "about 40% of the displaced" figure is a widely quoted estimate, not an official count <strong>[Verification Required]</strong>.</p>
+<p class="small">Full causes, case studies and the "trickle-down versus direct attack" correction: see the 16 October note, Section 4.</p>
+</section>
+
+<section id="solutions">
+<h2>3. Innovative Solutions (Planning Commission Expert Group, 2008)</h2>
+<p class="additional"><strong>[Additional]</strong> The three "innovative solutions" in the rough notes match themes of the Planning Commission's Expert Group report <em>Development Challenges in Extremist Affected Areas</em> (2008), which said that extremism cannot be handled only as a law and order problem. <strong>[Verification Required]</strong> The theme names are confirmed from secondary summaries of the report; check the exact wording in the report before quoting.</p>
+<div class="table-wrap"><table id="solutions-table">
+<caption>Three solution themes</caption>
+<thead><tr><th scope="col">Theme</th><th scope="col">Meaning</th><th scope="col">Example</th></tr></thead>
+<tbody>
+<tr><td><strong>Early harvest programmes</strong></td><td>Quick, visible benefits that rebuild trust before slower reforms take effect</td><td>Roads, drinking water, health and school services, livelihood support</td></tr>
+<tr><td><strong>Good governance and perception management</strong></td><td>Accountable, responsive administration; honest communication so that people see the State as a facilitator and not only as a police presence</td><td>Effective gram sabhas under <strong>PESA, 1996</strong>; grievance redressal; community outreach</td></tr>
+<tr><td><strong>Public-Private Partnership (PPP)</strong></td><td>Private and community participation in service delivery and local economic activity</td><td>Skill training, infrastructure, markets for forest produce. <strong>Trade-off:</strong> corporate projects must respect tribal land and consent, or PPP can itself cause displacement</td></tr>
+</tbody></table></div>
+</section>
+
+<section id="policy">
+<h2>4. National Policy and Action Plan (2015)</h2>
+<p>The <strong>National Policy and Action Plan to Address LWE</strong> (approved by the Union Government in <strong>2015</strong>) is a multi-pronged strategy with three fronts:</p>
+<ul>
+<li><strong>Security front:</strong> strengthen State police and Central forces, intelligence and operations (Section 5).</li>
+<li><strong>Development front:</strong> roads, mobile connectivity, schools, health, financial inclusion in affected districts.</li>
+<li><strong>Ensuring rights and entitlements:</strong> implement the <strong>Forest Rights Act, 2006</strong>, PESA and welfare entitlements for local communities.</li>
+</ul>
+<p class="exam"><strong>Exam point:</strong> the policy is a <strong>Centre-State partnership</strong>. "Police" and "public order" are State subjects (State List, Seventh Schedule); the Centre supports with forces, funds, intelligence sharing and coordination (the Union's duty under Article 355).</p>
+<p class="correction" id="c05"><strong>[Correction]</strong> The class note says the "Naxal-free" transformation was "through the National Policy and Action Plan, based on three pillars: Vishwas, Nirman, Jan Kalyan". Keep two layers apart: the <strong>2015 National Policy and Action Plan</strong> is the policy framework (security, development, rights); <strong>Vishwas, Nirman and Jan Kalyan</strong> is the three-pillar framing used in the 2026 Government of India (PIB) account of how the campaign succeeded (Section 6). <strong>[Verification Required]</strong> The pillar text comes from search summaries of the PIB backgrounder "Naxal-Free India" (June 2026); the PDF text could not be extracted.</p>
+</section>
+
+<section id="security-front">
+<h2>5. Security Front</h2>
+<h3>5.1 Schemes and Measures</h3>
+<div class="table-wrap"><table id="security-table">
+<caption>Security-front schemes (from the class notes, corrected)</caption>
+<thead><tr><th scope="col">#</th><th scope="col">Measure</th><th scope="col">What it does</th><th scope="col">Example</th></tr></thead>
+<tbody>
+<tr><td>1</td><td><strong>Modernisation of police forces</strong></td><td>Better weapons, protective gear, vehicles, communications and equipment for State police and CAPFs</td><td>Drones for surveillance, thermal imagers, night-vision devices, mine-protected vehicles</td></tr>
+<tr><td>2</td><td><strong>Special Infrastructure Scheme (SIS)</strong></td><td>Central funds to States to fill critical gaps in security infrastructure</td><td>Fortified police stations</td></tr>
+<tr><td>3</td><td><strong>Security Related Expenditure (SRE) scheme</strong></td><td>Reimburses <strong>States</strong> for security-related costs</td><td>Surrender and rehabilitation packages, ex-gratia to victims' families, community policing, training</td></tr>
+<tr><td>4</td><td><strong>India Reserve Battalions (IRBs)</strong></td><td>Additional armed police battalions raised by States with Union assistance, so that LWE States have dedicated forces</td><td>State-raised IRBs deployed in LWE districts <strong>[Verification Required: sharing pattern]</strong></td></tr>
+<tr><td>5</td><td><strong>Assistance to Central Agencies for LWE Management Scheme (ACALWEMS)</strong></td><td>Supports central agencies (CAPFs) with hired helicopters, air logistics and casualty evacuation, and training infrastructure</td><td>Helicopters for airlifting in medical emergencies</td></tr>
+</tbody></table></div>
+<p class="correction" id="c06"><strong>[Correction]</strong> (1) "Indian Reserve Battalion" is the <strong>India Reserve Battalion (IRB)</strong>. (2) The note says SRE gives help "to the security forces"; the scheme reimburses <strong>State governments</strong> (and covers surrender, rehabilitation and victim compensation). (3) "ACALWEMS" is expanded above. (4) The rough notes mix the 2015 policy's list with SAMADHAN; they are separate: the policy lists the schemes, SAMADHAN is the operational doctrine (Section 5.3).</p>
+
+<h3>5.2 Special Forces Against LWE</h3>
+<div class="table-wrap"><table id="forces">
+<caption>Forces named in the class notes</caption>
+<thead><tr><th scope="col">Force</th><th scope="col">Parent body</th><th scope="col">Note</th></tr></thead>
+<tbody>
+<tr><td><strong>CoBRA</strong> (Commando Battalion for Resolute Action)</td><td>CRPF (Central Armed Police Force, MHA)</td><td>Specialised jungle-warfare units, raised in 2008-09 <strong>[Verification Required: year]</strong></td></tr>
+<tr><td><strong>Greyhounds</strong></td><td>Andhra Pradesh Police (also used by Telangana Police)</td><td>Raised in 1989 in undivided Andhra Pradesh; the model for other State units <strong>[Verification Required: year]</strong></td></tr>
+<tr><td><strong>Black Panther Combat Force</strong></td><td>Chhattisgarh Police</td><td>Announced as a Greyhounds-style unit for Chhattisgarh in 2018 <strong>[Verification Required: present status]</strong></td></tr>
+<tr><td><strong>District Reserve Guard (DRG)</strong></td><td>Chhattisgarh Police</td><td>Local force, includes tribal youth and surrendered cadres; a <em>separate</em> unit, not the same as Black Panther</td></tr>
+<tr><td><strong>Bastariya Battalion</strong></td><td>CRPF (Bastar region)</td><td>Raised in 2018 to recruit local tribal youth from Bastar districts; reported as the 241st Battalion <strong>[Verification Required]</strong></td></tr>
+</tbody></table></div>
+<p class="correction" id="c07"><strong>[Correction]</strong> The note "CGP" means <strong>Chhattisgarh Police</strong> and "APP and TP" means <strong>Andhra Pradesh Police and Telangana Police</strong>. "Black Panther Combat Force <em>or</em> District Reserve Guards" is read as two different units of the same State police. The rough note "CRPF -&gt; COBRA" shows COBRA is a <strong>CRPF</strong> unit, which is a central force; the others are State forces. The point: State forces know local terrain and language; central forces bring numbers and equipment.</p>
+
+<h3 id="samadhan">5.3 SAMADHAN Doctrine (2017)</h3>
+<p>SAMADHAN is the <strong>operational doctrine</strong> of the Ministry of Home Affairs for LWE, announced in 2017 by the Union Home Minister at a meeting with LWE-affected States.</p>
+<figure id="fig-samadhan">
+<h3>Figure 1. The SAMADHAN doctrine</h3>
+<div class="cols4">
+<div class="tile"><b class="big">S</b>Smart leadership</div>
+<div class="tile"><b class="big">A</b>Aggressive strategy</div>
+<div class="tile"><b class="big">M</b>Motivation and training</div>
+<div class="tile"><b class="big">A</b>Actionable intelligence</div>
+<div class="tile"><b class="big">D</b>Dashboard-based KPIs and KRAs</div>
+<div class="tile"><b class="big">H</b>Harnessing technology</div>
+<div class="tile"><b class="big">A</b>Action plan for each theatre</div>
+<div class="tile"><b class="big">N</b>No access to financing</div>
+</div>
+<figcaption>Expansion as given in secondary summaries of the MHA/PIB 2017 statement (for example Drishti IAS, 2026). KPIs = key performance indicators; KRAs = key result areas. <strong>[Verification Required]</strong> the PIB release (PRID 1489465) could not be opened.</figcaption>
+</figure>
+<p class="correction" id="c08"><strong>[Correction]</strong> "N - No finances" means <strong>"No access to financing"</strong> for extremists (cutting extortion and funding, with agencies such as the NIA and Enforcement Directorate); "Action for all theatre" means a <strong>specific action plan for each theatre</strong> (area); "Dashboard for KPIs" means dashboard-based key performance indicators and key result areas. "Harnessing technology" in the notes is spelt "Harnessing".</p>
+</section>
+
+<section id="initiatives">
+<h2>6. Government Initiatives and the "Naxal-Free" Status</h2>
+<p class="lead">LWE is a multi-dimensional threat, so the response is multi-pronged. The Government of India's 2026 account groups the campaign into three pillars: <strong>Vishwas</strong> (trust), <strong>Nirman</strong> (development) and <strong>Jan Kalyan</strong> (welfare and dignity).</p>
+<figure id="fig-pillars">
+<h3>Figure 2. Vishwas - Nirman - Jan Kalyan</h3>
+<div class="cols3">
+<div class="tile p1"><strong>1. Vishwas (trust)</strong><br/>Restore trust through stronger security operations, better inter-agency coordination, a structured <strong>surrender and rehabilitation</strong> framework and sustained community outreach.</div>
+<div class="tile p2"><strong>2. Nirman (development)</strong><br/>Expand physical and digital connectivity, improve governance in remote areas and create lasting economic opportunity through infrastructure.</div>
+<div class="tile p3"><strong>3. Jan Kalyan (welfare)</strong><br/>Prioritise dignity, welfare delivery, cultural inclusion and mainstreaming of affected communities into national development.</div>
+</div>
+<figcaption>Source: pillar descriptions follow the PIB backgrounder "Naxal-Free India" (June 2026) as summarised by secondary sources; <strong>[Verification Required]</strong> against the PDF text.</figcaption>
+</figure>
+
+<h3>6.1 Development-Front Measures <span class="small">[Additional]</span></h3>
+<ul>
+<li><strong>Road Connectivity Project for LWE Affected Areas (RCPLWEA)</strong>: all-weather roads in remote forest areas.</li>
+<li><strong>Mobile towers and 4G coverage</strong> to break the communication blackout.</li>
+<li><strong>Eklavya Model Residential Schools (EMRS)</strong> and ITIs for tribal youth; more bank branches and post offices.</li>
+<li><strong>Fortified police camps</strong> deep in earlier "liberated" areas, which both secure and extend the State's presence (Drishti IAS, 2026, citing Abujhmad as an example).</li>
+<li>Other schemes in the earlier note: Aspirational Districts Programme, PESA and FRA.</li>
+</ul>
+<p class="small">Source for this list: Drishti IAS, "Left Wing Extremism-Free India" (secondary). <strong>[Verification Required]</strong> confirm scheme details from MHA or PIB.</p>
+
+<h3>6.2 The "Naxal-Free" Declaration: What Exactly Happened</h3>
+<div class="table-wrap"><table id="status-table">
+<caption>Status of LWE, 2026 (as reported)</caption>
+<thead><tr><th scope="col">Date</th><th scope="col">Event</th><th scope="col">Source type</th></tr></thead>
+<tbody>
+<tr><td>Target</td><td>Government's stated target: end LWE by <strong>31 March 2026</strong></td><td>Official statements, widely reported</td></tr>
+<tr><td>On or just before 31 March 2026</td><td>Union Home Minister told the Lok Sabha that "we have become Naxal-free", saying he would formally inform the nation after final arrangements. He also said State committee members in Madhya Pradesh, Maharashtra, Chhattisgarh and Telangana had surrendered or been killed, and the Politburo and central structure were "almost completely dismantled"</td><td>Indian Express report of the Lok Sabha debate (opened)</td></tr>
+<tr><td>April 2026</td><td>MHA reportedly told States that no district is classified as LWE-affected (see the 16 October note, Section 5)</td><td>Secondary reports (New Indian Express, Deccan Herald)</td></tr>
+</tbody></table></div>
+<p class="correction" id="c09"><strong>[Correction]</strong> The class note says "on 31 March, India was declared Naxal-free". <strong>31 March 2026 was the target date</strong>; the Home Minister's statement in the Lok Sabha came at about that date (reported as the day before the deadline), and the MHA communication on district classification followed in April. Use "declared Naxal-free in 2026 (target date 31 March 2026)". The claim of "20,000 deaths, including 5,000 security personnel" in the Minister's speech is a <strong>political statement</strong>, not an audited figure; quote it only as "according to the Home Minister".</p>
+<div class="verification"><strong>Interpretation:</strong> a security milestone does not by itself settle land, forest and displacement grievances. Residual risks: security vacuum when CAPFs withdraw, conversion of extortion networks into organised crime, weak service delivery ("hardware without software"), and overground or urban support networks that must be tackled without harming civil liberties (Drishti IAS, 2026).</div>
+</section>
+
+<section id="doctrine">
+<h2>7. India's Post-Operation Sindoor Counter-Terror Approach</h2>
+<h3>7.1 Background</h3>
+<p>After the <strong>Pahalgam terror attack (22 April 2025)</strong>, India launched <strong>Operation Sindoor</strong> on <strong>7 May 2025</strong> against terrorist infrastructure in Pakistan and Pakistan-occupied Jammu and Kashmir <strong>[Verification Required: dates from memory and secondary summaries]</strong>. In his address to the nation on <strong>12 May 2025</strong> the Prime Minister described a "new normal" with three principles.</p>
+<figure id="fig-three-principles">
+<h3>Figure 3. The three principles of the "new normal"</h3>
+<div class="flow">
+<span class="box"><strong>1. Decisive retaliation</strong><br/>Any terror attack on India or Indians will get a strong response on India's terms</span>
+<span>&#8594;</span>
+<span class="box"><strong>2. No tolerance of nuclear blackmail</strong><br/>India will not be deterred from acting against terrorism by nuclear threats</span>
+<span>&#8594;</span>
+<span class="box"><strong>3. No distinction between terrorists and their sponsors</strong><br/>Those who shelter, support or sponsor terrorists are treated alike</span>
+</div>
+<figcaption>Source: Prime Minister's address to the nation, 12 May 2025 (English rendering published by MEA and PIB); principles as summarised by secondary reports. <strong>[Verification Required]</strong> the official texts could not be opened.</figcaption>
+</figure>
+<p class="correction" id="c10"><strong>[Correction]</strong> (1) "Op Sindhoor" is <strong>Operation Sindoor</strong>. (2) The notes say India "released a new security doctrine". The three principles were set out in the Prime Minister's <strong>address</strong>; they are widely described as a doctrinal shift, but no formal published doctrine document could be verified. Write "declared policy" or "stated doctrine", not "a released doctrine". (3) <strong>"Offensive defence"</strong> is an analytical label used by commentators; it was not a phrase in the address <strong>[Verification Required]</strong>.</p>
+
+<h3>7.2 Offensive Defence and its Forms</h3>
+<p><strong>Offensive defence</strong> (as taught in class): the defender chooses the <strong>time and theatre</strong> of action instead of waiting to absorb an attack. It can take the following forms:</p>
+<div class="table-wrap"><table id="forms">
+<caption>Forms of cross-border action (class framework, corrected)</caption>
+<thead><tr><th scope="col">Form</th><th scope="col">Host-country role</th><th scope="col">Examples</th></tr></thead>
+<tbody>
+<tr><td><strong>Cooperative action ("hot pursuit" in the class's usage)</strong></td><td>The host country takes part in the operation, shares the credit and consents to it</td><td><strong>Operation All Clear</strong> (Bhutan, December 2003 - January 2004): conducted by the <strong>Royal Bhutan Army</strong> against ULFA, NDFB and KLO camps, with Indian logistics and intelligence support (no Indian troops entered). <strong>Operation Sunrise</strong> (India-Myanmar, <strong>2019</strong>): joint action against North-East insurgent camps</td></tr>
+<tr><td><strong>Surgical strike / unilateral strike</strong></td><td>The host country is not told and is hostile or unwilling, so the strike is without its consent</td><td><strong>LoC surgical strikes, 29 September 2016</strong> (after the Uri attack); <strong>Balakot air strike, 26 February 2019</strong> (after Pulwama attack). <strong>Cross-border raid on Myanmar border, June 2015</strong> (after the Chandel ambush); the Indian Army described it as cross-border action, and Myanmar's official position differed <strong>[Verification Required]</strong></td></tr>
+</tbody></table></div>
+<p class="correction" id="c11"><strong>[Correction]</strong> (1) <strong>Operation Sunrise was in 2019, not 2015.</strong> The June 2015 action on the Myanmar border was a separate cross-border raid and was not called Operation Sunrise. (2) Operation All Clear was an operation by Bhutan's army, so it is an example of <strong>cooperation</strong>, not of India entering Bhutan. (3) The unfinished line "Surgical strike: ... Eg: Surgical strike in" is completed with the 2016 LoC strikes (and the 2019 Balakot air strike as a later example). (4) "Hot pursuit" has a narrower meaning in international law (immediate, continuous pursuit of an offender across a boundary, for example a ship under UNCLOS Article 111); the class uses it loosely for consent-based joint action. <strong>[Verification Required]</strong> the 2016, 2019 and 2015 operational details rely on official statements widely reported; Pakistan's and Myanmar's positions differ.</p>
+
+<h3>7.3 Limits and Trade-offs <span class="small">[Additional]</span></h3>
+<ul>
+<li><strong>Legal basis:</strong> self-defence claims under UN Charter Article 51 versus the ban on use of force in Article 2(4); states differ on action against non-state actors based in another country.</li>
+<li><strong>Escalation risk</strong> between nuclear-armed neighbours; hence the "no nuclear blackmail" principle must be matched with crisis communication.</li>
+<li><strong>Deterrence by punishment</strong> does not replace <strong>deterrence by denial</strong>: border fencing, intelligence, counter-terror policing, and legal tools.</li>
+<li>"No distinction between terrorists and sponsors" is a policy about <strong>States and organised groups</strong> that sponsor terror. It does not mean communal or collective attribution to a community.</li>
+</ul>
+</section>
+
+<section id="gaps">
+<h2>8. Gaps and Way Forward (Short)</h2>
+<ul>
+<li><strong>Consolidate the gains:</strong> strengthen State police and local intelligence before CAPF drawdown; keep inter-State coordination.</li>
+<li><strong>Close the rights gap:</strong> title under FRA, PESA gram sabha consent, rights-based land acquisition and rehabilitation (the same grievances that powered LWE).</li>
+<li><strong>Deliver services, not only buildings:</strong> teachers, doctors and administrators present in remote areas.</li>
+<li><strong>Rehabilitate surrendered cadres</strong> with livelihoods and protection; avoid unregulated local militias (Salwa Judum lesson).</li>
+<li><strong>Counter-terror abroad:</strong> use graded, lawful and well-communicated responses, along with diplomacy and financial pressure (FATF).</li>
+</ul>
+</section>
+
+<section id="key-facts">
+<h2>Key Facts for Prelims</h2>
+<ul>
+<li>Charu Majumdar - <strong>Historic Eight Documents</strong> (1965-67); CPI(ML) founded <strong>22 April 1969</strong>; CPI (Maoist) formed <strong>21 September 2004</strong> (PWG + MCC); terrorist-organisation listing under UAPA <strong>22 June 2009</strong>.</li>
+<li>National Policy and Action Plan on LWE: <strong>2015</strong>; SAMADHAN: <strong>2017</strong> (eight letters; N = no access to financing).</li>
+<li>Schemes: <strong>SRE</strong> (reimburses States), <strong>SIS</strong> (fortified police stations etc.), <strong>ACALWEMS</strong> (helicopters and airlift for central agencies), <strong>IRB</strong>.</li>
+<li>Forces: <strong>CoBRA</strong> (CRPF), <strong>Greyhounds</strong> (AP/Telangana), <strong>DRG</strong> and <strong>Black Panther</strong> (Chhattisgarh), <strong>Bastariya Battalion</strong> (CRPF).</li>
+<li>Target date for ending LWE: <strong>31 March 2026</strong>; Vishwas-Nirman-Jan Kalyan pillars.</li>
+<li>Operation Sindoor: <strong>7 May 2025</strong>; PM's address <strong>12 May 2025</strong>; three principles of the "new normal".</li>
+<li>Operation All Clear (Bhutan, 2003); Operation Sunrise (India-Myanmar, 2019); LoC surgical strikes (2016); Balakot (2019).</li>
+</ul>
+</section>
+
+<section id="mains">
+<h2>Mains Points</h2>
+<ul>
+<li>LWE's decline shows that <strong>sustained, intelligence-led security action combined with last-mile development</strong> works; the 2015 policy's three fronts (security, development, rights) is the framework.</li>
+<li>SAMADHAN converts the policy into <strong>operational management</strong> (leadership, intelligence, technology, finance control, dashboards); the Greyhounds model shows the value of <strong>State-level specialist forces</strong>.</li>
+<li>Lasting peace depends on resolving the <strong>original grievances</strong> (land, forest, displacement) and on <strong>accountability</strong> in security operations.</li>
+<li>The post-Sindoor approach widens deterrence by punishment but raises <strong>legal, diplomatic and escalation</strong> questions.</li>
+<li><strong>Balanced way forward:</strong> consolidate through State police and service delivery; protect tribal rights; keep intelligence and financial pressure on residual networks; use proportionate, lawful counter-terror responses with diplomatic backing.</li>
+</ul>
+</section>
+
+<section id="traps">
+<h2>Common Traps / Confusions</h2>
+<ul>
+<li>CPI(M) (1964) is a parliamentary party; CPI(ML) (1969) was the armed Naxalite party; CPI (Maoist) (2004) came from PWG + MCC only.</li>
+<li>31 March 2026 was a <strong>target</strong>, not the date of a formal gazette notification.</li>
+<li>Vishwas-Nirman-Jan Kalyan (2026 framing) is not the same as the 2015 National Policy or SAMADHAN (2017).</li>
+<li>SRE reimburses <strong>States</strong>; ACALWEMS supports <strong>central agencies</strong>.</li>
+<li>DRG and Black Panther are different Chhattisgarh units; CoBRA and Bastariya Battalion are CRPF; Greyhounds are State police.</li>
+<li>Operation Sunrise is 2019, not 2015; Operation All Clear was carried out by Bhutan.</li>
+<li>The "new normal" is a stated policy from the PM's address, not a published doctrine document.</li>
+</ul>
+</section>
+
+<section id="revision">
+<h2>30-Second Revision</h2>
+<p class="lead"><strong>LWE</strong>: Naxalbari 1967 &#8594; CPI(ML) 1969 &#8594; PWG + MCC = CPI (Maoist) 2004 (listed terrorist organisation 2009). <strong>Causes</strong>: land reform failure, skewed development, displacement, no grievance redressal. <strong>Solutions</strong>: early harvest, good governance and perception management, PPP. <strong>Policy</strong>: 2015 National Policy (security, development, rights). <strong>Security front</strong>: modernisation, SIS, SRE, IRB, ACALWEMS; CoBRA, Greyhounds, DRG, Black Panther, Bastariya Battalion. <strong>SAMADHAN (2017)</strong>: Smart leadership, Aggressive strategy, Motivation and training, Actionable intelligence, Dashboard KPIs, Harnessing technology, Action plan per theatre, No access to financing. <strong>2026</strong>: target 31 March; Vishwas-Nirman-Jan Kalyan. <strong>Post-Sindoor</strong>: decisive retaliation, no nuclear blackmail, no terrorist-sponsor distinction; forms: cooperative action (All Clear 2003, Sunrise 2019) and surgical strikes (2016, Balakot 2019).</p>
+</section>
+
+<section id="pyqs">
+<h2>Previous Year Questions (PYQs)</h2>
+<p class="small">The official UPSC question papers were not opened. Question wording below is a <strong>paraphrase</strong> from a secondary compilation (Legacy IAS, GS3 Internal Security PYQ 2013-2025). Marks and word limits are as listed there. <strong>[Verification Required]</strong> check exact wording on the UPSC archive. The 2015 and 2020 LWE questions are in the 16 October note.</p>
+
+<h3>Q1. Mains 2025, GS Paper III (10 marks, 150 words, as listed)</h3>
+<p>Paraphrase: the Government has stated that LWE will be eliminated by 2026. What is LWE, how are people affected by it, and what measures has the Government taken to eliminate it?</p>
+<p class="answer"><strong>Suggested answer approach [Additional]:</strong> define LWE (Section 1); impact on tribal communities (displacement, lack of services, violence); measures: 2015 policy, SAMADHAN, SRE/SIS, forces, development (Sections 4-6). Study guidance, not an official marking scheme.</p>
+
+<h3>Q2. Mains 2022, GS Paper III (15 marks, 250 words, as listed)</h3>
+<p>Paraphrase: Naxalism is a social, economic and developmental issue that appears as a violent internal-security threat; discuss the emerging issues and suggest a multi-layered strategy.</p>
+<p class="answer"><strong>Suggested answer approach [Additional]:</strong> causes (Section 2), solution themes (Section 3), three fronts of the 2015 policy (Section 4), SAMADHAN and security measures (Section 5), residual risks and way forward (Sections 6.2, 8).</p>
+
+<h3>Q3. Mains 2018, GS Paper III (10 marks, 150 words, as listed)</h3>
+<p>Paraphrase: LWE shows a downward trend but still affects parts of the country; briefly explain the Government's approach to countering it.</p>
+<p class="answer"><strong>Suggested answer approach [Additional]:</strong> policy of 2015 and SAMADHAN; security, development and rights fronts; surrender and rehabilitation (Sections 4-6).</p>
+
+<h3>Q4. Mains 2013, GS Paper III (15 marks, 250 words, as listed)</h3>
+<p>Paraphrase: Article 244 relates to the administration of Scheduled and Tribal Areas; analyse the effect of non-implementation of the Fifth Schedule on the growth of LWE.</p>
+<p class="answer"><strong>Suggested answer approach [Additional]:</strong> link governance and rights gaps (PESA, FRA, land alienation) with alienation and the vacuum used by armed groups (Sections 2-3, 8).</p>
+
+<p class="small">Sources: <a href="https://www.legacyias.com/gs3-internal-security-pyq-2013-2025/">Legacy IAS - GS3 Internal Security PYQ 2013-2025 (secondary)</a>.</p>
+<p class="verification"><strong>[No verified PYQ found for this topic]</strong> for the post-Operation Sindoor doctrine, offensive defence, hot pursuit and surgical strikes as a standalone question.</p>
+</section>
+
+<section id="corrections">
+<h2>Corrections Made</h2>
+<ol>
+<li><a href="#c01">Charu Majumdar's works, CPI(ML) founding, 2004 merger, 2009 UAPA listing.</a></li>
+<li><a href="#c02">Unverified counts (30,000 cadres; 126 districts by 2013); MCC dates.</a></li>
+<li><a href="#c03">UP land ceiling (40 acres in 1960; 12.5 acres per family from 1973).</a></li>
+<li><a href="#c04">Land redistribution study, West Bengal claim, tribal displacement share.</a></li>
+<li><a href="#c05">National Policy (2015) versus Vishwas-Nirman-Jan Kalyan pillars.</a></li>
+<li><a href="#c06">IRB name; SRE goes to States; ACALWEMS expanded.</a></li>
+<li><a href="#c07">CGP, APP and TP expanded; Black Panther versus DRG; CoBRA is CRPF.</a></li>
+<li><a href="#c08">SAMADHAN: "No access to financing"; "Action plan for each theatre".</a></li>
+<li><a href="#c09">31 March 2026 as target date, not declaration date; speech figures attributed.</a></li>
+<li><a href="#c10">Operation Sindoor spelling; "new normal" not a published doctrine; "offensive defence" is a commentators' term.</a></li>
+<li><a href="#c11">Operation Sunrise 2019 (not 2015); All Clear by Bhutan; surgical-strike example completed; "hot pursuit" meaning.</a></li>
+</ol>
+<p class="small">Spelling fixes: "voilent" (violent), "conflictbetween" (conflict between), "Naxalari" (Naxalbari), "raise" (rise), "Jammen" (Zameen/Zamin), "cieling" (ceiling), "Eg" (e.g.), "vaccum" (vacuum), "abscence" (absence), "prescence" (presence), "Policae" (Police), "Batallion" (Battalion), "Sindhoor" (Sindoor), "offencive" (offensive), "unwawre" (unaware), "th ecredit" (the credit), "providedto" (provided to), "Fior" (For), "surveilance" (surveillance), "nation security" (national security). <strong>Visual aids:</strong> Figures 1-3 are lightweight HTML/CSS diagrams; the lineage diagram, district chart and a schematic map are in the 16 October note. <strong>[Visual Representation Recommended: schematic map (not to scale) of the former LWE-affected States and the "Legacy and Thrust" districts, April 2026; suggested source: MHA LWE Division / PIB]</strong> - not added because the official district list could not be retrieved.</p>
+</section>
+
+<section id="sources">
+<h2>Open Sources / Further Reading</h2>
+<ul>
+<li><a href="https://static.pib.gov.in/WriteReadData/specificdocs/documents/2026/jun/doc2026619897101.pdf">PIB backgrounder - Naxal-Free India (June 2026; downloaded, text not extracted; verification limit)</a></li>
+<li><a href="https://indianexpress.com/article/india/lok-sabha-maoists-wiped-bastar-shah-day-before-deadline-ends-10610102/">Indian Express - Maoists almost wiped out from Bastar: Shah, day before his deadline ends (opened; Lok Sabha debate, March 2026)</a></li>
+<li><a href="https://www.drishtiias.com/daily-updates/daily-news-analysis/left-wing-extremism-free-india">Drishti IAS - Left Wing Extremism-Free India (opened; secondary; SAMADHAN, development and residual risks)</a></li>
+<li><a href="https://pib.gov.in/PressReleasePage.aspx?PRID=1489465">PIB - SAMADHAN doctrine press release, 2017 (could not be opened; verification limit)</a></li>
+<li><a href="https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2003503">PIB - National Policy to Combat Left Wing Extremism</a></li>
+<li><a href="https://www.sansad.in/getFile/annex/223/Au3933.pdf?source=pqars">Parliament of India - Expert Group report extract: Development Challenges in Extremist Affected Areas (Planning Commission, 2008; cited via search; not opened)</a></li>
+<li><a href="https://ruralindiaonline.org/en/library/resource/development-challenges-in-extremist-affected-areas-report-of-an-expert-group-to-planning-commission/">People's Archive of Rural India - full text of the 2008 Expert Group report (cited via search; not opened)</a></li>
+<li><a href="https://pib.gov.in/PressReleasePage.aspx?PRID=2128270">PIB - Prime Minister addresses the nation, 12 May 2025 (cited via search; not opened)</a></li>
+<li><a href="https://www.mea.gov.in/speeches-statements.htm?dtl/39498/English_rendering_of_PMs_address_to_the_Nation_May_12_2025">MEA - English rendering of PM's address to the Nation, 12 May 2025 (cited via search; not opened)</a></li>
+<li><a href="https://indianexpress.com/article/india/pm-modi-speech-operation-sindoor-india-new-normal-3-doctrines-9998594/">Indian Express - India's "new normal": three doctrines mentioned by PM Modi (secondary)</a></li>
+<li><a href="https://www.insightsonindia.com/2023/11/08/operation-all-clear-2003/">Insights IAS - Operation All Clear (2003) (secondary)</a></li>
+<li><a href="https://www.firstpost.com/india/anti-naxal-combat-force-black-panther-to-come-up-in-chhattisgarh-will-be-along-the-lines-of-greyhound-unit-in-ap-telangana-4477699.html">Firstpost - Black Panther combat force to come up in Chhattisgarh (secondary)</a></li>
+<li><a href="https://www.gktoday.in/crpf-raises-bastariya-battalion-combat-naxals-activities-bastar-region-chhattisgarh/">GKToday - CRPF raises Bastariya Battalion (secondary)</a></li>
+<li><a href="https://pib.gov.in/newsite/erelcontent.aspx?relid=49325">PIB - CPI (Maoist) declared a terrorist organisation, 2009 (cited via search; not opened)</a></li>
+<li><a href="https://indiacode.ecourtsindia.com/uttar-pradesh-imposition-ceiling-on-land-holdings-act/section/5/">Uttar Pradesh Imposition of Ceiling on Land Holdings Act, 1960 - Section 5 (secondary mirror of India Code; not opened)</a></li>
+<li><a href="https://www.legacyias.com/gs3-internal-security-pyq-2013-2025/">Legacy IAS - GS3 Internal Security PYQs 2013-2025 (secondary)</a></li>
+<li><a href="Internal%20Security%20-%20Class%2010-16-2026.html">Internal Security - Class 10-16-2026 (previous note; origin, causes, case studies, status)</a></li>
+</ul>
+</section>
+</main>
+</body>
+</html>

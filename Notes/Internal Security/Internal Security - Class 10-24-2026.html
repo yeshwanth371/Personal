@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Internal Security - Class Notes | 24 October 2026</title>
+<style>
+  * { box-sizing: border-box; }
+  body { font-family: Calibri, sans-serif; font-size: 11pt; line-height: 1.6; max-width: 900px; margin: 20px auto; padding: 0 20px; color: #202124; }
+  h1 { font-size: 20pt; color: #1a1a1a; border-bottom: 2px solid #333; padding-bottom: 4px; margin-top: 30px; }
+  h2 { font-size: 16pt; color: #2b2b2b; margin-top: 28px; border-bottom: 1px solid #ddd; padding-bottom: 3px; }
+  h3 { font-size: 13pt; color: #3a3a3a; margin-top: 18px; }
+  p { margin: 8px 0; }
+  ul, ol { margin: 6px 0; padding-left: 28px; }
+  li { margin: 4px 0; }
+  a { color: #005ea6; overflow-wrap: anywhere; }
+  table { border-collapse: collapse; width: 100%; margin: 10px 0; table-layout: fixed; }
+  caption { text-align: left; font-weight: bold; margin-bottom: 6px; }
+  th, td { border: 1px solid #999; padding: 6px 10px; text-align: left; vertical-align: top; overflow-wrap: anywhere; }
+  th { background: #f0f0f0; }
+  .table-wrap { overflow-x: auto; }
+  .note, .exam, .verification { background: #fff8e1; border-left: 3px solid #f5a623; padding: 8px 12px; margin: 10px 0; overflow-wrap: anywhere; }
+  .correction { background: #fff3e0; border-left: 3px solid #ef6c00; padding: 8px 12px; margin: 10px 0; }
+  .additional, .lead { background: #e8f5e9; border-left: 3px solid #2e7d32; padding: 8px 12px; margin: 10px 0; }
+  .flow { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 10px; padding: 12px 0; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; }
+  .flow span { text-align: center; max-width: 100%; }
+  .flow .box { border: 1px solid #888; background: #f7f7f7; padding: 6px 10px; border-radius: 4px; flex: 1 1 150px; }
+  figure { margin: 16px 0; padding: 12px; border: 1px solid #bbb; background: #fff; }
+  figure h3 { margin-top: 0; text-align: center; }
+  figcaption { margin-top: 8px; color: #555; font-size: 9.5pt; }
+  .cols3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+  .tile { border: 1px solid #888; border-radius: 4px; padding: 8px; background: #f5f9fd; font-size: 10.5pt; }
+  .tile.p1 { background: #e8f5e9; border-color: #2e7d32; }
+  .tile.p2 { background: #f5f9fd; border-color: #0078d4; }
+  .tile.p3 { background: #fff3e0; border-color: #ef6c00; }
+  .small { color: #555; font-size: 9.5pt; }
+  .answer { margin: 10px 0; padding: 6px 12px; border-left: 3px solid #0078d4; background: #f5f9fd; }
+  @media (max-width: 650px) {
+    body { padding: 0 12px; }
+    .cols3 { grid-template-columns: 1fr; }
+    .flow { flex-direction: column; align-items: stretch; }
+    .flow .box { flex: none; }
+    th, td { padding: 6px; }
+    .table-wrap table { min-width: 0; }
+  }
+  @media print {
+    @page { size: A4; margin: 14mm; }
+    body { max-width: none; margin: 0; padding: 0; }
+    h1, h2, h3 { break-after: avoid; }
+    figure, tr, .answer, .tile { break-inside: avoid; }
+    thead { display: table-header-group; }
+    .table-wrap { overflow: visible; }
+    a { color: inherit; text-decoration: none; }
+    p, li { orphans: 3; widows: 3; }
+  }
+</style>
+</head>
+<body>
+<main>
+<header>
+<h1>Internal Security - Class Notes | 24 October 2026</h1>
+<p><strong>Topics:</strong> Basics of Cyber Security; cybercrime, cyber terrorism, espionage and warfare; cyber institutions and laws; money laundering; maritime security; communication networks and media.</p>
+<p class="small">Class date: <time datetime="2026-10-24">24 October 2026</time>. New topic numbering begins here; the supplied notes do not continue an earlier numbered sequence. Maritime security also connects with the <a href="Internal%20Security%20-%20Class%2010-23-2026.html">23 October border-management class</a>.</p>
+<p class="note"><strong>Reading key:</strong> <strong>[Correction]</strong> repairs a substantive claim; <strong>[Additional]</strong> identifies supporting material or study guidance; <strong>[Verification Required]</strong> retains useful but unresolved original material. Sources were consulted for this note on <strong>25 October 2026</strong>. Some official PDFs could not be extracted; precise legal-status limitations are identified below. No private rough notes were uploaded for research.</p>
+</header>
+
+<section id="cyber-basics">
+<h2>1. Basics of Cyber Security</h2>
+<p class="lead"><strong>Cyber security:</strong> protection of information and digital systems against unauthorised <strong>access, use, disclosure, disruption, modification or destruction</strong>.</p>
+<p><strong>IT Act, 2000, section 2(1)(nb), simplified:</strong> protecting information, equipment, devices, computers, computer resources, communication devices and information stored in them against those six forms of harm. <a href="#s-it">Sources: IT Act and accessible legal reproduction</a>.</p>
+<p class="correction" id="c-definition"><strong>[Correction]</strong> The rough definition repeats "access" and omits parts of the statutory list. The corrected paraphrase includes <strong>equipment and communication devices</strong>; it is not presented as a verbatim quotation. The definition is in the <strong>amended</strong> IT Act, not necessarily its original 2000 text.</p>
+<figure>
+<h3>Figure 1. What Cyber Security Protects [Additional]</h3>
+<div class="cols3">
+<div class="tile p1"><strong>Confidentiality</strong><br/>Only authorised access and disclosure.<br/><em>Example:</em> keeping customer records private.</div>
+<div class="tile p2"><strong>Integrity</strong><br/>Preventing improper alteration or destruction.<br/><em>Example:</em> preserving an accurate account balance.</div>
+<div class="tile p3"><strong>Availability</strong><br/>Reliable, timely access for authorised users.<br/><em>Example:</em> keeping a hospital system usable.</div>
+</div>
+<figcaption>The confidentiality-integrity-availability (CIA) triad is a revision model, not an exhaustive legal definition. Source: <a href="https://csrc.nist.gov/glossary/term/information_security">NIST information-security glossary</a>.</figcaption>
+</figure>
+
+<h3>1.1 Four categories: distinguish purpose and legal threshold</h3>
+<div class="table-wrap"><table>
+<caption>Class categories: overlapping in practice, not interchangeable</caption>
+<thead><tr><th scope="col">Category</th><th scope="col">Meaning</th><th scope="col">Key distinction</th></tr></thead>
+<tbody>
+<tr><td><strong>1. Cybercrime</strong></td><td>Unlawful acts targeting computer systems or using cyberspace to commit an offence.</td><td>The computer may be the target, tool or evidence source.</td></tr>
+<tr><td><strong>2. Cyber terrorism</strong></td><td>Cyber conduct meeting the specific statutory elements of terrorism, notably IT Act section 66F.</td><td><strong>[Correction]</strong> Not every hack, online threat or extremist post is cyber terrorism.</td></tr>
+<tr><td><strong>3. Cyber espionage</strong></td><td>Covert acquisition of sensitive or confidential information through digital means.</td><td><strong>[Correction]</strong> Leaking information is not necessary; secrecy may be the objective. Not every data theft is espionage.</td></tr>
+<tr><td><strong>4. Cyber warfare</strong></td><td>Cyber operations connected with interstate conflict or military objectives.</td><td><strong>[Correction]</strong> A cross-border cybercrime or unverified attack claim is not automatically an act of war.</td></tr>
+</tbody></table></div>
+<p><strong>Honey-trapping:</strong> manipulation through an apparent personal or romantic relationship to obtain information. It can support espionage; it becomes <em>cyber-enabled</em> when digital channels are used. <strong>[Additional]</strong> Insider access, compromised accounts and supply-chain weaknesses are other broad espionage risks.</p>
+<p class="verification" id="v-hillary"><strong>[Verification Required]</strong> Original example retained: "Pakistan attacked India through the Dance of the Hillary cyber attack after Operation Sindoor." The incident name, occurrence, timing and attribution were <strong>not reliably verified</strong>. Do not use it as an established case study or attribute responsibility to a State without evidence. <strong>[Correction]</strong> The operation's standard spelling is <strong>Operation Sindoor</strong>, not "Sindhoor".</p>
+
+<h3>1.2 Cybercrime vocabulary</h3>
+<p class="additional"><strong>[Additional]</strong> The rough notes supplied the terms below without definitions. These are concise, defensive explanations, not separate offences automatically created by these labels. Applicable charges depend on conduct and evidence. See <a href="#s-i4c">I4C categories</a> and <a href="#s-safety">official cyber-safety guidance</a>.</p>
+<div class="table-wrap"><table>
+<caption>Recognise the threat and the protective response</caption>
+<thead><tr><th scope="col">Term</th><th scope="col">Meaning</th><th scope="col">Defensive cue [Additional]</th></tr></thead>
+<tbody>
+<tr><td><strong>Phishing</strong></td><td>Deceptive messages or sites impersonating a trusted entity to obtain data or induce harmful action.</td><td>Verify through an independently obtained official channel.</td></tr>
+<tr><td><strong>Vishing</strong></td><td>Voice-call phishing.</td><td>Do not disclose OTPs, PINs or passwords to callers.</td></tr>
+<tr><td><strong>Spoofing</strong></td><td>Falsifying an apparent identity or source, such as an email sender, caller ID or website.</td><td>A familiar display name is not proof of identity.</td></tr>
+<tr><td><strong>Whaling</strong></td><td>Highly targeted phishing aimed at senior or high-value decision-makers.</td><td>Independently confirm unusual payment or data requests.</td></tr>
+<tr><td><strong>Hacking</strong></td><td>Exploring or manipulating systems; unauthorised intrusion can be unlawful.</td><td><strong>[Correction]</strong> Authorised security testing is not automatically a crime.</td></tr>
+<tr><td><strong>Cracking</strong></td><td>Commonly, bypassing security or software protections, usually with malicious or unauthorised intent.</td><td>Use legitimate software and approved testing procedures.</td></tr>
+<tr><td><strong>Squatting</strong></td><td>Here, <strong>cybersquatting</strong>: bad-faith registration or use of a domain exploiting another's name or mark. Typosquatting exploits look-alike spellings.</td><td><strong>[Correction]</strong> "Squatting" alone is ambiguous; check exact domain names.</td></tr>
+<tr><td><strong>Salami attack</strong></td><td>Many small unauthorised alterations or deductions that cumulatively cause significant loss.</td><td>Reconcile transactions and investigate repeated small discrepancies.</td></tr>
+<tr><td><strong>Cyber grooming</strong></td><td>Building online trust with a child or vulnerable person to facilitate exploitation or abuse.</td><td>Support safe reporting; do not blame victims or redistribute abusive material.</td></tr>
+<tr><td><strong>"Pig-butchering" scam</strong></td><td>Prolonged trust-building followed by fraudulent investment solicitation, sometimes through a supposed relationship.</td><td><strong>[Correction]</strong> Standard term for the notes' "pig slaughtering"; also called relationship-investment fraud. Do not invest on a stranger's assurances.</td></tr>
+<tr><td><strong>Juice jacking</strong></td><td>Potential device or data compromise through a malicious USB charging connection.</td><td>Use a trusted charger and wall socket or power bank. Do not assume every public charger is compromised.</td></tr>
+</tbody></table></div>
+
+<h3>1.3 Cyber terrorism: law and policy</h3>
+<p><strong>BNS, 2023, section 113:</strong> its opening limb covers acts with intent to threaten, or likely to threaten, India's unity, integrity, sovereignty, security or economic security, or intent to strike, or likely to strike, terror among people in India or a foreign country.</p>
+<p class="correction" id="c-terror"><strong>[Correction]</strong> The rough notes give only the opening limb, not the complete offence. Section 113 also specifies conduct and consequences, including grave harm, disruption of essential supplies/services, coercion through criminal force and hostage-taking. <strong>IT Act section 66F</strong>, rather than BNS section 113 alone, is the cyber-specific provision. A case requires its statutory elements, not merely a frightening online message. BNS section 113 commenced on <strong>1 July 2024</strong>; the accessible secondary reproduction is dated 15 October 2026, while the official PDF could not be extracted. <a href="#s-bns">Sources and limitation</a>.</p>
+<p class="additional"><strong>[Additional]</strong> Section 66F broadly covers specified unauthorised access, access-denial or contaminant-related conduct with the requisite terror/security intent and serious consequences, and specified unauthorised access to restricted information with the requisite knowledge or reason to believe it could cause the harms listed in the section. This is a study summary, not the complete statutory test. The <strong>UAPA, 1967</strong> remains a separate counter-terrorism statute; BNS does not simply replace it. Section 113 provides for an officer not below Superintendent of Police to decide whether registration is under that section or UAPA. See <a href="#s-it">IT Act</a> and <a href="#s-bns">section 113 text</a>.</p>
+
+<h3>1.4 PRAHAAR: National Counter Terrorism Policy &amp; Strategy</h3>
+<p>The MHA unveiled PRAHAAR on <strong>23 February 2026</strong>, confirmed by a <strong>12 August 2026 Rajya Sabha reply published by PIB</strong>. It is a policy and strategy framework, <strong>not a new penal statute</strong>. <a href="#s-prahaar">Official source</a>.</p>
+<div class="table-wrap"><table>
+<caption>PRAHAAR: seven pillars, following the official wording</caption>
+<thead><tr><th scope="col">Letter</th><th scope="col">Pillar</th></tr></thead>
+<tbody>
+<tr><td><strong>P</strong></td><td><strong>Prevention</strong> of terror attacks to protect Indian citizens and interests.</td></tr>
+<tr><td><strong>R</strong></td><td><strong>Responses</strong> which are swift and proportionate to the threat posed.</td></tr>
+<tr><td><strong>A</strong></td><td><strong>Aggregating</strong> internal capacities for synergy in a whole-of-government approach.</td></tr>
+<tr><td><strong>H</strong></td><td><strong>Human rights</strong> and Rule of Law-based processes for mitigation of threats.</td></tr>
+<tr><td><strong>A</strong></td><td><strong>Attenuating</strong> conditions conducive to terrorism, including radicalisation.</td></tr>
+<tr><td><strong>A</strong></td><td><strong>Aligning</strong> and shaping international efforts to counter terrorism.</td></tr>
+<tr><td><strong>R</strong></td><td><strong>Recovery and resilience</strong> through a whole-of-society approach.</td></tr>
+</tbody></table></div>
+<p class="correction" id="c-prahaar"><strong>[Correction]</strong> "Atinating" means <strong>attenuating</strong> (reducing); "threat post" becomes <strong>threat posed</strong>. The claim that PRAHAAR was released is verified, but "recently" is replaced by its actual release date.</p>
+<p><strong>Why cyberspace can enable terrorist activity:</strong> no physical border crossing may be needed; some activities have relatively low entry costs; messages can reach many people quickly; concealed identities complicate attribution.</p>
+<p class="correction" id="c-frequency"><strong>[Correction]</strong> These are <strong>enabling factors</strong>, not proof that cyber terrorism is becoming more frequent. The notes provide no verified terrorism-specific time series. Low-cost propaganda differs from sophisticated attacks on critical systems, which can require substantial expertise and resources; anonymity is not absolute.</p>
+<p class="additional"><strong>[Additional]</strong> Online recruitment or radicalisation may facilitate terrorism but is not interchangeable with a destructive cyber-terrorist attack. Radicalisation is a process of adopting increasingly radical ideas; it does not inevitably lead to violence. Lawful dissent, peaceful protest and unpopular opinions are not automatically security offences.</p>
+</section>
+
+<section id="cyber-framework">
+<h2>2. Cyber Security: Challenges, Institutions and Law</h2>
+<h3>2.1 Challenges and linked responses</h3>
+<div class="table-wrap"><table>
+<caption>Retaining the six challenges in the rough notes</caption>
+<thead><tr><th scope="col">Challenge</th><th scope="col">Meaning / qualification</th><th scope="col">Response [Additional]</th></tr></thead>
+<tbody>
+<tr><td><strong>1. Data colonisation</strong></td><td>Analytical term for unequal control over data, platforms and the value extracted from them; not a defined IT Act offence.</td><td>Accountable data governance, competition and domestic capability; assess costs of blanket localisation.</td></tr>
+<tr><td><strong>2. Electronic-device dependence</strong></td><td>Imported hardware/software and private supply chains can create assurance, update and vendor-dependence risks.</td><td>Risk-based procurement, independent testing, patch support and supplier diversity.</td></tr>
+<tr><td><strong>3. Digital illiteracy</strong></td><td>Difficulty recognising fraud, unsafe permissions and misleading content.</td><td>Local-language, accessible cyber hygiene education.</td></tr>
+<tr><td><strong>4. Under-reporting</strong></td><td>Victim stigma, uncertainty and reporting friction can hide harm; no percentage is asserted.</td><td>Simple reporting, victim support and prompt financial-fraud escalation.</td></tr>
+<tr><td><strong>5. Inadequately trained staff</strong></td><td>Gaps in police investigation, forensics and organisational incident response.</td><td>Specialist training, evidence preservation and clear escalation protocols.</td></tr>
+<tr><td><strong>6. Legal / enforcement gaps</strong></td><td>Technology changes quickly; cross-border evidence and enforcement capacity are difficult.</td><td>Targeted legal review, international cooperation and judicial capacity.</td></tr>
+</tbody></table></div>
+<p class="correction" id="c-challenges"><strong>[Correction]</strong> "Electronic devices - PuT and Imported" is unclear. <strong>[Verification Required]</strong> "PuT" has not been expanded by guessing; the interpretable private/imported-device concern is retained. Neither private manufacture nor foreign origin proves a device is unsafe. "Laws are archaic" is too sweeping: India has an amended IT Act, BNS and the DPDP framework; adequacy and enforcement remain separate questions.</p>
+
+<h3>2.2 Who does what?</h3>
+<div class="table-wrap"><table>
+<caption>Mandate map: protection, response, intelligence and investigation are different</caption>
+<thead><tr><th scope="col">Institution</th><th scope="col">Principal role</th><th scope="col">Ownership / limit</th></tr></thead>
+<tbody>
+<tr><td><strong>NCIIPC</strong><br/>National Critical Information Infrastructure Protection Centre</td><td>National nodal body for protection of critical information infrastructure (CII), under IT Act section 70A. Power and transport/aviation systems illustrate relevant sectors.</td><td>Not a police force. <strong>[Additional]</strong> CII refers to computer resources whose incapacitation/destruction would have debilitating impact on national security, economy, public health or safety.</td></tr>
+<tr><td><strong>Defence Cyber Agency</strong></td><td>Tri-service defence cyber capability and coordination.</td><td>Defence establishment; not the civilian cybercrime complaint authority. <strong>[Verification Required]</strong> Detailed current remit was not independently opened; no sensitive deployment details are included.</td></tr>
+<tr><td><strong>CERT-In</strong><br/>Indian Computer Emergency Response Team</td><td>National cyber-incident response agency under section 70B: alerts, analysis, emergency measures, response coordination, guidelines and prevention.</td><td><strong>MeitY</strong>; not the sole owner of every cyber-security function and not a substitute for police investigation.</td></tr>
+<tr><td><strong>NCCC</strong><br/>National Cyber Coordination Centre</td><td>Cyber-threat situational awareness; shares cyberspace metadata with relevant agencies for mitigation.</td><td><strong>[Correction]</strong> Implemented by <strong>CERT-In</strong>, not an MHA initiative. Do not equate metadata-based coordination with unrestricted reading of all communications.</td></tr>
+<tr><td><strong>C&amp;IS Division</strong><br/>Cyber and Information Security</td><td>MHA's cybercrime/cyber-security policy and coordination work, including online crimes against women and children.</td><td><strong>[Correction]</strong> A ministry division, not a separate police force. "Cyber stocking" means <strong>cyberstalking</strong>. Child sexual exploitation and abuse material is abbreviated <strong>CSEAM</strong>.</td></tr>
+<tr><td><strong>I4C</strong><br/>Indian Cybercrime Coordination Centre</td><td>MHA coordination ecosystem supporting law-enforcement agencies against cybercrime.</td><td>Coordinates and builds capacity; State/UT police ordinarily register and investigate complaints.</td></tr>
+<tr><td><strong>NCRP / 1930</strong></td><td>National Cyber Crime Reporting Portal: <a href="https://cybercrime.gov.in/">cybercrime.gov.in</a>. <strong>1930</strong> is the helpline for prompt reporting of financial cyber fraud.</td><td><strong>[Correction]</strong> The portal and telephone number are different reporting channels, not one institution. A complaint or freeze does not guarantee recovery or establish guilt.</td></tr>
+<tr><td><strong>CSIRT-Fin</strong></td><td>Computer Security Incident Response Team-Finance Sector: response, containment and mitigation for financial-sector incidents.</td><td><strong>[Correction]</strong> The verified operational name is <strong>CSIRT-Fin under CERT-In's umbrella</strong>; the notes' "CERT-Fin" also refers to an older proposal and should not be casually treated as an independent current regulator.</td></tr>
+<tr><td><strong>NIC-CERT</strong></td><td>Incident-response capability for NIC's government ICT infrastructure and services.</td><td><strong>[Correction]</strong> Prefer <strong>NIC-CERT</strong> to "CERT-Nic"; it does not replace all departmental security responsibilities. <strong>[Verification Required]</strong> Its current service scope needs direct NIC confirmation.</td></tr>
+<tr><td><strong>Cyber Swachhta Kendra</strong></td><td><strong>Botnet Cleaning and Malware Analysis Centre</strong>: detects infections, notifies users and offers cleaning tools and guidance.</td><td>CERT-In / MeitY. <strong>[Correction]</strong> Malware analysis and botnet cleaning are functions of this centre, not two additional agencies.</td></tr>
+</tbody></table></div>
+<p class="small">Mandates above are supported by <a href="#s-cyber-gov">MeitY's 28 March 2025 Parliament reply</a>, <a href="#s-cert">CERT-In</a>, <a href="#s-i4c">I4C</a> and <a href="#s-csk">CSK</a>, except where a verification marker specifies a limit.</p>
+<p class="verification" id="v-programmes"><strong>[Verification Required]</strong> The original labels <strong>"Cyber warrior police force"</strong> and <strong>"Cyber Saksharta Abhiyaan"</strong> do not identify a verified national force or a specific confirmed scheme in the sources opened. Retain them as class references needing the teacher's source, not established all-India programme names. <strong>[Additional]</strong> Verified awareness channels include <strong>CyberDost, I4C cyber-hygiene learning, CERT-In awareness activities and MeitY information-security awareness resources</strong>.</p>
+<p class="additional"><strong>[Additional]</strong> <strong>Union-State roles:</strong> police and public order are State subjects; national bodies support technical coordination, CII protection and cooperation. CAPFs support assigned security duties; armed forces have defence roles. Neither technical incident response nor an intelligence alert automatically authorises a criminal conviction. Fundamental rights and lawful procedure apply to security action.</p>
+
+<figure>
+<h3>Figure 2. Cyber Risk: Driver to Recovery [Additional]</h3>
+<div class="flow">
+<span class="box"><strong>Driver</strong><br/>Weak awareness / insecure systems</span><span aria-hidden="true">&#8594;</span>
+<span class="box"><strong>Harm</strong><br/>Fraud, data loss or service disruption</span><span aria-hidden="true">&#8594;</span>
+<span class="box"><strong>Response</strong><br/>Technical containment + appropriate police / financial reporting</span><span aria-hidden="true">&#8594;</span>
+<span class="box"><strong>Recovery</strong><br/>Restore services, assist victims, learn and improve</span>
+</div>
+<figcaption>Conceptual synthesis of CERT-In and I4C roles, not a statutory chain of command. Privacy, lawful access and accountability apply throughout. Sources: <a href="#s-cert">CERT-In</a>, <a href="#s-i4c">I4C</a>.</figcaption>
+</figure>
+
+<h3>2.3 Laws and policies: status matters</h3>
+<div class="table-wrap"><table>
+<caption>Legal and policy revision sheet, dated 25 October 2026</caption>
+<thead><tr><th scope="col">Instrument</th><th scope="col">Use</th><th scope="col">Status / exam caution</th></tr></thead>
+<tbody>
+<tr><td><strong>IT Act, 2000, as amended</strong></td><td>Core cyber-law framework: section 66F cyber terrorism; 70A CII protection; 70B CERT-In.</td><td><strong>[Additional]</strong> Read the current amended Act, not just the original enactment. Official PDF extraction failed; the definition was cross-checked through Indian Kanoon and mandates through MeitY.</td></tr>
+<tr><td><strong>National Cyber Security Policy, 2013</strong></td><td>Secure, resilient cyberspace; people, processes, technology and cooperation.</td><td>Policy, not a criminal statute; referenced in the official MeitY reply and CSK mandate.</td></tr>
+<tr><td><strong>"National Cyber security strategy framework 202"</strong></td><td>The supplied title/year is incomplete; possibly a reference to discussions around a 2020 strategy.</td><td><strong>[Correction] [Verification Required]</strong> No authoritative public notification establishing that exact title/year was verified. A DSCI consultation submission is not proof of government adoption.</td></tr>
+<tr><td><strong>DPDP Act, 2023; DPDP Rules, 2025</strong></td><td>Digital personal-data governance, safeguards, responsibilities and redress; not a comprehensive substitute for cybercrime law.</td><td><strong>[Correction]</strong> Enactment in 2023 is not the same as commencement of all provisions. MeitY lists final Rules, a separate enforcement timeline (14 November 2025 publication) and a 16 December 2025 corrigendum; PIB describes an eighteen-month transition. Do <strong>not</strong> assume every duty is enforceable on this note date.</td></tr>
+</tbody></table></div>
+<p class="verification" id="v-dpdp"><strong>[Verification Required]</strong> The DPDP Gazette PDFs and section-by-section commencement notification were not extractable. This note verifies publication of the final Rules and the existence of phased implementation, <strong>not each provision's operative date or subsequent amendment history through 25 October 2026</strong>. Consult MeitY's <a href="#s-dpdp">enforcement timeline and corrigendum</a> before asserting current enforceability, penalties or repeal of older provisions.</p>
+<p class="additional"><strong>[Additional]</strong> <strong>Safeguards:</strong> protect equality, speech, privacy and due process (Articles 14, 19 and 21). Distinguish an individual law-and-order offence from disturbance of public order and from a threat to State security; they are not automatic equivalents. Use lawful, necessary and proportionate measures with oversight, rather than blanket surveillance or treating encryption itself as criminal.</p>
+
+<h3>2.4 International initiatives</h3>
+<ul>
+<li><strong>World Economic Forum:</strong> launched the <strong>Global Centre for Cybersecurity</strong> on <strong>24 January 2018</strong>, based in Geneva; its later materials use Centre for Cybersecurity. It convenes public-private cooperation, not a global police authority. <a href="#s-wef">WEF's announcement</a>.</li>
+<li><strong>UN Convention against Cybercrime:</strong> <strong>[Correction]</strong> correct name, not "UN convention for cyber security". Adopted on <strong>24 December 2024</strong>; opened for signature in Hanoi on <strong>25 October 2025</strong>. Entry into force requires <strong>90 days after the fortieth instrument</strong> of ratification, acceptance, approval or accession. The UNODC page consulted still describes entry into force as pending; no claim about India's treaty status is made without checking the depositary. <a href="#s-un">UNODC and treaty-status register</a>.</li>
+<li><strong>Budapest Convention on Cybercrime (2001):</strong> Council of Europe treaty on criminalisation, procedural powers and international cooperation; open to accession beyond Europe. <strong>[Additional]</strong> India is not listed among its parties on the Council of Europe page consulted. <a href="#s-budapest">Treaty and party list</a>.</li>
+<li><strong>Paris Call for Trust and Security in Cyberspace (12 November 2018):</strong> multi-stakeholder principles for secure, stable and peaceful cyberspace. <strong>[Additional]</strong> A voluntary initiative, not a treaty creating criminal offences. <a href="#s-paris">WEF's participation announcement</a>.</li>
+</ul>
+<p class="exam"><strong>[Additional] Exam point:</strong> cross-border electronic evidence requires cooperation, but data access must respect privacy, safeguards and jurisdiction. <strong>Adoption, signature, ratification and entry into force are different stages.</strong></p>
+</section>
+
+<section id="money-laundering">
+<h2>3. Money Laundering</h2>
+<p class="lead"><strong>Concept:</strong> processing criminal proceeds to conceal or disguise their illicit origin and make them appear legitimate.</p>
+<p class="correction" id="c-laundering"><strong>[Correction]</strong> "Black money to white money" is shorthand, not the PMLA legal test. Under <strong>section 3 read with section 2(1)(u)</strong>, the offence concerns involvement in processes or activities connected with <strong>proceeds of crime linked to a scheduled offence</strong>. It includes concealment, possession, acquisition, use, projecting or claiming such property as untainted. It is not limited to the final act of "whitening" money. Tax-evaded income is <strong>not automatically</strong> PMLA proceeds of crime merely because tax was evaded. <a href="#s-pmla">PMLA sources</a>.</p>
+<h3>3.1 Three conceptual stages</h3>
+<figure>
+<h3>Figure 3. Placement, Layering and Integration</h3>
+<div class="flow">
+<span class="box"><strong>1. Placement</strong><br/>Criminal proceeds enter a financial or economic channel</span><span aria-hidden="true">&#8594;</span>
+<span class="box"><strong>2. Layering</strong><br/>Transactions obscure origin, ownership and audit trail</span><span aria-hidden="true">&#8594;</span>
+<span class="box"><strong>3. Integration</strong><br/>Funds appear to return as legitimate assets or income</span>
+</div>
+<figcaption>Conceptual laundering model, not instructions. <strong>[Additional]</strong> Stages may overlap, be absent or occur without cash; proving all three sequential stages is not the statutory requirement. Source: <a href="https://www.fatf-gafi.org/en/pages/frequently-asked-questions.html#tabs-36503a8663-item-6ff811783c-tab">FATF explanation of money laundering</a>.</figcaption>
+</figure>
+<ul>
+<li><strong>Placement:</strong> proceeds may come from offences such as drug trafficking or fraud. <strong>[Correction]</strong> Cross-border smuggling of cash may occur but is not a necessary placement step; not every laundering case starts with a vast amount of physical cash.</li>
+<li><strong>Layering:</strong> complex transactions seek to distance proceeds from the underlying crime and obscure the audit trail.</li>
+<li><strong>Integration:</strong> apparent legitimate income or assets conceal continuing criminal origin; appearance does not legalise the proceeds.</li>
+</ul>
+<p><strong>Methods named in class:</strong> misuse of <strong>shell companies</strong> to conceal ownership; <strong>round-tripping</strong>, where funds return through other jurisdictions disguised as investment; and <strong>smurfing</strong>, splitting transactions into smaller amounts. <strong>[Additional]</strong> These are risk typologies, not proof of crime by themselves; a company, overseas investment or small transaction is not automatically unlawful. No operational evasion details are provided.</p>
+<p class="additional"><strong>[Additional]</strong> <strong>Money laundering versus terror financing:</strong> laundering concerns criminal proceeds; terror financing concerns the destination or intended use of funds and can involve <strong>legally or illegally sourced money</strong>.</p>
+
+<h3>3.2 Prevention framework</h3>
+<div class="table-wrap"><table>
+<caption>Indian enforcement and international standard-setting</caption>
+<thead><tr><th scope="col">Body / instrument</th><th scope="col">Role and limits</th></tr></thead>
+<tbody>
+<tr><td><strong>PMLA, 2002</strong></td><td>Defines and punishes money laundering and provides for attachment/confiscation and reporting obligations. <strong>[Additional]</strong> FIU-IND confirms that the Act and Rules came into force on <strong>1 July 2005</strong>; "2002" is not its commencement year.</td></tr>
+<tr><td><strong>Enforcement Directorate (ED)</strong></td><td>Investigates money laundering, takes action under statutory powers and files prosecution complaints. <strong>[Correction]</strong> Courts adjudicate criminal guilt; ED does not itself convict. A provisional attachment is not a conviction.</td></tr>
+<tr><td><strong>FIU-IND</strong><br/>Financial Intelligence Unit-India</td><td>Receives, processes, analyses and disseminates financial intelligence, including suspicious transaction reports. Oversees relevant reporting compliance; it is not interchangeable with ED's criminal investigation role.</td></tr>
+<tr><td><strong>FATF</strong><br/>Financial Action Task Force</td><td>Intergovernmental standard-setter for anti-money laundering, counter-terrorist financing and counter-proliferation financing. <strong>[Correction]</strong> Its proliferation-financing work is not general weapons policing. It evaluates countries; it does not prosecute individuals.</td></tr>
+<tr><td><strong>APG</strong><br/>Asia/Pacific Group on Money Laundering</td><td><strong>[Correction]</strong> Not "Asia-Pacific monitoring group". A FATF-style regional body supporting implementation, mutual evaluations and capacity building; domestic authorities enforce domestic law. <strong>[Additional]</strong> FATF identifies India as a member since <strong>2010</strong> and also an APG member.</td></tr>
+</tbody></table></div>
+<p class="small">Sources: <a href="#s-pmla">FIU-IND's PMLA overview</a>, <a href="#s-fatf">FATF's India page and 2024 mutual evaluation</a>. <strong>[Verification Required]</strong> The latest consolidated PMLA PDF was not extractable; a complete amendment/judgment audit through the note date was not possible. No detailed bail, arrest or attachment time-limit claims are made.</p>
+<p class="additional"><strong>[Additional] Way forward:</strong> risk-based customer due diligence, beneficial-ownership transparency, useful suspicious-transaction reporting, cross-border cooperation and faster evidence-based trials. Avoid indiscriminate account restrictions that harm financial inclusion; retain judicial scrutiny, proportionality and avenues to challenge action. Suspicion or an arrest is not proof of guilt.</p>
+</section>
+
+<section id="maritime">
+<h2>4. Maritime and Coastal Security</h2>
+<p><strong>Maritime security</strong> protects lawful activity and interests at sea; <strong>coastal security</strong> focuses on threats arriving through or operating near the coast, including infiltration and smuggling. <strong>[Additional]</strong> This links external defence, internal policing, trade, livelihoods and non-traditional threats.</p>
+<h3>4.1 Maritime zones: law is not an agency allocation chart</h3>
+<div class="table-wrap"><table>
+<caption>Distances in nautical miles (nm), measured from legal baselines</caption>
+<thead><tr><th scope="col">Zone / outer limit</th><th scope="col">Legal character</th><th scope="col">Security implication</th></tr></thead>
+<tbody>
+<tr><td><strong>Territorial sea: 12 nm</strong></td><td>Sovereignty, subject to international-law rules including innocent passage.</td><td>Marine police have near-shore policing roles; ICG and Navy responsibilities do not disappear here.</td></tr>
+<tr><td><strong>Contiguous zone: 24 nm</strong></td><td>Control for specified customs, fiscal, immigration and sanitary-law purposes.</td><td><strong>[Correction]</strong> 24 nm is measured from the baseline, not 24 beyond the territorial sea.</td></tr>
+<tr><td><strong>EEZ: 200 nm</strong></td><td>Sovereign rights over resources and specified jurisdiction; other States retain navigation and other lawful freedoms.</td><td><strong>[Correction]</strong> Not full territorial sovereignty and not an exclusive Coast Guard compartment.</td></tr>
+<tr><td><strong>High seas</strong></td><td>Water areas outside national EEZs and other excluded maritime zones under UNCLOS.</td><td><strong>[Correction]</strong> "Above 200 nm = international waters = Navy only" is misleading. Another State's EEZ may intervene; seabed continental-shelf rights are a separate question.</td></tr>
+</tbody></table></div>
+<p class="correction" id="c-zones"><strong>[Correction]</strong> The rough "12 nm police / 24 and 200 nm ICG / beyond Navy" formula confuses <strong>legal zones with overlapping operational mandates</strong>. All three distances start at the baseline; the contiguous zone overlaps the outer part of the EEZ. Legal source: <a href="#s-unclos">UNCLOS Articles 3, 33, 55-58</a>. <strong>[Additional]</strong> Actual limits also depend on lawful delimitation with neighbouring States; this is not a map of India's boundaries.</p>
+<figure>
+<h3>Figure 4. Baseline-Based Zone Limits [Additional]</h3>
+<div class="flow">
+<span class="box"><strong>Baseline</strong><br/>Common measurement reference</span><span aria-hidden="true">&#8594;</span>
+<span class="box"><strong>12 nm</strong><br/>Territorial-sea outer limit</span><span aria-hidden="true">&#8594;</span>
+<span class="box"><strong>24 nm</strong><br/>Contiguous-zone outer limit</span><span aria-hidden="true">&#8594;</span>
+<span class="box"><strong>200 nm</strong><br/>EEZ outer limit</span>
+</div>
+<figcaption>Schematic, not to scale; labels show limits, not equal-width bands or exclusive force jurisdictions. No disputed boundary or deployment is represented. Source: <a href="#s-unclos">UN's UNCLOS text</a>.</figcaption>
+</figure>
+
+<h3>4.2 Agencies and coordination</h3>
+<ul>
+<li><strong>State/UT marine police:</strong> coastal and near-shore policing, local intelligence and investigation under applicable law.</li>
+<li><strong>Indian Coast Guard (ICG):</strong> coastal-security coordination and maritime law-enforcement, safety and protection roles under applicable law; works with marine police and other agencies.</li>
+<li><strong>Indian Navy:</strong> maritime defence and overall maritime-security responsibilities, including support for coastal/offshore security; not confined to waters beyond 200 nm.</li>
+<li><strong>Sagar Prahari Bal:</strong> Navy force associated with protection of naval assets and coastal-security tasks. <strong>[Verification Required]</strong> Specific current remit was not directly verified from a Navy source.</li>
+<li><strong>ICG-marine police hub-and-spoke model:</strong> the notes describe ICG hubs supporting marine-police spokes for coordination and capacity. <strong>[Verification Required]</strong> Its formal title, coverage and present implementation need a direct official source. It does not put all State police under a blanket ICG command.</li>
+</ul>
+<p class="verification"><strong>[Verification Required]</strong> The general division of maritime roles is a study summary; the current detailed government allocation of responsibilities was not opened. Do not use the section as a statement of exclusive statutory jurisdiction. <a href="#s-coastal">MHA's Coastal Security Scheme</a> verifies support for State/UT coastal-police capacity.</p>
+
+<h3>4.3 Scheme, sensors and maritime domain awareness</h3>
+<ul>
+<li><strong>Coastal Security Scheme:</strong> strengthens coastal police stations, mobility and associated infrastructure. <strong>[Correction]</strong> Phase I ran from <strong>2005 to 2011</strong>; it did not begin in 2009. The post-2008 security reorganisation is a separate development. MHA records Phase II from 2011 with extension to 2020; this note does not infer a new current phase from that historical page. <a href="#s-coastal">MHA source</a>.</li>
+<li><strong>Sindhu Netra satellite:</strong> the rough notes identify a maritime-surveillance input. <strong>[Verification Required]</strong> An authoritative mission description and current operational role were not verified; do not infer continuous or complete coverage.</li>
+<li><strong>Sagar Suraksha Dal:</strong> the notes identify volunteer fishermen providing information. <strong>[Verification Required]</strong> Exact scheme name, State and coverage need confirmation; do not present it as a verified uniform national force. <strong>[Additional]</strong> Trusted fisher-community reporting is valuable without treating fishing communities as suspects.</li>
+<li><strong>IMAC:</strong> <strong>Information Management and Analysis Centre</strong>, Gurugram; collects shipping information, analyses traffic patterns and shares inputs with user agencies. <a href="#s-imac">PIB, 19 August 2019</a>.</li>
+<li><strong>IFC-IOR:</strong> <strong>Information Fusion Centre-Indian Ocean Region</strong>, Gurugram; Indian Navy collaborative initiative with partner nations and maritime agencies for maritime domain awareness and security. <strong>[Correction]</strong> It is distinct from IMAC, not simply a renamed superior office in a fixed reporting chain.</li>
+<li><strong>NC3I:</strong> <strong>National Command, Control, Communication and Intelligence</strong> network. <strong>[Correction]</strong> "N3CI" is the wrong acronym. <strong>[Verification Required]</strong> The precise current network configuration and expansion were not independently verified from an opened official technical source; no sensitive architecture is included.</li>
+</ul>
+<figure>
+<h3>Figure 5. Shared Maritime Awareness [Additional]</h3>
+<div class="flow">
+<span class="box"><strong>Inputs</strong><br/>Shipping information, public sensors and lawful community reports</span><span aria-hidden="true">&#8594;</span>
+<span class="box"><strong>Domestic analysis</strong><br/>IMAC: collate, analyse, share</span><span aria-hidden="true">&#8596;</span>
+<span class="box"><strong>International cooperation</strong><br/>IFC-IOR: partner information-sharing</span>
+</div>
+<p><strong>Outcome:</strong> informed response by the competent agency, not automatic enforcement by the information centre.</p>
+<figcaption>High-level conceptual coordination, not an operational network or a command hierarchy. Sources: <a href="#s-imac">PIB on IMAC and IFC-IOR</a>; the first box is a general study synthesis, not a verified technical integration claim.</figcaption>
+</figure>
+<p class="additional"><strong>[Additional] Gaps and way forward:</strong> coordinate Union-State responsibilities; maintain vessels, communications and trained personnel; improve lawful information-sharing and exercises; include fishermen in trusted reporting; protect livelihood and rescue needs. Measure serviceability and response quality rather than only counting procured equipment.</p>
+</section>
+
+<section id="communications">
+<h2>5. Communication Networks and Media</h2>
+<p><strong>Two distinct roles:</strong> communication channels are critical services that may be attacked, and channels that offenders may misuse. Private ownership and imported equipment can create dependency and assurance challenges; they do not by themselves prove insecurity.</p>
+<div class="table-wrap"><table>
+<caption>Five concerns from class, with proportionate responses [Additional]</caption>
+<thead><tr><th scope="col">Concern</th><th scope="col">How communication networks may matter</th><th scope="col">Response</th></tr></thead>
+<tbody>
+<tr><td><strong>1. Misinformation / disinformation</strong></td><td>False claims spread quickly and may heighten fear or tension.</td><td>Verify sources, timely factual communication and media literacy.</td></tr>
+<tr><td><strong>2. Cyber threats</strong></td><td>Account compromise, data theft and interruption of essential services.</td><td>Secure systems, tested continuity plans and incident response.</td></tr>
+<tr><td><strong>3. Money laundering</strong></td><td>Digital platforms may facilitate fraud proceeds and illicit financial networks.</td><td>Risk-based transaction monitoring and lawful evidence-sharing.</td></tr>
+<tr><td><strong>4. Organised crime</strong></td><td>Networks may coordinate fraud, trafficking and other offences.</td><td>Evidence-led investigations and cross-jurisdiction cooperation.</td></tr>
+<tr><td><strong>5. Recruitment into violence</strong></td><td>Online propaganda can facilitate recruitment by violent militant, insurgent, LWE or terrorist groups.</td><td>Target unlawful conduct; combine prevention, community support and rehabilitation.</td></tr>
+</tbody></table></div>
+<p class="correction" id="c-media"><strong>[Correction]</strong> Media, social-media services and encrypted messaging are <strong>not inherently criminal</strong>. Misinformation is false or misleading information without necessarily an intent to deceive; disinformation is deliberately deceptive. Intent requires evidence. Terrorism, insurgency, extremism, organised crime and civil protest are not interchangeable labels.</p>
+<p class="additional"><strong>[Additional]</strong> <strong>Balanced policy:</strong> public-private cooperation and security assurance can improve resilience, but surveillance and content controls need a clear legal basis, necessity, proportionality and accountability. Preserve lawful journalism, peaceful dissent, privacy and secure communication. Internal security and external defence can interact through cyber and maritime threats without erasing civilian policing responsibilities.</p>
+</section>
+
+<section id="prelims">
+<h2>Key Facts for Prelims</h2>
+<ul>
+<li>IT Act: <strong>2(1)(nb)</strong> cyber-security definition; <strong>66F</strong> cyber terrorism; <strong>70A</strong> CII protection; <strong>70B</strong> CERT-In.</li>
+<li><strong>CERT-In / NCCC / CSK / CSIRT-Fin:</strong> technical security and response ecosystem; <strong>MHA / I4C / NCRP / 1930:</strong> cybercrime coordination and reporting.</li>
+<li><strong>PRAHAAR:</strong> unveiled 23 February 2026; seven pillars include human rights, rule of law, prevention and resilience.</li>
+<li><strong>PMLA, 2002:</strong> Act and Rules commenced 1 July 2005. <strong>ED:</strong> enforcement/investigation; <strong>FIU-IND:</strong> financial intelligence; courts decide criminal guilt.</li>
+<li><strong>FATF:</strong> standards and evaluations; <strong>APG:</strong> Asia/Pacific Group on Money Laundering. Neither is a domestic police force.</li>
+<li><strong>12 / 24 / 200 nm:</strong> territorial sea / contiguous-zone / EEZ outer limits, all measured from baselines, not successive additions.</li>
+<li><strong>Coastal Security Scheme Phase I:</strong> 2005-2011; <strong>IMAC and IFC-IOR:</strong> distinct centres at Gurugram.</li>
+<li><strong>DPDP:</strong> 2023 Act, final 2025 Rules and phased implementation; consult the exact commencement notification for current enforceability.</li>
+</ul>
+</section>
+
+<section id="mains">
+<h2>Mains Points</h2>
+<p class="small"><strong>[Additional]</strong> Analytical synthesis and suggested way forward, not official conclusions.</p>
+<ul>
+<li><strong>Cyber resilience:</strong> connect awareness, secure procurement, trained investigators and tested recovery. Technical incident counts cannot stand in for convictions or terrorist incidents.</li>
+<li><strong>Institutional clarity:</strong> connect CERT-In response, NCIIPC CII protection and I4C-police investigation without giving each the other's powers. Support State capacity through Union coordination.</li>
+<li><strong>Terror prevention:</strong> PRAHAAR's whole-of-government capacity must work alongside its human-rights and whole-of-society pillars; community trust and rehabilitation complement enforcement.</li>
+<li><strong>Illicit finance:</strong> trace criminal proceeds and beneficial ownership while protecting legitimate transactions and financial inclusion. Terror financing can involve lawful-source funds too.</li>
+<li><strong>Maritime security:</strong> combine lawful community reporting, shared awareness, inter-agency coordination and maintained response capacity. Zones define rights, not exclusive force jurisdictions.</li>
+<li><strong>Rights-security balance:</strong> targeted evidence access and oversight are more defensible than treating all encrypted communication or dissent as a threat. Resilient networks support both national security and daily livelihoods.</li>
+</ul>
+</section>
+
+<section id="traps">
+<h2>Common Traps / Confusions</h2>
+<ul>
+<li><strong>Cybercrime is not automatically cyber terrorism;</strong> cross-border origin is not proof of State responsibility or cyber warfare.</li>
+<li><strong>Hacking is not always criminal:</strong> authorisation and conduct matter. Espionage need not include a public leak.</li>
+<li><strong>NCCC is not I4C;</strong> CERT-In is not a police station; FIU-IND is not ED.</li>
+<li><strong>CSIRT-Fin</strong> is the verified current finance-response name in the source opened; do not substitute an old proposal.</li>
+<li><strong>Undisclosed income is not automatically PMLA proceeds;</strong> laundering does not legally require all three textbook stages.</li>
+<li><strong>Territorial sovereignty differs from EEZ sovereign rights;</strong> 24 nm and 200 nm are not measured from the 12-nm line.</li>
+<li><strong>IFC-IOR differs from IMAC;</strong> NC3I, not N3CI. Information-sharing is not a fixed command hierarchy.</li>
+<li><strong>Policy is not statute; enactment is not commencement;</strong> treaty signature is not ratification or entry into force.</li>
+<li><strong>Lawful dissent is not extremism or terrorism;</strong> public order is not identical to every law-and-order issue.</li>
+</ul>
+</section>
+
+<section id="revision">
+<h2>30-Second Revision</h2>
+<p><strong>Protect:</strong> confidentiality, integrity, availability. <strong>Classify:</strong> crime / terrorism / espionage / warfare. <strong>Respond:</strong> CERT-In technically, I4C with police for crime, NCIIPC for CII. <strong>PRAHAAR:</strong> prevention through rights-based resilience. <strong>Follow proceeds:</strong> placement, layering, integration; PMLA-ED-FIU; FATF-APG standards. <strong>At sea:</strong> 12-24-200 from baselines; overlapping roles, shared awareness. <strong>Across all:</strong> verify attribution, commencement and evidence; preserve constitutional safeguards.</p>
+</section>
+
+<section id="pyqs">
+<h2>Previous Year Questions (PYQs)</h2>
+<p class="note"><strong>Source status:</strong> the UPSC question-paper page opened without yielding the relevant archived papers. The directly relevant questions below were checked against <a href="https://forumias.com/blog/gs3pyq/">ForumIAS's year-wise GS III compilation</a>; the 2023 attribution was also checked against <a href="https://www.insightsonindia.com/2023/09/17/general-studies-paper-3-upsc-mains-civil-services-ias-exam-2023-question-paper/">InsightsIAS's 2023 paper transcription</a>. These are <strong>clearly labelled paraphrases</strong>, not verbatim questions. Marks and word limits are omitted because the official papers were not inspected. Suggested approaches are <strong>[Additional]</strong> study guidance, not an official marking scheme.</p>
+<ol>
+<li><strong>2020 | UPSC CSE Mains | General Studies III.</strong> <strong>Paraphrase:</strong> Explain types of cybercrime and the measures needed to combat them. <a href="https://forumias.com/blog/gs3pyq/#UPSC_IAS_Mains_2020_General_Studies_III">Verify 2020 question 9</a>.<p class="answer"><strong>Suggested answer approach [Additional]:</strong> Use the vocabulary table; separate threats, citizen precautions, technical response, police capacity and cross-border cooperation.</p></li>
+<li><strong>2021 | UPSC CSE Mains | General Studies III.</strong> <strong>Paraphrase:</strong> Analyse cross-border cyberattacks as an internal-security challenge and propose defensive measures. <a href="https://forumias.com/blog/gs3pyq/#UPSC_IAS_Mains_2021_General_Studies_III">Verify 2021 question 10</a>.<p class="answer"><strong>Suggested answer approach [Additional]:</strong> Discuss service disruption, data compromise and attribution difficulty; link CII protection, CERT-In coordination and recovery with lawful cooperation.</p></li>
+<li><strong>2021 | UPSC CSE Mains | General Studies III.</strong> <strong>Paraphrase:</strong> Explain how technology and globalisation facilitate money laundering and how it can be countered nationally and internationally. <a href="https://forumias.com/blog/gs3pyq/#UPSC_IAS_Mains_2021_General_Studies_III">Verify 2021 question 9</a>.<p class="answer"><strong>Suggested answer approach [Additional]:</strong> Define criminal proceeds; use the stages as a conceptual aid; connect ED, FIU-IND, reporting entities, beneficial ownership and FATF/APG cooperation.</p></li>
+<li><strong>2022 | UPSC CSE Mains | General Studies III.</strong> <strong>Paraphrase:</strong> Identify the elements and challenges of cyber security and assess India's progress towards a comprehensive national strategy. <a href="https://forumias.com/blog/gs3pyq/#UPSC_IAS_Mains_2022_General_Studies_III">Verify 2022 question 19</a>.<p class="answer"><strong>Suggested answer approach [Additional]:</strong> Begin with CIA; map institutions and the 2013 Policy; assess skills, coordination, supply chains and rights. Distinguish a strategy proposal from verified adoption. Answer the historical question in its 2022 context before adding current developments.</p></li>
+<li><strong>2022 | UPSC CSE Mains | General Studies III.</strong> <strong>Paraphrase:</strong> Examine India's maritime-security challenges and organisational, technical and procedural improvements. <a href="https://forumias.com/blog/gs3pyq/#UPSC_IAS_Mains_2022_General_Studies_III">Verify 2022 question 10</a>.<p class="answer"><strong>Suggested answer approach [Additional]:</strong> Cover infiltration, smuggling and vulnerable sea trade; distinguish zones from agencies; use coastal-police capacity, IMAC/IFC-IOR and community participation.</p></li>
+<li><strong>2023 | UPSC CSE Mains | General Studies III.</strong> <strong>Paraphrase:</strong> Identify major terror-funding sources and India's countermeasures, including the aims of the November 2022 No Money for Terror conference. <a href="https://www.insightsonindia.com/2023/09/17/general-studies-paper-3-upsc-mains-civil-services-ias-exam-2023-question-paper/">Verify 2023 question 20</a>.<p class="answer"><strong>Suggested answer approach [Additional]:</strong> Distinguish laundering from terror financing; discuss financial intelligence, investigations and cooperation. <strong>[Verification Required]</strong> Conference-specific outcomes were not independently researched for these notes; verify them before using this answer extension.</p></li>
+<li><strong>2024 | UPSC CSE Mains | General Studies III.</strong> <strong>Paraphrase:</strong> Assess security concerns associated with social media and encrypted messaging, the measures adopted and further remedies. <a href="https://forumias.com/blog/gs3pyq/#UPSC_IAS_Mains_2024_General_Studies_III">Verify 2024 question 20</a>.<p class="answer"><strong>Suggested answer approach [Additional]:</strong> Use the five communication-network risks; balance targeted enforcement, platform accountability, cyber literacy and community prevention with privacy and lawful speech.</p></li>
+</ol>
+</section>
+
+<section id="corrections">
+<h2>Corrections Made</h2>
+<p>Substantive changes are marked where they occur; ordinary spelling and grammar were also standardised.</p>
+<ul>
+<li><a href="#c-definition">Cyber-security definition:</a> corrected the duplicated word and incomplete protected-assets list.</li>
+<li><a href="#cyber-basics">Threat categories and terms:</a> espionage does not require a leak; authorised hacking differs from crime; clarified cybersquatting and relationship-investment fraud terminology.</li>
+<li><a href="#c-terror">Terrorism law:</a> the BNS opening limb is not the whole offence; distinguished section 66F and UAPA.</li>
+<li><a href="#c-prahaar">PRAHAAR:</a> verified release date and corrected "attenuating" and "threat posed".</li>
+<li><a href="#c-frequency">Frequency claim:</a> enabling factors do not establish an increase in cyber-terrorist incidents.</li>
+<li><a href="#c-challenges">Challenges:</a> retained ambiguous "PuT" without guessing; qualified blanket claims about imported devices and archaic law.</li>
+<li><a href="#cyber-framework">Agency mandates:</a> NCCC belongs to CERT-In's implementation ecosystem, not MHA; distinguished I4C, NCRP, 1930, CSIRT-Fin, NIC-CERT and CSK; corrected cyberstalking.</li>
+<li><a href="#v-dpdp">Legal status:</a> incomplete strategy title retained as unverified; differentiated DPDP enactment, Rules and phased commencement.</li>
+<li><a href="#s-un">International initiatives:</a> corrected the UN treaty's name; distinguished adoption, signature and entry into force.</li>
+<li><a href="#c-laundering">Money laundering:</a> replaced "black-to-white" shorthand with the proceeds-of-crime test; qualified tax-evasion and textbook-stage assumptions.</li>
+<li><a href="#money-laundering">Financial institutions:</a> ED investigates, courts convict; FIU supplies intelligence; corrected APG's name and FATF's mandate.</li>
+<li><a href="#c-zones">Maritime zones:</a> baseline distances and legal rights do not allocate exclusive agency belts; EEZ is not territorial sea.</li>
+<li><a href="#maritime">Coastal security:</a> scheme begins in 2005, not 2009; distinguished IMAC and IFC-IOR; corrected NC3I acronym with a source limitation.</li>
+<li><a href="#c-media">Media:</a> differentiated misinformation/disinformation and lawful communication from criminal misuse.</li>
+</ul>
+<p class="verification"><strong>Open verification register:</strong> alleged "Dance of the Hillary" incident and attribution; "PuT"; precise national programme identities for "Cyber warrior police force" and "Cyber Saksharta Abhiyaan"; incomplete strategy title/year and adoption; provision-specific DPDP commencement; full current IT Act/PMLA amendment audit; Defence Cyber Agency and NIC-CERT service scope; Sagar Suraksha Dal, Sindhu Netra's current role, Sagar Prahari Bal remit, hub-and-spoke implementation and current NC3I description; direct official-paper verification of PYQs. These are <strong>not silently discarded or treated as verified facts</strong>.</p>
+<p><strong>[Additional] Additions summary:</strong> supplied missing defensive definitions, CIA and coordination diagrams, constitutional safeguards, analytical responses, legal-status distinctions and suggested PYQ approaches. No unverified crime statistics, deployment details or fabricated case studies were added.</p>
+</section>
+
+<section id="sources">
+<h2>Open Sources / Further Reading</h2>
+<p class="small">HTTPS public sources consulted on 25 October 2026. Historical sources verify the dates and mandates stated, not every subsequent change. Links described as extraction-limited are supplied for checking, not claimed as fully read.</p>
+<ol>
+<li id="s-it"><strong>IT Act:</strong> <a href="https://www.indiacode.nic.in/bitstream/123456789/13116/1/it_act_2000_updated.pdf">India Code: updated Information Technology Act, 2000</a> (PDF extraction unavailable); <a href="https://indiankanoon.org/doc/629401/">Indian Kanoon: section 2, including section 2(1)(nb)</a> (secondary legal reproduction opened).</li>
+<li id="s-bns"><strong>BNS:</strong> <a href="https://www.indiacode.nic.in/bitstream/123456789/20062/1/a2023-45.pdf">India Code: Bharatiya Nyaya Sanhita, 2023</a> (PDF extraction unavailable); <a href="https://indiacode.ecourtsindia.com/bns/section/113/">eCourtsIndia: section 113 text and commencement, as on 15 October 2026</a> (independent secondary publisher, not the official eCourts service).</li>
+<li id="s-prahaar"><a href="https://pib.gov.in/PressReleasePage.aspx?PRID=2298334">MHA / PIB: PRAHAAR, Rajya Sabha reply, 12 August 2026</a> (release date and seven pillars).</li>
+<li id="s-cyber-gov"><a href="https://pib.gov.in/PressReleasePage.aspx?PRID=2116341">MeitY / PIB: measures to protect critical infrastructure and private data, Rajya Sabha reply, 28 March 2025</a> (sections 70A/70B; NCCC; CSIRT-Fin; awareness).</li>
+<li id="s-cert"><a href="https://www.cert-in.org.in/">CERT-In: official statutory functions and incident-response information</a>; <a href="https://www.cert-in.org.in/PDF/CSIRT-Fin.pdf">CERT-In: finance-sector CSIRT document</a> (PDF extraction unavailable; operational role confirmed in the Parliament reply above).</li>
+<li id="s-i4c"><a href="https://i4c.mha.gov.in/">I4C: official mandate, cybercrime categories and reporting channels</a>; <a href="https://cybercrime.gov.in/">National Cyber Crime Reporting Portal</a>.</li>
+<li id="s-csk"><a href="https://www.csk.gov.in/">Cyber Swachhta Kendra: official Botnet Cleaning and Malware Analysis Centre description</a>.</li>
+<li id="s-safety"><a href="https://www.csk.gov.in/security-best-practices.html">Cyber Swachhta Kendra: security best practices</a>; <a href="https://i4c.mha.gov.in/cyber-crime-categories.aspx">I4C: cybercrime categories</a>; <a href="https://csrc.nist.gov/glossary/term/information_security">NIST: information-security glossary</a> (opened; confirms the CIA model). Safety links are further reading; not every glossary entry was independently opened.</li>
+<li id="s-dpdp"><a href="https://www.meity.gov.in/documents/act-and-policies/digital-personal-data-protection-rules-2025-gDOxUjMtQWa?pageTitle=Digital-Personal-Data-Protection-Rules-2025">MeitY: final DPDP Rules, enforcement timeline, Board notifications and December 2025 corrigendum</a>; <a href="https://pib.gov.in/PressReleasePage.aspx?PRID=2190655">PIB: DPDP Rules, 2025 Notified, 17 November 2025</a>. Listing and explainer opened; linked Gazette PDFs not extractable.</li>
+<li id="s-un"><a href="https://www.unodc.org/unodc/en/cybercrime/convention/home.html">UNODC: United Nations Convention against Cybercrime, adoption and entry-into-force rules</a>; <a href="https://treaties.un.org/Pages/ViewDetails.aspx?src=IND&amp;mtdsg_no=XVIII-16&amp;chapter=18&amp;clang=_en">UN Treaty Collection: depositary status register</a> (follow for country-specific updates).</li>
+<li id="s-budapest"><a href="https://www.coe.int/en/web/cybercrime/the-budapest-convention">Council of Europe: Budapest Convention and parties</a>.</li>
+<li id="s-wef"><a href="https://www.weforum.org/media/to-prevent-a-digital-dark-age-world-economic-forum-launches-global-centre-for-cybersecurity/">WEF: Global Centre for Cybersecurity launch, 24 January 2018</a>.</li>
+<li id="s-paris"><a href="https://www.weforum.org/press/2018/11/world-economic-forum-joins-the-paris-call-for-trust-and-security-in-cyberspace/">WEF: Paris Call participation and principles, 12 November 2018</a>.</li>
+<li id="s-pmla"><a href="https://fiuindia.gov.in/files/AML_Legislation/pmla_2002.html">FIU-IND: PMLA overview, commencement and reporting obligations</a>; <a href="https://fiuindia.gov.in/pdfs/AML_legislation/PMLA_Act_2002.pdf">FIU-IND: PMLA text</a> (PDF not extracted); <a href="https://indiankanoon.org/doc/1283441/">Indian Kanoon: PMLA section 3</a> (secondary reproduction opened; displays the 2013 wording but not the later explanation, so not a complete current consolidation).</li>
+<li id="s-fatf"><a href="https://www.fatf-gafi.org/en/countries/detail/India.html">FATF: India membership and APG association</a>; <a href="https://www.fatf-gafi.org/en/publications/Mutualevaluations/India-MER-2024.html">FATF: India's 2024 mutual evaluation, published 19 September 2024</a> (further reading); <a href="https://www.fatf-gafi.org/en/pages/frequently-asked-questions.html#tabs-36503a8663-item-6ff811783c-tab">FATF: money-laundering definition and three stages</a> (FAQ's Money Laundering tab opened).</li>
+<li id="s-unclos"><a href="https://www.un.org/depts/los/convention_agreements/texts/unclos/part2.htm">UN: UNCLOS Part II, territorial sea and contiguous zone</a>; <a href="https://www.un.org/depts/los/convention_agreements/texts/unclos/part5.htm">UN: UNCLOS Part V, EEZ</a>.</li>
+<li id="s-coastal"><a href="https://www.mha.gov.in/index.php/scheme/coastal-security-scheme">MHA: Coastal Security Scheme, Phase I (2005-2011) and Phase II history</a>.</li>
+<li id="s-imac"><a href="https://pib.gov.in/PressReleaseIframePage.aspx?PRID=1582343">Ministry of Defence / PIB: functioning of IMAC and IFC-IOR, 19 August 2019</a>.</li>
+<li id="s-pyq"><a href="https://upsc.gov.in/examinations/previous-question-papers">UPSC: official previous-question-paper portal</a> (relevant paper PDFs not retrieved); <a href="https://forumias.com/blog/gs3pyq/">ForumIAS: year-wise GS III questions, secondary verification</a>; <a href="https://www.insightsonindia.com/2023/09/17/general-studies-paper-3-upsc-mains-civil-services-ias-exam-2023-question-paper/">InsightsIAS: 2023 GS III paper and transcription</a>.</li>
+</ol>
+</section>
+</main>
+</body>
+</html>

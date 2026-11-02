@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Internal Security - Class Notes | 18 October 2026</title>
+<style>
+  * { box-sizing: border-box; }
+  body { font-family: Calibri, sans-serif; font-size: 11pt; line-height: 1.6; max-width: 900px; margin: 20px auto; padding: 0 20px; color: #202124; }
+  h1 { font-size: 20pt; color: #1a1a1a; border-bottom: 2px solid #333; padding-bottom: 4px; margin-top: 30px; }
+  h2 { font-size: 16pt; color: #2b2b2b; margin-top: 28px; border-bottom: 1px solid #ddd; padding-bottom: 3px; }
+  h3 { font-size: 13pt; color: #3a3a3a; margin-top: 18px; }
+  h4 { font-size: 11.5pt; color: #3a3a3a; margin: 14px 0 4px; }
+  p { margin: 8px 0; }
+  ul, ol { margin: 6px 0; padding-left: 28px; }
+  li { margin: 4px 0; }
+  a { color: #005ea6; overflow-wrap: anywhere; }
+  table { border-collapse: collapse; width: 100%; margin: 10px 0; }
+  caption { text-align: left; font-weight: bold; margin-bottom: 6px; }
+  th, td { border: 1px solid #999; padding: 6px 10px; text-align: left; vertical-align: top; overflow-wrap: break-word; }
+  th { background: #f0f0f0; }
+  .table-wrap { overflow-x: auto; }
+  .note, .exam, .verification { background: #fff8e1; border-left: 3px solid #f5a623; padding: 8px 12px; margin: 10px 0; }
+  .correction { background: #fff3e0; border-left: 3px solid #ef6c00; padding: 8px 12px; margin: 10px 0; }
+  .additional, .lead { background: #e8f5e9; border-left: 3px solid #2e7d32; padding: 8px 12px; margin: 10px 0; }
+  .flow { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 10px; padding: 12px 0; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; }
+  .flow span { text-align: center; max-width: 100%; }
+  .flow .box { border: 1px solid #888; background: #f7f7f7; padding: 6px 10px; border-radius: 4px; flex: 1 1 150px; }
+  figure { margin: 16px 0; padding: 12px; border: 1px solid #bbb; background: #fff; }
+  figure h3 { margin-top: 0; text-align: center; }
+  figcaption { margin-top: 8px; color: #555; font-size: 9.5pt; }
+  .cols3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+  .cols4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+  .tile { border: 1px solid #888; border-radius: 4px; padding: 8px; background: #f5f9fd; font-size: 10.5pt; }
+  .tile b.big { display: block; font-size: 18pt; color: #005ea6; line-height: 1.1; }
+  .tile.p1 { background: #e8f5e9; border-color: #2e7d32; }
+  .tile.p2 { background: #f5f9fd; border-color: #0078d4; }
+  .tile.p3 { background: #fff3e0; border-color: #ef6c00; }
+  .small { color: #555; font-size: 9.5pt; }
+  .answer { margin: 10px 0; padding: 6px 12px; border-left: 3px solid #0078d4; background: #f5f9fd; }
+  @media (max-width: 650px) {
+    body { padding: 0 12px; }
+    .cols3, .cols4 { grid-template-columns: 1fr; }
+    .table-wrap table { min-width: 540px; }
+  }
+  @media print {
+    @page { size: A4; margin: 14mm; }
+    body { max-width: none; margin: 0; padding: 0; }
+    h1, h2, h3, h4 { break-after: avoid; }
+    figure, tr, .answer, .tile { break-inside: avoid; }
+    thead { display: table-header-group; }
+    .table-wrap { overflow: visible; }
+    .table-wrap table { min-width: 0; }
+    a { color: inherit; text-decoration: none; }
+    p, li { orphans: 3; widows: 3; }
+  }
+</style>
+</head>
+<body>
+<main>
+<header>
+<h1>Internal Security - Class Notes | 18 October 2026</h1>
+<p><strong>Topics:</strong> Left Wing Extremism (LWE) continued - Salwa Judum (formation, rationale, issues, end and transformation); the development front (Integrated Action Plan, Special Central Assistance, roads, mobile towers, Civic Action, Media Plan, Roshni, Eklavya schools); the 2026 status of LWE and emerging issues; terrorism, insurgency, militancy and LWE compared; North-East India (insurgency, ethnic conflict, organised crime, reasons for the region's alienation).</p>
+<p class="small">Notes for the class of <time datetime="2026-10-18">18 October 2026</time>, prepared and fact-checked on 20 October 2026. This note <strong>continues the LWE topic</strong> from <a href="Internal%20Security%20-%20Class%2010-17-2026.html">the 17 October note</a> (security front, SAMADHAN, the Vishwas-Nirman-Jan Kalyan framing) and <a href="Internal%20Security%20-%20Class%2010-16-2026.html">the 16 October note</a> (origin, causes, Nandini Sundar case summary). It <strong>begins the North-East topic</strong>. Earlier daily notes were not edited; where this note differs from them, the difference is stated in <a href="#c01">correction C1</a>.</p>
+<p class="note"><strong>[Correction]</strong> marks a substantive repair to the rough notes. <strong>[Additional]</strong> marks supporting facts added for exam value. <strong>[Verification Required]</strong> marks a point that could not be confirmed from an official source. <strong>Verification limit:</strong> PIB pages returned access errors and the MHA documents were not opened as text, so most scheme details rest on secondary reports that cite official statements; the key legal and judicial points are matched to news reports of the judgment and to the statute text as quoted by secondary sources.</p>
+</header>
+
+<section id="salwa-judum">
+<h2>1. Salwa Judum: Formation, Requirement, Issues and End</h2>
+<p class="lead"><strong>Salwa Judum</strong> ("peace march" in Gondi) was a <strong>State-sponsored, anti-Maoist mobilisation of local tribal villagers</strong> in southern Chhattisgarh (Bijapur and Dantewada, in the Bastar region) from <strong>2005</strong>. Villagers were organised into armed groups of <strong>Special Police Officers (SPOs)</strong>, also called <strong>Koya Commandos</strong>. The Supreme Court declared this arrangement unconstitutional on <strong>5 July 2011</strong> (<em>Nandini Sundar v. State of Chhattisgarh</em>).</p>
+
+<h3>1.1 Formation</h3>
+<ul>
+<li><strong>Background:</strong> Bastar and Dantewada were sparsely populated, mineral-rich and among the poorest tribal regions. The Maoists had gained influence by mobilising around poor governance, land and forest rights and livelihoods, and by force.</li>
+<li><strong>Precursor:</strong> the <strong>Jan Jagran Abhiyan</strong> (about 1990-91), an earlier anti-Maoist movement associated with <strong>Mahendra Karma</strong>, collapsed and its leaders needed police protection <strong>[Verification Required: year, from a secondary source]</strong>.</li>
+<li><strong>2005:</strong> the movement was revived as Salwa Judum with State support. <strong>Mahendra Karma</strong>, then a Congress MLA and Leader of the Opposition, was its public face; the State government gave it police backing, and it later drew support across party lines (a secondary-source summary) <strong>[Verification Required]</strong>.</li>
+<li><strong>Legal route for arming villagers:</strong> SPOs were appointed under the <strong>Chhattisgarh Police Act, 2007</strong>, which gave the Superintendent of Police wide discretion. Under the Police Act, 1861, a magistrate's approval is needed to appoint special police officers. SPOs got firearms for self-defence and an honorarium of about <strong>Rs 3,000 per month</strong>.</li>
+<li><strong>Union role:</strong> the Centre said its role was limited to approving the maximum number of SPOs per State for <strong>reimbursement of the honorarium under the SRE scheme</strong>; appointment, training and deployment were State matters.</li>
+</ul>
+
+<h3>1.2 Requirement (Why the State Said It Was Needed)</h3>
+<ul>
+<li><strong>Intelligence and local knowledge gap:</strong> outsiders in the forces did not know the terrain, dialects or the Maoists' local supporters; SPOs worked as guides, translators, informants and spotters.</li>
+<li><strong>Manpower shortage:</strong> regular forces found it hard to operate in remote areas.</li>
+<li><strong>Protection of relief camps and villagers</strong> who had resisted the Maoists; preference was given to victims of Maoist violence.</li>
+<li><strong>Livelihood argument:</strong> the State said it gave jobs where employment was scarce. The Court rejected this (Section 1.4).</li>
+<li><strong>Context of violence:</strong> official figures cited by the Indian Express put deaths in Bastar between 2005 and 2011 at about 1,019 villagers, 726 security personnel and 422 Maoists.</li>
+</ul>
+
+<h3>1.3 Issues That Emerged</h3>
+<div class="table-wrap"><table id="sj-issues">
+<caption>Issues reported against Salwa Judum (allegations and findings are attributed)</caption>
+<thead><tr><th scope="col">Issue</th><th scope="col">What was reported</th></tr></thead>
+<tbody>
+<tr><td><strong>Displacement and camps</strong></td><td>Villagers were moved into roadside camps. Reported numbers vary: about 50,000 in camps at the peak, and <strong>100,000-150,000</strong> displaced by 2008 including those who fled to Andhra Pradesh (Human Rights Watch figures as reported in a secondary source). Claims of 600+ villages burnt are <strong>allegations</strong> <strong>[Verification Required]</strong></td></tr>
+<tr><td><strong>Human rights abuses</strong></td><td>Allegations of killings, burning of homes and sexual violence by SPOs and Judum activists; Human Rights Watch also reported Maoist atrocities (killings, abductions of villagers)</td></tr>
+<tr><td><strong>Blurred civilian-combatant line</strong></td><td>Arming villagers made them targets and made it hard to tell civilians from fighters</td></tr>
+<tr><td><strong>Poor training and low age or education</strong></td><td>Some SPOs were as young as 18 and had not studied up to Class 5; the Court held they could not be expected to understand self-defence law or counter-insurgency</td></tr>
+<tr><td><strong>Maoist reprisals and SPO casualties</strong></td><td>Maoists shifted to small-group ambushes on Judum leaders and SPOs and took weapons. One secondary count puts SPO deaths at 98 for 2005-08 <strong>[Verification Required]</strong></td></tr>
+<tr><td><strong>Loss of support</strong></td><td>The NHRC's October 2008 report said the movement had lost momentum and was limited to about 23 camps in Dantewada and Bijapur; Karma himself said in 2008 that it would soon cease. A critics' allegation that mining interests shaped the campaign is a <strong>claim, not a finding</strong></td></tr>
+</tbody></table></div>
+<p class="small">Sources: Indian Express explainer (August 2025, opened); Wikipedia "Salwa Judum" (secondary, opened); figures not independently verified.</p>
+
+<h3>1.3A Timeline</h3>
+<figure id="fig-sj-timeline">
+<h3>Figure 1. Salwa Judum: from formation to the Supreme Court and after</h3>
+<div class="flow">
+<span class="box"><strong>about 1990-91</strong><br/>Jan Jagran Abhiyan (precursor)</span><span>&#8594;</span>
+<span class="box"><strong>2005</strong><br/>Salwa Judum begins in Bijapur and Dantewada</span><span>&#8594;</span>
+<span class="box"><strong>2007</strong><br/>PIL filed; Chhattisgarh Police Act, 2007</span><span>&#8594;</span>
+<span class="box"><strong>Oct 2008</strong><br/>NHRC: Judum has lost momentum</span><span>&#8594;</span>
+<span class="box"><strong>5 Jul 2011</strong><br/>Supreme Court: unconstitutional; SPO use for counter-insurgency stopped</span><span>&#8594;</span>
+<span class="box"><strong>2011</strong><br/>Chhattisgarh Auxiliary Armed Police Force Act, 2011</span><span>&#8594;</span>
+<span class="box"><strong>25 May 2013</strong><br/>Mahendra Karma killed in Darbha Valley attack</span>
+</div>
+<figcaption>Dates from the Indian Express explainer and a Wikipedia summary; the 1990-91 date is from a secondary source <strong>[Verification Required]</strong>. Not to scale.</figcaption>
+</figure>
+
+<h3>1.4 Conclusion: How It Came to an End</h3>
+<ul>
+<li><strong>Petition (2007):</strong> sociologist Nandini Sundar, historian Ramachandra Guha and former IAS officer E.A.S. Sarma challenged the practice; both the Union (then Congress-led) and the BJP-led State government defended it.</li>
+<li><strong>Judgment (5 July 2011):</strong> a Bench headed by Justice B. Sudershan Reddy held that arming and deploying SPOs against Maoists violated <strong>Article 14</strong> (equality: poorly trained, poorly paid SPOs were made to do the work of regular police) and <strong>Article 21</strong> (life and dignity: exposing them to lethal risk without training or protection). The Court said the State could not treat citizens as "expendable instruments" and that placing vulnerable youth in danger was not "livelihood".</li>
+<li><strong>Directions (as widely reported):</strong> stop recruiting SPOs for counter-insurgency, recall their firearms, stop Union and State funding for such use, and investigate alleged crimes; counter-Maoist operations must be by trained police or paramilitary forces.</li>
+</ul>
+
+<h3>1.5 Transformation After 2011</h3>
+<ul>
+<li>Chhattisgarh enacted the <strong>Chhattisgarh Auxiliary Armed Police Force Act, 2011</strong> to create a formal, regulated auxiliary force that took in former SPOs. Petitioners said it only rebranded the banned scheme. In <strong>May 2025</strong> the Supreme Court is reported to have dismissed a contempt petition, holding that enacting a law is not contempt unless the law itself is struck down; the Act's validity needs a separate challenge <strong>[Verification Required: secondary reports only]</strong>.</li>
+<li>Local recruits were later organised into <strong>regular police units</strong> such as the <strong>District Reserve Guard (DRG)</strong> and the CRPF's <strong>Bastariya Battalion</strong> (see the 17 October note, Section 5.2); critics say some former SPOs and surrendered cadres were absorbed, and supporters say these units are properly trained and legally constituted <strong>[Verification Required]</strong>.</li>
+</ul>
+<p class="correction" id="c02"><strong>[Correction]</strong> The 16 October note says the Court "ordered ... an end to State funding for such groups" and struck down "Salwa Judum". More exactly, the Court held the <strong>use of SPOs for counter-insurgency</strong> unconstitutional and ordered it stopped; Salwa Judum is the name of the movement that relied on it. The "State" and the "Union" were both directed.</p>
+<div class="exam"><strong>Exam points:</strong> (1) Policing is a State subject, but the State cannot outsource core security tasks to untrained civilians. (2) Counter-insurgency must stay within Articles 14 and 21. (3) Local knowledge is valuable, so use it through <strong>regular, trained, accountable forces</strong> (DRG, Greyhounds-type units), not militias. (4) Linked cause: weak trust and development deficit, which is why the development front below matters.</div>
+</section>
+
+<section id="development-front">
+<h2>2. The Development Front of the LWE Strategy</h2>
+<p>The 2015 National Policy and Action Plan has three fronts (security, development, rights; 17 October note, Section 4). The class listed these development-front schemes:</p>
+<div class="table-wrap"><table id="dev-schemes">
+<caption>Development-front schemes (class list, corrected)</caption>
+<thead><tr><th scope="col">#</th><th scope="col">Scheme</th><th scope="col">What it does</th><th scope="col">Note</th></tr></thead>
+<tbody>
+<tr><td>1</td><td><strong>Integrated Action Plan (IAP)</strong></td><td>Block grant to selected tribal and backward districts so that the district itself can fund the gaps it identifies (schools, health, water, roads, livelihoods). Projects are chosen by a district committee headed by the <strong>District Collector</strong> with the <strong>Superintendent of Police</strong> and the <strong>District Forest Officer</strong>. It highlights ground-level problems</td><td>Launched in <strong>November 2010</strong> for <strong>60</strong> districts; about Rs 25 crore per district in 2010-11 and Rs 30 crore in 2011-12 (100% Central grant). Funds are <strong>additional</strong> to normal schemes</td></tr>
+<tr><td>2</td><td><strong>Special Central Assistance (SCA)</strong></td><td>Union financial help to the <strong>most LWE-affected districts</strong> to fill critical gaps in public infrastructure and services</td><td>Run by the MHA since <strong>2017</strong>; IAP was renamed <strong>Additional Central Assistance</strong> for LWE districts in 2013 and later evolved into SCA <strong>[Verification Required: scheme dates and outlay]</strong></td></tr>
+<tr><td>3</td><td><strong>Road Requirement Plan (RRP)</strong></td><td>Roads and bridges in LWE areas; better access for people, administration and forces</td><td>RRP-I, RRP-II and the <strong>Road Connectivity Project for LWE Affected Areas (RCPLWEA)</strong>; lengths and costs <strong>[Verification Required]</strong></td></tr>
+<tr><td>4</td><td><strong>LWE Mobile Tower Project</strong></td><td>Mobile towers to end communication blackouts; later phases aim at 4G</td><td>Funded from the Universal Service Obligation Fund; phase details <strong>[Verification Required]</strong></td></tr>
+<tr><td>5</td><td><strong>Civic Action Programme (CAP)</strong></td><td>Central forces run welfare and outreach activities (medical camps, sports, skill and cultural exchanges) to <strong>bridge the trust deficit</strong> between local people and security forces</td><td>Linked to the "winning hearts and minds" approach (<strong>WHAM</strong>)</td></tr>
+<tr><td>6</td><td><strong>Media Plan</strong></td><td>Local media and outreach to <strong>counter Maoist propaganda</strong> and publicise government schemes</td><td>Details <strong>[Verification Required]</strong></td></tr>
+<tr><td>7</td><td><strong>Roshni</strong></td><td>Special skill-development and placement scheme for youth from LWE districts</td><td>Rural development ministry (DDU-GKY) special initiative <strong>[Verification Required: ministry, start year]</strong></td></tr>
+<tr><td>8</td><td><strong>Eklavya Model Residential Schools (EMRS)</strong></td><td>Quality residential schools for tribal students</td><td>Ministry of Tribal Affairs; scaled up from about 2018-19 <strong>[Verification Required]</strong></td></tr>
+</tbody></table></div>
+<p class="correction" id="c03"><strong>[Correction]</strong> (1) "Dist magistrate / Dist collector, SP, CMO, DFO": the verified IAP committee is <strong>Collector (chair), SP and DFO</strong>; whether a Chief Medical Officer was included could not be verified <strong>[Verification Required]</strong>. (2) "Untied and non-lapsable funds": the IAP was a flexible block grant, but "non-lapsable" could not be verified from an official source <strong>[Verification Required]</strong>; keep "untied (flexible), additional" as the safe description. (3) The rough notes treat IAP and SCA as separate; they are <strong>successive stages of one line of Central assistance</strong>. (4) "Ekalavya" is <strong>Eklavya</strong>; "Roshini" is <strong>Roshni</strong>; "Road requirement plan" is the <strong>Road Requirement Plan</strong>; "winning heart and mind initiative (WHAM)" is a concept, not a separate scheme.</p>
+<p class="additional"><strong>[Additional]</strong> Do not confuse <strong>Roshni</strong> (a rural development scheme for LWE districts) with other skill schemes that open ITIs and skill centres in LWE districts (run by the skills ministry). Link development to the <strong>rights front</strong>: FRA, 2006 and PESA, 1996 (17 October note, Section 4).</p>
+
+<div class="verification"><strong>Why development and security must move together (cause-impact-response):</strong> poor access and services &#8594; State absent &#8594; Maoists fill the vacuum (taxation, "people's courts") &#8594; operations without services deepen distrust (the Salwa Judum case) &#8594; response: roads, towers and schools after forces secure an area, <em>and</em> local, accountable administration, so that gains last.</div>
+</section>
+
+<section id="status-2026">
+<h2>3. LWE Status in 2026 and Emerging Issues</h2>
+<h3>3.1 The 2026 Position</h3>
+<figure id="fig-status">
+<h3>Figure 2. Classification of LWE districts (MHA letter of 27 March 2026)</h3>
+<div class="cols3">
+<div class="tile p3"><b class="big">2</b>"LWE affected" districts: Bijapur (Chhattisgarh), West Singhbhum (Jharkhand)</div>
+<div class="tile p2"><b class="big">1</b>"District of concern": Kanker (Chhattisgarh)</div>
+<div class="tile p1"><b class="big">35</b>"Legacy and Thrust" districts across nine States (Andhra Pradesh, Bihar, Chhattisgarh, Jharkhand, Madhya Pradesh, Maharashtra, Odisha, Telangana, West Bengal)</div>
+</div>
+<figcaption>Unit: districts; scope: India; reference date: classification of 27 March 2026 (total 38). Source: The Hindu, 3 April 2026 (opened), repeated by Drishti IAS. The categories also decide which districts get Security Related Expenditure (SRE) funds. The earlier "most affected" label (Bijapur, Sukma and Narayanpur until November 2025) was replaced. The peak of over 200 districts in 2005 is as reported by The Hindu; the 126-district figure (10 States, 2013) in the rough notes is a widely cited MHA number <strong>[Verification Required: reference year]</strong>.</figcaption>
+</figure>
+<p class="correction" id="c01"><strong>[Correction] C1 (to earlier notes):</strong> the 16 and 17 October notes say the MHA "reportedly" told States that <em>no</em> district is LWE-affected. The Hindu report of the MHA letter (opened) says <strong>two districts remain "LWE affected"</strong> (Bijapur and West Singhbhum), as the rough notes of this class say. Use the position above. The Home Minister's statement in the Lok Sabha that the country is "Naxal-free" came about <strong>30 March 2026</strong>, three days after the letter, with 31 March 2026 as the target date. "Naxal-free" is therefore a <strong>political and administrative milestone, not zero violence or zero districts</strong>.</p>
+
+<h3>3.2 Emerging Issues</h3>
+<div class="table-wrap"><table id="emerging">
+<caption>Emerging issues listed in the class (explained and corrected)</caption>
+<thead><tr><th scope="col">#</th><th scope="col">Issue</th><th scope="col">Meaning and exam angle</th></tr></thead>
+<tbody>
+<tr><td>1</td><td><strong>"Urban Naxalism"</strong></td><td>The CPI (Maoist) document <em>Urban Perspective: Our Work in Urban Areas</em> (<strong>2004</strong>) set out a plan for work in cities: building fronts, recruiting, raising funds and providing logistics and intellectual support <strong>[Verification Required: document title and date]</strong>. Class definition: anyone who supports through finance, logistics, recruitment or intellectual support. <strong>Caution:</strong> "Urban Naxal" is a political term, not a legal category. Criminal liability needs proof of specific acts (for example membership, support or fund-raising offences under the UAPA, 1967), and lawful dissent, writing and civil-society work must not be treated as an offence. The Supreme Court in <em>Arup Bhuyan v. State of Assam</em> (2011) held that <strong>mere membership</strong> of a banned organisation is not enough without intent to incite violence <strong>[Verification Required]</strong></td></tr>
+<tr><td>2</td><td><strong>Organised crime</strong></td><td>Extortion (for example "levy" on contractors and mining), arms and illicit-trade networks that may outlive the ideology; Section 5.3</td></tr>
+<tr><td>3</td><td><strong>Cyber threats</strong></td><td>Online propaganda, secure messaging and digital fund-raising by groups; defensive response through monitoring under law and digital literacy <strong>[Verification Required: specific examples]</strong></td></tr>
+<tr><td>4</td><td><strong>External actors</strong></td><td>Reported ideological links with Maoist groups abroad (for example the regional coordination forum CCOMPOSA) and arms sourcing <strong>[Verification Required]</strong>; keep claims attributed to official statements</td></tr>
+<tr><td>5</td><td><strong>Development deficit</strong></td><td>Roads, towers and schools without teachers, doctors and administrators ("hardware without software"); unresolved land, forest and displacement grievances</td></tr>
+<tr><td>6</td><td><strong>Change in geographical spread</strong></td><td>As core areas shrink, activity may move to <strong>tri-junction forest areas</strong> between States (for example the Western Ghats tri-junction of Kerala, Karnataka and Tamil Nadu) <strong>[Verification Required]</strong>; this is why inter-State coordination remains necessary</td></tr>
+</tbody></table></div>
+</section>
+
+<section id="compare">
+<h2>4. Terrorism, Insurgency, Militancy and LWE Compared</h2>
+<div class="table-wrap"><table id="compare-table">
+<caption>Class comparison with corrections</caption>
+<thead><tr><th scope="col">Feature</th><th scope="col">Terrorism</th><th scope="col">Insurgency</th><th scope="col">Militancy</th><th scope="col">LWE</th></tr></thead>
+<tbody>
+<tr><td><strong>Goal</strong></td><td>Political, ideological or religious aim, pursued by creating terror ("no goal" in the rough notes is corrected)</td><td>Armed rebellion against the State for a separate State, autonomy or political change</td><td>Informal term for armed groups, often used for the same demands as insurgency</td><td>Overthrow the State through armed struggle and set up a Maoist "people's democratic" order</td></tr>
+<tr><td><strong>Targets</strong></td><td>Often civilians and the public, to spread fear</td><td>Mainly security forces and State symbols, but civilians are also hit</td><td>As for insurgency</td><td>Security forces, officials, alleged "informers" and civilians</td></tr>
+<tr><td><strong>Parallel government</strong></td><td>No</td><td>Some strong groups do</td><td>Rarely</td><td>Yes (for example the Maoist <em>Janatana Sarkar</em> in Bastar areas)</td></tr>
+</tbody></table></div>
+<p class="correction" id="c04"><strong>[Correction]</strong> (1) <strong>Terrorism has a goal</strong>; what marks it out is the method (violence against civilians to spread terror) and, in law, the definition in the UAPA, 1967 (Section 15) and BNS, 2023 (Section 113) <strong>[Verification Required: BNS section number]</strong>. (2) "Militancy" has <strong>no fixed legal meaning</strong>; it is a descriptive term. The rough notes give it the same demand as insurgency, and that is only a usage convention. (3) "Insurgency generally does not attack civilians" and "LWE attacks all" are both too broad; insurgents have killed civilians and LWE has largely targeted forces, officials and alleged informers. (4) "Parallel government" is not limited to LWE; the NSCN (IM) runs a parallel taxation and administration set-up in parts of Nagaland <strong>[Verification Required]</strong>. (5) "LWE: demand to establish their own government" means they seek to <strong>replace</strong> the constitutional order, not to secede.</p>
+<div class="exam"><strong>Common confusion:</strong> insurgency is about a <em>political objective and control of territory</em>; terrorism is about a <em>method</em>. A single group can do both, which is why law treats acts and organisations separately.</div>
+</section>
+
+<section id="north-east">
+<h2>5. North-East India: Security Challenges</h2>
+<h3>5.1 Insurgency</h3>
+<p>The class defined insurgency as a demand for a separate sovereign State by violent means, for example <strong>Greater Nagaland (Nagalim), Asom, Kukiland</strong>.</p>
+<div class="table-wrap"><table id="ne-demands">
+<caption>Demands behind North-East insurgencies (examples)</caption>
+<thead><tr><th scope="col">Community or group</th><th scope="col">Nature of the demand</th></tr></thead>
+<tbody>
+<tr><td><strong>Nagas (NSCN-IM)</strong></td><td>Nagalim: integration of Naga-inhabited areas of Manipur, Arunachal Pradesh, Assam and Myanmar; Framework Agreement with the Government on <strong>3 August 2015</strong>; final accord still pending <strong>[Verification Required: current status]</strong></td></tr>
+<tr><td><strong>Assam (ULFA)</strong></td><td>Sovereign Asom; a pro-talks faction signed a tripartite agreement on <strong>29 December 2023</strong>; the ULFA (Independent) faction remained outside <strong>[Verification Required]</strong></td></tr>
+<tr><td><strong>Bodos</strong></td><td>Separate Bodoland; <strong>Bodo Accord, 27 January 2020</strong> gave greater autonomy within Assam (Bodoland Territorial Region)</td></tr>
+<tr><td><strong>Karbi and Dimasa groups</strong></td><td>Autonomy within Assam; Karbi Anglong agreement <strong>4 September 2021</strong></td></tr>
+<tr><td><strong>Kuki groups</strong></td><td>"Kukiland" or a separate State or territorial arrangement; most Kuki groups in the Suspension of Operations framework seek it <strong>within India</strong> <strong>[Verification Required]</strong></td></tr>
+</tbody></table></div>
+<p class="correction" id="c05"><strong>[Correction]</strong> (1) Only <strong>some</strong> North-East movements seek a sovereign State; many (Bodo, Karbi, Dimasa, Kuki) seek autonomy or a State <strong>within India</strong>, and several have ended through accords. (2) Names: "Assom" is <strong>Asom</strong> (Assam), "Methi" is <strong>Meitei</strong>, and "Greater Nagaland" is commonly <strong>Nagalim</strong>. (3) Dates of accords are from secondary summaries (IDSA brief, news reports); the MHA "North East - Major Initiatives and Peace Process" document was identified but not opened <strong>[Verification Required]</strong>.</p>
+
+<h3>5.2 Ethnic Conflicts</h3>
+<ul>
+<li>Conflicts between <strong>Nagas and non-Nagas</strong> (for example Naga-Kuki clashes in Manipur in the 1990s), <strong>Meitei and Kuki-Zo communities</strong> (large-scale violence in Manipur since May 2023), and <strong>Bodos and non-Bodos</strong> (clashes in Assam, for example in 2012) <strong>[Verification Required: dates and current status]</strong>.</li>
+<li>Drivers: competing land and homeland claims, identity fears, migration, reservation and autonomy demands, and overlapping claims on the same territory (for example Nagalim versus the territorial integrity of Manipur).</li>
+<li><strong>Note:</strong> describe conflicts by their causes and political demands; do not attribute violence to whole communities.</li>
+</ul>
+
+<h3 id="organised-crime">5.3 Organised Crime</h3>
+<p><strong>BNS, 2023 (in force 1 July 2024), Section 111</strong> defines organised crime as any <strong>continuing unlawful activity</strong> such as kidnapping, robbery, vehicle theft, extortion, land grabbing, contract killing, economic offences, cyber-crimes, trafficking of persons, drugs, weapons or illicit goods or services, or human trafficking, done by a person or group <strong>acting in concert</strong>, singly or jointly, as a member of an <strong>organised crime syndicate</strong> or on its behalf, using <strong>violence, threat of violence, intimidation, coercion or other unlawful means</strong> to get a direct or indirect benefit, including financial benefit <strong>[Verification Required: verify exact wording on India Code]</strong>.</p>
+<ul>
+<li><strong>"Continuing unlawful activity"</strong> (as quoted by secondary sources): a cognizable offence punishable with <strong>three years or more</strong>, where <strong>more than one charge-sheet</strong> has been filed in the <strong>preceding ten years</strong> and the court has taken cognizance. This is a safeguard against misuse (a Rajasthan High Court bail ruling is reported to have stressed it) <strong>[Verification Required]</strong>.</li>
+<li><strong>Organised crime syndicate:</strong> a group of <strong>two or more persons</strong> acting singly or jointly who engage in continuing unlawful activity.</li>
+</ul>
+<div class="table-wrap"><table id="traffic-table">
+<caption>Trafficking, smuggling, syndicate and cartel (class definitions, corrected)</caption>
+<thead><tr><th scope="col">Term</th><th scope="col">Class definition</th><th scope="col">Corrected understanding</th></tr></thead>
+<tbody>
+<tr><td><strong>Trafficking</strong></td><td>Illegal trade in prohibited goods and services, for example drugs, humans</td><td>Illegal trade in <strong>prohibited</strong> items or in people (human trafficking involves exploitation; it is not the same as migrant smuggling)</td></tr>
+<tr><td><strong>Smuggling</strong></td><td>Illegal trade in goods that can be traded legally, for example gold, cattle, arms</td><td>Illegal movement of goods that evades customs, tax or border controls. <strong>Arms are not legally tradable by private persons without a licence</strong>, so arms are better placed under illegal arms trafficking</td></tr>
+<tr><td><strong>Syndicate</strong></td><td>Identity of those involved is unknown</td><td>The <strong>BNS meaning</strong>: a group of two or more persons acting singly or jointly in continuing unlawful activity; no rule about unknown identity</td></tr>
+<tr><td><strong>Cartel</strong></td><td>Identity of those involved is known</td><td>A group of producers or traffickers that collude to control supply, territory or prices (for example drug cartels); no legal definition in the BNS <strong>[Verification Required]</strong></td></tr>
+</tbody></table></div>
+<p class="correction" id="c06"><strong>[Correction]</strong> The rule "syndicate = identity unknown; cartel = identity known" is <strong>not a recognised legal or academic distinction</strong> and could not be traced to a source; learn the BNS definition of "organised crime syndicate" and the economic meaning of "cartel". "Act in consult" is <strong>"in concert"</strong>. Section 111 BNS is the first general central-law definition of organised crime; older definitions are in State laws such as the Maharashtra Control of Organised Crime Act, 1999 <strong>[Verification Required]</strong>.</p>
+<h4>Terror-crime nexus</h4>
+<ul>
+<li>Organised criminals can support terrorists with <strong>logistics, finance, arms, forged documents and safe routes</strong>; terrorists can fund themselves from crime (narco-terrorism, extortion, fake currency). Crime networks may also divert the attention of authorities.</li>
+<li>In the North-East, the proximity to Myanmar and the Golden Triangle opium and synthetic-drug region, arms flows, extortion ("taxation") by armed groups, human trafficking and smuggling of wildlife and other goods create the nexus <strong>[Verification Required: current seizure data not added]</strong>.</li>
+<li><strong>Response:</strong> border management, inter-agency intelligence, financial investigation (money-laundering and terror-financing controls), the NIA and State agencies, and cooperation with Myanmar, Bangladesh and Bhutan.</li>
+</ul>
+</section>
+
+<section id="ne-reasons">
+<h2>6. Reasons for Isolation and Alienation in the North-East</h2>
+<figure id="fig-ne-reasons">
+<h3>Figure 3. From isolation to alienation to insecurity</h3>
+<div class="flow">
+<span class="box"><strong>BEFR 1873</strong><br/>Inner Line: region cut off</span><span>&#8594;</span>
+<span class="box"><strong>Inner Line Permit</strong><br/>Isolation continues</span><span>&#8594;</span>
+<span class="box"><strong>Geography</strong><br/>Siliguri Corridor</span><span>&#8594;</span>
+<span class="box"><strong>Culture and politics</strong><br/>Cultural gap; perceived apathy</span><span>&#8594;</span>
+<span class="box"><strong>External actors</strong><br/>Safe havens, arms</span><span>&#8594;</span>
+<span class="box"><strong>Alienation</strong><br/>Insurgency and crime</span>
+</div>
+<figcaption>Schematic cause chain from the class notes; not a map and not to scale.</figcaption>
+</figure>
+<ol>
+<li><strong>Bengal Eastern Frontier Regulation (BEFR), 1873:</strong> a colonial law that created the <strong>Inner Line</strong>, restricting entry into hill areas; the region became isolated from the plains economy and politics.</li>
+<li><strong>Inner Line Permit (ILP):</strong> permit regime that continues the isolation. It applies in <strong>Arunachal Pradesh, Nagaland and Mizoram, and Manipur since December 2019</strong> <strong>[Verification Required]</strong>; it protects local identity but also restricts the movement and investment that could integrate the region.</li>
+<li><strong>Geographical connectivity:</strong> the <strong>Siliguri Corridor</strong> ("Chicken's Neck") joins the North-East to the rest of India and is about <strong>17-22 km wide at its narrowest</strong> (sources give 20-22 km most often; the rough notes say 22 km). The region has international borders on most sides, so it is poorly connected with the mainland. Isolation turned into alienation.</li>
+<li><strong>Cultural differences:</strong> many ethnic groups that fear loss of identity, language and land.</li>
+<li><strong>Perceived political apathy:</strong> the feeling of being neglected in national attention, representation and investment.</li>
+<li><strong>External actors:</strong> safe havens, arms and training reported in neighbouring countries; the rough notes list the point without detail <strong>[Verification Required]</strong>.</li>
+</ol>
+<p class="additional"><strong>[Additional]</strong> Safeguards in the Constitution include the <strong>Sixth Schedule</strong> (autonomous councils in Assam, Meghalaya, Tripura and Mizoram), <strong>Article 371A</strong> (Nagaland) and the Armed Forces (Special Powers) Act as a contested tool. The 17 October note covers cross-border cooperation examples (Operation All Clear, 2003; Operation Sunrise, 2019).</p>
+<p class="verification"><strong>[Visual Representation Recommended: schematic map (not to scale) of the North-East showing the Siliguri Corridor, international borders and the Inner Line Permit States; suggested sources: Survey of India or MHA border-management maps]</strong> - not drawn here to avoid showing boundaries inaccurately.</p>
+</section>
+
+<section id="way-forward">
+<h2>7. Gaps and Way Forward (Short)</h2>
+<ul>
+<li><strong>LWE:</strong> keep State police and intelligence strong before CAPF drawdown; deliver teachers, doctors and administrators, not only roads and towers; resolve FRA and PESA gaps; avoid any return to militia models.</li>
+<li><strong>North-East:</strong> complete and implement peace accords with development and inclusion; improve connectivity beyond the Siliguri Corridor; manage borders and the drug and arms trade together with neighbours; protect rights while using security laws.</li>
+<li><strong>Organised crime:</strong> use BNS Section 111 with its safeguards, financial investigation and inter-State and international cooperation.</li>
+</ul>
+</section>
+
+<section id="key-facts">
+<h2>Key Facts for Prelims</h2>
+<ul>
+<li>Salwa Judum: <strong>2005</strong>, Bijapur and Dantewada; SPOs appointed under the <strong>Chhattisgarh Police Act, 2007</strong>; Supreme Court <strong>5 July 2011</strong>, <em>Nandini Sundar v. State of Chhattisgarh</em>; Articles <strong>14 and 21</strong>; Mahendra Karma killed <strong>25 May 2013</strong>.</li>
+<li>Chhattisgarh Auxiliary Armed Police Force Act: <strong>2011</strong>.</li>
+<li>IAP: <strong>November 2010</strong>, 60 districts; committee of Collector, SP and DFO. SCA: MHA, <strong>2017</strong>, most LWE-affected districts.</li>
+<li>Development schemes: RRP, LWE Mobile Tower Project, Civic Action Programme, Media Plan, <strong>Roshni</strong>, <strong>Eklavya</strong> Model Residential Schools.</li>
+<li>LWE districts (MHA, <strong>27 March 2026</strong>): 2 affected (Bijapur, West Singhbhum), 1 of concern (Kanker), 35 Legacy and Thrust; "Naxal-free" statement about 30 March 2026.</li>
+<li>BNS, 2023 in force <strong>1 July 2024</strong>; <strong>Section 111</strong> = organised crime; <strong>more than one charge-sheet in ten years</strong> for "continuing unlawful activity".</li>
+<li>BEFR <strong>1873</strong>; ILP in Arunachal Pradesh, Nagaland, Mizoram and Manipur (from 2019); Siliguri Corridor about 17-22 km wide.</li>
+<li>Peace accords: Naga Framework Agreement (<strong>2015</strong>), Bodo Accord (<strong>2020</strong>), Karbi Anglong (<strong>2021</strong>), ULFA tripartite (<strong>2023</strong>).</li>
+</ul>
+</section>
+
+<section id="mains">
+<h2>Mains Points</h2>
+<ul>
+<li><strong>Salwa Judum shows the limits of outsourcing security:</strong> local knowledge is valuable, but arming untrained civilians breached Articles 14 and 21, displaced communities and deepened the conflict. Better route: regular, trained, accountable local units plus services and rights.</li>
+<li><strong>Development is a security tool only if it is local and accountable:</strong> the IAP idea (Collector, SP and DFO deciding district projects) puts the district at the centre; the weakness is staffing, delivery and rights implementation.</li>
+<li><strong>"Naxal-free" is a milestone, not an end state:</strong> two districts still classified, 35 under watch, and risks of extortion networks, geographical shift and unresolved land grievances. "Urban Naxalism" must be tackled by evidence-based law, not by treating dissent as a threat.</li>
+<li><strong>North-East:</strong> insurgency, ethnic conflict and organised crime feed each other; isolation (BEFR, ILP, the Siliguri Corridor) and perceived neglect created alienation; accords work when followed by development and genuine autonomy, and fail when factions split or ethnic claims overlap.</li>
+<li><strong>Balanced way forward:</strong> peace accords with implementation tracking; trade, transport and Act East connectivity; border and financial controls against drug and arms networks; accountability for security forces and respect for fundamental rights.</li>
+</ul>
+</section>
+
+<section id="traps">
+<h2>Common Traps / Confusions</h2>
+<ul>
+<li>Salwa Judum is the movement; <strong>SPO use</strong> was held unconstitutional. DRG and Bastariya Battalion are regular, legally constituted units, not Salwa Judum (although critics question the continuity).</li>
+<li>IAP (2010) is not the same as SCA (2017); the IAP committee is <strong>Collector, SP, DFO</strong>.</li>
+<li>Roshni (rural development) versus EMRS (tribal affairs) versus skill centres (skills ministry).</li>
+<li>31 March 2026 was the <strong>target date</strong>; the Lok Sabha statement came about 30 March; two districts were still "LWE affected".</li>
+<li>Terrorism has a goal; militancy is not a legal term; not every North-East movement seeks sovereignty.</li>
+<li>"Syndicate = unknown, cartel = known" is not a legal rule; BNS Section 111 needs more than one charge-sheet in ten years.</li>
+<li>BEFR 1873 is the law; ILP is the permit it created; Manipur joined the ILP list only in 2019.</li>
+</ul>
+</section>
+
+<section id="revision">
+<h2>30-Second Revision</h2>
+<p class="lead"><strong>Salwa Judum</strong>: 2005, Bijapur and Dantewada, SPOs under the 2007 Act, displacement and abuse allegations, NHRC 2008 decline, Supreme Court 5 July 2011 (Articles 14 and 21), 2011 Auxiliary Act, Karma killed 2013. <strong>Development front</strong>: IAP (2010, Collector, SP, DFO) &#8594; SCA (2017); RRP; mobile towers; CAP (trust); Media Plan; Roshni; EMRS. <strong>2026</strong>: 2 affected, 1 of concern, 35 Legacy and Thrust. <strong>Emerging issues</strong>: urban support networks, organised crime, cyber, external actors, development deficit, geographic shift. <strong>Compare</strong>: terrorism (method of terror), insurgency (rebellion for territory or autonomy), LWE (overthrow the State). <strong>North-East</strong>: insurgency, ethnic conflict, organised crime (BNS 111); reasons: BEFR 1873, ILP, Siliguri Corridor, culture, perceived apathy, external actors.</p>
+</section>
+
+<section id="pyqs">
+<h2>Previous Year Questions (PYQs)</h2>
+<p class="small">The official UPSC papers were not opened. Wording below is a <strong>paraphrase</strong> from secondary compilations; years come from those sources. <strong>[Verification Required]</strong> check exact wording, marks and word limits on the UPSC archive. LWE questions of 2013, 2015, 2018, 2020, 2022 and 2025 are in the 16 and 17 October notes.</p>
+
+<h3>Q1. Mains 2017, GS Paper III</h3>
+<p>Paraphrase: the North-East has had insurgency for a very long time; analyse the major reasons for the survival of armed insurgency in the region (marks not verified).</p>
+<p class="answer"><strong>Suggested answer approach [Additional]:</strong> isolation and alienation (Section 6), ethnic and territorial claims (5.1, 5.2), porous borders and external support, organised crime and funding (5.3), splinter groups and partial accords. Study guidance, not an official marking scheme.</p>
+
+<h3>Q2. Mains 2025, GS Paper III (15 marks, 250 words, as listed)</h3>
+<p>Paraphrase: what are the major challenges to internal security and the peace process in the North-Eastern States, and map the peace accords and agreements of the past decade?</p>
+<p class="answer"><strong>Suggested answer approach [Additional]:</strong> challenges (Sections 5-6); accord timeline (Naga Framework 2015, Bodo 2020, Karbi Anglong 2021, ULFA 2023; table in 5.1); gaps and way forward (Section 7).</p>
+
+<h3>Q3. Mains 2022, GS Paper III (10 marks as listed)</h3>
+<p>Paraphrase: discuss the types of organised crime and describe the linkages between terrorists and organised crime at the national and transnational levels.</p>
+<p class="answer"><strong>Suggested answer approach [Additional]:</strong> BNS Section 111 and types (5.3), the terror-crime nexus (funding, logistics, arms, narco-terrorism), the North-East and border examples, institutional response.</p>
+
+<p class="small">Sources: <a href="https://superkalam.com/upsc-mains/previous-year-question-paper/2017/the-northeastern-region-of-india-has-been-infested-with-insurgency-for-a-very-long-time-analyse-the-major-reasons-for-th-bd2696f1-cf7e-48cf-b7e1-b6614643b95f">Superkalam - GS3 2017 North-East insurgency question (secondary)</a>; <a href="https://www.shankariasparliament.com/mainspyqanalysis/mains-pyqs-gs-iii-2025-q-19-20">Shankar IAS - Mains GS III 2025 Q19-20 (secondary)</a>; <a href="https://superkalam.com/upsc-mains/previous-year-question-paper/2022/discuss-the-types-of-organised-crimes-describe-the-linkages-between-terrorists-and-organised-crime-that-exist-at-the-nat-6935c963-bca4-4e80-be39-89274bc1dc1f">Superkalam - GS3 2022 organised crime question (secondary)</a>; <a href="https://inclusiveias.com/upsc-mains-internal-security-previous-year-questions-topic-wise/">Inclusive IAS - topic-wise internal security PYQs (secondary, opened)</a>.</p>
+<p class="verification"><strong>[No verified PYQ found for this topic]</strong> for Salwa Judum as a standalone question; use the LWE questions (for example 2022 and 2013) for the arguments on local participation, rights and governance.</p>
+</section>
+
+<section id="corrections">
+<h2>Corrections Made</h2>
+<ol>
+<li><a href="#c01">C1: number of LWE-affected districts in 2026 (2 affected, 1 of concern, 35 Legacy and Thrust) corrects the 16 and 17 October notes; "Naxal-free" statement date.</a></li>
+<li><a href="#c02">Salwa Judum: what the Supreme Court actually held and directed; difference between the movement and SPO use.</a></li>
+<li><a href="#c03">Development front: IAP committee (Collector, SP, DFO); "non-lapsable" unverified; IAP and SCA as stages; scheme names.</a></li>
+<li><a href="#c04">Terrorism has a goal; militancy is not a legal term; targets and parallel government; LWE aim.</a></li>
+<li><a href="#c05">North-East: sovereign versus within-India demands; names (Asom, Meitei, Nagalim); accord dates.</a></li>
+<li><a href="#c06">Syndicate versus cartel; "in concert"; trafficking versus smuggling of arms.</a></li>
+</ol>
+<p class="small">Spelling fixes: "hghlighted" (highlighted), "Ekalavya" (Eklavya), "Roshini" (Roshni), "Singabam" (Singhbhum), "soveriegn" (sovereign), "Orgnaised" (organised), "voilance" (violence), "coersion" (coercion), "consult" (concert), "Percieved" (perceived), "Siluguri" (Siliguri), "Methi" (Meitei), "Assom" (Asom), "Dist" (district), "CH" (Chhattisgarh), "JH" (Jharkhand). <strong>Visual aids:</strong> Figures 1-3 are lightweight HTML/CSS diagrams. <strong>Not verified:</strong> the PIB and MHA pages (access errors or unopened), so scheme dates and outlays are marked for verification.</p>
+</section>
+
+<section id="sources">
+<h2>Open Sources / Further Reading</h2>
+<ul>
+<li><a href="https://www.thehindu.com/news/national/mha-replaces-most-affected-tag-with-other-lwe-categories/article70820116.ece">The Hindu - MHA replaces "most affected" tag with other LWE categories (3 April 2026; opened)</a></li>
+<li><a href="https://www.drishtiias.com/daily-updates/daily-news-analysis/classification-of-districts-affected-by-lwe">Drishti IAS - Classification of Districts Affected by LWE (opened; secondary)</a></li>
+<li><a href="https://indianexpress.com/article/explained/explained-law/amit-shah-accuses-opposition-vp-candidate-of-aiding-naxalism-what-was-the-salwa-judum-case-10211483/">Indian Express - What was the Salwa Judum case? (August 2025; opened)</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Salwa_Judum">Wikipedia - Salwa Judum (opened; secondary, check against primary sources)</a></li>
+<li><a href="https://www.pib.gov.in/newsite/printrelease.aspx?relid=68783">PIB - Integrated Action Plan for Select Tribal and Backward Districts (not opened; access error)</a></li>
+<li><a href="https://www.mha.gov.in/sites/default/files/2026-04/NE_MajorInitiativesandPeaceProcess_23042026.pdf">MHA - North East: Major Initiatives and Peace Process (April 2026; not opened)</a></li>
+<li><a href="https://idsa.in/wp-content/uploads/2024/10/ib-pdas231024.pdf">IDSA - Bodo, Karbi and Dimasa Peace Agreements in Assam (October 2024; not opened)</a></li>
+<li><a href="https://bprd.nic.in/uploads/pdf/202401290403347155356Organisedcrime,terrorism.pdf">BPR&amp;D - Organised crime and terrorism under the Bharatiya Nyaya Sanhita, 2023 (not opened)</a></li>
+<li><a href="https://www.indiacode.nic.in/">India Code - Bharatiya Nyaya Sanhita, 2023 (confirm Sections 111 and 113 on the official text)</a></li>
+</ul>
+</section>
+</main>
+</body>
+</html>

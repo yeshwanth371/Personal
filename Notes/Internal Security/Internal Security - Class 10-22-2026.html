@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Internal Security - Class Notes | 22 October 2026</title>
+<style>
+  * { box-sizing: border-box; }
+  body { font-family: Calibri, sans-serif; font-size: 11pt; line-height: 1.6; max-width: 900px; margin: 20px auto; padding: 0 20px; color: #202124; }
+  h1 { font-size: 20pt; color: #1a1a1a; border-bottom: 2px solid #333; padding-bottom: 4px; margin-top: 30px; }
+  h2 { font-size: 16pt; color: #2b2b2b; margin-top: 28px; border-bottom: 1px solid #ddd; padding-bottom: 3px; }
+  h3 { font-size: 13pt; color: #3a3a3a; margin-top: 18px; }
+  h4 { font-size: 11.5pt; color: #3a3a3a; margin: 14px 0 4px; }
+  p { margin: 8px 0; }
+  ul, ol { margin: 6px 0; padding-left: 28px; }
+  li { margin: 4px 0; }
+  a { color: #005ea6; overflow-wrap: anywhere; }
+  table { border-collapse: collapse; width: 100%; margin: 10px 0; }
+  caption { text-align: left; font-weight: bold; margin-bottom: 6px; }
+  th, td { border: 1px solid #999; padding: 6px 10px; text-align: left; vertical-align: top; overflow-wrap: break-word; }
+  th { background: #f0f0f0; }
+  .table-wrap { overflow-x: auto; }
+  .note, .exam, .verification { background: #fff8e1; border-left: 3px solid #f5a623; padding: 8px 12px; margin: 10px 0; }
+  .correction { background: #fff3e0; border-left: 3px solid #ef6c00; padding: 8px 12px; margin: 10px 0; }
+  .additional, .lead { background: #e8f5e9; border-left: 3px solid #2e7d32; padding: 8px 12px; margin: 10px 0; }
+  .flow { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 10px; padding: 12px 0; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; }
+  .flow span { text-align: center; max-width: 100%; }
+  .flow .box { border: 1px solid #888; background: #f7f7f7; padding: 6px 10px; border-radius: 4px; flex: 1 1 150px; }
+  figure { margin: 16px 0; padding: 12px; border: 1px solid #bbb; background: #fff; }
+  figure h3 { margin-top: 0; text-align: center; }
+  figcaption { margin-top: 8px; color: #555; font-size: 9.5pt; }
+  .cols3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+  .cols4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+  .tile { border: 1px solid #888; border-radius: 4px; padding: 8px; background: #f5f9fd; font-size: 10.5pt; }
+  .tile.p1 { background: #e8f5e9; border-color: #2e7d32; }
+  .tile.p2 { background: #f5f9fd; border-color: #0078d4; }
+  .tile.p3 { background: #fff3e0; border-color: #ef6c00; }
+  .small { color: #555; font-size: 9.5pt; }
+  .answer { margin: 10px 0; padding: 6px 12px; border-left: 3px solid #0078d4; background: #f5f9fd; }
+  @media (max-width: 650px) {
+    body { padding: 0 12px; }
+    .cols3, .cols4 { grid-template-columns: 1fr; }
+    .table-wrap table { min-width: 540px; }
+  }
+  @media print {
+    @page { size: A4; margin: 14mm; }
+    body { max-width: none; margin: 0; padding: 0; }
+    h1, h2, h3, h4 { break-after: avoid; }
+    figure, tr, .answer, .tile { break-inside: avoid; }
+    thead { display: table-header-group; }
+    .table-wrap { overflow: visible; }
+    .table-wrap table { min-width: 0; }
+    a { color: inherit; text-decoration: none; }
+    p, li { orphans: 3; widows: 3; }
+  }
+</style>
+</head>
+<body>
+<main>
+<header>
+<h1>Internal Security - Class Notes | 22 October 2026</h1>
+<p><strong>Topics:</strong> <strong>Jammu and Kashmir</strong> - the three challenges (cross-border terrorism, militancy, organised crime), the historical timeline from 1947 to 2025, reasons for the challenges, a way forward, and a detailed look at <strong>initiatives</strong> (Mission Pehel, Operation Sadbhavana, the Mission Youth schemes, Himayat, Udaan and Nai Roshni).</p>
+<p class="small">Notes for the class of <time datetime="2026-10-22">22 October 2026</time>, prepared on 22 October 2026. This is a <strong>new topic</strong>, not a continuation of the North-East sequence in <a href="Internal%20Security%20-%20Class%2010-21-2026.html">the 21 October note</a>. The 17 October note already holds a short account of Operation Sindoor. Earlier daily notes were not edited.</p>
+<p class="note"><strong>[Correction]</strong> marks a substantive repair to the rough notes. <strong>[Additional]</strong> marks supporting facts added for exam value. <strong>[Verification Required]</strong> marks a point that could not be confirmed from a reliable source. <strong>Verification limit:</strong> the J&amp;K Mission Youth scheme page, the Himayat page, the Army Goodwill Schools page and an NSDC feature were opened as text. PIB and NITI Aayog pages returned an access error (HTTP 403). MHA reports, India Code, UN resolutions and Supreme Court judgments were <strong>not opened</strong>; history and operation facts rest on web-search summaries of news reports and reference works. Scheme amounts and eligibility change often and must be checked on the scheme portals. Security events are described neutrally, claims are attributed, and no community is treated as collectively responsible.</p>
+</header>
+
+<section id="overview">
+<h2>1. J&amp;K at a Glance: Three Challenges</h2>
+<p class="lead">J&amp;K's internal security challenge has an <strong>external</strong> dimension (cross-border terrorism), an <strong>internal</strong> dimension (militancy supported by local networks) and a <strong>criminal-economy</strong> dimension (organised crime). Each feeds the others.</p>
+<div class="table-wrap"><table id="three-challenges">
+<caption>The three challenges named in class (definitions added for revision)</caption>
+<thead><tr><th scope="col">Challenge</th><th scope="col">Meaning</th><th scope="col">Typical features in J&amp;K</th></tr></thead>
+<tbody>
+<tr><td><strong>1. Cross-border terrorism</strong></td><td>Violence planned, trained, financed or directed from outside the border and carried out inside India</td><td>Infiltration across the LoC and International Border; foreign terrorists; attacks on civilians, pilgrims, tourists and security forces. Pakistan's role is the position of the Government of India; Pakistan denies it <strong>[Additional]</strong></td></tr>
+<tr><td><strong>2. Militancy</strong></td><td>Armed violence by home-grown or locally recruited groups against the State; here linked to a demand for a separate or sovereign status</td><td>Local recruitment, targeted killings, encounters, stone pelting and mass-strike mobilisation in 2016-17; support by <strong>overground workers (OGWs)</strong></td></tr>
+<tr><td><strong>3. Organised crime</strong></td><td>Continuing criminal enterprise for profit, often with violence or corruption</td><td>Narcotics and arms trafficking, hawala and terror-financing channels; arms and drug drops by drone are reported along the border. Rough notes only name this item; detail is <strong>[Additional]</strong> and <strong>[Verification Required]</strong> for statistics</td></tr>
+</tbody></table></div>
+<p class="note"><strong>Overground worker (OGW):</strong> a person who covertly supports militancy through <strong>finance, logistics, shelter and information</strong> without carrying arms. This is the definition from the rough notes. Treat OGW as a security-agency term; support must be proved in law, and lawful dissent or protest is not an OGW offence.</p>
+<p class="exam"><strong>Exam point:</strong> keep <strong>terrorism</strong> (violence to create terror, often foreign-backed), <strong>insurgency / militancy</strong> (armed challenge to State authority, often with local support) and <strong>organised crime</strong> (profit-driven) separate, while showing how <strong>narco-terror and hawala</strong> link them.</p>
+</section>
+
+<section id="timeline">
+<h2>2. Timeline: 1947 to 2025</h2>
+<figure id="fig-jk-timeline">
+<h3>Figure 1. J&amp;K: from accession to Operation Mahadev</h3>
+<div class="flow">
+<span class="box"><strong>Oct 1947</strong><br/>Tribal invasion; Instrument of Accession (26 Oct)</span><span>&#8594;</span>
+<span class="box"><strong>1948-49</strong><br/>UN reference; UNCIP; ceasefire 1 Jan 1949; UNMOGIP</span><span>&#8594;</span>
+<span class="box"><strong>1987</strong><br/>State election; rigging claims</span><span>&#8594;</span>
+<span class="box"><strong>1989-90</strong><br/>Armed militancy; AFSPA (J&amp;K) 1990; Rashtriya Rifles</span><span>&#8594;</span>
+<span class="box"><strong>2016-17</strong><br/>Burhan Wani; OGW networks; Operation All Out</span><span>&#8594;</span>
+<span class="box"><strong>5 Aug 2019</strong><br/>Article 370 abrogated; UT reorganisation</span><span>&#8594;</span>
+<span class="box"><strong>2024</strong><br/>Reasi attack (9 Jun); Assembly election (Sep-Oct)</span><span>&#8594;</span>
+<span class="box"><strong>2025</strong><br/>Pahalgam (22 Apr); Op Sindoor (7 May); Keller, Nader, Mahadev</span>
+</div>
+<figcaption>Schematic timeline built from the rough notes with corrected dates. Sources: see Open Sources. Dates for 2024-25 rest on news reports.</figcaption>
+</figure>
+</section>
+
+<section id="accession">
+<h2>3. 1947-1949: Accession and Internationalisation</h2>
+<h3>3.1 Sequence</h3>
+<ol>
+<li><strong>Maharaja Hari Singh</strong> ruled the princely state and had three options on the lapse of British paramountcy: join India, join Pakistan or remain independent.</li>
+<li>A <strong>Standstill Agreement</strong> was offered to both dominions. <strong>Pakistan accepted it (15 Aug 1947); India did not sign</strong> and asked for further discussion.</li>
+<li>In <strong>October 1947</strong> tribal raiders, supported by Pakistan, entered the State (Indian account: planned and supported by Pakistan; the Pakistani position differs). The Maharaja sought Indian military help.</li>
+<li>The <strong>Instrument of Accession</strong> was signed on <strong>26 October 1947</strong>, accepted by the Governor-General on 27 October, and Indian troops were airlifted to Srinagar the same day.</li>
+<li>India took the matter to the UN Security Council (1 Jan 1948, under Article 35 of the Charter). The UN formed the <strong>UNCIP</strong>; a ceasefire took effect on <strong>1 Jan 1949</strong>, leaving the territory now called <strong>PoK</strong> and Gilgit-Baltistan under Pakistani control.</li>
+</ol>
+<div class="table-wrap"><table id="un-bodies">
+<caption>UN involvement (kept short for revision)</caption>
+<thead><tr><th scope="col">Item</th><th scope="col">What it was</th></tr></thead>
+<tbody>
+<tr><td><strong>UN, 1945</strong></td><td>UN Charter in force 24 Oct 1945; WW2 had just ended and the Cold War began to shape alignments. The Security Council first met in 1946 <strong>[Additional]</strong></td></tr>
+<tr><td><strong>UNCIP</strong></td><td>United Nations Commission for India and Pakistan, set up in 1948; its resolutions of 13 Aug 1948 and 5 Jan 1949 sought a ceasefire, a truce and a <strong>plebiscite</strong> after Pakistani withdrawal <strong>[Additional; Verification Required: exact resolution numbers]</strong></td></tr>
+<tr><td><strong>UNMOGIP</strong></td><td>United Nations Military Observer Group in India and Pakistan; monitors the Ceasefire Line after the Karachi Agreement (July 1949). India's position after the Simla Agreement (1972) is that it has no role <strong>[Additional]</strong></td></tr>
+</tbody></table></div>
+<p class="correction" id="c01"><strong>[Correction]</strong> (a) "Raja Hari Singh" &#8594; <strong>Maharaja</strong> Hari Singh. (b) The rough notes say the Standstill Agreement "was signed with Pakistan which made it sceptical that Kashmir might be planning to join India". The agreement was signed by <strong>Pakistan, not by India</strong>; the sceptical party was the Pakistani leadership, which reportedly saw the State drifting toward India. (c) The UN ceasefire did not itself "give" territory to Pakistan; the ceasefire froze the positions on the ground, so the area already held by Pakistan is described by India as <strong>Pakistan-occupied</strong>. (d) "Peace plibiscite" &#8594; <strong>plebiscite proposal</strong>; it was never held because the preconditions (withdrawal and demilitarisation) were not agreed.</p>
+<p class="exam"><strong>Exam point:</strong> the 1947 episode created the territorial dispute and the <strong>international legal frame</strong> that Pakistan later used to justify external support to militancy; India's position is that accession was complete and legal.</p>
+</section>
+
+<section id="militancy">
+<h2>4. 1987-1990: Election, Armed Militancy and the Security Response</h2>
+<ul>
+<li><strong>1987 State Assembly election:</strong> the <strong>National Conference-Congress</strong> alliance faced the <strong>Muslim United Front (MUF)</strong>. Many observers and opposition leaders claimed the election was <strong>rigged</strong> (claim is contested; no judicial finding is cited here). The perception of lost democratic space pushed some young activists towards armed groups.</li>
+<li>Armed groups: <strong>JKLF</strong> (pro-independence, armed phase from 1988) and <strong>Hizb-ul-Mujahideen</strong> (pro-Pakistan, notionally formed in <strong>1989</strong>). The <strong>All Parties Hurriyat Conference</strong> (a non-violent political alliance) was formed later, in <strong>1993</strong>.</li>
+<li><strong>Operation Tupac</strong> (also spelt Topac): in the Indian security narrative, a Pakistani plan from about 1988 to foment an insurgency in J&amp;K by a "bleed India" approach. Treat as an <strong>attributed claim</strong> <strong>[Verification Required]</strong>.</li>
+<li><strong>1990:</strong> targeted violence, the exodus of Kashmiri Pandits (from Jan 1990) and the collapse of civil order. The <strong>Armed Forces (Jammu and Kashmir) Special Powers Act, 1990</strong> was enacted and areas were declared <strong>disturbed</strong>. The Army raised the <strong>Rashtriya Rifles</strong>, a dedicated counter-insurgency force under the Army (c. 1990).</li>
+</ul>
+<p class="correction" id="c02"><strong>[Correction]</strong> (a) "Hizbul and JKLF formed in 1984 from MUF members" &#8594; <strong>JKLF dates from 1977 and turned to arms in 1988; Hizbul dates from 1989</strong>. Some leaders had been linked to the MUF campaign of 1987, but the groups were not formed "from" the MUF. (b) "Hurriyat" was <strong>not</strong> a 1980s body; it was formed in <strong>1993</strong>. (c) "selective violence" &#8594; <strong>targeted killings and intimidation</strong>. (d) The Pandit exodus is added because it is a core part of the 1990 security and rehabilitation story <strong>[Additional]</strong>.</p>
+<p class="additional"><strong>[Additional] AFSPA in J&amp;K:</strong> a separate 1990 Act applies to J&amp;K; the 21 October note covers the Sections 3-6 structure of AFSPA and the Supreme Court judgments. Its current operation in the UT after the 2019 reorganisation is <strong>[Verification Required]</strong>.</p>
+</section>
+
+<section id="recent">
+<h2>5. 2016-2019: Open Support, OGWs and Operation All Out</h2>
+<ul>
+<li><strong>2016:</strong> the killing of Hizb commander <strong>Burhan Wani</strong> (8 July 2016) was followed by a very large funeral gathering, the first time open public support for a militant was shown on that scale. Stone pelting and mass strikes became frequent, with <strong>OGW networks</strong> supporting both street mobilisation and logistics.</li>
+<li><strong>2017: Operation All Out</strong> - an intelligence-led, coordinated drive by the Army, J&amp;K Police, CRPF and others to target militant commanders and their support networks. It was paired with action against terror financing (NIA) <strong>[Additional]</strong>.</li>
+<li><strong>5 Aug 2019:</strong> special provisions of <strong>Article 370</strong> were rendered inoperative; the <strong>Jammu and Kashmir Reorganisation Act, 2019</strong> created the Union Territories of <strong>J&amp;K (with a legislature)</strong> and <strong>Ladakh</strong> (from 31 Oct 2019). The Supreme Court upheld the abrogation in <em>In re: Article 370</em> (11 Dec 2023) and directed restoration of statehood "at the earliest" <strong>[Additional; Verification Required]</strong>.</li>
+</ul>
+<p class="correction" id="c03"><strong>[Correction]</strong> The rough notes say "militants, their commanders and over ground workers were eliminated". That overstates the outcome: Operation All Out sharply <strong>reduced</strong> the leadership of local groups and their networks, but militancy and attacks continued (see 2024-25). Also, the 2016 funeral is a claim about <strong>numbers</strong> ("lakhs") that depends on press estimates <strong>[Verification Required]</strong>.</p>
+</section>
+
+<section id="attacks">
+<h2>6. 2024-2025: Reasi, Pahalgam and the Response</h2>
+<div class="table-wrap"><table id="recent-events">
+<caption>Recent events (news-report based; attributions noted)</caption>
+<thead><tr><th scope="col">Date</th><th scope="col">Event</th><th scope="col">Key facts</th></tr></thead>
+<tbody>
+<tr><td><strong>9 Jun 2024</strong></td><td><strong>Reasi attack</strong></td><td>A bus carrying pilgrims to the Shiv Khori shrine was attacked; <strong>nine</strong> reported killed <strong>[Verification Required: toll]</strong></td></tr>
+<tr><td><strong>Sep-Oct 2024</strong></td><td>First Assembly election in the UT</td><td>Three phases (18 Sep, 25 Sep, 1 Oct); results 8 Oct. The rough note "J&amp;K growth economically" could not be matched to one fact; it may refer to elections and economic indicators <strong>[Verification Required]</strong></td></tr>
+<tr><td><strong>22 Apr 2025</strong></td><td><strong>Pahalgam attack</strong> (Baisaran meadow)</td><td><strong>26 civilians</strong> were killed, most of them tourists; reports said victims were singled out on the basis of religion. Deadliest civilian attack in India since 2008 (news reports)</td></tr>
+<tr><td><strong>7 May 2025</strong></td><td><strong>Operation Sindoor</strong></td><td>Indian strikes on terrorist infrastructure in Pakistan and PoK (see the 17 October note); a halt in hostilities followed on 10 May <strong>[Additional; Verification Required]</strong></td></tr>
+<tr><td><strong>13 and 15 May 2025</strong></td><td><strong>Operation Keller</strong> (Shopian) and <strong>Operation Nader</strong> (Tral)</td><td>Counter-terrorism encounters in south Kashmir; reportedly <strong>three terrorists were killed in each</strong>, including an LeT commander in Shopian</td></tr>
+<tr><td><strong>28 Jul 2025</strong></td><td><strong>Operation Mahadev</strong> (Dachigam-Lidwas, near Srinagar)</td><td>Three terrorists killed; the Home Minister told Parliament they were the Pahalgam attackers (official statement as reported; identification attributed to forensic and ballistic matching)</td></tr>
+</tbody></table></div>
+<figure id="fig-cause-impact">
+<h3>Figure 2. Cause - impact - response for J&amp;K security</h3>
+<div class="cols3">
+<div class="tile p3"><strong>Drivers</strong><ul><li>Disputed accession; geography; hostile neighbour</li><li>Alienation, unemployment, corruption</li><li>Trust deficit with security forces</li></ul></div>
+<div class="tile p2"><strong>Impacts</strong><ul><li>Infiltration, militancy, OGW networks</li><li>Attacks on civilians, pilgrims, tourists</li><li>Disrupted tourism, education and investment</li></ul></div>
+<div class="tile p1"><strong>Responses</strong><ul><li>Intelligence-led operations (All Out, Mahadev)</li><li>Legal and financial action (UAPA, NIA)</li><li>Youth, skilling and Army-civil programmes (Section 9)</li></ul></div>
+</div>
+<figcaption>Schematic. Sources: class notes; analysis. Not based on data series.</figcaption>
+</figure>
+<p class="correction" id="c04"><strong>[Correction]</strong> "tourists attacked on the basis of religion" is retained as a <strong>reported</strong> finding from survivor accounts and investigation statements, not as an official judicial finding. The three post-Pahalgam operations are different in kind: <strong>Sindoor</strong> was a cross-border strike; <strong>Keller, Nader and Mahadev</strong> were counter-terrorism operations <strong>inside India</strong>.</p>
+</section>
+
+<section id="reasons">
+<h2>7. Reasons for the Challenges</h2>
+<ol>
+<li><strong>Geography:</strong> a mountain-and-valley terrain with long, difficult borders that favours infiltration and gives the region a potential to exist as a distinct unit. The rough note says this would let it "exist as an independent region"; this is an analytical argument, not a fact.</li>
+<li><strong>Hostile neighbour:</strong> Pakistan's support to terrorist groups is the Indian position; it is relevant to the territorial claim and the use of non-state actors.</li>
+<li><strong>Governance:</strong> corruption and weak local administration reduced trust in institutions.</li>
+<li><strong>Youth hopelessness:</strong> uncertain jobs and a perceived lack of future increased vulnerability to recruitment and drugs. About <strong>69%</strong> of the UT's population is below 35 (Mission Youth page; reference year not stated).</li>
+<li><strong>Trust deficit:</strong> AFSPA and security operations have caused friction between civilians and security personnel; allegations of excesses must be addressed through accountable inquiry.</li>
+</ol>
+</section>
+
+<section id="solutions">
+<h2>8. Solutions and Way Forward <span class="small">(left blank in the rough notes; filled below)</span></h2>
+<div class="table-wrap"><table id="solutions-table">
+<caption>Way forward for J&amp;K [Additional]</caption>
+<thead><tr><th scope="col">Lever</th><th scope="col">Measures</th></tr></thead>
+<tbody>
+<tr><td><strong>Security</strong></td><td>Intelligence-led operations, anti-infiltration grid and border technology, drone detection, protecting pilgrims and tourist routes, community policing</td></tr>
+<tr><td><strong>Legal and financial</strong></td><td>UAPA prosecution through the NIA; attack on hawala, narco-terror and terror-financing networks; extradition and international cooperation (FATF, UN listings)</td></tr>
+<tr><td><strong>Political</strong></td><td>Elected government and institutions functioning; the statehood question handled through a Supreme Court-monitored, transparent process <strong>[Verification Required: current status]</strong></td></tr>
+<tr><td><strong>Development and youth</strong></td><td>Jobs, entrepreneurship, skilling and education access - the schemes in Section 9</td></tr>
+<tr><td><strong>Community trust</strong></td><td>Army-civil outreach, accountable inquiry into allegations of excesses, rehabilitation and safe return of displaced Kashmiri Pandits, counter-radicalisation and de-addiction</td></tr>
+</tbody></table></div>
+</section>
+
+<section id="initiatives">
+<h2>9. Initiatives for J&amp;K: Details</h2>
+<p class="lead">The initiatives fall into <strong>three groups by implementer</strong>: (A) <strong>Army</strong> trust-building (Pehel, Sadbhavana); (B) <strong>J&amp;K UT Government's Mission Youth</strong> (Mumkin, Tejaswini, SAHYTA, Rise Together, Parvaaz); (C) <strong>Union Government</strong> skill and empowerment schemes (Himayat, Udaan, Nai Roshni).</p>
+<figure id="fig-initiatives">
+<h3>Figure 3. Who runs what: initiatives by implementer</h3>
+<div class="cols3">
+<div class="tile p1"><strong>A. Indian Army</strong><ul><li>Mission Pehel</li><li>Operation Sadbhavana (Army Goodwill Schools)</li></ul>Aim: trust, "winning hearts and minds"</div>
+<div class="tile p2"><strong>B. J&amp;K UT: Mission Youth</strong><ul><li>Mumkin, Tejaswini, SAHYTA</li><li>Rise Together, Parvaaz</li></ul>Aim: livelihood, enterprise, coaching</div>
+<div class="tile p3"><strong>C. Union Government</strong><ul><li>Himayat (MoRD)</li><li>Udaan (MHA, NSDC)</li><li>Nai Roshni (Minority Affairs, national)</li></ul>Aim: skilling, placement, empowerment</div>
+</div>
+<figcaption>Schematic grouping built from the scheme pages cited in Open Sources.</figcaption>
+</figure>
+
+<h3>9.1 Group A: Indian Army</h3>
+<div class="table-wrap"><table id="army-initiatives">
+<caption>Army initiatives</caption>
+<thead><tr><th scope="col">Initiative</th><th scope="col">Details</th></tr></thead>
+<tbody>
+<tr><td><strong>Mission Pehel</strong> ("One step towards peace")</td><td>An Army youth-engagement initiative. A reported session at <strong>Pulwama on 21 Feb 2021</strong> was organised by the Army's <strong>Victor Force</strong> with a civil-society partner (Elixir Foundation); 150+ young people interacted directly with the General Officer Commanding on peace and local concerns. Aim: reduce the gap between people and Army, address grievances, support peace and prosperity. It is a <strong>trust-building outreach</strong> in the "winning hearts and minds" approach. <strong>[Verification Required]</strong> whether it is a standing, Army-wide programme or a local series; only the 2021 event was verified.</td></tr>
+<tr><td><strong>Operation Sadbhavana</strong></td><td>Army <strong>military-civic action</strong> programme in J&amp;K and Ladakh since the late 1990s (about 1998; <strong>[Verification Required]</strong> year). Key focus: <strong>access to education</strong>. Northern Command has established <strong>43 Army Goodwill Schools</strong> (28 Kashmir, 8 Jammu, 7 Ladakh) with about <strong>17,000 students (43% girls)</strong> and about 1,000 staff (Army Goodwill Schools site; current as of the page). Also reported: renovation support to government schools, scholarships and coaching, and projects for nomadic communities <strong>[Verification Required: figures from news summaries]</strong>. A review aligned it to NEP 2020 and a whole-of-society approach.</td></tr>
+</tbody></table></div>
+<p class="exam"><strong>Exam point:</strong> Sadbhavana shows <strong>civil-military cooperation</strong> in counter-insurgency. Its limit: an armed force running schools can create dependency and blur civil roles; sustainable change needs the civil administration to take over.</p>
+
+<h3>9.2 Group B: Mission Youth (J&amp;K UT Government)</h3>
+<p>Mission Youth is the UT government's umbrella for youth engagement, set up to place youth empowerment at the centre of policy, since about <strong>69%</strong> of the population is below 35 (Mission Youth page). Scheme details below follow that page; amounts and eligibility may have been revised <strong>[Verification Required]</strong>.</p>
+<div class="table-wrap"><table id="mission-youth">
+<caption>Mission Youth schemes named in class</caption>
+<thead><tr><th scope="col">Scheme</th><th scope="col">Target group</th><th scope="col">Key features</th></tr></thead>
+<tbody>
+<tr><td><strong>Mumkin</strong> (livelihood generation)</td><td>Unemployed youth</td><td>Subsidised purchase of <strong>small commercial vehicles</strong> for a transport livelihood. Mission Youth contributes <strong>Rs 0.80 lakh or 10% of on-road price</strong> (whichever is lower); the manufacturer contributes an equal amount. Digital module on the JK-e Services portal; partner manufacturers.</td></tr>
+<tr><td><strong>Tejaswini</strong> (spelt "Tejaswani" on the page)</td><td>Young women, 18-35 years, Class 10 or above</td><td>Announced by the Lieutenant Governor on <strong>International Women's Day</strong>; financial assistance of <strong>up to Rs 5 lakh</strong> for gainful self-employment ventures matching skills and local conditions.</td></tr>
+<tr><td><strong>SAHYTA</strong></td><td>"Youth in distress", 18-40 years</td><td>Persons who lost a family member in <strong>insurgency-related action, cross-border shelling or a mine blast</strong>, or whose family member was permanently incapacitated. Assistance of <strong>Rs 2 lakh</strong> to set up self-employment.</td></tr>
+<tr><td><strong>Rise Together</strong></td><td>Youth groups</td><td>Community-oriented entrepreneurship. Up to <strong>Rs 20 lakh</strong> per group: upfront subsidy (at least Rs 2.5 lakh or 10% of project cost) plus a <strong>bank loan of 70% (up to Rs 17.5 lakh)</strong>; group margin money at least 20%. Reported group size of 3 or more members aged 18-35 is from a secondary source <strong>[Verification Required]</strong>.</td></tr>
+<tr><td><strong>Parvaaz</strong></td><td>Aspirants for UPSC, JKPSC and similar exams</td><td>Sponsored <strong>free coaching</strong>; family income not above <strong>Rs 8 lakh</strong> a year; <strong>30%</strong> of seats reserved for girls; selection by the Parvaaz Qualifying Test.</td></tr>
+</tbody></table></div>
+<p class="note"><strong>Other Mission Youth items on the page (not asked in class):</strong> Spurring Entrepreneurship Initiative, Young Innovators Program, a dental-professionals scheme, Endeavour to Empower (market-driven skilling), Super 75 scholarships, Youth Clubs and Youth Centres (for de-addiction and de-radicalisation programmes). <strong>[Additional]</strong></p>
+
+<h3>9.3 Group C: Union Government schemes</h3>
+<div class="table-wrap"><table id="union-schemes">
+<caption>Skilling and empowerment schemes</caption>
+<thead><tr><th scope="col">Scheme</th><th scope="col">Origin and agency</th><th scope="col">Key features</th></tr></thead>
+<tbody>
+<tr><td><strong>Himayat</strong> ("support" in Urdu)</td><td>From the <strong>Rangarajan Committee</strong> report to the Prime Minister (24 Feb 2011); under <strong>DDU-GKY</strong> of the Ministry of Rural Development; implemented in J&amp;K by the Himayat Mission Management Unit, <strong>JKSRLM</strong></td><td><strong>Placement-linked skill training</strong> for unemployed youth (aimed at school and college dropouts); free training of <strong>3 to 12 months</strong>; placement assurance for <strong>at least 70%</strong>; one-year post-placement tracking; <strong>100% centrally funded</strong>; covers rural and urban youth irrespective of poverty; target of about <strong>1.49 lakh</strong> youth, including <strong>40,000 women</strong> and <strong>1,000</strong> for jobs abroad; delivered through empanelled Project Implementing Agencies; NIRD&amp;PR as the technical agency.</td></tr>
+<tr><td><strong>Udaan</strong> (Special Industry Initiative)</td><td>Launched <strong>2011</strong> with the <strong>Ministry of Home Affairs</strong>, MSDE, <strong>NSDC</strong>, the State government and corporates; also from the Rangarajan Committee recommendation (secondary source)</td><td>Aim: skill and place about <strong>40,000</strong> J&amp;K youth (graduates, postgraduates and diploma holders). Corporates select candidates, give <strong>3-6 months</strong> placement-oriented training at their locations across India; NSDC bears <strong>travel, boarding and lodging, stipend and insurance</strong>; corporates get a placement incentive. An NSDC feature reported <strong>8,714</strong> candidates offered jobs (reference date not stated <strong>[Verification Required]</strong>). Also seen as national integration through corporate exposure.</td></tr>
+<tr><td><strong>Nai Roshni</strong></td><td><strong>Ministry of Minority Affairs</strong>, 2012-13</td><td>Scheme for <strong>leadership development of minority women</strong> (age 18-65): training in leadership, rights, health, legal and financial literacy, run through NGOs, with follow-up handholding. <strong>It is a national scheme, not a J&amp;K-specific one.</strong> <strong>[Verification Required]</strong>: source is a search summary of PIB; the PIB page could not be opened.</td></tr>
+</tbody></table></div>
+<p class="correction" id="c05"><strong>[Correction]</strong> (a) "Nai roshini" &#8594; <strong>Nai Roshni</strong>; it is a Ministry of Minority Affairs scheme for the whole country, so it should not be listed as a J&amp;K-only measure. (b) "Udaan - placement" &#8594; Udaan is a <strong>skilling-plus-placement</strong> scheme run with corporates; Himayat is the <strong>rural-development</strong> counterpart. (c) "mission pehel" is an <strong>Army</strong> outreach, not a Mission Youth scheme (one web summary mixes the two). (d) Spellings: Tejaswini, SAHYTA, Parvaaz, Mumkin, Himayat, Operation Sadbhavana.</p>
+<p class="exam"><strong>Exam point:</strong> skilling schemes address the <strong>hopelessness</strong> driver, Army-civil programmes address the <strong>trust deficit</strong>, and SAHYTA targets <strong>victim families</strong> of violence. None replaces policing, justice and political engagement. Weak points: scheme overlap, placement-quality tracking, women's participation and outcomes data.</p>
+</section>
+
+<section id="prelims">
+<h2>Key Facts for Prelims</h2>
+<ul>
+<li>Instrument of Accession: <strong>26 Oct 1947</strong> (Maharaja Hari Singh); Standstill Agreement was signed by <strong>Pakistan, not India</strong>.</li>
+<li>Ceasefire <strong>1 Jan 1949</strong>; <strong>UNCIP</strong> (1948); <strong>UNMOGIP</strong> (Karachi Agreement, 1949).</li>
+<li>Hizbul: <strong>1989</strong>; JKLF armed phase: <strong>1988</strong>; Hurriyat: <strong>1993</strong>; AFSPA (J&amp;K) Act: <strong>1990</strong>; Rashtriya Rifles: <strong>c. 1990</strong>.</li>
+<li>Burhan Wani killed <strong>8 Jul 2016</strong>; Operation All Out <strong>2017</strong>; Article 370 abrogation <strong>5 Aug 2019</strong>; UTs from <strong>31 Oct 2019</strong>.</li>
+<li>Reasi <strong>9 Jun 2024</strong>; Pahalgam <strong>22 Apr 2025</strong>; Sindoor <strong>7 May 2025</strong>; Keller <strong>13 May</strong>; Nader <strong>15 May</strong>; Mahadev <strong>28 Jul 2025</strong>.</li>
+<li>Himayat: <strong>2011</strong>, MoRD, DDU-GKY, <strong>70%</strong> placement; Udaan: <strong>2011</strong>, MHA-NSDC, <strong>40,000</strong> youth; Nai Roshni: Minority Affairs (<strong>national</strong>).</li>
+<li>Army Goodwill Schools: <strong>43</strong> schools under Operation Sadbhavana (28 Kashmir, 8 Jammu, 7 Ladakh).</li>
+</ul>
+</section>
+
+<section id="mains">
+<h2>Mains Points</h2>
+<ul>
+<li><strong>Layered problem:</strong> J&amp;K combines an external territorial dispute, home-grown grievance and a criminal economy; a single instrument (force, development or politics) cannot solve it.</li>
+<li><strong>Counter-terror success versus political resolution:</strong> operations (All Out, Mahadev) reduce capability but do not remove drivers; the 2024-25 attacks on pilgrims and tourists show how terrorists target <strong>symbolic soft targets</strong> to damage normalcy and communal harmony.</li>
+<li><strong>Hearts and minds:</strong> Army-civil programmes and Mission Youth build contact and livelihoods, but depend on <strong>accountability</strong> (inquiry into excesses, calibrated use of AFSPA) and a civilian-led administration.</li>
+<li><strong>Youth focus:</strong> with about 69% of the population under 35, jobs, coaching and enterprise support (Mumkin, Parvaaz, Rise Together, Himayat, Udaan) address the recruitment pool; evaluate by <strong>outcomes</strong> (retention, wages) and not by scheme count.</li>
+<li><strong>Balanced way forward:</strong> (1) intelligence-led, rights-respecting counter-terror; (2) strict action on narco-terror and hawala; (3) credible, inclusive politics and a clear statehood roadmap; (4) quality jobs in tourism, horticulture, handicrafts and IT; (5) safe return and rehabilitation of displaced Pandits; (6) counter-radicalisation, de-addiction and online-content monitoring; (7) diplomatic pressure on state sponsorship through FATF and the UN.</li>
+</ul>
+</section>
+
+<section id="traps">
+<h2>Common Traps / Confusions</h2>
+<ul>
+<li><strong>Standstill Agreement:</strong> Pakistan signed; India did not.</li>
+<li><strong>Accession is not a plebiscite.</strong> The plebiscite was a UN-supported proposal, never held.</li>
+<li><strong>Hurriyat (1993)</strong> was not part of the 1987 events; Hizbul and JKLF differ (pro-Pakistan versus pro-independence).</li>
+<li><strong>Cross-border terrorism</strong> (external direction) is not the same as <strong>militancy</strong> (local armed groups); they overlap.</li>
+<li><strong>Sindoor</strong> was a cross-border strike; <strong>Keller, Nader, Mahadev</strong> were operations inside J&amp;K.</li>
+<li><strong>Mission Pehel</strong> (Army) is not Mission Youth; <strong>Nai Roshni</strong> is national, not J&amp;K-only.</li>
+<li><strong>Himayat</strong> (MoRD, rural livelihood) versus <strong>Udaan</strong> (MHA with NSDC and corporates).</li>
+<li>OGW support must be shown in law; protest is not terrorism.</li>
+</ul>
+</section>
+
+<section id="revision">
+<h2>30-Second Revision</h2>
+<p class="lead"><strong>J&amp;K:</strong> three challenges - cross-border terrorism, militancy, organised crime. 1947 Maharaja Hari Singh &#8594; Pakistan signed Standstill, India did not &#8594; tribal invasion &#8594; Instrument of Accession 26 Oct 1947 &#8594; UN reference, UNCIP, ceasefire 1 Jan 1949, UNMOGIP (PoK). 1987 election (rigging claims) &#8594; JKLF 1988, Hizbul 1989 &#8594; Operation Tupac (alleged Pakistani plan) &#8594; 1990 AFSPA (J&amp;K) Act, Rashtriya Rifles, Pandit exodus. 2016 Burhan Wani funeral, OGWs, stone pelting &#8594; 2017 Operation All Out &#8594; 5 Aug 2019 Article 370 abrogated, two UTs. 2024 Reasi, elections &#8594; 2025 Pahalgam (26 killed), Sindoor, Keller, Nader, Mahadev. <strong>Causes:</strong> geography, neighbour, corruption, youth hopelessness, trust deficit. <strong>Initiatives:</strong> Army - Pehel, Sadbhavana (43 schools); Mission Youth - Mumkin, Tejaswini, SAHYTA, Rise Together, Parvaaz; Union - Himayat (MoRD, 2011), Udaan (MHA-NSDC, 2011), Nai Roshni (Minority Affairs, national).</p>
+</section>
+
+<section id="pyqs">
+<h2>Previous Year Questions (PYQs)</h2>
+<p class="small">The official UPSC papers were not opened. Wording is a <strong>paraphrase</strong> from a secondary compilation. <strong>[Verification Required]</strong> check exact wording, years, marks and word limits on the UPSC archive.</p>
+
+<h3>Q1. Mains 2024, GS Paper III (year as listed by the compilation)</h3>
+<p>Paraphrase: winning the "hearts and minds" of people in terrorism-affected areas is essential to restoring trust; discuss the measures taken by the Government in this respect as part of conflict resolution in Jammu and Kashmir.</p>
+<p class="answer"><strong>Suggested answer approach [Additional]:</strong> link Army outreach (Sadbhavana, Pehel), youth and livelihood schemes (Mission Youth, Himayat, Udaan), political and electoral steps (2019, 2024), then limits (accountability, jobs quality, AFSPA). Study guidance, not an official marking scheme.</p>
+
+<h3>Q2. Mains 2020, GS Paper III (year as listed by the compilation)</h3>
+<p>Paraphrase: the banning of Jamaat-e-Islami in J&amp;K brought into focus the role of overground workers in assisting terrorist organisations; examine the role of OGWs in insurgency-affected areas and discuss measures to neutralise their influence.</p>
+<p class="answer"><strong>Suggested answer approach [Additional]:</strong> define OGWs (Section 1), explain logistics, funding and mobilisation roles (Section 5), then measures: UAPA and NIA action, financial tracing, intelligence, community engagement and safeguards against misuse.</p>
+<p class="small">Source: <a href="https://vajiramandravi.com/upsc-exam/upsc-mains-internal-security-pyqs/">Vajiram and Ravi - UPSC Mains Internal Security PYQs (secondary compilation)</a>. A third question on cross-border terrorism or J&amp;K security could not be verified and is not included.</p>
+</section>
+
+<section id="corrections">
+<h2>Corrections Made</h2>
+<ol>
+<li><a href="#c01">C1: "Raja" &#8594; Maharaja; Standstill Agreement signed by Pakistan, not India; ceasefire froze positions; plebiscite never held.</a></li>
+<li><a href="#c02">C2: Hizbul 1989 (not 1984); JKLF 1977, armed from 1988; Hurriyat 1993; "selective violence" reworded; Pandit exodus added.</a></li>
+<li><a href="#c03">C3: Operation All Out reduced, not eliminated, militancy and OGW networks; funeral numbers need verification.</a></li>
+<li><a href="#c04">C4: Religion-based targeting at Pahalgam is a reported finding; Sindoor versus Keller, Nader, Mahadev distinguished.</a></li>
+<li><a href="#c05">C5: Nai Roshni is a national scheme; Mission Pehel is an Army outreach; Udaan versus Himayat clarified; scheme spellings fixed.</a></li>
+<li>C6: "Sept 2024: J&amp;K growth economically" could not be matched to one verified fact; the Sep-Oct 2024 election is given instead and the original is kept as <strong>[Verification Required]</strong>.</li>
+<li>C7: "Operation Tupac" kept as an attributed claim, not a verified fact.</li>
+</ol>
+<p class="additional"><strong>[Additional]</strong> items include the UN and UNCIP detail, the Pandit exodus, Article 370 judgment note, the Sections 1, 7 and 8 explanations, Reasi and the 2024 election, the details of Keller, Nader and Mahadev, the Mission Youth items not asked in class, and the Himayat and Udaan origins in the Rangarajan Committee report.</p>
+</section>
+
+<section id="sources">
+<h2>Open Sources / Further Reading</h2>
+<p class="small">Retrieval date: 22 October 2026. Items marked (opened) were read as text; items marked (search summary) were not opened and should be verified against official records.</p>
+<ul>
+<li><a href="https://missionyouth.jk.gov.in/Schemes">J&amp;K Mission Youth - Schemes (official UT page, opened; Mumkin, Tejaswini, SAHYTA, Rise Together, Parvaaz)</a></li>
+<li><a href="https://himayat.jk.gov.in/AboutUs.html">Himayat Mission, J&amp;K - About Us (official, opened)</a></li>
+<li><a href="https://www.armygoodwillschool.in/overview.aspx">Army Goodwill Schools - Overview (Indian Army, opened; Operation Sadbhavana)</a></li>
+<li><a href="https://nationalskillsnetwork.in/nsdc-udaan/">NSDC Udaan - Skill Story (NSDC feature, opened)</a></li>
+<li><a href="https://www.5dariyanews.com/news/313650-Mission-Pehel-Youth-Interacion-Programe-held-by-Victor-force-via-Elixir-Foundation">5 Dariya News - "Mission Pehel" youth interaction by Victor Force, Pulwama (21 Feb 2021, news, opened)</a></li>
+<li><a href="https://risingkashmir.com/top-stories/lg-hails-jk-polices-youth-initiatives-12680361">Rising Kashmir - LG hails J&amp;K Police's youth initiatives (15 Oct 2026, news, opened)</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Hizbul_Mujahideen">Wikipedia - Hizbul Mujahideen (secondary, opened; 1989 formation)</a></li>
+<li><a href="https://vajiramandravi.com/upsc-exam/upsc-mains-internal-security-pyqs/">Vajiram and Ravi - UPSC Mains Internal Security PYQs (secondary, opened)</a></li>
+<li><a href="https://en.wikipedia.org/wiki/2025_Pahalgam_attack">Wikipedia - 2025 Pahalgam attack (secondary, search summary)</a></li>
+<li><a href="https://www.cnbctv18.com/india/operation-mahadev-pahalgam-terror-attack-mastermind-two-lashkar-terrorists-identities-confirmed-killed-near-srinagar-19645091.htm">CNBC-TV18 - All three Pahalgam attack terrorists killed in Operation Mahadev (news, search summary)</a></li>
+<li><a href="https://www.business-standard.com/external-affairs-defence-security/news/indian-army-jammu-and-kashmir-encounter-pahalgam-attack-125051600662_1.html">Business Standard - Six terrorists killed in two operations in Kashmir (May 2025, news, search summary)</a></li>
+<li><a href="https://www.firstpost.com/explainers/operation-keller-indian-army-lashkar-terrorists-shopian-after-sindoor-13888162.html">Firstpost - What is Operation Keller (explainer, search summary)</a></li>
+<li><a href="https://pib.gov.in/PressReleaseIframePage.aspx?PRID=1807700">PIB - Nai Roshni scheme for leadership development of minority women (official; page could not be opened, HTTP 403)</a></li>
+<li><a href="https://www.niti.gov.in/sites/default/files/2023-03/Review%20of%20Udaan%20Scheme%20in%20Jammu%20%26%20Kashmir.pdf">NITI Aayog - Review of Udaan Scheme in J&amp;K (official; could not be opened, HTTP 403)</a></li>
+</ul>
+</section>
+</main>
+</body>
+</html>

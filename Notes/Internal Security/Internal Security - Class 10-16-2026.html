@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Internal Security - Class Notes | 16 October 2026</title>
+<style>
+  * { box-sizing: border-box; }
+  body { font-family: Calibri, sans-serif; font-size: 11pt; line-height: 1.6; max-width: 900px; margin: 20px auto; padding: 0 20px; color: #202124; }
+  h1 { font-size: 20pt; color: #1a1a1a; border-bottom: 2px solid #333; padding-bottom: 4px; margin-top: 30px; }
+  h2 { font-size: 16pt; color: #2b2b2b; margin-top: 28px; border-bottom: 1px solid #ddd; padding-bottom: 3px; }
+  h3 { font-size: 13pt; color: #3a3a3a; margin-top: 18px; }
+  h4 { font-size: 11.5pt; color: #3a3a3a; margin: 14px 0 4px; }
+  p { margin: 8px 0; }
+  ul, ol { margin: 6px 0; padding-left: 28px; }
+  li { margin: 4px 0; }
+  a { color: #005ea6; overflow-wrap: anywhere; }
+  table { border-collapse: collapse; width: 100%; margin: 10px 0; }
+  caption { text-align: left; font-weight: bold; margin-bottom: 6px; }
+  th, td { border: 1px solid #999; padding: 6px 10px; text-align: left; vertical-align: top; overflow-wrap: break-word; }
+  th { background: #f0f0f0; }
+  .table-wrap { overflow-x: auto; }
+  .note, .exam, .verification { background: #fff8e1; border-left: 3px solid #f5a623; padding: 8px 12px; margin: 10px 0; }
+  .correction { background: #fff3e0; border-left: 3px solid #ef6c00; padding: 8px 12px; margin: 10px 0; }
+  .additional, .lead { background: #e8f5e9; border-left: 3px solid #2e7d32; padding: 8px 12px; margin: 10px 0; }
+  .formula { background: #f5f9fd; border-left: 3px solid #0078d4; padding: 10px 14px; margin: 12px 0; overflow-wrap: anywhere; }
+  .flow { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 10px; padding: 12px 0; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; }
+  .flow span { text-align: center; max-width: 100%; }
+  figure { margin: 16px 0; padding: 12px; border: 1px solid #bbb; background: #fff; }
+  figure h3 { margin-top: 0; text-align: center; }
+  figcaption { margin-top: 8px; color: #555; font-size: 9.5pt; }
+  .svg-wrap { overflow-x: auto; }
+  .svg-wrap svg { display: block; width: 100%; max-width: 700px; min-width: 520px; height: auto; margin: 0 auto; }
+  .small { color: #555; font-size: 9.5pt; }
+  .options { list-style-type: lower-alpha; }
+  .answer { margin: 10px 0; padding: 6px 12px; border-left: 3px solid #0078d4; background: #f5f9fd; }
+  @media (max-width: 650px) {
+    body { padding: 0 12px; }
+    .table-wrap table { min-width: 540px; }
+  }
+  @media print {
+    @page { size: A4; margin: 14mm; }
+    body { max-width: none; margin: 0; padding: 0; }
+    h1, h2, h3, h4 { break-after: avoid; }
+    figure, tr, .formula, .answer { break-inside: avoid; }
+    thead { display: table-header-group; }
+    .table-wrap, .svg-wrap { overflow: visible; }
+    .table-wrap table, .svg-wrap svg { min-width: 0; }
+    a { color: inherit; text-decoration: none; }
+    p, li { orphans: 3; widows: 3; }
+  }
+</style>
+</head>
+<body>
+<main>
+<header>
+<h1>Internal Security - Class Notes | 16 October 2026</h1>
+<p><strong>Topics:</strong> Syllabus overview (six units); meaning and dimensions of internal security; link between law and order and internal security; Left Wing Extremism (LWE) / Naxalism / Maoism - origin, organisations, and the first causes (failed land reforms, skewed development model, regional imbalance and displacement).</p>
+<p class="small">Notes for the class of <time datetime="2026-10-16">16 October 2026</time>, prepared and fact-checked on 20 October 2026. This is the <strong>first</strong> Internal Security class note (no earlier numbered sequence to continue). The rough notes stop at the causes of LWE; Sections 5-8 (status, response, gaps, way forward) are <strong>[Additional]</strong> context needed to complete the topic for the exam.</p>
+<p class="note"><strong>[Correction]</strong> marks a substantive repair to the rough notes. <strong>[Additional]</strong> marks supporting explanation, data or examples added for understanding and exam value. <strong>[Verification Required]</strong> marks a point that could not be confirmed from an official source during preparation (the PIB and MHA websites returned access errors, so several current figures rest on secondary reports of official statements).</p>
+</header>
+
+<section id="syllabus">
+<h2>1. Syllabus Map (Six Units)</h2>
+<ol>
+<li>Linkage between development and spread of extremism</li>
+<li>Challenges to internal security through external state and non-state actors</li>
+<li>Challenges due to communication channels and media (including social media)</li>
+<li>Basics of cyber security</li>
+<li>Border management; linkage between terrorism and organised crime</li>
+<li>Security forces; intelligence agencies; investigation agencies</li>
+</ol>
+<p class="correction" id="c01"><strong>[Correction]</strong> "Challanges" is spelt "challenges" throughout. The syllabus phrase is "Linkages between <em>development and the spread of extremism</em>", which is the frame for today's LWE topic (Section 4).</p>
+</section>
+
+<section id="meaning">
+<h2>2. Internal Security: Meaning and Scope</h2>
+<p class="lead"><strong>Internal security</strong> is the security of a nation <strong>within its borders</strong>: maintaining peace, law and order and the integrity of the State against threats that arise from inside the country (insurgency, terrorism, extremism, organised crime, communal violence, cyber threats), including those supported from outside.</p>
+
+<div class="table-wrap"><table id="dimensions">
+<caption>Dimensions of internal security (from the notes, tidied)</caption>
+<thead><tr><th scope="col">Dimension</th><th scope="col">What it means</th><th scope="col">Link to the syllabus</th></tr></thead>
+<tbody>
+<tr><td><strong>Sovereignty and peace</strong></td><td>Protecting the authority of the State and keeping peace and public safety inside the country</td><td>Extremism, terrorism, organised crime (Units 1, 2, 5)</td></tr>
+<tr><td><strong>Sanctity of borders</strong></td><td>Preventing infiltration, smuggling and cross-border support to internal threats</td><td>Border management (Unit 5)</td></tr>
+<tr><td><strong>Promotion of national interests</strong></td><td>Stable conditions for development, investment and the rights of citizens</td><td>Development-extremism link, cyber and media security (Units 1, 3, 4)</td></tr>
+</tbody></table></div>
+
+<p class="correction" id="c02"><strong>[Correction]</strong> (1) "Internal security means the protection of sovereignty and territorial integrity" is incomplete: defence of territory against external aggression is <strong>external defence</strong> (Ministry of Defence, armed forces), while internal security is the Ministry of Home Affairs (MHA) and State police domain. The two overlap in border and proxy-war situations. (2) "Insuring" is "ensuring"; "Promotio" is "promotion".</p>
+
+<h3>2.1 Law and Order, Public Order and Internal Security</h3>
+<p>The rough notes say wherever there are internal security challenges, law and order challenges are inevitable, and law and order problems can escalate into internal security challenges. This is correct as a working idea; it is made precise by the <strong>three concentric circles</strong> described by the Supreme Court in <em>Ram Manohar Lohia v. State of Bihar</em> (1965/66): <strong>law and order</strong> (widest) contains <strong>public order</strong>, which contains <strong>security of the State</strong> (narrowest). An act can disturb law and order without disturbing public order, and may disturb public order without endangering the security of the State.</p>
+<div class="flow" id="circles-flow"><span><strong>Law and order</strong><br/>(any breach of law)</span><span>&#8594;</span><span><strong>Public order</strong><br/>(disturbs the community at large)</span><span>&#8594;</span><span><strong>Security of the State</strong><br/>(threatens the State itself)</span></div>
+<p class="additional"><strong>[Additional]</strong> <strong>Constitutional position:</strong> "Public order" (Entry 1) and "Police" (Entry 2) are in the <strong>State List</strong> (Seventh Schedule). <strong>Article 355</strong> makes it the Union's duty to protect every State against external aggression and internal disturbance. The Union supports States with Central Armed Police Forces (CAPFs) and intelligence, but does not take over policing. This is why LWE is fought through State-Centre coordination (see the 2020 Mains question in the PYQ section).</p>
+<p class="exam"><strong>Exam point:</strong> keep terrorism, insurgency, extremism, radicalisation, organised crime and protest apart. <strong>Extremism</strong> is an ideology or method that rejects constitutional and democratic means; <strong>insurgency</strong> is an organised armed rebellion against the State; <strong>terrorism</strong> is violence to create fear for a political aim; peaceful dissent is lawful and is not a security offence.</p>
+</section>
+
+<section id="lwe">
+<h2>3. Left Wing Extremism (LWE): Meaning, Origin and Organisations</h2>
+<h3>3.1 Terms</h3>
+<div class="table-wrap"><table id="terms">
+<caption>Naxalism, Maoism and LWE</caption>
+<thead><tr><th scope="col">Term</th><th scope="col">Meaning</th></tr></thead>
+<tbody>
+<tr><td><strong>Naxalism</strong></td><td>Movement named after <strong>Naxalbari</strong> (Darjeeling district, West Bengal), where a peasant uprising began in 1967</td></tr>
+<tr><td><strong>Maoism</strong></td><td>Ideology of armed revolution by a peasant-based "people's war" to capture State power, derived from Marx, Lenin and Mao Zedong</td></tr>
+<tr><td><strong>Left Wing Extremism (LWE)</strong></td><td>The official MHA term for the violent movement of CPI (Maoist) and allied groups. It does not cover lawful left-wing politics</td></tr>
+<tr><td><strong>Red corridor</strong></td><td>Informal media term for the belt of LWE influence (from Bihar-Jharkhand through Odisha and Chhattisgarh to Andhra Pradesh-Telangana). It is not an official category</td></tr>
+</tbody></table></div>
+<p class="correction" id="c03"><strong>[Correction]</strong> "LWE" is the official security term and describes violence, not a political opinion; do not equate it with the parliamentary Left or with peaceful movements by Adivasis, farmers or activists.</p>
+
+<h3 id="origin">3.2 Origin and Timeline</h3>
+<div class="table-wrap"><table id="timeline">
+<caption>Timeline: from the CPI split to CPI (Maoist)</caption>
+<thead><tr><th scope="col">Year</th><th scope="col">Event</th></tr></thead>
+<tbody>
+<tr><td>1964</td><td>The Communist Party of India (CPI) splits; the <strong>CPI (Marxist)</strong> [CPI(M)] is formed. Radicals later left CPI(M) because it chose parliamentary politics</td></tr>
+<tr><td>1967 (May)</td><td><strong>Naxalbari uprising</strong> (West Bengal): tribal and poor peasants, organised by <strong>Charu Mazumdar</strong>, <strong>Kanu Sanyal</strong> and <strong>Jangal Santhal</strong>, seized land and grain from landlords; police firing killed villagers (reported as nine). The <strong>All India Coordination Committee of Communist Revolutionaries (AICCCR)</strong> was formed in the same year</td></tr>
+<tr><td>1969 (22 April)</td><td><strong>CPI (Marxist-Leninist)</strong> [CPI(ML)] founded under Charu Mazumdar (Lenin's birth centenary)</td></tr>
+<tr><td>1975 / 1980</td><td>Splinter groups: <strong>Maoist Communist Centre (MCC)</strong>, 1975, mainly Bihar-Jharkhand; <strong>People's War Group (PWG)</strong>, 1980, founded by Kondapalli Seetharamaiah in Andhra Pradesh</td></tr>
+<tr><td>2004 (21 Sept)</td><td>PWG and MCC(I) merge to form the <strong>CPI (Maoist)</strong>, the main LWE organisation</td></tr>
+<tr><td>2009</td><td>CPI (Maoist) is banned as a terrorist organisation under the Unlawful Activities (Prevention) Act, 1967 <strong>[Verification Required]</strong></td></tr>
+</tbody></table></div>
+<p class="small">Sources: Frontline, "1967: Naxalbari movement"; secondary summaries listed at the end. The AICCCR, MCC and PWG dates come from secondary sources; confirm against an official or academic source before quoting exact years.</p>
+
+<p class="correction" id="c04"><strong>[Correction]</strong> The rough notes' names are standardised: <strong>"Kanu Sarga" is Kanu Sanyal</strong>; <strong>"Jangal Camthal" is Jangal Santhal</strong>; the "CPI (M) M- Marxist" note means CPI(M) = Communist Party of India (<strong>Marxist</strong>), formed in <strong>1964</strong>, which is a <em>different</em> party from the <strong>CPI (Marxist-Leninist)</strong> formed in <strong>1969</strong>. The rough notes list "PWG" and "MCC" without expansion; they are the People's War Group and the Maoist Communist Centre, which merged in 2004.</p>
+
+<figure id="fig-lineage">
+<h3>Figure 1. Lineage of the Maoist movement (simplified)</h3>
+<div class="svg-wrap">
+<svg viewBox="0 0 700 410" role="img" aria-labelledby="lin-t lin-d" xmlns="http://www.w3.org/2000/svg">
+<title id="lin-t">Lineage from the CPI to the CPI (Maoist)</title>
+<desc id="lin-d">A top-to-bottom chain: CPI, CPI(M) in 1964, Naxalbari uprising in 1967, CPI(ML) in 1969, then two groups MCC (1975) and PWG (1980), which merge into CPI (Maoist) in 2004.</desc>
+<defs><marker id="arr" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#444"/></marker></defs>
+<g font-family="Calibri, sans-serif" font-size="14" text-anchor="middle">
+<rect x="225" y="10" width="250" height="40" rx="4" fill="#f0f0f0" stroke="#666"/><text x="350" y="35">CPI (Communist Party of India)</text>
+<line x1="350" y1="50" x2="350" y2="75" stroke="#444" stroke-width="1.5" marker-end="url(#arr)"/>
+<rect x="225" y="78" width="250" height="40" rx="4" fill="#f0f0f0" stroke="#666"/><text x="350" y="103">1964: split, CPI(M) formed</text>
+<line x1="350" y1="118" x2="350" y2="143" stroke="#444" stroke-width="1.5" marker-end="url(#arr)"/>
+<rect x="190" y="146" width="320" height="40" rx="4" fill="#fff3e0" stroke="#ef6c00"/><text x="350" y="171">1967: Naxalbari uprising; AICCCR formed</text>
+<line x1="350" y1="186" x2="350" y2="211" stroke="#444" stroke-width="1.5" marker-end="url(#arr)"/>
+<rect x="190" y="214" width="320" height="40" rx="4" fill="#fff3e0" stroke="#ef6c00"/><text x="350" y="239">1969: CPI(ML) - Charu Mazumdar</text>
+<line x1="300" y1="254" x2="170" y2="289" stroke="#444" stroke-width="1.5" marker-end="url(#arr)"/>
+<line x1="400" y1="254" x2="530" y2="289" stroke="#444" stroke-width="1.5" marker-end="url(#arr)"/>
+<rect x="40" y="292" width="260" height="46" rx="4" fill="#e8f5e9" stroke="#2e7d32"/><text x="170" y="312">MCC (1975)</text><text x="170" y="330" font-size="12">Bihar - Jharkhand belt</text>
+<rect x="400" y="292" width="260" height="46" rx="4" fill="#e8f5e9" stroke="#2e7d32"/><text x="530" y="312">PWG (1980)</text><text x="530" y="330" font-size="12">Andhra Pradesh - Telangana</text>
+<line x1="170" y1="338" x2="320" y2="365" stroke="#444" stroke-width="1.5" marker-end="url(#arr)"/>
+<line x1="530" y1="338" x2="380" y2="365" stroke="#444" stroke-width="1.5" marker-end="url(#arr)"/>
+<rect x="225" y="366" width="250" height="38" rx="4" fill="#fff8e1" stroke="#f5a623"/><text x="350" y="390">2004: CPI (Maoist) formed</text>
+</g>
+</svg>
+</div>
+<figcaption>Schematic, simplified lineage; many other splinter groups existed in the 1970s-90s. Dates: see Section 3.2 and the sources list.</figcaption>
+</figure>
+</section>
+
+<section id="causes">
+<h2>4. Causes: Development and the Spread of Extremism</h2>
+<p class="lead">LWE grew where <strong>poverty, landlessness, displacement and weak governance</strong> met a violent ideology. Development deficits do not "cause" extremism automatically; they create <strong>grievances and space</strong> that an armed group can exploit, which is why the response has to be security plus development plus rights.</p>
+
+<figure id="fig-chain">
+<h3>Figure 2. Driver - impact - response chain</h3>
+<div class="flow" id="cause-flow"><span><strong>Drivers</strong><br/>land inequality; displacement; forest and livelihood loss; weak grievance redressal</span><span>&#8594;</span><span><strong>Impact</strong><br/>alienation of Adivasis and poor peasants; support for armed groups; violence; stalled development</span><span>&#8594;</span><span><strong>Response</strong><br/>security operations + development + rights enforcement + rehabilitation</span></div>
+<figcaption>Conceptual summary of Section 4 (analytical framework, not a data chart).</figcaption>
+</figure>
+
+<h3 id="land">4.1 Failure of Land Reforms</h3>
+<ul>
+<li><strong>Zamindari abolition</strong> (1950s) ended large intermediaries but left unequal landholding and insecure tenants.</li>
+<li><strong>Ceiling laws</strong> limited landholding and meant to give surplus land to the landless. Problems noted in the class: the <strong>ceiling limit was too high</strong>; laws were implemented <strong>late</strong> (landlords had time to transfer land); and <strong>officials sided with landlords</strong>.</li>
+<li><strong>[Additional]</strong> Other weaknesses: exemptions (plantations, religious trusts), <strong>benami</strong> transfers, splitting of holdings among relatives, poor land records, and slow courts. Many land laws were placed in the <strong>Ninth Schedule</strong> (Article 31B) to protect them from court challenges, yet <em>implementation</em> was the failure. The 1972 national guidelines tried to bring more uniform, lower ceilings.</li>
+<li><strong>Result:</strong> a pool of landless labourers and marginal farmers (many Dalits and Adivasis), and the first Naxalite demand: "land to the tiller".</li>
+</ul>
+<p class="correction" id="c05"><strong>[Correction]</strong> "Govt officials supported" is restated as <strong>officials (revenue and local administration) often colluded with or sided with landowners</strong>; this is an analytical judgment found in land reform studies, not an allegation about every official. The rough note on timing is read as: ceiling laws were enacted late (mostly 1960s) after landlords had already transferred land, which reduced the surplus available.</p>
+
+<h3 id="model">4.2 Skewed Economic Development Model</h3>
+<ul>
+<li><strong>Trickle-down approach:</strong> growth in the modern sector was expected to reach the poor over time. Where it did not (tribal and forest areas, remote districts), inequality widened.</li>
+<li><strong>Direct attack on poverty:</strong> targeted programmes for the poor, such as land redistribution, employment and anti-poverty schemes, instead of waiting for growth to filter down.</li>
+<li><strong>[Additional]</strong> Mineral-rich, forested Adivasi regions gave the <strong>State and industry</strong> large benefits, while local people bore <strong>displacement</strong>; this is why the 2015 Mains question asks about land alienation and "multiple displacements".</li>
+</ul>
+<p class="correction" id="c06"><strong>[Correction]</strong> "Trickle down model" and "direct attack on poverty" are two <strong>approaches</strong> to growth and poverty, not two models of the same level. The rough note is kept as a contrast: growth-led (trickle-down) versus targeted poverty-removal (direct attack).</p>
+
+<h3 id="regional">4.3 Imbalanced Regional Development and Inadequate Rehabilitation</h3>
+<ul>
+<li>Backward regions had poor roads, schools, health care and markets, and little State presence beyond the police and forest department.</li>
+<li><strong>Displacement</strong> by mines, dams and industry with weak <strong>rehabilitation</strong> (compensation without livelihood) caused repeated impoverishment.</li>
+<li><strong>Absence of a grievance redressal mechanism:</strong> people had no trusted forum, so armed groups acted as "parallel courts" in some areas.</li>
+<li><strong>[Additional]</strong> Protective laws exist but were weakly enforced: the <strong>Fifth Schedule</strong>, <strong>PESA, 1996</strong> (gram sabha powers in Scheduled Areas), the <strong>Forest Rights Act, 2006</strong>, and the Land Acquisition, Rehabilitation and Resettlement Act, 2013. The Planning Commission's <strong>Expert Group on "Development Challenges in Extremist Affected Areas"</strong> (constituted 2006; report 2008, chaired by D. Bandyopadhyay) stressed tenure security, enforcement of PESA and FRA, and rights-respecting land acquisition. <strong>[Verification Required]</strong> confirm details in the official report.</li>
+</ul>
+
+<h3>4.4 Case Studies</h3>
+<div class="table-wrap"><table id="cases">
+<caption>Two cases that link development, rights and security</caption>
+<thead><tr><th scope="col">Case</th><th scope="col">Context and response</th><th scope="col">Lesson</th></tr></thead>
+<tbody>
+<tr><td><strong>Nandini Sundar v. State of Chhattisgarh</strong> (Supreme Court, 5 July 2011)</td><td>Challenge to <strong>Salwa Judum</strong>, the State-backed use of local tribal youth as Special Police Officers (SPOs) against Maoists. The Court held the arrangement violated Articles 14 and 21, ordered disarming of SPOs and an end to State funding for such groups</td><td>The State cannot outsource security to poorly trained civilians; counter-insurgency must stay within the Constitution</td></tr>
+<tr><td><strong>Orissa Mining Corporation v. MoEF</strong> (Supreme Court, 18 April 2013, Niyamgiri)</td><td>Bauxite mining on forest land sacred to the Dongria Kondh; the Court directed that the gram sabhas decide on community religious and cultural rights under the Forest Rights Act <strong>[Verification Required]</strong></td><td>Consent and rights-based decision-making on tribal land reduces grievance</td></tr>
+</tbody></table></div>
+<p class="small">Sources: Supreme Court of India judgments; case details were confirmed from secondary summaries only (see the sources list).</p>
+</section>
+
+<section id="status">
+<h2>5. Present Status of LWE (as of October 2026)</h2>
+<p class="additional"><strong>[Additional]</strong> Official reports (reported by secondary sources) say LWE violence has fallen sharply. MHA data cited in Parliament: <strong>1,936 incidents and 1,005 deaths (civilians plus security forces) in 2010</strong>, against about <strong>222 incidents and 95 deaths in 2025</strong>. <strong>[Verification Required]</strong> the PIB release could not be opened; figures come from a secondary summary of MHA statements.</p>
+<figure id="fig-districts">
+<h3>Figure 3. Number of districts classified as LWE-affected</h3>
+<div class="svg-wrap">
+<svg viewBox="0 0 700 320" role="img" aria-labelledby="bar-t bar-d" xmlns="http://www.w3.org/2000/svg">
+<title id="bar-t">LWE-affected districts, 2010 to 2026</title>
+<desc id="bar-d">Bar chart: 126 in 2010, 90 in April 2018, 70 in July 2021, 38 in April 2024, 18 in April 2025, 11 in October 2025, and zero by April 2026.</desc>
+<g font-family="Calibri, sans-serif" font-size="13" text-anchor="middle">
+<text x="14" y="140" transform="rotate(-90 14 140)" font-size="12">Number of districts</text>
+<line x1="60" y1="250" x2="680" y2="250" stroke="#333"/>
+<line x1="60" y1="40" x2="60" y2="250" stroke="#333"/>
+<rect x="80" y="50" width="56" height="200" fill="#c62828"/><text x="108" y="44">126</text><text x="108" y="270">2010</text>
+<rect x="162" y="107" width="56" height="143" fill="#ef6c00"/><text x="190" y="101">90</text><text x="190" y="270">Apr 2018</text>
+<rect x="244" y="139" width="56" height="111" fill="#ef6c00"/><text x="272" y="133">70</text><text x="272" y="270">Jul 2021</text>
+<rect x="326" y="190" width="56" height="60" fill="#f5a623"/><text x="354" y="184">38</text><text x="354" y="270">Apr 2024</text>
+<rect x="408" y="221" width="56" height="29" fill="#f5a623"/><text x="436" y="215">18</text><text x="436" y="270">Apr 2025</text>
+<rect x="490" y="233" width="56" height="17" fill="#2e7d32"/><text x="518" y="227">11</text><text x="518" y="270">Oct 2025</text>
+<rect x="572" y="249" width="56" height="1" fill="#2e7d32"/><text x="600" y="243">0</text><text x="600" y="270">Apr 2026</text>
+</g>
+</svg>
+</div>
+<figcaption>Unit: districts classed as LWE-affected by MHA. Scope: India. Sources: MHA statements as reported in secondary summaries of PIB and Lok Sabha replies (2010-Oct 2025); MHA communication to States reported by The New Indian Express, 19 April 2026 (zero affected districts). <strong>[Verification Required]</strong> The classification criteria changed over time, so points are not strictly comparable; confirm against the PIB release.</figcaption>
+</figure>
+<ul>
+<li>MHA reportedly told States in April 2026 that <strong>no district is classified as LWE-affected</strong>; <strong>37 "Legacy and Thrust" districts</strong> (insurgency eliminated but development and vigilance needed) and <strong>one "District of Concern"</strong> (West Singhbhum, Jharkhand) were identified. Union Home Minister Amit Shah told Parliament on 30 March 2026 that India had effectively become free of Maoism (The New Indian Express, 19 April 2026). Isolated incidents by residual elements continue in Jharkhand and Chhattisgarh.</li>
+<li><strong>Interpretation:</strong> the end of the "affected" label is a <strong>security milestone</strong>; the underlying development, land and rights grievances still need to be resolved to prevent a resurgence.</li>
+</ul>
+<p class="correction" id="c07"><strong>[Correction]</strong> The class notes did not state current status. Any statement such as "Naxalism is a continuing major threat" should now be read with this official position: the 31 March 2026 target was declared met, with sustained vigilance required (reported by secondary sources; <strong>[Verification Required]</strong> against the official MHA/PIB text).</p>
+</section>
+
+<section id="response">
+<h2>6. Government Response Framework</h2>
+<div class="table-wrap"><table id="response-table">
+<caption>Components of the strategy against LWE</caption>
+<thead><tr><th scope="col">Component</th><th scope="col">Measure</th></tr></thead>
+<tbody>
+<tr><td>Policy</td><td><strong>National Policy and Action Plan to Address LWE (2015)</strong>: multi-pronged - security, development, and rights and entitlements of local communities</td></tr>
+<tr><td>Operational doctrine</td><td><strong>SAMADHAN (2017)</strong>: Smart leadership, Aggressive strategy, Motivation and training, Actionable intelligence, Dashboard-based KPIs, Harnessing technology, Action plan for each theatre, No access to financing <strong>[Verification Required: the second "A"]</strong></td></tr>
+<tr><td>Security funding</td><td><strong>Security Related Expenditure (SRE)</strong> scheme reimburses States; <strong>Special Infrastructure Scheme (SIS)</strong> supports police infrastructure and intelligence</td></tr>
+<tr><td>Forces</td><td>CAPFs (CRPF with its CoBRA unit) assist State police; State special forces (for example Greyhounds in Andhra Pradesh) <strong>[Additional]</strong></td></tr>
+<tr><td>Development</td><td>Roads, mobile connectivity, schools and skill training in affected districts; <strong>Aspirational Districts Programme</strong> covers many of them</td></tr>
+<tr><td>Rehabilitation</td><td>Surrender and rehabilitation policy for cadres</td></tr>
+<tr><td>Rights</td><td>PESA, FRA and rights-based land acquisition (Section 4.3)</td></tr>
+</tbody></table></div>
+<p class="small">Sources: PIB release "National Policy to Combat Left Wing Extremism"; MHA replies in Parliament (see the sources list).</p>
+</section>
+
+<section id="gaps">
+<h2>7. Gaps and Challenges</h2>
+<ul>
+<li><strong>Unresolved grievances:</strong> land titles, forest rights, displacement and compensation are still contested in Scheduled Areas.</li>
+<li><strong>Human rights and accountability:</strong> fake-encounter and vigilantism allegations (Salwa Judum) weaken trust; security operations must stay within law.</li>
+<li><strong>Coordination:</strong> police is a State subject; inter-State cooperation and intelligence sharing are essential.</li>
+<li><strong>Rehabilitation:</strong> surrendered cadres need livelihoods and security, and the community must see lasting benefits.</li>
+<li><strong>Risk of resurgence:</strong> residual cadres, urban support networks and weak governance can revive violence.</li>
+</ul>
+</section>
+
+<section id="way-forward">
+<h2>8. Way Forward</h2>
+<ol>
+<li>Treat LWE as a <strong>development-governance-security</strong> problem, not only a law-and-order one.</li>
+<li>Implement <strong>PESA and FRA</strong> and secure land titles; seek <strong>gram sabha consent</strong> for mining and land acquisition.</li>
+<li>Deliver last-mile services (roads, schools, health, forest produce markets) in "Legacy and Thrust" districts.</li>
+<li>Strengthen <strong>accountability</strong> mechanisms and community policing; avoid unregulated local militias.</li>
+<li>Strengthen grievance redressal and fast-track courts for tribal land disputes.</li>
+<li>Keep intelligence and inter-State coordination in place after the formal declaration.</li>
+</ol>
+</section>
+
+<section id="key-facts">
+<h2>Key Facts for Prelims</h2>
+<ul>
+<li>Naxalbari uprising: <strong>1967</strong>, Darjeeling district, West Bengal; leaders Charu Mazumdar, Kanu Sanyal, Jangal Santhal.</li>
+<li>CPI(M) formed <strong>1964</strong>; CPI(ML) formed <strong>22 April 1969</strong>; CPI (Maoist) formed <strong>21 September 2004</strong> (PWG + MCC).</li>
+<li>Public order and police: <strong>State List</strong>; Article 355: Union's duty to protect States from internal disturbance.</li>
+<li>PESA <strong>1996</strong>; FRA <strong>2006</strong>; National Policy and Action Plan on LWE <strong>2015</strong>; SAMADHAN <strong>2017</strong>.</li>
+<li>Nandini Sundar v. State of Chhattisgarh (<strong>2011</strong>): SPOs/Salwa Judum struck down.</li>
+</ul>
+</section>
+
+<section id="mains">
+<h2>Mains Points</h2>
+<ul>
+<li>LWE sits at the intersection of <strong>economic grievance and ideological violence</strong>; poverty alone does not explain it.</li>
+<li>Failed land reform (high ceilings, exemptions, benami transfers, collusion) is the historical root; displacement without rehabilitation is the modern one.</li>
+<li>The 2008 Planning Commission expert group framed the answer as rights, development and governance, with security only creating conditions for them.</li>
+<li>The Supreme Court's 2011 judgment shows the limits of a purely militarised response.</li>
+<li><strong>Balanced way forward:</strong> sustain security gains while enforcing tribal land and forest rights, accountable policing, livelihood support and inter-State coordination.</li>
+</ul>
+</section>
+
+<section id="traps">
+<h2>Common Traps / Confusions</h2>
+<ul>
+<li>CPI(M) (1964) is a parliamentary party; CPI(ML) (1969) was the armed Naxalite party. Not the same.</li>
+<li>Naxalism, Maoism and LWE are related but not synonyms; lawful Left politics and peaceful tribal protests are not LWE.</li>
+<li>Law and order is not the same as public order or security of the State (Lohia).</li>
+<li>"Red corridor" is an informal term, not an official category.</li>
+<li>Internal security (MHA, State police) is not external defence (MoD, armed forces).</li>
+</ul>
+</section>
+
+<section id="revision">
+<h2>30-Second Revision</h2>
+<p class="lead"><strong>Internal security</strong> = peace and order inside the borders; police and public order are State subjects, Article 355 is the Union's duty. <strong>LWE</strong>: Naxalbari 1967 &#8594; CPI(ML) 1969 &#8594; PWG + MCC &#8594; CPI (Maoist) 2004. <strong>Causes</strong>: failed land reforms, trickle-down growth with weak direct poverty attack, regional imbalance, displacement and no grievance redressal. <strong>Response</strong>: 2015 policy, SAMADHAN, SRE/SIS, development, PESA/FRA, rehabilitation. <strong>Status</strong>: MHA reportedly declared no LWE-affected district in April 2026; 37 Legacy and Thrust districts remain under watch. <strong>Limit</strong>: Salwa Judum (2011).</p>
+</section>
+
+<section id="pyqs">
+<h2>Previous Year Questions (PYQs)</h2>
+<p class="small">Question text below is taken from secondary compilations (listed in the sources). The official UPSC question papers were not opened: <strong>[Verification Required]</strong> re-check exact wording on the UPSC archive.</p>
+
+<h3>Q1. UPSC CSE Mains 2015, GS Paper III (12.5 marks) - Development and extremism</h3>
+<p>"The persisting drives of the government for development of large industries in backward areas have resulted in isolating the tribal population and the farmers who face multiple displacements with Malkangiri and Naxalbari foci, discuss the corrective strategies needed to win the Left Wing Extremism (LWE) doctrine affected citizens back into the mainstream of social and economic growth."</p>
+<p class="answer"><strong>Suggested answer approach [Additional]:</strong> state the displacement-extremism link (Section 4.2-4.3); give corrective strategies: rights-based land acquisition and rehabilitation, PESA/FRA enforcement, last-mile development, accountable policing, rehabilitation of surrendered cadres (Sections 6-8). This is study guidance, not an official marking scheme. Source: <a href="https://iasexamportal.com/ias-mains/2015-gs-iii-exam-paper-analysis">IAS Exam Portal - UPSC Mains 2015 GS Paper III questions</a>.</p>
+
+<h3>Q2. UPSC CSE Mains 2020, GS Paper III - Determinants of LWE</h3>
+<p>"What are the determinants of left-wing extremism in the Eastern part of India? What strategy should the Government of India, civil administration and security forces adopt to counter the threat in the affected areas?"</p>
+<p class="answer"><strong>Suggested answer approach [Additional]:</strong> determinants: land inequality, displacement, forest rights, weak governance (Section 4); strategy: SAMADHAN-style security, development, rights and Centre-State coordination (Sections 6-8). Marks and word limit not verified. Source: <a href="https://superkalam.com/upsc-mains/previous-year-question-paper/2020/what-are-the-determinants-of-leftwing-extremism-in-the-eastern-part-of-india-what-strategy-should-the-government-of-indi-c7937e08-37f6-4e5b-a70f-e92bd57cb7b8">Superkalam - UPSC Mains 2020 GS Paper III question</a>.</p>
+
+<p class="verification"><strong>[No verified PYQ found for this topic]</strong> Syllabus overview and the law and order versus internal security distinction. A Q on cooperative federalism and LWE was reported by one summary but could not be confirmed and is not included.</p>
+</section>
+
+<section id="corrections">
+<h2>Corrections Made</h2>
+<ol>
+<li><a href="#c01">Syllabus</a>: "Challanges" spelling; syllabus phrase restated.</li>
+<li><a href="#c02">Internal security definition</a>: not only sovereignty and territorial integrity; MHA/State police vs MoD; spelling "ensuring", "promotion".</li>
+<li><a href="#c03">LWE terms</a>: LWE as the official term for violence; not lawful Left politics.</li>
+<li><a href="#c04">Names and parties</a>: Kanu Sanyal; Jangal Santhal; CPI(M) 1964 vs CPI(ML) 1969; PWG and MCC expanded.</li>
+<li><a href="#c05">Land reforms</a>: ceiling laws late; officials colluding stated analytically.</li>
+<li><a href="#c06">Trickle-down vs direct attack</a>: approaches, not models.</li>
+<li><a href="#c07">Status</a>: current official position added.</li>
+</ol>
+<p class="small">Other spelling fixes: "Insuring" (ensuring), "Promotio" (promotion), "Challanges" (challenges), "sovereignty" (soveriengnty), "Abscence" (absence), "cieling" (ceiling), "Sarga" (Sanyal), "Camthal" (Santhal). Abbreviations such as "PWG" and "MCC" were expanded.</p>
+</section>
+
+<section id="visuals">
+<h2>Visual Representations Required / Recommended</h2>
+<ul>
+<li><a href="#fig-lineage">Figure 1</a> - lineage of Maoist groups; <a href="#fig-chain">Figure 2</a> - driver-impact-response chain; <a href="#fig-districts">Figure 3</a> - LWE-affected districts over time; <a href="#circles-flow">law and order circles</a>.</li>
+</ul>
+<p><strong>[Visual Representation Recommended: schematic map (not to scale) of the former LWE-affected states and "Legacy and Thrust" districts, to show regional spread; reference period April 2026; suggested source: MHA LWE Division / PIB release on Naxal-Free India]</strong> - not included because the official district list could not be retrieved.</p>
+</section>
+
+<section id="sources">
+<h2>Open Sources / Further Reading</h2>
+<ul>
+<li><a href="https://pib.gov.in/PressReleasePage.aspx?PRID=2205200&amp;reg=3&amp;lang=1">PIB (MHA) - release on LWE violence and affected districts, December 2025 (could not be opened during preparation; cited via a search summary)</a></li>
+<li><a href="https://pib.gov.in/PressReleaseDetail.aspx?PRID=2292864&amp;reg=48&amp;lang=1">PIB - "Naxal-Free India" press release, 2026 (could not be opened; verification limit)</a></li>
+<li><a href="https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2003503">PIB - National Policy to Combat Left Wing Extremism</a></li>
+<li><a href="https://www.newindianexpress.com/india/2026/Apr/19/no-naxal-affected-districts-in-india-anymore-mha-to-states">The New Indian Express, 19 April 2026 - No Naxal-affected districts in India anymore: MHA to states (opened; secondary report of MHA communication)</a></li>
+<li><a href="https://www.deccanherald.com/india/no-naxal-violence-hit-districts-in-india-anymore-home-ministry-to-state-govts-3968885">Deccan Herald, 15 April 2026 - No Naxal violence-hit districts, Home Ministry to State governments</a></li>
+<li><a href="https://frontline.thehindu.com/politics/india-at-75-epochal-moments-1967-naxalbari-movement/article65721597.ece">Frontline - 1967: Naxalbari movement</a></li>
+<li><a href="https://www.thehindu.com/news/national/andhra-pradesh/a-merger-that-changed-the-maoist-threat-perception/article32664122.ece">The Hindu - A merger that changed the Maoist threat perception (PWG-MCC merger)</a></li>
+<li><a href="https://www.mha.gov.in/en/divisionofmha/left-wing-extremism-division">MHA - Left Wing Extremism Division (could not be opened; verification limit)</a></li>
+<li><a href="https://www.sci.gov.in/">Supreme Court of India - judgments portal (search: Nandini Sundar v. State of Chhattisgarh, 2011; Orissa Mining Corporation v. MoEF, 2013). Direct judgment links were not retrieved: <strong>[Verification Required]</strong></a></li>
+<li><a href="https://iasexamportal.com/ias-mains/2015-gs-iii-exam-paper-analysis">IAS Exam Portal - UPSC Mains 2015 GS Paper III questions (secondary)</a></li>
+</ul>
+</section>
+</main>
+</body>
+</html>

@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Internal Security - Class Notes | 23 October 2026</title>
+<style>
+  * { box-sizing: border-box; }
+  body { font-family: Calibri, sans-serif; font-size: 11pt; line-height: 1.6; max-width: 900px; margin: 20px auto; padding: 0 20px; color: #202124; }
+  h1 { font-size: 20pt; color: #1a1a1a; border-bottom: 2px solid #333; padding-bottom: 4px; margin-top: 30px; }
+  h2 { font-size: 16pt; color: #2b2b2b; margin-top: 28px; border-bottom: 1px solid #ddd; padding-bottom: 3px; }
+  h3 { font-size: 13pt; color: #3a3a3a; margin-top: 18px; }
+  h4 { font-size: 11.5pt; color: #3a3a3a; margin: 14px 0 4px; }
+  p { margin: 8px 0; }
+  ul, ol { margin: 6px 0; padding-left: 28px; }
+  li { margin: 4px 0; }
+  a { color: #005ea6; overflow-wrap: anywhere; }
+  table { border-collapse: collapse; width: 100%; margin: 10px 0; }
+  caption { text-align: left; font-weight: bold; margin-bottom: 6px; }
+  th, td { border: 1px solid #999; padding: 6px 10px; text-align: left; vertical-align: top; overflow-wrap: break-word; }
+  th { background: #f0f0f0; }
+  .table-wrap { overflow-x: auto; }
+  .note, .exam, .verification { background: #fff8e1; border-left: 3px solid #f5a623; padding: 8px 12px; margin: 10px 0; }
+  .correction { background: #fff3e0; border-left: 3px solid #ef6c00; padding: 8px 12px; margin: 10px 0; }
+  .additional, .lead { background: #e8f5e9; border-left: 3px solid #2e7d32; padding: 8px 12px; margin: 10px 0; }
+  .flow { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 10px; padding: 12px 0; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; }
+  .flow span { text-align: center; max-width: 100%; }
+  .flow .box { border: 1px solid #888; background: #f7f7f7; padding: 6px 10px; border-radius: 4px; flex: 1 1 150px; }
+  figure { margin: 16px 0; padding: 12px; border: 1px solid #bbb; background: #fff; }
+  figure h3 { margin-top: 0; text-align: center; }
+  figcaption { margin-top: 8px; color: #555; font-size: 9.5pt; }
+  .cols3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+  .cols4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+  .tile { border: 1px solid #888; border-radius: 4px; padding: 8px; background: #f5f9fd; font-size: 10.5pt; }
+  .tile.p1 { background: #e8f5e9; border-color: #2e7d32; }
+  .tile.p2 { background: #f5f9fd; border-color: #0078d4; }
+  .tile.p3 { background: #fff3e0; border-color: #ef6c00; }
+  .small { color: #555; font-size: 9.5pt; }
+  .answer { margin: 10px 0; padding: 6px 12px; border-left: 3px solid #0078d4; background: #f5f9fd; }
+  @media (max-width: 650px) {
+    body { padding: 0 12px; }
+    .cols3, .cols4 { grid-template-columns: 1fr; }
+    .table-wrap table { min-width: 540px; }
+  }
+  @media print {
+    @page { size: A4; margin: 14mm; }
+    body { max-width: none; margin: 0; padding: 0; }
+    h1, h2, h3, h4 { break-after: avoid; }
+    figure, tr, .answer, .tile { break-inside: avoid; }
+    thead { display: table-header-group; }
+    .table-wrap { overflow: visible; }
+    .table-wrap table { min-width: 0; }
+    a { color: inherit; text-decoration: none; }
+    p, li { orphans: 3; widows: 3; }
+  }
+</style>
+</head>
+<body>
+<main>
+<header>
+<h1>Internal Security - Class Notes | 23 October 2026</h1>
+<p><strong>Topics:</strong> <strong>Border Management</strong> - issues and challenges of India's borders, components of border management, border-wise snapshot (Pakistan, China, Nepal, Myanmar), initiatives (CIBMS, BOLD-QIT, border-area development), and <strong>Security Forces</strong> - State police, CAPFs, paramilitary forces, intelligence and investigation agencies, and the challenges faced by the forces.</p>
+<p class="small">Notes for the class of <time datetime="2026-10-23">23 October 2026</time>, prepared on 24 October 2026. This is a <strong>new topic</strong>, not a continuation of the J&amp;K note of <a href="Internal%20Security%20-%20Class%2010-22-2026.html">22 October</a>. Earlier daily notes were not edited.</p>
+<p class="note"><strong>[Correction]</strong> marks a substantive repair to the rough notes. <strong>[Additional]</strong> marks supporting facts added for exam value. <strong>[Verification Required]</strong> marks a point that could not be confirmed from a reliable source. <strong>Verification limit:</strong> only one official page was opened as text (AIR News on the CAPF (General Administration) Bill, 2026). Other facts rest on web-search summaries of news reports, coaching compilations and Parliament-reply coverage; MHA annual reports, India Code, Gazette notifications and the Supreme Court judgment were <strong>not opened</strong>. Border lengths, scheme budgets and personnel statistics must be checked on the latest MHA Annual Report and Parliament replies. Security issues are described neutrally and no community or country is treated as collectively responsible.</p>
+</header>
+
+<section id="borders">
+<h2>1. Border Management: Issues and Challenges</h2>
+<p class="lead"><strong>Border management</strong> is the whole-of-government effort to secure the border while allowing lawful movement and trade. It is wider than <em>border guarding</em> (the task of the border-guarding force on the line).</p>
+
+<h3>1.1 Issues with India's borders (three root problems)</h3>
+<div class="table-wrap"><table id="issues">
+<caption>Why India's borders are hard to manage</caption>
+<thead><tr><th scope="col">Issue</th><th scope="col">Meaning</th><th scope="col">Effect</th></tr></thead>
+<tbody>
+<tr><td><strong>1. Artificial / political borders</strong></td><td>Lines drawn by treaty, colonial arrangements or Partition, not by natural or ethnic boundaries (for example Radcliffe Line 1947, Durand Line, McMahon Line) <strong>[Additional]</strong></td><td>Divided ethnic and kin groups; cross-border ties; disputes over alignment</td></tr>
+<tr><td><strong>2. Troubled neighbourhood</strong></td><td>Unsettled boundaries, hostile relations or weak governance in neighbours</td><td>Safe havens, state-linked or non-state armed groups, infiltration</td></tr>
+<tr><td><strong>3. Porous borders</strong></td><td>Hard to seal because of terrain (mountains, rivers, desert, marsh, forest), length and population on both sides</td><td>Smuggling, illegal migration, infiltration, difficulty of fencing</td></tr>
+</tbody></table></div>
+
+<h3>1.2 Challenges at the border</h3>
+<ol>
+<li><strong>Cross-border terrorism</strong> - violence planned, trained or financed from across the border.</li>
+<li><strong>Infiltration</strong> - illegal entry of armed or unarmed persons.</li>
+<li><strong>Ceasefire violations</strong> - breaches of the 2003 India-Pakistan ceasefire understanding along the LoC and the International Border <strong>[Additional]</strong>.</li>
+<li><strong>Safe haven</strong> across the border for left-wing extremists (LWE), militants, terrorists and insurgents (for example camps in the neighbourhood).</li>
+<li><strong>Sporadic aggression</strong> - occasional clashes, transgressions and face-offs.</li>
+<li><strong>Organised crime</strong> - drug trafficking, human trafficking, gold smuggling, cattle smuggling, illegal migration, fake Indian currency notes (FICN) and arms smuggling.</li>
+<li><strong>Maritime piracy</strong> - armed robbery and hijacking of ships.</li>
+<li><strong>Illegal, unreported and unregulated (IUU) fishing</strong> by foreign vessels, and fishermen straying across maritime boundaries.</li>
+<li><strong>Dark shipping</strong> - vessels that hide identity or movement: (a) <strong>stateless / unregistered</strong> vessels with no flag State, and (b) vessels that switch off the <strong>Automatic Identification System (AIS)</strong> transponder so that they are invisible on tracking systems.</li>
+</ol>
+<div class="correction" id="c01"><strong>[Correction]</strong> "Safe heaven" &#8594; <strong>safe haven</strong>; "neighnourhood" &#8594; <strong>neighbourhood</strong>; "Orgnaised" &#8594; <strong>Organised</strong>. Dark shipping is not only "no registration": the second form is a registered vessel that <strong>turns off AIS</strong> or spoofs it. Piracy, IUU fishing and dark shipping are <strong>maritime</strong> challenges that belong with coastal security, not only land borders. <strong>[Additional]</strong> India enacted the <strong>Maritime Anti-Piracy Act, 2022</strong> to give domestic effect to UNCLOS provisions on piracy (commencement date <strong>[Verification Required]</strong>).</div>
+
+<figure id="fig-border-flow">
+<h3>Figure 1. Border challenge: driver, threat, response</h3>
+<div class="flow">
+<span class="box"><strong>Drivers</strong><br/>Artificial borders, hostile neighbourhood, difficult terrain</span><span>&#8594;</span>
+<span class="box"><strong>Threats</strong><br/>Terrorism, infiltration, smuggling, trafficking, piracy</span><span>&#8594;</span>
+<span class="box"><strong>Response</strong><br/>Technology (CIBMS), forces, diplomacy, border-area development</span><span>&#8594;</span>
+<span class="box"><strong>Gap</strong><br/>Multiple roles, dual control, slow technology, local resistance</span>
+</div>
+<figcaption>Schematic flowchart built from the class notes; not based on external data.</figcaption>
+</figure>
+
+<h3>1.3 Components of border management</h3>
+<ul>
+<li>Ensuring the <strong>security and sanctity</strong> of the borders (guarding, fencing, surveillance, intelligence).</li>
+<li>Ensuring <strong>legal and lawful exchange</strong> of people across the borders (immigration, passports, visas, border passes).</li>
+<li>Maintaining <strong>diplomatic relations</strong> with neighbouring countries.</li>
+<li><strong>Coordinating</strong> with neighbours for smooth border management (joint patrols, border meetings, hotlines).</li>
+<li>Ensuring <strong>legal economic exchange</strong> (trade through Integrated Check Posts, border haats, customs).</li>
+</ul>
+<p class="exam"><strong>Exam point:</strong> border management combines <strong>security + facilitation + diplomacy + development</strong>. A pure "seal the border" approach fails where communities live on both sides.</p>
+<p class="additional"><strong>[Additional]</strong> India shares a land border of roughly <strong>15,100 km</strong> with seven countries (Bangladesh about 4,096 km, China about 3,488 km, Pakistan about 3,323 km, Nepal about 1,751 km, Myanmar about 1,643 km, Bhutan about 699 km, Afghanistan about 106 km) and a coastline of about 7,500 km. <strong>[Verification Required]</strong> figures are from memory of MHA Annual Reports; confirm in the latest report.</p>
+</section>
+
+<section id="by-border">
+<h2>2. Border-wise Snapshot</h2>
+<div class="table-wrap"><table id="border-table">
+<caption>Border, boundary line and guarding force (from the class notes, with corrections)</caption>
+<thead><tr><th scope="col">Border</th><th scope="col">Boundary and issues</th><th scope="col">Guarding force</th></tr></thead>
+<tbody>
+<tr><td><strong>India-Pakistan</strong></td><td><strong>International Border (IB)</strong> (Gujarat, Rajasthan, Punjab, Jammu); <strong>Line of Control (LoC)</strong> in J&amp;K from the 1972 Simla Agreement; <strong>Siachen</strong>: the LoC is demarcated only up to <strong>NJ 9842</strong>, beyond which the forces hold the <strong>AGPL</strong> (Actual Ground Position Line). <strong>[Additional]</strong> Sir Creek (maritime / marsh boundary) is an unresolved dispute in Gujarat.</td><td>IB: <strong>BSF</strong>. LoC and Siachen: <strong>Indian Army</strong>, with CAPFs in support (BSF is reported to work under Army operational control on parts of the LoC <strong>[Verification Required]</strong>)</td></tr>
+<tr><td><strong>India-China: Western / Aksai Chin sector</strong></td><td>India's claim rests on the <strong>Johnson Line</strong> (1865); China's position is associated with the <strong>Macartney-MacDonald Line</strong> (1899). In practice both sides hold positions along the <strong>Line of Actual Control (LAC)</strong>, whose alignment is <strong>not agreed or delineated</strong> on common maps.</td><td><strong>Indian Army</strong> and <strong>ITBP</strong></td></tr>
+<tr><td><strong>India-China: Arunachal sector</strong></td><td>The <strong>McMahon Line</strong> (Simla Convention, 1914) is India's boundary; China rejects it and claims much of Arunachal Pradesh. <strong>[Additional]</strong></td><td><strong>Indian Army</strong> and <strong>ITBP</strong></td></tr>
+<tr><td><strong>India-Nepal</strong></td><td>Open border under the 1950 Treaty of Peace and Friendship <strong>[Additional]</strong>. <strong>Kalapani</strong> (with Lipulekh and Limpiyadhura) is disputed: the two countries read the origin of the Kali River (Sugauli Treaty, 1816) differently.</td><td><strong>SSB</strong></td></tr>
+<tr><td><strong>India-Myanmar</strong></td><td>Arunachal Pradesh, Nagaland, Manipur and Mizoram share the border; <strong>Assam does not</strong>. Insurgent camps, drug and arms movement, and ethnic links. The <strong>Free Movement Regime (FMR)</strong> allowed border residents to move up to 16 km inside the other country; the MHA announced its end in Feb 2024.</td><td><strong>Assam Rifles</strong></td></tr>
+</tbody></table></div>
+
+<div class="correction" id="c02"><strong>[Correction]</strong> (a) "Jhonsons line" &#8594; <strong>Johnson Line</strong>; "Mc Cartney Mc Donald" &#8594; <strong>Macartney-MacDonald Line</strong>; "Mc Mahon" &#8594; <strong>McMahon</strong>; "Inida" &#8594; India. (b) "Siachen NJ 9842 - Indian Army (AGPL)" is retained, but <strong>NJ 9842 is a map point, AGPL is a line of positions</strong>; AGPL stands for <strong>Actual</strong> Ground Position Line in the Indian usage (some compilations write "Agreed"; <strong>[Verification Required]</strong>). (c) The FMR covered <strong>all four</strong> Myanmar-bordering States, not only Nagaland. Reports say a later arrangement reduced the permitted distance to <strong>10 km</strong> with border passes at designated points; this was not verified <strong>[Verification Required]</strong>. (d) "Assam Rifles (but no border with Assam)" is correct and is a useful trap.</div>
+<p class="note"><strong>Why the NE border is sensitive:</strong> ethnic groups (for example Naga, Kuki-Zo, Mizo) live on both sides, so closing the FMR has met local opposition in Nagaland and Mizoram (reported <strong>[Verification Required]</strong>). The policy trade-off is <strong>security and demography</strong> against <strong>livelihood and kinship ties</strong>.</p>
+<p class="additional"><strong>[Additional]</strong> Visual Representation Recommended: <strong>a schematic, not-to-scale map</strong> showing the four border sectors and guarding forces. Use an authoritative MHA / Survey of India map for boundary references and do not mark deployment locations.</p>
+</section>
+
+<section id="initiatives">
+<h2>3. Challenges in Border Management and Initiatives</h2>
+
+<h3>3.1 Porous borders &#8594; CIBMS</h3>
+<p><strong>Comprehensive Integrated Border Management System (CIBMS)</strong> is an MHA initiative for stretches where physical fencing is difficult. It integrates <strong>people, weapons, sensors and communication</strong> into one command-and-control picture, to fill gaps in the older "fence and patrol" model.</p>
+<div class="table-wrap"><table id="cibms">
+<caption>CIBMS: components named in class</caption>
+<thead><tr><th scope="col">#</th><th scope="col">Component</th><th scope="col">Purpose</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>CCTV cameras</td><td>Visual monitoring</td></tr>
+<tr><td>2</td><td>Thermal imagers and night-vision devices</td><td>Detection in darkness and poor visibility</td></tr>
+<tr><td>3</td><td>Battlefield surveillance radars</td><td>Long-range detection of movement</td></tr>
+<tr><td>4</td><td>Underground monitoring sensors</td><td>Detect tunnels and digging <strong>[Additional]</strong></td></tr>
+<tr><td>5</td><td>Laser barrier (intruder alarm)</td><td>Alert on crossing the beam</td></tr>
+</tbody></table></div>
+<ul>
+<li>The system was at a <strong>pilot stage</strong> on the India-Pakistan border in the notes (pilots in Jammu are reported; <strong>[Verification Required]</strong> locations and current status).</li>
+<li>On the India-Bangladesh border a similar riverine model is <strong>BOLD-QIT</strong> (<strong>Border Electronically Dominated QRT Interception Technique</strong>), first tried in the Dhubri riverine area of Assam (about 61 km reported by a coaching source <strong>[Verification Required]</strong>). It combines sensors, cameras and communication links with <strong>Quick Reaction Teams (QRTs)</strong> of the BSF.</li>
+</ul>
+<div class="correction" id="c03"><strong>[Correction]</strong> "five layers" in the notes is better read as <strong>five technology components</strong>; the notes list them after the word "layers". "BOLD - QIT" &#8594; <strong>BOLD-QIT</strong>. "Survelliance / seemlessy / porousity" &#8594; surveillance / seamlessly / porosity. Pilots do not mean full coverage; treat roll-out status as <strong>[Verification Required]</strong>.</div>
+
+<h3>3.2 Forces with multiple, dissimilar responsibilities</h3>
+<ul>
+<li>The <strong>BSF</strong> guards <strong>both</strong> the Pakistan and Bangladesh borders, which differ sharply in threat (hostile, terrain-heavy versus porous, population-dense).</li>
+<li>The <strong>Assam Rifles</strong> guards the Myanmar border <strong>and</strong> is a counter-insurgency force.</li>
+<li>Assam Rifles has <strong>dual control</strong>: <strong>administrative control with the Ministry of Home Affairs</strong> and <strong>operational control with the Army (Ministry of Defence)</strong>; it is headed by an Army officer.</li>
+</ul>
+<p class="answer"><strong>Suggestions (MHA / earlier reviews):</strong> (1) <strong>One border, one force</strong>; (2) <strong>settled borders</strong> to be managed by a CAPF and <strong>disputed borders</strong> (LoC, LAC) to be under the <strong>Indian Army</strong>. <strong>[Additional]</strong> The one-border-one-force idea is linked to the Kargil Review Committee (1999) and the Group of Ministers (2001) <strong>[Verification Required]</strong>. Merging Assam Rifles under MHA is a long-pending proposal; the Army opposes losing a trained jungle-warfare force.</p>
+
+<h3>3.3 Troubled neighbourhood &#8594; diplomacy</h3>
+<ul>
+<li>Diplomatic and legal settlement helps border management. Example: the <strong>India-Bangladesh Land Boundary Agreement</strong> (1974, protocol 2011) was implemented in <strong>2015</strong> through the <strong>100th Constitutional Amendment Act, 2015</strong>, with an exchange of enclaves (111 Indian enclaves to Bangladesh and 51 Bangladeshi enclaves to India <strong>[Verification Required]</strong>). This removed a long-standing source of disputes.</li>
+<li><strong>Border haats</strong> (regulated local markets) operate on the India-Bangladesh border; the notes also mention India-Myanmar border haats <strong>[Verification Required]</strong>. They give locals a lawful livelihood and reduce smuggling.</li>
+</ul>
+
+<h3>3.4 Limited development at the border</h3>
+<p>Weak roads, services and jobs push border residents towards smuggling and make them less able to give information to the forces. MHA schemes named in class:</p>
+<ol>
+<li><strong>Border Area Development Programme (BADP)</strong> - centrally funded; meets basic needs in border blocks and promotes a sense of security among residents <strong>[Additional]</strong>.</li>
+<li><strong>Vibrant Villages Programme (VVP)</strong> - for villages on the northern border; <strong>[Additional]</strong> VVP-I (approved Feb 2023) targeted about 662 villages and a later VVP-II is reported to extend to other land borders <strong>[Verification Required]</strong> (outlay, year).</li>
+</ol>
+<p class="exam"><strong>Exam point:</strong> the Indian approach to the border is shifting from <strong>"guard the line"</strong> to <strong>"secure and develop the border community"</strong>; the border resident is treated as a partner in security.</p>
+</section>
+
+<section id="forces">
+<h2>4. Security Forces</h2>
+<h3>4.1 Constitutional basis</h3>
+<ul>
+<li><strong>Police</strong> and <strong>public order</strong> are <strong>State subjects</strong> (State List, Entries 2 and 1 of the Seventh Schedule) <strong>[Additional]</strong>, so the <strong>State police is the first line</strong> of internal security.</li>
+<li><strong>Article 355</strong> makes it the <strong>Union's duty</strong> to protect every State against external aggression and internal disturbance <strong>[Additional]</strong>; this is the base for deploying CAPFs to States.</li>
+</ul>
+
+<figure id="fig-forces">
+<h3>Figure 2. Forces by level and mandate</h3>
+<div class="cols3">
+<div class="tile p1"><strong>A. State police</strong><ul><li>Civil (unarmed) police, for example traffic police</li><li>Armed police, for example <strong>PAC</strong> of Uttar Pradesh</li><li>Auxiliary: <strong>Home Guards</strong></li></ul>First line; law and order</div>
+<div class="tile p2"><strong>B. CAPFs (MHA)</strong><ul><li>BSF, CRPF, ITBP, SSB, CISF</li></ul>Deployed to support States and guard borders / assets</div>
+<div class="tile p3"><strong>C. Paramilitary (as classed in notes)</strong><ul><li>Assam Rifles, Indian Coast Guard, SFF</li></ul>Border, maritime and covert roles</div>
+</div>
+<figcaption>Schematic grouping from the class notes. Official MHA usage of "CAPF" is slightly wider; see the correction below.</figcaption>
+</figure>
+
+<h3>4.2 State police and auxiliary forces</h3>
+<ul>
+<li><strong>Unarmed civil police</strong> (for example traffic police) handle routine policing; <strong>armed police</strong> handle riots and serious disturbance: for example the <strong>Provincial Armed Constabulary (PAC)</strong> of Uttar Pradesh; other States have armed battalions under different names <strong>[Additional]</strong>.</li>
+<li><strong>Auxiliary forces:</strong> Home Guards (volunteers under State Home Guards laws) support the police in emergencies, traffic control and civil defence <strong>[Additional]</strong>.</li>
+</ul>
+
+<h3>4.3 Central Armed Police Forces (CAPFs)</h3>
+<div class="table-wrap"><table id="capf">
+<caption>CAPFs and their principal mandate (class notes plus additions)</caption>
+<thead><tr><th scope="col">Force</th><th scope="col">Main role</th></tr></thead>
+<tbody>
+<tr><td><strong>CRPF</strong></td><td>Assists States in law and order and counter-insurgency when State capacity is exceeded. Includes the <strong>Rapid Action Force (RAF)</strong> for riot control and <strong>CoBRA</strong> (jungle-warfare unit against LWE). CRPF personnel also serve in <strong>UN peacekeeping</strong> missions (UNPKF in the notes) <strong>[Verification Required]</strong>.</td></tr>
+<tr><td><strong>BSF</strong></td><td>Guards the <strong>India-Pakistan</strong> and <strong>India-Bangladesh</strong> borders.</td></tr>
+<tr><td><strong>ITBP</strong></td><td>Guards the <strong>India-China</strong> border and specialises in <strong>high-altitude</strong> operations.</td></tr>
+<tr><td><strong>SSB</strong></td><td>Guards the <strong>Nepal</strong> and <strong>Bhutan</strong> borders (open borders).</td></tr>
+<tr><td><strong>CISF</strong></td><td>Protects <strong>critical infrastructure</strong> and public-sector undertakings (airports, metro, nuclear and space installations). Private installations may get cover on an MHA threat assessment and on payment <strong>[Verification Required]</strong>.</td></tr>
+</tbody></table></div>
+<div class="correction" id="c04"><strong>[Correction]</strong> (a) "if state exceeds the CRPF" &#8594; the CRPF is deployed <strong>when a State's own police capacity is exceeded</strong> (on request of the State, or by the Union under Article 355). (b) "PUT Infrastructure (MHA declared threat, expenditure)" is unclear; I read it as <strong>CISF cover for PSUs and other installations on MHA threat assessment, with the user bearing the cost</strong> <strong>[Verification Required]</strong>. (c) "<strong>SSF</strong> - Cabinet secretariat" &#8594; <strong>SFF (Special Frontier Force)</strong>, a covert force under the <strong>Cabinet Secretariat</strong> (not SSF, which is a different expansion). (d) In official MHA usage the term <strong>CAPF</strong> is commonly applied to <strong>seven</strong> forces (Assam Rifles, BSF, CISF, CRPF, ITBP, NSG, SSB) <strong>[Verification Required]</strong>; the class separates Assam Rifles as paramilitary because of its dual control. Keep the class classification for answer-writing and add this note.</div>
+
+<h3>4.4 Paramilitary forces (as classed in the notes)</h3>
+<ul>
+<li><strong>Assam Rifles</strong> - India-Myanmar border and counter-insurgency in the North-East.</li>
+<li><strong>Indian Coast Guard (ICG)</strong> - maritime security, search and rescue (including <strong>fishermen in distress</strong>), and support to the <strong>Customs</strong> department; under the Ministry of Defence (Coast Guard Act, 1978 <strong>[Additional]</strong>).</li>
+<li><strong>Special Frontier Force (SFF)</strong> - <strong>covert operations</strong> on international borders; under the Cabinet Secretariat.</li>
+</ul>
+
+<h3>4.5 CAPF versus paramilitary (from notes)</h3>
+<div class="table-wrap"><table id="capf-vs-para">
+<caption>Comparison as taught in class</caption>
+<thead><tr><th scope="col">Feature</th><th scope="col">CAPF</th><th scope="col">Paramilitary (as classed)</th></tr></thead>
+<tbody>
+<tr><td>Ministry</td><td>Under the <strong>Ministry of Home Affairs</strong></td><td>Assam Rifles: <strong>dual control</strong> (MHA administrative, Army operational); ICG: <strong>Ministry of Defence</strong>; SFF: <strong>Cabinet Secretariat</strong></td></tr>
+<tr><td>Leadership</td><td>Headed by <strong>IPS officers</strong></td><td>Assam Rifles and SFF: headed by <strong>Army officers</strong></td></tr>
+<tr><td>Promotion</td><td>Cadre officers face limited senior posts (Section 5)</td><td>ICG has <strong>in-service promotions</strong> within its own cadre</td></tr>
+</tbody></table></div>
+
+<h3>4.6 Other forces</h3>
+<ul>
+<li><strong>NSG (National Security Guard)</strong> - counter-terrorist and anti-hijack operations <strong>[Additional]</strong> (raised 1984).</li>
+<li><strong>SPG (Special Protection Group)</strong> - protection of the <strong>Prime Minister</strong>, the PM's immediate family, and former PMs; the notes say <strong>five years</strong> for former PMs <strong>[Verification Required]</strong> (check the SPG Act, 1988 as amended in 2019).</li>
+<li><strong>RPF (Railway Protection Force)</strong> - protection of railway property and passenger areas (RPF Act, 1957 <strong>[Additional]</strong>).</li>
+</ul>
+
+<h3>4.7 Intelligence and investigation agencies</h3>
+<div class="table-wrap"><table id="agencies">
+<caption>Intelligence and investigation agencies (class notes, with clarifications)</caption>
+<thead><tr><th scope="col">Agency</th><th scope="col">Role</th></tr></thead>
+<tbody>
+<tr><td><strong>IB</strong> (Intelligence Bureau)</td><td><strong>Internal</strong> intelligence (under MHA).</td></tr>
+<tr><td><strong>R&amp;AW</strong></td><td><strong>External</strong> intelligence (under the Cabinet Secretariat).</td></tr>
+<tr><td><strong>DRI</strong> (Directorate of Revenue Intelligence)</td><td>Intelligence on <strong>customs and revenue evasion</strong>, smuggling (Ministry of Finance).</td></tr>
+<tr><td><strong>FIU-IND</strong></td><td>Receives and analyses suspicious financial transactions; <strong>financial intelligence</strong> (Ministry of Finance).</td></tr>
+<tr><td><strong>NCRB</strong></td><td>Crime statistics and criminal records databases (MHA).</td></tr>
+<tr><td><strong>"BRRD"</strong> in notes</td><td>Likely <strong>BPR&amp;D</strong> (Bureau of Police Research and Development, MHA) - police research and training, not a field intelligence agency <strong>[Verification Required]</strong>.</td></tr>
+<tr><td><strong>NIA</strong></td><td>Investigation of <strong>terror</strong> and scheduled offences (NIA Act, 2008).</td></tr>
+<tr><td><strong>ED</strong></td><td><strong>Money laundering</strong> cases (PMLA, 2002) and foreign-exchange violations (FEMA).</td></tr>
+<tr><td><strong>NCB</strong></td><td>Drug cases under the <strong>NDPS Act, 1985</strong>.</td></tr>
+<tr><td><strong>CBI</strong></td><td>Corruption, serious economic and special crimes, and cases referred by courts or States (DSPE Act, 1946).</td></tr>
+</tbody></table></div>
+<div class="correction" id="c05"><strong>[Correction]</strong> The notes call the CBI's field "executive crimes". The CBI's mandate is <strong>anti-corruption, serious economic offences and special crimes</strong>; it needs <strong>State consent</strong> to investigate inside a State under the DSPE Act. NIA, ED and NCB are <strong>investigation</strong> agencies; IB, R&amp;AW, DRI and FIU-IND are <strong>intelligence</strong> agencies; arrest and prosecution powers differ. Do not use "intelligence" and "investigation" as synonyms.</div>
+</section>
+
+<section id="challenges">
+<h2>5. Challenges Faced by Security Forces</h2>
+<ol>
+<li><strong>Multiple responsibilities not of similar nature</strong> (for example BSF on two very different borders; Assam Rifles on border and counter-insurgency). See Section 3.2.</li>
+<li><strong>IPS leadership of CAPFs.</strong> A perception among CAPF cadre officers that IPS leadership affects operational efficiency and that the ranks find it hard to connect with leaders on short deputations. Defence of the system: IPS officers bring <strong>administrative and security-policy experience</strong> and act as a bridge with State police.</li>
+<li><strong>Perception of not being treated on par with the defence forces</strong> (pay, pension, status, rank recognition).</li>
+<li><strong>High attrition, suicides and fratricides</strong>, vacancies and overwork.</li>
+<li><strong>Technology development not as dynamic as threats</strong> (drones, cyber, encrypted communication).</li>
+</ol>
+
+<h3>5.1 The IPS-deputation issue (law and court position)</h3>
+<ul>
+<li>The notes say the "CAPF act" recently reserved <strong>100% of DG posts, 67% of ADG posts and 50% of IG posts</strong> for IPS officers. This matches the <strong>Central Armed Police Forces (General Administration) Bill, 2026</strong>, which <strong>Parliament passed on 2 April 2026</strong> (Lok Sabha by voice vote after Rajya Sabha): <strong>50% of IG posts</strong> and <strong>at least 67% of ADG posts</strong> to be filled by <strong>deputation</strong>, and <strong>all Special DG and DG posts</strong> by deputation only (AIR News, 2 April 2026, opened). Assent and commencement dates were not verified <strong>[Verification Required]</strong>.</li>
+<li>Reported background: on <strong>23 May 2025</strong> the Supreme Court recognised CAPF Group A executive cadre officers as <strong>Organised Group A Services (OGAS)</strong> and directed a cadre review and <strong>progressive reduction of IPS deputation</strong>; the review petition was reported dismissed in Oct 2025 <strong>[Verification Required]</strong>. Opposition members argued in Parliament that the Bill overrides the judgment; the Minister said it only gives a clear framework and strengthens cooperative federalism (as reported by AIR News). Any legal challenge to the Act is <strong>[Verification Required]</strong>.</li>
+</ul>
+<p class="answer"><strong>Suggestions in the notes:</strong> (1) increase the <strong>deputation period</strong> so that IPS leaders build rapport and understanding of the force; (2) draw deputationists from <strong>State cadres where the CAPF is also operating</strong>, so they know the ground. <strong>Added balance [Additional]:</strong> faster cadre review and promotions for cadre officers, and clear criteria for deputation.</p>
+<div class="correction" id="c06"><strong>[Correction]</strong> There is no single "CAPF Act" of the older kind: each force has its own Act (for example <strong>BSF Act, 1968</strong>; <strong>CRPF Act, 1949</strong>; <strong>CISF Act, 1968</strong>). The percentages come from the <strong>2026 General Administration</strong> law, which covers the five major CAPFs (BSF, CRPF, CISF, ITBP, SSB) according to a secondary source <strong>[Verification Required]</strong>.</div>
+
+<h3>5.2 Welfare, attrition and vacancies</h3>
+<ul>
+<li>Perceived parity with defence forces: the notes cite a <strong>higher retirement age</strong> for CAPFs and <strong>honorary promotion at retirement</strong>; exact ages and rank rules are <strong>[Verification Required]</strong>.</li>
+<li>The notes record: "more than 50K resignations", "700 suicides", "more than 1 lakh vacancies", "about 10 lakh personnel, but only 42K can use leave".</li>
+</ul>
+<div class="table-wrap"><table id="capf-stats">
+<caption>Reported Parliament-reply figures (secondary sources; compare with the notes)</caption>
+<thead><tr><th scope="col">Indicator</th><th scope="col">Reported figure</th><th scope="col">Scope and period</th></tr></thead>
+<tbody>
+<tr><td>Suicides</td><td><strong>438</strong> (157 in 2023, 148 in 2024, 133 in 2025)</td><td>CAPFs, Assam Rifles and NSG; 2023-2025</td></tr>
+<tr><td>Fratricides</td><td><strong>7</strong></td><td>2023-2025</td></tr>
+<tr><td>Resignations</td><td><strong>about 23,360</strong></td><td>Since 2014 up to 2025</td></tr>
+<tr><td>Vacancies</td><td><strong>about 93,000</strong> (93,139)</td><td>CAPFs and Assam Rifles; reply reported in March 2026</td></tr>
+</tbody></table></div>
+<p class="small">Sources: news reports of MHA replies in Parliament (Daily Excelsior, The Hindu); the replies themselves were not opened. Year-wise resignation numbers in one summary were inconsistent, so they are not reproduced. <strong>[Verification Required]</strong></p>
+<div class="correction" id="c07"><strong>[Correction]</strong> The notes' figures ("50K resignations", "700 suicides", "1L vacancies") have <strong>no stated period</strong> and differ from the reported figures above, which are for a defined period. Use the reported figures with their period and source. Suicide statistics concern <strong>personnel welfare</strong>; avoid linking them to individual blame. The "42K leave" figure could not be matched to any source <strong>[Verification Required]</strong>.</div>
+<p class="answer"><strong>MHA initiatives:</strong> grievance redressal mechanisms and <strong>psychological counselling</strong>, stress-management and yoga programmes, and measures on leave and postings (as reported in replies to Parliament; details <strong>[Verification Required]</strong>).</p>
+
+<h3>5.3 Technology gap</h3>
+<p>Threats move faster than procurement: drone drops across the border, encrypted messaging and cyber-enabled crime. <strong>[Additional]</strong> Responses include anti-drone systems, CIBMS, modernisation funding through the MHA's modernisation plans and indigenous procurement; details are <strong>[Verification Required]</strong>.</p>
+</section>
+
+<section id="prelims">
+<h2>Key Facts for Prelims</h2>
+<ul>
+<li>Borders: <strong>Pakistan - IB: BSF; LoC / Siachen: Army</strong>; <strong>China - Army + ITBP</strong>; <strong>Nepal and Bhutan - SSB</strong>; <strong>Myanmar - Assam Rifles</strong>; <strong>Bangladesh - BSF</strong>.</li>
+<li><strong>NJ 9842</strong> is the last demarcated point of the LoC; beyond it is the <strong>AGPL</strong> (Siachen).</li>
+<li><strong>Johnson Line</strong> (India's Aksai Chin claim), <strong>Macartney-MacDonald Line</strong> (China), <strong>McMahon Line</strong> (Arunachal, 1914).</li>
+<li><strong>Kalapani</strong> - India-Nepal dispute; Sugauli Treaty 1816, Kali River.</li>
+<li>Myanmar borders: <strong>Arunachal, Nagaland, Manipur, Mizoram</strong> (not Assam); FMR (16 km) ended Feb 2024.</li>
+<li><strong>CIBMS</strong>: integrated technology system; pilots on the Pakistan border; <strong>BOLD-QIT</strong> on the riverine Bangladesh border.</li>
+<li><strong>BSF</strong>: Pakistan and Bangladesh; <strong>ITBP</strong>: China, high altitude; <strong>SSB</strong>: Nepal and Bhutan; <strong>CISF</strong>: critical infrastructure; <strong>CRPF</strong>: RAF, CoBRA.</li>
+<li><strong>SFF</strong>: Cabinet Secretariat; <strong>ICG</strong>: Ministry of Defence; <strong>Assam Rifles</strong>: dual control.</li>
+<li><strong>IB</strong> internal; <strong>R&amp;AW</strong> external; <strong>NIA</strong> terror; <strong>ED</strong> money laundering; <strong>NCB</strong> NDPS; <strong>CBI</strong> corruption and special crimes.</li>
+<li><strong>CAPF (General Administration) Bill, 2026</strong>: passed 2 April 2026; IG 50%, ADG at least 67%, DG and Special DG 100% by deputation.</li>
+<li>India-Bangladesh LBA implemented <strong>2015</strong> (100th Amendment).</li>
+</ul>
+</section>
+
+<section id="mains">
+<h2>Mains Points</h2>
+<ul>
+<li><strong>Border management is multi-layered:</strong> it needs forces, technology (CIBMS), diplomacy (LBA 2015), economic exchange (border haats) and local development (BADP, VVP). Each alone is incomplete.</li>
+<li><strong>Different borders need different models:</strong> hostile and disputed borders (LoC, LAC) are military tasks; settled, open or riverine borders (Bangladesh, Nepal) are policing, trade and migration tasks. One force on two unlike borders (BSF) or on border plus counter-insurgency (Assam Rifles) dilutes focus.</li>
+<li><strong>Technology complements, not replaces, manpower:</strong> CIBMS reduces round-the-clock physical presence but needs maintenance, power, trained personnel and quick-reaction teams; pilots must be evaluated before scaling.</li>
+<li><strong>Community is a security asset:</strong> ending the FMR addresses security and demographic concerns but can disrupt cross-border kin and livelihood networks; calibrated passes and consultation lower friction.</li>
+<li><strong>Force-leadership debate:</strong> IPS deputation gives coordination with States and administrative experience; cadre officers argue for career progression and morale. A balanced approach: transparent, time-bound cadre review, adequate deputation tenure, and judicial and parliamentary clarity on the 2026 Act and the 2025 judgment.</li>
+<li><strong>Force welfare is operational efficiency:</strong> vacancies, leave, counselling and housing directly affect morale and effectiveness; publish periodic data and fill vacancies faster.</li>
+<li><strong>Way forward:</strong> (1) one-border-one-force where practical; (2) complete CIBMS roll-out with independent evaluation; (3) coordinated intelligence and anti-drone capability; (4) diplomacy on disputed alignments; (5) border-area development and livelihood; (6) welfare reform and cadre restructuring with consultation; (7) maritime domain awareness against IUU fishing and dark shipping.</li>
+</ul>
+</section>
+
+<section id="traps">
+<h2>Common Traps / Confusions</h2>
+<ul>
+<li><strong>Border guarding is not border management.</strong></li>
+<li><strong>IB (International Border) versus IB (Intelligence Bureau)</strong> - do not mix.</li>
+<li><strong>LoC versus LAC versus IB:</strong> LoC (India-Pakistan, J&amp;K), LAC (India-China, not delineated), IB (settled border).</li>
+<li><strong>Assam does not border Myanmar.</strong></li>
+<li><strong>SFF (Special Frontier Force)</strong> is not SSF; it is under the Cabinet Secretariat, not MHA.</li>
+<li>Assam Rifles: <strong>MHA administrative, Army operational</strong>; do not say "under MHA" alone.</li>
+<li><strong>Intelligence</strong> (IB, R&amp;AW, DRI, FIU-IND) is not <strong>investigation</strong> (NIA, ED, NCB, CBI).</li>
+<li><strong>CAPF</strong> is not the Army: CAPFs assist States and guard borders under MHA; the Army is under the Ministry of Defence.</li>
+<li><strong>Dark shipping</strong> includes AIS switch-off, not only unregistered ships.</li>
+<li>Reported numbers (suicides, resignations, vacancies) must be quoted <strong>with period and source</strong>.</li>
+</ul>
+</section>
+
+<section id="revision">
+<h2>30-Second Revision</h2>
+<p class="lead"><strong>Border management:</strong> issues - artificial borders, troubled neighbourhood, porous borders. Challenges - terrorism, infiltration, ceasefire violations, safe havens, sporadic aggression, organised crime, piracy, IUU fishing, dark shipping. Components - security, lawful movement, diplomacy, coordination, legal trade. Forces by border - Pakistan: BSF (IB) and Army (LoC, Siachen NJ 9842 / AGPL); China: Army + ITBP (Johnson versus Macartney-MacDonald in Aksai Chin; McMahon in Arunachal); Nepal and Bhutan: SSB (Kalapani); Myanmar: Assam Rifles (4 States, FMR ended 2024). Initiatives - CIBMS, BOLD-QIT, LBA 2015, border haats, BADP, VVP. <strong>Forces:</strong> State police (first line, PAC, Home Guards); CAPFs - CRPF (RAF, CoBRA), BSF, ITBP, SSB, CISF; paramilitary - Assam Rifles (dual control), ICG, SFF. NSG, SPG, RPF. Intelligence - IB, R&amp;AW, DRI, FIU-IND, NCRB; investigation - NIA, ED, NCB, CBI. <strong>Challenges:</strong> multiple roles, IPS leadership (2026 Act: DG 100%, ADG 67%, IG 50%), parity, attrition and suicides, vacancies, technology gap.</p>
+</section>
+
+<section id="pyqs">
+<h2>Previous Year Questions (PYQs)</h2>
+<p class="small">The official UPSC papers were not opened. Wording below is a <strong>paraphrase</strong> from secondary compilations, not verbatim. <strong>[Verification Required]</strong> check exact wording, marks and word limits on the UPSC archive.</p>
+
+<h3>Q1. Mains 2016, GS Paper III</h3>
+<p>Paraphrase: border management is a complex task because of difficult terrain and hostile relations with some countries; explain the challenges and strategies for effective border management. (A compilation lists 12.5 marks and 200 words; <strong>[Verification Required]</strong>.)</p>
+<p class="answer"><strong>Suggested answer approach [Additional]:</strong> state the issues (Section 1.1), challenges (1.2), then initiatives: CIBMS and BOLD-QIT, LBA 2015 and border haats, BADP and VVP, and a force-structure reform (3.2). Close with a balanced way forward. Study guidance, not an official marking scheme.</p>
+
+<h3>Q2. Mains 2019, GS Paper III (year as listed by the compilation)</h3>
+<p>Paraphrase: cross-border movement of insurgents is only one of several security challenges in policing the border (North-East focus); discuss the other challenges faced by border security forces. <strong>[Verification Required]</strong> exact wording, whether the question is NE-specific, and marks.</p>
+<p class="answer"><strong>Suggested answer approach [Additional]:</strong> list organised crime, smuggling, trafficking, illegal migration, terrain, multiple roles of forces, community ties and the FMR (Sections 1.2, 2, 3.2).</p>
+
+<h3>Q3. Mains 2021, GS Paper III (year as listed by the compilation)</h3>
+<p>Paraphrase: trans-border crimes along the borders with Myanmar, Bangladesh and Pakistan are a major security concern; examine them critically and discuss the role of security forces. <strong>[Verification Required]</strong> exact wording and year.</p>
+<p class="answer"><strong>Suggested answer approach [Additional]:</strong> border-wise crimes (narcotics, arms, FICN, cattle, trafficking), force roles (BSF, Assam Rifles, Army) and gaps (Sections 2, 3, 4).</p>
+<p class="small">Sources: <a href="https://superkalam.com/upsc-mains/previous-year-question-paper/2016/gs-paper-3">Superkalam - UPSC Mains 2016 GS Paper 3 questions (secondary compilation, search listing)</a>; <a href="https://vajiramandravi.com/upsc-exam/upsc-mains-internal-security-pyqs/">Vajiram and Ravi - UPSC Mains Internal Security PYQs (secondary compilation)</a>. Questions 2 and 3 were taken from a search summary and need confirmation against the UPSC archive.</p>
+</section>
+
+<section id="corrections">
+<h2>Corrections Made</h2>
+<ol>
+<li><a href="#c01">C1: Spelling (safe haven, neighbourhood, organised); dark shipping includes AIS switch-off; maritime challenges noted.</a></li>
+<li><a href="#c02">C2: Johnson and Macartney-MacDonald lines; NJ 9842 versus AGPL; FMR applied to four States.</a></li>
+<li><a href="#c03">C3: "Five layers" read as five technology components; BOLD-QIT expansion.</a></li>
+<li><a href="#c04">C4: CRPF deployment wording; "PUT" read as PSU / threat-assessed installations; SSF corrected to SFF; CAPF count in MHA usage.</a></li>
+<li><a href="#c05">C5: CBI mandate ("executive crimes" corrected); intelligence versus investigation; "BRRD" probably BPR&amp;D.</a></li>
+<li><a href="#c06">C6: "CAPF act" identified as the CAPF (General Administration) Act / Bill 2026; force-wise Acts noted.</a></li>
+<li><a href="#c07">C7: Notes' resignation, suicide and vacancy figures replaced by period-specific reported figures; "42K leave" unverified.</a></li>
+</ol>
+<p class="additional"><strong>[Additional]</strong> items include Radcliffe, Durand and McMahon examples, the 2003 ceasefire, the Maritime Anti-Piracy Act 2022, border lengths, the 1950 Nepal treaty, Sir Creek, BADP and VVP, the constitutional basis of police and Article 355, the NSG, RPF and agency mandates, the Supreme Court judgment of 23 May 2025, and the CAPF statistics table.</p>
+</section>
+
+<section id="sources">
+<h2>Open Sources / Further Reading</h2>
+<p class="small">Retrieval date: 24 October 2026. Items marked (opened) were read as text; items marked (search summary) were not opened and should be verified against official records.</p>
+<ul>
+<li><a href="https://newsonair.gov.in/parliament-passes-capf-general-administration-bill-2026-with-voice-vote/">AIR News - Parliament passes CAPF (General Administration) Bill, 2026 (2 April 2026, official broadcaster, opened)</a></li>
+<li><a href="https://www.thehindu.com/news/national/over-93000-posts-vacant-in-capfs-government-tells-rajya-sabha/article70730735.ece">The Hindu - Over 93,000 posts vacant in CAPFs: government tells Rajya Sabha (March 2026, news, search summary)</a></li>
+<li><a href="https://www.dailyexcelsior.com/capfs-saw-438-suicides-7-fratricides-in-3-years-over-23000-personnel-resigned-since-2014-govt/">Daily Excelsior - CAPFs saw 438 suicides, 7 fratricides in 3 years; resignations since 2014 (Dec 2025, news, search summary)</a></li>
+<li><a href="https://www.casemine.com/commentary/in/capfs-declared-full-fledged-organised-group-%E2%80%98a%E2%80%99-services:-supreme-court-lays-down-road-map-for-cadre-review-and-progressive-curtailment-of-deputation-posts/view">Casemine - Supreme Court on CAPFs as Organised Group A Services (May 2025, legal commentary, search summary)</a></li>
+<li><a href="https://pib.gov.in/PressReleasePage.aspx?PRID=1567263">PIB - Press release on border management and CIBMS (official, search summary; not opened)</a></li>
+<li><a href="https://www.mha.gov.in/MHA1/Par2017/pdfs/par2018-pdfs/ls-03042018/LS5850.pdf">MHA - Lok Sabha Unstarred Question 5850, 3 April 2018 (official, search summary; not opened)</a></li>
+<li><a href="https://www.drishtiias.com/daily-updates/daily-news-analysis/bold-qit-project">Drishti IAS - BOLD-QIT project (coaching compilation, search summary)</a></li>
+<li><a href="https://compass.rauias.com/internal-security/dual-control-assam-rifles/">Rau's IAS - Dual control in Assam Rifles (coaching compilation, search summary)</a></li>
+<li><a href="https://www.mha.gov.in/en/annual-reports">MHA - Annual Reports (official; use for border lengths, force strengths and schemes; not opened)</a></li>
+<li><a href="https://superkalam.com/upsc-mains/previous-year-question-paper/2016/gs-paper-3">Superkalam - UPSC Mains 2016 GS Paper 3 (secondary compilation, search listing)</a></li>
+</ul>
+</section>
+</main>
+</body>
+</html>

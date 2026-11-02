@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Internal Security - Class Notes | 19 October 2026</title>
+<style>
+  * { box-sizing: border-box; }
+  body { font-family: Calibri, sans-serif; font-size: 11pt; line-height: 1.6; max-width: 900px; margin: 20px auto; padding: 0 20px; color: #202124; }
+  h1 { font-size: 20pt; color: #1a1a1a; border-bottom: 2px solid #333; padding-bottom: 4px; margin-top: 30px; }
+  h2 { font-size: 16pt; color: #2b2b2b; margin-top: 28px; border-bottom: 1px solid #ddd; padding-bottom: 3px; }
+  h3 { font-size: 13pt; color: #3a3a3a; margin-top: 18px; }
+  h4 { font-size: 11.5pt; color: #3a3a3a; margin: 14px 0 4px; }
+  p { margin: 8px 0; }
+  ul, ol { margin: 6px 0; padding-left: 28px; }
+  li { margin: 4px 0; }
+  a { color: #005ea6; overflow-wrap: anywhere; }
+  table { border-collapse: collapse; width: 100%; margin: 10px 0; }
+  caption { text-align: left; font-weight: bold; margin-bottom: 6px; }
+  th, td { border: 1px solid #999; padding: 6px 10px; text-align: left; vertical-align: top; overflow-wrap: break-word; }
+  th { background: #f0f0f0; }
+  .table-wrap { overflow-x: auto; }
+  .note, .exam, .verification { background: #fff8e1; border-left: 3px solid #f5a623; padding: 8px 12px; margin: 10px 0; }
+  .correction { background: #fff3e0; border-left: 3px solid #ef6c00; padding: 8px 12px; margin: 10px 0; }
+  .additional, .lead { background: #e8f5e9; border-left: 3px solid #2e7d32; padding: 8px 12px; margin: 10px 0; }
+  .flow { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 10px; padding: 12px 0; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; }
+  .flow span { text-align: center; max-width: 100%; }
+  .flow .box { border: 1px solid #888; background: #f7f7f7; padding: 6px 10px; border-radius: 4px; flex: 1 1 150px; }
+  figure { margin: 16px 0; padding: 12px; border: 1px solid #bbb; background: #fff; }
+  figure h3 { margin-top: 0; text-align: center; }
+  figcaption { margin-top: 8px; color: #555; font-size: 9.5pt; }
+  .cols3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+  .cols4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+  .tile { border: 1px solid #888; border-radius: 4px; padding: 8px; background: #f5f9fd; font-size: 10.5pt; }
+  .tile.p1 { background: #e8f5e9; border-color: #2e7d32; }
+  .tile.p2 { background: #f5f9fd; border-color: #0078d4; }
+  .tile.p3 { background: #fff3e0; border-color: #ef6c00; }
+  .small { color: #555; font-size: 9.5pt; }
+  .answer { margin: 10px 0; padding: 6px 12px; border-left: 3px solid #0078d4; background: #f5f9fd; }
+  @media (max-width: 650px) {
+    body { padding: 0 12px; }
+    .cols3, .cols4 { grid-template-columns: 1fr; }
+    .table-wrap table { min-width: 540px; }
+  }
+  @media print {
+    @page { size: A4; margin: 14mm; }
+    body { max-width: none; margin: 0; padding: 0; }
+    h1, h2, h3, h4 { break-after: avoid; }
+    figure, tr, .answer, .tile { break-inside: avoid; }
+    thead { display: table-header-group; }
+    .table-wrap { overflow: visible; }
+    .table-wrap table { min-width: 0; }
+    a { color: inherit; text-decoration: none; }
+    p, li { orphans: 3; widows: 3; }
+  }
+</style>
+</head>
+<body>
+<main>
+<header>
+<h1>Internal Security - Class Notes | 19 October 2026</h1>
+<p><strong>Topics:</strong> North-East India, continued - state-wise study of insurgency and peace processes: Nagaland (Naga identity, Naga Club to NNC, Hydari Agreement, Shillong Accord, NSCN and its splits, Framework Agreement 2015, AFSPA), Assam (illegal migration, AASU, Assam Accord 1985, ULFA, Bodoland, Dima Hasao, other demands), and Arunachal Pradesh, Meghalaya, Mizoram and Tripura. <strong>Added on 20 October 2026:</strong> ceasefire mechanisms, NSCN (K) and the Frontier Nagaland (ENPO) agreement, the legal framework on migration (IMDT, Sonowal, CAA, Clause 6), Assam's boundary disputes, the Sixth Schedule and Article 371 table, security architecture and the Myanmar border (FMR), and violence trends.</p>
+<p class="small">Notes for the class of <time datetime="2026-10-19">19 October 2026</time>, prepared and fact-checked on 20 October 2026. This note <strong>continues the North-East topic</strong> begun in <a href="Internal%20Security%20-%20Class%2010-18-2026.html">the 18 October note</a> (Section 5, demands behind insurgencies; Section 6, causes of isolation and alienation). The earlier daily notes were not edited. Manipur is not covered in today's rough notes and is therefore not treated here.</p>
+<p class="note"><strong>[Correction]</strong> marks a substantive repair to the rough notes. <strong>[Additional]</strong> marks supporting facts added for exam value. <strong>[Verification Required]</strong> marks a point that could not be confirmed from an official source. <strong>Verification limit:</strong> the PIB site returned an access error and the MHA, India Code and Supreme Court documents were not opened as text. Dates and details below were cross-checked against several secondary sources (news reports, explainers, encyclopaedic summaries); the 2026 developments rest on news reports only and are marked accordingly.</p>
+</header>
+
+<section id="overview">
+<h2>1. North-East at a Glance</h2>
+<p class="lead">Nagaland and Assam produced the largest and longest insurgencies of the region; Mizoram (1986), Tripura (2015 onward) and Meghalaya (2018 onward) are the examples most often quoted as <strong>peace consolidated</strong>. Roughly: <strong>demand for sovereignty or homeland &#8594; violence &#8594; ceasefire or accord &#8594; splinter group &#8594; new talks</strong>. This repeating pattern is the <strong>hydra-head tendency</strong> (Section 2.4).</p>
+<div class="table-wrap"><table id="state-snapshot">
+<caption>State-wise snapshot built from the class notes (status as reported; see corrections)</caption>
+<thead><tr><th scope="col">State</th><th scope="col">Main insurgent or ethnic issue</th><th scope="col">Key settlement or milestone</th><th scope="col">Status (as reported)</th></tr></thead>
+<tbody>
+<tr><td><strong>Nagaland</strong></td><td>Naga sovereignty, then Nagalim (integration of Naga areas)</td><td>Shillong Accord 1975; NSCN-IM ceasefire 1997; Framework Agreement 3 Aug 2015</td><td>Final settlement <strong>not reached</strong>; talks continue</td></tr>
+<tr><td><strong>Assam</strong></td><td>Illegal migration (Assam Movement); ULFA; Bodo, Dimasa, Karbi demands</td><td>Assam Accord 1985; Bodo Accord 2020; DNLA pact 2023; ULFA pact 2023</td><td>Largely settled; <strong>ULFA (I)</strong> remains outside</td></tr>
+<tr><td><strong>Arunachal Pradesh</strong></td><td>Spill-over of Naga and Assam groups in Tirap, Changlang, Longding</td><td>-</td><td>Limited, localised (see correction C9)</td></tr>
+<tr><td><strong>Meghalaya</strong></td><td>Garo and Khasi-Jaintia militant groups</td><td>AFSPA fully withdrawn 2018</td><td>Peaceful, some residual groups</td></tr>
+<tr><td><strong>Mizoram</strong></td><td>MNF insurgency for Mizo independence</td><td>Mizo Accord 30 June 1986; statehood 20 Feb 1987</td><td>Peaceful since 1986</td></tr>
+<tr><td><strong>Tripura</strong></td><td>NLFT, ATTF (tribal identity and migration)</td><td>AFSPA withdrawn 2015; tripartite pact 4 Sept 2024</td><td>Peaceful; implementation complaints reported</td></tr>
+</tbody></table></div>
+</section>
+
+<section id="nagaland">
+<h2>2. Nagaland</h2>
+<p class="lead">Nagaland is the <strong>oldest and most complex insurgency</strong> of the North-East: it began as a demand for an independent Naga State in 1947, shifted to a demand for <strong>Nagalim</strong> (a Naga homeland across State and international borders), and now continues as a negotiation over political status, a separate flag and constitution, and territory.</p>
+
+<h3>2.1 Naga Identity and Early Organisation</h3>
+<ul>
+<li>The <strong>Nagas</strong> are not one tribe but a group of ethnicities and tribes, for example <strong>Ao, Angami, Sumi (Sema), Lotha, Rengma, Konyak</strong>, with distinct dialects and village-based governance.</li>
+<li><strong>Naga Club (1918):</strong> formed by educated Nagas and returnees from the First World War Labour Corps to protect Naga identity and culture. In <strong>1929</strong> it submitted a memorandum to the <strong>Simon Commission</strong> asking that Nagas be left alone <strong>[Additional]</strong>.</li>
+<li><strong>Naga National Council (NNC), 1946:</strong> the Naga Club and the Naga Hills District Tribal Council were merged into a political body. It was first led by <strong>T. Sakhrie and Imti Aliba (Ao)</strong> and later by <strong>Angami Zapu Phizo</strong>, who radicalised it toward independence <strong>[Additional; Verification Required: early leadership]</strong>.</li>
+<li><strong>Phizo</strong> became NNC president in <strong>1950</strong>, went underground in <strong>1956</strong> and formed a parallel Naga Federal Government, later living in exile in London <strong>[Additional; Verification Required]</strong>.</li>
+</ul>
+<p class="correction" id="c01"><strong>[Correction]</strong> (1) The agreement is the <strong>Hydari Agreement</strong> (after Sir Akbar Hydari, Governor of Assam) of <strong>29 June 1947</strong>, also called the <strong>Nine-Point Agreement</strong>; the rough notes spell it "Hyadri". The talks were between the NNC and the Government (Governor of Assam on behalf of the Union); the notes call them "tripartite", which is not how the sources describe the 1947 talks <strong>[Verification Required]</strong>. (2) "NNC broke the agreement" is <strong>one side's reading</strong>. The ninth clause made the Governor the Nagas' guardian for <strong>ten years</strong>, after which the NNC could decide the future; the NNC understood this as a right to choose independence, while the Indian side did not accept that reading. Treat the dispute as one of <em>interpretation</em>. (3) Phizo is better described as the <strong>father of Naga nationalism and the independence movement</strong>; Nagalim was articulated mainly by the later NSCN. (4) Independence was declared on <strong>14 August 1947</strong>, a day before India's independence.</p>
+
+<h3>2.2 Timeline of the Naga Question</h3>
+<figure id="fig-naga-timeline">
+<h3>Figure 1. Naga movement: from Naga Club to the Framework Agreement</h3>
+<div class="flow">
+<span class="box"><strong>1918</strong><br/>Naga Club</span><span>&#8594;</span>
+<span class="box"><strong>1946</strong><br/>NNC formed</span><span>&#8594;</span>
+<span class="box"><strong>29 Jun 1947</strong><br/>Hydari (Nine-Point) Agreement</span><span>&#8594;</span>
+<span class="box"><strong>14 Aug 1947</strong><br/>NNC declares independence</span><span>&#8594;</span>
+<span class="box"><strong>1958</strong><br/>AFSPA enacted (Assam and Manipur; Naga Hills)</span><span>&#8594;</span>
+<span class="box"><strong>1960</strong><br/>16-Point Agreement</span><span>&#8594;</span>
+<span class="box"><strong>1 Dec 1963</strong><br/>Nagaland becomes a State</span><span>&#8594;</span>
+<span class="box"><strong>11 Nov 1975</strong><br/>Shillong Accord</span><span>&#8594;</span>
+<span class="box"><strong>1980</strong><br/>NSCN formed</span><span>&#8594;</span>
+<span class="box"><strong>1988</strong><br/>NSCN splits: IM and K</span><span>&#8594;</span>
+<span class="box"><strong>1997 / 2001</strong><br/>Ceasefires with IM / K</span><span>&#8594;</span>
+<span class="box"><strong>3 Aug 2015</strong><br/>Framework Agreement</span>
+</div>
+<figcaption>Dates compiled from encyclopaedic and news summaries; to be checked against the MHA "North East - Major Initiatives and Peace Process" document. Not to scale.</figcaption>
+</figure>
+
+<ul>
+<li><strong>Naga Hills-Tuensang Area (1957) and the 16-Point Agreement (1960):</strong> the Naga Hills (Assam) and Tuensang (NEFA) were first administered together as a Centre-run area. In <strong>July 1960</strong> the <strong>Naga People's Convention</strong> and the Union Government agreed on a State; the NNC rejected it <strong>[Additional]</strong>.</li>
+<li><strong>1963:</strong> Nagaland became the <strong>16th State</strong> through the <strong>State of Nagaland Act, 1962</strong> and the <strong>13th Constitution Amendment</strong>, which inserted <strong>Article 371A</strong> (special protection to Naga customary law, religious and social practices, ownership of land and resources) <strong>[Additional]</strong>.</li>
+<li><strong>Shillong Accord, 11 November 1975:</strong> signed by the Governor of Nagaland (for the Union) and representatives of the underground NNC and Naga Federal Government. They agreed to <strong>accept the Indian Constitution and surrender arms</strong>. Many underground leaders rejected it as a betrayal; this rejection led directly to the NSCN.</li>
+</ul>
+<p class="correction" id="c02"><strong>[Correction]</strong> The rough notes say "1958 - AFSPA was imposed in Assam". More exactly, the <strong>Armed Forces (Special Powers) Act, 1958</strong> was enacted by Parliament for <strong>Assam and Manipur</strong> (the Naga Hills were then part of Assam) and later extended to other North-Eastern States by amendment (1972). It does not apply automatically: it applies only in an area declared <strong>"disturbed"</strong> by notification. An Ordinance preceded the Act in 1958 <strong>[Verification Required]</strong>.</p>
+
+<h3>2.3 The Demand: Nagalim (Greater Nagaland)</h3>
+<ul>
+<li>Nagalim means the <strong>integration of all contiguous Naga-inhabited areas</strong> under one administrative arrangement: parts of <strong>Assam, Manipur and Arunachal Pradesh</strong> and parts of <strong>Myanmar</strong>, in addition to present Nagaland.</li>
+<li>The notes list "Nagaland" among the areas; the claim covers present Nagaland plus <em>additional</em> Naga areas in the neighbouring States and Myanmar.</li>
+<li><strong>Why it is hard to settle:</strong> Assam, Manipur and Arunachal Pradesh have repeatedly opposed any change to their territory (Manipur's territorial integrity is a politically sensitive issue); part of the claimed area lies in Myanmar and cannot be settled by India alone.</li>
+</ul>
+<p class="verification"><strong>[Visual Representation Recommended: schematic map (not to scale) comparing present Nagaland with the claimed Nagalim areas, based on an authoritative public map; not drawn here because the claimed boundaries are disputed and should not be invented]</strong></p>
+
+<h3>2.4 NSCN and the Hydra-Head Tendency</h3>
+<ul>
+<li><strong>NSCN (1980):</strong> the <strong>National Socialist Council of Nagaland</strong> was formed on <strong>31 January 1980</strong> by <strong>Isak Chishi Swu, Thuingaleng Muivah and S.S. Khaplang</strong> (the rough notes write "T. Muviah"). It rejected the Shillong Accord and revived the demand for a sovereign Nagalim, mixing Naga nationalism with a socialist and (as the notes and sources say) a Christian identity <strong>[Verification Required: ideology]</strong>.</li>
+<li><strong>1988:</strong> the NSCN split into <strong>NSCN (IM)</strong> (Isak-Muivah, mainly Tangkhul and Sumi support) and <strong>NSCN (K)</strong> (Khaplang, a Hemi Naga from Myanmar) after leadership and ethnic disputes, followed by violent rivalry between the factions <strong>[Additional]</strong>.</li>
+<li><strong>Ceasefires:</strong> NSCN (IM) in <strong>1997</strong> (1 August); NSCN (K) in <strong>2001</strong>. The NSCN (K) <strong>ended its ceasefire in March 2015</strong> and was later declared an unlawful association under the UAPA <strong>[Additional; Verification Required: dates]</strong>.</li>
+</ul>
+<figure id="fig-nscn-splits">
+<h3>Figure 2. The hydra-head tendency: splits of the NSCN</h3>
+<div class="cols3">
+<div class="tile p1"><strong>1980: NSCN</strong><br/>Isak Chishi Swu, Muivah, Khaplang. Rejected the 1975 Shillong Accord.</div>
+<div class="tile p2"><strong>1988: NSCN (IM)</strong><br/>Ceasefire 1997; Framework Agreement 2015; still negotiating.</div>
+<div class="tile p3"><strong>1988: NSCN (K)</strong><br/>Ceasefire 2001; ended 2015; further splits.</div>
+</div>
+<div class="cols3" style="margin-top:10px">
+<div class="tile">Splinters from NSCN (K): <strong>NSCN (R)</strong> (Reformation) and <strong>NSCN (KK)</strong> (Khole-Kitovi), both about 2011 <strong>[Verification Required]</strong>.</div>
+<div class="tile">Later splinters named in the class notes: <strong>NSCN (Nikki)</strong> and others <strong>[Verification Required]</strong>.</div>
+<div class="tile">Several factions and older NNC groups work together as the <strong>Naga National Political Groups (NNPGs)</strong>, which signed the <strong>Agreed Position</strong> with the Government on 17 November 2017 <strong>[Verification Required]</strong>.</div>
+</div>
+<figcaption>Schematic only; faction names and years are from secondary summaries and should be confirmed from MHA documents. Not to scale.</figcaption>
+</figure>
+<div class="exam"><strong>Hydra-head tendency (definition):</strong> when a group signs a ceasefire or accord, dissatisfied members break away, form a new armed group and continue fighting, so that a settlement with one group does not end the conflict. <strong>Why it happens:</strong> leadership and ethnic rivalries, unequal benefits from accords, extortion income and an unresolved core demand. <strong>Policy lesson:</strong> settle the core political demand and implement the package with rehabilitation; do not rely only on talks with a single leader.</div>
+<p class="correction" id="c03"><strong>[Correction]</strong> (1) The 1997 and 2001 agreements with the NSCN (IM) and NSCN (K) are <strong>ceasefire agreements</strong>, not final "peace agreements". (2) "NSC" in the rough notes is read as <strong>NSCN</strong>. (3) The Council's name is <strong>National Socialist Council of Nagaland</strong>; the IM faction itself uses "Nagalim" in its name. (4) Faction names and years of the splinters are from secondary reports and not from MHA documents <strong>[Verification Required]</strong>.</p>
+
+<h3>2.5 The Peace Process: Framework Agreement (2015) and After</h3>
+<ul>
+<li><strong>Framework Agreement, 3 August 2015:</strong> signed by the Government of India's interlocutor and NSCN (IM) in the presence of the Prime Minister. It is a <strong>framework</strong> for a final settlement, not the settlement.</li>
+<li><strong>Agreed Position, 17 November 2017:</strong> reached with the NNPG working committee <strong>[Verification Required]</strong>.</li>
+<li><strong>Sticking points:</strong> NSCN (IM) demands a separate <strong>Naga flag and constitution</strong> and the integration of Naga areas; the Government has described the Framework Agreement as being within the Constitution and has not accepted a separate flag and constitution (as reported).</li>
+<li><strong>2026 developments (as reported by news sources):</strong> Ajit Lal, a retired IPS officer and former chairman of the Joint Intelligence Committee, was reported to have been appointed interlocutor in February 2026 after the earlier interlocutor's tenure ended; in August 2026 the Nagaland Chief Minister said the Union Home Minister had agreed to involve Union Ministers of State for Home Affairs in the talks; and a breakaway faction of the NSCN (IM) was reported to have declared a "provisional government" in July 2026. <strong>[Verification Required: reported only by news and commentary sources; treat the NSCN (IM) split as unconfirmed until an official statement is available]</strong>.</li>
+</ul>
+<p class="correction" id="c04"><strong>[Correction]</strong> The rough notes say "in 2015, to address insurgency Naga peace accord was formed". The 2015 document is the <strong>Framework Agreement</strong> (3 August 2015) between the Government and NSCN (IM). It is <strong>not</strong> a final peace accord and the Naga political issue remains unresolved as of October 2026.</p>
+
+<h3>2.6 AFSPA in Nagaland</h3>
+<ul>
+<li><strong>Meaning:</strong> the Armed Forces (Special Powers) Act, 1958 gives armed forces in a notified <strong>"disturbed area"</strong> special powers: to fire after due warning, to arrest without warrant and to search without warrant. <strong>Section 6</strong> bars prosecution of personnel without the <strong>prior sanction of the Central Government</strong>.</li>
+<li><strong>Who declares:</strong> the Governor or Administrator of the State or Union Territory, or the Central Government, under Section 3. In Nagaland, Arunachal Pradesh and Manipur the notification is renewed by the MHA every six months; in Assam the State Government notifies it (reported) <strong>[Verification Required]</strong>.</li>
+<li><strong>Current position:</strong> reported news says the MHA extended AFSPA in parts of Nagaland, Arunachal Pradesh and Manipur from <strong>1 October 2026 to 31 March 2027</strong>, covering nine districts and 21 police-station areas in Nagaland. In Assam, disturbed-area status was reported to be in force in three districts (Tinsukia, Charaideo, Sivasagar) <strong>[Verification Required: check the latest MHA notification and the Assam notification]</strong>.</li>
+<li><strong>Judicial position:</strong> in <em>Naga People's Movement of Human Rights v. Union of India</em> (27 November 1997) the Supreme Court upheld the Act's constitutional validity but required safeguards, such as using the minimum force necessary and handing over arrested persons promptly to the police <strong>[Additional]</strong>. In <em>Extra Judicial Execution Victim Families Association v. Union of India</em> (2016) the Court held that even in disturbed areas excessive or retaliatory force is not protected and that allegations are open to investigation <strong>[Additional; Verification Required: date and wording]</strong>.</li>
+<li><strong>Reform view:</strong> the Justice B.P. Jeevan Reddy Committee (2005) recommended repeal and the incorporation of necessary provisions in ordinary law; the Second ARC made a similar suggestion <strong>[Additional; Verification Required]</strong>.</li>
+</ul>
+
+<h4>Case study: Oting (Mon district), 4 December 2021</h4>
+<ul>
+<li><strong>Context:</strong> a security operation based on intelligence about militants.</li>
+<li><strong>Event:</strong> soldiers of an Army special-forces unit fired on a vehicle carrying coal-mine workers, killing six civilians; violence the same day left more civilians and one soldier dead. Reports say 13 or 14 civilians in all <strong>[Verification Required: exact total]</strong>.</li>
+<li><strong>Response:</strong> the Nagaland Government's Special Investigation Team recommended prosecution of 30 Army personnel; the Centre refused sanction under AFSPA Section 6; in 2024 the Supreme Court closed the criminal proceedings for want of sanction, while noting that sanction could still be granted and that the Army could take disciplinary action (as reported) <strong>[Verification Required]</strong>.</li>
+<li><strong>Lessons:</strong> the Section 6 sanction requirement and intelligence-led operations need better accountability; the incident intensified Naga demands for AFSPA repeal. <em>Source: news reports (not official documents).</em></li>
+</ul>
+
+<h3>2.7 Ceasefire Mechanism and the NSCN (K)</h3>
+<ul>
+<li class="additional"><strong>[Additional] Ceasefire with NSCN (IM):</strong> in force since <strong>1997</strong> and extended periodically under agreed <strong>ground rules</strong> (for example, no new recruitment, no extortion or attacks, designated camps). It is overseen by a <strong>Cease-Fire Monitoring Group (CFMG)</strong> <strong>[Verification Required: composition and current extension]</strong>.</li>
+<li><strong>Common confusion:</strong> the <strong>Joint Monitoring Group (JMG)</strong> belongs to the <strong>Suspension of Operations (SoO)</strong> agreement (2008) with <strong>Kuki groups in Manipur</strong>, not to the NSCN (IM) ceasefire. "Ceasefire" (with NSCN) and "Suspension of Operations" (with Kuki groups, ULFA pro-talks, etc.) are different instruments <strong>[Verification Required]</strong>.</li>
+<li><strong>NSCN (K) and the 2015 break:</strong> NSCN (K) ended its ceasefire in <strong>March 2015</strong>. On <strong>4 June 2015</strong> an ambush on an Army convoy in <strong>Chandel, Manipur</strong> killed <strong>18 soldiers</strong>; NSCN (K) and allied Manipur groups claimed it. India announced a <strong>cross-border operation in Myanmar</strong> on about <strong>9 June 2015</strong> (casualty claims were disputed and Myanmar's position was contested). On <strong>16 September 2015</strong> NSCN (K) was declared an <strong>unlawful association for five years</strong> under the <strong>UAPA, 1967</strong>, and in <strong>November 2015</strong> it was reported to have been designated a <strong>terrorist organisation</strong> (Schedule to the UAPA) <strong>[Verification Required: gazette dates; later renewals]</strong>.</li>
+<li><strong>Lesson:</strong> a ceasefire without a political settlement is fragile; groups sheltering across the Myanmar border can end a truce and strike. This links to the Myanmar border management in Section 7.</li>
+</ul>
+<p class="correction" id="c11"><strong>[Correction]</strong> The rough notes treat the 2001 NSCN (K) agreement as a settled peace; it ended in March 2015 and the group was banned the same year (see above). Only the NSCN (IM) ceasefire from 1997 has continued.</p>
+
+<h3>2.8 Eastern Nagaland: ENPO and the Frontier Nagaland Territorial Authority</h3>
+<ul>
+<li class="additional"><strong>[Additional]</strong> The <strong>Eastern Nagaland People's Organisation (ENPO)</strong> speaks for about eight tribes of six eastern districts (Mon, Tuensang, Longleng, Kiphire, Noklak, Shamator). It demanded a separate <strong>Frontier Nagaland</strong> State or territory because of perceived neglect, then accepted an autonomy arrangement within Nagaland.</li>
+<li><strong>Agreement:</strong> a <strong>tripartite agreement (Government of India, Government of Nagaland, ENPO)</strong> to create the <strong>Frontier Nagaland Territorial Authority (FNTA)</strong> was reported as signed in <strong>February 2026</strong>, with executive, legislative and financial powers over about <strong>46 subjects</strong> and Central funding for set-up <strong>[Verification Required: date, legal basis (whether under the Sixth Schedule or a State law), and number of subjects; reported by news sources only]</strong>.</li>
+<li><strong>Why it matters:</strong> a new sub-State demand inside Nagaland shows that <strong>settlement with one group does not end identity claims</strong>; it also complicates a Nagalim settlement.</li>
+</ul>
+
+<h3>2.9 Civil Society and Mediation</h3>
+<ul>
+<li class="additional"><strong>[Additional]</strong> The <strong>Naga Hoho</strong> (apex tribal body), <strong>Naga Students' Federation (NSF)</strong>, <strong>Naga Mothers' Association (NMA)</strong> and the <strong>Baptist churches</strong> have repeatedly pressed for talks, ceasefire and reconciliation among factions. The <strong>1964 Peace Mission</strong> (Jayaprakash Narayan, Rev. Michael Scott and B.P. Chaliha) produced a ceasefire that lasted until 1967 <strong>[Verification Required]</strong>.</li>
+<li><strong>Lesson:</strong> in Nagaland, civil society, churches and village bodies can influence armed groups more than the State can; any settlement needs their consent.</li>
+</ul>
+</section>
+
+<section id="assam">
+<h2>3. Assam</h2>
+<p class="lead">Assam combines <strong>three overlapping problems</strong>: a <strong>migration-identity issue</strong> (Assam Movement and Accord), <strong>sovereignty-oriented insurgency</strong> (ULFA) and <strong>sub-State ethnic homeland demands</strong> (Bodo, Karbi, Dimasa, Kamtapuri and others).</p>
+
+<h3>3.1 Illegal Migration and the Assam Movement</h3>
+<ul>
+<li><strong>Background:</strong> migration from East Bengal and later East Pakistan and Bangladesh, increased by the <strong>1971 war</strong> and its aftermath.</li>
+<li><strong>Perception (1970s):</strong> that the demography of Assam was shifting in favour of illegal migrants and that they were being added to the electoral rolls (the <strong>voter-list</strong> concern, strongly raised after the 1978 Mangaldoi by-election) <strong>[Additional; Verification Required]</strong>. Note that this was a <em>perception and a political claim</em>; the status of individual persons is decided by legal process.</li>
+<li><strong>AASU (All Assam Students' Union):</strong> led a mass movement from <strong>1979</strong> demanding detection, deletion and deportation of illegal foreigners. It began as peaceful protest but was handled firmly and became violent in places; one result was the diversion of some youth toward armed groups such as ULFA.</li>
+</ul>
+
+<h3>3.2 Assam Accord, 15 August 1985</h3>
+<p>A <strong>Memorandum of Settlement</strong> signed by the <strong>Government of India, the Government of Assam, AASU and the All Assam Gana Sangram Parishad (AAGSP)</strong> (the rough notes list only AASU, the Centre and the State) in the presence of Prime Minister Rajiv Gandhi.</p>
+<figure id="fig-assam-accord">
+<h3>Figure 3. Assam Accord: citizenship cut-off dates (as given in the rough notes, corrected)</h3>
+<div class="flow">
+<span class="box"><strong>Entered before 1 Jan 1966</strong><br/>Treated as <strong>citizens</strong></span><span>&#8594;</span>
+<span class="box"><strong>1 Jan 1966 to 24 March 1971</strong><br/>Detected and registered; <strong>no vote for 10 years</strong>, then full citizenship</span><span>&#8594;</span>
+<span class="box"><strong>On or after 25 March 1971</strong><br/>Detected as <strong>foreigners</strong>; deletion and expulsion</span>
+</div>
+<figcaption>Source basis: Assam Accord summaries (including Section 6A of the Citizenship Act, 1955). Check the exact text on India Code <strong>[Verification Required]</strong>. Not to scale.</figcaption>
+</figure>
+<ul>
+<li><strong>Section 6A, Citizenship Act, 1955:</strong> inserted in 1985 to give effect to the Accord. On <strong>17 October 2024</strong> a five-judge Constitution Bench of the Supreme Court upheld its validity by a 4:1 majority (as reported), holding that the 25 March 1971 cut-off was not arbitrary <strong>[Verification Required: bench split and wording]</strong>.</li>
+<li><strong>Other commitments:</strong> constitutional, legislative and administrative safeguards to protect the cultural, social and linguistic identity of the Assamese people; economic development, including a <strong>Numaligarh Refinery</strong> (commissioned 1999) and <strong>IIT Guwahati</strong> (established 1994) <strong>[Additional; Verification Required: dates]</strong>.</li>
+<li><strong>NRC (National Register of Citizens) update:</strong> a register first prepared after the 1951 Census; updated in Assam under the <strong>Supreme Court's supervision</strong> using the <strong>24 March 1971</strong> cut-off. The final list of <strong>31 August 2019</strong> left out about <strong>19 lakh</strong> applicants out of about 3.3 crore <strong>[Additional; Verification Required: exact figures]</strong>.</li>
+</ul>
+<p class="correction" id="c05"><strong>[Correction]</strong> (1) The rough notes list "NRC, IIT Guwahati, Numaligarh Refinery" as what the Accord agreed to. The Accord provided for <strong>detection, deletion and deportation by cut-off dates</strong> and for development projects; the NRC update itself was done much later, under Supreme Court orders. (2) The group between 1966 and 1971 is not "citizens without the right to vote" permanently; their names are removed from the electoral roll for ten years, after which they get full rights. (3) The cut-off for foreigners is "on or after 25 March 1971" (that is, entry after 24 March 1971). (4) The Accord was signed by four parties, not three.</p>
+
+<h3>3.3 ULFA (United Liberation Front of Asom)</h3>
+<ul>
+<li><strong>Formation:</strong> <strong>7 April 1979</strong> at Rang Ghar, Sivasagar, by <strong>Paresh Baruah, Arabinda Rajkhowa, Anup Chetia</strong> and others <strong>[Additional; Verification Required]</strong>. The rough notes say it was formed "by Arbinda Raj Khowa" alone.</li>
+<li><strong>Aim:</strong> a <strong>sovereign Assam</strong> by armed struggle, invoking the glory of the Ahom kingdom before the <strong>Treaty of Yandabo (1826)</strong>, which ended the first Anglo-Burmese War and brought Assam under British control.</li>
+<li><strong>Response:</strong> the group was banned in <strong>1990</strong>; large army operations followed (Operation Bajrang, 1990; Operation Rhino, 1991) <strong>[Additional; Verification Required]</strong>.</li>
+<li><strong>Split:</strong> the leadership under Rajkhowa moved toward talks (<strong>pro-talks faction</strong>) and Paresh Baruah, who did not accept the talks, led <strong>ULFA (Independent), or ULFA (I)</strong>. A group of cadres who surrendered earlier are called <strong>S-ULFA (Surrendered ULFA)</strong>; the claim in the rough notes that they returned to violence after their surrender package ended is not sourced <strong>[Verification Required]</strong>.</li>
+<li><strong>2023 settlement:</strong> a <strong>tripartite agreement on 29 December 2023</strong> between the pro-talks ULFA faction, the Government of India and the Government of Assam. The faction agreed to <strong>give up violence, surrender arms, disband and join the mainstream</strong>. Reports say the Centre announced a development package of about <strong>Rs 1.5 lakh crore</strong> for Assam over several years (investment, not a payment to the group) and that political and land-rights safeguards for indigenous people were included.</li>
+</ul>
+<p class="correction" id="c06"><strong>[Correction]</strong> (1) <strong>Rajkhowa was arrested in December 2009</strong> (handed over to Indian authorities after his arrest in Bangladesh) and was released on bail in about 2011; talks and a Suspension of Operations arrangement followed. The rough notes say "2011 arrested". <strong>[Verification Required: dates]</strong> (2) The rough notes say "97 out of 126 seats in the Assam Legislative Assembly are <em>reserved</em> for indigenous communities". The Constitution provides reservation only for <strong>Scheduled Castes and Scheduled Tribes</strong> (Articles 330 and 332). The reports describe a <strong>"protection of political rights of indigenous people"</strong> measure, connected with delimitation, not a constitutional reservation; the exact mechanism is <strong>[Verification Required]</strong>. (3) The "Rs 1.5 lakh crore" is a Government announcement, not an amount given to the group. (4) ULFA (I) did not sign and remains banned under the UAPA <strong>[Verification Required: latest notification]</strong>. (5) The spelling is "Arabinda Rajkhowa" and "Paresh Baruah".</p>
+
+<h3>3.4 Bodoland</h3>
+<ul>
+<li><strong>Who:</strong> the Bodos are the largest plains tribal community of Assam. They demanded a separate State, then a territorial autonomy arrangement within Assam, citing migration, loss of land, and neglect.</li>
+<li><strong>Movement:</strong> started as a student movement under the <strong>All Bodo Students' Union (ABSU)</strong> (1987 "divide Assam fifty-fifty" campaign) and developed into armed groups: <strong>Bodo Liberation Tigers (BLT)</strong> and the <strong>National Democratic Front of Bodoland (NDFB)</strong> <strong>[Additional; Verification Required: 1987 campaign]</strong>.</li>
+<li><strong>Settlements:</strong> the BLT signed the <strong>2003 Memorandum</strong> that created the <strong>Bodoland Territorial Council (BTC)</strong> under the Sixth Schedule; the NDFB (progressive) entered ceasefire in <strong>2005</strong>; and all factions joined the <strong>Bodo Accord of 27 January 2020</strong>.</li>
+<li><strong>Bodo Accord, 2020 (reported provisions):</strong> BTAD renamed <strong>Bodoland Territorial Region (BTR)</strong>; BTC seats raised from 40 to 60; more powers for the BTC; a commission to examine adding contiguous Bodo villages and excluding non-Bodo villages; a package of <strong>Rs 1,500 crore</strong>; rehabilitation of about 1,500 NDFB cadres; Bodo in Devanagari as an <strong>associate official language</strong> of Assam; a Bodo-Kachari Welfare Council for Bodo villages outside BTR <strong>[Verification Required: details]</strong>.</li>
+<li><strong>Districts of the BTR:</strong> <strong>Kokrajhar, Baksa, Chirang, Udalguri</strong> and <strong>Tamulpur</strong> (the last created in 2022 out of Baksa) <strong>[Verification Required: year]</strong>. These areas fall under the <strong>Sixth Schedule</strong>.</li>
+<li><strong>Language:</strong> Bodo was added to the <strong>Eighth Schedule</strong> by the <strong>92nd Constitution Amendment Act, 2003</strong> (along with Dogri, Maithili and Santhali).</li>
+</ul>
+<p class="correction" id="c07"><strong>[Correction]</strong> (1) "BLTF" is the <strong>Bodo Liberation Tigers (BLT)</strong>; "NDLB" is the <strong>National Democratic Front of Bodoland (NDFB)</strong>. (2) "Chirong" is <strong>Chirang</strong>. (3) The notes say the ceasefire years "2003 and 2005"; 2003 was a settlement with the BLT and 2005 a ceasefire with an NDFB faction, while other NDFB factions continued until 2020. (4) The Accord made Bodo (Devanagari) an <strong>associate</strong> official language, not the sole official language; Bodo's Eighth Schedule status is from 2003, not from the 2020 Accord. (5) The BTR is a <strong>territorial council under the Sixth Schedule</strong>, not a separate State.</p>
+
+<h3>3.5 Dima Hasao (Dimasa) Peace Pact, April 2023</h3>
+<ul>
+<li><strong>Parties:</strong> Government of India, Government of Assam and the <strong>Dimasa National Liberation Army (DNLA)</strong>, a group formed in about 2019 that demanded a separate Dimasa homeland <strong>[Additional; Verification Required]</strong>. Signed on <strong>27 April 2023</strong> (news reports).</li>
+<li><strong>Provisions:</strong> a development package of <strong>Rs 500 crore each from the Centre and Assam</strong>; a <strong>Dimasa Welfare Council</strong> for Dimasas living <strong>outside</strong> the North Cachar Hills Autonomous Council (NCHAC); a review by a commission (Sixth Schedule, paragraph 14) of the inclusion of contiguous villages in NCHAC; rehabilitation of cadres.</li>
+<li><strong>DNLA's commitments:</strong> abjure violence, surrender arms, <strong>disband</strong> its organisation and join the mainstream.</li>
+<li><strong>Link:</strong> Dima Hasao is under the <strong>Sixth Schedule</strong> (NCHAC), so the pact works through that Council and a separate welfare body.</li>
+</ul>
+
+<h3>3.6 Other Demands in Assam</h3>
+<ul>
+<li><strong>Karbi Anglong:</strong> Karbi groups sought autonomy (up to a separate State) for the Karbi Anglong Autonomous Council area. A tripartite <strong>Karbi Anglong Agreement</strong> was signed on <strong>4 September 2021</strong> (reported package: about Rs 1,000 crore; about 1,000 cadres) <strong>[Verification Required]</strong>.</li>
+<li><strong>Kamtapur:</strong> a demand for a <strong>Kamtapur</strong> State for the Koch-Rajbongshi people of North Bengal, lower Assam and neighbouring areas, pursued by the <strong>Kamtapur Liberation Organisation (KLO)</strong> and others <strong>[Verification Required]</strong>.</li>
+<li><strong>Adivasi groups (tea-garden communities):</strong> an agreement with several groups was reported in September 2022 <strong>[Additional; Verification Required]</strong>.</li>
+</ul>
+<p class="correction" id="c08"><strong>[Correction]</strong> "Karbi Anglo autonomy" is <strong>Karbi Anglong</strong>; "Kantapur" is <strong>Kamtapur</strong>.</p>
+
+<h3>3.7 Legal Framework on Migration and Citizenship</h3>
+<div class="table-wrap"><table id="migration-law">
+<caption>Laws and judgments on illegal migration in Assam (as reported; verify on India Code and judgments)</caption>
+<thead><tr><th scope="col">Instrument</th><th scope="col">Key point</th></tr></thead>
+<tbody>
+<tr><td><strong>Foreigners Act, 1946; Foreigners (Tribunals) Order, 1964</strong></td><td>Quasi-judicial <strong>Foreigners Tribunals</strong> decide whether a person is a foreigner; the burden of proof is on the person alleged to be a foreigner.</td></tr>
+<tr><td><strong>IMDT Act, 1983</strong></td><td>Applied <strong>only to Assam</strong>; placed the burden on the complainant, so detection was very slow.</td></tr>
+<tr><td><strong><em>Sarbananda Sonowal v. Union of India</em> (12 July 2005)</strong></td><td>The Supreme Court <strong>struck down the IMDT Act</strong> (Article 14, and the Union's duty under Article 355 to protect a State against external aggression and internal disturbance). The Foreigners Act and Tribunals then applied in Assam.</td></tr>
+<tr><td><strong>Section 6A, Citizenship Act, 1955</strong></td><td>Gives effect to the Accord; upheld on 17 October 2024 (Section 3.2).</td></tr>
+<tr><td><strong>Citizenship (Amendment) Act, 2019 (CAA)</strong></td><td>Fast-track citizenship for Hindus, Sikhs, Buddhists, Jains, Parsis and Christians from Afghanistan, Bangladesh and Pakistan who entered India by 31 December 2014. It <strong>excludes Sixth Schedule areas and Inner Line Permit areas</strong>. Assam protested because the Accord's 25 March 1971 cut-off is the agreed line; Rules were notified in March 2024 <strong>[Verification Required: exclusions and Rules date]</strong>.</td></tr>
+</tbody></table></div>
+<p class="exam"><strong>Exam point:</strong> Assam's problem is not only security; it is a clash between <strong>constitutional equality, humanitarian considerations and demographic anxiety</strong>. Always state both the security concern and the due-process safeguard.</p>
+
+<h3>3.8 Clause 6 of the Accord and the Biplab Sarma Committee</h3>
+<ul>
+<li><strong>Clause 6</strong> promises <strong>constitutional, legislative and administrative safeguards</strong> to protect the cultural, social and linguistic identity and heritage of the Assamese people.</li>
+<li class="additional"><strong>[Additional]</strong> A high-level committee headed by <strong>Justice (retd.) Biplab Kumar Sarma</strong> was set up in 2019 and reportedly submitted its report in <strong>2020</strong>. It was reported to propose a definition of "Assamese people" and <strong>80-100% reservation</strong> of Assembly and local-body seats for them, plus job and land safeguards. The report was not fully made public and its implementation status is unclear <strong>[Verification Required]</strong>.</li>
+<li><strong>Link to the 2023 ULFA pact:</strong> the reported "97 of 126 seats" is best read as part of the political-safeguard debate (see correction C6), not a constitutional reservation.</li>
+</ul>
+
+<h3>3.9 Inter-State Boundary Disputes Involving Assam</h3>
+<div class="table-wrap"><table id="border-disputes">
+<caption>Assam's boundary disputes with neighbours (as reported)</caption>
+<thead><tr><th scope="col">With</th><th scope="col">Issue</th><th scope="col">Development</th></tr></thead>
+<tbody>
+<tr><td><strong>Nagaland</strong></td><td>Long-running dispute over the Naga Hills foothills; a suit is pending before the Supreme Court under <strong>Article 131</strong> (original jurisdiction) <strong>[Verification Required]</strong></td><td>Periodic clashes; no final settlement</td></tr>
+<tr><td><strong>Mizoram</strong></td><td>Assam relies on a <strong>1933</strong> notification; Mizoram on the <strong>1875 / BEFR 1873</strong> Inner Line <strong>[Verification Required: dates]</strong></td><td><strong>26 July 2021</strong> clash near Vairengte (Mizoram) and Lailapur (Cachar, Assam): six Assam police personnel and one civilian reported killed</td></tr>
+<tr><td><strong>Meghalaya</strong></td><td>12 disputed areas along a border of about 885 km</td><td><strong>29 March 2022</strong> agreement settling <strong>6 of 12</strong> areas; Mukroh firing (November 2022) strained relations <strong>[Verification Required: casualties]</strong></td></tr>
+<tr><td><strong>Arunachal Pradesh</strong></td><td>Border villages with unclear administrative control</td><td>Agreement reported in <strong>2023</strong> <strong>[Verification Required: details]</strong></td></tr>
+</tbody></table></div>
+<p class="note"><strong>Constitutional point:</strong> only <strong>Parliament</strong> can alter State boundaries (Article 3); States cannot settle a boundary alone. Border disputes are <strong>law-and-order and federalism</strong> issues, not insurgency, but they weaken co-operation.</p>
+</section>
+
+<section id="other-states">
+<h2>4. Arunachal Pradesh, Meghalaya, Mizoram and Tripura</h2>
+<h3>4.1 Arunachal Pradesh</h3>
+<ul>
+<li>The rough notes say "No issues". This is only partly true: the three districts of <strong>Tirap, Changlang and Longding (TCL)</strong>, bordering Nagaland and Myanmar, have seen activity by NSCN factions and ULFA (I), extortion and abductions, and AFSPA continues in them and in a few police-station areas of Namsai <strong>(reported; Verification Required)</strong>.</li>
+</ul>
+<p class="correction" id="c09"><strong>[Correction]</strong> Arunachal Pradesh is among the most peaceful North-Eastern States but is <strong>not free of insurgency-linked activity</strong>; it should be described as <strong>limited and localised</strong> to the TCL belt. Border and Chinese-claim issues are a separate, external-security matter.</p>
+<h3>4.2 Meghalaya</h3>
+<ul>
+<li>"Peace since 2018": AFSPA was <strong>fully withdrawn in April 2018</strong> after improvement in the situation. Earlier armed groups were the Garo-based <strong>GNLA</strong> and <strong>ANVC</strong> and the Khasi-based <strong>HNLC</strong>; the ANVC and its faction settled in 2014 and the GNLA weakened after 2012 <strong>[Additional; Verification Required]</strong>. Some residual groups remain.</li>
+</ul>
+<h3>4.3 Mizoram</h3>
+<ul>
+<li><strong>Cause:</strong> the 1959 famine (bamboo flowering and the "Mautam" famine) and perceived neglect led to the <strong>Mizo National Front (MNF)</strong> under <strong>Laldenga</strong>; an armed uprising began in 1966 <strong>[Additional]</strong>.</li>
+<li><strong>Mizo Accord, 30 June 1986:</strong> MNF gave up arms; <strong>Mizoram became a full State on 20 February 1987</strong>; <strong>Article 371G</strong> protects Mizo customary law, religious practices and land. This is the model of a <strong>political settlement that held</strong>: a recognised leader, a clear demand and rapid statehood.</li>
+<li><strong>Bru-Reang displacement:</strong> an issue after 1997 ethnic violence; a quadripartite agreement was signed on <strong>16 January 2020</strong> to settle displaced Brus in Tripura <strong>[Additional; Verification Required]</strong>.</li>
+</ul>
+<h3>4.4 Tripura</h3>
+<ul>
+<li>"Peace since 2015": AFSPA was <strong>withdrawn from Tripura in May 2015</strong> after violence fell sharply. Militancy arose from tribal fears over migration (tribal groups became a minority after 1947) and land.</li>
+<li><strong>Tripura peace pact, 4 September 2024:</strong> a tripartite agreement between the <strong>Government of India, Government of Tripura, the National Liberation Front of Tripura (NLFT) and the All Tripura Tiger Force (ATTF)</strong> in New Delhi. Reported terms: surrender and disbanding by about <strong>328 cadres</strong> (a later total of about 584 is reported), a special package of about <strong>Rs 250 crore</strong> for tribal development and rehabilitation <strong>[Verification Required: PIB release 2051900 not opened]</strong>.</li>
+<li><strong>Implementation:</strong> news in September 2026 reported a shutdown by returned cadres over delays in rehabilitation and withdrawal of cases <strong>[Verification Required]</strong> - a reminder that <strong>accords fail slowly if implementation lags</strong>.</li>
+</ul>
+<p class="correction" id="c10"><strong>[Correction]</strong> "Peace since" years for Meghalaya (2018) and Tripura (2015) correspond to the <strong>withdrawal of AFSPA</strong>, a government indicator, not to the end of every armed group. Mizoram's date (1986) is the Mizo Accord.</p>
+
+<h3>4.5 Additional State-Level Issues</h3>
+<ul>
+<li><strong>Tripura - Tipra Motha accord (2 March 2024):</strong> a tripartite agreement between the Government of India, Government of Tripura and <strong>TIPRA (Tipra Motha)</strong> on the history, land, political rights, identity and language of indigenous people, to be implemented by a joint working group and giving the <strong>Tripura Tribal Areas Autonomous District Council (TTAADC)</strong> more administrative and financial powers (reported). It followed a "Greater Tipraland" demand for a separate State or arrangement. Phased implementation was reported to have begun by September 2026 <strong>[Verification Required]</strong>. <em>Do not confuse with the 2024 NLFT-ATTF pact: that pact was with armed groups; this one is with a political party.</em></li>
+<li><strong>Meghalaya:</strong> a demand for the <strong>Inner Line Permit</strong> (after CAA protests and border incidents); the State Assembly has passed resolutions but the Centre has not extended the ILP <strong>[Verification Required]</strong>. Border dispute with Assam: see Section 3.9.</li>
+<li><strong>Mizoram:</strong> border dispute with Assam (2021 clash) and the influx of refugees from Myanmar and Bangladesh's Chittagong Hill Tracts after 2021 raise humanitarian and security questions <strong>[Verification Required]</strong>.</li>
+<li><strong>Arunachal Pradesh:</strong> boundary with Assam (2023 agreement reported); the Chinese claim over parts of the State is an <strong>external-defence</strong> issue and is separate from insurgency.</li>
+</ul>
+</section>
+
+<section id="accord-timeline">
+<h2>5. Peace Accords of the North-East: Timeline</h2>
+<figure id="fig-accords">
+<h3>Figure 4. Selected accords and settlements in the North-East (reported dates)</h3>
+<div class="table-wrap"><table id="accord-table">
+<thead><tr><th scope="col">Date</th><th scope="col">Accord</th><th scope="col">Parties</th><th scope="col">Result</th></tr></thead>
+<tbody>
+<tr><td>29 Jun 1947</td><td>Hydari (Nine-Point) Agreement</td><td>NNC and Government (Assam Governor)</td><td>Broke down over clause 9 (10-year period)</td></tr>
+<tr><td>Jul 1960</td><td>16-Point Agreement</td><td>Naga People's Convention and the Union</td><td>Led to Nagaland State, 1963</td></tr>
+<tr><td>11 Nov 1975</td><td>Shillong Accord</td><td>Government and NNC / Federal Government representatives</td><td>Rejected by many; led to the NSCN</td></tr>
+<tr><td>15 Aug 1985</td><td>Assam Accord</td><td>Centre, Assam, AASU, AAGSP</td><td>Cut-offs, Section 6A</td></tr>
+<tr><td>30 Jun 1986</td><td>Mizo Accord</td><td>Centre, Mizoram, MNF</td><td>Statehood 1987; peace</td></tr>
+<tr><td>1997 / 2001</td><td>Ceasefires</td><td>Centre and NSCN (IM) / NSCN (K)</td><td>IM continues; K ended 2015</td></tr>
+<tr><td>2003</td><td>BTC settlement</td><td>Centre, Assam, BLT</td><td>Sixth Schedule council</td></tr>
+<tr><td>3 Aug 2015</td><td>Naga Framework Agreement</td><td>Centre and NSCN (IM)</td><td>Final accord pending</td></tr>
+<tr><td>27 Jan 2020</td><td>Bodo Accord</td><td>Centre, Assam, NDFB factions, ABSU</td><td>BTR, more powers</td></tr>
+<tr><td>4 Sep 2021</td><td>Karbi Anglong Agreement</td><td>Centre, Assam, Karbi groups</td><td>Package and autonomy</td></tr>
+<tr><td>27 Apr 2023</td><td>Dima Hasao (DNLA) pact</td><td>Centre, Assam, DNLA</td><td>Rs 500 crore each; welfare council</td></tr>
+<tr><td>29 Dec 2023</td><td>ULFA pact</td><td>Centre, Assam, ULFA pro-talks</td><td>ULFA (I) outside</td></tr>
+<tr><td>2 Mar 2024</td><td>Tipra Motha accord (political party, not an armed group)</td><td>Centre, Tripura, TIPRA</td><td>More powers for TTAADC; phased implementation</td></tr>
+<tr><td>4 Sep 2024</td><td>Tripura peace pact</td><td>Centre, Tripura, NLFT, ATTF</td><td>Cadres surrender; implementation concerns</td></tr>
+<tr><td>Feb 2026 (reported)</td><td>Frontier Nagaland Territorial Authority agreement</td><td>Centre, Nagaland, ENPO</td><td>Autonomy for six eastern districts <strong>[Verification Required]</strong></td></tr>
+</tbody></table></div>
+<figcaption>Dates for 1947-1986 and 2003 from encyclopaedic and news summaries; dates for 2015-2024 from news reports and the 18 October note. Not exhaustive. Check against the MHA "North East - Major Initiatives and Peace Process" document (April 2026) <strong>[Verification Required]</strong>.</figcaption>
+</figure>
+<div class="exam"><strong>Common pattern:</strong> accords succeed when they (1) address a <strong>core political demand</strong> (autonomy, language, land), (2) bring all <strong>major factions</strong>, (3) include a <strong>development package</strong>, <strong>rehabilitation and withdrawal of non-heinous cases</strong>, and (4) are <strong>implemented on time</strong>. They fail or lead to splinter groups when any of these is missing.</div>
+</section>
+
+<section id="constitution">
+<h2>6. Constitutional Framework for the North-East</h2>
+<div class="table-wrap"><table id="constitution-table">
+<caption>Special constitutional provisions relevant to the North-East (verify wording on India Code)</caption>
+<thead><tr><th scope="col">Provision</th><th scope="col">Applies to</th><th scope="col">Key point</th></tr></thead>
+<tbody>
+<tr><td><strong>Article 244(1), Fifth Schedule</strong></td><td>Scheduled Areas in States <strong>other than</strong> Assam, Meghalaya, Tripura and Mizoram</td><td>Administration of Scheduled Areas through the Governor and a Tribes Advisory Council</td></tr>
+<tr><td><strong>Article 244(2), Article 275(1), Sixth Schedule</strong></td><td>Assam, Meghalaya, Tripura, Mizoram</td><td><strong>Autonomous District Councils and Regional Councils</strong> with powers over land, village administration, inheritance and customs, and courts for tribal disputes. Councils: <strong>Assam 3</strong> (Dima Hasao, Karbi Anglong, Bodoland Territorial Council), <strong>Meghalaya 3</strong> (Khasi, Jaintia, Garo), <strong>Mizoram 3</strong> (Chakma, Lai, Mara), <strong>Tripura 1</strong> (TTAADC) <strong>[Verification Required: current count]</strong></td></tr>
+<tr><td><strong>Article 371A</strong> (13th Amendment, 1962)</td><td>Nagaland</td><td>Parliament's laws on Naga religious or social practices, Naga customary law and procedure, civil and criminal justice under customary law, and ownership and transfer of land and its resources do <strong>not</strong> apply unless the Nagaland Assembly decides by resolution; the Governor has a special responsibility for law and order while disturbances continue <strong>[Verification Required]</strong></td></tr>
+<tr><td><strong>Article 371B</strong> (22nd Amendment, 1969)</td><td>Assam</td><td>Assembly committee of members elected from Sixth Schedule tribal areas</td></tr>
+<tr><td><strong>Article 371C</strong> (27th Amendment, 1971)</td><td>Manipur</td><td>Assembly committee for the Hill Areas; Governor's annual report on their administration</td></tr>
+<tr><td><strong>Article 371F</strong> (36th Amendment, 1975)</td><td>Sikkim</td><td>Special provisions after merger</td></tr>
+<tr><td><strong>Article 371G</strong> (53rd Amendment, 1986)</td><td>Mizoram</td><td>Parliament's laws on Mizo religious or social practices, customary law, civil and criminal justice and land do not apply unless the Mizoram Assembly resolves so</td></tr>
+<tr><td><strong>Article 371H</strong> (55th Amendment, 1986)</td><td>Arunachal Pradesh</td><td>Governor's special responsibility for law and order</td></tr>
+</tbody></table></div>
+<div class="exam"><strong>Common confusion:</strong> <strong>Nagaland is not under the Sixth Schedule</strong>; it is protected by Article 371A. <strong>Manipur's hill areas</strong> are under Article 371C (not the Sixth Schedule). Fifth Schedule does not apply to the four Sixth Schedule States. Both Schedules are for <em>autonomy and protection</em>; they are not security laws.</div>
+<p class="additional"><strong>[Additional]</strong> Sixth Schedule councils have faced complaints of weak finances, delays in elections and unclear powers; proposals to strengthen them (for example the 125th Amendment Bill, 2019) are <strong>proposals, not law</strong> <strong>[Verification Required: status]</strong>. The Bodoland Territorial Council was brought in by the <strong>90th Amendment, 2003</strong> <strong>[Verification Required]</strong>.</p>
+</section>
+
+<section id="security-architecture">
+<h2>7. Security Architecture and Border Management</h2>
+<h3>7.1 Who Does What in the North-East</h3>
+<div class="table-wrap"><table id="forces-table">
+<caption>Roles in the North-East (educational summary)</caption>
+<thead><tr><th scope="col">Force or body</th><th scope="col">Role</th></tr></thead>
+<tbody>
+<tr><td><strong>State police</strong></td><td>Law and order and first response; policing is a State subject</td></tr>
+<tr><td><strong>Assam Rifles</strong></td><td>Counter-insurgency and guarding the <strong>Indo-Myanmar border</strong>; <strong>dual control</strong>: administrative control with the <strong>MHA</strong>; operational control with the <strong>Army (MoD)</strong>, with senior posts filled by Army officers. Oldest paramilitary force (origin: Cachar Levy, 1835)</td></tr>
+<tr><td><strong>Indian Army</strong></td><td>Counter-insurgency in aid of civil authority, mainly in disturbed areas</td></tr>
+<tr><td><strong>BSF</strong></td><td>Indo-Bangladesh border</td></tr>
+<tr><td><strong>SSB</strong></td><td>Indo-Bhutan border (and Nepal)</td></tr>
+<tr><td><strong>NIA and State agencies</strong></td><td>Investigation of terrorism-related offences and organised crime</td></tr>
+</tbody></table></div>
+<ul>
+<li><strong>Dual-control debate:</strong> the MHA has sought full control of the Assam Rifles (including a merger with the BSF), while the Army and MoD want to retain operational control. A 2018 parliamentary committee reportedly suggested a separate <strong>Indo-Myanmar border force</strong> under the MHA so that Assam Rifles can focus on counter-insurgency <strong>[Verification Required]</strong>.</li>
+<li><strong>Surrender and rehabilitation scheme (MHA, 2018 revision):</strong> reported to provide an immediate grant of about <strong>Rs 4 lakh</strong> (held in a bank account with a lock-in), a monthly stipend of about <strong>Rs 6,000 for three years</strong>, vocational training, and incentives for surrendered weapons <strong>[Verification Required: exact amounts]</strong>.</li>
+</ul>
+
+<h3>7.2 The India-Myanmar Border and the Free Movement Regime (FMR)</h3>
+<ul>
+<li>The border is about <strong>1,643 km</strong> and crosses <strong>Arunachal Pradesh, Nagaland, Manipur and Mizoram</strong>. The <strong>FMR</strong> allowed people living within about <strong>16 km</strong> on each side (border-tribes) to cross without a visa for short stays; it reflects kinship ties split by a colonial boundary.</li>
+<li><strong>2024 decision:</strong> in February 2024 the Union Home Minister announced that the FMR would be <strong>ended</strong> and the border <strong>fenced</strong> (reported cost about Rs 31,000 crore, plus a patrol track and surveillance); a revised, stricter border-pass arrangement was reported later <strong>[Verification Required: current rules and distance]</strong>.</li>
+<li><strong>Why:</strong> arms and drug flows, insurgent sanctuaries, illegal migration and refugees after the 2021 coup in Myanmar, and the ethnic violence in Manipur.</li>
+<li><strong>Objections:</strong> Nagaland, Mizoram and tribal bodies argue that it divides kin, damages border trade and local livelihoods, and ignores colonial boundary-drawing; the fence cannot replace cooperation with Myanmar's authorities and local communities.</li>
+<li class="additional"><strong>[Additional]</strong> The India-Bangladesh <strong>Land Boundary Agreement</strong> (2015) resolved the enclaves issue and demarcation along parts of the Assam, Meghalaya, Tripura and Mizoram borders <strong>[Verification Required]</strong>.</li>
+</ul>
+<p class="verification"><strong>[Visual Representation Recommended: schematic map (not to scale) of the India-Myanmar border States, with the 16 km FMR belt and fencing phases; use Survey of India or MHA border-management maps]</strong></p>
+</section>
+
+<section id="violence-data">
+<h2>8. Trends in North-East Violence</h2>
+<p>The MHA and Parliament replies report a <strong>sharp decline</strong> in insurgency incidents, civilian deaths and security-force deaths since 2014, and a shrinking area under AFSPA. Reported ranges: incidents down roughly <strong>70-80%</strong>, civilian deaths down roughly <strong>80-90%</strong> and security-force deaths down roughly <strong>60-90%</strong> compared with 2014, depending on the year and source compared.</p>
+<p class="verification"><strong>[Verification Required]</strong> The exact numbers, base year, and definition (incidents, not cases registered) must be taken from a specific Parliament reply or MHA Annual Report. <strong>[Visual Representation Required: bar or line chart of insurgency incidents, civilian deaths and security-force deaths in the North-East, 2014 to the latest year; unit: number per year; suggested source: MHA Annual Report or Lok Sabha/Rajya Sabha written replies]</strong></p>
+<ul>
+<li><strong>AFSPA footprint (as reported):</strong> withdrawn entirely from Tripura (2015) and Meghalaya (2018); in Assam limited to a few districts; in Arunachal Pradesh limited to three districts and a few police-station areas; in Nagaland and Manipur still wide but reduced.</li>
+<li><strong>Reading the trend:</strong> a decline is not proof that causes are settled; the Naga issue, Manipur, new sub-State demands and the Myanmar border still carry risk.</li>
+</ul>
+</section>
+
+<section id="analysis">
+<h2>9. Analysis: Gaps and Way Forward</h2>
+<ul>
+<li><strong>Nagaland:</strong> move from a framework to a final settlement that accommodates the NNPGs and NSCN (IM) and respects the territorial concerns of Assam, Manipur and Arunachal Pradesh; settle the flag and constitution issue within the constitutional framework (Article 371A and other special provisions are one route); keep talks inclusive of civil society, churches and tribal bodies; manage sub-State demands such as Eastern Nagaland through autonomy arrangements without weakening the main talks.</li>
+<li><strong>Federal cooperation:</strong> settle inter-State boundaries through negotiated agreements and, where needed, Parliament (Article 3) or the Supreme Court (Article 131); build joint police mechanisms along disputed lines.</li>
+<li><strong>Border management:</strong> combine fencing and surveillance with community consultation, trade and cross-border cooperation with Myanmar; resolve the Assam Rifles' dual control so that command is clear.</li>
+<li><strong>Assam:</strong> implement Clause 6 of the Accord (safeguards for the Assamese people) fairly; finalise the citizenship process under law with due process and appeals; avoid treating whole communities as suspect.</li>
+<li><strong>Accords:</strong> create a monitoring mechanism with time-bound reports; deliver rehabilitation and withdraw cases promptly; avoid a "reward for violence" perception by rewarding development for all.</li>
+<li><strong>AFSPA:</strong> use a graded withdrawal tied to objective indicators (as done in Tripura, Meghalaya and most of Assam), strengthen the accountability of the forces and investigate allegations promptly.</li>
+<li><strong>External dimension:</strong> sanctuaries and arms and drug flows across the Myanmar border make cooperation with Myanmar, Bangladesh and Bhutan essential (see the 18 October note, Section 6).</li>
+</ul>
+</section>
+
+<section id="key-facts">
+<h2>Key Facts for Prelims</h2>
+<ul>
+<li>Naga Club <strong>1918</strong>; NNC <strong>1946</strong>; Hydari (Nine-Point) Agreement <strong>29 June 1947</strong>; independence declared <strong>14 August 1947</strong>.</li>
+<li>AFSPA Act <strong>1958</strong> (Assam and Manipur first); Nagaland State <strong>1 December 1963</strong> (<strong>Article 371A</strong>, 13th Amendment); Shillong Accord <strong>11 November 1975</strong>.</li>
+<li>NSCN <strong>1980</strong> (Isak Chishi Swu, Muivah, Khaplang); split <strong>1988</strong>; ceasefires <strong>1997</strong> (IM) and <strong>2001</strong> (K); Framework Agreement <strong>3 August 2015</strong>.</li>
+<li>Assam Accord <strong>15 August 1985</strong>; cut-offs <strong>1 January 1966</strong> and <strong>25 March 1971</strong>; <strong>Section 6A</strong> Citizenship Act; upheld by the Supreme Court on <strong>17 October 2024</strong>; final NRC <strong>31 August 2019</strong>.</li>
+<li>ULFA <strong>1979</strong>; Treaty of Yandabo <strong>1826</strong>; pro-talks ULFA pact <strong>29 December 2023</strong>; ULFA (I) outside.</li>
+<li>Bodo Accord <strong>27 January 2020</strong>; BTR with <strong>5 districts</strong> (Kokrajhar, Baksa, Chirang, Udalguri, Tamulpur); Sixth Schedule; Bodo in Eighth Schedule by <strong>92nd Amendment, 2003</strong>.</li>
+<li>DNLA pact <strong>27 April 2023</strong>, Rs <strong>500 crore each</strong>; Karbi Anglong Agreement <strong>4 September 2021</strong>; Tripura pact <strong>4 September 2024</strong>.</li>
+<li>Mizo Accord <strong>30 June 1986</strong>; statehood <strong>20 February 1987</strong>; <strong>Article 371G</strong>. AFSPA withdrawn: Tripura <strong>2015</strong>, Meghalaya <strong>2018</strong>.</li>
+<li>NSCN (K): ceasefire ended <strong>March 2015</strong>; Chandel ambush <strong>4 June 2015</strong> (18 soldiers); UAPA ban <strong>16 September 2015</strong>. Ceasefire monitoring: <strong>CFMG</strong> (NSCN-IM); <strong>JMG</strong> is for Kuki SoO.</li>
+<li>IMDT Act <strong>1983</strong> struck down in <em>Sarbananda Sonowal</em> (<strong>12 July 2005</strong>); CAA <strong>2019</strong> (excludes Sixth Schedule and ILP areas); Clause 6 committee (Biplab Sarma) <strong>2020</strong>.</li>
+<li>Assam-Mizoram clash <strong>26 July 2021</strong>; Assam-Meghalaya pact <strong>29 March 2022</strong> (6 of 12 areas); Tipra Motha accord <strong>2 March 2024</strong>; FMR ended <strong>2024</strong>; India-Myanmar border about <strong>1,643 km</strong>.</li>
+<li>Articles: <strong>371A</strong> Nagaland, <strong>371B</strong> Assam, <strong>371C</strong> Manipur, <strong>371F</strong> Sikkim, <strong>371G</strong> Mizoram, <strong>371H</strong> Arunachal. Sixth Schedule: Assam, Meghalaya, Tripura, Mizoram (<strong>not</strong> Nagaland).</li>
+</ul>
+</section>
+
+<section id="mains">
+<h2>Mains Points</h2>
+<ul>
+<li><strong>North-East insurgencies are political before they are military:</strong> they began as identity, autonomy, migration and land disputes; security operations contained violence but only political accords (Mizoram, Bodo, Karbi, Tripura) reduced it.</li>
+<li><strong>Hydra-head tendency shows the limits of talks with single groups:</strong> splinters appear when benefits are unequal or the core demand remains open; inclusive negotiations and credible implementation reduce this risk.</li>
+<li><strong>Nagaland is the test case:</strong> the 2015 Framework Agreement shows progress but a final settlement needs to reconcile Nagalim with other States' territorial integrity and the flag and constitution demands with the Constitution.</li>
+<li><strong>Assam shows that migration-identity questions must be handled through law and fairness:</strong> Section 6A and the NRC process show both the strength of a legal route and the human cost of exclusion and statelessness; community-wide stereotyping is both wrong and counter-productive.</li>
+<li><strong>AFSPA:</strong> a time-bound, area-specific and accountable use is consistent with the Supreme Court's position, but the Oting case shows that Section 6 sanction and a lack of accountability damage trust.</li>
+<li><strong>Federalism and borders:</strong> boundary disputes (Assam-Mizoram 2021, Assam-Meghalaya 2022) and Myanmar border fencing show that internal security in the North-East is also a <strong>Centre-State and community-consent</strong> issue; Articles 3 and 131, Sixth Schedule councils and Article 371 provisions are the tools.</li>
+<li><strong>Balanced way forward:</strong> complete and monitor accords; use Sixth Schedule councils and Article 371 provisions with financial and administrative capacity; invest in connectivity and Act East links; strengthen border and financial controls against drug and arms flows; maintain human rights safeguards.</li>
+</ul>
+</section>
+
+<section id="traps">
+<h2>Common Traps / Confusions</h2>
+<ul>
+<li>Hydari Agreement (1947) is <strong>not</strong> the Shillong Accord (1975) or the Framework Agreement (2015).</li>
+<li>NNC (Phizo) is <strong>not</strong> the NSCN; NSCN (IM) and NSCN (K) <strong>both</strong> have ceasefire histories but only the IM has the 2015 Framework Agreement.</li>
+<li>The 1997 and 2001 documents are <strong>ceasefires</strong>, not peace accords; 2015 is a <strong>framework</strong>, not a settlement.</li>
+<li>AFSPA 1958 was <strong>not "imposed in Assam only"</strong>; it applies only where an area is notified as disturbed.</li>
+<li>Assam Accord cut-offs: <strong>1 Jan 1966</strong> and <strong>25 March 1971</strong>; Section 6A is <strong>in the Citizenship Act</strong>, not in the Constitution; NRC is <strong>not</strong> the Accord itself.</li>
+<li>BLT (2003) versus NDFB (2005 and 2020); BTAD renamed BTR; <strong>Tamulpur</strong> is the fifth district.</li>
+<li>Constitution reserves seats only for <strong>SC and ST</strong>; "97 of 126 seats for indigenous people" is not a reservation.</li>
+<li>"Peace since 2015 / 2018" means <strong>AFSPA withdrawn</strong> (Tripura, Meghalaya), while Mizoram's peace dates from the 1986 Accord.</li>
+<li><strong>CFMG</strong> (NSCN-IM ceasefire) is not the <strong>JMG</strong> (Kuki SoO). NSCN (K)'s 2001 ceasefire ended in 2015 and the group is banned under the UAPA.</li>
+<li><strong>Sixth Schedule</strong> (Assam, Meghalaya, Tripura, Mizoram) versus <strong>Article 371A</strong> (Nagaland) versus <strong>371C</strong> (Manipur hills).</li>
+<li>The <strong>Tipra Motha accord (2024)</strong> is with a political party; the <strong>NLFT-ATTF pact (2024)</strong> is with armed groups.</li>
+<li>Assam Rifles: <strong>administrative control MHA, operational control Army</strong>; it guards the Myanmar border while the BSF guards the Bangladesh border.</li>
+</ul>
+</section>
+
+<section id="revision">
+<h2>30-Second Revision</h2>
+<p class="lead"><strong>Nagaland:</strong> Naga Club 1918 &#8594; NNC 1946 &#8594; Hydari 1947 &#8594; independence claim 14 Aug 1947 &#8594; AFSPA 1958 &#8594; State 1963 (Art 371A) &#8594; Shillong 1975 &#8594; NSCN 1980 &#8594; IM/K split 1988 &#8594; ceasefires 1997/2001 &#8594; Framework Agreement 2015 (final pending). Hydra head = splinters after each ceasefire. <strong>Assam:</strong> migration perception &#8594; AASU &#8594; Accord 1985 (1966/1971 cut-offs, Sec 6A, SC 2024) &#8594; ULFA 1979 (pact 2023, ULFA-I out) &#8594; Bodo Accord 2020 (BTR, 5 districts) &#8594; DNLA 2023 (Rs 500 cr each) &#8594; Karbi 2021. <strong>Others:</strong> Arunachal (TCL belt), Meghalaya (AFSPA out 2018), Mizoram (Accord 1986), Tripura (AFSPA out 2015; pact 2024; Tipra Motha 2024). <strong>Added:</strong> NSCN (K) ended ceasefire 2015, banned 2015; ENPO/FNTA (2026, reported); IMDT struck down 2005, CAA 2019, Clause 6 committee 2020; border disputes (Mizoram 2021, Meghalaya 2022); Art 371A/B/C/F/G/H and Sixth Schedule; Assam Rifles dual control; FMR ended 2024 with fencing; violence down roughly 70-90% since 2014 (verify).</p>
+</section>
+
+<section id="pyqs">
+<h2>Previous Year Questions (PYQs)</h2>
+<p class="small">The official UPSC papers were not opened. Wording below is a <strong>paraphrase</strong> from secondary compilations; years, marks and word limits come from those sources. <strong>[Verification Required]</strong> check exact wording and marks on the UPSC archive.</p>
+
+<h3>Q1. Mains 2017, GS Paper III</h3>
+<p>Paraphrase: the North-East has had insurgency for a very long time; analyse the major reasons for the survival of armed insurgency in the region (listed as 10 marks, 150 words by one compilation).</p>
+<p class="answer"><strong>Suggested answer approach [Additional]:</strong> historical isolation and alienation (18 October note, Section 6), identity and homeland claims (Nagalim, Bodo, Karbi), migration and land, hydra-head splinters and partial accords (Sections 2.4, 5), external sanctuaries and arms, extortion and organised crime. Study guidance, not an official marking scheme.</p>
+
+<h3>Q2. Mains 2025, GS Paper III (15 marks, 250 words, as listed)</h3>
+<p>Paraphrase: what are the major challenges to internal security and the peace process in the North-Eastern States, and map the peace accords and agreements initiated in the past decade?</p>
+<p class="answer"><strong>Suggested answer approach [Additional]:</strong> challenges (Sections 2, 3, 9), accord timeline (Figure 4: Framework Agreement 2015, Bodo 2020, Karbi 2021, DNLA and ULFA 2023, Tripura 2024), gaps and a way forward (Sections 6-9).</p>
+
+<h3>Q3. Mains 2021, GS Paper III (15 marks, 250 words, as listed)</h3>
+<p>Paraphrase: analyse the internal security threats and transborder crimes along the Myanmar, Bangladesh and Pakistan borders, including the Line of Control, and discuss the role of the various security forces.</p>
+<p class="answer"><strong>Suggested answer approach [Additional]:</strong> use the North-East part (Myanmar and Bangladesh borders: insurgent sanctuaries, arms, drugs, trafficking; Assam Rifles, BSF, Army, State police); link with Section 7 of this note and Section 6 of the 18 October note. Only part of the question concerns today's topic.</p>
+
+<p class="small">Sources: <a href="https://vajiramandravi.com/upsc-exam/upsc-mains-internal-security-pyqs/">Vajiram and Ravi - UPSC Mains Internal Security PYQs, year-wise (secondary)</a>; <a href="https://forumias.com/blog/internal-security-previous-year-questions-upsc-mains-examination/">ForumIAS - Internal Security PYQs (secondary)</a>; <a href="https://www.shankariasparliament.com/mainspyqanalysis/mains-pyqs-gs-iii-2025-q-19-20">Shankar IAS - Mains GS III 2025 Q19-20 (secondary)</a>.</p>
+<p class="verification"><strong>[No verified PYQ found for this topic]</strong> for a standalone Prelims MCQ on the Hydari Agreement or the Assam Accord was located in the sources searched; the Mains questions above are as listed by the compilations.</p>
+</section>
+
+<section id="corrections">
+<h2>Corrections Made</h2>
+<ol>
+<li><a href="#c01">C1: Hydari (not "Hyadri"); the 1947 talks; "NNC broke the agreement" is a disputed reading; Phizo's title; 14 August 1947.</a></li>
+<li><a href="#c02">C2: AFSPA 1958 was enacted for Assam and Manipur and applies by notification, not "imposed in Assam".</a></li>
+<li><a href="#c03">C3: NSCN ceasefires 1997 and 2001 are not peace accords; "NSC" read as NSCN; faction names and years.</a></li>
+<li><a href="#c04">C4: the 2015 document is the Framework Agreement, not a final accord.</a></li>
+<li><a href="#c05">C5: Assam Accord: signatories (four parties), cut-offs, 1966-71 group, NRC and the Accord.</a></li>
+<li><a href="#c06">C6: ULFA: founders, Rajkhowa's arrest (2009), "97 seats reserved", package, ULFA (I).</a></li>
+<li><a href="#c07">C7: Bodo: BLT, NDFB, Chirang, ceasefire years, associate official language, Sixth Schedule.</a></li>
+<li><a href="#c08">C8: "Karbi Anglo" and "Kantapur" names.</a></li>
+<li><a href="#c09">C9: Arunachal Pradesh is not "no issues".</a></li>
+<li><a href="#c10">C10: "Peace since" years for Meghalaya and Tripura refer to AFSPA withdrawal.</a></li>
+<li><a href="#c11">C11: the NSCN (K) 2001 ceasefire ended in 2015 and the group was banned.</a></li>
+</ol>
+<p class="additional"><strong>[Additional]</strong> items include the Naga Club memorandum (1929), the 16-Point Agreement and Article 371A, AFSPA judgments (1997 and 2016), the Oting case study, Section 6A and the 2024 judgment, NRC figures, Treaty of Yandabo context, Article 371G and the Karbi and Bru agreements. <strong>Added on 20 October 2026:</strong> Sections 2.7-2.9, 3.7-3.9, 4.5, 6, 7 and 8 (ceasefire mechanism, NSCN (K) ban, ENPO/FNTA, civil society, IMDT and Sonowal, CAA, Clause 6 committee, boundary disputes, Tipra Motha accord, constitutional table, Assam Rifles, surrender scheme, FMR and violence trends). The cross-reference to the hydra-head section in the overview was also corrected to Section 2.4.</p>
+<p class="small">Spelling fixes: "Hyadri" (Hydari), "Anganmi" (Angami), "Muviah" (Muivah), "devided" (divided), "Foriegner" (foreigner), "Arbinda Raj Khowa" (Arabinda Rajkhowa), "Barvah" (Baruah), "UALFA" (ULFA), "Bodo Land" (Bodoland), "soveriegn" (sovereign), "voilent" (violent), "Follwong" (following), "futher" (further), "Chirong" (Chirang), "Surrended" (surrendered), "Anglo" (Anglong), "Kantapur" (Kamtapur). <strong>Visual aids:</strong> Figures 1-4 are lightweight HTML/CSS diagrams and a table. <strong>Not verified:</strong> PIB, MHA and India Code pages (access errors or unopened), so legal text, package amounts and several dates are marked for verification.</p>
+</section>
+
+<section id="sources">
+<h2>Open Sources / Further Reading</h2>
+<ul>
+<li><a href="https://www.mha.gov.in/sites/default/files/2026-04/NE_MajorInitiativesandPeaceProcess_23042026.pdf">MHA - North East: Major Initiatives and Peace Process (April 2026; not opened)</a></li>
+<li><a href="https://www.mha.gov.in/en/commoncontent/armed-forces-special-power-act-1958">MHA - Armed Forces (Special Powers) Act, 1958 (page and notifications; not opened)</a></li>
+<li><a href="https://nagalandpost.com/centre-extends-afspa-in-disturbed-areas-of-nagaland-arunachal-manipur/">Nagaland Post - Centre extends AFSPA in disturbed areas of Nagaland, Arunachal, Manipur (news; not opened)</a></li>
+<li><a href="https://www.sentinelassam.com/topheadlines/disturbed-area-status-extended-in-3-assam-districts">Sentinel Assam - Disturbed Area status extended in 3 Assam districts (news; not opened)</a></li>
+<li><a href="https://ujiyari.com/daily/2026/08/30/naga-peace-talks-ministerial-level-nscn-im-split/">Ujiyari - Naga talks move to ministerial level; NSCN-IM split reported (30 August 2026; opened; commentary, claims unconfirmed)</a></li>
+<li><a href="https://indianexpress.com/article/political-pulse/union-minister-to-join-naga-peace-talks-nscn-i-m-says-encouraging-10894329/">Indian Express - Union Minister to join Naga peace talks (2026; not opened)</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Assam_Accord">Wikipedia - Assam Accord (secondary; check against India Code, Section 6A)</a></li>
+<li><a href="https://timesofindia.indiatimes.com/city/guwahati/ulfa-signs-landmark-peace-deal-with-centre-assam/articleshow/106397346.cms">Times of India - ULFA signs landmark peace deal with Centre and Assam (29 December 2023; not opened)</a></li>
+<li><a href="https://www.deccanherald.com/india/assam/centre-assam-government-sign-peace-accord-with-pro-talks-faction-of-ulfa-2829198">Deccan Herald - Centre, Assam sign peace accord with pro-talks ULFA (December 2023; not opened)</a></li>
+<li><a href="https://idsa.in/wp-content/uploads/2024/10/ib-pdas231024.pdf">IDSA - Bodo, Karbi and Dimasa Peace Agreements in Assam (October 2024; not opened)</a></li>
+<li><a href="https://www.aninews.in/news/national/general-news/tripartite-pact-signed-between-centre-assam-govt-dimasa-national-liberation-army20230427204643/">ANI - Tripartite pact signed between Centre, Assam Government and DNLA (27 April 2023; not opened)</a></li>
+<li><a href="https://www.drishtiias.com/daily-updates/daily-news-analysis/dima-hasao-peace-pact-assam">Drishti IAS - Dima Hasao Peace Pact (secondary; not opened)</a></li>
+<li><a href="https://pib.gov.in/PressReleasePage.aspx?PRID=2051900">PIB - Tripura peace agreement, September 2024 (not opened; access error)</a></li>
+<li><a href="https://pib.gov.in/newsite/PrintRelease.aspx?relid=126947">PIB - Declaration of NSCN (K) as an unlawful organisation (September 2015; not opened)</a></li>
+<li><a href="https://en.wikipedia.org/wiki/2015_Manipur_ambush">Wikipedia - 2015 Manipur ambush (secondary; check against official statements)</a></li>
+<li><a href="https://www.hindustantimes.com/india-news/centre-signs-tripartite-pact-to-create-territorial-body-for-east-nagaland-101770317032688.html">Hindustan Times - Centre signs tripartite pact to create territorial body for east Nagaland (2026; not opened)</a></li>
+<li><a href="https://idsa.in/publisher/backgrounder/tracing-the-eastern-nagas-demand-for-autonomy">MP-IDSA - Tracing the Eastern Nagas' demand for autonomy (backgrounder; not opened)</a></li>
+<li><a href="https://theindiantribal.com/2024/03/02/centre-signs-historic-tripartite-agreement-with-tipra-motha-tripura-govt/">The Indian Tribal - Tripartite agreement with TIPRA Motha (2 March 2024; news; not opened)</a></li>
+<li><a href="https://www.thehindu.com/news/national/other-states/assam-police-personnel-dead-many-injured-as-violence-at-border-with-mizoram-intensifies/article61436896.ece">The Hindu - Assam police personnel killed in border violence with Mizoram (July 2021; not opened)</a></li>
+<li><a href="https://www.aljazeera.com/news/2021/8/2/india-assam-mizoram-border-clash-northeast-dispute">Al Jazeera - Assam-Mizoram border clash explained (2 August 2021; not opened)</a></li>
+<li><a href="https://www.mha.gov.in/en/division_of_mha/north-east-division">MHA - North East Division (surrender and rehabilitation scheme and annual reports; not opened)</a></li>
+<li><a href="https://www.indiacode.nic.in/">India Code - Constitution (Articles 3, 131, 244, 371A-371H; Sixth Schedule) and Foreigners Act, 1946 (confirm on the official text)</a></li>
+<li><a href="https://www.indiacode.nic.in/">India Code - Citizenship Act, 1955 (Section 6A) and the Armed Forces (Special Powers) Act, 1958 (confirm on the official text)</a></li>
+</ul>
+</section>
+</main>
+</body>
+</html>
