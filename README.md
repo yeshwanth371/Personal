@@ -97,6 +97,14 @@ Visuals are drawn as lightweight inline SVG so they print cleanly. Maps are simp
 
 The `Personal/` folder is a Git repository. The `.git` directory holds repository metadata: do not move or edit it.
 
+### Clone the repository
+
+To clone the `main` branch:
+
+```bash
+git clone --branch main https://github.com/yeshwanth371/Personal.git
+```
+
 ### Get incoming changes
 
 Run these commands from the `Personal/` folder:

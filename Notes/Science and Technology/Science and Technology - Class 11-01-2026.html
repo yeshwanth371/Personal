@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Science and Technology - Class Notes | 1 November 2026</title>
+
+<style>
+  * { box-sizing: border-box; }
+  body { font-family: Calibri, sans-serif; font-size: 11pt; line-height: 1.6; max-width: 900px; margin: 20px auto; padding: 0 20px; color: #202124; }
+  h1 { font-size: 20pt; color: #1a1a1a; border-bottom: 2px solid #333; padding-bottom: 4px; margin-top: 30px; }
+  h2 { font-size: 16pt; color: #2b2b2b; margin-top: 28px; border-bottom: 1px solid #ddd; padding-bottom: 3px; }
+  h3 { font-size: 13pt; color: #3a3a3a; margin-top: 18px; }
+  p { margin: 8px 0; }
+  ul, ol { margin: 6px 0; padding-left: 28px; }
+  li { margin: 4px 0; }
+  a { color: #005ea6; overflow-wrap: anywhere; }
+  table { border-collapse: collapse; width: 100%; margin: 10px 0; table-layout: fixed; }
+  caption { text-align: left; font-weight: bold; margin-bottom: 6px; }
+  th, td { border: 1px solid #999; padding: 6px 10px; text-align: left; vertical-align: top; overflow-wrap: anywhere; }
+  th { background: #f0f0f0; }
+  .table-wrap { overflow-x: auto; }
+  .note, .exam, .verification { background: #fff8e1; border-left: 3px solid #f5a623; padding: 8px 12px; margin: 10px 0; overflow-wrap: anywhere; }
+  .correction { background: #fff3e0; border-left: 3px solid #ef6c00; padding: 8px 12px; margin: 10px 0; }
+  .additional, .lead { background: #e8f5e9; border-left: 3px solid #2e7d32; padding: 8px 12px; margin: 10px 0; }
+  .flow { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 10px; padding: 12px 0; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; }
+  .flow span { text-align: center; max-width: 100%; }
+  .flow .box { border: 1px solid #888; background: #f7f7f7; padding: 6px 10px; border-radius: 4px; flex: 1 1 120px; }
+  figure { margin: 16px 0; padding: 12px; border: 1px solid #bbb; background: #fff; }
+  figure h3 { margin-top: 0; text-align: center; }
+  figcaption { margin-top: 8px; color: #555; font-size: 9.5pt; }
+  svg { max-width: 100%; height: auto; display: block; margin: 0 auto; }
+  .cols2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  .cols3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+  .cols4 { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
+  .tile { border: 1px solid #888; border-radius: 4px; padding: 8px; background: #f5f9fd; font-size: 10.5pt; }
+  .tile.p1 { background: #e8f5e9; border-color: #2e7d32; }
+  .tile.p2 { background: #f5f9fd; border-color: #0078d4; }
+  .tile.p3 { background: #fff3e0; border-color: #ef6c00; }
+  .tile.p4 { background: #fdecea; border-color: #c62828; }
+  .small { color: #555; font-size: 9.5pt; }
+  .answer { margin: 10px 0; padding: 6px 12px; border-left: 3px solid #0078d4; background: #f5f9fd; }
+  @media (max-width: 650px) {
+    body { padding: 0 12px; }
+    .cols2, .cols3, .cols4 { grid-template-columns: 1fr; }
+    .flow { flex-direction: column; align-items: stretch; }
+    .flow .box { flex: none; }
+    th, td { padding: 6px; }
+  }
+  @media print {
+    @page { size: A4; margin: 14mm; }
+    body { max-width: none; margin: 0; padding: 0; }
+    h1, h2, h3 { break-after: avoid; }
+    figure, tr, .answer, .tile { break-inside: avoid; }
+    thead { display: table-header-group; }
+    .table-wrap { overflow: visible; }
+    a { color: inherit; text-decoration: none; }
+    p, li { orphans: 3; widows: 3; }
+  }
+</style>
+</head>
+<body>
+<main>
+<header>
+<h1>Science and Technology - Class Notes | 1 November 2026</h1>
+<p><strong>Topics:</strong> Space - Types of fuels (propellants): solid (HTPB composites, hybrid motor), liquid (hypergolic, low-toxicity "green" propellants), cryogenic (LOX and LH2, advantages and challenges); the Indian cryogenic story (Glavkosmos deal, US sanctions and MTCR, CUSP, CE-7.5 and CE-20, C32); ISRO's launch vehicles: sounding rockets, SLV-3, ASLV, PSLV, SSLV, GSLV and LVM3.</p>
+
+<p class="small">Note date: <time datetime="2026-11-01">1 November 2026</time>. <strong>Continuation:</strong> this note continues the Space block begun in the <em>31 October</em> note (Sections 30-31: rocket and jet engines, ramjet and scramjet; Section 31 "Types of Fuels" was left as a placeholder because the rough notes then ended at "Solid fuel:"). Today's class supplies that content, so Sections 32-34 below <strong>replace</strong> the placeholder of Section 31, and Section 35 starts the launch-vehicle programme mapped in Section 22 of the 30 Oct note. Numbering therefore starts at <strong>Section 32</strong>; figures continue from <strong>Figure 29</strong>. The earlier notes (Sections 1-31, Figures 1-28) are untouched.</p>
+<p class="note"><strong>Reading key:</strong> <strong>[Correction]</strong> repairs a substantive claim; <strong>[Additional]</strong> identifies supporting material or study guidance; <strong>[Verification Required]</strong> retains useful but unresolved material. Sources were consulted on <strong>2 November 2026</strong>. Opened in full or in relevant part: the ISRO pages on LVM3, GSLV Mk II, PSLV, SSLV, SLV-3, ASLV, sounding rockets, the launcher overview, the 30 kN hybrid motor test (20 Sep 2022) and the SSLV technology transfer agreement (10 Sep 2025); The Hindu's "The long road to cryogenic technology" (15 Apr 2010) and its editorial of 2 Nov 2026; the Wikipedia pages on KVD-1, CE-20, Vikas and PSLV-C62; and the PMF IAS pages for two PYQs. Only <strong>search-result summaries</strong> were read for the C32 stage reports, the HAL bid value and the 104-satellite record, so these are marked secondary or summary. <strong>Not opened:</strong> the MTCR text, ISRO propellant-composition data sheets, the Agni fact sheets, official UPSC papers, and the text of ISRO's 9 Sep 2026 and 6 Jul 2026 CE-20 test releases (cited through Wikipedia). Minor spelling and typing repairs (for example "Hydroxil", "Butatine", "Boris Yelt Sin", "Rohini") were made silently. No private rough notes were uploaded for research.</p>
+</header>
+
+<section id="solid">
+<h2>32. Types of Fuels: Basic Terms and Solid Propellants</h2>
+<p class="small">The 31 Oct note (Section 30) separated rocket engines (carry fuel and oxidiser) from jet engines (carry fuel only). This section classifies what a rocket carries.</p>
+
+<h3>32.1 Basic terms</h3>
+<div class="table-wrap"><table>
+<caption>Terms used in this and the following sections</caption>
+<thead><tr><th scope="col" style="width:24%">Term</th><th scope="col">Meaning</th></tr></thead>
+<tbody>
+<tr><td><strong>Fuel</strong></td><td>The substance that burns.</td></tr>
+<tr><td><strong>Oxidiser</strong></td><td>The substance that supplies the oxygen for burning; a rocket carries its own, so it works in vacuum.</td></tr>
+<tr><td><strong>Propellant</strong></td><td>Fuel plus oxidiser (the class uses "fuel" loosely for both).</td></tr>
+<tr><td><strong>Specific impulse (Isp)</strong></td><td>Thrust obtained per unit weight of propellant burnt each second. <strong>Isp = F / (m_dot x g0)</strong>, where F is thrust in newtons, m_dot is the propellant mass flow in kg/s and g0 = 9.80665 m/s<sup>2</sup>. Its unit is the <strong>second</strong>. The class definition ("the number of seconds 1 kg of propellant can produce 1 kgf of thrust") is equivalent. The effective exhaust velocity is <strong>v_e = Isp x g0</strong>; for example 442 s x 9.80665 = about 4,335 m/s, matching the 4.33 km/s quoted for the CE-20 engine (<a href="#s-ce20">Wikipedia</a>). Higher Isp means less propellant for the same push.</td></tr>
+<tr><td><strong>Vacuum and sea-level Isp</strong></td><td>Isp is higher in vacuum than at sea level for the same engine; for ISRO's Vikas engine <strong>293 s (vacuum) against 262 s (sea level)</strong> (<a href="#s-vikas">Wikipedia</a>). Compare engines on the same basis.</td></tr>
+</tbody></table></div>
+
+<h3>32.2 Solid propellant: class statements checked</h3>
+<div class="table-wrap"><table>
+<caption>Class claims on solid fuel against sources</caption>
+<thead><tr><th scope="col" style="width:30%">Class statement</th><th scope="col">Checked position</th><th scope="col" style="width:15%">Status</th></tr></thead>
+<tbody>
+<tr id="r-htpb"><td>Example: aluminium powder bound by HTPB (hydroxyl-terminated polybutadiene).</td><td>ISRO lists <strong>HTPB</strong> as the propellant of its large solid motors (S200, S139, S12, S7; see 32.3). In a composite solid propellant HTPB is the rubbery <strong>binder</strong> that also burns as fuel, <strong>aluminium powder</strong> is an added metal fuel, and a solid <strong>oxidiser</strong> (ammonium perchlorate in standard composite propellants) is mixed in. The class example names fuel and binder but leaves out the oxidiser. The exact ISRO formulation (ammonium perchlorate content) was <strong>not</strong> opened <strong>[Verification Required]</strong>. See <a href="#c-htpb">correction</a>.</td><td>Incomplete</td></tr>
+<tr id="r-first"><td>Invariably the first stage of a launch vehicle uses solid fuel because it gives the thrust for take-off, as solid has more fuel density.</td><td>Solid boosters give very high thrust for little complexity: PSLV's S139 stage gives a maximum thrust of <strong>4,800 kN</strong> (<a href="#s-isropslv">ISRO</a>) and each LVM3 S200 booster holds about <strong>205 tonnes</strong> of HTPB propellant (<a href="#s-isrolvm3">ISRO</a>). But "invariably" is wrong: ISRO's own LVM3 ignites its <strong>liquid core stage (L110) in flight at about 113 s</strong>, during the S200 burn (<a href="#s-isrolvm3">ISRO</a>), and GSLV Mk II uses four <strong>liquid strap-ons</strong> with its solid core (<a href="#s-isrogslv">ISRO</a>). Launchers with a liquid first stage exist elsewhere <strong>[Additional; not opened]</strong>. See <a href="#c-first">correction</a>.</td><td>Overstated</td></tr>
+<tr id="r-onoff"><td>Solid engines cannot be switched on and off, which is needed for manoeuvring; fuel and oxidiser are premixed, so combustion continues till the fuel is exhausted.</td><td>Correct in principle: once the grain is lit it burns until it is consumed, so thrust cannot be throttled or restarted; the contrast is the liquid stage, where valve control allows throttling and restart (<a href="#s-isrohybrid">ISRO hybrid-motor release</a>: "the use of liquids facilitates throttling... the control over the flow rate of LOX enables the re-start capability"). A "thrust-termination" device exists on some solid motors <strong>[Additional; not opened]</strong>, but that is a shut-down, not a restart.</td><td>Correct</td></tr>
+<tr id="r-handling"><td>Other advantages: ease of handling and no corrosion; hence preferred in missiles.</td><td>Solid motors are cast, sealed and storable, which suits missiles that must stay ready for years. This is standard reasoning <strong>[Additional; not opened]</strong>; the ISRO pages opened do not discuss missiles.</td><td>Sound</td></tr>
+<tr id="r-agni"><td>Agni has 6 variants, all using solid fuel.</td><td>The Agni series (Agni-I to Agni-V) and Agni-Prime are solid-fuelled; the class count of six presumably adds Agni-Prime to the five numbered missiles. A missile called "Agni-VI" is <strong>not</strong> an inducted system. The DRDO or Ministry of Defence fact sheets were <strong>not</strong> opened <strong>[Verification Required]</strong>. Link with ISRO: SLV-3 technology "contributed to the missile programme (Agni's first stage)" is the class's own statement <strong>[Verification Required]</strong>.</td><td>Unverified</td></tr>
+<tr id="r-72"><td>Solid fuel enables quick assembly, e.g. SSLV in 72 hours.</td><td>ISRO describes SSLV as a "quick turnaround, on-demand launch vehicle" with "low turn-around time" and "minimal launch infrastructure requirements" (<a href="#s-isrosslv">ISRO SSLV page</a>; <a href="#s-isrott">technology transfer release, 11 Sep 2025</a>). <strong>The figure "72 hours" was not found</strong> on these pages. See <a href="#c-72">correction</a>.</td><td>Number unverified</td></tr>
+<tr id="r-hyb"><td>Recently ISRO tested a hybrid propellant using solid fuel and liquid oxidiser.</td><td>True, but <strong>not recent</strong>: on <strong>20 Sep 2022</strong> VSSC/ISRO tested a <strong>30 kN flight-equivalent hybrid motor</strong> at IPRC, Mahendragiri, using <strong>HTPB as fuel and liquid oxygen (LOX) as oxidiser</strong>; it ran for the intended <strong>15 seconds</strong> (<a href="#s-isrohybrid">ISRO</a>). See 32.4.</td><td>Correct; date stale</td></tr>
+</tbody></table></div>
+<p class="correction" id="c-htpb"><strong>[Correction]</strong> Write the solid propellant as: <strong>oxidiser (usually ammonium perchlorate) + metal fuel (aluminium powder) + HTPB binder-fuel</strong>. HTPB alone, or aluminium "bound by" HTPB, is incomplete without an oxidiser; the class's own next sentence says fuel and oxidiser are premixed. The oxidiser identity is standard composite-propellant knowledge, not re-opened from an ISRO document <strong>[Verification Required]</strong>.</p>
+<p class="correction" id="c-first"><strong>[Correction]</strong> Replace "invariably the first stage is solid" with "<strong>solid boosters are widely used for lift-off</strong>". Solid motors are dense and simple, but a first stage can also be liquid, and ISRO's LVM3 lights its liquid core during the boosters' burn. The class's "more fuel density" is read as <strong>higher propellant density</strong> (more propellant per unit volume).</p>
+<p class="correction" id="c-72"><strong>[Correction]</strong> Say "SSLV is designed for quick, on-demand integration with a small team", not "assembled in 72 hours", until an ISRO source for the figure is found <strong>[Verification Required]</strong>. The second block of the class notes says "assembled within days by a small team", which is consistent with the ISRO wording.</p>
+
+<h3>32.3 Where ISRO uses solid (HTPB) motors</h3>
+<div class="table-wrap"><table>
+<caption>HTPB-based solid motors in ISRO vehicles (ISRO pages, opened 2 Nov 2026)</caption>
+<thead><tr><th scope="col">Motor</th><th scope="col">Used in</th><th scope="col">Data given by ISRO</th></tr></thead>
+<tbody>
+<tr><td>S200</td><td>LVM3 (two strap-on boosters)</td><td>About 204-205 t HTPB propellant; 25 m tall, 3.2 m diameter; burns about 134 s (<a href="#s-isrolvm3">ISRO LVM3</a>)</td></tr>
+<tr><td>S139</td><td>PSLV first stage (PS1); GSLV Mk II first stage (GS1)</td><td>Max thrust 4,800 kN; GS1 is a 138 t solid motor augmented by four liquid strap-ons; burn time 100 s (<a href="#s-isropslv">PSLV</a>, <a href="#s-isrogslv">GSLV</a>)</td></tr>
+<tr><td>S12</td><td>PSLV strap-ons (6, 4 or 2)</td><td>Max thrust 719 kN each</td></tr>
+<tr><td>S7</td><td>PSLV third stage (PS3)</td><td>Max thrust 240 kN</td></tr>
+<tr><td>SS1, SS2, SS3</td><td>SSLV three stages</td><td>"HTPB based solid propellant"; max vacuum thrust 2,496 kN, 234.2 kN and 160 kN; burn times 94.3 s, 113.1 s and 106.9 s (<a href="#s-isrosslv">ISRO SSLV</a>)</td></tr>
+</tbody></table></div>
+
+<h3>32.4 Hybrid propellant</h3>
+<ul>
+<li><strong>Definition (ISRO):</strong> "Unlike solid-solid or liquid-liquid combinations, a hybrid motor uses <em>solid fuel and liquid oxidizer</em>" (<a href="#s-isrohybrid">ISRO, 20 Sep 2022</a>).</li>
+<li><strong>ISRO claims:</strong> liquid oxidiser flow control allows <strong>throttling and restart</strong>; "while both HTPB and LOX are green, LOX is safer to handle"; the motor is "scalable and stackable", potentially paving the way for a new propulsion system for forthcoming launch vehicles.</li>
+<li><strong>Status:</strong> a <strong>ground demonstration</strong> (30 kN, 15 s). No Indian launch vehicle flies a hybrid stage as of 2 Nov 2026 in the sources opened <strong>[Verification Required]</strong>.</li>
+</ul>
+
+<figure id="fig29">
+<h3>Figure 29. Solid, Liquid and Hybrid Propulsion: How the Propellants Are Held (schematic) [Additional]</h3>
+<svg viewBox="0 0 760 330" role="img" aria-label="Three schematic engines. A: a solid motor with a cast propellant grain with a central bore and a nozzle. B: a liquid engine with a fuel tank, an oxidiser tank, a pump and a combustion chamber with nozzle. C: a hybrid motor with a liquid oxygen tank, a valve and a solid fuel grain chamber with nozzle.">
+<defs><marker id="arr29" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#555"/></marker></defs>
+<g font-family="Calibri, sans-serif" font-size="12" text-anchor="middle">
+<text x="125" y="22" font-weight="bold">A. Solid motor</text>
+<rect x="20" y="60" width="150" height="70" fill="#fff3e0" stroke="#ef6c00" stroke-width="2"/>
+<rect x="20" y="85" width="150" height="20" fill="#ffffff"/>
+<polygon points="170,70 215,45 215,145 170,120" fill="#f5f5f5" stroke="#555" stroke-width="2"/>
+<text x="95" y="76" font-size="11">propellant grain</text>
+<text x="95" y="100" font-size="11" fill="#c62828">central bore</text>
+<text x="95" y="123" font-size="11">fuel + oxidiser mixed</text>
+<text x="195" y="162" font-size="11">nozzle</text>
+<line x1="226" y1="95" x2="260" y2="95" stroke="#555" stroke-width="2" marker-end="url(#arr29)"/>
+<text x="125" y="188" font-size="11">No valves or pumps.</text>
+<text x="125" y="203" font-size="11">Burns to burnout; cannot</text>
+<text x="125" y="218" font-size="11">be restarted.</text>
+<text x="125" y="240" font-size="11" fill="#2e7d32">Simple, storable, high thrust</text>
+
+<text x="385" y="22" font-weight="bold">B. Liquid engine</text>
+<rect x="290" y="45" width="50" height="75" fill="#e3f2fd" stroke="#0078d4" stroke-width="2"/>
+<rect x="350" y="45" width="50" height="75" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2"/>
+<text x="315" y="82" font-size="11">fuel</text><text x="375" y="82" font-size="11">oxidiser</text>
+<line x1="315" y1="120" x2="315" y2="135" stroke="#555"/><line x1="375" y1="120" x2="375" y2="135" stroke="#555"/>
+<line x1="315" y1="135" x2="375" y2="135" stroke="#555"/>
+<line x1="345" y1="135" x2="345" y2="147" stroke="#555" marker-end="url(#arr29)"/>
+<rect x="320" y="148" width="50" height="22" fill="#fff8e1" stroke="#f5a623" stroke-width="2"/>
+<text x="345" y="163" font-size="11">pumps</text>
+<polygon points="320,174 370,174 385,190 305,190" fill="#f5f5f5" stroke="#555" stroke-width="2"/>
+<text x="345" y="186" font-size="10">chamber</text>
+<polygon points="305,190 385,190 400,225 290,225" fill="#f5f5f5" stroke="#555" stroke-width="2"/>
+<text x="345" y="214" font-size="10">nozzle</text>
+<text x="385" y="248" font-size="11" fill="#2e7d32">Throttle and restart possible;</text>
+<text x="385" y="263" font-size="11" fill="#c62828">complex plumbing, handling</text>
+
+<text x="640" y="22" font-weight="bold">C. Hybrid motor</text>
+<rect x="520" y="65" width="60" height="65" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2"/>
+<text x="550" y="95" font-size="11">liquid</text><text x="550" y="110" font-size="11">oxidiser</text>
+<circle cx="595" cy="97" r="8" fill="#fff8e1" stroke="#f5a623" stroke-width="2"/>
+<text x="595" y="122" font-size="10">valve</text>
+<rect x="605" y="72" width="90" height="50" fill="#fff3e0" stroke="#ef6c00" stroke-width="2"/>
+<rect x="605" y="92" width="90" height="10" fill="#ffffff"/>
+<text x="650" y="143" font-size="11">solid fuel grain</text>
+<polygon points="695,80 735,60 735,135 695,114" fill="#f5f5f5" stroke="#555" stroke-width="2"/>
+<text x="640" y="188" font-size="11">Solid fuel, liquid oxidiser:</text>
+<text x="640" y="203" font-size="11">oxidiser flow can be valve-</text>
+<text x="640" y="218" font-size="11">controlled (ISRO: HTPB + LOX)</text>
+<text x="640" y="240" font-size="11" fill="#2e7d32">Throttle and restart claimed</text>
+
+<text x="380" y="305" font-size="11" fill="#555">Arrows show flow of exhaust or propellant. Labels are generic; real motors are far more complex.</text>
+</g>
+</svg>
+<figcaption>Schematic, not to scale; drawn from the ISRO definition of a hybrid motor (<a href="#s-isrohybrid">ISRO, 20 Sep 2022</a>) and standard solid and liquid engine layouts <strong>[Additional]</strong>.</figcaption>
+</figure>
+</section>
+
+<section id="liquid">
+<h2>33. Liquid Propellants: Hypergolic, Low-Toxicity and Cryogenic</h2>
+<h3>33.1 General position (class statement checked)</h3>
+<p>The class says liquid propellants generally give <strong>higher efficiency (specific impulse)</strong>, allow <strong>restart and throttling</strong>, but cause <strong>corrosion and need careful handling</strong>. This is correct in outline. Contrast the two ISRO engines for which Isp is given in the sources opened: Vikas (UDMH-based fuel with nitrogen tetroxide, hypergolic) <strong>293 s</strong> in vacuum, and CE-20 (LOX and LH2, cryogenic) <strong>442 s</strong> in vacuum (<a href="#s-vikas">Vikas</a>, <a href="#s-ce20">CE-20</a>; see Figure 30). A figure for ISRO's solid motors was <strong>not</strong> found in the sources opened, so solids are not plotted <strong>[Verification Required]</strong>. "Corrosion" applies mainly to the storable propellants and to the extreme cold of the cryogenic pair (33.4).</p>
+
+<h3>33.2 Hypergolic propellants</h3>
+<div class="table-wrap"><table>
+<caption>Class statements on hypergolic propellants checked</caption>
+<thead><tr><th scope="col" style="width:30%">Class statement</th><th scope="col">Checked position</th></tr></thead>
+<tbody>
+<tr id="r-hyp"><td>Hypergolic: UDMH and MMH, with nitrogen tetroxide as oxidiser; they ignite as soon as they touch the oxidiser.</td><td>Definition correct (hypergolic = self-igniting on contact, so no igniter is needed, which makes restart simple). <strong>Fuels:</strong> UDMH (unsymmetrical dimethylhydrazine) and MMH (monomethylhydrazine). <strong>Oxidisers in ISRO use:</strong> nitrogen tetroxide (N<sub>2</sub>O<sub>4</sub>) <strong>and MON</strong> (mixed oxides of nitrogen): the Vikas engine uses UDMH-based fuel with N<sub>2</sub>O<sub>4</sub> (PSLV's PS2 and GSLV's GS2 "UH25 + N<sub>2</sub>O<sub>4</sub>", <a href="#s-isropslv">PSLV</a>, <a href="#s-isrogslv">GSLV</a>); PSLV's PS4 uses <strong>MMH + MON</strong> with 2 x 7.3 kN engines; SSLV's velocity-trimming module uses <strong>MMH + MON-3</strong> (<a href="#s-isrosslv">SSLV</a>). <strong>[Additional]</strong> UH25 is a mixture of UDMH with 25% hydrazine hydrate by the usual definition (not opened here).</td></tr>
+<tr><td>They have higher efficiency than solid fuel.</td><td>Plausible in general (liquid Isp above solid Isp) but not checked against an ISRO solid-motor figure <strong>[Verification Required]</strong>; ISRO data opened give 293 s (vacuum) for Vikas.</td></tr>
+<tr id="r-tox"><td>They cause skin cancer and damage the ozone layer; hence all major space agencies, including ISRO, are replacing them with green propellants.</td><td>Hydrazine-family fuels are <strong>highly toxic</strong> and treated as suspected carcinogens; handling needs full protection (standard toxicology, <strong>not opened</strong> <strong>[Verification Required]</strong>). The specific claims "skin cancer" and "damages the ozone layer" were <strong>not found</strong> in any source opened. <strong>"All agencies, including ISRO, are replacing them" is overstated:</strong> as of the ISRO pages updated in Sep-Oct 2026, PSLV (PS2, PS4), GSLV Mk II (GS2) and LVM3 (L110 core) <strong>all still fly hypergolic stages</strong> (<a href="#s-isropslv">PSLV</a>, <a href="#s-isrogslv">GSLV</a>, <a href="#s-isrolvm3">LVM3</a>). Replacement is a <strong>direction of research</strong> (hybrid HTPB-LOX motor, LOX-methane engine, kerosene engines), not a completed change. See <a href="#c-tox">correction</a>.</td></tr>
+</tbody></table></div>
+<p class="correction" id="c-tox"><strong>[Correction]</strong> Say "hydrazine-based hypergolic fuels are toxic and hazardous to handle, so agencies are researching less toxic alternatives; ISRO's operational PSLV, GSLV and LVM3 still use them". Do not state ozone damage or skin cancer as verified facts. The ISRO page for LVM3 prints the L110 fuel as "UDMH + H2O", which appears to be shorthand; the Vikas engine's propellant is UDMH-based fuel with N<sub>2</sub>O<sub>4</sub> (<a href="#s-vikas">Wikipedia</a>; <a href="#s-isrogslv">ISRO GSLV page</a>).</p>
+
+<h3>33.3 Low-toxicity ("green") propellants</h3>
+<div class="table-wrap"><table>
+<caption>Class list of "green" propellants checked</caption>
+<thead><tr><th scope="col" style="width:22%">Class item</th><th scope="col">Checked position</th></tr></thead>
+<tbody>
+<tr><td>"Carolox"</td><td>Read as <strong>kerolox</strong>: kerosene fuel with liquid oxygen. Kerosene is not hypergolic with LOX, so the engine needs an igniter. ISRO's kerosene-LOX "semi-cryogenic" work (SCE-200) is mentioned in passing on the Vikas page <strong>[Verification Required]</strong>; no status was opened. <strong>[Additional]</strong> "Semi-cryogenic" means one cryogenic liquid (LOX) with a room-temperature fuel.</td></tr>
+<tr><td>Methalox</td><td>Methane fuel with liquid oxygen. Wikipedia records that in 2019-2020 a CE-20 engine was modified to burn methalox as the LM20-TD technology demonstrator, and an engine named LME-1100 is listed on the same page (<a href="#s-ce20">Wikipedia, secondary</a>; ISRO's own page was not opened) <strong>[Verification Required]</strong>.</td></tr>
+<tr><td>Liquid hydrogen and liquid oxygen</td><td>"Hydrolox": ISRO's cryogenic pair, in use in CE-7.5 and CE-20 (Section 33.4). It is clean-burning (water vapour) but is cryogenic, not "storable".</td></tr>
+<tr id="r-gap"><td>GAP (glycidyl azide polymer)</td><td>GAP is an energetic <strong>polymer binder</strong> used in solid and gel propellants; it is <strong>not a liquid propellant</strong>, so it does not belong in a list of liquid green propellants <strong>[Verification Required; standard chemistry, not opened]</strong>. See <a href="#c-gap">correction</a>.</td></tr>
+</tbody></table></div>
+<p class="correction" id="c-gap"><strong>[Correction]</strong> Class list rewritten as: <strong>kerolox</strong> (kerosene + LOX), <strong>methalox</strong> (methane + LOX), <strong>hydrolox</strong> (LH2 + LOX), plus <strong>HTPB-LOX hybrid</strong> (Section 32.4). GAP is listed separately as an energetic solid-propellant binder. "Green" here means <strong>lower toxicity than hydrazine propellants</strong>, not "no environmental effect".</p>
+
+<h3>33.4 Cryogenic propellants</h3>
+<div class="table-wrap"><table>
+<caption>Class statements on cryogenic engines checked</caption>
+<thead><tr><th scope="col" style="width:28%">Class statement</th><th scope="col">Checked position</th></tr></thead>
+<tbody>
+<tr><td>Cryogenics is the application of temperatures below -150 deg C; the engine uses liquid hydrogen (-253 deg C) fuel and liquid oxygen (-183 deg C) oxidiser.</td><td>Correct (<a href="#s-hindu2010">The Hindu, 2010</a>: oxygen remains liquid only below -183 deg C and hydrogen below -253 deg C; the -150 deg C threshold is the usual convention <strong>[Additional; not opened]</strong>). These are <strong>boiling points at normal pressure</strong>.</td></tr>
+<tr><td>It has the highest specific impulse; Isp is in seconds.</td><td>Correct <em>among chemical propellants in launcher use</em>: CE-20 <strong>442 s</strong> and the Russian KVD-1 <strong>462 s</strong> in vacuum against Vikas <strong>293 s</strong> (Figure 30). <strong>[Additional]</strong> Electric and nuclear thermal propulsion can have higher Isp, so "highest among all" is limited to chemical rockets.</td></tr>
+<tr id="r-exp"><td>Due to higher specific impulse the payload can be increased exponentially.</td><td>The relation is exponential, but in the <em>mass ratio</em>, not the payload. Tsiolkovsky's rocket equation: <strong>delta-v = Isp x g0 x ln(m0 / mf)</strong>, so <strong>m0 / mf = exp[delta-v / (Isp x g0)]</strong> (m0 initial mass, mf final mass). <strong>[Additional] Illustration</strong> for an assumed delta-v of 4.0 km/s: with Isp 293 s, m0/mf = exp(4000 / 2873) = exp(1.392) = <strong>4.02</strong> (propellant 75% of lift-off mass); with Isp 442 s, m0/mf = exp(4000 / 4335) = exp(0.923) = <strong>2.52</strong> (propellant 60%). The same stage therefore carries a larger share of payload and structure. This is a teaching example, not a mission figure. See <a href="#c-exp">correction</a>.</td></tr>
+<tr><td>Suitable for upper stages and deep-space missions; clean, non-toxic products; restart and throttle possible.</td><td>Sound. LVM3's C25 cryogenic stage <strong>re-ignited its thrust chamber in space</strong> after injecting CMS-03 on <strong>2 Nov 2025</strong> (LVM3-M5), a restart step that ISRO said is "paving the way" for multi-orbit missions (<a href="#s-ce20">Wikipedia</a>, quoting ISRO's chairman; secondary). CE-20 is throttleable between <strong>180 and 220 kN</strong> (<a href="#s-ce20">Wikipedia</a>).</td></tr>
+<tr><td>Challenges: engines are complex and costly; need ground infrastructure.</td><td>Sound. India's own indigenous engine took about 16 years from the 1994 project start to the 2010 first flight attempt (<a href="#s-hindu2010">The Hindu, 2010</a>): see Section 34.</td></tr>
+<tr id="r-tank"><td>Hydrogen is light and has low density, so big tanks are needed, raising dry mass and aerodynamic drag.</td><td>Correct. <strong>[Additional] Calculation</strong> using standard densities (liquid hydrogen about 71 kg/m<sup>3</sup>, liquid oxygen about 1,141 kg/m<sup>3</sup>; handbook values not opened here) and the CE-20 engine mixture ratio of 5.05 (<a href="#s-ce20">Wikipedia</a>): for 1 kg of hydrogen the oxygen is 5.05 kg; hydrogen volume = 1/71 = 0.0141 m<sup>3</sup>; oxygen volume = 5.05/1141 = 0.0044 m<sup>3</sup>; so the <strong>hydrogen tank is about 3.2 times the oxygen tank</strong>. For C25's 28 t load (<a href="#s-isrolvm3">ISRO</a>) at that ratio: 4.6 t hydrogen (about 65 m<sup>3</sup>) and 23.4 t oxygen (about 20 m<sup>3</sup>). Illustrative only; the stage's real tank volumes were not opened.</td></tr>
+<tr id="r-boil"><td>Due to the high temperature of the combustion chamber, hydrogen starts boiling, increasing chances of failure, and it cannot be stored for long.</td><td>Reworded. Hydrogen <strong>cannot be stored for long</strong> because even a small heat leak boils it off (standard physics; <strong>[Additional]</strong>). In the engine the heating is <em>deliberate</em>: the cold hydrogen is first run around the thrust chamber to <strong>cool it</strong>, where temperatures rise to over 3,000 deg C, and then goes to the gas generator (<a href="#s-hindu2010">The Hindu, 2010</a>, describing the staged-combustion design). A failure risk arises if hydrogen vaporises <em>before</em> reaching the pumps (pump cavitation; standard engineering, <strong>[Verification Required]</strong>). See <a href="#c-boil">correction</a>.</td></tr>
+<tr><td>The extreme low temperature makes materials brittle.</td><td>Correct in general (many metals lose toughness at cryogenic temperature); India had to master new materials and processes such as <strong>vacuum brazing</strong> of the thrust chamber (<a href="#s-hindu2010">The Hindu, 2010</a>).</td></tr>
+</tbody></table></div>
+<p class="correction" id="c-exp"><strong>[Correction]</strong> Replace "payload increases exponentially" with "<strong>the propellant mass needed falls exponentially as Isp rises</strong>, so a higher-Isp upper stage carries a heavier payload to the same velocity". Payload does not grow exponentially with Isp.</p>
+<p class="correction" id="c-boil"><strong>[Correction]</strong> Replace "hydrogen starts boiling due to the chamber temperature" with: <strong>(i)</strong> liquid hydrogen boils off in storage from heat leak, so it cannot be stored for long; <strong>(ii)</strong> in the engine it is heated on purpose as a coolant; <strong>(iii)</strong> premature vaporisation upstream of the pump is a failure risk.</p>
+
+<figure id="fig30">
+<h3>Figure 30. Specific Impulse (vacuum unless stated): Three Engines in the ISRO Story [Additional]</h3>
+<svg viewBox="0 0 760 270" role="img" aria-label="Horizontal bar chart of specific impulse in seconds: Vikas at sea level 262, Vikas in vacuum 293, CE-20 in vacuum 442, KVD-1 in vacuum 462.">
+<g font-family="Calibri, sans-serif" font-size="12" text-anchor="middle">
+<g stroke="#ccc"><line x1="190" y1="30" x2="190" y2="215"/><line x1="290" y1="30" x2="290" y2="215"/><line x1="390" y1="30" x2="390" y2="215"/><line x1="490" y1="30" x2="490" y2="215"/><line x1="590" y1="30" x2="590" y2="215"/><line x1="690" y1="30" x2="690" y2="215"/></g>
+<text x="190" y="232">0</text><text x="290" y="232">100</text><text x="390" y="232">200</text><text x="490" y="232">300</text><text x="590" y="232">400</text><text x="690" y="232">500</text>
+<text x="440" y="252" fill="#555">Specific impulse, seconds (scale: 1 px per second; to scale)</text>
+<text x="180" y="52" text-anchor="end">Vikas, sea level (UDMH + N2O4)</text>
+<rect x="190" y="38" width="262" height="24" fill="#0078d4"/><text x="458" y="55" text-anchor="start">262 s</text>
+<text x="180" y="94" text-anchor="end">Vikas, vacuum</text>
+<rect x="190" y="80" width="293" height="24" fill="#0078d4"/><text x="489" y="97" text-anchor="start">293 s</text>
+<text x="180" y="136" text-anchor="end">CE-20 (LOX + LH2), vacuum</text>
+<rect x="190" y="122" width="442" height="24" fill="#2e7d32"/><text x="638" y="139" text-anchor="start">442 s</text>
+<text x="180" y="178" text-anchor="end">KVD-1 (Russian, LOX + LH2), vacuum</text>
+<rect x="190" y="164" width="462" height="24" fill="#2e7d32"/><text x="658" y="181" text-anchor="start">462 s</text>
+</g>
+</svg>
+<figcaption>Blue: hypergolic storable pair; green: cryogenic pair. Data: <a href="#s-vikas">Wikipedia: Vikas (262 s sea level, 293 s vacuum)</a>, <a href="#s-ce20">Wikipedia: CE-20 (442 s)</a>, <a href="#s-kvd1">Wikipedia: KVD-1 (462 s)</a>; secondary sources, which cite engine data sheets. A solid-motor Isp is not shown because no figure was found in the sources opened.</figcaption>
+</figure>
+</section>
+
+<section id="cryoindia">
+<h2>34. Indian Scenario: The Cryogenic Engine Story</h2>
+<h3>34.1 From the Glavkosmos deal to indigenous engines</h3>
+<div class="table-wrap"><table>
+<caption>Class account checked against <a href="#s-hindu2010">The Hindu (15 Apr 2010; updated 2016)</a> and other sources</caption>
+<thead><tr><th scope="col" style="width:26%">Class statement</th><th scope="col">Checked position</th></tr></thead>
+<tbody>
+<tr><td>1991: India and the Soviet Union signed an agreement; Glavkosmos was to transfer the cryogenic engine with technology to ISRO.</td><td><strong>January 1991</strong>: a deal with Glavkosmos to buy <strong>two cryogenic flight stages and the technology to make them in India</strong>; the engine was the 11D56 (RD-56), developed for the Soviet N1 moon rocket, giving 7.5 tonnes of thrust, in a stage carrying 12 tonnes of propellant (<a href="#s-hindu2010">The Hindu</a>; <a href="#s-kvd1">Wikipedia: KVD-1</a> adds a deal value of 120 million dollars, secondary). Before this, ISRO's Cryogenic Study Team (December 1982) had recommended an indigenous engine of about 10 tonnes thrust.</td></tr>
+<tr id="r-1993"><td>In 1993 Russian president Boris Yeltsin terminated the agreement on the ground that it violated the MTCR.</td><td>The deal "violated the Missile Technology Control Regime" and fell foul of US law: the <strong>US imposed sanctions on ISRO and Glavkosmos in May 1992</strong>, and "a year later" Russia, which had inherited the contract after the break-up of the Soviet Union, <strong>backed out</strong> (<a href="#s-hindu2010">The Hindu</a>). Wikipedia dates the US sanctions to July 1993, which conflicts; the Hindu's account (May 1992) is used here <strong>[Verification Required]</strong>. The source opened does not name President Yeltsin; the name comes from the class.</td></tr>
+<tr id="r-mtcr"><td>Under MTCR, rockets and rocket subsystems cannot be transferred, whereas for cruise missiles the restriction applies above 300 km.</td><td>The <strong>MTCR</strong> is a voluntary export-control regime for missiles and related technology. Its strictest category covers complete rocket systems and unmanned aerial vehicles able to carry a payload of at least 500 kg to at least 300 km, and their major subsystems such as rocket stages and engines; the 300 km figure applies to <em>range</em> for both rockets and cruise missiles, not only cruise missiles. The MTCR text was <strong>not opened</strong> <strong>[Verification Required]</strong>. <strong>[Additional]</strong> India became a member of the MTCR in 2016 (standard knowledge, not opened).</td></tr>
+<tr><td>After persuasion, Russia agreed to share 7 cryogenic engines (KVD-1) without technology transfer.</td><td>Correct in outline: Russia supplied <strong>seven ready-to-fly cryogenic stages</strong> (<a href="#s-hindu2010">The Hindu</a>). The engine flew only on GSLV Mk I (first flight 18 Apr 2001 per <a href="#s-isrogslv">ISRO</a>, though Wikipedia's KVD-1 page says 20 Apr; last flight 25 Dec 2010; <a href="#s-kvd1">Wikipedia</a>). It was less efficient than predicted: in the first flight the rocket carried a 1.5-tonne satellite against the intended 2.5 tonnes.</td></tr>
+<tr id="r-cusp"><td>ISRO started CUSP (Cryogenic Upper Stage Project), which resulted in two types of cryogenic engines.</td><td>The <strong>Cryogenic Upper Stage project was launched in April 1994</strong>, to build an engine and stage closely modelled on the Russian design (<a href="#s-hindu2010">The Hindu</a>). ISRO states that <strong>CE-7.5 was developed under CUSP</strong> (<a href="#s-isrogslv">ISRO GSLV page</a>). The <strong>CE-20</strong> was developed by LPSC for LVM3 (<a href="#s-ce20">Wikipedia</a>); whether it is also counted under CUSP was not opened <strong>[Verification Required]</strong>.</td></tr>
+</tbody></table></div>
+
+<figure id="fig31">
+<h3>Figure 31. India's Cryogenic Engine: Key Dates (events evenly spaced; not to a time scale) [Additional]</h3>
+<svg viewBox="0 0 760 270" role="img" aria-label="Timeline of 11 events: January 1991 Glavkosmos deal; May 1992 US sanctions; 1993 Russia backs out; April 1994 CUSP launched; February 2000 first indigenous engine ground test; 18 April 2001 GSLV-D1 with Russian stage; 15 April 2010 GSLV-D3 with Indian stage fails; 5 January 2014 GSLV-D5 success; 5 June 2017 first LVM3 flight with CE-20; 2 November 2025 C25 thrust chamber relit in space; 9 September 2026 CE-20 22 tonne test for the C32 stage.">
+<g font-family="Calibri, sans-serif" font-size="10.5" text-anchor="middle">
+<line x1="30" y1="140" x2="735" y2="140" stroke="#555" stroke-width="2"/>
+<g fill="#0078d4" stroke="#fff"><circle cx="60" cy="140" r="6"/><circle cx="122" cy="140" r="6"/><circle cx="184" cy="140" r="6"/><circle cx="246" cy="140" r="6"/><circle cx="308" cy="140" r="6"/><circle cx="370" cy="140" r="6"/><circle cx="432" cy="140" r="6" fill="#c62828"/><circle cx="494" cy="140" r="6" fill="#2e7d32"/><circle cx="556" cy="140" r="6" fill="#2e7d32"/><circle cx="618" cy="140" r="6" fill="#2e7d32"/><circle cx="680" cy="140" r="6" fill="#2e7d32"/></g>
+<g stroke="#999"><line x1="60" y1="134" x2="60" y2="112"/><line x1="122" y1="146" x2="122" y2="168"/><line x1="184" y1="134" x2="184" y2="112"/><line x1="246" y1="146" x2="246" y2="168"/><line x1="308" y1="134" x2="308" y2="112"/><line x1="370" y1="146" x2="370" y2="168"/><line x1="432" y1="134" x2="432" y2="112"/><line x1="494" y1="146" x2="494" y2="168"/><line x1="556" y1="134" x2="556" y2="112"/><line x1="618" y1="146" x2="618" y2="168"/><line x1="680" y1="134" x2="680" y2="112"/></g>
+<g>
+<text x="60" y="68" font-weight="bold">Jan 1991</text><text x="60" y="82">Glavkosmos deal:</text><text x="60" y="95">2 stages + technology</text><text x="60" y="108">(11D56 engine)</text>
+<text x="122" y="182" font-weight="bold">May 1992</text><text x="122" y="195">US sanctions on ISRO</text><text x="122" y="208">and Glavkosmos</text>
+<text x="184" y="82" font-weight="bold">1993</text><text x="184" y="95">Russia backs out</text><text x="184" y="108">(MTCR)</text>
+<text x="246" y="182" font-weight="bold">Apr 1994</text><text x="246" y="195">CUSP launched</text><text x="246" y="208">(indigenous stage)</text>
+<text x="308" y="82" font-weight="bold">Feb 2000</text><text x="308" y="95">first Indian engine</text><text x="308" y="108">ground-tested</text>
+<text x="370" y="182" font-weight="bold">18 Apr 2001</text><text x="370" y="195">GSLV-D1: Russian</text><text x="370" y="208">stage; 1.5 t payload</text>
+<text x="432" y="82" font-weight="bold" fill="#c62828">15 Apr 2010</text><text x="432" y="95">GSLV-D3: first Indian</text><text x="432" y="108">stage; launch fails</text>
+<text x="494" y="182" font-weight="bold" fill="#2e7d32">5 Jan 2014</text><text x="494" y="195">GSLV-D5: first</text><text x="494" y="208">success with CE-7.5</text>
+<text x="556" y="82" font-weight="bold" fill="#2e7d32">5 Jun 2017</text><text x="556" y="95">LVM3 first flight</text><text x="556" y="108">with CE-20</text>
+<text x="618" y="182" font-weight="bold" fill="#2e7d32">2 Nov 2025</text><text x="618" y="195">C25 thrust chamber</text><text x="618" y="208">relit in space</text>
+<text x="680" y="82" font-weight="bold" fill="#2e7d32">9 Sep 2026</text><text x="680" y="95">CE-20 22 t test</text><text x="680" y="108">for C32 (LVM3-M7)</text>
+</g>
+<text x="380" y="250" fill="#555">Blue: foreign-stage or development phase. Red: failure. Green: indigenous success or upgrade.</text>
+</g>
+</svg>
+<figcaption>Sources: <a href="#s-hindu2010">The Hindu (2010)</a> for 1982-2000 and the 2001 payload; <a href="#s-isrogslv">ISRO GSLV page</a> for 18 Apr 2001 and 5 Jan 2014; <a href="#s-ce20">Wikipedia: CE-20</a> for 2017, 2025 and 2026 (secondary, citing ISRO); the 2010 GSLV-D3 failure is from <a href="#s-hindu2010">The Hindu's related headlines</a> only, details not opened <strong>[Verification Required]</strong>.</figcaption>
+</figure>
+
+<h3>34.2 The Indian engines</h3>
+<div class="table-wrap"><table>
+<caption>CE-7.5 and CE-20 (class figures against ISRO pages)</caption>
+<thead><tr><th scope="col" style="width:16%">Item</th><th scope="col">CE-7.5 / C12</th><th scope="col">CE-20 / C25</th><th scope="col">C32 (in development)</th></tr></thead>
+<tbody>
+<tr><td>Class claim</td><td>75 kN thrust, 12 t propellant; in GSLV Mk II, payload capacity 2.5 t</td><td>200 kN thrust, 25 t propellant; in LVM3; 8 t to polar orbit and 4 t to geosynchronous orbit</td><td>For deep-space missions like asteroid mining</td></tr>
+<tr><td>Checked</td><td>ISRO: nominal thrust <strong>75 kN</strong>, LOX + LH2, burn 814 s, <strong>staged combustion</strong> (<a href="#s-isrogslv">ISRO GSLV</a>). The 12 t load matches the "C12" name and the 12 t of the Russian stage (<a href="#s-hindu2010">The Hindu</a>) <strong>[Verification Required for the Indian stage]</strong>. <strong>GSLV Mk II: 2,250 kg to GTO</strong> (and 6,000 kg to LEO).</td><td>ISRO: <strong>C25 stage carries 28 tonnes</strong> of LOX + LH2 (the "25" is the older name); engine nominal thrust about <strong>200 kN</strong>, qualified range <strong>180-220 kN</strong>, <strong>gas-generator cycle</strong>, 442 s vacuum Isp (<a href="#s-isrolvm3">ISRO LVM3</a>; <a href="#s-ce20">Wikipedia</a>). <strong>LVM3: 4,000 kg to GTO and 8,000 kg to a 600 km LEO</strong> (ISRO; its overview page also says "10 tonne class" to LEO).</td><td>An <strong>upgraded C25</strong>: <strong>32 t</strong> of propellant (against 28 t) and an uprated <strong>22 t (220 kN) CE-20</strong>, to raise LVM3's payload; a flight-acceptance hot test of the CE-20 for the C32 stage of <strong>LVM3-M7</strong> was reported on 9 Sep 2026 (<a href="#s-ce20">Wikipedia</a>; <a href="#s-defnews">Defence News</a>, search summary). <strong>No source found for asteroid mining.</strong></td></tr>
+<tr><td>Status</td><td>Flying since 5 Jan 2014 (D5)</td><td>Flying since 5 Jun 2017; all LVM3 launches successful per ISRO's overview page</td><td>Not yet flown as of 2 Nov 2026 <strong>[Verification Required]</strong></td></tr>
+</tbody></table></div>
+<p class="correction" id="c-ce"><strong>[Correction]</strong> (i) <strong>GSLV Mk II</strong> lifts about <strong>2.25 tonnes</strong> to GTO per ISRO, not 2.5 t (which was the design target of the Russian-stage GSLV). (ii) <strong>C25</strong> holds <strong>28 t</strong>, not 25 t. (iii) <strong>8 t is the LEO figure</strong> (600 km), not "polar orbit". (iv) <strong>C32 is a payload-uprating step for LVM3</strong> (more propellant, 22 t engine), not a deep-space or asteroid-mining engine; the asteroid-mining claim is <strong>[Verification Required]</strong>.</p>
+<p class="note"><strong>Terms [Additional]:</strong> <strong>LEO</strong> low Earth orbit; <strong>SSO</strong> sun-synchronous (polar) orbit; <strong>GTO</strong> geosynchronous transfer orbit, the elliptical orbit from which a satellite reaches geostationary orbit; payloads to GTO are lower than to LEO because more velocity is needed.</p>
+</section>
+
+<section id="vehicles">
+<h2>35. Launch Vehicles of ISRO</h2>
+<p class="small">Organisation: ISRO's Vikram Sarabhai Space Centre (Thiruvananthapuram) designs launch vehicles; the Liquid Propulsion Systems Centre (Valiamala) and ISRO Propulsion Complex (Mahendragiri) develop the liquid and cryogenic stages; the Satish Dhawan Space Centre, SHAR (Sriharikota) integrates and launches them (<a href="#s-isrolaunchers">ISRO launcher overview</a>). ISRO lists PSLV, GSLV and LVM3 as "launchers under usage"; SSLV, HRLV, RLV-TD and the scramjet engine as "under development"; SLV-3 and ASLV as retired (page updated 17 Sep 2026).</p>
+
+<h3>35.1 Sounding rockets</h3>
+<div class="table-wrap"><table>
+<caption>Class statements on sounding rockets checked</caption>
+<thead><tr><th scope="col" style="width:30%">Class statement</th><th scope="col">Checked position</th></tr></thead>
+<tbody>
+<tr><td>India started launching sounding rockets from Thumba (TERLS), close to the geomagnetic equator; they study the atmosphere above balloons and below satellites.</td><td>ISRO: the <strong>Thumba Equatorial Rocket Launching Station (TERLS) was set up in 1963</strong> at a place "close to the magnetic equator"; the first sounding-rocket launch from Thumba on <strong>21 Nov 1963</strong> "marked the beginning of the Indian Space Programme". Sounding rockets are <strong>one- or two-stage solid-propellant</strong> rockets used to probe the upper atmosphere and to test components of launchers and satellites. The first ones were imported: Russian M-100 (70 kg to 85 km) and French Centaure (about 30 kg to 150 km). ISRO began indigenous launches in <strong>1965</strong>; <strong>RH-75</strong> (75 mm diameter) was the first truly Indian sounding rocket; in <strong>1975</strong> the work was consolidated under the <strong>Rohini Sounding Rocket (RSR) programme</strong> (<a href="#s-isrosound">ISRO</a>). <strong>[Additional]</strong> The numbers in RH-75, RH-200 and so on appear to be diameters in mm; this is an inference from the RH-75 example.</td></tr>
+</tbody></table></div>
+<div class="table-wrap"><table>
+<caption>Operational Rohini sounding rockets (<a href="#s-isrosound">ISRO</a>; three versions cover 8-100 kg payload and 80-475 km apogee)</caption>
+<thead><tr><th scope="col">Rocket</th><th scope="col">Payload (kg)</th><th scope="col">Apogee (km)</th><th scope="col">Purpose</th><th scope="col">Launch pad</th></tr></thead>
+<tbody>
+<tr><td>RH-200</td><td>10</td><td>80</td><td>Meteorology</td><td>Thumba, Balasore</td></tr>
+<tr><td>RH-300 Mk-II</td><td>60</td><td>160</td><td>Aeronomy</td><td>SDSC-SHAR</td></tr>
+<tr><td>RH-560 Mk-II</td><td>100</td><td>470</td><td>Aeronomy</td><td>SDSC-SHAR</td></tr>
+</tbody></table></div>
+<p class="correction" id="c-rh"><strong>[Correction]</strong> The class jumbled the RH-200 line: ISRO gives its apogee as <strong>80 km</strong> (the class wrote about 70 km) and its launch pads as <strong>Thumba and Balasore</strong>, not Sriharikota. The other two are launched from SHAR. The class's "geomagnetic equator" is read as the magnetic equator.</p>
+
+<h3>35.2 SLV-3 and ASLV</h3>
+<div class="table-wrap"><table>
+<caption>Class statements checked against <a href="#s-isroslv">ISRO SLV-3</a> and <a href="#s-isroaslv">ISRO ASLV</a> pages</caption>
+<thead><tr><th scope="col" style="width:30%">Class statement</th><th scope="col">Checked position</th></tr></thead>
+<tbody>
+<tr><td>SLV-3: India's first satellite launch vehicle; four stages, all solid; second flight placed Rohini RS-1 in 1980, making India the sixth country with orbital launch capability; technology contributed to the missile programme (Agni's first stage).</td><td>ISRO: SLV-3 was India's <strong>first experimental satellite launch vehicle</strong>, "all solid, four stage", 17 t, 22 m tall, for 40 kg class payloads to LEO. The <strong>first experimental flight (August 1979) was only partially successful</strong>; on <strong>18 Jul 1980</strong> from Sriharikota it placed Rohini RS-1 in orbit, "making India the <strong>sixth</strong> member of an exclusive club of space-faring nations" (ISRO's wording). Two more launches followed (May 1981, April 1983). <strong>Note:</strong> the count depends on whether the United Kingdom's 1971 launch is included, so some lists say seventh <strong>[Verification Required]</strong>. The Agni link was not opened <strong>[Verification Required]</strong>. See <a href="#c-sixth">correction</a>.</td></tr>
+<tr><td>ASLV: five stages, all solid; not very successful (two of four launches succeeded).</td><td>ISRO: <strong>five-stage all-solid</strong>, 40 t, 24 m, for 150 kg payloads to 400 km orbits; it was an intermediate vehicle to validate <strong>strap-on technology, inertial navigation, bulbous heat shield, vertical integration and closed-loop guidance</strong>. Four developmental flights: 24 Mar 1987, 13 Jul 1988, <strong>20 May 1992 (ASLV-D3: SROSS-C, 106 kg, orbit 255 x 430 km)</strong> and <strong>4 May 1994 (ASLV-D4: SROSS-C2)</strong>. The page names orbiting payloads only for D3 and D4, consistent with two successes in four; the failure of D1 and D2 is not stated on the page <strong>[Additional; not opened]</strong>.</td></tr>
+</tbody></table></div>
+<p class="correction" id="c-sixth"><strong>[Correction]</strong> Present "sixth" as <strong>ISRO's claim</strong>, not a settled count, and give the date: first orbital success 18 Jul 1980 (RS-1), not "second flight in 1980" without the earlier partial success of Aug 1979.</p>
+
+<h3>35.3 PSLV (Polar Satellite Launch Vehicle)</h3>
+<div class="table-wrap"><table>
+<caption>Class statements on PSLV checked</caption>
+<thead><tr><th scope="col" style="width:28%">Class statement</th><th scope="col">Checked position</th></tr></thead>
+<tbody>
+<tr><td>By far ISRO's most successful launch vehicle; four stages solid-liquid-solid-liquid; second stage uses the Vikas engine.</td><td>ISRO: "the workhorse of ISRO", "highest success rate" (<a href="#s-isrolaunchers">overview</a>); the <strong>first Indian launch vehicle with liquid stages</strong>; first flight <strong>20 Sep 1993</strong>, "after its first successful launch in October 1994" it emerged as a reliable workhorse (<a href="#s-isropslv">ISRO PSLV</a>). Stages: PS1 S139 solid (HTPB), PS2 <strong>Vikas</strong> (UDMH + N<sub>2</sub>O<sub>4</sub>), PS3 S7 solid (HTPB), PS4 two liquid engines (MMH + MON). <strong>Two failures in 2025-26</strong> (35.3.2) qualify "most successful".</td></tr>
+<tr id="r-var"><td>Variants: PSLV-G (6 strap-ons, about 1,600 kg to SSO), PSLV-CA (core alone, about 1,100 kg), PSLV-XL (6 larger strap-ons, about 1,750 kg to SSO), PSLV-DL (2 strap-ons), PSLV-QL (4 strap-ons).</td><td>ISRO: <strong>6, 4 or 2 solid strap-ons (S12) in XL, QL and DL</strong>; none in CA. <strong>PSLV-XL: 1,750 kg to a 600 km sun-synchronous polar orbit; 1,425 kg to sub-GTO</strong>; lift-off mass 320 t, height 44 m. The 1,600 kg (G) and 1,100 kg (CA) figures are <strong>not on the ISRO page opened</strong> <strong>[Verification Required]</strong>. "Larger strap-ons" is the class's description of XL; ISRO lists the same S12 motor for XL, QL and DL. PSLV-C62 (Jan 2026) flew as a PSLV-DL (<a href="#s-c62">Wikipedia</a>).</td></tr>
+<tr><td>XL was used for Chandrayaan-1, Mars Orbiter Mission, AstroSat, IRNSS satellites, Aditya-L1.</td><td>ISRO names <strong>Chandrayaan-1 (2008)</strong> and <strong>the Mars Orbiter Spacecraft (2013)</strong> as launched by PSLV, and <strong>IRNSS</strong> satellites as flown to geosynchronous orbits (<a href="#s-isropslv">ISRO PSLV</a>). The AstroSat and Aditya-L1 links were not re-opened today <strong>[Verification Required]</strong>.</td></tr>
+<tr id="r-poem"><td>The spent PS4 can stay in orbit and host experiments; first used with Kalamsat (2019); now called POEM (PSLV Orbital Experimental Module).</td><td>The idea is established: on <strong>PSLV-C62 (12 Jan 2026)</strong> a 25 kg re-entry capsule (KID) of a Spanish start-up flew on the PS4 stage (<a href="#s-c62">Wikipedia</a>). The 2019 Kalamsat date and the POEM name were <strong>not opened</strong> <strong>[Verification Required]</strong>.</td></tr>
+<tr><td>PSLV specialises in launching multiple satellites in a single flight; the record is 104 satellites (2017).</td><td>ISRO: PSLV is "capable of placing multiple payloads into orbit", with multi-orbit and multi-satellite missions (<a href="#s-isropslv">ISRO</a>). The 104-satellite launch is reported as <strong>PSLV-C37 in 2017</strong> (<a href="#s-adda">adda247</a>, search summary) <strong>[Verification Required]</strong>.</td></tr>
+<tr id="r-mirv"><td>Releasing satellites into different orbits is technologically related to MIRV capability in missiles, which DRDO demonstrated on Agni-V in 2024.</td><td>The idea is shared (a "bus" that carries several payloads and releases them one after another to different trajectories), but a <strong>MIRV</strong> additionally needs separate guided re-entry vehicles with heat shields to hit separate targets. The DRDO demonstration (Mission Divyastra, March 2024) was <strong>not opened</strong> <strong>[Verification Required]</strong>. See <a href="#c-mirv">correction</a>.</td></tr>
+<tr><td>Though designed for polar orbits, it was also used for geosynchronous transfer launches while GSLV was being developed; it earns revenue from international satellites.</td><td>ISRO confirms use for <strong>geosynchronous and geostationary orbits</strong> (sub-GTO 1,425 kg for XL) and for <strong>"numerous Indian and foreign customer satellites"</strong> (<a href="#s-isropslv">ISRO</a>).</td></tr>
+<tr id="r-fail"><td>PSLV suffered failures in May 2025 (EOS-09) and January 2026 (PSLV-C62).</td><td><strong>PSLV-C62</strong>, 12 Jan 2026, 10:18 IST, carrying DRDO's EOS-N1 and other payloads: stages 1 and 2 performed normally; near the end of the third stage's operation a deviation in roll rate appeared just before stage separation; the satellites did not reach orbit (<a href="#s-c62">Wikipedia</a>). The same source calls it a similar failure to <strong>PSLV-C61 (EOS-09)</strong> "eight months prior" (May 2025). A Failure Analysis Committee reported on 13 Jun 2026; the Minister said the cause had been found but could not be disclosed publicly (<a href="#s-c62">Wikipedia</a>, citing The Hindu). The root cause is therefore <strong>not public</strong>.</td></tr>
+</tbody></table></div>
+<p class="correction" id="c-mirv"><strong>[Correction]</strong> Describe the PSLV multi-satellite release as <strong>"conceptually similar to, but technologically different from, MIRV"</strong>: both deploy several payloads from one launcher; MIRV warheads are guided re-entry vehicles.</p>
+<p class="correction" id="c-pslvfig"><strong>[Correction]</strong> Give PSLV capacity <strong>by variant and orbit</strong> from ISRO: XL 1,750 kg (600 km SSO) and 1,425 kg (sub-GTO). Treat 1,600 kg (G) and 1,100 kg (CA) as unverified class figures.</p>
+
+<h3>35.4 SSLV (Small Satellite Launch Vehicle)</h3>
+<div class="table-wrap"><table>
+<caption>Class statements on SSLV checked</caption>
+<thead><tr><th scope="col" style="width:28%">Class statement</th><th scope="col">Checked position</th></tr></thead>
+<tbody>
+<tr><td>Three solid stages plus a liquid velocity-trimming module; about 500 kg to a 500 km low Earth orbit; "launch on demand"; assembled within days by a small team.</td><td>ISRO: SSLV is <strong>34 m long, 2 m in diameter, about 120 t at lift-off</strong>; three HTPB solid stages (SS1, SS2, SS3) and a <strong>Velocity Trimming Module (VTM)</strong> with 16 thrusters of 50 N (8 for attitude control and 8 axial) burning MMH + MON-3. Capacity: <strong>a single satellite up to 500 kg in a 500 km planar orbit, or three satellites of 10-300 kg</strong>. Key features: low cost, low turn-around time, multiple-satellite flexibility, launch-on-demand feasibility, minimal launch infrastructure (<a href="#s-isrosslv">ISRO SSLV</a>). The "within days, small team" wording is not on the page (see <a href="#c-72">correction</a>).</td></tr>
+<tr id="r-sslvprod"><td>Production is being transferred to industry through NSIL; HAL was selected in 2025.</td><td><strong>Confirmed:</strong> a technology transfer agreement was signed on <strong>10 Sep 2025</strong> between <strong>NSIL, ISRO, IN-SPACe and HAL</strong> at ISRO Headquarters, Bengaluru (<a href="#s-isrott">ISRO, 11 Sep 2025</a>). The bid value is reported as <strong>Rs 511 crore</strong> (<a href="#s-toi">Times of India</a>, search summary) <strong>[Verification Required]</strong>. ISRO adds that SSLV can be launched from Sriharikota for inclined orbits and from the <strong>upcoming Kulasekarapattinam</strong> site for polar launches. ISRO's launcher overview still lists SSLV as "under development" (17 Sep 2026).</td></tr>
+</tbody></table></div>
+
+<h3>35.5 GSLV and LVM3</h3>
+<div class="table-wrap"><table>
+<caption>Class statements on GSLV and LVM3 checked</caption>
+<thead><tr><th scope="col" style="width:28%">Class statement</th><th scope="col">Checked position</th></tr></thead>
+<tbody>
+<tr><td>GSLV: three stages, solid (with four liquid strap-ons), liquid and cryogenic. Mk I used Russian cryogenic engines; Mk II uses the indigenous CE-7.5; about 2.2-2.5 t to GTO.</td><td>ISRO: <strong>three stages with four liquid strap-ons</strong>; GS1 is a 138 t S139 solid motor with four liquid strap-ons, GS2 one Vikas engine (UH25 + N<sub>2</sub>O<sub>4</sub>, 846 kN max, 150 s), third stage CUS (CE-7.5, LOX + LH2). Lift-off mass 420 t; 51.73 m. First flight <strong>18 Apr 2001</strong>; first flight with the indigenous cryogenic stage <strong>5 Jan 2014 (GSLV-D5)</strong>. <strong>Payload: 2,250 kg to GTO; 6,000 kg to LEO</strong> (<a href="#s-isrogslv">ISRO GSLV</a>).</td></tr>
+<tr><td>GSLV Mk III, now LVM3: two S200 solid boosters, an L110 liquid core and a C25 cryogenic upper stage; about 4 t to GTO and about 8-10 t to LEO.</td><td>ISRO: <strong>LVM3 is a three-stage vehicle</strong>: two S200 boosters (about 205 t HTPB each), L110 core (two Vikas engines, 115 t of liquid propellant), C25 cryogenic stage (CE-20, 28 t LOX + LH2); 43.5 m, 640 t at lift-off, 5 m fairing. Event timeline (ISRO): lift-off with both S200 ignited; <strong>L110 ignites at about 113 s</strong> while the boosters burn; S200 burn about 134 s with separation at about 137 s; fairing separation at about 217 s; <strong>L110 burnout and C25 ignition at 313 s</strong>; injection into a 180 x 36,000 km GTO at about 974 s. <strong>4,000 kg to GTO; 8,000 kg to a 600 km LEO</strong>; the overview page also says "10 tonne class" to LEO (<a href="#s-isrolvm3">ISRO LVM3</a>, <a href="#s-isrolaunchers">overview</a>).</td></tr>
+<tr id="r-lvm3use"><td>It launched Chandrayaan-2 and Chandrayaan-3 and is being human-rated for Gaganyaan.</td><td>Chandrayaan-2 flew on <strong>GSLV Mk III-M1</strong> and Chandrayaan-3 on <strong>LVM3-M4</strong> (<a href="#s-ce20">Wikipedia: CE-20 references</a>, secondary). ISRO's overview: the <strong>human-rated LVM3 is identified as the launch vehicle for Gaganyaan, named HRLV</strong>, and LVM3 "has a track record of all successful launches even from the first development flight" (page updated 17 Sep 2026). <strong>Human rating of the CE-20 engine</strong> for Gaganyaan was reported complete on 13 Feb 2024 (<a href="#s-ce20">Wikipedia</a>, citing ISRO).</td></tr>
+<tr><td>(Name) GSLV Mk III now called LVM3.</td><td>ISRO now calls the vehicle <strong>LVM3 (Launch Vehicle Mark-3)</strong>, with the former name shown in brackets on its page; the renaming reflects its range of orbits, not only geosynchronous (<a href="#s-pmf2018">PMF IAS explanation</a>, secondary).</td></tr>
+</tbody></table></div>
+<p class="correction" id="c-lvm3"><strong>[Correction]</strong> LVM3 is a <strong>three-stage</strong> vehicle (S200 boosters, L110, C25). A "four-stage GSLV Mk III with solid first and third stages" is wrong: see the 2018 PYQ in the PYQ section. "8 t" is the LEO (600 km) figure; its GTO figure is 4 t.</p>
+
+<div class="table-wrap"><table>
+<caption>Stage-by-stage propellants (from ISRO pages opened 2 Nov 2026)</caption>
+<thead><tr><th scope="col">Vehicle</th><th scope="col">Stage 1 / boosters</th><th scope="col">Stage 2</th><th scope="col">Upper stage(s)</th></tr></thead>
+<tbody>
+<tr><td><strong>PSLV</strong> (4 stages)</td><td>PS1 S139 solid HTPB, plus 6, 4 or 2 S12 solid strap-ons (none in CA)</td><td>PS2 Vikas, UDMH + N<sub>2</sub>O<sub>4</sub> (liquid)</td><td>PS3 S7 solid HTPB; PS4 two engines MMH + MON (liquid)</td></tr>
+<tr><td><strong>GSLV Mk II</strong> (3 stages)</td><td>GS1 S139 solid HTPB with four liquid strap-ons</td><td>GS2 Vikas, UH25 + N<sub>2</sub>O<sub>4</sub> (liquid)</td><td>CUS: CE-7.5, LOX + LH2 (cryogenic)</td></tr>
+<tr><td><strong>LVM3</strong> (3 stages)</td><td>Two S200 solid HTPB boosters</td><td>L110 core, two Vikas engines (liquid)</td><td>C25: CE-20, LOX + LH2 (cryogenic)</td></tr>
+<tr><td><strong>SSLV</strong> (3 + module)</td><td>SS1 solid HTPB</td><td>SS2 solid HTPB</td><td>SS3 solid HTPB; VTM: MMH + MON-3 (liquid)</td></tr>
+</tbody></table></div>
+
+<figure id="fig32">
+<h3>Figure 32. Stage Layout and Propellant Type of ISRO's Four Active or Developing Launchers (schematic) [Additional]</h3>
+<svg viewBox="0 90 760 335" role="img" aria-label="Four stacked-stage diagrams colour coded for solid, liquid and cryogenic stages. PSLV: PS1 solid with strap-ons, PS2 liquid, PS3 solid, PS4 liquid. GSLV Mk II: GS1 solid with four liquid strap-ons, GS2 liquid, cryogenic upper stage. LVM3: two solid S200 boosters, L110 liquid core, C25 cryogenic stage. SSLV: three solid stages and a liquid velocity trimming module.">
+<g font-family="Calibri, sans-serif" font-size="10.5" text-anchor="middle">
+<!-- PSLV -->
+<polygon points="80,160 140,160 130,125 110,102 90,125" fill="#eeeeee" stroke="#777" stroke-width="1.5"/>
+<rect x="80" y="160" width="60" height="30" fill="#bbdefb" stroke="#0078d4" stroke-width="2"/><text x="110" y="179">PS4</text>
+<rect x="75" y="190" width="70" height="45" fill="#ffe0b2" stroke="#ef6c00" stroke-width="2"/><text x="110" y="216">PS3</text>
+<rect x="75" y="235" width="70" height="55" fill="#bbdefb" stroke="#0078d4" stroke-width="2"/><text x="110" y="266">PS2</text>
+<rect x="75" y="290" width="70" height="60" fill="#ffe0b2" stroke="#ef6c00" stroke-width="2"/><text x="110" y="324">PS1</text>
+<rect x="55" y="315" width="18" height="35" fill="#ffe0b2" stroke="#ef6c00" stroke-width="2"/><rect x="147" y="315" width="18" height="35" fill="#ffe0b2" stroke="#ef6c00" stroke-width="2"/>
+<text x="110" y="368" font-weight="bold" font-size="12">PSLV</text><text x="110" y="383">4 stages; 6/4/2 S12 strap-ons</text><text x="110" y="396">XL: 320 t, 44 m</text>
+<!-- GSLV -->
+<polygon points="260,170 320,170 310,130 290,105 270,130" fill="#eeeeee" stroke="#777" stroke-width="1.5"/>
+<rect x="260" y="170" width="60" height="65" fill="#c8e6c9" stroke="#2e7d32" stroke-width="2"/><text x="290" y="206">CUS</text><text x="290" y="219" font-size="9">CE-7.5</text>
+<rect x="255" y="235" width="70" height="55" fill="#bbdefb" stroke="#0078d4" stroke-width="2"/><text x="290" y="266">GS2</text>
+<rect x="255" y="290" width="70" height="60" fill="#ffe0b2" stroke="#ef6c00" stroke-width="2"/><text x="290" y="324">GS1</text>
+<rect x="237" y="300" width="16" height="50" fill="#bbdefb" stroke="#0078d4" stroke-width="2"/><rect x="327" y="300" width="16" height="50" fill="#bbdefb" stroke="#0078d4" stroke-width="2"/>
+<text x="290" y="368" font-weight="bold" font-size="12">GSLV Mk II</text><text x="290" y="383">3 stages; 4 liquid strap-ons</text><text x="290" y="396">420 t, 51.7 m</text>
+<!-- LVM3 -->
+<polygon points="440,180 500,180 490,135 470,105 450,135" fill="#eeeeee" stroke="#777" stroke-width="1.5"/>
+<rect x="440" y="180" width="60" height="70" fill="#c8e6c9" stroke="#2e7d32" stroke-width="2"/><text x="470" y="212">C25</text><text x="470" y="225" font-size="9">CE-20</text>
+<rect x="435" y="250" width="70" height="100" fill="#bbdefb" stroke="#0078d4" stroke-width="2"/><text x="470" y="302">L110</text>
+<rect x="405" y="245" width="28" height="105" fill="#ffe0b2" stroke="#ef6c00" stroke-width="2"/><rect x="507" y="245" width="28" height="105" fill="#ffe0b2" stroke="#ef6c00" stroke-width="2"/>
+<text x="419" y="300" font-size="9">S200</text><text x="521" y="300" font-size="9">S200</text>
+<text x="470" y="368" font-weight="bold" font-size="12">LVM3</text><text x="470" y="383">3 stages; 2 S200 boosters</text><text x="470" y="396">640 t, 43.5 m</text>
+<!-- SSLV -->
+<polygon points="625,185 675,185 665,150 650,128 635,150" fill="#eeeeee" stroke="#777" stroke-width="1.5"/>
+<rect x="625" y="185" width="50" height="20" fill="#bbdefb" stroke="#0078d4" stroke-width="2"/><text x="650" y="199">VTM</text>
+<rect x="620" y="205" width="60" height="40" fill="#ffe0b2" stroke="#ef6c00" stroke-width="2"/><text x="650" y="229">SS3</text>
+<rect x="620" y="245" width="60" height="45" fill="#ffe0b2" stroke="#ef6c00" stroke-width="2"/><text x="650" y="271">SS2</text>
+<rect x="620" y="290" width="60" height="60" fill="#ffe0b2" stroke="#ef6c00" stroke-width="2"/><text x="650" y="324">SS1</text>
+<text x="650" y="368" font-weight="bold" font-size="12">SSLV</text><text x="650" y="383">3 solid stages + liquid VTM</text><text x="650" y="396">about 120 t, 34 m</text>
+<!-- legend -->
+<rect x="215" y="408" width="14" height="10" fill="#ffe0b2" stroke="#ef6c00"/><text x="262" y="417" text-anchor="middle">solid (HTPB)</text>
+<rect x="330" y="408" width="14" height="10" fill="#bbdefb" stroke="#0078d4"/><text x="408" y="417" text-anchor="middle">liquid (hypergolic)</text>
+<rect x="470" y="408" width="14" height="10" fill="#c8e6c9" stroke="#2e7d32"/><text x="545" y="417" text-anchor="middle">cryogenic (LOX + LH2)</text>
+</g>
+</svg>
+<figcaption>Schematic, <strong>not to scale</strong>: stage heights are equalised for legibility; masses and heights are ISRO figures (<a href="#s-isropslv">PSLV-XL</a>, <a href="#s-isrogslv">GSLV Mk II</a>, <a href="#s-isrolvm3">LVM3</a>, <a href="#s-isrosslv">SSLV</a>). PSLV strap-ons are drawn as two of 6, 4 or 2; GSLV's four liquid strap-ons as two.</figcaption>
+</figure>
+
+<figure id="fig33">
+<h3>Figure 33. Payload Capacity Quoted by ISRO (kg; reference orbits differ by bar) [Additional]</h3>
+<svg viewBox="0 0 760 320" role="img" aria-label="Horizontal bar chart of payload in kilograms. PSLV-XL: 1,750 to 600 km sun-synchronous orbit, 1,425 to sub-GTO. GSLV Mk II: 6,000 to LEO, 2,250 to GTO. LVM3: 8,000 to 600 km LEO, 4,000 to GTO. SSLV: 500 to a 500 km planar orbit.">
+<g font-family="Calibri, sans-serif" font-size="12" text-anchor="middle">
+<g stroke="#ddd"><line x1="160" y1="15" x2="160" y2="268"/><line x1="300" y1="15" x2="300" y2="268"/><line x1="440" y1="15" x2="440" y2="268"/><line x1="580" y1="15" x2="580" y2="268"/><line x1="720" y1="15" x2="720" y2="268"/></g>
+<text x="150" y="52" text-anchor="end" font-weight="bold">PSLV-XL</text>
+<rect x="160" y="30" width="122.5" height="18" fill="#0078d4"/><text x="288" y="44" text-anchor="start">1,750 (600 km SSO)</text>
+<rect x="160" y="52" width="99.75" height="18" fill="#ef6c00"/><text x="265" y="66" text-anchor="start">1,425 (sub-GTO)</text>
+<text x="150" y="122" text-anchor="end" font-weight="bold">GSLV Mk II</text>
+<rect x="160" y="100" width="420" height="18" fill="#0078d4"/><text x="574" y="114" text-anchor="end" fill="#ffffff">6,000 (LEO)</text>
+<rect x="160" y="122" width="157.5" height="18" fill="#ef6c00"/><text x="323" y="136" text-anchor="start">2,250 (GTO)</text>
+<text x="150" y="192" text-anchor="end" font-weight="bold">LVM3</text>
+<rect x="160" y="170" width="560" height="18" fill="#0078d4"/><text x="714" y="184" text-anchor="end" fill="#ffffff">8,000 (600 km LEO)</text>
+<rect x="160" y="192" width="280" height="18" fill="#ef6c00"/><text x="446" y="206" text-anchor="start">4,000 (GTO)</text>
+<text x="150" y="252" text-anchor="end" font-weight="bold">SSLV</text>
+<rect x="160" y="240" width="35" height="18" fill="#0078d4"/><text x="201" y="254" text-anchor="start">500 (500 km planar orbit)</text>
+<g stroke="#555"><line x1="160" y1="268" x2="720" y2="268"/></g>
+<text x="160" y="284">0</text><text x="300" y="284">2,000</text><text x="440" y="284">4,000</text><text x="580" y="284">6,000</text><text x="720" y="284">8,000</text>
+<rect x="215" y="296" width="12" height="10" fill="#0078d4"/><text x="305" y="305">LEO or sun-synchronous orbit</text>
+<rect x="455" y="296" width="12" height="10" fill="#ef6c00"/><text x="520" y="305">GTO or sub-GTO</text>
+</g>
+</svg>
+<figcaption>Data: ISRO pages for <a href="#s-isropslv">PSLV</a> (XL), <a href="#s-isrogslv">GSLV Mk II</a>, <a href="#s-isrolvm3">LVM3</a> and <a href="#s-isrosslv">SSLV</a>, opened 2 Nov 2026. Scale: 0.07 px per kg (to scale). Reference orbits and altitudes differ and sub-GTO is not the same as GTO; ISRO's overview also describes LVM3 as "10 tonne class" to LEO.</figcaption>
+</figure>
+</section>
+
+<section id="status">
+<h2>36. Status as of 2 November 2026 (linkage to the news)</h2>
+<div class="table-wrap"><table>
+<caption>Time-sensitive facts used in this note</caption>
+<thead><tr><th scope="col" style="width:20%">Item</th><th scope="col">Status and date</th><th scope="col" style="width:20%">Source</th></tr></thead>
+<tbody>
+<tr><td>GSLV-F18 / NVS-03</td><td>The Hindu's editorial of 2 Nov 2026 refers to the "successful launch of the GSLV-F18 mission and the NVS-03 satellite's healthy status" (live-update link dated 30 Oct 2026), calls it only the <strong>second successful ISRO launch of 2026</strong>, and says two PSLV failures (which "share some of their design aspects with GSLV") had constrained the last 18 months. The satellite must still be manoeuvred to its final slot. Link with notes: GSLV Mk II's third stage is the indigenous cryogenic stage (Section 34).</td><td><a href="#s-hindued">The Hindu, 2 Nov 2026</a></td></tr>
+<tr><td>PSLV</td><td>Failures in May 2025 (C61, EOS-09) and on 12 Jan 2026 (C62); the failure committee reported on 13 Jun 2026; cause not disclosed. Return-to-flight status after the report was <strong>not verified</strong> <strong>[Verification Required]</strong>.</td><td><a href="#s-c62">Wikipedia</a></td></tr>
+<tr><td>LVM3 and C32</td><td>LVM3-M5 launched CMS-03 on 2 Nov 2025. Upgraded C32 stage and 22 t CE-20 are intended for LVM3-M7 (hot test of the flight engine reported 9 Sep 2026). Launch of LVM3-M7 not verified as of 2 Nov 2026 <strong>[Verification Required]</strong>.</td><td><a href="#s-ce20">Wikipedia</a>; <a href="#s-defnews">Defence News</a> (summary)</td></tr>
+<tr><td>SSLV</td><td>Technology transfer to HAL signed 10 Sep 2025; ISRO still lists SSLV as "under development".</td><td><a href="#s-isrott">ISRO</a>; <a href="#s-isrolaunchers">overview</a></td></tr>
+<tr><td>Hybrid motor</td><td>Ground test only (20 Sep 2022, 30 kN, 15 s).</td><td><a href="#s-isrohybrid">ISRO</a></td></tr>
+</tbody></table></div>
+</section>
+
+<section id="prelims">
+<h2>Key Facts for Prelims</h2>
+<ul>
+<li><strong>Isp = F / (m_dot x g0)</strong>, unit seconds. Vikas 293 s (vacuum), 262 s (sea level); CE-20 442 s; Russian KVD-1 462 s. Higher Isp lowers the mass ratio needed (Tsiolkovsky).</li>
+<li><strong>Solid propellant:</strong> oxidiser + aluminium + HTPB binder; cannot be throttled or restarted; used in boosters (S200 about 205 t, S139, S12, S7, SSLV SS1-SS3). Liquid stages can be throttled and restarted.</li>
+<li><strong>Hybrid motor:</strong> solid fuel + liquid oxidiser; ISRO tested a 30 kN HTPB-LOX motor on 20 Sep 2022 (IPRC Mahendragiri, 15 s).</li>
+<li><strong>Hypergolic:</strong> self-igniting; UDMH/UH25 or MMH with N<sub>2</sub>O<sub>4</sub> or MON; used in Vikas (PS2, GS2, L110), PS4 (MMH + MON) and SSLV VTM (MMH + MON-3).</li>
+<li><strong>Cryogenic:</strong> LH2 (-253 deg C) + LOX (-183 deg C); highest Isp of chemical propellants; upper stages; engine C25/CE-20 (LVM3) and CUS/CE-7.5 (GSLV Mk II).</li>
+<li><strong>History:</strong> Jan 1991 Glavkosmos deal (2 stages + technology); May 1992 US sanctions; 1993 Russia backed out (MTCR); Apr 1994 CUSP; seven Russian stages supplied; GSLV-D1 18 Apr 2001; GSLV-D5 5 Jan 2014 (first success with Indian cryo stage); LVM3 first flight 5 Jun 2017.</li>
+<li><strong>CE-7.5:</strong> 75 kN, staged combustion, LOX + LH2. <strong>CE-20:</strong> about 200 kN (180-220 kN), gas-generator cycle, C25 holds 28 t. <strong>C32:</strong> 32 t, 22 t engine, to raise LVM3 payload.</li>
+<li><strong>Payloads (ISRO):</strong> PSLV-XL 1,750 kg SSO (600 km); GSLV Mk II 2,250 kg GTO; LVM3 4,000 kg GTO and 8,000 kg LEO; SSLV 500 kg to 500 km.</li>
+<li><strong>Sounding rockets:</strong> TERLS 1963; first launch 21 Nov 1963; RSR 1975; RH-200 (10 kg, 80 km), RH-300 Mk-II (60 kg, 160 km), RH-560 Mk-II (100 kg, 470 km).</li>
+<li><strong>SLV-3:</strong> 4 solid stages; RS-1 on 18 Jul 1980. <strong>ASLV:</strong> 5 solid stages; D3 (20 May 1992) and D4 (4 May 1994) put SROSS satellites in orbit.</li>
+<li><strong>PSLV:</strong> 4 stages (solid-liquid-solid-liquid); first flight 20 Sep 1993; failures in May 2025 and on 12 Jan 2026. <strong>SSLV:</strong> HAL technology transfer signed 10 Sep 2025.</li>
+<li><strong>LVM3:</strong> 640 t, 43.5 m, three stages (2 x S200 + L110 + C25); all launches successful per ISRO; HRLV for Gaganyaan.</li>
+</ul>
+</section>
+
+<section id="mains">
+<h2>Mains Points</h2>
+<p class="small"><strong>[Additional]</strong> Analytical synthesis and suggested way forward, not official conclusions.</p>
+<ul>
+<li><strong>Propellant choice is a trade-off.</strong> Solid: simple, dense, instantly ready, high thrust, but no throttle or restart; liquid: higher Isp and controllable but complex and, for hydrazines, toxic; cryogenic: highest Isp but costly, difficult to store and demands ground infrastructure; hybrid: promising for safety and restart, but only a ground demonstration so far. ISRO's vehicles mix all three because each stage has a different job (lift-off thrust, mid-flight efficiency, upper-stage performance).</li>
+<li><strong>Technology denial and self-reliance.</strong> The 1991 deal collapsed under US sanctions and MTCR pressure; India took about 16 years from the 1994 CUSP start to the first indigenous cryogenic flight attempt (2010) and about 20 years to its first success (2014), but now owns CE-7.5 and CE-20, an uprated 22 t engine and in-space restart. The lesson is that denied dual-use technology can be mastered, at a cost in time.</li>
+<li><strong>Dual-use and regimes.</strong> Rocket technology overlaps with missile technology (the class links SLV-3 with Agni and PSLV's multi-release with MIRV), so export controls such as the MTCR apply; India's later MTCR membership (2016, <strong>[Verification Required]</strong>) changed its access and its own export standing.</li>
+<li><strong>Reliability and reputation.</strong> Two PSLV failures in 2025-26 and an undisclosed cause dent the "workhorse" image just as commercialisation moves ahead (SSLV transfer to HAL; NSIL). The Hindu's editorial calls for more workforce and funds, a dedicated NavIC operator and a space law covering private participation and liability; these are the paper's recommendations, not government policy.</li>
+<li><strong>Industrialisation.</strong> HAL builds CE-20 engines (Integrated Cryogenic Engine Manufacturing Facility, Bengaluru) and has taken over SSLV; this reduces ISRO's production load and supports private launch services under the space-sector reforms.</li>
+<li><strong>Green propulsion.</strong> Replacing hydrazine propellants is a goal; credible steps are the HTPB-LOX hybrid, LOX-methane and kerosene-LOX engines, but the operational fleet is still hypergolic. Success should be judged on flown stages, not tests.</li>
+<li><strong>Way forward:</strong> (i) publish the PSLV failure cause and the corrective actions in a form that preserves customer confidence; (ii) fly the C32 stage and bring cryogenic re-ignition into operational multi-orbit missions; (iii) move the hybrid motor from the ground to a flight demonstrator; (iv) complete SSLV industrial hand-over with transparent flight milestones; (v) keep export-control compliance as technology partnerships widen.</li>
+</ul>
+</section>
+
+<section id="traps">
+<h2>Common Traps / Confusions</h2>
+<ul>
+<li><strong>Solid propellant needs an oxidiser:</strong> HTPB is binder-fuel, not a complete propellant.</li>
+<li><strong>"Solid always in the first stage" is false:</strong> LVM3's liquid core lights during the S200 burn; GSLV has liquid strap-ons.</li>
+<li><strong>Hybrid = solid fuel + liquid oxidiser</strong> (not the reverse); ISRO's test was in <strong>2022</strong>, not recent.</li>
+<li><strong>Hypergolic oxidisers:</strong> N<sub>2</sub>O<sub>4</sub> and MON (mixed oxides of nitrogen); PS4 uses MMH + MON, not UDMH + N<sub>2</sub>O<sub>4</sub>.</li>
+<li><strong>Replacement of hypergolic fuels is not complete:</strong> PSLV, GSLV Mk II and LVM3 still fly them.</li>
+<li><strong>GAP is a solid-propellant polymer binder,</strong> not a liquid fuel; "Carolox" is kerolox.</li>
+<li><strong>Isp unit is seconds;</strong> compare vacuum with vacuum. Payload does not rise "exponentially" with Isp; propellant mass fraction falls exponentially.</li>
+<li><strong>Liquid hydrogen boil-off</strong> in storage is the problem; heating in the engine is intentional regenerative cooling.</li>
+<li><strong>C25 holds 28 t (not 25 t);</strong> C32 is an uprated LVM3 stage, not an asteroid-mining engine; GSLV Mk II lifts 2,250 kg to GTO.</li>
+<li><strong>LVM3 8 t is LEO (600 km),</strong> not polar orbit; GTO capacity is 4 t. LVM3 has three stages, not four.</li>
+<li><strong>RH-200 apogee is 80 km</strong> and it is launched from Thumba and Balasore.</li>
+<li><strong>PSLV does not park satellites in geostationary orbit</strong> and its satellites do not "stay fixed in the sky" (2018 PYQ).</li>
+<li><strong>SLV-3 is not the same as the Rohini sounding rockets:</strong> RS-1 is a satellite; RH rockets are sounding rockets.</li>
+</ul>
+</section>
+
+<section id="revision">
+<h2>30-Second Revision</h2>
+<p><strong>Propellants:</strong> solid = oxidiser + Al + HTPB, no throttle or restart, boosters; liquid = throttle and restart, hypergolic (UDMH/MMH + N<sub>2</sub>O<sub>4</sub>/MON, toxic, still used by ISRO) or cryogenic (LH2 -253 deg C, LOX -183 deg C, Isp 442 s for CE-20); hybrid = solid fuel + liquid oxidiser (ISRO 30 kN HTPB-LOX, 20 Sep 2022); Isp = F/(m_dot g0), higher Isp means lower mass ratio. <strong>India's cryo story:</strong> 1991 Glavkosmos deal, 1992 US sanctions, 1993 Russia backs out, 1994 CUSP, 7 Russian stages, GSLV-D5 Jan 2014 success, CE-20 in LVM3 from 2017, C32 and 22 t engine for LVM3-M7. <strong>Vehicles:</strong> sounding rockets (TERLS 1963, RH-200/300/560); SLV-3 (4 solid, RS-1 1980); ASLV (5 solid, 2 successes); PSLV (4 stages S-L-S-L, 1,750 kg SSO, failures May 2025 and Jan 2026); SSLV (3 solid + VTM, 500 kg, HAL transfer Sep 2025); GSLV Mk II (3 stages, 2,250 kg GTO); LVM3 (S200 + L110 + C25, 4 t GTO, 8 t LEO, HRLV for Gaganyaan).</p>
+</section>
+
+<section id="pyqs">
+<h2>Previous Year Questions (PYQs)</h2>
+<p class="note"><strong>Source status:</strong> both questions below were checked on secondary compilations (PMF IAS, 2 Nov 2026); the official UPSC papers and answer keys were <strong>not opened</strong>, so the answers are secondary <strong>[Verification Required]</strong>. <strong>[No verified PYQ found for the topics of hypergolic and green propellants, the hybrid motor, MTCR and the cryogenic technology denial, or GSLV and LVM3 payload figures in the GS Paper III Mains papers in this session.]</strong> Suggested approaches are <strong>[Additional]</strong> study guidance, not an official marking scheme.</p>
+<ol>
+<li><strong>2018 | UPSC CSE Prelims | General Studies Paper I (Q95 in the compilation).</strong> With reference to India's satellite launch vehicles, consider the following statements: (1) PSLVs launch the satellites useful for Earth resources monitoring whereas GSLVs are designed mainly to launch communication satellites; (2) satellites launched by PSLV appear to remain permanently in the same position in the sky, as viewed from a particular location on Earth; (3) GSLV Mk III is a four-stage launch vehicle with the first and third stages using solid rocket motors, and the second and fourth stages using liquid rocket engines. Which of the statements given above is/are correct? (a) 1 only (b) 2 and 3 (c) 1 and 2 (d) 3 only. <a href="https://www.pmfias.com/pslv-gslv-lvm3-distinctions-upsc-prelims-pyq-2018/">Verify on PMF IAS (secondary)</a>.<p class="answer"><strong>Answer: (a) 1 only</strong> (compilation). <strong>Link to notes [Additional]:</strong> statement 1 is correct. Statement 2 is wrong because PSLV places satellites in polar or sun-synchronous orbits (Section 35.3). Statement 3 is wrong because LVM3 has <strong>three</strong> stages: two solid S200 boosters, a liquid L110 core and a cryogenic C25 (Section 35.5).</p></li>
+<li><strong>1995 | UPSC CSE Prelims | General Studies.</strong> Cryogenic engines find applications in: (a) sub-marine propulsion (b) frost-free refrigerators (c) rocket technology (d) researches in superconductivity. <a href="https://www.pmfias.com/cryogenic-engines-applications-pyq-1995/">Verify on PMF IAS (secondary)</a>.<p class="answer"><strong>Answer: (c) rocket technology</strong> (compilation). <strong>Link to notes [Additional]:</strong> cryogenic (LOX-LH2) engines power the upper stages of GSLV and LVM3 (Section 33.4).</p></li>
+</ol>
+</section>
+
+<section id="corrections">
+<h2>Corrections Made</h2>
+<p>Substantive changes are marked where they occur. Typographical and spelling repairs were made silently and are not listed.</p>
+<ul>
+<li><a href="#c-htpb">Solid propellant composition:</a> an oxidiser (usually ammonium perchlorate) is needed; HTPB is binder-fuel; composition not opened.</li>
+<li><a href="#c-first">"Invariably" solid first stage:</a> overstated; LVM3's liquid core ignites during the booster burn; GSLV has liquid strap-ons.</li>
+<li><a href="#c-72">SSLV "72 hours":</a> figure not found; ISRO says quick turnaround and low turn-around time.</li>
+<li><a href="#r-hyb">Hybrid motor "recent":</a> tested 20 Sep 2022 (30 kN, HTPB + LOX, 15 s).</li>
+<li><a href="#c-tox">Hypergolic hazards and replacement:</a> toxic and hazardous; skin-cancer and ozone claims not found; "all agencies, including ISRO, replacing" is overstated; ISRO's PSLV, GSLV and LVM3 still use them; oxidisers include MON as well as N<sub>2</sub>O<sub>4</sub>.</li>
+<li><a href="#c-gap">Green propellants list:</a> "Carolox" read as kerolox; GAP is a polymer binder, not a liquid fuel.</li>
+<li><a href="#c-exp">"Payload increases exponentially":</a> the propellant requirement falls exponentially with Isp (rocket equation).</li>
+<li><a href="#c-boil">Hydrogen "boiling" in the chamber:</a> boil-off in storage is the limit; heating in the engine is intentional regenerative cooling.</li>
+<li><a href="#r-1993">1993 termination and sanctions dates:</a> US sanctions May 1992; Russia backed out a year later; Wikipedia's July 1993 date conflicts.</li>
+<li><a href="#r-mtcr">MTCR 300 km:</a> the range threshold applies to complete rocket systems and UAVs together with 500 kg payload, not cruise missiles alone (MTCR text not opened).</li>
+<li><a href="#c-ce">CE-7.5, CE-20 and C32 figures:</a> GSLV Mk II 2,250 kg to GTO; C25 holds 28 t; 8 t is LEO; C32 is an LVM3 uprating step, asteroid mining unverified.</li>
+<li><a href="#c-rh">RH-200:</a> apogee 80 km; launched from Thumba and Balasore.</li>
+<li><a href="#c-sixth">"Sixth country":</a> ISRO's claim; the count varies; first success 18 Jul 1980 after a partial success in Aug 1979.</li>
+<li><a href="#c-pslvfig">PSLV capacity:</a> XL 1,750 kg (600 km SSO); G and CA figures not verified.</li>
+<li><a href="#c-mirv">PSLV multi-release and MIRV:</a> conceptually similar, technologically different.</li>
+<li><a href="#c-lvm3">LVM3:</a> three-stage vehicle; 8 t is LEO, GTO 4 t.</li>
+</ul>
+<p class="verification"><strong>Open verification register:</strong> ammonium perchlorate and aluminium content of ISRO solid propellants; Agni variants and fuel (DRDO fact sheets); SSLV 72-hour integration claim; toxicity and ozone claims for hydrazine fuels; ISRO SCE-200 and LOX-methane status; GAP chemistry; MTCR text and India's membership date; US sanctions date (May 1992 versus July 1993); Indian C12 stage propellant mass; CE-20 programme attribution (CUSP versus LVM3); GSLV-D3 details (15 Apr 2010); C32 and LVM3-M7 launch status; asteroid-mining claim; PSLV-G (1,600 kg) and CA (1,100 kg) capacities; AstroSat and Aditya-L1 on PSLV; Kalamsat 2019 and the POEM name; 104-satellite launch details; Mission Divyastra date; PSLV-C61 and C62 root cause and return-to-flight date; SSLV launch status and the Rs 511 crore bid; LVM3 8 t versus 10 t LEO reference; "sixth country" count; official UPSC answer keys. These are <strong>not silently discarded or treated as verified facts</strong>.</p>
+<p><strong>[Additional] Additions summary:</strong> terms table with the Isp formula and unit check, ISRO solid-motor table, schematic of solid, liquid and hybrid engines, Isp bar chart, rocket-equation illustration, hydrogen versus oxygen tank volume calculation, cryogenic timeline, engine comparison table, sounding rocket table, stage-by-stage propellant table, stage-layout schematic, payload bar chart, status table.</p>
+</section>
+
+<section id="visuals">
+<h2>Visual Representations Required / Recommended</h2>
+<ul>
+<li><strong>Included:</strong> <a href="#fig29">Figure 29</a> (solid, liquid and hybrid schematic), <a href="#fig30">Figure 30</a> (specific impulse chart), <a href="#fig31">Figure 31</a> (cryogenic timeline), <a href="#fig32">Figure 32</a> (stage layout and propellant types), <a href="#fig33">Figure 33</a> (payload capacity chart).</li>
+<li><strong>Not included:</strong> a chart of solid-motor Isp (no source figure found; see Section 33.1) and a map or photograph of launch facilities (not needed for the day's topics).</li>
+</ul>
+<p><strong>[All necessary visual representations included]</strong> (no recommended visuals are outstanding).</p>
+</section>
+
+<section id="sources">
+<h2>Open Sources / Further Reading</h2>
+<p class="small">HTTPS public sources consulted on 2 November 2026. Items marked "search summary" were read only as search-result snippets; "opened" means the page content was read.</p>
+<ol>
+<li id="s-isrolvm3"><a href="https://www.isro.gov.in/GSLVmk3_CON.html">ISRO: LVM3 (Geosynchronous Satellite Launch Vehicle Mk III)</a> (opened; page updated 25 Sep 2026) - specifications, stages, payload, event timeline.</li>
+<li id="s-isrogslv"><a href="https://www.isro.gov.in/GSLV_CON.html">ISRO: Geosynchronous Satellite Launch Vehicle Mark II</a> (opened; page updated 8 Oct 2026) - stages, CE-7.5, payload, first flights.</li>
+<li id="s-isropslv"><a href="https://www.isro.gov.in/PSLV_CON.html">ISRO: PSLV</a> (opened; page updated 8 Oct 2026) - XL configuration, stages and engines, payload.</li>
+<li id="s-isrosslv"><a href="https://www.isro.gov.in/sslv_CON.html">ISRO: Small Satellite Launch Vehicle</a> (opened; page updated 28 Sep 2026) - configuration, stages, VTM, payload.</li>
+<li id="s-isrosound"><a href="https://www.isro.gov.in/soundingRockets.html">ISRO: Sounding Rockets</a> (opened) - TERLS, RSR, operational rockets table.</li>
+<li id="s-isroslv"><a href="https://www.isro.gov.in/SLV.html">ISRO: SLV</a> (opened) - SLV-3 description and launches.</li>
+<li id="s-isroaslv"><a href="https://www.isro.gov.in/ASLV.html">ISRO: ASLV</a> (opened) - ASLV description and developmental flights.</li>
+<li id="s-isrolaunchers"><a href="https://www.isro.gov.in/ISRO_EN/Launchers.html">ISRO: Launchers</a> (opened; page updated 17 Sep 2026) - overview, vehicle status, centres.</li>
+<li id="s-isrohybrid"><a href="https://www.isro.gov.in/30kNHybridMotorSuccessfully.html">ISRO: 30 kN Hybrid Motor Successfully Tested at IPRC on 20/09/2022</a> (opened).</li>
+<li id="s-isrott"><a href="https://www.isro.gov.in/Technology_Transfer_Agreement_SSLV.html">ISRO: Technology Transfer Agreement signed for Small Satellite Launch Vehicle (SSLV)</a> (11 Sep 2025; opened).</li>
+<li id="s-hindu2010"><a href="https://www.thehindu.com/opinion/lead/The-long-road-to-cryogenic-technology/article14691425.ece">The Hindu: The long road to cryogenic technology</a> (N. Gopal Raj, 15 Apr 2010; updated 12 Nov 2016; opened) - 1991 deal, 1992 sanctions, 1993 withdrawal, CUSP 1994, seven stages, first flight payload.</li>
+<li id="s-hindued"><a href="https://www.thehindu.com/opinion/editorial/the-hindu-editorial-november-2-2026-slow-recovery-on-the-isros-gslv-f18-mission/article71654004.ece">The Hindu: Slow recovery: On the ISRO's GSLV-F18 mission</a> (editorial, 2 Nov 2026; opened).</li>
+<li id="s-kvd1"><a href="https://en.wikipedia.org/wiki/KVD-1">Wikipedia: KVD-1</a> (secondary; opened; edited 25 Sep 2026) - 462 s Isp, GSLV Mk I use.</li>
+<li id="s-ce20"><a href="https://en.wikipedia.org/wiki/CE-20">Wikipedia: CE-20</a> (secondary; opened; edited 27 Oct 2026) - Isp, thrust range, test history, C32 intent, LVM3 missions; cites ISRO releases that were not opened individually.</li>
+<li id="s-vikas"><a href="https://en.wikipedia.org/wiki/Vikas_(rocket_engine)">Wikipedia: Vikas (rocket engine)</a> (secondary; opened; edited 18 Aug 2026) - 262 s and 293 s Isp.</li>
+<li id="s-c62"><a href="https://en.wikipedia.org/wiki/PSLV-C62">Wikipedia: PSLV-C62</a> (secondary; opened; edited 3 Sep 2026) - flight, failure analysis timeline.</li>
+<li id="s-pmf2018"><a href="https://www.pmfias.com/pslv-gslv-lvm3-distinctions-upsc-prelims-pyq-2018/">PMF IAS: PSLV, GSLV and LVM3 distinctions - UPSC Prelims PYQ 2018</a> (secondary; opened).</li>
+<li><a href="https://www.pmfias.com/cryogenic-engines-applications-pyq-1995/">PMF IAS: Cryogenic engines applications - UPSC Prelims PYQ 1995</a> (secondary; opened).</li>
+<li id="s-defnews"><a href="https://www.thedefensenews.com/ISRO-Completes-220-kN-Hot-Test-of-CE20-Cryogenic-Engine-for-Upcoming-LVM3-Mission/">The Defense News: ISRO completes 220 kN hot test of CE20 cryogenic engine for upcoming LVM3 mission</a> (secondary; search summary).</li>
+<li id="s-toi"><a href="https://timesofindia.indiatimes.com/india/in-a-first-indian-firm-bags-rocket-tech-from-isro-hal-wins-sslv-tot/articleshow/121972089.cms">Times of India: In a first, Indian firm bags rocket tech from ISRO; HAL wins SSLV ToT</a> (2025; search summary; Rs 511 crore).</li>
+<li id="s-adda"><a href="https://currentaffairs.adda247.com/isro-transfers-sslv-technology-to-hal-for-independent-production/">Adda247: ISRO transfers SSLV technology to HAL for independent production</a> (secondary; search summary; mentions PSLV-C37 104-satellite record).</li>
+</ol>
+</section>
+</main>
+</body>
+</html>
