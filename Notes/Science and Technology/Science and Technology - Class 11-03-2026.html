@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Science and Technology - Class Notes | 3 November 2026</title>
+<style>
+  * { box-sizing: border-box; }
+  body { font-family: Calibri, sans-serif; font-size: 11pt; line-height: 1.6; max-width: 900px; margin: 20px auto; padding: 0 20px; color: #202124; }
+  h1 { font-size: 20pt; color: #1a1a1a; border-bottom: 2px solid #333; padding-bottom: 4px; margin-top: 30px; }
+  h2 { font-size: 16pt; color: #2b2b2b; margin-top: 28px; border-bottom: 1px solid #ddd; padding-bottom: 3px; }
+  h3 { font-size: 13pt; color: #3a3a3a; margin-top: 18px; }
+  p { margin: 8px 0; }
+  ul, ol { margin: 6px 0; padding-left: 28px; }
+  li { margin: 4px 0; }
+  a { color: #005ea6; overflow-wrap: anywhere; }
+  table { border-collapse: collapse; width: 100%; margin: 10px 0; table-layout: fixed; }
+  caption { text-align: left; font-weight: bold; margin-bottom: 6px; }
+  th, td { border: 1px solid #999; padding: 6px 10px; text-align: left; vertical-align: top; overflow-wrap: anywhere; }
+  th { background: #f0f0f0; }
+  .table-wrap { overflow-x: auto; }
+  .note, .exam, .verification { background: #fff8e1; border-left: 3px solid #f5a623; padding: 8px 12px; margin: 10px 0; overflow-wrap: anywhere; }
+  .correction { background: #fff3e0; border-left: 3px solid #ef6c00; padding: 8px 12px; margin: 10px 0; }
+  .additional, .lead { background: #e8f5e9; border-left: 3px solid #2e7d32; padding: 8px 12px; margin: 10px 0; }
+  .flow { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 10px; padding: 12px 0; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; }
+  .flow span { text-align: center; max-width: 100%; }
+  .flow .box { border: 1px solid #888; background: #f7f7f7; padding: 6px 10px; border-radius: 4px; flex: 1 1 120px; }
+  figure { margin: 16px 0; padding: 12px; border: 1px solid #bbb; background: #fff; }
+  figure h3 { margin-top: 0; text-align: center; }
+  figcaption { margin-top: 8px; color: #555; font-size: 9.5pt; }
+  svg { max-width: 100%; height: auto; display: block; margin: 0 auto; }
+  .cols2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  .cols3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+  .cols4 { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
+  .tile { border: 1px solid #888; border-radius: 4px; padding: 8px; background: #f5f9fd; font-size: 10.5pt; }
+  .tile.p1 { background: #e8f5e9; border-color: #2e7d32; }
+  .tile.p2 { background: #f5f9fd; border-color: #0078d4; }
+  .tile.p3 { background: #fff3e0; border-color: #ef6c00; }
+  .tile.p4 { background: #fdecea; border-color: #c62828; }
+  .small { color: #555; font-size: 9.5pt; }
+  .answer { margin: 10px 0; padding: 6px 12px; border-left: 3px solid #0078d4; background: #f5f9fd; }
+  @media (max-width: 650px) {
+    body { padding: 0 12px; }
+    .cols2, .cols3, .cols4 { grid-template-columns: 1fr; }
+    .flow { flex-direction: column; align-items: stretch; }
+    .flow .box { flex: none; }
+    th, td { padding: 6px; }
+  }
+  @media print {
+    @page { size: A4; margin: 14mm; }
+    body { max-width: none; margin: 0; padding: 0; }
+    h1, h2, h3 { break-after: avoid; }
+    figure, tr, .answer, .tile { break-inside: avoid; }
+    thead { display: table-header-group; }
+    .table-wrap { overflow: visible; }
+    a { color: inherit; text-decoration: none; }
+    p, li { orphans: 3; widows: 3; }
+  }
+</style>
+</head>
+<body>
+<main>
+<header>
+<h1>Science and Technology - Class Notes | 3 November 2026</h1>
+<p><strong>Topics:</strong> Space - Earth observation satellites (continued): <strong>polar orbit</strong>; <strong>optical (passive) vs microwave (active) remote sensing</strong>; <strong>multispectral vs hyperspectral</strong> imaging; <strong>NISAR</strong> (dawn-dusk orbit, L and S band radars, SweepSAR); <strong>Mission Drishti</strong> (GalaxEye's OptoSAR satellite); <strong>Space Based Surveillance Phase III (SBS-III)</strong>; <strong>Earth observation from the geostationary orbit</strong> (INSAT-3D series, GISAT); communication satellites (heading only).</p>
+<p class="small">Note date: <time datetime="2026-11-03">3 November 2026</time>. <strong>Continuation:</strong> this note continues the <a href="Science%20and%20Technology%20-%20Class%2011-02-2026.html">2 November note</a>, which ended Section 40 with a placeholder for "40.3 Polar orbit" and used Section 41 for its status table. Today's polar-orbit material is therefore given here as <strong>Section 42</strong> (it completes 40.3); numbering runs from <strong>Section 42</strong> and figures from <strong>Figure 40</strong>. Earlier notes are untouched. The rough notes end at the heading <strong>"Communication satellite"</strong>; Section 47 is left as a placeholder for the next class.</p>
+<p class="note"><strong>Reading key:</strong> <strong>[Correction]</strong> repairs a substantive claim; <strong>[Additional]</strong> marks supporting material or study guidance; <strong>[Verification Required]</strong> keeps useful but unresolved material. Sources were consulted on <strong>4 November 2026</strong>. Read in relevant part: NASA's NISAR mission, quick-facts and satellite pages; ISRO's NISAR S-band data release (24 Jul 2026) and one-year event (17 Aug 2026); ISRO's GSLV-F10/EOS-03 failure report, GSLV-F14/INSAT-3DS and GSLV-F17/EOS-05 pages; PIB on INSAT-3DS (17 Feb 2024); ISRO's SSLV page; eoPortal (Drishti, NISAR); news reports (Economic Times, Times of India, India Today, CNBC-TV18, Hindu BusinessLine) and reference pages (Wikipedia, Wikiwand, IIRS GISAT-1 brief) cited in <a href="#sources">Sources</a>. Most were read as <strong>search-result extracts</strong>, not full documents; the eoPortal Drishti page was read in full. Official UPSC papers were not opened. Spelling and typing repairs ("heyper spctral", "frequencues", "contigous", "dristi", "satleliites", "onvoard", "decision maing", "tiem") were made silently.</p>
+</header>
+
+<section id="polar">
+<h2>42. Polar Orbit and Remote Sensing Satellites (completes Section 40.3)</h2>
+
+<h3 id="polar-basics">42.1 Polar orbit</h3>
+<ul>
+<li>A <strong>polar orbit</strong> passes over or near <strong>both poles</strong>; as the Earth rotates beneath it, the satellite sees a new strip on each pass and covers the <strong>whole globe</strong> in a few days.</li>
+<li>Class figure: the satellite goes from one pole to the other in about <strong>1.5 hours</strong>. <strong>Checked:</strong> about 90-100 minutes is the time for <strong>one full orbit</strong> (pole to pole <em>and back</em>) at 500-900 km; one pole-to-pole half takes about 45-50 minutes (<a href="#c13">c13</a>).</li>
+<li><strong>Remote sensing satellites</strong> are placed in this orbit (mostly in its <strong>sun-synchronous</strong> form, Section 40.2 of the 2 Nov note). They are of two types: <strong>optical / passive</strong> and <strong>microwave / active</strong> (<a href="#c14">c14</a>).</li>
+</ul>
+<p class="correction" id="c13"><strong>[Correction]</strong> <strong>"From one pole to another pole in around 1.5 hr"</strong>: 1.5 hours (about 90-100 minutes) is the <strong>orbital period</strong> of a low polar orbit - a complete circuit through both poles. Write "completes one orbit, pole to pole and back, in about 90-100 minutes (about 14-15 orbits a day)". NISAR, for example, flies at 747 km (<a href="#s-nasaqf">NASA quick facts</a>).</p>
+
+<h3 id="opt-mw">42.2 Optical (passive) vs microwave (active) remote sensing</h3>
+<div class="table-wrap"><table>
+<caption>The two types of remote sensing satellite</caption>
+<thead><tr><th scope="col" style="width:22%">Point</th><th scope="col">Optical / passive</th><th scope="col">Microwave / active (radar, SAR)</th></tr></thead>
+<tbody>
+<tr><td>Source of energy</td><td><strong>Reflected sunlight</strong> (visible, near- and short-wave infrared)</td><td>Satellite carries its <strong>own source of radiation</strong>: it sends microwave pulses and records the echo</td></tr>
+<tr><td>Night</td><td>Cannot image by reflected light at night</td><td>Works <strong>day and night</strong></td></tr>
+<tr><td>Clouds, smoke, rain</td><td>Blocked by clouds</td><td>Microwaves pass through cloud and most weather - <strong>24/7, all-weather</strong></td></tr>
+<tr><td>Image</td><td>Looks like a photograph; colour and spectral information (crop health, water quality)</td><td>Records roughness, structure, moisture and distance; images need expert interpretation; can measure ground movement of millimetres to centimetres (interferometry)</td></tr>
+<tr><td>Sub-types</td><td><strong>Multispectral</strong> and <strong>hyperspectral</strong> (42.3)</td><td>By wavelength band: X, C, S, L (42.4)</td></tr>
+<tr><td>Indian examples</td><td>Cartosat, Resourcesat, Oceansat; GISAT/EOS-05 from GEO (Section 46)</td><td><strong>RISAT</strong> series (RISAT-1A/EOS-04), <strong>NISAR</strong> (with NASA)</td></tr>
+</tbody></table></div>
+<p class="correction" id="c14"><strong>[Correction]</strong> <strong>"Optical = passive" and "microwave = active"</strong> is a useful classroom pairing but not a strict rule. <strong>Passive</strong> means the sensor records energy it does not produce: besides reflected sunlight this includes <strong>thermal infrared</strong> (heat emitted by the Earth, which <em>can</em> be recorded at night, as INSAT weather imagers do) and <strong>passive microwave radiometers</strong>. <strong>Active</strong> means the sensor sends its own signal: radar/SAR, and also lidar (laser). So write "optical sensors that depend on reflected sunlight cannot image at night or through cloud".</p>
+
+<figure id="fig40">
+<h3>Figure 40. Passive (Optical) vs Active (Microwave) Remote Sensing (schematic) [Additional]</h3>
+<svg viewBox="0 0 760 300" role="img" aria-label="Two panels. Left: the Sun lights the ground; reflected sunlight reaches an optical satellite; a cloud blocks part of the view and there is no image at night. Right: a radar satellite sends microwave pulses through a cloud to the ground and receives the echo, working day or night.">
+<defs><marker id="arr40" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#555"/></marker></defs>
+<g font-family="Calibri, sans-serif" font-size="12" text-anchor="middle">
+<text x="185" y="22" font-weight="bold">A. Passive / optical</text>
+<circle cx="50" cy="60" r="20" fill="#ffe082" stroke="#f5a623" stroke-width="2"/><text x="50" y="96" font-size="11">Sun</text>
+<rect x="270" y="45" width="34" height="18" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2"/><text x="287" y="36" font-size="11">optical satellite</text>
+<line x1="20" y1="260" x2="350" y2="260" stroke="#555" stroke-width="2"/><text x="185" y="280" font-size="11">ground</text>
+<line x1="66" y1="74" x2="160" y2="255" stroke="#f5a623" stroke-width="2" marker-end="url(#arr40)"/>
+<text x="92" y="170" font-size="11" fill="#b26a00" text-anchor="start">sunlight</text>
+<line x1="165" y1="255" x2="280" y2="68" stroke="#2e7d32" stroke-width="2" stroke-dasharray="6 3" marker-end="url(#arr40)"/>
+<text x="250" y="150" font-size="11" fill="#2e7d32" text-anchor="start">reflected light</text>
+<ellipse cx="300" cy="190" rx="38" ry="16" fill="#eceff1" stroke="#90a4ae"/><text x="300" y="194" font-size="10">cloud</text>
+<text x="185" y="298" font-size="11" fill="#c62828">No image at night or through cloud</text>
+<line x1="380" y1="10" x2="380" y2="295" stroke="#ccc"/>
+<text x="575" y="22" font-weight="bold">B. Active / microwave (SAR)</text>
+<rect x="520" y="45" width="34" height="18" fill="#e3f2fd" stroke="#0078d4" stroke-width="2"/><text x="537" y="36" font-size="11">radar satellite</text>
+<line x1="410" y1="260" x2="740" y2="260" stroke="#555" stroke-width="2"/><text x="575" y="280" font-size="11">ground</text>
+<line x1="530" y1="66" x2="600" y2="252" stroke="#0078d4" stroke-width="2" marker-end="url(#arr40)"/>
+<text x="600" y="140" font-size="11" fill="#0078d4" text-anchor="start">1 own microwave pulse</text>
+<line x1="610" y1="252" x2="548" y2="70" stroke="#c62828" stroke-width="2" stroke-dasharray="6 3" marker-end="url(#arr40)"/>
+<text x="470" y="165" font-size="11" fill="#c62828" text-anchor="start">2 echo</text>
+<ellipse cx="575" cy="185" rx="40" ry="16" fill="#eceff1" stroke="#90a4ae" fill-opacity="0.6"/><text x="640" y="200" font-size="10" text-anchor="start">cloud: passes through</text>
+<text x="575" y="298" font-size="11" fill="#2e7d32">Day and night, all weather</text>
+</g>
+</svg>
+<figcaption>Schematic, not to scale. Based on the class distinction; the "all-weather, day-and-night" property of SAR is as described for Drishti and NISAR in <a href="#s-et">Economic Times</a> and <a href="#s-isronisar">ISRO</a>.</figcaption>
+</figure>
+
+<h3 id="ms-hs">42.3 Multispectral vs hyperspectral (types of optical imaging)</h3>
+<div class="table-wrap"><table>
+<caption>Multispectral vs hyperspectral</caption>
+<thead><tr><th scope="col" style="width:22%">Point</th><th scope="col">Multispectral</th><th scope="col">Hyperspectral</th></tr></thead>
+<tbody>
+<tr><td>Bands</td><td><strong>A few broad bands</strong> (typically 3-15), with <strong>gaps</strong> between them</td><td><strong>Many narrow bands</strong> (typically 100 or more, each about 10 nm wide) that are <strong>contiguous</strong> - no gaps</td></tr>
+<tr><td>Output</td><td>A few values per pixel; separates broad classes (water, vegetation, built-up land)</td><td>A near-continuous <strong>spectral signature</strong> per pixel; identifies <strong>specific materials</strong> - minerals, crop stress, crop type, pollutants</td></tr>
+<tr><td>Detail</td><td>"Cannot give very detailed information" (class) - in the <em>spectral</em> sense</td><td>"Very fine assessment" (class)</td></tr>
+<tr><td>Trade-off [Additional]</td><td>Usually finer spatial resolution, smaller data volume</td><td>Much larger data volume; usually coarser spatial resolution for the same optics (GISAT-1: 42 m multispectral vs 191-318 m hyperspectral)</td></tr>
+<tr><td>Examples</td><td>Resourcesat LISS, Cartosat MX, Drishti's 7-band MSI</td><td>ISRO's HySIS (2018) and the GISAT hyperspectral imagers (158 VNIR and 256 SWIR bands) (<a href="#s-iirs">IIRS</a>)</td></tr>
+</tbody></table></div>
+<p class="additional"><strong>[Additional] Spatial vs spectral resolution:</strong> "resolution" can mean the size of the smallest ground area one pixel records (spatial: 42 m, 0.9 m) or the width of each wavelength band (spectral). Hyperspectral = high <strong>spectral</strong> resolution, not necessarily high spatial resolution. The class definition ("the range is narrow and the bands are contiguous") is correct.</p>
+
+<figure id="fig41">
+<h3>Figure 41. Multispectral vs Hyperspectral Bands across the Visible and Near-Infrared (illustrative) [Additional]</h3>
+<svg viewBox="0 0 760 230" role="img" aria-label="Two rows over a wavelength axis from 400 to 1000 nanometres. Top row, multispectral: four broad bands - blue, green, red and near-infrared - separated by gaps. Bottom row, hyperspectral: sixty narrow 10-nanometre bands side by side with no gaps.">
+<g font-family="Calibri, sans-serif" font-size="12">
+<text x="20" y="62" font-weight="bold">Multispectral</text>
+<text x="20" y="77" font-size="10" fill="#555">few broad bands, gaps</text>
+<rect x="235" y="45" width="63" height="30" fill="#64b5f6" stroke="#333"/>
+<rect x="307" y="45" width="63" height="30" fill="#81c784" stroke="#333"/>
+<rect x="397" y="45" width="54" height="30" fill="#e57373" stroke="#333"/>
+<rect x="514" y="45" width="126" height="30" fill="#a1887f" stroke="#333"/>
+<text x="266" y="64" text-anchor="middle" font-size="10">blue</text><text x="338" y="64" text-anchor="middle" font-size="10">green</text><text x="424" y="64" text-anchor="middle" font-size="10">red</text><text x="577" y="64" text-anchor="middle" font-size="10">near-infrared</text>
+<text x="482" y="64" text-anchor="middle" font-size="10" fill="#c62828">gap</text>
+<text x="20" y="132" font-weight="bold">Hyperspectral</text>
+<text x="20" y="147" font-size="10" fill="#555">many narrow bands, contiguous</text>
+<g stroke="#333" stroke-width="0.5" fill="#cfd8dc">
+<rect x="190" y="115" width="9" height="30"/><rect x="199" y="115" width="9" height="30"/><rect x="208" y="115" width="9" height="30"/><rect x="217" y="115" width="9" height="30"/><rect x="226" y="115" width="9" height="30"/><rect x="235" y="115" width="9" height="30"/><rect x="244" y="115" width="9" height="30"/><rect x="253" y="115" width="9" height="30"/><rect x="262" y="115" width="9" height="30"/><rect x="271" y="115" width="9" height="30"/>
+<rect x="280" y="115" width="9" height="30"/><rect x="289" y="115" width="9" height="30"/><rect x="298" y="115" width="9" height="30"/><rect x="307" y="115" width="9" height="30"/><rect x="316" y="115" width="9" height="30"/><rect x="325" y="115" width="9" height="30"/><rect x="334" y="115" width="9" height="30"/><rect x="343" y="115" width="9" height="30"/><rect x="352" y="115" width="9" height="30"/><rect x="361" y="115" width="9" height="30"/>
+<rect x="370" y="115" width="9" height="30"/><rect x="379" y="115" width="9" height="30"/><rect x="388" y="115" width="9" height="30"/><rect x="397" y="115" width="9" height="30"/><rect x="406" y="115" width="9" height="30"/><rect x="415" y="115" width="9" height="30"/><rect x="424" y="115" width="9" height="30"/><rect x="433" y="115" width="9" height="30"/><rect x="442" y="115" width="9" height="30"/><rect x="451" y="115" width="9" height="30"/>
+<rect x="460" y="115" width="9" height="30"/><rect x="469" y="115" width="9" height="30"/><rect x="478" y="115" width="9" height="30"/><rect x="487" y="115" width="9" height="30"/><rect x="496" y="115" width="9" height="30"/><rect x="505" y="115" width="9" height="30"/><rect x="514" y="115" width="9" height="30"/><rect x="523" y="115" width="9" height="30"/><rect x="532" y="115" width="9" height="30"/><rect x="541" y="115" width="9" height="30"/>
+<rect x="550" y="115" width="9" height="30"/><rect x="559" y="115" width="9" height="30"/><rect x="568" y="115" width="9" height="30"/><rect x="577" y="115" width="9" height="30"/><rect x="586" y="115" width="9" height="30"/><rect x="595" y="115" width="9" height="30"/><rect x="604" y="115" width="9" height="30"/><rect x="613" y="115" width="9" height="30"/><rect x="622" y="115" width="9" height="30"/><rect x="631" y="115" width="9" height="30"/>
+<rect x="640" y="115" width="9" height="30"/><rect x="649" y="115" width="9" height="30"/><rect x="658" y="115" width="9" height="30"/><rect x="667" y="115" width="9" height="30"/><rect x="676" y="115" width="9" height="30"/><rect x="685" y="115" width="9" height="30"/><rect x="694" y="115" width="9" height="30"/><rect x="703" y="115" width="9" height="30"/><rect x="712" y="115" width="9" height="30"/><rect x="721" y="115" width="9" height="30"/>
+</g>
+<line x1="190" y1="175" x2="730" y2="175" stroke="#555"/>
+<g font-size="11" text-anchor="middle"><text x="190" y="192">400</text><text x="280" y="192">500</text><text x="370" y="192">600</text><text x="460" y="192">700</text><text x="550" y="192">800</text><text x="640" y="192">900</text><text x="730" y="192">1000 nm</text></g>
+<text x="460" y="218" text-anchor="middle" font-size="11" fill="#555">wavelength (0.9 px per nm); 60 hyperspectral bands of 10 nm shown</text>
+</g>
+</svg>
+<figcaption>Illustrative band positions, drawn to the wavelength scale shown (0.9 px per nanometre). Multispectral bands follow typical blue, green, red and near-infrared windows; real sensors differ. GISAT-1's hyperspectral VNIR imager had 158 bands over 375-1,000 nm (<a href="#s-wikigisat">Wikiwand/Wikipedia</a>).</figcaption>
+</figure>
+
+<h3 id="mw">42.4 Microwave (active) remote sensing</h3>
+<ul>
+<li>Microwave satellites do not rely on reflected sunlight; they carry their <strong>own source of radiation</strong>, which lets them work <strong>24/7 under all weather conditions</strong>. Examples: <strong>RISAT</strong> and <strong>NISAR</strong>.</li>
+<li><strong>[Additional] Synthetic Aperture Radar (SAR):</strong> a side-looking radar that uses the satellite's motion to "synthesise" a very long antenna, giving fine resolution from a small real antenna.</li>
+<li><strong>[Additional] Bands:</strong> X-band (about 3 cm; Drishti, many commercial SARs), C-band (about 5.6 cm; RISAT-1/1A), <strong>S-band (9.4 cm on NISAR)</strong>, <strong>L-band (24 cm on NISAR)</strong> (<a href="#s-nasa">NASA</a>). The longer the wavelength, the deeper the signal penetrates vegetation, dry soil, snow and ice; shorter wavelengths respond to finer surface detail.</li>
+</ul>
+</section>
+
+<section id="nisar">
+<h2>43. NISAR (NASA-ISRO Synthetic Aperture Radar)</h2>
+
+<h3 id="nisar-facts">43.1 Key facts</h3>
+<div class="table-wrap"><table>
+<caption>NISAR at a glance (as of 3 Nov 2026)</caption>
+<thead><tr><th scope="col" style="width:24%">Item</th><th scope="col">Fact</th><th scope="col" style="width:22%">Source</th></tr></thead>
+<tbody>
+<tr><td>Partners</td><td>Joint mission of <strong>NASA (USA)</strong> and <strong>ISRO (India)</strong>. NASA: the L-band SAR, the 12 m reflector and 9 m boom, recorder, GPS, Ka-band telecom. ISRO: the spacecraft bus, the S-band SAR and the launch.</td><td><a href="#s-nasasat">NASA</a>; <a href="#s-eonisar">eoPortal</a></td></tr>
+<tr><td>Launch</td><td><strong>30 July 2025</strong> on ISRO's <strong>GSLV-F16</strong> from Sriharikota</td><td><a href="#s-isro1yr">ISRO</a></td></tr>
+<tr><td>Orbit</td><td><strong>Sun-synchronous dawn-dusk</strong> polar orbit; 747 km; inclination 98.4 degrees; equator crossings at about <strong>6 AM (ascending) and 6 PM (descending)</strong> local time</td><td><a href="#s-nasaqf">NASA quick facts</a></td></tr>
+<tr><td>"First"</td><td>First satellite mission to use <strong>two radar frequencies (L-band and S-band)</strong>; ISRO calls it the world's first spaceborne dual-frequency radar mission</td><td><a href="#s-eonisar">eoPortal</a>; <a href="#s-isronisar">ISRO</a></td></tr>
+<tr><td>Coverage</td><td>Swath about <strong>242 km</strong>; resolution 3-10 m by mode; <strong>12-day</strong> exact repeat; with ascending and descending passes, a place is sampled on average about every <strong>6 days</strong></td><td><a href="#s-nasasat">NASA</a>; <a href="#s-nasaqf">NASA quick facts</a></td></tr>
+<tr><td>Phase</td><td>Science operations since <strong>early January 2026</strong>; three-year baseline mission. Data free and open: L-band through NASA's Alaska Satellite Facility; S-band through ISRO's <strong>Bhoonidhi</strong> portal (released July 2026). One-year event on 4 Aug 2026 at ISTRAC, Bengaluru.</td><td><a href="#s-nasaqf">NASA</a>; <a href="#s-isronisar">ISRO</a>; <a href="#s-isro1yr">ISRO</a></td></tr>
+</tbody></table></div>
+
+<h3 id="nisar-orbit">43.2 Why a dawn-dusk orbit?</h3>
+<p>A <strong>dawn-dusk orbit</strong> is a special <strong>sun-synchronous polar orbit</strong> whose plane follows the <strong>day-night boundary (terminator)</strong>: the satellite passes over each place at about local <strong>sunrise or sunset</strong>. The class gave two reasons:</p>
+<ol>
+<li><strong>Sunlight for the solar panels</strong> - the satellite stays in sunlight for almost the whole orbit, so power is steady (important for a power-hungry radar). <strong>Checked</strong> as a general property of dawn-dusk orbits.</li>
+<li><strong>To avoid ionospheric disturbance</strong> - the ionosphere's electron content is highest around midday and early afternoon and lowest around dawn; a charged ionosphere delays and distorts radar signals and rotates their polarisation (Faraday rotation), and the effect is strongest at lower frequencies such as L-band (<a href="#s-mdpi">MDPI review</a>). NASA notes the S-band signal is less sensitive to ionospheric disturbances (<a href="#s-nasasat">NASA</a>). Whether this was a stated design reason for NISAR's orbit was not confirmed in the sources read <strong>[Verification Required]</strong> (<a href="#c15">c15</a>).</li>
+</ol>
+<p class="correction" id="c15"><strong>[Correction]</strong> <strong>"Ionospheric disturbance which receives the peak around noon and causes dispersion of radars"</strong>: the ionosphere's electron content typically <strong>peaks in the early afternoon</strong> (local time), not exactly at noon. The ionosphere is a <strong>dispersive</strong> medium (its effect depends on frequency), so it introduces <strong>delays, phase errors and polarisation rotation</strong> in radar signals rather than "dispersing the radar". Keep the idea: dawn and dusk passes face a quieter ionosphere.</p>
+
+<figure id="fig42">
+<h3>Figure 42. NISAR's Dawn-Dusk Sun-Synchronous Orbit, Seen from above the North Pole (schematic) [Additional]</h3>
+<svg viewBox="0 0 760 300" role="img" aria-label="The Sun on the left lights the left half of the Earth; the right half is in night. The dawn-dusk orbit lies along the day-night line, so it appears edge-on as a narrow loop over the terminator. Labels: 6 PM side and 6 AM side; solar panels always in sunlight.">
+<defs><marker id="arr42" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#f5a623"/></marker></defs>
+<g font-family="Calibri, sans-serif" font-size="12" text-anchor="middle">
+<circle cx="70" cy="150" r="34" fill="#ffe082" stroke="#f5a623" stroke-width="2"/><text x="70" y="154">Sun</text>
+<line x1="115" y1="110" x2="250" y2="110" stroke="#f5a623" stroke-width="2" marker-end="url(#arr42)"/>
+<line x1="115" y1="150" x2="250" y2="150" stroke="#f5a623" stroke-width="2" marker-end="url(#arr42)"/>
+<line x1="115" y1="190" x2="250" y2="190" stroke="#f5a623" stroke-width="2" marker-end="url(#arr42)"/>
+<text x="180" y="225" font-size="11" fill="#b26a00">sunlight</text>
+<circle cx="380" cy="150" r="90" fill="#e3f2fd" stroke="#0078d4" stroke-width="2"/>
+<path d="M380,60 A90,90 0 0 1 380,240 Z" fill="#37474f" fill-opacity="0.75"/>
+<text x="335" y="154">day</text><text x="425" y="154" fill="#fff">night</text>
+<circle cx="380" cy="150" r="4" fill="#333"/><text x="380" y="170" font-size="10">N pole</text>
+<ellipse cx="380" cy="150" rx="9" ry="125" fill="none" stroke="#2e7d32" stroke-width="3"/>
+<rect x="372" y="17" width="16" height="10" fill="#2e7d32"/>
+<text x="380" y="12" font-size="11" fill="#2e7d32" font-weight="bold">NISAR</text>
+<text x="530" y="60" text-anchor="start" fill="#2e7d32" font-weight="bold">Dawn-dusk orbit</text>
+<text x="530" y="78" text-anchor="start" font-size="11">plane lies along the day-night line</text>
+<text x="530" y="96" text-anchor="start" font-size="11">(the terminator), seen edge-on here</text>
+<text x="530" y="130" text-anchor="start" font-size="11">Crosses the equator at about</text>
+<text x="530" y="148" text-anchor="start" font-size="11">6 AM (ascending) and 6 PM (descending)</text>
+<text x="530" y="182" text-anchor="start" font-size="11" fill="#b26a00">Solar panels almost always in sunlight</text>
+<text x="530" y="216" text-anchor="start" font-size="11" fill="#0078d4">Passes avoid the afternoon peak</text>
+<text x="530" y="232" text-anchor="start" font-size="11" fill="#0078d4">of ionospheric electron content</text>
+<text x="380" y="292" font-size="11" fill="#555">747 km altitude; inclination 98.4 degrees (sun-synchronous)</text>
+</g>
+</svg>
+<figcaption>Schematic, <strong>not to scale</strong>: the orbit is drawn far larger than 747 km relative to the Earth. Orbit figures from <a href="#s-nasaqf">NASA quick facts</a>; the ionosphere label reflects general SAR physics (<a href="#s-mdpi">MDPI</a>), not a NASA statement of design intent.</figcaption>
+</figure>
+
+<h3 id="nisar-bands">43.3 L-band and S-band: what each does</h3>
+<p>Class statement: "The L band radar provides vertical penetration whereas S band radar is for horizontal coverage." <strong>Checked</strong> (<a href="#c16">c16</a>):</p>
+<div class="table-wrap"><table>
+<caption>NISAR's two radars</caption>
+<thead><tr><th scope="col" style="width:22%">Point</th><th scope="col">L-band SAR (NASA)</th><th scope="col">S-band SAR (ISRO)</th></tr></thead>
+<tbody>
+<tr><td>Wavelength</td><td><strong>24 cm</strong> (longer)</td><td><strong>9.4 cm</strong> (shorter)</td></tr>
+<tr><td>Penetration</td><td><strong>Deeper</strong> - through forest canopy to trunks and ground, into dry soil, snow and ice</td><td>Shallower - interacts with the upper canopy, crops and light vegetation</td></tr>
+<tr><td>Best for</td><td>Forest biomass, ground deformation (earthquakes, volcanoes, subsidence), ice-sheet and glacier motion</td><td>Crops and light vegetation, coastal and shoreline studies, ocean winds, geology over India; usable in polar regions because it is <strong>less sensitive to the ionosphere</strong></td></tr>
+<tr><td>Swath</td><td colspan="2">Both use the same 12 m reflector and SweepSAR to image a swath of about 242 km; wide coverage comes from <strong>SweepSAR</strong>, not from the S-band.</td></tr>
+</tbody></table></div>
+<p class="correction" id="c16"><strong>[Correction]</strong> "L-band for vertical penetration, S-band for horizontal coverage" is an oversimplification. L-band does <strong>penetrate deeper</strong>, but S-band is not a "coverage" radar: both bands image the same wide swath, and the S-band is chosen for its <strong>sensitivity to light vegetation and crops</strong> and to India-specific science (coasts, ocean winds, geology) (<a href="#s-nasasat">NASA</a>). ISRO's first S-band products include a national forest above-ground biomass map and a rabi-season active crop cover map (<a href="#s-isro1yr">ISRO, 17 Aug 2026</a>). Write "<strong>L-band: deeper penetration; S-band: sensitivity to lighter vegetation and surface features</strong>; together they cover a wide range of changes".</p>
+
+<h3 id="sweepsar">43.4 SweepSAR: wide swath without losing resolution</h3>
+<ul>
+<li>A conventional SAR has to choose between a <strong>wide swath</strong> (coarser detail) and <strong>fine resolution</strong> (narrow strip). NISAR uses <strong>SweepSAR</strong> to get both - a swath of about 240 km at high resolution (<a href="#s-isronisar">ISRO</a>).</li>
+<li>Hardware: a <strong>12 m gold-plated wire-mesh reflector</strong> on a 9 m boom, and an <strong>array of feed elements</strong> on the instrument structure below it. The feed sends the pulse up to the reflector, which focuses it down to illuminate the whole swath (<a href="#s-nasasat">NASA</a>).</li>
+<li><strong>Scan-on-receive:</strong> echoes return first from the near edge of the swath and later from the far edge. As they arrive, the reflector focuses each part of the echo onto a <strong>different feed element</strong>, so the echo "sweeps" across the feed array. The onboard electronics pick the elements on which the echo is falling at each instant and combine them into one high-gain receive beam that follows the echo across the swath.</li>
+<li>This is what the class meant by "the reflected radar moves across the cross section of the antenna to enable the computer to pick up the relevant data". <strong>[Correction]</strong> The echo moves across the <strong>feed array</strong> (the elements under the reflector), not across "the antenna" in general (<a href="#c17">c17</a>).</li>
+</ul>
+<p class="correction" id="c17"><strong>[Correction]</strong> <strong>"It has an onboard antenna along with a radar"</strong>: more precisely, NISAR's antenna is an <strong>array-fed reflector</strong> - a large reflector plus a feed array - shared by both radars, which NASA describes as "SweepSAR scan-on-receive wide swath mapping systems" (<a href="#s-nasasat">NASA</a>).</p>
+
+<figure id="fig43">
+<h3>Figure 43. SweepSAR Scan-on-Receive (schematic) [Additional]</h3>
+<svg viewBox="0 0 760 330" role="img" aria-label="A large curved reflector on a boom sits above a row of feed elements on the satellite. Lines from three ground points - near, middle and far edge of a 242 kilometre swath - reach the reflector and are focused onto different feed elements: near-range echo onto the first element, mid-range onto the middle element, far-range onto the last element. The echo sweeps across the feed array over time.">
+<g font-family="Calibri, sans-serif" font-size="12" text-anchor="middle">
+<path d="M150,70 Q300,10 450,70" fill="none" stroke="#b8860b" stroke-width="4"/>
+<text x="300" y="22" font-weight="bold" fill="#8d6e00">12 m reflector (wire mesh)</text>
+<line x1="450" y1="70" x2="560" y2="110" stroke="#777" stroke-width="2"/><text x="560" y="96" font-size="11" fill="#555">9 m boom</text>
+<rect x="540" y="105" width="110" height="40" fill="#eceff1" stroke="#555"/><text x="595" y="130" font-size="11">spacecraft</text>
+<g stroke="#333" stroke-width="1">
+<rect x="250" y="120" width="20" height="12" fill="#2e7d32"/><rect x="275" y="120" width="20" height="12" fill="#cfd8dc"/><rect x="300" y="120" width="20" height="12" fill="#0078d4"/><rect x="325" y="120" width="20" height="12" fill="#cfd8dc"/><rect x="350" y="120" width="20" height="12" fill="#c62828"/>
+</g>
+<text x="310" y="150" font-size="11">feed array (receive elements)</text>
+<line x1="20" y1="300" x2="740" y2="300" stroke="#555" stroke-width="2"/>
+<line x1="120" y1="292" x2="660" y2="292" stroke="#555" stroke-dasharray="4 3"/>
+<text x="390" y="285" font-size="11">swath about 242 km</text>
+<circle cx="140" cy="300" r="5" fill="#2e7d32"/><text x="140" y="320" font-size="11" fill="#2e7d32">near range: echo arrives first</text>
+<circle cx="390" cy="300" r="5" fill="#0078d4"/><text x="390" y="320" font-size="11" fill="#0078d4">mid range</text>
+<circle cx="640" cy="300" r="5" fill="#c62828"/><text x="640" y="320" font-size="11" fill="#c62828">far range: echo arrives last</text>
+<polyline points="140,300 200,58 260,120" fill="none" stroke="#2e7d32" stroke-width="2"/>
+<polyline points="390,300 300,40 310,120" fill="none" stroke="#0078d4" stroke-width="2"/>
+<polyline points="640,300 410,55 360,120" fill="none" stroke="#c62828" stroke-width="2"/>
+<text x="20" y="200" font-size="10" text-anchor="start">Echo sweeps across</text>
+<text x="20" y="214" font-size="10" text-anchor="start">the feed over time:</text>
+<text x="20" y="228" font-size="10" text-anchor="start">green, blue, red</text>
+<text x="385" y="200" font-size="10" text-anchor="start">Electronics switch to</text>
+<text x="385" y="214" font-size="10" text-anchor="start">the elements the echo</text>
+<text x="385" y="228" font-size="10" text-anchor="start">falls on (scan-on-receive)</text>
+</g>
+</svg>
+<figcaption>Schematic, not to scale; ray paths are illustrative only. Based on NASA's description of the reflector, feed and "SweepSAR scan-on-receive" design (<a href="#s-nasasat">NASA</a>) and ISRO's swath figure (<a href="#s-isronisar">ISRO</a>).</figcaption>
+</figure>
+
+<h3 id="nisar-uses">43.5 Uses</h3>
+<p>Class list: monitoring <strong>polar ice caps</strong>, <strong>changes in landforms</strong>, <strong>biomass estimation</strong>, <strong>coastal landforms</strong>, <strong>agricultural patterns</strong>. <strong>[Additional]</strong> Also earthquakes, volcanoes, landslides and land subsidence (centimetre-scale ground movement), soil moisture, wetlands and surface water, sea ice, oil spills and disaster response (<a href="#s-nasa">NASA</a>; <a href="#s-eonisar">eoPortal</a>; <a href="#s-isro1yr">ISRO</a>).</p>
+</section>
+
+<section id="drishti">
+<h2>44. Mission Drishti: GalaxEye's OptoSAR Satellite</h2>
+
+<h3 id="drishti-facts">44.1 Key facts</h3>
+<ul>
+<li><strong>Who:</strong> <strong>GalaxEye</strong> (GalaxEye Space), a <strong>Bengaluru</strong> start-up founded in <strong>2021</strong> by <strong>IIT Madras</strong> alumni (<a href="#s-et">Economic Times</a>).</li>
+<li><strong>Launch:</strong> <strong>3 May 2026</strong>, on a <strong>SpaceX Falcon 9</strong> from <strong>Vandenberg</strong>, California, as a rideshare on the CAS500-2 mission; ISRO/NSIL supported early orbit operations (<a href="#s-cnbc">CNBC-TV18</a>; <a href="#s-eodrishti">eoPortal</a>).</li>
+<li><strong>One satellite</strong>, about <strong>190 kg</strong> - described as the <strong>largest privately built satellite in India</strong> (<a href="#c18">c18</a>).</li>
+<li><strong>Orbit:</strong> <strong>sun-synchronous</strong> low Earth orbit at about <strong>500 km</strong> (a polar orbit).</li>
+<li><strong>Constellation plan:</strong> the <strong>Drishti constellation</strong>, about <strong>8-12 satellites</strong> over the next four years (TOI; eoPortal); the CEO told ET "at least 10" in the next two and a half years.</li>
+<li><strong>Unique feature:</strong> the <strong>world's first satellite to combine optical and SAR imaging</strong> on one platform - hence <strong>"OptoSAR"</strong> (the class sentence "that is why it is called..." ends here) (<a href="#s-toi">Times of India</a>). This is the company's description, repeated by ISRO and the Prime Minister's post.</li>
+</ul>
+
+<div class="table-wrap"><table>
+<caption>Drishti's sensors (eoPortal, from GalaxEye material)</caption>
+<thead><tr><th scope="col" style="width:22%">Parameter</th><th scope="col">SAR</th><th scope="col">Optical (MSI)</th><th scope="col">Fused product</th></tr></thead>
+<tbody>
+<tr><td>Type</td><td><strong>X-band</strong> radar, VV polarisation</td><td><strong>7-band multispectral</strong> (incl. coastal blue, red edge, NIR)</td><td>SAR + MSI, co-registered</td></tr>
+<tr><td>Resolution</td><td>Up to <strong>0.9 m</strong> (Spotlight)</td><td><strong>3.6 m</strong></td><td>About <strong>1.8 m</strong></td></tr>
+<tr><td>Swath</td><td>About 30 km</td><td>About 10 km</td><td>Depends on product</td></tr>
+</tbody></table></div>
+
+<h3 id="drishti-why">44.2 Why combine optical and SAR?</h3>
+<ul>
+<li><strong>Optical imagery:</strong> very fine, easy-to-read images, but blocked by <strong>clouds</strong> and unusable at <strong>night</strong>.</li>
+<li><strong>SAR:</strong> works <strong>24/7 in all weather</strong>, but its images are harder to read than a photograph.</li>
+<li><strong>Old way:</strong> two <strong>separate satellites</strong>, imaging at different times and angles; their images then have to be <strong>matched (co-registered) on the ground</strong> - slow, delaying decisions, especially on the <strong>battlefield</strong>.</li>
+<li><strong>Drishti:</strong> both sensors image the <strong>same place at the same time</strong> from the same geometry, and the onboard <strong>SyncFusion</strong> system aligns and fuses the two into one analysis-ready product (<a href="#s-eodrishti">eoPortal</a>). Developers claim up to <strong>three times more actionable information</strong> than a single-sensor satellite (<a href="#s-indiatoday">India Today</a>).</li>
+</ul>
+<div class="flow" id="flow-optosar" aria-label="Separate satellites versus OptoSAR fusion">
+<span class="box"><strong>Optical imager</strong> + <strong>SAR</strong><br/>same satellite, same pass</span><span>&rarr;</span><span class="box"><strong>Simultaneous capture</strong><br/>same place, same time, same angle</span><span>&rarr;</span><span class="box"><strong>Onboard SyncFusion</strong><br/>align and fuse</span><span>&rarr;</span><span class="box"><strong>Fused image</strong><br/>detail of optical + all-weather SAR</span><span>&rarr;</span><span class="box"><strong>Faster decisions</strong><br/>defence, disasters, farms</span>
+</div>
+<p class="small">Figure 44. The OptoSAR idea. [Additional] Concept chart from the descriptions in <a href="#s-eodrishti">eoPortal</a> and <a href="#s-indiatoday">India Today</a>; no data.</p>
+
+<p class="correction" id="c18"><strong>[Correction]</strong> <strong>"Galax Eye ... launched the satellites"</strong>: the company is <strong>GalaxEye</strong>, and on 3 May 2026 it launched <strong>one</strong> satellite (Mission Drishti, 190 kg); the rest of the constellation is planned. Its forerunner, the <strong>GLX-SQ</strong> payload, flew on ISRO's <strong>POEM-4</strong> (PSLV-C60, 31 Dec 2024) to test the SyncFusion system in orbit (<a href="#s-eodrishti">eoPortal</a>).</p>
+<p class="correction" id="c19"><strong>[Correction]</strong> <strong>"Within optical it has both multi and hyper spectral"</strong>: the sources describe a <strong>7-band multispectral imager only</strong>; no hyperspectral sensor is reported on Drishti (<a href="#s-eodrishti">eoPortal</a>; <a href="#s-cnbc">CNBC-TV18</a>). Also, "onboard AI" - the sources describe <strong>onboard computing</strong> and the <strong>SyncFusion</strong> fusion system; whether the fusion uses AI is GalaxEye's description reported in the class and not confirmed in the pages read <strong>[Verification Required]</strong>.</p>
+</section>
+
+<section id="sbs3">
+<h2>45. Space Based Surveillance Phase III (SBS-III)</h2>
+<div class="table-wrap"><table>
+<caption>The class statements, checked</caption>
+<thead><tr><th scope="col" style="width:30%">Class statement</th><th scope="col">Checked position</th></tr></thead>
+<tbody>
+<tr><td>Drishti-type satellites will contribute to SBS-III.</td><td>GalaxEye's data are of interest to defence users: TOI reports that the Defence Space Agency and the armed services "have been tracking the programme". Whether GalaxEye is one of the private builders under SBS-III was <strong>not confirmed</strong> <strong>[Verification Required]</strong> (<a href="#s-toi">TOI</a>).</td></tr>
+<tr><td>52 satellites by 2028: 31 from the private sector, 21 by ISRO.</td><td><strong>52 satellites: 21 by ISRO, 31 by private firms</strong> - confirmed. Approved by the <strong>Cabinet Committee on Security in October 2024</strong> at about <strong>Rs 26,968 crore</strong>; first launch expected from 2026 and the constellation completed by <strong>2029</strong> (<a href="#s-wikisbs">Wikipedia</a>; <a href="#s-vajiram">Vajiram</a>; <a href="#s-beats">Beats in Brief</a>) (<a href="#c20">c20</a>).</td></tr>
+<tr><td>In polar and geostationary orbits; AI to communicate with each other.</td><td>Reports say <strong>LEO and GEO</strong> (some add MEO); inter-satellite data transfer technology and onboard AI threat detection are described in reports (<a href="#s-wikisbs">Wikipedia</a>; <a href="#s-cosmo">Cosmo Science</a>, secondary).</td></tr>
+<tr><td>Goal: real-time intelligence, "deterrence by detection".</td><td>Reports describe the aim as real-time, persistent surveillance of China, Pakistan and the Indian Ocean Region with shorter revisit times and better resolution, to shorten the "observe-orient-decide-act" loop. The phrase "deterrence by detection" is the class's; it was not found in the sources read.</td></tr>
+<tr><td>A failed satellite will be replaced in orbit within 60 minutes (SSLV).</td><td><strong>Not found</strong> in any source read <strong>[Verification Required]</strong>. ISRO describes the <strong>SSLV</strong> as a "launch-on-demand" vehicle with "low turn-around time" and "minimal launch infrastructure" for satellites up to 500 kg (<a href="#s-sslv">ISRO</a>) - a responsive-launch capability, but no 60-minute target was found (<a href="#c21">c21</a>).</td></tr>
+<tr><td>Operated by the Defence Space Agency, headed by an officer of the rank of Air Vice Marshal.</td><td>Confirmed: the <strong>Defence Space Agency (DSA)</strong> - a tri-service agency set up in <strong>2019</strong> - will operate the constellation; its Director General in 2026 is <strong>Air Vice Marshal Manu Midha</strong> (<a href="#s-bl">BusinessLine, 24 Feb 2026</a>; <a href="#s-gk">GK247</a>, secondary).</td></tr>
+</tbody></table></div>
+<p class="correction" id="c20"><strong>[Correction]</strong> <strong>"52 satellites by 2028"</strong>: reports give completion by <strong>2029</strong> (with the first launches from 2026). Also note the approval date: <strong>October 2024</strong> (CCS); one coaching page says October 2023, which conflicts with the Hindustan Times report of 11 Oct 2024 cited by Wikipedia.</p>
+<p class="correction" id="c21"><strong>[Correction]</strong> <strong>"Substitute placed in orbit in 60 minutes"</strong>: no source was found for this figure. Treat it as a <strong>[Verification Required]</strong> class claim. A safer statement: "SBS-III envisages <strong>quick replacement</strong> of lost satellites using responsive launchers such as the SSLV".</p>
+<p class="additional"><strong>[Additional] Earlier phases:</strong> SBS-I (approved 2001: Cartosat-2A, 2B, RISAT-1, RISAT-2) and SBS-II (2013: Cartosat-2C, 2D, 3A, 3B, Microsat-R and others; Microsat-R was the target in Mission Shakti, 2019) (<a href="#s-wikisbs">Wikipedia</a>, secondary). The <strong>Joint Military Space Doctrine</strong> was released in September 2025 (secondary report <strong>[Verification Required]</strong>).</p>
+</section>
+
+<section id="geo">
+<h2>46. Earth Observation Satellites in the Geostationary Orbit</h2>
+
+<h3 id="geo-char">46.1 Characteristics of the geostationary orbit</h3>
+<ul>
+<li><strong>Altitude:</strong> almost 36,000 km - precisely about <strong>35,786 km</strong> above the equator.</li>
+<li><strong>Period:</strong> almost 24 hours - precisely one sidereal day, about <strong>23 h 56 min</strong> - so the satellite <strong>remains fixed over a place</strong> on the equator.</li>
+<li><strong>Coverage:</strong> <strong>3 satellites</strong> spaced about 120 degrees apart can cover most of the world <strong>except the polar regions</strong> (beyond roughly 81 degrees latitude, a geostationary satellite is below the horizon).</li>
+<li><strong>Use for EO:</strong> a <strong>permanent watch</strong> over one region - meteorological services, disaster management (cyclones, floods, fires), agricultural monitoring and security.</li>
+</ul>
+<p class="additional"><strong>[Additional] Geostationary vs geosynchronous:</strong> every geostationary orbit is geosynchronous (24-hour period), but only one with <strong>zero inclination over the equator</strong> stays fixed in the sky. ISRO describes EOS-05 as its first imaging satellite "from Geosynchronous orbit" (<a href="#s-eos05">ISRO</a>).</p>
+
+<figure id="fig45">
+<h3>Figure 45. Three Geostationary Satellites Cover All but the Polar Regions (schematic) [Additional]</h3>
+<svg viewBox="0 0 760 340" role="img" aria-label="Left panel, looking down on the North Pole: the Earth with three geostationary satellites spaced 120 degrees apart; lines from each satellite touch the Earth's edge, and the three coverage zones overlap so the whole equator is seen. Right panel, side view: one geostationary satellite sees the Earth up to about 81 degrees north and south; the polar caps beyond are not visible.">
+<g font-family="Calibri, sans-serif" font-size="12" text-anchor="middle">
+<text x="190" y="18" font-weight="bold">A. Seen from above the North Pole</text>
+<circle cx="190" cy="170" r="140" fill="none" stroke="#0078d4" stroke-dasharray="6 4"/>
+<circle cx="190" cy="170" r="55" fill="#e3f2fd" stroke="#0078d4" stroke-width="2"/>
+<text x="190" y="174" font-size="11">Earth</text>
+<g stroke="#ef6c00" stroke-width="1.5">
+<line x1="190" y1="30" x2="241" y2="148"/><line x1="190" y1="30" x2="139" y2="148"/>
+<line x1="311" y1="240" x2="183" y2="225"/><line x1="311" y1="240" x2="234" y2="137"/>
+<line x1="69" y1="240" x2="146" y2="137"/><line x1="69" y1="240" x2="197" y2="225"/>
+</g>
+<rect x="182" y="24" width="16" height="12" fill="#ef6c00"/>
+<rect x="303" y="234" width="16" height="12" fill="#ef6c00"/>
+<rect x="61" y="234" width="16" height="12" fill="#ef6c00"/>
+<text x="190" y="332" font-size="11">3 satellites, 120 degrees apart; coverage zones overlap</text>
+<line x1="380" y1="10" x2="380" y2="335" stroke="#ccc"/>
+<text x="575" y="18" font-weight="bold">B. Side view: the poles are missed</text>
+<circle cx="520" cy="170" r="55" fill="#e3f2fd" stroke="#0078d4" stroke-width="2"/>
+<line x1="465" y1="170" x2="575" y2="170" stroke="#555" stroke-dasharray="3 3"/><text x="520" y="186" font-size="10">equator</text>
+<path d="M500,119 A55,55 0 0 1 540,119" fill="#90a4ae"/><path d="M500,221 A55,55 0 0 0 540,221" fill="#90a4ae"/>
+<rect x="662" y="164" width="16" height="12" fill="#ef6c00"/><text x="670" y="158" font-size="11">GEO satellite</text>
+<line x1="670" y1="170" x2="540" y2="119" stroke="#ef6c00" stroke-width="1.5"/>
+<line x1="670" y1="170" x2="540" y2="221" stroke="#ef6c00" stroke-width="1.5"/>
+<text x="520" y="105" font-size="11" fill="#455a64">polar cap not visible</text>
+<text x="520" y="245" font-size="11" fill="#455a64">polar cap not visible</text>
+<text x="575" y="290" font-size="11">Real limit: about 81 degrees N and S</text>
+<text x="575" y="306" font-size="11">(the satellite is about 6.6 Earth radii away)</text>
+</g>
+</svg>
+<figcaption>Schematic, <strong>not to scale</strong>: the geostationary orbit is drawn about 2.5 Earth radii from the centre (the real distance is about 6.6), so the drawn coverage is smaller than reality; the 81-degree limit is computed from the real geometry (arccos of 1/6.6).</figcaption>
+</figure>
+
+<h3 id="geo-isro">46.2 ISRO's Earth observation satellites in GEO</h3>
+<div class="table-wrap"><table>
+<caption>The class list, checked</caption>
+<thead><tr><th scope="col" style="width:20%">Satellite</th><th scope="col">Checked position</th><th scope="col" style="width:20%">Status</th></tr></thead>
+<tbody>
+<tr><td><strong>INSAT-3D</strong> (2013), <strong>INSAT-3DR</strong> (2016), <strong>INSAT-3DS</strong></td><td>Third-generation <strong>meteorological</strong> satellites: imager plus sounder. INSAT-3DS was launched on <strong>GSLV-F14 on 17 Feb 2024</strong>, funded by the Ministry of Earth Sciences; it carries a <strong>6-channel imager</strong>, a <strong>19-channel sounder</strong>, a data relay transponder and a search-and-rescue transponder, and augments INSAT-3D and 3DR (<a href="#s-pib3ds">PIB</a>).</td><td>Operational</td></tr>
+<tr><td><strong>GISAT-1 (EOS-03)</strong></td><td>Launched on <strong>GSLV-F10 (a GSLV Mk II) on 12 Aug 2021</strong>; <strong>failed to reach orbit</strong> - the onboard computer aborted the mission at 307 s after an anomaly in the cryogenic upper stage (<a href="#s-gslvf10">ISRO</a>).</td><td>Lost (launch failure)</td></tr>
+<tr><td><strong>EOS-05 (GISAT-1A)</strong></td><td>The latest: launched on <strong>GSLV-F17</strong> - 3 Sep 2026 (UTC), 4 Sep 2026 in India - into a sub-geosynchronous transfer orbit, then raised to geosynchronous orbit (reported 8 Sep 2026). ISRO calls it "India's first ever imaging satellite from Geosynchronous orbit" (<a href="#s-eos05">ISRO</a>; <a href="#s-wikieos05">Wikipedia</a>; <a href="#s-nation">Nation Press</a>).</td><td>Launched Sep 2026</td></tr>
+</tbody></table></div>
+
+<div class="table-wrap"><table>
+<caption>GISAT imaging capability (GISAT-1 design, carried forward to the series)</caption>
+<thead><tr><th scope="col">Imager</th><th scope="col">Bands</th><th scope="col">Spectral range</th><th scope="col">Resolution</th></tr></thead>
+<tbody>
+<tr><td>Multispectral VNIR</td><td>6</td><td>0.45-0.875 micrometres</td><td><strong>42 m</strong></td></tr>
+<tr><td>Hyperspectral VNIR</td><td>158</td><td>0.375-1.0 micrometres</td><td>318 m</td></tr>
+<tr><td>Hyperspectral SWIR</td><td>256</td><td>0.9-2.5 micrometres</td><td>191 m</td></tr>
+</tbody></table></div>
+<p class="small">Sources: <a href="#s-iirs">IIRS brief on GISAT-1</a>; <a href="#s-wikigisat">Wikiwand/Wikipedia</a>. Imaging cadence: <strong>selected areas every 5 minutes</strong> and the <strong>entire Indian landmass every 30 minutes</strong> at 42 m, under cloud-free conditions (<a href="#s-wikieos05">Wikipedia</a>, secondary).</p>
+
+<p class="correction" id="c22"><strong>[Correction]</strong> <strong>"The latest is GISAT-1 launched onboard GSLV Mk 2"</strong>: GISAT-1 (EOS-03) was lost in the <strong>GSLV-F10 failure of 12 Aug 2021</strong>. The latest GEO imaging satellite is <strong>EOS-05 (GISAT-1A)</strong>, launched on <strong>GSLV-F17 in September 2026</strong>. GISAT is also an <strong>imaging</strong> satellite, unlike the INSAT-3D series, which are <strong>meteorological</strong> (imager + sounder).</p>
+<p class="correction" id="c23"><strong>[Correction]</strong> <strong>"Resolution of 42 m means it will create data in tiles of 42 x 42 m ... after a gap of 30 min"</strong>: 42 m applies to the <strong>multispectral</strong> imager only (each pixel covers about 42 m x 42 m on the ground); the hyperspectral imagers are coarser (<strong>191 m and 318 m</strong>). The 30-minute figure is for imaging the <strong>whole Indian landmass</strong>; selected areas can be imaged <strong>every 5 minutes</strong>. Some reports describe EOS-05's coverage in surveillance terms (Nation Press); its role in SBS-III is not officially stated <strong>[Verification Required]</strong>.</p>
+
+<figure id="fig46">
+<h3>Figure 46. GISAT Spatial Resolution by Imager (metres; smaller = finer) [Additional]</h3>
+<svg viewBox="0 0 760 200" role="img" aria-label="Horizontal bar chart of ground resolution: multispectral VNIR 42 metres; hyperspectral SWIR 191 metres; hyperspectral VNIR 318 metres.">
+<g font-family="Calibri, sans-serif" font-size="12">
+<text x="20" y="50" font-weight="bold">Multispectral VNIR</text>
+<rect x="210" y="35" width="63" height="22" fill="#2e7d32"/><text x="280" y="51">42 m (6 bands)</text>
+<text x="20" y="95" font-weight="bold">Hyperspectral SWIR</text>
+<rect x="210" y="80" width="287" height="22" fill="#0078d4"/><text x="504" y="96">191 m (256 bands)</text>
+<text x="20" y="140" font-weight="bold">Hyperspectral VNIR</text>
+<rect x="210" y="125" width="477" height="22" fill="#ef6c00"/><text x="448" y="141" text-anchor="middle" fill="#fff" font-weight="bold">318 m (158 bands)</text>
+<line x1="210" y1="160" x2="690" y2="160" stroke="#555"/>
+<text x="210" y="177" text-anchor="middle" font-size="11">0</text><text x="360" y="177" text-anchor="middle" font-size="11">100</text><text x="510" y="177" text-anchor="middle" font-size="11">200</text><text x="660" y="177" text-anchor="middle" font-size="11">300 m</text>
+</g>
+</svg>
+<figcaption>To scale: 1.5 px per metre. Data: <a href="#s-iirs">IIRS GISAT-1 brief</a>. Shows the multispectral/hyperspectral trade-off of Section 42.3: more bands, coarser pixels.</figcaption>
+</figure>
+</section>
+
+<section id="comm">
+<h2>47. Communication Satellites</h2>
+<p class="note"><strong>[Placeholder]</strong> The rough notes end at the heading "Communication satellite". The class content will be added in the next note.</p>
+</section>
+
+<section id="status">
+<h2>48. Status as of 4 November 2026 (linkage to the news)</h2>
+<div class="table-wrap"><table>
+<caption>Time-sensitive facts used in this note</caption>
+<thead><tr><th scope="col" style="width:20%">Item</th><th scope="col">Status and date</th><th scope="col" style="width:22%">Source</th></tr></thead>
+<tbody>
+<tr><td>NISAR</td><td>Launched 30 Jul 2025; science operations since early Jan 2026; NASA provisional L-band data released 20 Jul 2026; ISRO S-band products on Bhoonidhi (24 Jul 2026); one-year review on 4 Aug 2026.</td><td><a href="#s-nasa">NASA</a>; <a href="#s-isronisar">ISRO</a>; <a href="#s-isro1yr">ISRO</a></td></tr>
+<tr><td>Mission Drishti</td><td>Launched 3 May 2026; the eoPortal entry (updated 16 Jun 2026) still lists the constellation as "planned". No public statement on operational imagery was read for this note.</td><td><a href="#s-eodrishti">eoPortal</a></td></tr>
+<tr><td>SBS-III</td><td>52 satellites (21 ISRO, 31 private); completion targeted by 2029; a parliamentary panel led by Shashi Tharoor has sought time-bound implementation (reported Jul 2026). No confirmed SBS-III launch was found in the sources read <strong>[Verification Required]</strong>.</td><td><a href="#s-toisbs">TOI, 21 Jul 2026</a>; <a href="#s-beats">Beats in Brief</a></td></tr>
+<tr><td>EOS-05 (GISAT-1A)</td><td>Launched on GSLV-F17 in Sep 2026; reached geosynchronous orbit (reported 8 Sep 2026).</td><td><a href="#s-eos05">ISRO</a>; <a href="#s-wikieos05">Wikipedia</a></td></tr>
+<tr><td>Defence Space Agency</td><td>DG: Air Vice Marshal Manu Midha (Feb and Aug 2026 reports).</td><td><a href="#s-bl">BusinessLine</a></td></tr>
+</tbody></table></div>
+</section>
+
+<section id="prelims">
+<h2>Key Facts for Prelims</h2>
+<ul>
+<li><strong>Polar LEO</strong>: one orbit in about 90-100 min (14-15 a day); whole-globe coverage; mostly <strong>sun-synchronous</strong>.</li>
+<li><strong>Passive</strong> sensors record reflected sunlight (or emitted heat); <strong>active</strong> sensors (radar/SAR, lidar) send their own signal. SAR = day-night, all-weather.</li>
+<li><strong>Multispectral</strong>: few broad bands with gaps. <strong>Hyperspectral</strong>: hundreds of narrow, contiguous bands; identifies materials.</li>
+<li><strong>NISAR</strong>: NASA (L-band SAR, 24 cm; 12 m reflector) + ISRO (S-band SAR, 9.4 cm; bus; launch); <strong>GSLV-F16, 30 Jul 2025</strong>; <strong>dawn-dusk SSO, 747 km, 98.4 degrees</strong>; swath about 242 km; <strong>12-day repeat</strong> (about 6-day average sampling); <strong>SweepSAR</strong>; first dual-frequency (L + S) radar satellite; data free (ASF; Bhoonidhi).</li>
+<li><strong>Mission Drishti</strong>: <strong>GalaxEye</strong> (Bengaluru, IIT Madras alumni, 2021); <strong>3 May 2026</strong>, <strong>Falcon 9</strong>, Vandenberg; <strong>190 kg</strong>; SSO about 500 km; <strong>world's first OptoSAR</strong> (X-band SAR + 7-band multispectral); onboard <strong>SyncFusion</strong>; 8-12 satellite constellation planned. Precursor: GLX-SQ on POEM-4 (PSLV-C60, Dec 2024).</li>
+<li><strong>SBS-III</strong>: CCS Oct 2024; Rs 26,968 crore; <strong>52 satellites (21 ISRO + 31 private)</strong>; LEO and GEO; complete by 2029; operated by the <strong>Defence Space Agency</strong> (est. 2019; DG Air Vice Marshal).</li>
+<li><strong>GEO</strong>: 35,786 km; period 23 h 56 min; 3 satellites cover all but the poles (beyond about 81 degrees).</li>
+<li><strong>INSAT-3D / 3DR / 3DS</strong>: meteorology; 3DS on <strong>GSLV-F14, 17 Feb 2024</strong> (6-channel imager, 19-channel sounder).</li>
+<li><strong>GISAT-1 (EOS-03)</strong>: lost, <strong>GSLV-F10, 12 Aug 2021</strong> (cryogenic stage). <strong>EOS-05 (GISAT-1A)</strong>: <strong>GSLV-F17, Sep 2026</strong>, India's first imaging satellite from geosynchronous orbit; 42 m multispectral, 191/318 m hyperspectral; India every 30 min, selected areas every 5 min.</li>
+</ul>
+</section>
+
+<section id="mains">
+<h2>Mains Points</h2>
+<ul>
+<li><strong>Why SAR matters for India:</strong> the monsoon cloud cover and night-time limit optical imaging when floods, cyclones and border incidents need watching most; SAR (RISAT, NISAR, Drishti) gives day-night, all-weather coverage.</li>
+<li><strong>NISAR as a model of cooperation:</strong> cost- and technology-sharing (NASA's L-band and reflector; ISRO's S-band, bus and GSLV), open data policy, and Indian science priorities (crops, forests, coasts, Himalayan glaciers) built in. Applications: disaster risk (earthquakes, landslides, subsidence), agriculture and food security, forest carbon accounting, water resources, climate science.</li>
+<li><strong>Private sector in strategic space:</strong> Drishti shows Indian start-ups building world-first sensors after the 2020 reforms (IN-SPACe, NSIL support, the Indian Space Policy 2023); SBS-III gives 31 of 52 satellites to private firms. Risks: dependence on foreign launchers (Falcon 9), data security, and the need for assured government demand.</li>
+<li><strong>Space and national security:</strong> SBS-III, the Defence Space Agency and a military space doctrine respond to the lesson that real-time intelligence shortens the decision loop (Operation Sindoor, May 2025, as reported). Persistent watch needs both <strong>LEO</strong> (resolution) and <strong>GEO</strong> (continuity, e.g. EOS-05) plus resilience: proliferated constellations, quick replacement, protection of satellites.</li>
+<li><strong>Data fusion and AI:</strong> onboard fusion (OptoSAR) and onboard processing cut the time from image to decision; issues include standards, validation and trained analysts.</li>
+<li><strong>Way forward:</strong> raise launch cadence (PSLV, SSLV, private launchers) so replacements are truly responsive; deepen the national data infrastructure (Bhoonidhi, open data where security allows); combine GEO hyperspectral (GISAT) with LEO SAR for agriculture and disasters; keep transparency about what is approved versus planned.</li>
+</ul>
+</section>
+
+<section id="traps">
+<h2>Common Traps / Confusions</h2>
+<ul>
+<li><strong>1.5 hours</strong> is the period of a full polar orbit, not the pole-to-pole half.</li>
+<li><strong>Passive is not only optical</strong>: thermal infrared and microwave radiometers are passive; <strong>lidar</strong> is active but optical.</li>
+<li><strong>Hyperspectral</strong> = many narrow, contiguous bands (spectral detail), not necessarily finer pixels.</li>
+<li><strong>NISAR bands</strong>: L-band (24 cm) is <strong>NASA's</strong>; S-band (9.4 cm) is <strong>ISRO's</strong>. Both share the 12 m reflector and the 242 km swath.</li>
+<li><strong>NISAR revisit</strong>: 12-day repeat cycle; "about 6 days" is the average when ascending and descending passes are combined.</li>
+<li><strong>Dawn-dusk</strong> orbit is a sun-synchronous polar orbit along the terminator; it is <strong>not</strong> geostationary.</li>
+<li><strong>Drishti</strong>: one satellite (not a batch); <strong>multispectral</strong> optical (no hyperspectral reported); launched by <strong>SpaceX</strong>, not ISRO; built by <strong>GalaxEye</strong>, not ISRO.</li>
+<li><strong>SBS-III</strong>: 21 ISRO + 31 private = 52; approved 2024 (not 2023); target 2029.</li>
+<li><strong>GISAT-1 failed</strong> (2021); <strong>EOS-05 = GISAT-1A</strong> (2026). <strong>INSAT-3D series</strong> = weather satellites; <strong>GISAT</strong> = imaging satellites.</li>
+<li><strong>Geostationary</strong> (fixed in the sky, equatorial) vs <strong>geosynchronous</strong> (24 h period, may be inclined).</li>
+</ul>
+</section>
+
+<section id="thirty">
+<h2>30-Second Revision</h2>
+<p><strong>Polar orbit</strong>: full orbit in about 90-100 min, whole-globe coverage; hosts remote sensing satellites. <strong>Optical/passive</strong> (reflected sunlight; no night, no cloud) - <strong>multispectral</strong> (few broad bands with gaps) and <strong>hyperspectral</strong> (many narrow contiguous bands). <strong>Microwave/active</strong> (own pulses; 24/7, all weather): RISAT, NISAR. <strong>NISAR</strong>: NASA L-band (deep penetration) + ISRO S-band (light vegetation), GSLV-F16, 30 Jul 2025, dawn-dusk SSO 747 km (steady sunlight, quieter ionosphere), 12-day repeat, SweepSAR (12 m reflector, echo sweeps across the feed array), 242 km swath. <strong>Drishti</strong>: GalaxEye, 3 May 2026, Falcon 9, 190 kg, world's first OptoSAR (X-band SAR + 7-band MSI, onboard SyncFusion), 8-12 planned. <strong>SBS-III</strong>: 52 satellites (21 ISRO, 31 private), Rs 26,968 crore, by 2029, run by the Defence Space Agency (Air Vice Marshal). <strong>GEO EO</strong>: 35,786 km, fixed view, 3 satellites cover all but the poles; INSAT-3D/3DR/3DS (weather; 3DS 2024); GISAT-1 lost 2021; <strong>EOS-05/GISAT-1A</strong> launched Sep 2026 (42 m, India every 30 min).</p>
+</section>
+
+<section id="pyqs">
+<h2>Previous Year Questions (PYQs)</h2>
+<p class="small">Source status: no official UPSC paper was opened in this session. Suggested links are <strong>[Additional]</strong> study guidance.</p>
+<div class="answer" id="pyq-2018b">
+<p><strong>2018 | UPSC CSE Prelims | General Studies Paper I</strong> (reproduced in full, with answer, in the <a href="Science%20and%20Technology%20-%20Class%2011-02-2026.html#pyq-2018">2 Nov note</a>). Statement 2 - "satellites launched by PSLV appear to remain permanently in the same position in the sky" - is wrong because PSLV places Earth observation satellites in <strong>polar/sun-synchronous</strong> orbits. <strong>Link to today [Additional]:</strong> only <strong>geostationary</strong> satellites (Section 46.1) appear fixed; polar satellites such as NISAR and Drishti pass overhead and revisit after days.</p>
+</div>
+<p class="note"><strong>[No verified PYQ found for this topic]</strong> NISAR, SweepSAR, dawn-dusk orbits, multispectral vs hyperspectral imaging, OptoSAR/Mission Drishti, SBS-III and GISAT - no authentic UPSC Prelims or GS Paper III Mains question was verified in this session. Coaching-site practice questions are <strong>not</strong> PYQs and are not reproduced.</p>
+</section>
+
+<section id="corrections">
+<h2>Corrections Made</h2>
+<p>Substantive changes are marked where they occur. Spelling and typing repairs were made silently and are not listed. Numbering continues from the 2 Nov note (c01-c12).</p>
+<ol start="13">
+<li><a href="#c13">1.5 hours is the full orbital period, not pole to pole.</a></li>
+<li><a href="#c14">"Optical = passive, microwave = active" is a simplification (thermal IR, radiometers, lidar).</a></li>
+<li><a href="#c15">Ionospheric electron content peaks in the early afternoon; it delays and rotates radar signals; dawn-dusk design rationale unconfirmed.</a></li>
+<li><a href="#c16">L-band: deeper penetration; S-band: light vegetation, not "horizontal coverage"; swath comes from SweepSAR.</a></li>
+<li><a href="#c17">SweepSAR: echo sweeps across the feed array of an array-fed reflector.</a></li>
+<li><a href="#c18">GalaxEye launched one satellite (190 kg); GLX-SQ precursor.</a></li>
+<li><a href="#c19">Drishti's optical sensor is multispectral only; "AI" unconfirmed.</a></li>
+<li><a href="#c20">SBS-III: completion by 2029, approved October 2024.</a></li>
+<li><a href="#c21">"Replacement within 60 minutes" not found; SSLV is launch-on-demand.</a></li>
+<li><a href="#c22">GISAT-1 failed in 2021; latest is EOS-05 (GISAT-1A), Sep 2026.</a></li>
+<li><a href="#c23">42 m is multispectral only; 30 min = whole India, 5 min = selected areas.</a></li>
+</ol>
+</section>
+
+<section id="visuals">
+<h2>Visual Representations Required / Recommended</h2>
+<ul>
+<li><strong>Included:</strong> <a href="#fig40">Figure 40</a> (passive vs active sensing), <a href="#fig41">Figure 41</a> (multispectral vs hyperspectral bands), <a href="#fig42">Figure 42</a> (dawn-dusk orbit), <a href="#fig43">Figure 43</a> (SweepSAR scan-on-receive), <a href="#flow-optosar">Figure 44</a> (OptoSAR fusion), <a href="#fig45">Figure 45</a> (three GEO satellites and polar gaps), <a href="#fig46">Figure 46</a> (GISAT resolutions); comparison tables in Sections 42.2, 42.3, 43.1, 43.3, 44.1, 45 and 46.2. The polar-orbit ground-track figure deferred from the 2 Nov note is covered by Figures 39 (2 Nov) and 42.</li>
+<li><strong>Not included:</strong> actual NISAR or Drishti images (copyrighted and not self-contained), and an SBS-III orbit layout (no official configuration is published; drawing one would mean guessing).</li>
+</ul>
+<p><strong>[All necessary visual representations included]</strong> (no required or recommended markers are outstanding).</p>
+</section>
+
+<section id="sources">
+<h2>Open Sources / Further Reading</h2>
+<p class="small">HTTPS public sources consulted on 4 November 2026, mostly as search-result extracts (not full documents). Secondary sources are labelled.</p>
+<ol>
+<li id="s-nasa"><a href="https://science.nasa.gov/mission/nisar/">NASA Science: NISAR mission page</a> - wavelengths (L 24 cm, S 9.4 cm), science phase, data releases (20 Jul 2026).</li>
+<li id="s-nasaqf"><a href="https://science.nasa.gov/mission/nisar/mission-overview/">NASA Science: NISAR quick facts</a> - 747 km, 98.4 degrees, 6 AM/6 PM nodes, 12-day repeat, about 6-day average sampling, 3-10 m resolution, science operations from early Jan 2026.</li>
+<li id="s-nasasat"><a href="https://science.nasa.gov/mission/nisar/about-the-satellite/">NASA Science: About the NISAR satellite</a> - dawn-dusk SSO, NASA and ISRO contributions, SweepSAR, 12 m reflector, 242 km swath, S-band uses and ionosphere.</li>
+<li id="s-isronisar"><a href="https://www.isro.gov.in/ISRO_EN/NISARS_Band_SAR_Data_Products_Release.html">ISRO: NISAR S-band SAR data products release (24 Jul 2026)</a> - world's first dual-frequency spaceborne radar, SweepSAR, about 240 km swath, 747 km SSO, Bhoonidhi.</li>
+<li id="s-isro1yr"><a href="https://www.isro.gov.in/ISRO_EN/one_successful_year_of_NISAR.html">ISRO: One successful year of NISAR (17 Aug 2026)</a> - GSLV-F16 launch on 30 Jul 2025; event of 4 Aug 2026; S-band biomass and crop products.</li>
+<li id="s-eonisar"><a href="https://www.eoportal.org/satellite-missions/nisar">eoPortal: NISAR</a> (secondary) - first satellite with two radar frequencies; division of contributions.</li>
+<li id="s-mdpi"><a href="https://www.mdpi.com/2076-3417/9/18/3871">Zhu et al., Applied Sciences (MDPI), 2019: InSAR ionospheric correction based on Faraday rotation</a> - ionospheric effects are significant for L-band and lower frequencies, including NISAR.</li>
+<li id="s-et"><a href="https://economictimes.indiatimes.com/tech/startups/spacetech-startup-galaxeye-launches-mission-drishti-from-spacex/articleshow/130730407.cms">Economic Times: GalaxEye launches Mission Drishti (3 May 2026)</a> - 190 kg, Falcon 9, Vandenberg, founders, "at least 10" satellites.</li>
+<li id="s-toi"><a href="https://timesofindia.indiatimes.com/india/galaxeye-launches-drishti-says-its-the-worlds-1st-optosar-satellite/articleshow/130729955.cms">Times of India: GalaxEye launches Drishti (3 May 2026)</a> - "world's first OptoSAR satellite", 8-12 satellite plan, DSA interest.</li>
+<li id="s-cnbc"><a href="https://www.cnbctv18.com/india/science/galaxeye-launches-worlds-first-optosar-satellite-mission-drishti-into-orbit-all-about-the-project-ws-l-19899881.htm">CNBC-TV18: Inside GalaxEye (6 May 2026)</a> - optical multispectral imager plus SAR; launch date.</li>
+<li id="s-indiatoday"><a href="https://www.indiatoday.in/science/story/mission-drishti-launched-indian-startup-lifts-off-to-space-aboard-musks-spacex-falcon-9-2904987-2026-05-03">India Today: Mission Drishti launched (3 May 2026)</a> - single-pass capture and fusion; "three times more actionable information" claim.</li>
+<li id="s-eodrishti"><a href="https://www.eoportal.org/satellite-missions/galaxeye">eoPortal: Drishti Constellation (GalaxEye), updated 16 Jun 2026</a> (secondary; read in full) - SSO about 500 km, X-band SAR and 7-band MSI specifications, SyncFusion, CAS500-2 rideshare, GLX-SQ on POEM-4, NSIL/ISTRAC support.</li>
+<li id="s-wikisbs"><a href="https://en.wikipedia.org/wiki/Space_Based_Surveillance_project_%28India%29">Wikipedia: Space Based Surveillance project (India)</a> (secondary) - phases I-III, CCS approval 12 Oct 2024, Rs 26,968 crore, SAR, inter-satellite links.</li>
+<li id="s-vajiram"><a href="https://vajiramandravi.com/current-affairs/space-based-surveillance-iii-programme/">Vajiram and Ravi: SBS-III (1 Jul 2025)</a> (secondary) - 21 ISRO + 31 private, first launch by April 2026, completion by end-2029 (gives approval as Oct 2023 - conflicting).</li>
+<li id="s-beats"><a href="https://beatsinbrief.com/2026/06/08/india-52-satellite-surveillance-network-sbs-iii-2029/">Beats in Brief: SBS-III explained (8 Jun 2026)</a> (secondary) - deployments from 2026, completion by 2029.</li>
+<li id="s-toisbs"><a href="https://timesofindia.indiatimes.com/defence/news/tracking-threats-before-they-reach-border-indias-next-line-of-defence-taking-shape-in-space/articleshow/132536458.cms">Times of India: India's next line of defence taking shape in space (21 Jul 2026)</a> - OODA loop; parliamentary panel.</li>
+<li id="s-cosmo"><a href="https://cosmoscience.in/india-mobilizes-52-satellite-constellation-to-track-deep-territory-threats/">Cosmo Science: 52-satellite constellation (23 Jul 2026)</a> (secondary) - LEO and GEO, onboard AI alerts to the DSA.</li>
+<li id="s-gk"><a href="https://www.thegk247.com/india-fast-tracks-space-based-military-surveillance/">GK247: India fast-tracks space-based military surveillance (13 Aug 2025)</a> (secondary) - DSA to operate the constellation; DSA established 2019.</li>
+<li id="s-bl"><a href="https://www.thehindubusinessline.com/news/national/indias-space-assets-played-key-role-in-op-sindoor-defence-space-agency-dg/article70671485.ece">Hindu BusinessLine: Defence Space Agency DG on Op Sindoor (24 Feb 2026)</a> - DG Air Vice Marshal Manu Midha.</li>
+<li id="s-sslv"><a href="https://www.isro.gov.in/mission_SSLV_D1.html">ISRO: SSLV-D1/EOS-02 mission page</a> - SSLV as a "launch-on-demand" vehicle for up to 500 kg, low turn-around time.</li>
+<li id="s-pib3ds"><a href="https://www.pib.gov.in/PressReleasePage.aspx?PRID=2006794">PIB: GSLV-F14/INSAT-3DS successfully launched (17 Feb 2024)</a> - payloads; augments INSAT-3D and 3DR.</li>
+<li id="s-gslvf10"><a href="https://www.isro.gov.in/ISRO_EN/GSLVMission.html">ISRO: GSLV-F10/EOS-03 mission failure - Failure Analysis Committee conclusions</a> - 12 Aug 2021; abort at 307 s; cryogenic upper stage.</li>
+<li id="s-eos05"><a href="https://www.isro.gov.in/Mission_GSLVF17.html">ISRO: GSLV-F17/EOS-05 mission</a> - sub-GTO; "India's first ever imaging satellite from Geosynchronous orbit".</li>
+<li id="s-wikieos05"><a href="https://en.wikipedia.org/wiki/EOS-05">Wikipedia: EOS-05 (GISAT-1A)</a> (secondary) - launch 3 Sep 2026 21:25 UTC on GSLV-F17; imaging cadence; news references of 4-8 Sep 2026.</li>
+<li id="s-nation"><a href="https://www.nationpress.com/business/eos-05-indias-first-geostationary-spy-satellite">Nation Press: EOS-05 gives India persistent watch (19 Sep 2026)</a> (secondary) - launch on 4 Sep 2026; surveillance framing.</li>
+<li id="s-wikigisat"><a href="https://www.wikiwand.com/en/articles/GISAT">Wikiwand (Wikipedia): GEO Imaging Satellite</a> (secondary) - GISAT-1 band table; failure; series.</li>
+<li id="s-iirs"><a href="https://ioccg.org/wp-content/uploads/2021/07/chauhan-gisat-1.pdf">IIRS (P. Chauhan) via IOCCG: GSLV-F10/GISAT-1 mission brief (2021)</a> - 42 m, 318 m, 191 m; 6, 158 and 256 bands; 85.5 degrees E planned slot.</li>
+<li>Previous note: <a href="Science%20and%20Technology%20-%20Class%2011-02-2026.html">Science and Technology - Class 11-02-2026</a> (RLVs, EO satellite uses and orbits, Figure 39, 2018 PYQ).</li>
+</ol>
+</section>
+</main>
+</body>
+</html>
