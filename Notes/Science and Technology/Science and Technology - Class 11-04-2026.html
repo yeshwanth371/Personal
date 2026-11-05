@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Science and Technology - Class Notes | 4 November 2026</title>
+<style>
+  * { box-sizing: border-box; }
+  body { font-family: Calibri, sans-serif; font-size: 11pt; line-height: 1.6; max-width: 900px; margin: 20px auto; padding: 0 20px; color: #202124; }
+  h1 { font-size: 20pt; color: #1a1a1a; border-bottom: 2px solid #333; padding-bottom: 4px; margin-top: 30px; }
+  h2 { font-size: 16pt; color: #2b2b2b; margin-top: 28px; border-bottom: 1px solid #ddd; padding-bottom: 3px; }
+  h3 { font-size: 13pt; color: #3a3a3a; margin-top: 18px; }
+  p { margin: 8px 0; }
+  ul, ol { margin: 6px 0; padding-left: 28px; }
+  li { margin: 4px 0; }
+  a { color: #005ea6; overflow-wrap: anywhere; }
+  table { border-collapse: collapse; width: 100%; margin: 10px 0; table-layout: fixed; }
+  caption { text-align: left; font-weight: bold; margin-bottom: 6px; }
+  th, td { border: 1px solid #999; padding: 6px 10px; text-align: left; vertical-align: top; overflow-wrap: anywhere; }
+  th { background: #f0f0f0; }
+  .table-wrap { overflow-x: auto; }
+  .note, .exam, .verification { background: #fff8e1; border-left: 3px solid #f5a623; padding: 8px 12px; margin: 10px 0; overflow-wrap: anywhere; }
+  .correction { background: #fff3e0; border-left: 3px solid #ef6c00; padding: 8px 12px; margin: 10px 0; }
+  .additional, .lead { background: #e8f5e9; border-left: 3px solid #2e7d32; padding: 8px 12px; margin: 10px 0; }
+  .flow { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 10px; padding: 12px 0; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; }
+  .flow span { text-align: center; max-width: 100%; }
+  .flow .box { border: 1px solid #888; background: #f7f7f7; padding: 6px 10px; border-radius: 4px; flex: 1 1 120px; }
+  figure { margin: 16px 0; padding: 12px; border: 1px solid #bbb; background: #fff; }
+  figure h3 { margin-top: 0; text-align: center; }
+  figcaption { margin-top: 8px; color: #555; font-size: 9.5pt; }
+  svg { max-width: 100%; height: auto; display: block; margin: 0 auto; }
+  .cols2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  .cols3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+  .cols4 { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
+  .tile { border: 1px solid #888; border-radius: 4px; padding: 8px; background: #f5f9fd; font-size: 10.5pt; }
+  .tile.p1 { background: #e8f5e9; border-color: #2e7d32; }
+  .tile.p2 { background: #f5f9fd; border-color: #0078d4; }
+  .tile.p3 { background: #fff3e0; border-color: #ef6c00; }
+  .tile.p4 { background: #fdecea; border-color: #c62828; }
+  .small { color: #555; font-size: 9.5pt; }
+  .answer { margin: 10px 0; padding: 6px 12px; border-left: 3px solid #0078d4; background: #f5f9fd; }
+  @media (max-width: 650px) {
+    body { padding: 0 12px; }
+    .cols2, .cols3, .cols4 { grid-template-columns: 1fr; }
+    .flow { flex-direction: column; align-items: stretch; }
+    .flow .box { flex: none; }
+    th, td { padding: 6px; }
+  }
+  @media print {
+    @page { size: A4; margin: 14mm; }
+    body { max-width: none; margin: 0; padding: 0; }
+    h1, h2, h3 { break-after: avoid; }
+    figure, tr, .answer, .tile { break-inside: avoid; }
+    thead { display: table-header-group; }
+    .table-wrap { overflow: visible; }
+    a { color: inherit; text-decoration: none; }
+    p, li { orphans: 3; widows: 3; }
+  }
+</style>
+</head>
+<body>
+<main>
+<header>
+<h1>Science and Technology - Class Notes | 4 November 2026</h1>
+<p><strong>Topics:</strong> Space - <strong>communication satellites</strong> (LEO, MEO and GEO); <strong>satellite-based internet</strong> (Starlink, Eutelsat OneWeb, Amazon Leo/Kuiper, Jio-SES) - how it works, components, significance and concerns; the <strong>satcom spectrum controversy</strong> (administrative assignment vs auction, Telecommunications Act 2023); <strong>communication satellites in GEO</strong>; <strong>satellite-based navigation</strong> (trilateration, SPS vs PPS/RS, the six navigation systems); IRNSS/NavIC (heading only).</p>
+<p class="small">Note date: <time datetime="2026-11-04">4 November 2026</time>. <strong>Continuation:</strong> this note continues the <a href="Science%20and%20Technology%20-%20Class%2011-03-2026.html">3 November note</a>, which left <strong>Section 47 ("Communication Satellites")</strong> as a placeholder and used Section 48 for its status table. Today's communication-satellite material is therefore given as <strong>Section 49</strong> (it completes Section 47); numbering runs from <strong>Section 49</strong>, figures from <strong>Figure 47</strong> and corrections from <strong>c24</strong>. Earlier notes are untouched. The rough notes end at the heading <strong>"IRNSS / NavIC:"</strong>; Section 54 is left as a placeholder for the next class.</p>
+<p class="note"><strong>Reading key:</strong> <strong>[Correction]</strong> repairs a substantive claim; <strong>[Additional]</strong> marks supporting material or study guidance; <strong>[Verification Required]</strong> keeps useful but unresolved material. Sources were consulted on <strong>5 November 2026</strong>; statuses are stated <strong>as of 4 November 2026</strong>. Read in relevant part: ISRO (NavIC services page, IRNSS ICD page, GSLV-F18/NVS-03 mission and orbit-manoeuvre pages), PIB backgrounder on NVS-03 (1 Nov 2026), the Telecommunications Act 2023 (Section 4 and First Schedule, via India Code mirrors), the Supreme Court 2G judgment (2 Feb 2012), GPS.gov, ESA (Galileo), JAXA and Japan's Cabinet Office (QZS-7), eoPortal (OneWeb, Amazon Leo/Kuiper, GLONASS), NASA (band designators), and news reports (Business Standard, BusinessLine, Communications Today, Voice&amp;Data, ETTelecom, Bloomberg via Straits Times, Indian Express, Deccan Herald) and trackers (KeepTrack, Orbital Radar, Upside Curve) cited in <a href="#sources">Sources</a>. Almost all were read as <strong>search-result extracts</strong>, not full documents. Official UPSC papers were not opened. Spelling and typing repairs ("crusila", "educatio", "caharceteristisc", "controvercy", "triliteration", "Vcivil", "Quasi zenit", "beidu", "DTK", "ses luxemberg") were made silently.</p>
+</header>
+
+<section id="comm">
+<h2>49. Communication Satellites (completes Section 47)</h2>
+
+<h3 id="comm-what">49.1 What they do and where they are placed</h3>
+<ul>
+<li><strong>Communication satellites</strong> relay signals between distant points on Earth: <strong>TV broadcasting</strong>, <strong>DTH (Direct-to-Home)</strong>, <strong>internet</strong>, telephony, VSAT networks (banks, ATMs, remote offices), mobile-tower backhaul, and connectivity for ships and aircraft.</li>
+<li>Class: they are placed in <strong>polar</strong> and <strong>geostationary (GEO)</strong> orbits. <strong>Checked:</strong> communication satellites use <strong>three</strong> orbit classes - <strong>LEO</strong>, <strong>MEO</strong> and <strong>GEO</strong> - and most LEO broadband satellites fly in <strong>inclined</strong>, not polar, orbits (<a href="#c24">c24</a>).</li>
+</ul>
+<p class="correction" id="c24"><strong>[Correction]</strong> <strong>"Communication satellites are placed into polar and GEO"</strong>: write "LEO, MEO and GEO". Examples: Starlink's shells are at about <strong>43, 53, 70 and 97 degrees</strong> inclination - only the 97-degree shell is near-polar (<a href="#s-upside">Upside Curve, Nov 2026</a>; <a href="#s-ktstar">KeepTrack</a>); Eutelsat OneWeb is <strong>near-polar</strong> (about 87-88 degrees) (<a href="#s-eoow">eoPortal</a>; <a href="#s-orbow">Orbital Radar</a>); SES's <strong>O3b mPOWER</strong> (used by Jio-SES) is in <strong>MEO at about 8,000 km</strong> (<a href="#s-o3b">Wikipedia</a>); TV/DTH satellites (ISRO's GSAT series, for example) are in GEO.</p>
+
+<div class="table-wrap"><table>
+<caption>LEO vs MEO vs GEO for communication [Additional]</caption>
+<thead><tr><th scope="col" style="width:20%">Point</th><th scope="col">LEO</th><th scope="col">MEO</th><th scope="col">GEO</th></tr></thead>
+<tbody>
+<tr><td>Altitude used</td><td>About 480-1,200 km (Starlink about 480-560 km; OneWeb about 1,200 km; Amazon Leo 590-630 km)</td><td>About 8,000 km (O3b mPOWER)</td><td>35,786 km, above the equator</td></tr>
+<tr><td>Satellites needed</td><td>Hundreds to thousands (each sees a small area and passes overhead in minutes)</td><td>Tens (13 in O3b mPOWER)</td><td>About 3 for near-global coverage (except the poles)</td></tr>
+<tr><td>Minimum signal delay (calculated, one way user-satellite-gateway, satellite overhead)</td><td>About 3-8 ms</td><td>About 53 ms</td><td>About 239 ms (round trip about 0.48 s)</td></tr>
+<tr><td>User antenna</td><td>Electronically steered flat panel that tracks moving satellites</td><td>Tracking antenna</td><td>Fixed dish pointed once (DTH)</td></tr>
+<tr><td>Best for</td><td>Low-latency broadband, video calls, gaming, remote areas</td><td>High-capacity links for enterprises, cell backhaul, ships</td><td>Broadcasting (TV/DTH), VSAT; latency-tolerant data</td></tr>
+</tbody></table></div>
+<p class="small">Delay = 2h/c, where h = altitude and c = 299,792 km/s (speed of light in vacuum): the signal goes up to the satellite and down to the gateway. Real-world latency is higher (slant paths, processing, ground routing). See <a href="#fig48">Figure 48</a>.</p>
+</section>
+
+<section id="satnet">
+<h2>50. Satellite-Based Internet (LEO and MEO broadband constellations)</h2>
+
+<h3 id="satnet-what">50.1 The idea and the main initiatives</h3>
+<ul>
+<li>One of the most remarkable technology breakthroughs of this century is <strong>satellite-based broadband</strong> from large <strong>constellations</strong>: hundreds or thousands of satellites close to Earth, so that some satellite is always overhead and the delay is low enough for normal internet use.</li>
+<li>Initiatives named in class: <strong>OneWeb</strong>, <strong>Kuiper</strong>, <strong>Jio and SES (Luxembourg)</strong>, <strong>Starlink</strong>. Their checked status is below (<a href="#c25">c25</a>).</li>
+</ul>
+<div class="table-wrap"><table>
+<caption>Satellite broadband initiatives relevant to India (status as of 4 Nov 2026)</caption>
+<thead><tr><th scope="col" style="width:16%">System</th><th scope="col" style="width:30%">Owner, orbit, size</th><th scope="col">India status</th></tr></thead>
+<tbody>
+<tr><td><strong>Starlink</strong></td><td>SpaceX (USA). LEO shells at about 43-97 degrees, mostly near 53 degrees; satellites linked by lasers. About <strong>10,900 active</strong> satellites (KeepTrack catalogue, 4 Nov 2026); counts differ by definition - Orbital Radar gives about 9,900 "operational on station" (5 Nov 2026).</td><td>GMPCS licence (mid-2025) and IN-SPACe authorisation held; Jio and Airtel signed as distribution partners. <strong>Not launched commercially</strong>: awaiting MHA security clearance, FDI approval and final spectrum assignment (<a href="#s-bs">Business Standard, 8 Oct 2026</a>). Approvals were reported "effectively frozen" in June 2026 over Starlink terminals operating in Iran (<a href="#s-st">Bloomberg via Straits Times, 10 Jun 2026</a>).</td></tr>
+<tr><td><strong>Eutelsat OneWeb</strong></td><td>Eutelsat Group (France/UK; Bharti is a backer). <strong>648</strong> satellites, 12 planes, about <strong>1,200 km</strong>, near-polar; "bent-pipe" (no laser links): gateway links in Ka-band, user links in Ku-band.</td><td>GMPCS licence 2021; awaiting security clearance and spectrum (<a href="#s-ctcab">Communications Today, 12 Oct 2026</a>).</td></tr>
+<tr><td><strong>Amazon Leo</strong> (formerly <strong>Project Kuiper</strong>; renamed Nov 2025)</td><td>Amazon (USA). FCC authorisation for <strong>3,232</strong> first-generation satellites at 590-630 km; <strong>392 in orbit</strong> (Oct 2026). Missed the FCC's July 2026 half-constellation milestone; the FCC granted a conditional waiver on 5 Jun 2026.</td><td>Reported to need to <strong>reapply</strong> under the Telecommunications Act 2023 regime; scouting Indian partners (<a href="#s-ctcab">Communications Today</a>).</td></tr>
+<tr><td><strong>Jio-SES</strong> (Jio Satellite Communications; service "JioSpaceFiber")</td><td>Reliance Jio + SES (Luxembourg). Uses SES's <strong>O3b mPOWER</strong> in <strong>MEO (about 8,000 km)</strong>, not LEO; 13 satellites, the last three launched in Sep 2026. Jio is also reported to be planning its own LEO constellation of about 1,600 satellites.</td><td>GMPCS licence 2022; demonstrated in Oct 2023; awaiting security clearance and spectrum (<a href="#s-et23">ET, 27 Oct 2023</a>; <a href="#s-ctcab">Communications Today</a>).</td></tr>
+</tbody></table></div>
+<p class="small">Sources: <a href="#s-ktstar">KeepTrack Starlink</a>; <a href="#s-orbstar">Orbital Radar</a>; <a href="#s-eoow">eoPortal OneWeb</a>; <a href="#s-ktkuiper">KeepTrack Kuiper</a>; <a href="#s-eokuiper">eoPortal Kuiper</a>; <a href="#s-o3b">Wikipedia O3b mPOWER</a>; <a href="#s-stn">ShareTechnote (Sep 2026 launch)</a>. Tracker counts are secondary and change daily.</p>
+<p class="correction" id="c25"><strong>[Correction]</strong> <strong>"In these projects there will be 100's of satellites in polar orbit"</strong>: these are <strong>LEO</strong> constellations of hundreds to <strong>thousands</strong> of satellites in <strong>several inclined shells</strong>; only OneWeb is near-polar throughout. <strong>Jio-SES is not a LEO polar system</strong> - it uses SES's <strong>MEO</strong> O3b mPOWER satellites. "Kuiper" is now <strong>Amazon Leo</strong>.</p>
+
+<h3 id="satnet-how">50.2 How it works</h3>
+<div class="flow" aria-label="Signal path of satellite internet">
+<span class="box"><strong>User device</strong><br/>phone, laptop</span><span>&harr;</span><span class="box"><strong>Wi-Fi router</strong></span><span>&harr;</span><span class="box"><strong>User terminal</strong><br/>dish / flat panel</span><span>&harr;</span><span class="box"><strong>Satellite</strong><br/>(laser link to other satellites, if fitted)</span><span>&harr;</span><span class="box"><strong>Gateway</strong><br/>earth station</span><span>&harr;</span><span class="box"><strong>Optical fibre</strong></span><span>&harr;</span><span class="box"><strong>PoP / internet exchange</strong><br/>rest of the internet</span>
+</div>
+
+<figure id="fig47">
+<h3>Figure 47. How Two Users Connect through Satellite Internet - Same Network and Different Networks (schematic, not to scale) [Additional]</h3>
+<svg viewBox="0 0 900 640" role="img" aria-label="Two panels. Panel A, same network: User A's laptop connects by Wi-Fi to a router, a cable to a Starlink user dish, a radio user link up to a LEO satellite, a feeder link down to a Starlink gateway in India, optical fibre to Starlink's point of presence, and back out through another gateway, satellite, dish and router to User B. A dashed laser link joins the two satellites. Panel B, different networks: User A on Starlink reaches a Starlink gateway, fibre to an internet exchange, fibre to a Jio-SES gateway, up to an O3b mPOWER MEO satellite and down to User B's Jio-SES terminal, router and laptop.">
+<defs>
+<marker id="a47" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#0078d4"/></marker>
+<marker id="b47" markerWidth="8" markerHeight="8" refX="1" refY="4" orient="auto"><path d="M8,0 L0,4 L8,8 z" fill="#0078d4"/></marker>
+</defs>
+<g font-family="Calibri, sans-serif" font-size="12" text-anchor="middle">
+<!-- Panel A -->
+<text x="450" y="20" font-weight="bold" font-size="14">A. Same network: Starlink user A to Starlink user B</text>
+<line x1="10" y1="230" x2="890" y2="230" stroke="#8d6e63" stroke-width="2"/>
+<!-- user A -->
+<rect x="20" y="192" width="44" height="28" fill="#f5f9fd" stroke="#555"/><text x="42" y="210" font-size="10">laptop</text>
+<text x="42" y="248" font-size="11">User A</text>
+<path d="M68,205 q8,-8 16,0 M72,209 q4,-4 8,0" fill="none" stroke="#2e7d32"/>
+<rect x="92" y="198" width="44" height="22" fill="#e8f5e9" stroke="#2e7d32"/><text x="114" y="213" font-size="10">router</text>
+<text x="114" y="280" font-size="11">Wi-Fi router</text>
+<line x1="136" y1="210" x2="166" y2="210" stroke="#555" stroke-width="2"/>
+<rect x="166" y="196" width="34" height="8" fill="#fff3e0" stroke="#ef6c00" transform="rotate(-25 183 200)"/><line x1="183" y1="204" x2="183" y2="228" stroke="#555" stroke-width="2"/>
+<text x="183" y="248" font-size="11">User terminal</text><text x="183" y="262" font-size="11">(dish / flat panel)</text>
+<!-- satellite 1 -->
+<rect x="250" y="62" width="26" height="16" fill="#e3f2fd" stroke="#0078d4" stroke-width="2"/><rect x="230" y="66" width="18" height="8" fill="#bbdefb" stroke="#0078d4"/><rect x="278" y="66" width="18" height="8" fill="#bbdefb" stroke="#0078d4"/>
+<text x="263" y="50" font-size="11">LEO satellite</text>
+<line x1="190" y1="190" x2="255" y2="84" stroke="#0078d4" stroke-width="2" marker-end="url(#a47)" marker-start="url(#b47)"/>
+<text x="168" y="135" font-size="10" fill="#0078d4">user link</text>
+<line x1="272" y1="84" x2="338" y2="186" stroke="#0078d4" stroke-width="2" marker-end="url(#a47)" marker-start="url(#b47)"/>
+<text x="345" y="135" font-size="10" fill="#0078d4">feeder link</text>
+<!-- gateway 1 -->
+<path d="M322,214 a22,14 0 0 1 44,0 z" fill="#fff3e0" stroke="#ef6c00" stroke-width="2"/><line x1="344" y1="214" x2="344" y2="228" stroke="#555" stroke-width="2"/>
+<text x="344" y="248" font-size="11">Gateway earth</text><text x="344" y="262" font-size="11">station (in India)</text>
+<!-- fibre + PoP -->
+<line x1="366" y1="222" x2="398" y2="222" stroke="#ef6c00" stroke-width="4"/>
+<rect x="398" y="196" width="104" height="32" fill="#fdecea" stroke="#c62828"/><text x="450" y="210" font-size="10">Starlink PoP /</text><text x="450" y="222" font-size="10">core network</text>
+<text x="450" y="248" font-size="11">Point of presence</text>
+<line x1="502" y1="222" x2="534" y2="222" stroke="#ef6c00" stroke-width="4"/>
+<text x="382" y="290" font-size="10" fill="#b26a00">optical fibre</text><text x="518" y="290" font-size="10" fill="#b26a00">optical fibre</text>
+<line x1="382" y1="280" x2="382" y2="226" stroke="#b26a00" stroke-dasharray="2 2"/><line x1="518" y1="280" x2="518" y2="226" stroke="#b26a00" stroke-dasharray="2 2"/>
+<!-- gateway 2 -->
+<path d="M534,214 a22,14 0 0 1 44,0 z" fill="#fff3e0" stroke="#ef6c00" stroke-width="2"/><line x1="556" y1="214" x2="556" y2="228" stroke="#555" stroke-width="2"/>
+<text x="556" y="248" font-size="11">Gateway earth</text><text x="556" y="262" font-size="11">station (in India)</text>
+<!-- satellite 2 -->
+<rect x="624" y="62" width="26" height="16" fill="#e3f2fd" stroke="#0078d4" stroke-width="2"/><rect x="604" y="66" width="18" height="8" fill="#bbdefb" stroke="#0078d4"/><rect x="652" y="66" width="18" height="8" fill="#bbdefb" stroke="#0078d4"/>
+<text x="637" y="50" font-size="11">LEO satellite</text>
+<line x1="562" y1="186" x2="628" y2="84" stroke="#0078d4" stroke-width="2" marker-end="url(#a47)" marker-start="url(#b47)"/>
+<text x="560" y="135" font-size="10" fill="#0078d4">feeder link</text>
+<line x1="645" y1="84" x2="712" y2="190" stroke="#0078d4" stroke-width="2" marker-end="url(#a47)" marker-start="url(#b47)"/>
+<text x="722" y="135" font-size="10" fill="#0078d4">user link</text>
+<!-- ISL -->
+<line x1="298" y1="70" x2="602" y2="70" stroke="#6a1b9a" stroke-width="2" stroke-dasharray="7 4"/>
+<text x="450" y="62" font-size="10" fill="#6a1b9a">laser inter-satellite link: can relay traffic in space</text>
+<text x="450" y="90" font-size="10" fill="#6a1b9a">(India wants traffic routed via Indian gateways)</text>
+<!-- user B -->
+<rect x="700" y="196" width="34" height="8" fill="#fff3e0" stroke="#ef6c00" transform="rotate(25 717 200)"/><line x1="717" y1="204" x2="717" y2="228" stroke="#555" stroke-width="2"/>
+<text x="717" y="248" font-size="11">User terminal</text>
+<line x1="734" y1="210" x2="764" y2="210" stroke="#555" stroke-width="2"/>
+<rect x="764" y="198" width="44" height="22" fill="#e8f5e9" stroke="#2e7d32"/><text x="786" y="213" font-size="10">router</text>
+<text x="786" y="280" font-size="11">Wi-Fi router</text>
+<path d="M812,205 q8,-8 16,0 M816,209 q4,-4 8,0" fill="none" stroke="#2e7d32"/>
+<rect x="836" y="192" width="44" height="28" fill="#f5f9fd" stroke="#555"/><text x="858" y="210" font-size="10">laptop</text>
+<text x="858" y="248" font-size="11">User B</text>
+<line x1="10" y1="310" x2="890" y2="310" stroke="#ccc"/>
+<!-- Panel B -->
+<text x="450" y="335" font-weight="bold" font-size="14">B. Different networks: Starlink user A to Jio-SES user B</text>
+<line x1="10" y1="560" x2="890" y2="560" stroke="#8d6e63" stroke-width="2"/>
+<rect x="20" y="522" width="44" height="28" fill="#f5f9fd" stroke="#555"/><text x="42" y="540" font-size="10">laptop</text>
+<text x="42" y="578" font-size="11">User A</text>
+<path d="M68,535 q8,-8 16,0 M72,539 q4,-4 8,0" fill="none" stroke="#2e7d32"/>
+<rect x="92" y="528" width="44" height="22" fill="#e8f5e9" stroke="#2e7d32"/><text x="114" y="543" font-size="10">router</text>
+<text x="114" y="594" font-size="11">Wi-Fi router</text>
+<line x1="136" y1="540" x2="166" y2="540" stroke="#555" stroke-width="2"/>
+<rect x="166" y="526" width="34" height="8" fill="#fff3e0" stroke="#ef6c00" transform="rotate(-25 183 530)"/><line x1="183" y1="534" x2="183" y2="558" stroke="#555" stroke-width="2"/>
+<text x="183" y="578" font-size="11">Starlink terminal</text>
+<rect x="250" y="412" width="26" height="16" fill="#e3f2fd" stroke="#0078d4" stroke-width="2"/><rect x="230" y="416" width="18" height="8" fill="#bbdefb" stroke="#0078d4"/><rect x="278" y="416" width="18" height="8" fill="#bbdefb" stroke="#0078d4"/>
+<text x="263" y="400" font-size="11">Starlink LEO (about 480-560 km)</text>
+<line x1="190" y1="520" x2="255" y2="434" stroke="#0078d4" stroke-width="2" marker-end="url(#a47)" marker-start="url(#b47)"/>
+<line x1="272" y1="434" x2="338" y2="516" stroke="#0078d4" stroke-width="2" marker-end="url(#a47)" marker-start="url(#b47)"/>
+<path d="M322,544 a22,14 0 0 1 44,0 z" fill="#fff3e0" stroke="#ef6c00" stroke-width="2"/><line x1="344" y1="544" x2="344" y2="558" stroke="#555" stroke-width="2"/>
+<text x="344" y="578" font-size="11">Starlink gateway</text>
+<line x1="366" y1="552" x2="398" y2="552" stroke="#ef6c00" stroke-width="4"/>
+<rect x="398" y="520" width="104" height="38" fill="#fdecea" stroke="#c62828"/><text x="450" y="535" font-size="10">Internet exchange /</text><text x="450" y="548" font-size="10">transit backbone</text>
+<text x="450" y="594" font-size="11">Networks meet on the ground</text>
+<line x1="502" y1="552" x2="534" y2="552" stroke="#ef6c00" stroke-width="4"/>
+<path d="M534,544 a22,14 0 0 1 44,0 z" fill="#fff3e0" stroke="#ef6c00" stroke-width="2"/><line x1="556" y1="544" x2="556" y2="558" stroke="#555" stroke-width="2"/>
+<text x="556" y="578" font-size="11">Jio-SES gateway</text>
+<rect x="624" y="362" width="30" height="18" fill="#ede7f6" stroke="#6a1b9a" stroke-width="2"/><rect x="600" y="367" width="22" height="8" fill="#d1c4e9" stroke="#6a1b9a"/><rect x="656" y="367" width="22" height="8" fill="#d1c4e9" stroke="#6a1b9a"/>
+<text x="639" y="356" font-size="11">O3b mPOWER MEO (about 8,000 km)</text>
+<line x1="562" y1="516" x2="630" y2="386" stroke="#0078d4" stroke-width="2" marker-end="url(#a47)" marker-start="url(#b47)"/>
+<line x1="648" y1="386" x2="712" y2="520" stroke="#0078d4" stroke-width="2" marker-end="url(#a47)" marker-start="url(#b47)"/>
+<rect x="700" y="526" width="34" height="8" fill="#fff3e0" stroke="#ef6c00" transform="rotate(25 717 530)"/><line x1="717" y1="534" x2="717" y2="558" stroke="#555" stroke-width="2"/>
+<text x="717" y="578" font-size="11">Jio-SES terminal</text>
+<line x1="734" y1="540" x2="764" y2="540" stroke="#555" stroke-width="2"/>
+<rect x="764" y="528" width="44" height="22" fill="#e8f5e9" stroke="#2e7d32"/><text x="786" y="543" font-size="10">router</text>
+<text x="786" y="594" font-size="11">Wi-Fi router</text>
+<path d="M812,535 q8,-8 16,0 M816,539 q4,-4 8,0" fill="none" stroke="#2e7d32"/>
+<rect x="836" y="522" width="44" height="28" fill="#f5f9fd" stroke="#555"/><text x="858" y="540" font-size="10">laptop</text>
+<text x="858" y="578" font-size="11">User B</text>
+<text x="450" y="610" font-size="11" fill="#c62828">No direct link between the two constellations: traffic leaves one network at a gateway and enters the other over terrestrial fibre.</text>
+<text x="450" y="628" font-size="10" fill="#555">Blue arrows = radio links (two-way). Orange bars = optical fibre. Purple dashed = laser inter-satellite link.</text>
+</g>
+</svg>
+<figcaption>Schematic, not to scale; positions are illustrative. Based on the class description and on public descriptions of the architecture: user links and gateway (feeder) links, laser inter-satellite links on Starlink and Amazon Leo (OneWeb is bent-pipe), Ka-band gateway / Ku-band user links on OneWeb (<a href="#s-eoow">eoPortal</a>), Ka-band O3b mPOWER (<a href="#s-stn">ShareTechnote</a>), and India's concern that laser links could let traffic bypass domestic gateways (<a href="#s-bs">Business Standard, 8 Oct 2026</a>). A satellite user can equally reach a fibre or 5G user: the path simply ends at the exchange and continues on the terrestrial network.</figcaption>
+</figure>
+
+<figure id="fig48">
+<h3>Figure 48. Minimum One-Way Signal Delay (user - satellite - gateway) by Orbit Altitude (calculated) [Additional]</h3>
+<svg viewBox="0 0 760 250" role="img" aria-label="Horizontal bar chart of calculated minimum one-way delay: Starlink at 550 kilometres 3.7 milliseconds; OneWeb at 1,200 kilometres 8.0 milliseconds; O3b mPOWER at 8,000 kilometres 53.4 milliseconds; geostationary at 35,786 kilometres 238.7 milliseconds.">
+<g font-family="Calibri, sans-serif" font-size="12">
+<line x1="200" y1="30" x2="200" y2="210" stroke="#555"/>
+<line x1="200" y1="210" x2="710" y2="210" stroke="#555"/>
+<text x="200" y="228" text-anchor="middle" font-size="10">0</text><text x="409" y="228" text-anchor="middle" font-size="10">100</text><text x="619" y="228" text-anchor="middle" font-size="10">200</text>
+<line x1="409" y1="207" x2="409" y2="213" stroke="#555"/><line x1="619" y1="207" x2="619" y2="213" stroke="#555"/>
+<text x="455" y="246" text-anchor="middle" font-size="11">milliseconds (ms)</text>
+<text x="192" y="55" text-anchor="end">Starlink LEO, 550 km</text><rect x="200" y="42" width="7.8" height="20" fill="#2e7d32"/><text x="214" y="57">3.7 ms</text>
+<text x="192" y="100" text-anchor="end">OneWeb LEO, 1,200 km</text><rect x="200" y="87" width="16.8" height="20" fill="#2e7d32"/><text x="223" y="102">8.0 ms</text>
+<text x="192" y="145" text-anchor="end">O3b mPOWER MEO, 8,000 km</text><rect x="200" y="132" width="111.9" height="20" fill="#0078d4"/><text x="318" y="147">53.4 ms</text>
+<text x="192" y="190" text-anchor="end">GEO, 35,786 km</text><rect x="200" y="177" width="500" height="20" fill="#ef6c00"/><text x="640" y="172">238.7 ms</text>
+</g>
+</svg>
+<figcaption>Calculated, not measured: t = 2h/c (h = altitude, c = 299,792.458 km/s), for a satellite directly overhead. Altitudes: Starlink (<a href="#s-upside">Upside Curve</a>; the shell is being lowered towards about 480 km in 2026), OneWeb (<a href="#s-eoow">eoPortal</a>), O3b mPOWER (<a href="#s-o3b">Wikipedia</a>), GEO 35,786 km. Measured user latency is higher; Orbital Radar quotes about 20-40 ms for most Starlink users (<a href="#s-orbstar">Orbital Radar</a>, secondary).</figcaption>
+</figure>
+
+<h3 id="satnet-parts">50.3 Components of satellite-based internet</h3>
+<div class="table-wrap"><table>
+<caption>Components (class list A-D, with additions)</caption>
+<thead><tr><th scope="col" style="width:28%">Component</th><th scope="col">Role</th></tr></thead>
+<tbody>
+<tr><td>A. Satellites (LEO/MEO constellation)</td><td>Relay signals between user terminals and gateways; some carry <strong>laser inter-satellite links</strong> (Starlink, Amazon Leo) that pass data from satellite to satellite.</td></tr>
+<tr><td>B. Internet gateways (earth stations)</td><td>Large ground antennas that connect the satellites in their view to the terrestrial internet (<a href="#c26">c26</a>).</td></tr>
+<tr><td>C. Internet exchange / point of presence (PoP)</td><td>Where the satellite operator's network hands traffic to other networks and the global internet.</td></tr>
+<tr><td>D. Optical fibre</td><td>Connects gateways to PoPs and exchanges: fibre is still needed at the <strong>gateway</strong> end, not to each user.</td></tr>
+<tr><td>[Additional] User terminal and router</td><td>Dish or electronically steered flat panel at the user's premises, plus a Wi-Fi router.</td></tr>
+<tr><td>[Additional] Network operations centre</td><td>Controls satellites, beams, spectrum and - under Indian licence conditions - lawful interception and service restrictions (<a href="#s-bs">Business Standard</a>).</td></tr>
+</tbody></table></div>
+<p class="correction" id="c26"><strong>[Correction]</strong> <strong>"Internet gateways that can cover large area"</strong>: the <strong>satellites' beams</strong> provide the coverage; a gateway is a ground station that links the satellites passing within its view to the internet. A country therefore needs a <strong>network of gateways</strong>: Starlink reported about <strong>10 gateways and a hub in Mumbai</strong> (<a href="#s-st">Bloomberg via Straits Times, Jun 2026</a>); another report says "more than 20 gateway sites" (<a href="#s-snews">Starlink News citing BW Businessworld, Oct 2026</a>, secondary) - the counts differ by source.</p>
+
+<h3 id="satnet-sig">50.4 Significance of satellite-based internet</h3>
+<ul>
+<li><strong>Less need for last-mile fibre:</strong> fibre is needed only up to the gateways, not to every end user (<a href="#c27">c27</a>).</li>
+<li><strong>Instant connectivity in remote areas:</strong> crucial for <strong>security operations</strong>, <strong>disaster management</strong>, and <strong>search and rescue</strong> when ground networks are absent or destroyed.</li>
+<li><strong>Digital economy:</strong> promotes digitisation of services (e-governance, payments, e-commerce).</li>
+<li><strong>Inclusive growth:</strong> telemedicine, tele-education, agriculture advisories.</li>
+<li><strong>Extending 5G (and future 6G) to remote areas:</strong> satellites can provide <strong>backhaul</strong> for mobile towers [Additional: Jio has said it will use O3b capacity for mobile backhaul in remote areas (<a href="#s-et23">ET</a>)]. [Additional] 5G standards now include <strong>non-terrestrial networks</strong>, and "direct-to-cell" satellites can reach ordinary phones (Starlink V2 Mini carries a direct-to-cell payload: <a href="#s-ktstar">KeepTrack</a>).</li>
+<li><strong>Beyond homes:</strong> international <strong>aviation</strong> and <strong>shipping</strong> connectivity is a very large market - so the stakes and the competition are high.</li>
+</ul>
+<p class="correction" id="c27"><strong>[Correction]</strong> <strong>"It has eliminated to a great extent the need of fibre optics"</strong>: it <strong>reduces</strong> the need for last-mile fibre in remote areas; it does not replace fibre or mobile networks at scale. Capacity per area is limited: TRAI estimated that a single constellation could serve only about <strong>10,000-20,000 connections in an area like Delhi</strong> against a need of about <strong>50 lakh</strong> (<a href="#s-blsat">BusinessLine, Sep 2026</a>). Reported Starlink prices (about Rs 3,000-4,200 a month plus a kit of about Rs 33,000) are several times entry fibre plans <strong>[reported, not official]</strong> (<a href="#s-ctcab">Communications Today</a>). The service has not started in India (Section 55).</p>
+
+<h3 id="satnet-concerns">50.5 Concerns</h3>
+<ol>
+<li><strong>Geopolitical tool:</strong> Starlink has been used in conflict zones, including <strong>Ukraine</strong>; in June 2026 Indian security agencies reportedly withheld Starlink's final clearances after reports that its terminals were in use in <strong>Iran</strong> (where it is not licensed), raising doubts about India's ability to control a US-based operator during a crisis (<a href="#s-st">Bloomberg via Straits Times</a>; <a href="#s-bs">Business Standard</a>).</li>
+<li><strong>Cyber and internal security:</strong> lawful interception, the ability to <strong>restrict service</strong> in specific areas or to specific users in emergencies, and the risk that <strong>laser inter-satellite links</strong> could let Indian traffic <strong>bypass domestic gateways</strong> are licence issues under review; grey-market terminals have also been flagged (<a href="#s-bs">Business Standard</a>; <a href="#s-sig">Satellite Internet Guide</a>, secondary).</li>
+<li><strong>Impact on the telecom sector:</strong> class figure - 83% of subscribers are with Airtel and Jio, who might lose them to Starlink or Kuiper. <strong>Checked:</strong> Jio and Airtel hold about <strong>77% of wireless subscribers</strong> and about <strong>84% of broadband subscribers</strong> (<a href="#c28">c28</a>). Note that both are also <strong>partners</strong> in satellite broadband (Jio-SES; Bharti in Eutelsat OneWeb; both signed Starlink distribution deals), and satellite capacity and price limit mass substitution.</li>
+<li><strong>Data privacy and data localisation:</strong> licence conditions require <strong>data localisation</strong> and lawful interception; Starlink says it meets local data-storage requirements (<a href="#s-bs">Business Standard</a>; <a href="#s-st">Straits Times</a>).</li>
+<li>[Additional] <strong>Space sustainability:</strong> thousands of LEO satellites raise collision and debris risk and affect astronomy; Starlink is lowering its main shell (about 550 to 480 km) partly so failed satellites re-enter faster (<a href="#s-orbstar">Orbital Radar</a>, secondary).</li>
+<li>[Additional] <strong>Affordability and capacity</strong> (see <a href="#c27">c27</a>), and <strong>dependence on foreign operators</strong> for critical connectivity.</li>
+</ol>
+<p class="correction" id="c28"><strong>[Correction]</strong> <strong>"83% of subscribers are with Airtel and Jio"</strong>: depends on the base. <strong>Wireless (mobile) subscribers, Aug 2026:</strong> Jio 39.31% + Airtel 38.01% = <strong>77.32%</strong> (TRAI monthly data as reported by <a href="#s-bnet">Bharatnet, 30 Sep 2026</a>). <strong>Broadband subscribers:</strong> Jio 48.94% + Airtel 34.94% = <strong>83.88%</strong> (TRAI data as cited by <a href="#s-mbagg">Multibagg, Oct 2026</a>, secondary; reference month not stated there <strong>[Verification Required]</strong>). So "about 83%" fits the <strong>broadband</strong> market, not all subscribers.</p>
+</section>
+
+<section id="spectrum">
+<h2>51. The Satcom Spectrum Controversy</h2>
+
+<h3 id="spec-what">51.1 What is telecom spectrum?</h3>
+<ul>
+<li>Telecom <strong>spectrum</strong> is the range of <strong>radio frequencies</strong> (part of the electromagnetic spectrum) used to carry signals. The Central Government, "being the owner of the spectrum on behalf of the people", <strong>assigns</strong> the right to use specific frequency blocks to operators so that they can run their networks (Telecommunications Act 2023, Section 4(1)) (<a href="#s-act">Act, s. 4</a>) (<a href="#c29">c29</a>).</li>
+<li>Frequencies are grouped into <strong>bands</strong>. Class list: below 1 GHz, L-band, S-band, Ka-band. The checked ranges are in the table (<a href="#c30">c30</a>).</li>
+<li>For mobile services India is divided into <strong>22 telecom circles</strong> (licensed service areas); spectrum is assigned circle by circle. [Not re-checked in this session against a DoT document.]</li>
+</ul>
+<p class="correction" id="c29"><strong>[Correction]</strong> <strong>"Spectrum is the allocation of electromagnetic waves by the central govt"</strong>: spectrum is the <strong>resource</strong> (a range of frequencies); what the government does is <strong>allocate</strong> bands to services (through the National Frequency Allocation Plan, in line with ITU Radio Regulations) and <strong>assign</strong> frequencies to particular users. The 2023 Act uses the word <strong>"assignment"</strong> (<a href="#s-act">s. 4</a>).</p>
+
+<div class="table-wrap"><table>
+<caption>Frequency bands named in class (IEEE letter designations)</caption>
+<thead><tr><th scope="col" style="width:18%">Band</th><th scope="col" style="width:22%">Range</th><th scope="col">Typical uses (examples)</th></tr></thead>
+<tbody>
+<tr><td>Sub-GHz ("below 1 GHz")</td><td>Below 1 GHz (e.g. 700, 800, 900 MHz)</td><td>Mobile coverage bands: travel far and penetrate buildings</td></tr>
+<tr><td>L</td><td>1-2 GHz</td><td>Navigation signals (GPS L1/L5; NavIC L5 at 1176.45 MHz); mobile satellite services</td></tr>
+<tr><td>S</td><td>2-4 GHz</td><td>NavIC S-band signal; mobile satellite services; weather radar</td></tr>
+<tr><td>C</td><td>4-8 GHz</td><td>TV distribution to cable head-ends; 5G mid-band near 3.3-3.7 GHz lies at the S/C boundary</td></tr>
+<tr><td>Ku</td><td>12-18 GHz</td><td><strong>DTH</strong>; LEO user links (OneWeb user beams 10.7-12.7 GHz)</td></tr>
+<tr><td>Ka</td><td>27-40 GHz (IEEE); satellite "Ka-band" in practice about 17.7-31 GHz</td><td>Gateway (feeder) links; high-throughput satellites; O3b mPOWER</td></tr>
+</tbody></table></div>
+<p class="small">Ranges: IEEE radar-band letter designations as listed by <a href="#s-nasaband">NASA</a>; OneWeb from <a href="#s-eoow">eoPortal</a>; NavIC from <a href="#s-isronav">ISRO</a>. Satcom usage of "Ka" commonly includes the 17.7-20.2 GHz downlink and 27.5-31 GHz uplink, which fall partly in the IEEE K band [Additional; general reference, not re-read in this session].</p>
+<p class="correction" id="c30"><strong>[Correction]</strong> <strong>"Ka-band (24K Hz onwards)"</strong>: the unit is <strong>GHz</strong>, not kHz (1 GHz = 10<sup>9</sup> Hz; 1 kHz = 10<sup>3</sup> Hz), and the IEEE Ka-band is <strong>27-40 GHz</strong> (<a href="#s-nasaband">NASA</a>). "24 GHz onwards" describes the <strong>mmWave (26 GHz) band</strong> used for 5G, not the Ka-band.</p>
+
+<h3 id="spec-routes">51.2 Two ways of assigning spectrum</h3>
+<div class="table-wrap"><table>
+<caption>Administrative assignment vs open auction</caption>
+<thead><tr><th scope="col" style="width:18%">Point</th><th scope="col">A. Administrative route</th><th scope="col">B. Open auction</th></tr></thead>
+<tbody>
+<tr><td>Method</td><td>No bidding: a set quantity at a <strong>pre-determined price</strong>, with conditions on use. Act: "assignment of spectrum without holding an auction".</td><td>"A bid process for assignment of spectrum" (Act, s. 4 Explanation)</td></tr>
+<tr><td>Nature of use</td><td>Suits <strong>shared</strong> spectrum: several satellite operators can use the same frequencies (with coordination)</td><td><strong>Exclusive</strong>: a block in a circle is used by one operator only</td></tr>
+<tr><td>History in India</td><td>Mobile spectrum largely given administratively until 2012 (<a href="#c31">c31</a>)</td><td>Mobile spectrum auctioned since 2012 (3G/BWA already auctioned in 2010)</td></tr>
+<tr><td>Under the 2023 Act</td><td><strong>First Schedule</strong> entries, including entry 16: satellite services such as teleports, TV channels, <strong>DTH</strong>, HITS, DSNG, <strong>VSAT</strong>, <strong>GMPCS</strong>, NLD/ILD and MSS in L and S bands</td><td>The <strong>default</strong>: "shall assign spectrum for telecommunication through auction except for entries listed in the First Schedule" (s. 4(4))</td></tr>
+<tr><td>Merit</td><td><strong>Level playing field</strong>; lower cost; faster roll-out</td><td><strong>Transparent</strong> price discovery; <strong>higher revenue</strong></td></tr>
+<tr><td>Demerit</td><td>Government may <strong>lose revenue</strong>; risk of under-pricing and discretion</td><td>Favours <strong>large corporates</strong> with deep pockets; high cost may be passed to users</td></tr>
+</tbody></table></div>
+<p class="small">Sources: <a href="#s-act">Telecommunications Act 2023, s. 4</a>; <a href="#s-sched">First Schedule</a>. The Act also lets the Centre amend the First Schedule by notification laid before Parliament (s. 4(5)).</p>
+<p class="correction" id="c31"><strong>[Correction]</strong> <strong>"By and large till 2012 this was the model"</strong>: broadly right for 2G mobile spectrum, but 3G and broadband-wireless spectrum had already been auctioned in 2010 [Additional; not re-read in this session]. The turning point was the Supreme Court's <strong>2G judgment of 2 February 2012</strong> (<em>Centre for Public Interest Litigation v. Union of India</em>), which quashed <strong>122 licences</strong> issued on a first-come-first-served basis and directed allocation by auction (<a href="#s-sc2012">SC judgment</a>; <a href="#s-toi2012">TOI, 2 Feb 2012</a>). [Additional] In the <strong>Presidential Reference (Natural Resources Allocation), 2012</strong>, the Court later clarified that auction is <strong>not a constitutional mandate</strong> for every natural resource - the test is the common good (<a href="#s-ltp">LTP summary</a>, secondary).</p>
+<p class="correction" id="c32"><strong>[Correction]</strong> <strong>"Globally it was agreed that spectrum for satellite internet will be allocated through the administrative route"</strong>: there is <strong>no global treaty</strong> requiring this. The ITU Radio Regulations <strong>allocate</strong> bands to satellite services and coordinate orbits and frequencies internationally; <strong>how</strong> a country assigns spectrum to operators is a <strong>national</strong> choice. Administrative assignment of satellite spectrum is a widely followed <strong>practice</strong> because the spectrum is shared - and India's <strong>2023 Act</strong> did mandate it (First Schedule).</p>
+
+<div class="flow" id="flow-spectrum" aria-label="How spectrum is assigned under the Telecommunications Act 2023">
+<span class="box"><strong>Central Government</strong><br/>owner of spectrum on behalf of the people</span><span>&rarr;</span><span class="box"><strong>Telecommunications Act 2023, s. 4</strong><br/>assignment rules</span><span>&rarr;</span><span class="box"><strong>Auction (default)</strong><br/>mobile spectrum, exclusive, circle-wise</span><span>or</span><span class="box"><strong>Administrative (First Schedule)</strong><br/>satellite services, shared</span><span>&rarr;</span><span class="box"><strong>Operator</strong><br/>pays price / charges, uses within conditions</span>
+</div>
+<p class="small">Figure 49. Spectrum assignment routes under the Telecommunications Act 2023. [Additional] Concept chart from <a href="#s-act">s. 4</a> and the <a href="#s-sched">First Schedule</a>; no data.</p>
+
+<h3 id="spec-why">51.3 Why the controversy, and where it stands</h3>
+<ul>
+<li><strong>The dispute:</strong> mobile operators argued that satellite broadband competes with their auctioned spectrum and should also be auctioned; satellite operators argued for administrative assignment because the spectrum is shared. The 2023 Act settled the <strong>method</strong> (administrative); the fight moved to the <strong>price</strong>.</li>
+<li><strong>TRAI (May 2025):</strong> recommended a spectrum charge of <strong>4% of AGR</strong> for both GSO and NGSO operators, a minimum of Rs 3,500 per MHz a year, an extra <strong>Rs 500 per urban subscriber</strong> a year, and a subsidy for user terminals in rural areas (<a href="#s-blsat">BusinessLine</a>; <a href="#s-etlegal">ETLegalWorld/PTI</a>).</li>
+<li><strong>DoT (Digital Communications Commission, 3 Sep 2026):</strong> approved most TRAI recommendations but a <strong>5% of AGR</strong> spectrum usage charge, reduced to <strong>4%</strong> in notified rural/remote, hilly, island and border areas; administrative assignment for <strong>5 years, extendable by 2</strong> (<a href="#s-vnd">Voice&amp;Data, 9 Sep 2026</a>). Operators also pay an <strong>8% licence fee</strong>, so the total regulatory outgo would be about 12-13% of AGR (<a href="#s-ctcab">Communications Today, 12 Oct 2026</a>).</li>
+<li><strong>Status (4 Nov 2026):</strong> a <strong>Cabinet note</strong> was being prepared in October 2026; no Cabinet approval was found in the sources read <strong>[Verification Required if a decision has since been announced]</strong>. All three licensed operators hold only <strong>provisional</strong> spectrum and await MHA security clearance (<a href="#s-ctcab">Communications Today</a>).</li>
+</ul>
+</section>
+
+<section id="geocomm">
+<h2>52. Communication Satellites in GEO</h2>
+<ul>
+<li><strong>Characteristics</strong> (as in Section 46.1 of the 3 Nov note): altitude about 36,000 km (exactly <strong>35,786 km</strong>); period about 24 hours (<strong>23 h 56 min</strong>, one sidereal day) (<a href="#c33">c33</a>); always above the <strong>equator</strong>; appears <strong>fixed</strong> over one place, so a dish can be pointed once and left.</li>
+<li><strong>Three satellites</strong> spaced around the equator can cover the whole planet <strong>except the polar regions</strong> (see <a href="Science%20and%20Technology%20-%20Class%2011-03-2026.html#fig45">Figure 45 of the 3 Nov note</a>).</li>
+<li>Uses: <strong>DTH television (Ku-band)</strong>, TV distribution, VSAT and satellite internet (e.g. ISRO/NSIL's GSAT series).</li>
+<li>[Additional] Trade-off: wide, fixed coverage and cheap receive-only dishes, but about <strong>0.48 s round-trip delay</strong> (<a href="#fig48">Figure 48</a>) and higher <strong>rain fade</strong> at Ku/Ka frequencies.</li>
+</ul>
+<p class="correction" id="c33"><strong>[Correction]</strong> <strong>"36K km, time period almost 24 hrs"</strong>: acceptable round figures; for the exam use <strong>35,786 km</strong> and <strong>23 h 56 min</strong> (the PIB NVS-03 backgrounder also gives about 35,786 km for the GEO/GTO apogee) (<a href="#s-pibnvs">PIB, 1 Nov 2026</a>).</p>
+</section>
+
+<section id="nav">
+<h2>53. Satellite-Based Navigation</h2>
+
+<h3 id="nav-principle">53.1 Principle: ranging and trilateration</h3>
+<ul>
+<li>A navigation system is a <strong>constellation of satellites</strong> carrying <strong>atomic clocks</strong>. Each satellite continuously broadcasts its <strong>position</strong> and the <strong>exact time</strong> of transmission.</li>
+<li>Class: the satellites are placed in GEO and GSO. <strong>Checked:</strong> the <strong>global</strong> systems (GPS, GLONASS, Galileo, BeiDou's core) use <strong>MEO</strong> at about 19,100-23,200 km; the <strong>regional</strong> systems use <strong>GEO + inclined geosynchronous (IGSO)</strong> orbits - NavIC: 3 GEO + 4 IGSO (<a href="#c34">c34</a>).</li>
+<li>The receiver measures the signal's travel time and converts it to a distance (<strong>range</strong>): <strong>d = c &times; (t<sub>receive</sub> - t<sub>transmit</sub>)</strong>, where c = 299,792,458 m/s. One range puts the receiver on a sphere around that satellite; the receiver is where the spheres intersect - <strong>trilateration</strong> (distances), not triangulation (angles).</li>
+<li>Class: 3 satellites give a 2D fix and the 4th adds altitude for 3D. <strong>Checked:</strong> a phone's clock is not an atomic clock, so the receiver's <strong>clock error</strong> is a fourth unknown. With <strong>4 satellites</strong> the receiver solves <strong>x, y, z and clock error</strong> - a 3D position plus precise time. With 3 satellites only a 2D fix is possible, and only if the altitude is assumed (<a href="#c35">c35</a>).</li>
+<li>Why clocks matter: a timing error of <strong>1 microsecond</strong> = c &times; 10<sup>-6</sup> s &asymp; <strong>300 m</strong> of range error.</li>
+</ul>
+
+<figure id="fig50">
+<h3>Figure 50. Trilateration and the Need for a Fourth Satellite (2D schematic) [Additional]</h3>
+<svg viewBox="0 0 760 330" role="img" aria-label="Left: three satellites S1, S2 and S3, each at the centre of a circle whose radius is the measured range; the three circles meet at one point, the receiver. Right: text explaining that a receiver clock error adds the same error to every range, so a fourth satellite is needed to solve for x, y, z and the clock error.">
+<g font-family="Calibri, sans-serif" font-size="12" text-anchor="middle">
+<circle cx="200" cy="120" r="128" fill="none" stroke="#0078d4" stroke-width="2"/>
+<circle cx="460" cy="90" r="194" fill="none" stroke="#2e7d32" stroke-width="2"/>
+<circle cx="120" cy="300" r="206" fill="none" stroke="#ef6c00" stroke-width="2"/>
+<rect x="190" y="112" width="20" height="14" fill="#e3f2fd" stroke="#0078d4"/><text x="200" y="104">S1</text>
+<rect x="450" y="82" width="20" height="14" fill="#e8f5e9" stroke="#2e7d32"/><text x="460" y="74">S2</text>
+<rect x="110" y="292" width="20" height="14" fill="#fff3e0" stroke="#ef6c00"/><text x="120" y="322">S3</text>
+<line x1="200" y1="126" x2="297" y2="198" stroke="#0078d4" stroke-dasharray="4 3"/><text x="232" y="176" font-size="11" fill="#0078d4">d1 = c &#215; t1</text>
+<line x1="450" y1="96" x2="303" y2="198" stroke="#2e7d32" stroke-dasharray="4 3"/><text x="400" y="160" font-size="11" fill="#2e7d32">d2</text>
+<line x1="130" y1="292" x2="296" y2="203" stroke="#ef6c00" stroke-dasharray="4 3"/><text x="205" y="262" font-size="11" fill="#b26a00">d3</text>
+<circle cx="300" cy="200" r="6" fill="#c62828"/><text x="330" y="222" font-size="12" fill="#c62828" font-weight="bold">receiver</text>
+<rect x="520" y="150" width="230" height="160" fill="#fff8e1" stroke="#f5a623"/>
+<text x="635" y="172" font-weight="bold">Why a 4th satellite?</text>
+<text x="635" y="194" font-size="11">Receiver clock error b adds c &#215; b</text>
+<text x="635" y="210" font-size="11">to every range, so the circles</text>
+<text x="635" y="226" font-size="11">(spheres in 3D) no longer meet.</text>
+<text x="635" y="248" font-size="11">Unknowns: x, y, z and b = 4</text>
+<text x="635" y="264" font-size="11">so at least 4 satellites are needed</text>
+<text x="635" y="280" font-size="11">for a 3D position plus time.</text>
+<text x="635" y="300" font-size="10" fill="#555">1 microsecond error = about 300 m</text>
+</g>
+</svg>
+<figcaption>Schematic, not to scale; a 2D slice of what is really an intersection of spheres. Principle as described by GPS.gov (24-slot design "ensures users can view at least four satellites") (<a href="#s-gps">GPS.gov</a>) and ISRO's NVS-03 note that accurate timing is essential for "calculating user positions" (<a href="#s-pibnvs">PIB</a>).</figcaption>
+</figure>
+
+<p class="correction" id="c34"><strong>[Correction]</strong> <strong>"A constellation of sats placed in GEO and GSO"</strong>: true only for <strong>regional</strong> systems. <strong>NavIC</strong>: 3 satellites in GEO (32.5, 83 and 129.5 degrees E) and 4 in <strong>inclined geosynchronous orbit</strong> (29 degrees inclination, crossing the equator at 55 and 111.75 degrees E) (<a href="#s-isronav">ISRO</a>). <strong>GPS</strong>: MEO, about <strong>20,200 km</strong> (<a href="#s-gps">GPS.gov</a>); <strong>GLONASS</strong>: about <strong>19,100 km</strong> (<a href="#s-eoglo">eoPortal</a>); <strong>Galileo</strong>: <strong>23,222 km</strong> (<a href="#s-esagal">ESA</a>); <strong>BeiDou-3</strong>: 24 MEO + 3 GEO + 3 IGSO (<a href="#s-wikibds">Wikipedia</a>). <strong>QZSS</strong>: quasi-zenith (inclined, elliptical geosynchronous) orbits plus GEO (<a href="#s-reg">The Register</a>).</p>
+<p class="correction" id="c35"><strong>[Correction]</strong> <strong>"3 satellites give 2D; the 4th satellite adds altitude"</strong>: the 4th satellite is needed mainly to solve the <strong>receiver clock error</strong>. Four ranges give four equations for four unknowns (x, y, z, clock bias) and hence 3D position <strong>and</strong> time. A 2D fix from 3 satellites works only when altitude is assumed (for example, a ship at sea level).</p>
+
+<h3 id="nav-signals">53.2 Signals</h3>
+<ul>
+<li>Signals are broadcast continuously in real time. Class: in the <strong>L and S bands</strong>, using <strong>CDMA</strong>. <strong>Checked:</strong> all systems use the <strong>L-band</strong>; the <strong>S-band</strong> signal is a <strong>NavIC</strong> feature (<a href="#c36">c36</a>).</li>
+<li><strong>NavIC</strong>: L5 at <strong>1176.45 MHz</strong> and S-band at <strong>2492.028 MHz</strong> (<a href="#s-novatel">NovAtel</a>; ISRO's page prints "2498.028 MHz", which appears to be a typographical slip <strong>[Verification Required]</strong>) (<a href="#s-isronav">ISRO</a>). The new <strong>NVS</strong> series adds an <strong>L1</strong> signal (common in phones) and carries an <strong>indigenous atomic clock</strong> (<a href="#s-isrof18">ISRO, GSLV-F18</a>).</li>
+<li>[Additional] Shared centre frequencies help multi-system receivers: 1176.45 MHz is used by GPS L5, Galileo E5a, BeiDou B2a and NavIC L5 (<a href="#s-sonia">Sonia Satellite</a>, secondary).</li>
+</ul>
+<p class="correction" id="c36"><strong>[Correction]</strong> <strong>"Signals are transmitted in the L and S band using CDMA"</strong>: correct for <strong>NavIC</strong> (L5 + S; the RS and SPS share both). GPS, Galileo, BeiDou and GLONASS broadcast in the <strong>L-band</strong> only (Galileo 1,200-1,600 MHz: <a href="#s-esagalsat">ESA</a>; GLONASS L1-L3 about 1.2-1.6 GHz: <a href="#s-eoglo">eoPortal</a>). <strong>CDMA</strong> is used by GPS, Galileo, BeiDou and NavIC; legacy <strong>GLONASS</strong> signals use <strong>FDMA</strong> (newer GLONASS-K satellites add CDMA signals) [Additional; general reference, not re-read in this session].</p>
+
+<h3 id="nav-sps">53.3 Two types of service: open (SPS) and restricted/precise (PPS, RS)</h3>
+<div class="table-wrap"><table>
+<caption>Standard Positioning Service vs Precise Positioning / Restricted Service (corrected)</caption>
+<thead><tr><th scope="col" style="width:22%">Point</th><th scope="col">Standard Positioning Service (SPS)</th><th scope="col">Precise Positioning Service (PPS) / Restricted Service (RS)</th></tr></thead>
+<tbody>
+<tr><td>Names</td><td>GPS SPS; NavIC SPS; Galileo Open Service; GLONASS open channel</td><td>GPS <strong>PPS</strong>; NavIC <strong>Restricted Service (RS)</strong>; Galileo Public Regulated Service; GLONASS high-accuracy channel</td></tr>
+<tr><td>Users</td><td><strong>Civil</strong>, free to all</td><td><strong>Strategic / security</strong> users</td></tr>
+<tr><td>Accuracy</td><td>Good (NavIC SPS: better than <strong>20 m</strong> in the primary service area, design)</td><td>Higher, plus resistance to jamming and spoofing</td></tr>
+<tr><td>Signal</td><td>Open, documented in a public interface control document</td><td><strong>Encrypted</strong></td></tr>
+<tr><td>Dimension</td><td colspan="2"><strong>Both give 3D position and time</strong> with 4 or more satellites (<a href="#c37">c37</a>)</td></tr>
+<tr><td>Receivers</td><td>Commercial chips (phones, cars)</td><td>Special authorised receivers that can decrypt the signal</td></tr>
+<tr><td>Access</td><td>No authorisation needed</td><td>Only <strong>authorised</strong> users</td></tr>
+<tr><td>Interoperability</td><td>Open signals are designed to work alongside other systems in multi-GNSS chips</td><td>Not intended for interoperability</td></tr>
+</tbody></table></div>
+<p class="small">Sources: ISRO IRNSS page - SPS "provided to all the users" and RS "an encrypted service provided only to the authorised users", accuracy "better than 20 m" (<a href="#s-isroirnss">ISRO</a>); GLONASS open and high-accuracy channels (<a href="#s-eoglo">eoPortal</a>); Galileo services (<a href="#s-azgal">azmth summary of EUSPA/ESA</a>, secondary).</p>
+<p class="correction" id="c37"><strong>[Correction]</strong> Class table: <strong>"SPS 2D (3 sat) vs PPS 3D (4 sat)"</strong> is wrong - the number of satellites in view decides 2D vs 3D, not the service; both services give 3D position. <strong>"Interoperable with other navs except China"</strong>: no source was found for an exception for China; BeiDou's B1C and B2a signals are designed to share frequencies with GPS and Galileo <strong>[Verification Required]</strong> (<a href="#s-sonia">Sonia Satellite</a>, secondary). India's restricted service is officially called <strong>RS</strong>, not PPS. Accuracy: ISRO's design figure is "better than 20 m" for SPS in the primary service area; some sources give about 10 m over India (<a href="#s-novatel">NovAtel</a>; <a href="#s-ie">Indian Express</a>).</p>
+
+<h3 id="nav-systems">53.4 Navigation systems operating at present</h3>
+<div class="table-wrap"><table>
+<caption>Satellite navigation systems: class figure vs checked status (as of 4 Nov 2026)</caption>
+<thead><tr><th scope="col" style="width:17%">System</th><th scope="col" style="width:13%">Country / coverage</th><th scope="col" style="width:12%">Class figure</th><th scope="col">Checked design and status</th></tr></thead>
+<tbody>
+<tr><td><strong>IRNSS / NavIC</strong></td><td>India (ISRO); <strong>regional</strong>: India + about 1,500 km</td><td>7</td><td>Designed for <strong>7</strong> (3 GEO + 4 IGSO). Only <strong>3</strong> satellites (IRNSS-1B, IRNSS-1I, NVS-01) could provide navigation in July 2026 - <strong>below the 4 needed</strong> - after IRNSS-1F's last clock failed on 13 Mar 2026 (<a href="#s-bsnavic">Business Standard, 30 Jul 2026</a>; <a href="#s-dh">Deccan Herald, 17 Mar 2026</a>). <strong>NVS-03</strong> launched on GSLV-F18 on <strong>30 Oct 2026</strong>; orbit-raising to 111.75 degrees E under way, <strong>not yet in service</strong> (<a href="#s-isronvs3">ISRO, 31 Oct 2026</a>).</td></tr>
+<tr><td><strong>QZSS (Michibiki)</strong></td><td>Japan; <strong>regional</strong> (Asia-Oceania)</td><td>4</td><td>Expanding to <strong>7</strong>. <strong>5 operating</strong> when <strong>QZS-7</strong> was launched on 11 Aug 2026 (now in a test phase of several months); <strong>QZS-5</strong> was lost in an H3 launch failure in Dec 2025 (<a href="#s-qzsscao">Cabinet Office, 11 Aug 2026</a>; <a href="#s-jaxa">JAXA</a>; <a href="#s-reg">The Register</a>).</td></tr>
+<tr><td><strong>Galileo</strong></td><td>European Union; global</td><td>30</td><td><strong>30</strong> is the nominal design (24 active + 6 spares in 3 MEO planes). 34 launched; <strong>28 usable</strong> of 32 listed (European GNSS Service Centre, 14 Sep 2026) (<a href="#s-wikigal">Wikipedia</a>; <a href="#s-azgal">azmth</a>, secondary).</td></tr>
+<tr><td><strong>GLONASS</strong></td><td>Russia; global</td><td>24</td><td><strong>24</strong> nominal (3 planes, 64.8 degrees) (<a href="#s-eoglo">eoPortal</a>); <strong>22 in use</strong> of 27 in the constellation (Russian IAC, 13 Sep 2026, via <a href="#s-azglo">azmth</a>, secondary).</td></tr>
+<tr><td><strong>GPS</strong></td><td>USA (US Space Force); global</td><td>24</td><td><strong>24</strong> baseline slots (6 planes); the US has flown about <strong>31</strong> operational satellites "for well over a decade" (<a href="#s-gps">GPS.gov</a>); 32 reported in April 2026 (<a href="#s-cgsic">US Space Force briefing to CGSIC</a>).</td></tr>
+<tr><td><strong>BeiDou (Compass)</strong></td><td>China; global since 31 Jul 2020</td><td>35</td><td><strong>BeiDou-3</strong> nominal design is <strong>30</strong> (24 MEO + 3 GEO + 3 IGSO); <strong>35</strong> was the BeiDou-2 design figure; about 48 BeiDou satellites (BDS-2 + BDS-3) were operating in 2024 (<a href="#s-wikibds">Wikipedia</a>; <a href="#s-sonia">Sonia Satellite citing CSNO</a>, secondary) (<a href="#c38">c38</a>).</td></tr>
+</tbody></table></div>
+<p class="correction" id="c38"><strong>[Correction]</strong> <strong>Constellation numbers</strong>: the class list mixes design figures and in-orbit counts. For the exam, quote <strong>design</strong> numbers (NavIC 7; QZSS 7 planned; Galileo 30 = 24 + 6 spares; GLONASS 24; GPS 24 baseline; BeiDou-3 30) and add the current status when asked. <strong>NavIC "7 satellites"</strong> is the design; only 3 were providing service in 2026. <strong>QZSS "4"</strong> was the 2018 configuration; it now has 5 operating and a 7th in testing. <strong>BeiDou "35"</strong> belongs to BeiDou-2; BeiDou-3 is 30.</p>
+<p class="additional"><strong>[Additional] Global vs regional:</strong> 4 global systems (GPS, GLONASS, Galileo, BeiDou) and 2 regional (NavIC, QZSS). <strong>GAGAN</strong> (ISRO-AAI) is an <strong>augmentation</strong> system that corrects GPS for aviation; it is <strong>not</strong> a navigation constellation of its own (<a href="#s-pyq25">LTP on the 2025 PYQ</a>, secondary).</p>
+</section>
+
+<section id="navic">
+<h2>54. IRNSS / NavIC</h2>
+<p class="note"><strong>[Placeholder]</strong> The rough notes end at the heading "IRNSS / NavIC:". The class content will be added in the next note. Current status pointers are in Sections 53.4 and 55.</p>
+</section>
+
+<section id="status">
+<h2>55. Status as of 4 November 2026 (linkage to the news)</h2>
+<div class="table-wrap"><table>
+<caption>Time-sensitive facts used in this note</caption>
+<thead><tr><th scope="col" style="width:20%">Item</th><th scope="col">Status and date</th><th scope="col" style="width:22%">Source</th></tr></thead>
+<tbody>
+<tr><td>Starlink in India</td><td>GMPCS licence (mid-2025) and IN-SPACe authorisation held; ground network built; <strong>no commercial service</strong>. Pending: MHA security clearance, FDI approval, final spectrum. Approvals reported frozen in Jun 2026 over Iran.</td><td><a href="#s-bs">Business Standard, 8 Oct 2026</a>; <a href="#s-st">Straits Times, 10 Jun 2026</a></td></tr>
+<tr><td>Eutelsat OneWeb, Jio-SES</td><td>GMPCS licences 2021 and 2022; provisional spectrum; awaiting security clearance; no commercial launch.</td><td><a href="#s-ctcab">Communications Today, 12 Oct 2026</a></td></tr>
+<tr><td>Amazon Leo (Kuiper)</td><td>392 in orbit (Oct 2026) of 3,232 authorised; FCC waiver 5 Jun 2026; must reapply in India (reported).</td><td><a href="#s-ktkuiper">KeepTrack</a>; <a href="#s-ctcab">Communications Today</a></td></tr>
+<tr><td>Satcom spectrum pricing</td><td>TRAI: 4% of AGR (May 2025). DCC: 5% (4% in notified remote areas), 5 + 2 years (3 Sep 2026). Cabinet note in preparation (Oct 2026); no Cabinet decision found.</td><td><a href="#s-vnd">Voice&amp;Data</a>; <a href="#s-ctcab">Communications Today</a></td></tr>
+<tr><td>Jio + Airtel share</td><td>Wireless: 77.32% (Aug 2026). Broadband: about 84% (as cited).</td><td><a href="#s-bnet">Bharatnet (TRAI data)</a>; <a href="#s-mbagg">Multibagg</a></td></tr>
+<tr><td>NavIC</td><td>3 satellites providing navigation (Jul 2026 reply in Parliament) - below the 4-satellite minimum. NVS-03 launched 30 Oct 2026 (GSLV-F18, 20th GSLV flight); first orbit manoeuvre 31 Oct; heading to 111.75 degrees E; not yet operational.</td><td><a href="#s-bsnavic">Business Standard</a>; <a href="#s-isronvs3">ISRO</a>; <a href="#s-pibnvs">PIB</a></td></tr>
+<tr><td>QZSS</td><td>QZS-7 launched 11 Aug 2026 (H3 F9); joins 5 operating satellites after tests.</td><td><a href="#s-jaxa">JAXA</a>; <a href="#s-qzsscao">Cabinet Office</a></td></tr>
+<tr><td>Galileo / GLONASS / GPS</td><td>Galileo 28 usable (14 Sep 2026); GLONASS 22 in use (13 Sep 2026); GPS about 31-32 operational.</td><td><a href="#s-azgal">azmth</a>; <a href="#s-azglo">azmth</a>; <a href="#s-gps">GPS.gov</a>; <a href="#s-cgsic">CGSIC</a></td></tr>
+</tbody></table></div>
+</section>
+
+<section id="prelims">
+<h2>Key Facts for Prelims</h2>
+<ul>
+<li><strong>Communication satellites</strong> use <strong>LEO</strong> (about 480-1,200 km), <strong>MEO</strong> (O3b mPOWER, about 8,000 km) and <strong>GEO</strong> (35,786 km). Minimum one-way delay: LEO 3-8 ms, MEO about 53 ms, GEO about 239 ms.</li>
+<li><strong>Starlink</strong> (SpaceX): about 10,900 active (Nov 2026), shells at 43/53/70/97 degrees, laser links. <strong>Eutelsat OneWeb</strong>: 648 satellites, 1,200 km, near-polar, bent-pipe, Ku user / Ka gateway. <strong>Amazon Leo</strong> = former <strong>Project Kuiper</strong> (renamed Nov 2025), 3,232 authorised, 590-630 km. <strong>Jio-SES</strong> = SES's <strong>MEO</strong> O3b mPOWER.</li>
+<li>Satellite internet chain: user device - Wi-Fi router - user terminal - satellite - gateway - optical fibre - PoP/internet exchange.</li>
+<li><strong>Telecommunications Act 2023, s. 4(4)</strong>: spectrum by <strong>auction</strong> by default; <strong>administrative</strong> for <strong>First Schedule</strong> entries (entry 16: satellite services incl. DTH, VSAT, GMPCS, MSS in L and S bands).</li>
+<li><strong>2G judgment, 2 Feb 2012</strong>: 122 licences quashed; auction directed. Presidential Reference 2012: auction not a constitutional mandate for every resource.</li>
+<li><strong>Satcom spectrum charge</strong>: TRAI 4% of AGR (May 2025); DCC 5% (4% in notified remote areas), 5 + 2 years (Sep 2026); Cabinet decision pending (as of 4 Nov 2026).</li>
+<li><strong>IEEE bands</strong>: L 1-2 GHz, S 2-4, C 4-8, X 8-12, Ku 12-18, K 18-27, Ka 27-40 GHz. DTH = Ku-band.</li>
+<li><strong>Navigation</strong>: ranging by signal travel time; <strong>4 satellites</strong> for 3D position + time (the 4th removes receiver clock error). 1 microsecond = about 300 m.</li>
+<li><strong>Orbits</strong>: GPS MEO 20,200 km (24 baseline, about 31 flown); GLONASS 19,100 km (24); Galileo 23,222 km (30 = 24 + 6); BeiDou-3 30 (24 MEO + 3 GEO + 3 IGSO); NavIC 7 (3 GEO + 4 IGSO, 29 degrees); QZSS 7 planned (quasi-zenith + GEO).</li>
+<li><strong>NavIC</strong>: L5 1176.45 MHz + S 2492.028 MHz; NVS adds L1 and an indigenous atomic clock; SPS (civil, better than 20 m design) and RS (encrypted); only 3 working in 2026; <strong>NVS-03 launched 30 Oct 2026 on GSLV-F18</strong>.</li>
+</ul>
+</section>
+
+<section id="mains">
+<h2>Mains Points</h2>
+<ul>
+<li><strong>Connectivity and inclusion:</strong> satellite broadband can reach the last villages, islands, border posts, ships and aircraft faster than fibre; it supports disaster resilience, telemedicine and tele-education and 5G backhaul. But per-area capacity (TRAI: 10,000-20,000 connections in a Delhi-sized area vs 50 lakh needed) and terminal cost mean it <strong>complements</strong>, not replaces, fibre and mobile.</li>
+<li><strong>Sovereignty and security:</strong> foreign-controlled constellations raise questions of lawful interception, emergency control, data localisation and gateway bypass by laser links; Starlink's reported use in Ukraine and Iran shows connectivity can become a geopolitical lever. India's response: GMPCS licence conditions, Indian gateways, MHA security clearance.</li>
+<li><strong>Spectrum policy:</strong> administrative assignment (shared spectrum, level playing field, faster roll-out) vs auction (transparency, revenue, telecom operators' parity argument). The 2023 Act chose administrative assignment; the remaining question is <strong>fair pricing</strong> (TRAI 4% vs DoT 5% of AGR) and periodic review as satellite and mobile markets converge (direct-to-cell).</li>
+<li><strong>Competition:</strong> Jio and Airtel dominate mobile and broadband; they are also satcom partners and owners, so regulators must watch for both foreign dominance and domestic incumbency.</li>
+<li><strong>Self-reliance in PNT:</strong> NavIC's fall to 3 working satellites (2026) - after clock failures, the PSLV-C39 (2017) and NVS-02 (2025) setbacks - shows the need for indigenous clocks, faster replacement launches and spare satellites; NVS-03 (Oct 2026) with an indigenous clock and L1 signal is the recovery path. Multi-GNSS receivers with NavIC support reduce single-system dependence (the 1999 Kargil GPS-denial lesson).</li>
+<li><strong>Way forward:</strong> a time-bound, transparent satcom authorisation and pricing framework; security-by-design conditions applied equally to all operators; terminal subsidies for unserved areas through USOF-type support (TRAI's suggestion); domestic constellations and manufacturing under IN-SPACe; space-sustainability norms for mega-constellations; and an accelerated NVS launch schedule with in-orbit spares.</li>
+</ul>
+</section>
+
+<section id="traps">
+<h2>Common Traps / Confusions</h2>
+<ul>
+<li>Broadband constellations are <strong>LEO</strong> - mostly <strong>inclined</strong>, not polar. <strong>Jio-SES is MEO</strong>, not LEO. <strong>Kuiper = Amazon Leo</strong>.</li>
+<li>A <strong>gateway</strong> is a ground station; <strong>coverage</strong> comes from satellite beams.</li>
+<li>Satellite internet <strong>reduces</strong> last-mile fibre needs; gateways still need fibre.</li>
+<li><strong>Allocation</strong> (band to a service) vs <strong>assignment</strong> (frequencies to an operator). The 2023 Act says "assign".</li>
+<li><strong>Ka-band</strong> is 27-40 GHz (IEEE), not "24 kHz"; 26 GHz is the 5G mmWave band.</li>
+<li>Administrative satellite spectrum is a <strong>national</strong> choice (India: First Schedule of the 2023 Act), not a global treaty rule.</li>
+<li>4 satellites for a 3D fix because of the <strong>receiver clock error</strong>, not only for altitude. Trilateration uses <strong>distances</strong>; triangulation uses angles.</li>
+<li><strong>S-band</strong> navigation signal = NavIC; GPS/Galileo/GLONASS/BeiDou are L-band. GLONASS (legacy) = FDMA.</li>
+<li>India's encrypted service = <strong>RS</strong> (Restricted Service); GPS's = PPS. Both SPS and RS give 3D fixes.</li>
+<li>Design numbers vs working numbers: NavIC <strong>7 designed, 3 working</strong> (2026); BeiDou-3 <strong>30</strong> (35 was BeiDou-2); Galileo 30 includes 6 spares.</li>
+<li><strong>QZSS</strong> and <strong>NavIC</strong> are regional; <strong>GAGAN</strong> is augmentation, not a constellation.</li>
+<li>Geostationary period is <strong>23 h 56 min</strong> (sidereal day), altitude <strong>35,786 km</strong>.</li>
+</ul>
+</section>
+
+<section id="thirty">
+<h2>30-Second Revision</h2>
+<p><strong>Communication satellites</strong>: TV, DTH, internet, VSAT, backhaul; in LEO (low delay, thousands of satellites), MEO (O3b mPOWER, 8,000 km) and GEO (35,786 km, fixed, 3 cover all but poles, DTH in Ku-band, about 0.48 s round trip). <strong>Satellite internet</strong>: device - router - terminal - satellite (laser links) - gateway - fibre - exchange; Starlink (about 10,900 active), OneWeb (648, 1,200 km, near-polar), Amazon Leo (ex-Kuiper), Jio-SES (MEO). <strong>Benefits</strong>: remote, disaster, security, digital economy, telemedicine, 5G backhaul, aviation and shipping. <strong>Concerns</strong>: geopolitical lever (Ukraine, Iran), lawful interception and gateway bypass, data localisation, Jio + Airtel (77% wireless, about 84% broadband), debris, cost and capacity. <strong>Spectrum</strong>: 2023 Act s. 4 - auction default, satellite services administrative (First Schedule); TRAI 4% vs DCC 5% of AGR; Cabinet decision pending; 2G judgment 2012. <strong>Navigation</strong>: ranging, 4 satellites (x, y, z, clock); SPS (open) vs PPS/RS (encrypted); GPS 24 (31 flown), GLONASS 24, Galileo 30, BeiDou-3 30, NavIC 7 (3 working; NVS-03 launched 30 Oct 2026), QZSS 7 planned (5 + QZS-7 testing).</p>
+</section>
+
+<section id="pyqs">
+<h2>Previous Year Questions (PYQs)</h2>
+<p class="small">Source status: no official UPSC paper was opened in this session. Question text and answers below agree across several independent compilations; answers are as stated there (some describe them as the official UPSC key). Links to today's notes are <strong>[Additional]</strong> study guidance.</p>
+<div class="answer" id="pyq-2018c">
+<p><strong>2018 | UPSC CSE Prelims | General Studies Paper I</strong></p>
+<p>With reference to the Indian Regional Navigation Satellite System (IRNSS), consider the following statements:<br/>1. IRNSS has three satellites in geostationary and four satellites in geosynchronous orbits.<br/>2. IRNSS covers entire India and about 5500 sq. km beyond its borders.<br/>3. India will have its own satellite navigation system with full global coverage by the middle of 2019.<br/>Which of the statements given above is/are correct?<br/>(a) 1 only (b) 1 and 2 only (c) 2 and 3 only (d) None</p>
+<p><strong>Answer: (a)</strong> (secondary compilations: <a href="#s-pyq18a">Vajiram and Ravi</a>; <a href="#s-pyq18a2">Insights IAS key, 2018</a>). <strong>Link [Additional]:</strong> 3 GEO + 4 IGSO (Section 53.1, <a href="#c34">c34</a>); coverage is India plus about <strong>1,500 km</strong>, not "5500 sq km"; NavIC is <strong>regional</strong>.</p>
+</div>
+<div class="answer" id="pyq-2018d">
+<p><strong>2018 | UPSC CSE Prelims | General Studies Paper I</strong></p>
+<p>In which of the following areas can GPS technology be used?<br/>1. Mobile phone operations<br/>2. Banking operations<br/>3. Controlling the power grids<br/>Select the correct answer using the code given below:<br/>(a) 1 only (b) 2 and 3 only (c) 1 and 3 only (d) 1, 2 and 3</p>
+<p><strong>Answer: (d)</strong> (<a href="#s-pyq18b">Vajiram and Ravi</a>; <a href="#s-pyq18b2">ThinQ IAS</a>, both secondary). <strong>Link [Additional]:</strong> navigation satellites carry atomic clocks, so they deliver <strong>precise time</strong> as well as position (Section 53.1) - used to synchronise telecom networks, time-stamp financial transactions and coordinate power grids.</p>
+</div>
+<div class="answer" id="pyq-2023">
+<p><strong>2023 | UPSC CSE Prelims | General Studies Paper I</strong></p>
+<p>Which one of the following countries has its own Satellite Navigation System?<br/>(a) Australia (b) Canada (c) Israel (d) Japan</p>
+<p><strong>Answer: (d)</strong> (<a href="#s-pyq23">UnlockIAS</a>; <a href="#s-pyq23b">ThinQ IAS</a>, both secondary). <strong>Link [Additional]:</strong> Japan's <strong>QZSS (Michibiki)</strong> is a regional system (Section 53.4).</p>
+</div>
+<div class="answer" id="pyq-2025">
+<p><strong>2025 | UPSC CSE Prelims | General Studies Paper I</strong></p>
+<p>GPS-Aided Geo Augmented Navigation (GAGAN) uses a system of ground stations to provide necessary augmentation. Which of the following statements is/are correct in respect of GAGAN?<br/>I. It is designed to provide additional accuracy and integrity.<br/>II. It will allow more uniform and high quality air traffic management.<br/>III. It will provide benefits only in aviation but not in other modes of transportation.<br/>Select the correct answer using the code given below.<br/>(a) I, II and III (b) II and III only (c) I only (d) I and II only</p>
+<p><strong>Answer: (d)</strong> (<a href="#s-pyq25">LTP</a>; <a href="#s-pyq25b">UnlockIAS</a>, both secondary). <strong>Link [Additional]:</strong> GAGAN corrects GPS using GEO payloads; it is an augmentation system, not a constellation like NavIC (Section 53.4).</p>
+</div>
+<p class="note"><strong>[No verified PYQ found for this topic]</strong> Satellite broadband (Starlink/OneWeb/Kuiper), satcom spectrum pricing and the Telecommunications Act 2023 - no authentic UPSC Prelims or GS Paper III Mains question was verified in this session. A coaching site's "model answer" on satcom spectrum (Oct 2026) is a practice question, not a PYQ, and is not reproduced.</p>
+</section>
+
+<section id="corrections">
+<h2>Corrections Made</h2>
+<p>Substantive changes are marked where they occur. Spelling and typing repairs were made silently and are not listed. Numbering continues from the 3 Nov note (c13-c23).</p>
+<ol start="24">
+<li><a href="#c24">Communication satellites use LEO, MEO and GEO; most LEO broadband shells are inclined, not polar.</a></li>
+<li><a href="#c25">Constellations are LEO in several shells; Jio-SES uses MEO; Kuiper is now Amazon Leo.</a></li>
+<li><a href="#c26">Satellite beams give coverage; gateways are ground links (gateway counts differ by source).</a></li>
+<li><a href="#c27">Satellite internet reduces, not eliminates, the need for fibre; capacity and cost limits.</a></li>
+<li><a href="#c28">"83%" fits Jio + Airtel's broadband share; wireless share is 77.32% (Aug 2026).</a></li>
+<li><a href="#c29">Spectrum is a frequency resource; government allocates bands and assigns frequencies.</a></li>
+<li><a href="#c30">Ka-band is 27-40 GHz (IEEE), not "24 kHz"; 26 GHz is 5G mmWave.</a></li>
+<li><a href="#c31">3G/BWA auctioned in 2010; 2G judgment of 2 Feb 2012; Presidential Reference 2012.</a></li>
+<li><a href="#c32">No global treaty requires administrative assignment; national choice (India: 2023 Act).</a></li>
+<li><a href="#c33">GEO: 35,786 km and 23 h 56 min.</a></li>
+<li><a href="#c34">Global systems use MEO; regional systems use GEO + inclined GSO.</a></li>
+<li><a href="#c35">The 4th satellite solves the receiver clock error (3D position + time).</a></li>
+<li><a href="#c36">S-band is NavIC-specific; others are L-band; legacy GLONASS uses FDMA.</a></li>
+<li><a href="#c37">SPS vs PPS/RS table: both 3D; "except China" unverified; India's service is RS.</a></li>
+<li><a href="#c38">Constellation numbers: design vs working counts (NavIC, QZSS, Galileo, GLONASS, GPS, BeiDou).</a></li>
+</ol>
+</section>
+
+<section id="visuals">
+<h2>Visual Representations Required / Recommended</h2>
+<ul>
+<li><strong>Included:</strong> <a href="#fig47">Figure 47</a> (two users connected through satellite internet - same network and different networks: Wi-Fi router, user terminal, satellites, laser link, gateways, fibre, PoP/internet exchange, Starlink and Jio-SES), <a href="#fig48">Figure 48</a> (calculated delay by orbit), <a href="#flow-spectrum">Figure 49</a> (spectrum assignment routes), <a href="#fig50">Figure 50</a> (trilateration and the fourth satellite); flow chart of the internet signal path (Section 50.2); comparison tables in Sections 49.1, 50.1, 50.3, 51.1, 51.2, 53.3, 53.4 and 55. The three-satellite GEO coverage figure is not redrawn; it is <a href="Science%20and%20Technology%20-%20Class%2011-03-2026.html#fig45">Figure 45 of the 3 Nov note</a>.</li>
+<li><strong>Not included:</strong> real constellation maps or photographs (copyrighted or not self-contained), and a NavIC orbit figure (deferred to the NavIC class, Section 54).</li>
+</ul>
+<p><strong>[All necessary visual representations included]</strong> (no required or recommended markers are outstanding).</p>
+</section>
+
+<section id="sources">
+<h2>Open Sources / Further Reading</h2>
+<p class="small">HTTPS public sources consulted on 5 November 2026, mostly as search-result extracts (not full documents). Secondary sources are labelled. <strong>Verification limits:</strong> the 22 telecom circles, the 2010 3G/BWA auctions, the satcom Ka-band sub-ranges and GLONASS FDMA were stated from general reference and not re-read in this session; no official UPSC paper was opened.</p>
+<ol>
+<li id="s-act"><a href="https://www.advocatekhoj.com/library/bareacts/telecommunications/4.php">Telecommunications Act 2023, Section 4 (bare-act text, AdvocateKhoj mirror)</a> - government as owner; auction default; administrative process for First Schedule; definitions.</li>
+<li id="s-sched"><a href="https://indiacode.ecourtsindia.com/telecommunications-act-2023/schedule/1/">Telecommunications Act 2023, First Schedule (India Code text via eCourtsIndia)</a> - entry 16, satellite-based services.</li>
+<li id="s-sc2012"><a href="https://indian-supreme-court-judgments.s3.amazonaws.com/data/pdf/year=2012/english/2012_3_147_257_EN.pdf">Supreme Court: Centre for PIL v. Union of India, 2 Feb 2012 ([2012] 3 SCR 147)</a> - 2G spectrum judgment.</li>
+<li id="s-toi2012"><a href="https://timesofindia.indiatimes.com/india/2G-scam-SC-scraps-122-licences-granted-under-Rajas-tenure-trial-court-to-decide-on-Chidambarams-role/articleshow/11725097.cms">Times of India: SC scraps 122 licences (2 Feb 2012)</a> - auction within four months.</li>
+<li id="s-ltp"><a href="https://www.learnthrupractice.com/upsc-mains-answer/should-spectrum-satellite-communication-auctioned-assigned-2909e92">LTP: satcom spectrum model answer (24 Oct 2026)</a> (secondary) - Presidential Reference 2012 summary.</li>
+<li id="s-blsat"><a href="https://www.thehindubusinessline.com/info-tech/dot-approves-recommendations-made-by-trai-for-satcom/article71443674.ece">BusinessLine: DoT approves TRAI satcom recommendations (8 Sep 2026)</a> - TRAI 4% AGR, Rs 500 urban fee, terminal subsidy, 10,000-20,000 connections in Delhi.</li>
+<li id="s-etlegal"><a href="https://legal.economictimes.indiatimes.com/news/regulators/digital-communications-commission-approves-trai-recommendations-on-satcom-spectrum/133938804">ETLegalWorld/PTI: DCC approves TRAI recommendations (9 Sep 2026)</a> - GSO and NGSO, FSS and MSS.</li>
+<li id="s-vnd"><a href="https://www.voicendata.com/space/satcom-spectrum-framework-clears-dcc-approval-hurdle-12509228">Voice&amp;Data: Satcom spectrum framework clears DCC (9 Sep 2026)</a> - 5% AGR, 4% in rural/remote areas, 5 + 2 years, administrative assignment.</li>
+<li id="s-ctcab"><a href="https://www.communicationstoday.co.in/satcom-spectrum-pricing-heads-to-cabinet-as-dot-finalizes-its-note/">Communications Today: Satcom spectrum pricing heads to Cabinet (12 Oct 2026)</a> - 8% licence fee; provisional spectrum; licence years; Amazon Leo to reapply; Jio's 1,600-satellite plan; reported prices.</li>
+<li id="s-bs"><a href="https://www.business-standard.com/industry/news/starlink-india-entry-why-elon-musk-satellite-internet-launch-clearance-126100800416_1.html">Business Standard: Why Starlink's India launch is stalled (8 Oct 2026)</a> - pending approvals; lawful interception, data localisation, gateway-bypass concern; Ukraine.</li>
+<li id="s-st"><a href="https://www.straitstimes.com/business/starlink-india-launch-hits-security-roadblock-before-spacex-ipo">Bloomberg via The Straits Times: Starlink India launch hits security roadblock (10 Jun 2026)</a> - Iran; about 10 gateways and a Mumbai hub; data storage.</li>
+<li id="s-snews"><a href="https://starlink-news.com/2026/10/19/starlink-india-still-waits-on-spectrum-and-security-nod/">Starlink News: Starlink India still waits (19 Oct 2026)</a> (secondary) - "more than 20 gateway sites" per BW Businessworld.</li>
+<li id="s-sig"><a href="https://www.satelliteinternetguide.com/news-tech/starlink-india/">Satellite Internet Guide: Starlink India (13 Oct 2026)</a> (secondary) - grey-market terminals flagged.</li>
+<li id="s-ktstar"><a href="https://keeptrack.space/satellites/constellations/starlink">KeepTrack: Starlink constellation statistics (data 4 Nov 2026)</a> (secondary) - 10,891 active; 43-97 degrees; direct-to-cell.</li>
+<li id="s-orbstar"><a href="https://orbitalradar.com/how-many-starlink-satellites">Orbital Radar: How many Starlink satellites (5 Nov 2026)</a> (secondary) - 9,897 operational on station; shell lowering; 20-40 ms latency.</li>
+<li id="s-upside"><a href="https://upsidecurve.com/trackers/starlink">Upside Curve: Starlink tracker (3 Nov 2026)</a> (secondary) - shells at 43, 53, 70, 97 degrees (from planet4589.org).</li>
+<li id="s-eoow"><a href="https://www.eoportal.org/satellite-missions/oneweb">eoPortal: OneWeb</a> (secondary) - 648 satellites, 1,200 km, 12 planes, about 87 degrees, Ka gateway / Ku user, bent-pipe.</li>
+<li id="s-orbow"><a href="https://orbitalradar.com/satellites/operator/oneweb">Orbital Radar: OneWeb</a> (secondary) - 87.9 degrees; Bharti and UK rescue.</li>
+<li id="s-ktkuiper"><a href="https://keeptrack.space/live-count/how-many-kuiper-satellites-are-in-orbit">KeepTrack: How many Kuiper satellites (Oct 2026)</a> (secondary) - 392 in orbit; renamed Amazon Leo Nov 2025; FCC waiver 5 Jun 2026.</li>
+<li id="s-eokuiper"><a href="https://www.eoportal.org/satellite-missions/projectkuiper">eoPortal: Project Kuiper</a> (secondary) - 590-630 km, 98 planes, laser links.</li>
+<li id="s-o3b"><a href="https://en.wikipedia.org/wiki/O3b_mPOWER">Wikipedia: O3b mPOWER</a> (secondary) - SES, MEO 8,000 km, operational April 2024.</li>
+<li id="s-stn"><a href="https://www.sharetechnote.com/html/Communication_Satellite_O3b.html">ShareTechnote: SES O3b / mPOWER (reviewed 30 Oct 2026)</a> (secondary) - 13-satellite system; final three launched Sep 2026; Ka-band.</li>
+<li id="s-et23"><a href="https://economictimes.indiatimes.com/industry/telecom/telecom-news/reliance-jio-unveils-jiospacefiber-indias-first-satellite-based-giga-fiber-service-for-remote-connectivity/articleshow/104744082.cms">Economic Times: Jio unveils JioSpaceFiber (27 Oct 2023)</a> - SES MEO partnership; backhaul.</li>
+<li id="s-bnet"><a href="https://bharatnet.in/trai-publishes-telecom-subscription-data-for-august-2026/">Bharatnet: TRAI telecom subscription data, Aug 2026 (30 Sep 2026)</a> (reporting TRAI) - Jio 39.31%, Airtel 38.01%.</li>
+<li id="s-mbagg"><a href="https://www.multibagg.ai/market-pulse/articles/jio-airtel-market-share-arpu-cmv24eblg001b39qpgh6pwoco">Multibagg: Jio vs Airtel (10 Oct 2026)</a> (secondary) - broadband 48.94% vs 34.94% "in cited TRAI data".</li>
+<li id="s-nasaband"><a href="https://www.nasa.gov/general/what-are-the-spectrum-band-designators-and-bandwidths/">NASA: Spectrum band designators and bandwidths</a> - IEEE L, S, C, X, Ku, K, Ka ranges.</li>
+<li id="s-isronav"><a href="https://www.isro.gov.in/SatelliteNavigationServices.html">ISRO: Satellite Navigation Services (NavIC)</a> - 7 satellites, GEO/IGSO slots, SPS and RS, L5 and S.</li>
+<li id="s-isroirnss"><a href="https://www.isro.gov.in/IRNSSSignal.html">ISRO: IRNSS signal-in-space ICD page</a> - SPS for all, RS encrypted; better than 20 m; 1,500 km service area.</li>
+<li id="s-novatel"><a href="https://www-stg.novatel.com/an-introduction-to-gnss/gnss-constellations/navic">NovAtel: NavIC</a> (secondary) - L5 1176.45 MHz, S 2492.028 MHz; accuracy.</li>
+<li id="s-bsnavic"><a href="https://www.business-standard.com/technology/tech-news/navic-explained-india-navigation-system-four-satellites-126073001088_1.html">Business Standard: NavIC explained (30 Jul 2026)</a> - Parliament reply: 3 satellites (1B, 1I, NVS-01).</li>
+<li id="s-dh"><a href="https://www.deccanherald.com/science/indias-navic-satellite-navigation-system-is-in-distress-with-only-three-functional-satellites-3935465">Deccan Herald: NavIC in distress (17 Mar 2026)</a> - IRNSS-1F clocks stopped 13 Mar 2026; NVS-02 failure.</li>
+<li id="s-isrof18"><a href="https://www.isro.gov.in/ISRO_EN/Mission_GSLVF18.html">ISRO: GSLV-F18/NVS-03 mission</a> - 20th GSLV flight; indigenous clock; L1 + L5/S.</li>
+<li id="s-isronvs3"><a href="https://www.isro.gov.in/Orbit_manoeuvring_of_NVS03_spacecraft.html">ISRO: Orbit manoeuvring of NVS-03 (31 Oct 2026)</a> - launch 30 Oct 2026 23:51; first manoeuvre; 111.75 degrees E.</li>
+<li id="s-pibnvs"><a href="https://pib.gov.in/FactsheetDetails.aspx?Id=151153&amp;reg=3&amp;lang=1">PIB: GSLV-F18/NVS-03 factsheet (1 Nov 2026)</a> - third of five NVS satellites; GTO; PNT applications.</li>
+<li id="s-ie"><a href="https://indianexpress.com/article/india/isro-gslv-f18-nvs-03-launch-navic-satellite-constellation-10945164/">Indian Express: NavIC to be operational again after NVS-03 (1 Nov 2026)</a> - 56-day GSLV turnaround; 10 m design accuracy.</li>
+<li id="s-gps"><a href="https://www.gps.gov/space-segment">GPS.gov: Space segment</a> - 24 slots, 31 operational, 20,200 km, 6 planes.</li>
+<li id="s-cgsic"><a href="https://www.gps.gov/sites/default/files/2026-04/Mediate%2020260421_CGSIC%20MD%2031_FINAL.pdf">US Space Force (Mission Delta 31) briefing to CGSIC (21 Apr 2026)</a> - 32 presented; 55 degrees.</li>
+<li id="s-esagal"><a href="https://www.esa.int/Applications/Satellite_navigation/Galileo/Galileo_a_constellation_of_navigation_satellites">ESA: Galileo, a constellation of navigation satellites</a> - 23,222 km, 56 degrees, 3 planes.</li>
+<li id="s-esagalsat"><a href="https://www.esa.int/Applications/Satellite_navigation/Galileo/Galileo_satellites">ESA: Galileo satellites</a> - L-band 1,200-1,600 MHz.</li>
+<li id="s-wikigal"><a href="https://en.wikipedia.org/wiki/List_of_Galileo_satellites">Wikipedia: List of Galileo satellites (status 31 Aug 2026)</a> (secondary) - 30 nominal (24 + 6), 34 launched, 28 operational.</li>
+<li id="s-azgal"><a href="https://azmth.space/tracker/galileo">azmth: Galileo tracker</a> (secondary) - GSC table 14 Sep 2026: 28 usable of 32; services.</li>
+<li id="s-eoglo"><a href="https://www.eoportal.org/satellite-missions/glonass">eoPortal: GLONASS (updated 23 Sep 2026)</a> (secondary) - 24 MEO, 19,100 km, 64.8 degrees, L1-L3, open and high-accuracy channels.</li>
+<li id="s-azglo"><a href="https://azmth.space/tracker/glonass">azmth: GLONASS tracker</a> (secondary) - IAC 13 Sep 2026: 22 in use of 27.</li>
+<li id="s-wikibds"><a href="https://en.wikipedia.org/wiki/List_of_BeiDou_satellites">Wikipedia: List of BeiDou satellites</a> (secondary) - BeiDou-3 nominal 30; BeiDou-2 nominal 35.</li>
+<li id="s-sonia"><a href="https://soniasatellite.com/knowledge/beidou/">Sonia Satellite: BeiDou BDS-3 explained (verified 4 Jul 2026)</a> (secondary) - CSNO 2024: 48 operating; B1C/B2a shared frequencies.</li>
+<li id="s-jaxa"><a href="https://global.jaxa.jp/press/2026/08/20260811-1_e.html">JAXA: Launch result of QZS-7 on H3 F9 (11 Aug 2026)</a>.</li>
+<li id="s-qzsscao"><a href="https://qzss.go.jp/info/information/qzs-7_260811.html">Japan Cabinet Office (QZSS): Minister's statement on QZS-7 (11 Aug 2026, Japanese)</a> - joins the 5 operating satellites; 7-satellite and later 11-satellite plans.</li>
+<li id="s-reg"><a href="https://assets.theregister.com/2026/08/11/20263/">The Register: Japan kind-of completes its satnav constellation (11 Aug 2026)</a> - QZS-5 lost Dec 2025; quasi-zenith orbits.</li>
+<li id="s-pyq18a"><a href="https://vajiramandravi.com/upsc-exam/with-reference-to-the-indian-regional-navigation-satellite-system-irnss-consider-the-following-statements/">Vajiram and Ravi: 2018 Prelims IRNSS question</a> (secondary).</li>
+<li id="s-pyq18a2"><a href="https://www.insightsonindia.com/2018/06/14/insights-ias-final-answer-key-with-detailed-explanations-to-upsc-csp-2018/">Insights IAS: answer key, CSP 2018 (14 Jun 2018)</a> (secondary).</li>
+<li id="s-pyq18b"><a href="https://vajiramandravi.com/upsc-exam/in-which-of-the-following-areas-can-gps-technology-be-used/">Vajiram and Ravi: 2018 Prelims GPS uses question</a> (secondary).</li>
+<li id="s-pyq18b2"><a href="https://thinqias.com/upsc-prelims-2018-solution-answer-key/gs-paper-1/in-which-of-the-following-areas-can-gps-technology-be-used-1">ThinQ IAS: 2018 Prelims Q55</a> (secondary).</li>
+<li id="s-pyq23"><a href="https://www.unlockias.in/upsc-prelims-pyq/science-technology/space-technology-and-astronomy/2023-one-countries-satellite-navigation-system">UnlockIAS: 2023 Prelims Q57</a> (secondary).</li>
+<li id="s-pyq23b"><a href="https://thinqias.com/upsc-prelims-2023-solution-answer-key/gs-paper-1/which-one-of-the-following-countries-has-its-own-satellite-navigation-system">ThinQ IAS: 2023 Prelims Q57</a> (secondary).</li>
+<li id="s-pyq25"><a href="https://www.learnthrupractice.com/upsc-prelims-pyq/2025/gs1/94/gagan-gps-aided-geo-augmented-navigation-sbas">LTP: 2025 Prelims Q94 (GAGAN)</a> (secondary).</li>
+<li id="s-pyq25b"><a href="https://www.unlockias.in/upsc-prelims-pyq/science-technology/space-technology-and-astronomy/2025-gpsaided-geo-augmented-navigation-gagan-uses-system-ground-stations-provide">UnlockIAS: 2025 Prelims Q94</a> (secondary).</li>
+<li>Official papers: <a href="https://upsc.gov.in/examinations/previous-question-papers">UPSC previous question papers</a> (not opened in this session).</li>
+<li>Previous note: <a href="Science%20and%20Technology%20-%20Class%2011-03-2026.html">Science and Technology - Class 11-03-2026</a> (polar orbit, remote sensing, NISAR, Drishti, SBS-III, GEO Earth observation, Figure 45).</li>
+</ol>
+</section>
+</main>
+</body>
+</html>
