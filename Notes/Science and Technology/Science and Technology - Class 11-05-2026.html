@@ -1,0 +1,498 @@
+​<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Science and Technology - Class Notes | 5 November 2026</title>
+<style>
+  * { box-sizing: border-box; }
+  body { font-family: Calibri, sans-serif; font-size: 11pt; line-height: 1.6; max-width: 900px; margin: 20px auto; padding: 0 20px; color: #202124; }
+  h1 { font-size: 20pt; color: #1a1a1a; border-bottom: 2px solid #333; padding-bottom: 4px; margin-top: 30px; }
+  h2 { font-size: 16pt; color: #2b2b2b; margin-top: 28px; border-bottom: 1px solid #ddd; padding-bottom: 3px; }
+  h3 { font-size: 13pt; color: #3a3a3a; margin-top: 18px; }
+  p { margin: 8px 0; }
+  ul, ol { margin: 6px 0; padding-left: 28px; }
+  li { margin: 4px 0; }
+  a { color: #005ea6; overflow-wrap: anywhere; }
+  table { border-collapse: collapse; width: 100%; margin: 10px 0; table-layout: fixed; }
+  caption { text-align: left; font-weight: bold; margin-bottom: 6px; }
+  th, td { border: 1px solid #999; padding: 6px 10px; text-align: left; vertical-align: top; overflow-wrap: anywhere; }
+  th { background: #f0f0f0; }
+  .table-wrap { overflow-x: auto; }
+  .note, .exam, .verification { background: #fff8e1; border-left: 3px solid #f5a623; padding: 8px 12px; margin: 10px 0; overflow-wrap: anywhere; }
+  .correction { background: #fff3e0; border-left: 3px solid #ef6c00; padding: 8px 12px; margin: 10px 0; }
+  .additional, .lead { background: #e8f5e9; border-left: 3px solid #2e7d32; padding: 8px 12px; margin: 10px 0; }
+  .flow { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 10px; padding: 12px 0; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; }
+  .flow span { text-align: center; max-width: 100%; }
+  .flow .box { border: 1px solid #888; background: #f7f7f7; padding: 6px 10px; border-radius: 4px; flex: 1 1 120px; }
+  figure { margin: 16px 0; padding: 12px; border: 1px solid #bbb; background: #fff; }
+  figure h3 { margin-top: 0; text-align: center; }
+  figcaption { margin-top: 8px; color: #555; font-size: 9.5pt; }
+  svg { max-width: 100%; height: auto; display: block; margin: 0 auto; }
+  .cols2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  .cols3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+  .cols4 { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
+  .tile { border: 1px solid #888; border-radius: 4px; padding: 8px; background: #f5f9fd; font-size: 10.5pt; }
+  .tile.p1 { background: #e8f5e9; border-color: #2e7d32; }
+  .tile.p2 { background: #f5f9fd; border-color: #0078d4; }
+  .tile.p3 { background: #fff3e0; border-color: #ef6c00; }
+  .tile.p4 { background: #fdecea; border-color: #c62828; }
+  .small { color: #555; font-size: 9.5pt; }
+  .answer { margin: 10px 0; padding: 6px 12px; border-left: 3px solid #0078d4; background: #f5f9fd; }
+  @media (max-width: 650px) {
+    body { padding: 0 12px; }
+    .cols2, .cols3, .cols4 { grid-template-columns: 1fr; }
+    .flow { flex-direction: column; align-items: stretch; }
+    .flow .box { flex: none; }
+    th, td { padding: 6px; }
+  }
+  @media print {
+    @page { size: A4; margin: 14mm; }
+    body { max-width: none; margin: 0; padding: 0; }
+    h1, h2, h3 { break-after: avoid; }
+    figure, tr, .answer, .tile { break-inside: avoid; }
+    thead { display: table-header-group; }
+    .table-wrap { overflow: visible; }
+    a { color: inherit; text-decoration: none; }
+    p, li { orphans: 3; widows: 3; }
+  }
+</style>
+</head>
+<body>
+<main>
+<header>
+<h1>Science and Technology - Class Notes | 5 November 2026</h1>
+<p><strong>Topics:</strong> Space - <strong>IRNSS / NavIC</strong> (constellation and its arrangement, coverage and accuracy, signals and the NVS generation, <strong>atomic clocks</strong>, factors that decide navigation accuracy, significance); Physics - the <strong>Large Hadron Collider (LHC)</strong> and the questions it addresses; Standard Model of Physics (heading only).</p>
+<p class="small">Note date: <time datetime="2026-11-07">5 November 2026</time>. <strong>Continuation:</strong> this note continues the <a href="Science%20and%20Technology%20-%20Class%2011-04-2026.html">4 November note</a>, which left <strong>Section 54 ("IRNSS / NavIC")</strong> as a placeholder and used Section 55 for its status table. Today's NavIC material therefore <strong>completes Section 54</strong>; new topics run from <strong>Section 56</strong>, figures from <strong>Figure 51</strong> and corrections from <strong>c39</strong>. Earlier notes are untouched. The rough notes end at the heading <strong>"Standard model of Physics:"</strong>; Section 57 is left as a placeholder for the next class.</p>
+<p class="note"><strong>Reading key:</strong> <strong>[Correction]</strong> repairs a substantive claim; <strong>[Additional]</strong> marks supporting material or study guidance; <strong>[Verification Required]</strong> keeps useful but unresolved material. Sources were consulted on <strong>5 November 2026</strong>; statuses are stated <strong>as of 5 November 2026</strong>. Read in relevant part: ISRO (Satellite Navigation Services, IRNSS Programme, NVS-02 and GSLV-F12 pages, NavIC L1 release, NVS-03 final orbit-manoeuvre update of 4 Nov 2026), PIB (NavIC dedication 2016, ISRO Navigation Centre 2013, NITI Aayog gig-economy report 2022, MoD RAKSHA document 2026), CAG Report No. 2 of 2018, BIPM (SI second; Rb-87 frequency), NIST, NovAtel, CERN (LHC, Run 3, Long Shutdown 3, Higgs, dark matter, India's associate membership, LHCb and ALICE results), CERN Courier, APS Physics, NASA, and news reports cited in <a href="#sources">Sources</a>. Most were read as <strong>search-result extracts</strong>, not full documents. Official UPSC papers were not opened. Spelling and typing repairs ("announed", "geo synchroous", "peers", "Swis", "cescium", "ionospjheric", "treciever", "dilusion", "deplomacy", "mapple my india", "accelrated", "beloe thw", "theoritical") were made silently.</p>
+</header>
+
+<section id="navic">
+<h2>54. IRNSS / NavIC (completes Section 54 of the 4 Nov note)</h2>
+
+<h3 id="navic-what">54.1 The programme and its constellation</h3>
+<ul>
+<li><strong>IRNSS</strong> (Indian Regional Navigation Satellite System), operational name <strong>NavIC</strong> ("Navigation with Indian Constellation" - the name given when the PM dedicated the system to the nation on <strong>28 Apr 2016</strong>, the day IRNSS-1G was launched on PSLV-C33) (<a href="#s-isroc33">ISRO</a>; <a href="#s-pib2016">PIB, 28 Apr 2016</a>).</li>
+<li>Class: announced in <strong>2006</strong> with 7 satellites. <strong>Checked:</strong> the Government gave <strong>financial sanction in May 2006 for Rs 1,420 crore</strong> (<a href="#s-cag">CAG Report No. 2 of 2018</a>). [Additional]</li>
+<li>Design: <strong>7 satellites</strong> - <strong>3 in geostationary orbit (GEO)</strong> at <strong>32.5, 83 and 129.5 degrees E</strong>, and <strong>4 in inclined geosynchronous orbit (IGSO)</strong>, inclination <strong>29 degrees</strong>, crossing the equator at <strong>55 and 111.75 degrees E</strong>, <strong>two satellites at each crossing longitude</strong> (<a href="#s-isronav">ISRO</a>). Seen from the ground, each IGSO satellite traces a <strong>figure-of-8</strong> (Figure 51) (<a href="#c39">c39</a>).</li>
+<li>[Additional] Why this mix: GEO satellites stay fixed over the equator; IGSO satellites swing north and south of it (to about 29 degrees N and S), which spreads the satellites across India's sky and improves geometry (Section 54.5). With only 7 satellites, every one matters - losing one degrades service.</li>
+</ul>
+<p class="correction" id="c39"><strong>[Correction]</strong> <strong>"3 in geo-stationary earth orbit and 4 in geo synchronous orbit in 2 peers forming a figure of 8"</strong>: write "4 in <strong>inclined</strong> geosynchronous orbit (29 degrees), two in each of the planes crossing the equator at <strong>55 and 111.75 degrees E</strong>". A GEO satellite is itself geosynchronous (a special case with 0 degrees inclination); what distinguishes the other four is the <strong>inclination</strong>. The figure-of-8 is the <strong>ground track</strong> of each IGSO satellite, not a formation of the satellites (<a href="#s-isronav">ISRO</a>; figure-of-8 ground track as captioned in <a href="#s-eoirnss">eoPortal</a>). (The 4 Nov note's <a href="Science%20and%20Technology%20-%20Class%2011-04-2026.html#c34">c34</a> gives the same slots.)</p>
+
+<figure id="fig51">
+<h3>Figure 51. Arrangement of the NavIC Constellation - GEO Slots, IGSO Figure-of-8 Ground Tracks and Service Areas (schematic, not to scale) [Additional]</h3>
+<svg viewBox="0 0 900 470" role="img" aria-label="Panel A: longitude-latitude grid from 20 to 140 degrees east and 40 south to 55 north. Three geostationary slots sit on the equator at 32.5, 83 and 129.5 degrees east. Two figure-of-8 ground tracks, each spanning 29 north to 29 south and about 4 degrees either side, are centred on the equator at 55 and 111.75 degrees east; two inclined geosynchronous satellites trace each figure-of-8. A shaded box marks India and a dashed rectangle marks the extended service area from 30 south to 50 north and 30 to 130 east. Panel B: Earth with the equatorial geostationary ring and an inclined geosynchronous orbit tilted 29 degrees, both at about 35,786 km altitude."><g font-family="Calibri, sans-serif" font-size="11"><line x1="50.0" y1="30.0" x2="50.0" y2="429.0" stroke="#e0e0e0"/><text x="50.0" y="443.0" text-anchor="middle" fill="#555">20&#176;E</text><line x1="100.0" y1="30.0" x2="100.0" y2="429.0" stroke="#e0e0e0"/><line x1="150.0" y1="30.0" x2="150.0" y2="429.0" stroke="#e0e0e0"/><text x="150.0" y="443.0" text-anchor="middle" fill="#555">40&#176;E</text><line x1="200.0" y1="30.0" x2="200.0" y2="429.0" stroke="#e0e0e0"/><line x1="250.0" y1="30.0" x2="250.0" y2="429.0" stroke="#e0e0e0"/><text x="250.0" y="443.0" text-anchor="middle" fill="#555">60&#176;E</text><line x1="300.0" y1="30.0" x2="300.0" y2="429.0" stroke="#e0e0e0"/><line x1="350.0" y1="30.0" x2="350.0" y2="429.0" stroke="#e0e0e0"/><text x="350.0" y="443.0" text-anchor="middle" fill="#555">80&#176;E</text><line x1="400.0" y1="30.0" x2="400.0" y2="429.0" stroke="#e0e0e0"/><line x1="450.0" y1="30.0" x2="450.0" y2="429.0" stroke="#e0e0e0"/><text x="450.0" y="443.0" text-anchor="middle" fill="#555">100&#176;E</text><line x1="500.0" y1="30.0" x2="500.0" y2="429.0" stroke="#e0e0e0"/><line x1="550.0" y1="30.0" x2="550.0" y2="429.0" stroke="#e0e0e0"/><text x="550.0" y="443.0" text-anchor="middle" fill="#555">120&#176;E</text><line x1="600.0" y1="30.0" x2="600.0" y2="429.0" stroke="#e0e0e0"/><line x1="650.0" y1="30.0" x2="650.0" y2="429.0" stroke="#e0e0e0"/><text x="650.0" y="443.0" text-anchor="middle" fill="#555">140&#176;E</text><line x1="50.0" y1="429.0" x2="650.0" y2="429.0" stroke="#e0e0e0"/><text x="46.0" y="433.0" text-anchor="end" fill="#555">40&#176;S</text><line x1="50.0" y1="387.0" x2="650.0" y2="387.0" stroke="#e0e0e0"/><text x="46.0" y="391.0" text-anchor="end" fill="#555">30&#176;S</text><line x1="50.0" y1="345.0" x2="650.0" y2="345.0" stroke="#e0e0e0"/><text x="46.0" y="349.0" text-anchor="end" fill="#555">20&#176;S</text><line x1="50.0" y1="303.0" x2="650.0" y2="303.0" stroke="#e0e0e0"/><text x="46.0" y="307.0" text-anchor="end" fill="#555">10&#176;S</text><line x1="50.0" y1="261.0" x2="650.0" y2="261.0" stroke="#e0e0e0"/><text x="46.0" y="265.0" text-anchor="end" fill="#555">0&#176;</text><line x1="50.0" y1="219.0" x2="650.0" y2="219.0" stroke="#e0e0e0"/><text x="46.0" y="223.0" text-anchor="end" fill="#555">10&#176;N</text><line x1="50.0" y1="177.0" x2="650.0" y2="177.0" stroke="#e0e0e0"/><text x="46.0" y="181.0" text-anchor="end" fill="#555">20&#176;N</text><line x1="50.0" y1="135.0" x2="650.0" y2="135.0" stroke="#e0e0e0"/><text x="46.0" y="139.0" text-anchor="end" fill="#555">30&#176;N</text><line x1="50.0" y1="93.0" x2="650.0" y2="93.0" stroke="#e0e0e0"/><text x="46.0" y="97.0" text-anchor="end" fill="#555">40&#176;N</text><line x1="50.0" y1="51.0" x2="650.0" y2="51.0" stroke="#e0e0e0"/><text x="46.0" y="55.0" text-anchor="end" fill="#555">50&#176;N</text><line x1="50.0" y1="261.0" x2="650.0" y2="261.0" stroke="#555" stroke-width="1.5"/><text x="648.0" y="256.0" text-anchor="end" fill="#333">Equator</text><rect x="100.0" y="51.0" width="500.0" height="336.0" fill="none" stroke="#2e7d32" stroke-width="1.5" stroke-dasharray="6 4"/><text x="105.0" y="64.0" fill="#2e7d32">Extended service area (30&#176;S-50&#176;N, 30&#176;E-130&#176;E)</text><rect x="290.0" y="105.60000000000001" width="145.0" height="121.8" fill="#ffe0b2" fill-opacity="0.7" stroke="#ef6c00"/><text x="362.5" y="160.20000000000002" text-anchor="middle" fill="#b26a00" font-weight="bold">India</text><text x="362.5" y="173.20000000000002" text-anchor="middle" fill="#b26a00" font-size="10">(approx. 8-37&#176;N,</text><text x="362.5" y="185.20000000000002" text-anchor="middle" fill="#b26a00" font-size="10">68-97&#176;E)</text><polyline points="225.0,261.0 222.5,252.9 220.0,244.8 217.7,236.7 215.4,228.7 213.3,220.9 211.4,213.2 209.7,205.7 208.3,198.5 207.2,191.5 206.4,184.7 205.9,178.3 205.8,172.3 206.1,166.7 206.8,161.5 207.9,156.7 209.3,152.5 211.0,148.8 213.1,145.7 215.4,143.1 218.0,141.2 220.7,139.9 223.6,139.3 226.4,139.3 229.3,139.9 232.0,141.2 234.6,143.1 236.9,145.7 239.0,148.8 240.7,152.5 242.1,156.7 243.2,161.5 243.9,166.7 244.2,172.3 244.1,178.3 243.6,184.7 242.8,191.5 241.7,198.5 240.3,205.7 238.6,213.2 236.7,220.9 234.6,228.7 232.3,236.7 230.0,244.8 227.5,252.9 225.0,261.0 222.5,269.1 220.0,277.2 217.7,285.3 215.4,293.3 213.3,301.1 211.4,308.8 209.7,316.3 208.3,323.5 207.2,330.5 206.4,337.3 205.9,343.7 205.8,349.7 206.1,355.3 206.8,360.5 207.9,365.3 209.3,369.5 211.0,373.2 213.1,376.3 215.4,378.9 218.0,380.8 220.7,382.1 223.6,382.7 226.4,382.7 229.3,382.1 232.0,380.8 234.6,378.9 236.9,376.3 239.0,373.2 240.7,369.5 242.1,365.3 243.2,360.5 243.9,355.3 244.2,349.7 244.1,343.7 243.6,337.3 242.8,330.5 241.7,323.5 240.3,316.3 238.6,308.8 236.7,301.1 234.6,293.3 232.3,285.3 230.0,277.2 227.5,269.1 225.0,261.0" fill="none" stroke="#0078d4" stroke-width="2"/><rect x="202.9" y="151.7" width="10" height="10" fill="#e3f2fd" stroke="#0078d4"/><rect x="202.9" y="360.3" width="10" height="10" fill="#e3f2fd" stroke="#0078d4"/><text x="235.0" y="135.2" fill="#0078d4" font-weight="bold">IGSO 55&#176;E</text><polyline points="508.8,261.0 506.2,252.9 503.8,244.8 501.4,236.7 499.1,228.7 497.0,220.9 495.1,213.2 493.5,205.7 492.0,198.5 490.9,191.5 490.1,184.7 489.7,178.3 489.6,172.3 489.9,166.7 490.6,161.5 491.6,156.7 493.0,152.5 494.8,148.8 496.9,145.7 499.2,143.1 501.8,141.2 504.5,139.9 507.3,139.3 510.2,139.3 513.0,139.9 515.7,141.2 518.3,143.1 520.6,145.7 522.7,148.8 524.5,152.5 525.9,156.7 526.9,161.5 527.6,166.7 527.9,172.3 527.8,178.3 527.4,184.7 526.6,191.5 525.5,198.5 524.0,205.7 522.4,213.2 520.5,220.9 518.4,228.7 516.1,236.7 513.7,244.8 511.3,252.9 508.8,261.0 506.2,269.1 503.8,277.2 501.4,285.3 499.1,293.3 497.0,301.1 495.1,308.8 493.5,316.3 492.0,323.5 490.9,330.5 490.1,337.3 489.7,343.7 489.6,349.7 489.9,355.3 490.6,360.5 491.6,365.3 493.0,369.5 494.8,373.2 496.9,376.3 499.2,378.9 501.8,380.8 504.5,382.1 507.3,382.7 510.2,382.7 513.0,382.1 515.7,380.8 518.3,378.9 520.6,376.3 522.7,373.2 524.5,369.5 525.9,365.3 526.9,360.5 527.6,355.3 527.9,349.7 527.8,343.7 527.4,337.3 526.6,330.5 525.5,323.5 524.0,316.3 522.4,308.8 520.5,301.1 518.4,293.3 516.1,285.3 513.7,277.2 511.3,269.1 508.8,261.0" fill="none" stroke="#0078d4" stroke-width="2"/><rect x="486.6" y="151.7" width="10" height="10" fill="#e3f2fd" stroke="#0078d4"/><rect x="486.6" y="360.3" width="10" height="10" fill="#e3f2fd" stroke="#0078d4"/><text x="518.75" y="135.2" fill="#0078d4" font-weight="bold">IGSO 111.75&#176;E</text><circle cx="112.5" cy="261.0" r="6" fill="#c62828"/><text x="112.5" y="281.0" text-anchor="middle" fill="#c62828" font-weight="bold">GEO 32.5&#176;E</text><circle cx="365.0" cy="261.0" r="6" fill="#c62828"/><text x="365.0" y="281.0" text-anchor="middle" fill="#c62828" font-weight="bold">GEO 83&#176;E</text><circle cx="597.5" cy="261.0" r="6" fill="#c62828"/><text x="597.5" y="281.0" text-anchor="middle" fill="#c62828" font-weight="bold">GEO 129.5&#176;E</text><text x="50.0" y="16" fill="#333" font-size="12" font-weight="bold">A. Where the 7 satellites sit (ground view)</text><text x="50.0" y="459.0" fill="#555" font-size="10">Red dot = GEO slot (fixed). Blue figure-of-8 = ground track of an inclined geosynchronous orbit (29&#176; inclination); squares = 2 satellites per track.</text><text x="780" y="16" text-anchor="middle" fill="#333" font-size="12" font-weight="bold">B. Two orbit types</text><ellipse cx="780" cy="220" rx="100" ry="26" fill="none" stroke="#c62828" stroke-width="2"/><ellipse cx="780" cy="220" rx="100" ry="26" fill="none" stroke="#0078d4" stroke-width="2" stroke-dasharray="5 3" transform="rotate(-29 780 220)"/><circle cx="780" cy="220" r="34" fill="#e3f2fd" stroke="#555"/><text x="780" y="224" text-anchor="middle">Earth</text><line x1="670" y1="220" x2="890" y2="220" stroke="#999" stroke-dasharray="2 3"/><text x="780" y="290" text-anchor="middle" fill="#c62828">GEO: in equatorial plane,</text><text x="780" y="304" text-anchor="middle" fill="#c62828">0&#176; inclination - fixed in sky</text><text x="780" y="130" text-anchor="middle" fill="#0078d4">IGSO: same 24 h period,</text><text x="780" y="144" text-anchor="middle" fill="#0078d4">tilted 29&#176; - traces a figure-of-8</text><text x="780" y="330" text-anchor="middle" fill="#555" font-size="10">Both about 35,786 km above the equator</text><text x="780" y="343" text-anchor="middle" fill="#555" font-size="10">(period 23 h 56 min)</text></g></svg>
+<figcaption>Schematic. Slot longitudes, inclination and the extended service area from ISRO (<a href="#s-isronav">Satellite Navigation Services</a>; <a href="#s-isroprog">IRNSS Programme</a>). The figure-of-8 tracks are <strong>calculated</strong> for an ideal circular geosynchronous orbit of 29 degrees inclination (latitude swing +/- 29 degrees; longitude swing about +/- 3.8 degrees); real tracks differ slightly. The India box shows only the approximate latitude-longitude extent of the mainland, not its outline. The <strong>primary service area</strong> (India + about 1,500 km) is not drawn to avoid a false boundary. Square positions are illustrative.</figcaption>
+</figure>
+
+<h3 id="navic-acc">54.2 Coverage and accuracy</h3>
+<ul>
+<li><strong>Primary service area:</strong> India and up to <strong>1,500 km</strong> beyond its boundary. <strong>Extended service area:</strong> up to the rectangle <strong>30 degrees S-50 degrees N, 30-130 degrees E</strong> (<a href="#s-isroprog">ISRO</a>).</li>
+<li>Class: accuracy <strong>10 m</strong> over the Indian landmass and <strong>20 m</strong> in adjoining areas. <strong>Checked:</strong> ISRO's current figure for the open service (SPS) is <strong>better than 20 m (2-sigma)</strong> over the <strong>whole primary service area</strong> (<a href="#c40">c40</a>).</li>
+<li>Class: timing accuracy <strong>40-50 ns</strong>. <strong>Checked:</strong> "better than <strong>40 ns</strong> (2-sigma)" on ISRO's NVS-02 page; "better than 50 ns" on the older Services page (<a href="#c41">c41</a>).</li>
+<li>Two services (see the 4 Nov note, <a href="Science%20and%20Technology%20-%20Class%2011-04-2026.html#nav-sps">Section 53.3</a>): <strong>SPS</strong> (open, civil) and <strong>RS</strong> (Restricted Service, encrypted, for authorised users). NavIC also broadcasts <strong>short messages</strong> (for example, alerts to fishermen); five older satellites now serve only messaging (Section 54.7).</li>
+</ul>
+<p class="correction" id="c40"><strong>[Correction]</strong> <strong>"10 m over the Indian landmass, 20 m in adjoining areas"</strong>: the official specification is a single figure - <strong>position accuracy better than 20 m (2-sigma)</strong> over the primary service area (India + 1,500 km) (<a href="#s-isronvs2">ISRO, NVS-02 page, 24 Jan 2025</a>). "Better than 10 m over India" was ISRO's <strong>expectation reported in 2013</strong> (<a href="#s-et2013">ET/PTI, 28 May 2013</a>), and 10 m is sometimes quoted as a design goal in the press (4 Nov note, <a href="Science%20and%20Technology%20-%20Class%2011-04-2026.html#s-ie">Indian Express</a>). Write "better than 20 m" for the exam. "2-sigma" means about 95% of fixes fall within that error. The class sentence "the IRNSS is providing the ... over the Indian landmass" had a missing word; read "providing <strong>positioning, navigation and timing (PNT) services</strong>".</p>
+<p class="correction" id="c41"><strong>[Correction]</strong> <strong>Timing accuracy "40-50 ns"</strong>: acceptable as a range, but the newer ISRO statement is <strong>better than 40 ns (2-sigma)</strong> (<a href="#s-isronvs2">ISRO, NVS-02</a>); the 50 ns figure is on ISRO's older Services page (<a href="#s-isronav">ISRO</a>). Sources disagree; quote "better than 40 ns" and note the older 50 ns figure if needed.</p>
+
+<h3 id="navic-gen">54.3 Signals and the two generations</h3>
+<div class="table-wrap"><table>
+<caption>First generation (IRNSS-1 series) vs second generation (NVS series)</caption>
+<thead><tr><th scope="col" style="width:20%">Point</th><th scope="col">IRNSS-1A to 1I (first generation)</th><th scope="col">NVS-01 to NVS-05 (second generation)</th></tr></thead>
+<tbody>
+<tr><td>Signals</td><td><strong>L5</strong> (1176.45 MHz) and <strong>S-band</strong> (about 2492 MHz)</td><td><strong>L1</strong> (1575.42 MHz) added, plus L5 and S - "all forthcoming (2023 onwards)" NavIC satellites broadcast SPS in L1, L5 and S (<a href="#s-isronav">ISRO</a>)</td></tr>
+<tr><td>Atomic clocks</td><td>Rubidium clocks <strong>imported</strong> (made by <strong>Spectratime, Switzerland</strong>, per <a href="#s-gpsw">GPS World, 30 Jan 2017</a>)</td><td><strong>Indigenous</strong> rubidium atomic clock - flown "for the first time" on NVS-01 (<a href="#s-isrof12">ISRO, GSLV-F12</a>); developed by ISRO's <strong>Space Applications Centre (SAC), Ahmedabad</strong> (<a href="#s-tribune">The Tribune</a>, news)</td></tr>
+<tr><td>Launch vehicle</td><td>PSLV (IRNSS-1A, Jul 2013 to IRNSS-1I, 2018)</td><td>GSLV (NVS-01: GSLV-F12, 29 May 2023; NVS-02: GSLV-F15, 29 Jan 2025; NVS-03: GSLV-F18, 30 Oct 2026)</td></tr>
+<tr><td>Lesson</td><td>Clock failures (three clocks on IRNSS-1A stopped, reported Jan-Jun 2017) shortened service lives (<a href="#s-toi2017">TOI, 13 Jun 2017</a>)</td><td>Replacement series of <strong>five</strong> satellites (<a href="#s-isronvs2">ISRO</a>); NVS-02 stranded in a lower orbit after oxidiser valves did not open (2025)</td></tr>
+</tbody></table></div>
+<ul>
+<li><strong>Why L1 matters:</strong> L1 (1575.42 MHz) is the frequency of GPS's main civil signal, so chips in almost every smartphone already receive it. Adding L1 makes NavIC easier for the <strong>global chipset industry</strong> to support and improves location-based services in the consumer segment (<a href="#s-isrol1">ISRO</a>). <strong>Qualcomm</strong> has chipset platforms supporting NavIC L1 (ISRO). [Additional]</li>
+<li>[Additional] <strong>Phones:</strong> In Sep 2023 the then MoS (IT) said 5G phones would need NavIC support by <strong>1 Jan 2025</strong> and other L1 phones by <strong>Dec 2025</strong> (<a href="#s-et2023">ET, 15 Sep 2023</a>). No notified rule was found - treat this as an announced plan <strong>[Verification Required]</strong>.</li>
+<li>The S-band centre frequency is printed as 2498.028 MHz on ISRO's page and 2492.028 MHz in most other sources; see the 4 Nov note (<a href="Science%20and%20Technology%20-%20Class%2011-04-2026.html#nav-signals">Section 53.2</a>) <strong>[Verification Required]</strong>.</li>
+</ul>
+
+<h3 id="navic-clock">54.4 Atomic clocks - why they are needed and how they work</h3>
+<p><strong>Principle:</strong> a receiver finds its distance from each satellite as <strong>distance = speed of light x signal travel time</strong>. Light covers about <strong>300 km in 1 millisecond</strong> and about <strong>30 cm in 1 nanosecond</strong>, so a tiny timing error becomes a large position error (<a href="#s-nist">NIST</a>; <a href="#s-novatelerr">NovAtel</a>: 10 ns = 3 m).</p>
+<ul>
+<li><strong>Quartz clocks</strong> (watches, phones): a voltage makes a quartz crystal vibrate at a steady frequency (piezoelectric effect); the vibrations are counted to keep time. But quartz drifts with temperature and age. Class: quartz accumulates about <strong>1 ms of error a day</strong>, equal to <strong>300 km</strong> - so it cannot be the master clock on a navigation satellite (<a href="#c42">c42</a>).</li>
+<li><strong>Atomic clock = quartz oscillator + atoms (caesium or rubidium) as a reference.</strong> Atoms of one element absorb microwaves at exactly the same frequency everywhere and always, so they can "discipline" the quartz (Figure 52).</li>
+</ul>
+<div class="flow" aria-label="Working of a caesium atomic clock">
+<span class="box"><strong>Voltage on quartz</strong><br/>quartz vibrates</span><span>&rarr;</span><span class="box"><strong>Frequency multiplied</strong><br/>to microwaves</span><span>&rarr;</span><span class="box"><strong>Microwaves hit Cs-133 atoms</strong><br/>some change hyperfine state</span><span>&rarr;</span><span class="box"><strong>Counter / servo</strong><br/>adjusts voltage to maximise changed atoms</span><span>&rarr;</span><span class="box"><strong>Frequency locked</strong><br/>9,192,631,770 cycles = 1 s</span>
+</div>
+<ul>
+<li><strong>The SI second</strong> is defined as the duration of <strong>9,192,631,770</strong> periods of the radiation of the transition between the two <strong>hyperfine levels of the ground state</strong> of the <strong>caesium-133</strong> atom (<a href="#s-bipm">BIPM</a>). The number is exact by definition.</li>
+<li><strong>Rubidium-87</strong> clocks use a similar transition at about <strong>6,834,682,610.904 Hz</strong> (6.83 GHz) (<a href="#s-bipmrb">BIPM recommended value, 2025</a>). They are smaller and lighter, so <strong>NavIC</strong> uses rubidium clocks.</li>
+<li>Other atomic clocks (class list, corrected names): <strong>hydrogen maser</strong> (uses hydrogen's hyperfine transition at about 1.42 GHz; very stable over hours to days - flown on Galileo satellites) and <strong>optical clocks</strong>, which use a <strong>laser</strong> instead of microwaves to probe atoms of <strong>strontium, ytterbium, mercury</strong> or ions such as <strong>aluminium</strong>; their higher frequency makes them the most precise clocks built, and they are candidates for a future redefinition of the second (<a href="#s-nist">NIST</a>) (<a href="#c43">c43</a>).</li>
+</ul>
+<p class="correction" id="c42"><strong>[Correction]</strong> <strong>"Quartz accumulates error at 1 ms every day"</strong>: the arithmetic is right (1 ms x 300,000 km/s = <strong>300 km</strong>), but ordinary quartz is worse: NIST says a quartz wristwatch "may be accurate to within about <strong>15 seconds per month</strong>" (about 0.5 s a day) (<a href="#s-nist">NIST</a>). Read "1 ms per day" as an illustration of why even small drifts are unacceptable.</p>
+<p class="correction" id="c43"><strong>[Correction]</strong> <strong>"The quartz frequency is used for exciting the outermost electron of the caesium atom"</strong>: the microwaves do not lift the electron to a higher orbit. They drive a <strong>hyperfine transition</strong> - a switch between two energy levels of the <strong>ground state</strong> that differ in how the outer electron's spin is aligned with the nucleus's spin (<a href="#s-bipm">BIPM wording</a>). The servo maximises the number of atoms that <strong>changed state</strong>. Also: "9192......... Hz" = <strong>9,192,631,770 Hz</strong>; <strong>MASER</strong> = (hydrogen) maser, "microwave amplification by stimulated emission of radiation"; "attervium" = <strong>ytterbium</strong>. Hydrogen-maser frequency and the optical-clock species list are from standard references and were not re-read in this session <strong>[Verification Required]</strong>.</p>
+
+<figure id="fig52">
+<h3>Figure 52. How a Caesium Atomic Clock Locks a Quartz Oscillator (feedback loop, schematic) [Additional]</h3>
+<svg viewBox="0 0 860 330" role="img" aria-label="Feedback loop of a caesium atomic clock: a voltage-controlled quartz oscillator feeds a frequency synthesiser that produces microwaves near 9,192,631,770 hertz; the microwaves irradiate caesium-133 atoms; a detector counts how many atoms changed state; a servo or counter adjusts the voltage on the quartz to maximise that count; when the count is maximum the quartz is locked and its output gives the time signal."><defs><marker id="a52" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#333"/></marker></defs><g font-family="Calibri, sans-serif" font-size="12" text-anchor="middle">
+<rect x="20" y="40" width="170" height="70" rx="6" fill="#f5f9fd" stroke="#0078d4"/><text x="105" y="65" font-weight="bold">1. Quartz oscillator</text><text x="105" y="82" font-size="11">voltage makes the crystal</text><text x="105" y="96" font-size="11">vibrate (about 5-10 MHz)</text>
+<rect x="240" y="40" width="170" height="70" rx="6" fill="#f5f9fd" stroke="#0078d4"/><text x="325" y="65" font-weight="bold">2. Frequency synthesiser</text><text x="325" y="82" font-size="11">multiplies up to microwaves</text><text x="325" y="96" font-size="11">near 9,192,631,770 Hz</text>
+<rect x="460" y="40" width="170" height="70" rx="6" fill="#fff3e0" stroke="#ef6c00"/><text x="545" y="65" font-weight="bold">3. Caesium-133 atoms</text><text x="545" y="82" font-size="11">microwaves flip atoms between</text><text x="545" y="96" font-size="11">two ground-state hyperfine levels</text>
+<rect x="680" y="40" width="160" height="70" rx="6" fill="#fff3e0" stroke="#ef6c00"/><text x="760" y="65" font-weight="bold">4. Detector</text><text x="760" y="82" font-size="11">counts atoms that</text><text x="760" y="96" font-size="11">changed state</text>
+<line x1="190" y1="75" x2="236" y2="75" stroke="#333" stroke-width="1.5" marker-end="url(#a52)"/><line x1="410" y1="75" x2="456" y2="75" stroke="#333" stroke-width="1.5" marker-end="url(#a52)"/><line x1="630" y1="75" x2="676" y2="75" stroke="#333" stroke-width="1.5" marker-end="url(#a52)"/>
+<rect x="440" y="180" width="230" height="70" rx="6" fill="#e8f5e9" stroke="#2e7d32"/><text x="555" y="205" font-weight="bold">5. Servo / counter (feedback)</text><text x="555" y="222" font-size="11">changes the quartz voltage until</text><text x="555" y="236" font-size="11">the count is maximum</text>
+<polyline points="760,110 760,215 674,215" fill="none" stroke="#333" stroke-width="1.5" marker-end="url(#a52)"/>
+<polyline points="440,215 105,215 105,114" fill="none" stroke="#2e7d32" stroke-width="1.5" stroke-dasharray="6 3" marker-end="url(#a52)"/><text x="270" y="207" font-size="11" fill="#2e7d32">correction voltage</text>
+<rect x="20" y="265" width="400" height="52" rx="6" fill="#fff8e1" stroke="#f5a623"/><text x="220" y="286" font-weight="bold">Locked: 9,192,631,770 cycles = 1 second (SI)</text><text x="220" y="304" font-size="11">the steadied quartz output is counted to give time</text>
+<line x1="105" y1="230" x2="105" y2="262" stroke="#f5a623" stroke-width="1.5" marker-end="url(#a52)"/>
+<text x="650" y="292" font-size="11" fill="#555">Rubidium clock: same loop, Rb-87 atoms,</text><text x="650" y="306" font-size="11" fill="#555">about 6.834 GHz (NavIC uses rubidium clocks)</text>
+</g></svg>
+<figcaption>Schematic of a passive caesium-beam / rubidium-cell frequency standard. SI-second definition from <a href="#s-bipm">BIPM</a>; Rb-87 frequency from <a href="#s-bipmrb">BIPM</a>. The quartz frequency shown (5-10 MHz) is a typical value for illustration.</figcaption>
+</figure>
+
+<div class="table-wrap"><table>
+<caption>Clocks compared [Additional]</caption>
+<thead><tr><th scope="col" style="width:18%">Clock</th><th scope="col">Reference</th><th scope="col">Where used</th></tr></thead>
+<tbody>
+<tr><td>Quartz</td><td>Mechanical vibration of a quartz crystal (piezoelectric)</td><td>Watches, phones, computers; drifts about 15 s/month (NIST)</td></tr>
+<tr><td>Rubidium</td><td>Rb-87 hyperfine transition, about 6.83 GHz</td><td>NavIC, GPS, Galileo, BeiDou satellites; telecom networks</td></tr>
+<tr><td>Caesium</td><td>Cs-133 hyperfine transition, 9,192,631,770 Hz - <strong>defines the SI second</strong></td><td>National time standards (e.g. CSIR-NPL, New Delhi), some GPS satellites</td></tr>
+<tr><td>Hydrogen maser</td><td>Hydrogen hyperfine transition, about 1.42 GHz</td><td>Galileo satellites, ground timing centres</td></tr>
+<tr><td>Optical</td><td>Laser-probed optical transition of Sr, Yb, Hg atoms or Al ions</td><td>Research laboratories; future redefinition of the second</td></tr>
+</tbody></table></div>
+<p class="small">[Additional] NavIC's system time comes from the high-precision timing facility at the <strong>ISRO Navigation Centre, Byalalu</strong> (near Bengaluru), opened on <strong>28 May 2013</strong> (<a href="#s-pib2013">PIB, 29 May 2013</a>). Use of caesium clocks at CSIR-NPL and on some GPS satellites is general reference, not re-read in this session.</p>
+
+<h3 id="navic-error">54.5 What decides navigation accuracy</h3>
+<div class="table-wrap"><table>
+<caption>Error sources (class list, with corrected names) and typical size</caption>
+<thead><tr><th scope="col" style="width:22%">Factor</th><th scope="col">What happens</th><th scope="col" style="width:20%">Typical error (NovAtel, GPS example)</th></tr></thead>
+<tbody>
+<tr><td>1. Satellite atomic clock</td><td>Small clock offset in the satellite; corrected by ground uploads</td><td>+/- 2 m</td></tr>
+<tr><td>2. Orbit (ephemeris) error</td><td>Satellite is not exactly where its broadcast orbit data says</td><td>+/- 2.5 m</td></tr>
+<tr><td>3. Ionospheric delay</td><td>Free electrons slow the signal; varies with solar activity and time of day. <strong>Dual-frequency</strong> receivers (e.g. NavIC L5 + S) can estimate and remove it</td><td>+/- 5 m (largest)</td></tr>
+<tr><td>4. Tropospheric delay</td><td>Dry air and water vapour in the lower atmosphere</td><td>+/- 0.5 m</td></tr>
+<tr><td>5. Receiver quality</td><td>Receiver noise, antenna and processing</td><td>+/- 0.3 m</td></tr>
+<tr><td>6. Multipath</td><td>Signal reflects off buildings, water or terrain and arrives late</td><td>+/- 1 m</td></tr>
+<tr><td>Geometry: dilution of precision (DOP)</td><td>Multiplies all of the above; low when satellites are well spread across the sky</td><td>Factor, no unit</td></tr>
+</tbody></table></div>
+<p class="small">Typical values are NovAtel's illustrative figures for GPS (<a href="#s-novatelerr">NovAtel, GNSS error sources</a>); actual values vary with conditions and system.</p>
+<p class="correction" id="c44"><strong>[Correction]</strong> <strong>"Change in the orbit"</strong> = <strong>orbit (ephemeris) error</strong>. <strong>"Dilusion of position"</strong> = <strong>dilution of precision (DOP)</strong>. It is not only about satellites on "both sides" of the receiver: accuracy is best when the satellites are <strong>well distributed across the whole sky</strong> (different directions and elevations) and worst when they are bunched together (<a href="#s-novateldop">NovAtel</a>). Position error is roughly <strong>ranging error x DOP</strong>.</p>
+
+<figure id="fig53">
+<h3>Figure 53. Sources of Navigation Error and the Effect of Satellite Geometry (DOP) (schematic, not to scale) [Additional]</h3>
+<svg viewBox="0 0 900 400" role="img" aria-label="Panel A: a satellite with clock and orbit errors sends a signal through the ionosphere (delay depends on electron content) and troposphere (delay from air and water vapour) to a receiver; one copy reflects off a building (multipath); receiver noise adds error. Panel B: good geometry, satellites spread widely across the sky, gives a small uncertainty area (low DOP); poor geometry, satellites bunched on one side, gives a long thin uncertainty area (high DOP)."><defs><marker id="a53" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#0078d4"/></marker></defs><g font-family="Calibri, sans-serif" font-size="11" text-anchor="middle">
+<text x="230" y="16" font-size="12" font-weight="bold">A. Error sources along the signal path</text>
+<rect x="60" y="30" width="34" height="20" fill="#e3f2fd" stroke="#0078d4"/><text x="77" y="44">SAT</text><text x="180" y="38" text-anchor="start">1. satellite clock error</text><text x="180" y="52" text-anchor="start">2. orbit (ephemeris) error</text>
+<rect x="20" y="90" width="430" height="60" fill="#ede7f6"/><text x="380" y="112">3. Ionosphere</text><text x="380" y="126" font-size="10">(about 50-1,000 km): delay varies</text><text x="380" y="139" font-size="10">with free-electron content</text>
+<rect x="20" y="210" width="430" height="50" fill="#e0f2f1"/><text x="380" y="230">4. Troposphere</text><text x="380" y="245" font-size="10">delay from dry air and water vapour</text>
+<line x1="77" y1="50" x2="200" y2="330" stroke="#0078d4" stroke-width="2" marker-end="url(#a53)"/>
+<rect x="250" y="270" width="40" height="70" fill="#bdbdbd" stroke="#757575"/><text x="270" y="358">building</text>
+<polyline points="110,125 250,290 210,334" fill="none" stroke="#c62828" stroke-width="1.5" stroke-dasharray="5 3"/><text x="300" y="380" fill="#c62828">5. multipath (reflected copy)</text>
+<line x1="20" y1="340" x2="450" y2="340" stroke="#555"/><circle cx="205" cy="336" r="6" fill="#c62828"/><text x="130" y="380">6. receiver noise / quality</text>
+<text x="680" y="16" font-size="12" font-weight="bold">B. Dilution of precision (geometry)</text>
+<path d="M500,330 A90,90 0 0 1 680,330" fill="none" stroke="#999"/><line x1="500" y1="330" x2="680" y2="330" stroke="#555"/><circle cx="590" cy="330" r="5" fill="#c62828"/>
+<rect x="508" y="290" width="14" height="10" fill="#e3f2fd" stroke="#0078d4"/><rect x="583" y="236" width="14" height="10" fill="#e3f2fd" stroke="#0078d4"/><rect x="657" y="290" width="14" height="10" fill="#e3f2fd" stroke="#0078d4"/><rect x="540" y="252" width="14" height="10" fill="#e3f2fd" stroke="#0078d4"/>
+<ellipse cx="590" cy="318" rx="10" ry="8" fill="#ffcdd2" stroke="#c62828"/>
+<text x="590" y="356" font-weight="bold" fill="#2e7d32">Good: spread across the sky</text><text x="590" y="370">small error area, low DOP</text>
+<path d="M710,330 A90,90 0 0 1 890,330" fill="none" stroke="#999"/><line x1="710" y1="330" x2="890" y2="330" stroke="#555"/><circle cx="800" cy="330" r="5" fill="#c62828"/>
+<rect x="836" y="262" width="14" height="10" fill="#e3f2fd" stroke="#0078d4"/><rect x="852" y="282" width="14" height="10" fill="#e3f2fd" stroke="#0078d4"/><rect x="820" y="250" width="14" height="10" fill="#e3f2fd" stroke="#0078d4"/><rect x="862" y="300" width="14" height="10" fill="#e3f2fd" stroke="#0078d4"/>
+<ellipse cx="800" cy="316" rx="42" ry="7" fill="#ffcdd2" stroke="#c62828" transform="rotate(-35 800 316)"/>
+<text x="800" y="356" font-weight="bold" fill="#c62828">Poor: bunched on one side</text><text x="800" y="370">stretched error area, high DOP</text>
+<text x="695" y="60" font-size="10" fill="#555">Position error = ranging error x DOP</text>
+</g></svg>
+<figcaption>Schematic; layer heights are indicative. Error categories from <a href="#s-novatelerr">NovAtel</a>; DOP principle from <a href="#s-novateldop">NovAtel OEM7 documentation</a>.</figcaption>
+</figure>
+
+<h3 id="navic-sig">54.6 Significance of IRNSS / NavIC</h3>
+<div class="cols2">
+<div class="tile p1"><strong>Economy</strong><ul>
+<li>Positioning and timing underpin the <strong>gig and platform economy</strong> (ride-hailing, food and parcel delivery, logistics tracking). NITI Aayog: <strong>77 lakh (7.7 million)</strong> gig workers in 2020-21, projected to reach <strong>2.35 crore (23.5 million) by 2029-30</strong> (<a href="#s-pibgig">PIB, 27 Jun 2022</a>) (<a href="#c45">c45</a>).</li>
+<li>Indian <strong>start-ups and map companies</strong> can build services on NavIC's open (SPS) signal, whose interface specification ISRO publishes; for example, ISRO lists a <strong>MapmyIndia</strong> NavIC message-receiver app for fishermen (<a href="#s-isroapps">ISRO apps</a>) (<a href="#c46">c46</a>).</li>
+<li>[Additional] Timing for telecom networks, banking time-stamps and power grids (see the 2018 GPS PYQ in the 4 Nov note).</li></ul></div>
+<div class="tile p2"><strong>Strategic and security</strong><ul>
+<li><strong>Strategic autonomy:</strong> the encrypted <strong>RS</strong> serves the armed forces without dependence on foreign systems (the 1999 Kargil GPS-denial lesson).</li>
+<li>Supports India's aim to be a <strong>net security provider</strong> in the Indian Ocean Region / Indo-Pacific - the term used in the MoD's 2026 'RAKSHA' document (<a href="#s-pibraksha">PIB, 3 Sep 2026</a>) - and <strong>maritime domain awareness (MDA)</strong>: tracking vessels, coastal security and messaging to fishing boats (<a href="#c47">c47</a>).</li>
+<li><strong>Freedom of navigation</strong> in the South China Sea matters to India's <strong>Act East</strong> policy and trade; India supports it under UNCLOS (<a href="#c48">c48</a>).</li></ul></div>
+<div class="tile p3"><strong>Governance and services</strong><ul>
+<li>Border management, disaster management, <strong>search and rescue</strong>, terrestrial, aerial and marine navigation, fleet management, vehicle tracking.</li>
+<li>Short messages to fishermen about weather, cyclones and potential fishing zones.</li></ul></div>
+<div class="tile p4"><strong>Diplomacy</strong><ul>
+<li><strong>Space diplomacy:</strong> NavIC's extended service area covers much of the Indian Ocean and neighbouring countries. When dedicating NavIC (28 Apr 2016) the PM said <strong>SAARC neighbours</strong> could use its services if they wished (<a href="#s-pib2016">PIB, PM's statement</a>; <a href="#s-bspti">PTI via Business Standard</a>). No formal agreement to provide NavIC services to another country was found in this session <strong>[Verification Required]</strong>.</li></ul></div>
+</div>
+<p class="correction" id="c45"><strong>[Correction]</strong> <strong>"By 2030, 21 million people will be engaged in the gig economy"</strong>: NITI Aayog's report <em>India's Booming Gig and Platform Economy</em> (June 2022) projects <strong>23.5 million by 2029-30</strong> (<a href="#s-pibgig">PIB</a>). A newer official estimate was not searched. Also, NavIC is <strong>an enabler</strong> of the gig economy, not its sole "basis": most phones still use GPS and other systems together with NavIC.</p>
+<p class="correction" id="c46"><strong>[Correction]</strong> <strong>"The data from the IRNSS can be shared with start-ups ... like MapmyIndia"</strong>: NavIC's SPS signal is <strong>open</strong>, so any company can use it without data sharing; what ISRO shares is the <strong>signal specification (ICD)</strong> and technology. The verified MapmyIndia link is ISRO's listed NavIC messaging app for fishermen (<a href="#s-isroapps">ISRO</a>). Whether MapmyIndia's Mappls service uses NavIC positioning was not verified <strong>[Verification Required]</strong>.</p>
+<p class="correction" id="c47"><strong>[Correction]</strong> <strong>"Web security provider"</strong> = <strong>"net security provider"</strong>. The official usage found is "Net Security Provider and First Responder in the <strong>Indian Ocean Region</strong>" (<a href="#s-pibraksha">MoD RAKSHA document, PIB 3 Sep 2026</a>); ministers also use "preferred security partner".</p>
+<p class="correction" id="c48"><strong>[Correction]</strong> <strong>"Freedom of navigation through the South China Sea, the central part of Act East; under the same initiative India is selling BrahMos to Vietnam and the Philippines"</strong>: BrahMos exports are <strong>defence exports</strong> under India's Act East and defence-diplomacy push, <strong>not part of NavIC</strong>, and "central part of Act East" overstates it (Act East centres on ASEAN and the wider Indo-Pacific). Status: <strong>Philippines</strong> - contract 28 Jan 2022, about USD 375 million; batteries delivered Apr 2024 and Apr 2025, third in the pipeline (<a href="#s-etarms">ET, 29 Jun 2026</a>). <strong>Vietnam</strong> - deal reported signed, about USD 629 million (May 2026, reported; <a href="#s-etarms">ET</a>; <a href="#s-claws">CLAWS</a>). <strong>Indonesia</strong> - contract reported signed in July 2026, about USD 630 million (<a href="#s-reuters">Reuters, 7 Jul 2026</a>); some reports call it in-principle. Vietnam and Indonesia figures are from news reports <strong>[Verification Required]</strong>.</p>
+
+<h3 id="navic-status">54.7 NavIC timeline and status (as of 7 Nov 2026) [Additional]</h3>
+<div class="table-wrap"><table>
+<caption>NavIC milestones</caption>
+<thead><tr><th scope="col" style="width:18%">Date</th><th scope="col">Event</th><th scope="col" style="width:24%">Source</th></tr></thead>
+<tbody>
+<tr><td>May 2006</td><td>Financial sanction, Rs 1,420 crore</td><td><a href="#s-cag">CAG 2018</a></td></tr>
+<tr><td>28 May 2013</td><td>ISRO Navigation Centre, Byalalu, opened (timing facility)</td><td><a href="#s-pib2013">PIB</a></td></tr>
+<tr><td>Jul 2013</td><td>IRNSS-1A launched on PSLV-C22 (ISRO lists <strong>2 Jul 2013</strong>; some sources give 1 Jul, the late-night IST launch date) <strong>[Verification Required]</strong>; IRNSS-1B to 1F followed in 2014-16</td><td><a href="#s-isroc33">ISRO, 28 Apr 2016</a></td></tr>
+<tr><td>28 Apr 2016</td><td>IRNSS-1G (7th satellite) on PSLV-C33; system named <strong>NavIC</strong></td><td><a href="#s-pib2016">PIB</a></td></tr>
+<tr><td>2017</td><td>Three clocks on IRNSS-1A reported stopped; replacement IRNSS-1H lost on PSLV-C39 (payload fairing did not separate)&#8224;</td><td><a href="#s-toi2017">TOI</a>; <a href="#s-rti">RTI summary</a></td></tr>
+<tr><td>2018</td><td>IRNSS-1I launched on PSLV-C41&#8224;</td><td><a href="#s-isroprog">ISRO</a></td></tr>
+<tr><td>29 May 2023</td><td><strong>NVS-01</strong> on GSLV-F12 - first indigenous atomic clock; adds L1</td><td><a href="#s-isrof12">ISRO</a></td></tr>
+<tr><td>29 Jan 2025</td><td><strong>NVS-02</strong> on GSLV-F15 (100th launch from Sriharikota); oxidiser valves did not open, satellite could not reach its slot (cause traced to a pyro-valve drive signal)</td><td><a href="#s-isrof15">ISRO</a>; <a href="#s-blnvs2">BusinessLine, 26 Feb 2026</a></td></tr>
+<tr><td>13 Mar 2026</td><td>IRNSS-1F's last clock stopped; only <strong>3</strong> satellites (IRNSS-1B, 1I, NVS-01) provide PNT - <strong>below the 4 needed</strong>; five others (1A, 1C, 1E, 1F, 1G) serve messaging only</td><td>4 Nov note; <a href="#s-rti">RTI summary, Apr 2026</a> (secondary)</td></tr>
+<tr><td>30 Oct 2026</td><td><strong>NVS-03</strong> launched on GSLV-F18 for the IGSO slot at 111.75 degrees E</td><td>4 Nov note (<a href="Science%20and%20Technology%20-%20Class%2011-04-2026.html#s-isronvs3">ISRO</a>)</td></tr>
+<tr><td>4 Nov 2026</td><td>NVS-03 completed <strong>four orbit manoeuvres</strong> (6,164 s of LAM firing) and reached geosynchronous orbit (35,765 x 36,196 km, inclination 29.98 degrees); health normal. <strong>Not yet declared operational</strong> - in-orbit tests remain</td><td><a href="#s-isronvs3f">ISRO, 4 Nov 2026</a></td></tr>
+</tbody></table></div>
+<p class="small">&#8224; Year and vehicle checked; exact day not re-checked in this session. NVS-04 and NVS-05 have no official launch dates (as of 7 Nov 2026).</p>
+</section>
+
+<section id="lhc">
+<h2>56. Large Hadron Collider (LHC)</h2>
+<h3 id="lhc-what">56.1 Hadrons and the machine</h3>
+<ul>
+<li>Class: "hadron" is a collective term for the proton and the neutron. <strong>Checked:</strong> a <strong>hadron</strong> is any composite particle made of <strong>quarks</strong> held together by the <strong>strong force</strong> - <strong>baryons</strong> (three quarks, e.g. proton, neutron) and <strong>mesons</strong> (a quark and an antiquark, e.g. pion) (<a href="#s-cernhadron">CERN glossary</a>) (<a href="#c49">c49</a>).</li>
+<li>The <strong>LHC</strong>, at <strong>CERN</strong> (European Organization for Nuclear Research), is the world's largest and most powerful particle accelerator: a <strong>27 km ring</strong> of superconducting magnets in a tunnel about <strong>100 m underground</strong> on the <strong>France-Switzerland border near Geneva</strong>. First started on <strong>10 Sep 2008</strong> (<a href="#s-cernlhc">CERN</a>).</li>
+<li><strong>How it works:</strong> two beams of protons travel in <strong>opposite directions</strong> in <strong>two separate beam pipes</strong> at ultra-high vacuum. <strong>1,232 superconducting dipole magnets</strong>, cooled to <strong>-271.3 degrees C (1.9 K)</strong>, bend the beams around the ring; accelerating cavities raise their energy. The beams are made to <strong>collide at four points</strong>, where the detectors <strong>ATLAS, CMS, ALICE</strong> and <strong>LHCb</strong> record the debris (<a href="#s-cernlhc">CERN</a>) (<a href="#c50">c50</a>).</li>
+<li>Energy: <strong>13.6 TeV</strong> collisions (6.8 TeV per beam) in <strong>Run 3</strong>, from <strong>5 Jul 2022</strong> (<a href="#s-cernrun3">CERN</a>). At 6.8 TeV a proton moves at about <strong>99.999999%</strong> of the speed of light (calculated: Lorentz factor about 7,250).</li>
+<li>Besides protons, the LHC collides <strong>lead ions</strong>, creating a <strong>quark-gluon plasma</strong> - the state of matter thought to have filled the universe a few millionths of a second after the Big Bang (studied mainly by ALICE) (<a href="#s-cerngold">CERN</a>).</li>
+</ul>
+<p class="correction" id="c49"><strong>[Correction]</strong> <strong>"Hadron = proton and neutron collectively"</strong>: proton and neutron together are <strong>nucleons</strong>. Hadrons are the wider family of quark composites - baryons (proton, neutron and others) and mesons (<a href="#s-cernhadron">CERN</a>). The LHC is named for the <strong>protons</strong> (and lead nuclei) it accelerates; it does not accelerate neutrons, which have no charge.</p>
+<p class="correction" id="c50"><strong>[Correction]</strong> <strong>"27 km tunnel 100 m below the surface; proton beams released in opposite directions ... crashed into each other"</strong>: correct in substance. Precision: depth varies from about <strong>50 m to 175 m</strong> (deepest under the Jura) (<a href="#s-ice">ICE</a>); beams run in <strong>separate pipes</strong> and cross only at the <strong>four detectors</strong>; superconducting magnets <strong>steer and focus</strong> the beams, while radio-frequency cavities <strong>accelerate</strong> them. "Conditions just after the Big Bang" applies most directly to <strong>lead-ion</strong> collisions (quark-gluon plasma).</p>
+
+<figure id="fig54">
+<h3>Figure 54. The Large Hadron Collider - Ring, Counter-Rotating Beams, Four Detectors and the Questions It Probes (schematic, not to scale) [Additional]</h3>
+<svg viewBox="0 0 860 440" role="img" aria-label="Schematic of the 27 km Large Hadron Collider ring under the France-Switzerland border near Geneva. Two proton beams circulate in opposite directions in separate pipes, kept on course by superconducting magnets cooled to 1.9 kelvin, and cross at four points where the ATLAS, ALICE, CMS and LHCb detectors sit. Protons are pre-accelerated in a chain ending with the SPS before injection. A side panel lists the three open questions: origin of mass, dark matter and dark energy, and the missing antimatter."><defs><marker id="a54" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#0078d4"/></marker><marker id="b54" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#c62828"/></marker></defs><g font-family="Calibri, sans-serif" font-size="12" text-anchor="middle"><circle cx="330" cy="215" r="156" fill="none" stroke="#0078d4" stroke-width="2.5"/><circle cx="330" cy="215" r="144" fill="none" stroke="#c62828" stroke-width="2.5"/><path d="M457.8,125.5 A156,156 0 0 0 419.5,87.2" fill="none" stroke="#0078d4" stroke-width="3" marker-end="url(#a54)"/><path d="M412.6,97.0 A144,144 0 0 1 448.0,132.4" fill="none" stroke="#c62828" stroke-width="3" marker-end="url(#b54)"/><text x="458.7" y="86.3" fill="#0078d4">Beam 1</text><text x="412.0" y="133.0" fill="#c62828">Beam 2</text><rect x="314.0" y="349.0" width="32" height="32" fill="#fff8e1" stroke="#f5a623" stroke-width="2"/><text x="330.0" y="307.0" font-weight="bold">ATLAS</text><text x="330.0" y="321.0" font-size="10" fill="#555">general purpose</text><rect x="164.0" y="198.99999999999997" width="32" height="32" fill="#fff8e1" stroke="#f5a623" stroke-width="2"/><text x="250.0" y="214.99999999999997" font-weight="bold">ALICE</text><text x="250.0" y="228.99999999999997" font-size="10" fill="#555">heavy ions</text><rect x="314.0" y="49.0" width="32" height="32" fill="#fff8e1" stroke="#f5a623" stroke-width="2"/><text x="330.0" y="123.0" font-weight="bold">CMS</text><text x="330.0" y="137.0" font-size="10" fill="#555">general purpose</text><rect x="464.0" y="199.0" width="32" height="32" fill="#fff8e1" stroke="#f5a623" stroke-width="2"/><text x="410.0" y="215.0" font-weight="bold">LHCb</text><text x="410.0" y="229.0" font-size="10" fill="#555">matter-antimatter</text><text x="330" y="40" font-size="11">27 km ring, about 100 m underground, France-Switzerland border near Geneva</text><circle cx="321.3030214988503" cy="395.95389311788625" r="34" fill="none" stroke="#757575" stroke-dasharray="4 3"/><text x="321.3030214988503" y="399.95389311788625" font-size="10" fill="#555">SPS injector</text><line x1="346.3030214988503" y1="372.95389311788625" x2="373.3030214988503" y2="353.95389311788625" stroke="#757575"/><text x="330" y="20" font-size="11" fill="#555">Superconducting magnets (1.9 K) bend and focus both beams; beams cross only at the 4 detectors</text><rect x="560" y="60" width="280" height="300" rx="6" fill="#f5f9fd" stroke="#0078d4"/><text x="700" y="84" font-weight="bold">Questions the LHC probes</text><text x="574" y="114" text-anchor="start" font-weight="bold">A. Origin of mass</text><text x="574" y="130" text-anchor="start" font-size="11">Higgs boson / Higgs field (found 2012)</text><text x="574" y="156" text-anchor="start" font-weight="bold">B. Dark matter, dark energy</text><text x="574" y="172" text-anchor="start" font-size="11">about 27% and 68% of the universe; unseen</text><text x="574" y="198" text-anchor="start" font-weight="bold">C. Missing antimatter</text><text x="574" y="214" text-anchor="start" font-size="11">equal amounts at the Big Bang; why does</text><text x="574" y="240" text-anchor="start" font-size="11">matter dominate today? (LHCb)</text><text x="574" y="276" text-anchor="start" font-size="11" fill="#555">Proton collisions: up to 13.6 TeV (Run 3).</text><text x="574" y="292" text-anchor="start" font-size="11" fill="#555">Lead-ion collisions: quark-gluon plasma,</text><text x="574" y="308" text-anchor="start" font-size="11" fill="#555">the state of matter just after the Big Bang.</text></g></svg>
+<figcaption>Schematic; detector positions follow the ring order (ATLAS at Point 1, ALICE at Point 2, CMS at Point 5, LHCb at Point 8) but distances and the injector are not to scale. Facts from <a href="#s-cernlhc">CERN</a>, <a href="#s-cernrun3">CERN Run 3</a>, <a href="#s-cerndm">CERN dark matter</a> and <a href="#s-atlashiggs">ATLAS Higgs page</a>.</figcaption>
+</figure>
+
+<h3 id="lhc-q">56.2 Questions the LHC addresses</h3>
+<div class="table-wrap"><table>
+<caption>The three questions from class, with checked context</caption>
+<thead><tr><th scope="col" style="width:22%">Question</th><th scope="col">What is known (as of 7 Nov 2026)</th></tr></thead>
+<tbody>
+<tr><td>A. How did mass originate?</td><td><strong>Higgs boson</strong> discovered by ATLAS and CMS, announced <strong>4 Jul 2012</strong> (mass about 125 GeV); <strong>Nobel Prize in Physics 2013</strong> to <strong>Francois Englert and Peter Higgs</strong> (<a href="#s-atlashiggs">ATLAS/CERN</a>). The Higgs field gives mass to <strong>elementary</strong> particles (W and Z bosons, quarks, electrons). But the up and down quark masses make up only about <strong>1%</strong> of a proton's mass; the rest comes from the energy of the <strong>strong interaction</strong> binding quarks and gluons (<a href="#s-aps">APS Physics, 2018</a>) (<a href="#c51">c51</a>).</td></tr>
+<tr><td>B. What are dark matter and dark energy?</td><td>Dark matter is about <strong>27%</strong> and dark energy about <strong>68%</strong> of the universe; ordinary matter about 5% (<a href="#s-cerndm">CERN</a>). Dark matter does not emit or absorb light; the LHC searches for particles that could make it up. <strong>No dark-matter particle has been found.</strong></td></tr>
+<tr><td>C. Why is there so little antimatter?</td><td>Matter and antimatter should have formed in equal amounts at the Big Bang, yet the universe is made of matter. Physicists study <strong>CP violation</strong> (small differences between matter and antimatter). <strong>LHCb</strong> reported the first observation of CP violation in <strong>baryon</strong> decays (Nature, <strong>16 Jul 2025</strong>; 5.2 sigma) - a piece of the puzzle, not the full answer (<a href="#s-cernlhcb">CERN</a>) (<a href="#c52">c52</a>).</td></tr>
+</tbody></table></div>
+<p class="correction" id="c51"><strong>[Correction]</strong> <strong>"The LHC will find how the origin of mass took place"</strong>: write it as "how <strong>elementary particles acquire mass</strong> (the Higgs mechanism)". The Higgs boson was found in 2012; the LHC now measures its properties. Most of the mass of ordinary matter (protons and neutrons) comes from strong-force energy, not directly from the Higgs field (<a href="#s-aps">APS</a>).</p>
+<p class="correction" id="c52"><strong>[Correction]</strong> <strong>"Anti-matter is not found in nature"</strong>: antimatter does occur naturally, in <strong>tiny amounts</strong> - in cosmic rays and even in beams produced above <strong>thunderstorms</strong> (<a href="#s-nasa">NASA Fermi</a>) - but it is annihilated quickly on meeting matter. The real puzzle is why the <strong>universe is dominated by matter</strong> (<a href="#s-cernlhcb">CERN</a>).</p>
+
+<h3 id="lhc-india">56.3 India, CERN and the LHC's status [Additional]</h3>
+<ul>
+<li>India became an <strong>Associate Member State of CERN on 16 Jan 2017</strong>; it had helped build the LHC and contributes to the <strong>CMS</strong> and <strong>ALICE</strong> experiments and the LHC Computing Grid (Tier-2 centres in Mumbai and Kolkata) (<a href="#s-cernindia">CERN</a>). IIT Jodhpur joined CMS as a full member in July 2026 (<a href="#s-etvb">ETV Bharat</a>, news).</li>
+<li><strong>Status (as of 7 Nov 2026):</strong> <strong>Run 3 has ended.</strong> Last proton collisions 16 May 2026, last lead-lead collisions 14 Jun 2026, final beams 27 Jun 2026 (<a href="#s-courier">CERN Courier</a>); on 29 Jun 2026 CERN switched the LHC off for <strong>Long Shutdown 3 (LS3)</strong> to install the <strong>High-Luminosity LHC (HL-LHC)</strong>, due to begin operation in <strong>2030</strong> with up to ten times the luminosity (more collisions) (<a href="#s-cernls3">CERN</a>). The LHC is therefore <strong>not running</strong> at present.</li>
+<li>Other result in the news: ALICE showed in May 2025 that lead-lead near-miss collisions turn lead into <strong>gold</strong> nuclei briefly (about 89,000 nuclei per second at peak) (<a href="#s-cerngold">CERN, 8 May 2025</a>).</li>
+</ul>
+<div class="table-wrap"><table>
+<caption>LHC timeline</caption>
+<thead><tr><th scope="col" style="width:20%">Date</th><th scope="col">Event</th></tr></thead>
+<tbody>
+<tr><td>10 Sep 2008</td><td>LHC first start-up</td></tr>
+<tr><td>4 Jul 2012</td><td>Higgs boson discovery announced (ATLAS, CMS)</td></tr>
+<tr><td>8 Oct 2013</td><td>Nobel Prize: Englert and Higgs</td></tr>
+<tr><td>16 Jan 2017</td><td>India becomes CERN Associate Member State</td></tr>
+<tr><td>5 Jul 2022</td><td>Run 3 begins at 13.6 TeV</td></tr>
+<tr><td>8 May 2025</td><td>ALICE: lead-to-gold conversion measured</td></tr>
+<tr><td>16 Jul 2025</td><td>LHCb: CP violation in baryons (Nature)</td></tr>
+<tr><td>27-29 Jun 2026</td><td>Run 3 ends; Long Shutdown 3 begins</td></tr>
+<tr><td>2030 (planned)</td><td>High-Luminosity LHC operations</td></tr>
+</tbody></table></div>
+</section>
+
+<section id="sm">
+<h2>57. Standard Model of Physics</h2>
+<p class="note"><strong>[Placeholder]</strong> The rough notes end at the heading "Standard model of Physics:". The class content will be added in the next note. Link already relevant: the Higgs boson (Section 56.2) is the last particle of the Standard Model to be found.</p>
+</section>
+
+<section id="status">
+<h2>58. Status as of 5 November 2026 (linkage to the news)</h2>
+<div class="table-wrap"><table>
+<caption>Time-sensitive facts used in this note</caption>
+<thead><tr><th scope="col" style="width:20%">Item</th><th scope="col">Status and date</th><th scope="col" style="width:24%">Source</th></tr></thead>
+<tbody>
+<tr><td>NavIC service</td><td>3 satellites providing PNT (IRNSS-1B, 1I, NVS-01) - below the 4 needed; NVS-03 in geosynchronous orbit since 4 Nov 2026, not yet declared operational</td><td><a href="#s-rti">RTI summary (Apr 2026)</a>; <a href="#s-isronvs3f">ISRO, 4 Nov 2026</a></td></tr>
+<tr><td>NavIC accuracy</td><td>Better than 20 m (2-sigma) position, better than 40 ns timing (design specification)</td><td><a href="#s-isronvs2">ISRO</a></td></tr>
+<tr><td>NavIC in phones</td><td>Qualcomm L1 support; government timeline announced in 2023, no notified rule found</td><td><a href="#s-isrol1">ISRO</a>; <a href="#s-et2023">ET</a></td></tr>
+<tr><td>BrahMos exports</td><td>Philippines: 2 batteries delivered (Apr 2024, Apr 2025). Vietnam and Indonesia: contracts reported (May and Jul 2026)</td><td><a href="#s-etarms">ET</a>; <a href="#s-reuters">Reuters</a></td></tr>
+<tr><td>LHC</td><td>Run 3 ended Jun 2026; Long Shutdown 3 under way; HL-LHC planned for 2030</td><td><a href="#s-cernls3">CERN</a>; <a href="#s-courier">CERN Courier</a></td></tr>
+</tbody></table></div>
+</section>
+
+<section id="prelims">
+<h2>Key Facts for Prelims</h2>
+<ul>
+<li><strong>NavIC</strong>: sanctioned May 2006 (Rs 1,420 crore); named NavIC 28 Apr 2016; <strong>7 satellites = 3 GEO</strong> (32.5, 83, 129.5 degrees E) <strong>+ 4 IGSO</strong> (29 degrees; equator crossings 55 and 111.75 degrees E; figure-of-8 ground tracks).</li>
+<li>Coverage: India + <strong>1,500 km</strong> (primary); extended area 30 S-50 N, 30-130 E. Accuracy: <strong>better than 20 m</strong> (2-sigma) position, <strong>better than 40 ns</strong> timing.</li>
+<li>Signals: first generation <strong>L5 + S</strong>; NVS series adds <strong>L1</strong> (1575.42 MHz, smartphone-friendly). Services: SPS (open) and RS (encrypted), plus messaging.</li>
+<li>Clocks: first generation imported (Spectratime, Switzerland) rubidium; <strong>NVS-01 (29 May 2023, GSLV-F12)</strong> carried the first <strong>indigenous</strong> rubidium clock (SAC Ahmedabad).</li>
+<li>Status 7 Nov 2026: 3 satellites give PNT; <strong>NVS-03</strong> (GSLV-F18, 30 Oct 2026) reached geosynchronous orbit 4 Nov 2026, not yet operational. NVS-02 (29 Jan 2025) failed to reach its slot.</li>
+<li><strong>SI second</strong> = 9,192,631,770 periods of the Cs-133 ground-state <strong>hyperfine</strong> transition. Rb-87: about 6.83 GHz. Light: 300 km per ms, 30 cm per ns. Quartz watch: about 15 s/month (NIST).</li>
+<li>Optical clocks: laser + Sr, Yb, Hg atoms or Al ions. Hydrogen maser: about 1.42 GHz.</li>
+<li>Error sources: satellite clock, ephemeris, <strong>ionosphere (largest)</strong>, troposphere, receiver noise, multipath; geometry = <strong>DOP</strong> (low DOP = satellites spread across the sky).</li>
+<li>Gig workers (NITI Aayog 2022): 7.7 million (2020-21) to <strong>23.5 million by 2029-30</strong>.</li>
+<li><strong>Hadron</strong> = quark composite (baryons + mesons); proton + neutron = nucleons. <strong>LHC</strong>: CERN, 27 km, about 100 m deep (50-175 m), France-Switzerland near Geneva, first start 10 Sep 2008, 1,232 dipoles at 1.9 K, 13.6 TeV (Run 3, 2022-2026), detectors ATLAS, CMS, ALICE, LHCb.</li>
+<li><strong>Higgs boson</strong>: 4 Jul 2012; Nobel 2013 (Englert, Higgs). Dark matter about 27%, dark energy about 68%. LHCb: CP violation in baryons (2025). Run 3 ended Jun 2026; HL-LHC from 2030. India: CERN Associate Member 16 Jan 2017.</li>
+</ul>
+</section>
+
+<section id="mains">
+<h2>Mains Points</h2>
+<ul>
+<li><strong>Strategic autonomy in PNT:</strong> NavIC frees critical users (armed forces, power, telecom, banking) from dependence on foreign systems that can be denied or degraded in a crisis. But a 7-satellite regional system has no redundancy: clock failures, the 2017 PSLV-C39 loss and the 2025 NVS-02 failure left only 3 working satellites in 2026.</li>
+<li><strong>Self-reliance in critical components:</strong> the shift from imported to indigenous rubidium clocks (NVS-01 onward) is the key fix; the next steps are space-qualified clock reliability, in-orbit spares and faster replacement launches.</li>
+<li><strong>Adoption:</strong> a navigation system creates value only if receivers use it. L1 on NVS satellites, chipset support and a clear, notified policy for devices, vehicle trackers and fishing boats are needed; NavIC works best alongside GPS, Galileo and others (multi-GNSS), not as a replacement.</li>
+<li><strong>Economy and governance:</strong> location and time services enable the gig and logistics economy (23.5 million gig workers projected by 2029-30), precision agriculture, disaster response and maritime safety.</li>
+<li><strong>Foreign policy:</strong> NavIC's coverage over the Indian Ocean supports maritime domain awareness and India's role as a net security provider; the 2016 offer of NavIC services to SAARC neighbours is a space-diplomacy tool (no formal agreement found).</li>
+<li><strong>Big science (LHC):</strong> basic research has long payoffs - the World Wide Web (CERN), medical imaging and accelerator-based cancer therapy, computing grids. India's associate membership gives its scientists and industry access at a fraction of full-member cost; the issue is building domestic capacity (detectors, superconducting magnets, computing).</li>
+<li><strong>Way forward:</strong> launch NVS-04 and NVS-05 on a firm schedule and keep a spare; restore the full 7-satellite service before any expansion; notify device-support rules; encourage start-ups through IN-SPACe; and deepen India's role in international science projects such as CERN and the HL-LHC.</li>
+</ul>
+</section>
+
+<section id="traps">
+<h2>Common Traps / Confusions</h2>
+<ul>
+<li>NavIC's 4 non-GEO satellites are in <strong>inclined geosynchronous orbit</strong>; GEO is also geosynchronous. The <strong>figure-of-8</strong> is the ground track.</li>
+<li>NavIC coverage is <strong>1,500 km</strong> beyond India (not "1,500 sq km" or "5,500 sq km" - see the 2018 PYQ).</li>
+<li>Official accuracy is <strong>better than 20 m</strong>; "10 m" is a 2013 expectation / press figure.</li>
+<li><strong>Design 7, working 3</strong> (2026). NVS-03 launched but is not yet operational.</li>
+<li>Atomic clocks drive a <strong>hyperfine</strong> transition in the ground state, not an excitation of the electron to a higher orbit. Caesium <strong>defines</strong> the second; NavIC uses <strong>rubidium</strong>.</li>
+<li>MASER = <strong>microwave</strong> amplification (hydrogen maser), not a laser; optical clocks use lasers.</li>
+<li><strong>Dilution of precision</strong> (not "of position"): satellite geometry, not signal quality.</li>
+<li>Hadron is not only proton + neutron (that is a <strong>nucleon</strong>). LHC accelerates protons and lead ions, not neutrons.</li>
+<li>The Higgs gives mass to <strong>elementary</strong> particles; most of a proton's mass is strong-force energy.</li>
+<li>Antimatter exists in nature in tiny amounts; the puzzle is the <strong>imbalance</strong>.</li>
+<li>The LHC is <strong>not running</strong> now (Long Shutdown 3 since Jun 2026).</li>
+<li>BrahMos exports are <strong>not part of NavIC</strong>; the Philippines was the first export customer (2022).</li>
+</ul>
+</section>
+
+<section id="thirty">
+<h2>30-Second Revision</h2>
+<p><strong>NavIC</strong>: sanctioned 2006; 7 satellites - 3 GEO (32.5, 83, 129.5 E) + 4 IGSO (29 degrees, crossing 55 and 111.75 E, figure-of-8); India + 1,500 km; better than 20 m and 40 ns; L5 + S, NVS adds L1; imported Swiss rubidium clocks failed, NVS-01 (2023) has an indigenous one; only 3 working in 2026; NVS-03 in orbit (4 Nov 2026), not yet operational. <strong>Atomic clock</strong>: quartz locked to Cs/Rb hyperfine transition; Cs 9,192,631,770 Hz = 1 s; 1 ms = 300 km; optical clocks (Sr, Yb, Hg, Al+). <strong>Errors</strong>: clock, orbit, ionosphere, troposphere, receiver, multipath, DOP. <strong>Significance</strong>: gig economy (23.5 million by 2029-30), MDA, net security provider, start-ups, services, space diplomacy. <strong>LHC</strong>: CERN, 27 km, 100 m deep, 1.9 K magnets, opposite beams, 4 detectors, 13.6 TeV; Higgs 2012 (mass of elementary particles), dark matter 27%/dark energy 68%, matter-antimatter imbalance (LHCb 2025); Run 3 ended Jun 2026, HL-LHC 2030; India associate member 2017.</p>
+</section>
+
+<section id="pyqs">
+<h2>Previous Year Questions (PYQs)</h2>
+<p class="small">Source status: no official UPSC paper was opened in this session. Question text and answers are from secondary compilations (named for each). Links to today's notes are <strong>[Additional]</strong> study guidance, not an official marking scheme.</p>
+<div class="answer" id="pyq-2018">
+<p><strong>2018 | UPSC CSE Prelims | General Studies Paper I</strong></p>
+<p>With reference to the Indian Regional Navigation Satellite System (IRNSS), consider the following statements:<br/>1. IRNSS has three satellites in geostationary and four satellites in geosynchronous orbits.<br/>2. IRNSS covers entire India and about 5500 sq. km beyond its borders.<br/>3. India will have its own satellite navigation system with full global coverage by the middle of 2019.<br/>Which of the statements given above is/are correct?<br/>(a) 1 only (b) 1 and 2 only (c) 2 and 3 only (d) None</p>
+<p><strong>Answer: (a)</strong> (<a href="#s-pyq18">Insights IAS key, 2018</a>, secondary; also given in the 4 Nov note). <strong>Link [Additional]:</strong> 3 GEO + 4 IGSO (Section 54.1); coverage is India + 1,500 km, not "5500 sq km" (Section 54.2); NavIC is regional.</p>
+</div>
+<div class="answer" id="pyq-2015m">
+<p><strong>2015 | UPSC CSE Mains | General Studies Paper III</strong> (12.5 marks, 200 words - per <a href="#s-pyq15b">UnlockIAS</a>, secondary)</p>
+<p>What do you understand by "Standard Positioning Systems" and "Protection Positioning Systems" in the GPS era? Discuss the advantages India perceives from its ambitious IRNSS programme employing just seven satellites.</p>
+<p class="small">Wording differs between compilations ("Precision" vs "Protection" positioning) (<a href="#s-pyq15">Insights IAS, 21 Dec 2015</a>; <a href="#s-pyq15b">UnlockIAS</a>) <strong>[Verification Required]</strong>.</p>
+<p><strong>Suggested answer approach [Additional]:</strong> define SPS (open, civil) and PPS/RS (encrypted, authorised users) (4 Nov note, Section 53.3); explain 3 GEO + 4 IGSO and why 7 suffice for a regional system (Section 54.1, Figure 51); advantages - strategic autonomy, MDA, disaster management, fishermen messaging, timing for critical infrastructure, gig economy and start-ups, space diplomacy (Section 54.6); end with limits (clock failures, 3 working in 2026) and the NVS fix (Section 54.7).</p>
+</div>
+<div class="answer" id="pyq-2013">
+<p><strong>2013 | UPSC CSE Prelims | General Studies Paper I</strong></p>
+<p>The efforts to detect the existence of Higgs boson particle have become frequent news in the recent past. What is/are the importance of discovering this particle?<br/>1. It will enable us to understand as to why elementary particles have mass.<br/>2. It will enable us in the near future to develop the technology of transferring matter from one point to another without traversing the physical space between them.<br/>3. It will enable us to create better fuels for nuclear fission.<br/>Select the correct answer using the codes given below.<br/>(a) 1 only (b) 2 and 3 only (c) 1 and 3 only (d) 1, 2 and 3</p>
+<p><strong>Answer: (a)</strong> (<a href="#s-pyq13">Rau's IAS Compass</a>, secondary). <strong>Link [Additional]:</strong> the Higgs field explains the mass of <strong>elementary</strong> particles (Section 56.2, <a href="#c51">c51</a>).</p>
+</div>
+<div class="answer" id="pyq-2009">
+<p><strong>2009 | UPSC CSE Prelims | General Studies</strong></p>
+<p>In the year 2008, which one of the following conducted a complex scientific experiment in which sub-atomic particles were accelerated to nearly the speed of light?<br/>(a) European Space Agency (b) European Organization for Nuclear Research (c) International Atomic Energy Agency (d) National Aeronautics and Space Administration</p>
+<p><strong>Answer: (b)</strong> (<a href="#s-pyq09">EaseMyPrep</a>, secondary). <strong>Link [Additional]:</strong> the LHC at CERN first started on 10 Sep 2008 (Section 56.1).</p>
+</div>
+<div class="answer" id="pyq-2012">
+<p><strong>2012 | UPSC CSE Prelims | General Studies Paper I</strong></p>
+<p>A team of scientists at Brookhaven National Laboratory including those from India created the heaviest anti-matter (anti-helium nucleus). What is/are the implication/implications of the creation of anti-matter?<br/>1. It will make mineral prospecting and oil exploration easier and cheaper.<br/>2. It will help probe the possibility of the existence of stars and galaxies made of anti-matter.<br/>3. It will help understand the evolution of the universe.<br/>Select the correct answer using the codes given below:<br/>(a) 1 only (b) 2 and 3 only (c) 3 only (d) 1, 2 and 3</p>
+<p><strong>Answer: (b)</strong> (<a href="#s-pyq12">PMF IAS</a>, secondary). <strong>Link [Additional]:</strong> the matter-antimatter imbalance is one of the LHC's three questions (Section 56.2, <a href="#c52">c52</a>).</p>
+</div>
+<div class="answer" id="pyq-2017">
+<p><strong>2017 | UPSC CSE Prelims | General Studies Paper I</strong></p>
+<p>The terms 'Event Horizon', 'Singularity', 'String Theory' and 'Standard Model' are sometimes seen in the news in the context of<br/>(a) Observation and understanding of the Universe (b) Study of the solar and the lunar eclipses (c) Placing satellites in the orbit of the Earth (d) Origin and evolution of living organisms on the Earth</p>
+<p><strong>Answer: (a)</strong> (<a href="#s-pyq17">Vajiram and Ravi</a>; <a href="#s-pyq17b">ThinQ IAS</a>, both secondary). <strong>Link [Additional]:</strong> the Standard Model is the next class's topic (Section 57).</p>
+</div>
+<p class="note"><strong>[No verified PYQ found for this topic]</strong> Atomic clocks, GNSS accuracy factors / DOP and dark matter - no authentic UPSC CSE Prelims or GS Paper III question was verified in this session. (A "God particle" question found online is from UPSC CAPF 2014, not the Civil Services exam, and is not reproduced.)</p>
+</section>
+
+<section id="corrections">
+<h2>Corrections Made</h2>
+<p>Substantive changes are marked where they occur. Spelling and typing repairs were made silently and are not listed. Numbering continues from the 4 Nov note (c24-c38).</p>
+<ol start="39">
+<li><a href="#c39">NavIC: 4 satellites are in inclined (29 degrees) geosynchronous orbit, two per crossing longitude; figure-of-8 is the ground track.</a></li>
+<li><a href="#c40">Accuracy is better than 20 m (2-sigma) over the primary area, not 10 m / 20 m; missing word = PNT services.</a></li>
+<li><a href="#c41">Timing accuracy: better than 40 ns (newer ISRO page); 50 ns on the older page.</a></li>
+<li><a href="#c42">Quartz drift is about 15 s/month; 1 ms = 300 km arithmetic correct.</a></li>
+<li><a href="#c43">Atomic clocks use a ground-state hyperfine transition; 9,192,631,770 Hz; hydrogen maser; ytterbium.</a></li>
+<li><a href="#c44">Orbit (ephemeris) error; dilution of precision - satellites spread across the whole sky.</a></li>
+<li><a href="#c45">Gig workers: 23.5 million by 2029-30 (NITI Aayog), not 21 million; NavIC an enabler.</a></li>
+<li><a href="#c46">NavIC SPS is open; MapmyIndia link is ISRO's fishermen app; Mappls use unverified.</a></li>
+<li><a href="#c47">"Net security provider", not "web security provider".</a></li>
+<li><a href="#c48">BrahMos exports are separate from NavIC; status of Philippines, Vietnam, Indonesia deals.</a></li>
+<li><a href="#c49">Hadron = quark composite (baryons + mesons); proton + neutron = nucleons.</a></li>
+<li><a href="#c50">LHC depth 50-175 m; separate beam pipes; collisions at four detectors; Big Bang conditions via lead ions.</a></li>
+<li><a href="#c51">Higgs explains mass of elementary particles; most proton mass is strong-force energy.</a></li>
+<li><a href="#c52">Antimatter occurs naturally in tiny amounts; the puzzle is the imbalance.</a></li>
+</ol>
+</section>
+
+<section id="visuals">
+<h2>Visual Representations Required / Recommended</h2>
+<ul>
+<li><strong>Included:</strong> <a href="#fig51">Figure 51</a> (NavIC arrangement: GEO slots at 32.5, 83 and 129.5 degrees E, IGSO figure-of-8 ground tracks at 55 and 111.75 degrees E, extended service area, orbit types) - this fulfils the class request "*** Add the diagram of the formation of sats ... with location and the arrangement"; <a href="#fig52">Figure 52</a> (atomic-clock feedback loop) and its flow chart; <a href="#fig53">Figure 53</a> (error sources and DOP); <a href="#fig54">Figure 54</a> (LHC ring, beams, detectors, questions); tables in Sections 54.3, 54.4, 54.5, 54.7, 56.2, 56.3 and 58.</li>
+<li><strong>Not included:</strong> a true India outline on Figure 51 (a reliable coastline path was not available offline; the figure uses a labelled latitude-longitude box instead) and photographs of CERN or NavIC satellites (copyrighted or not self-contained).</li>
+</ul>
+<p><strong>[All necessary visual representations included]</strong> (no required or recommended markers are outstanding).</p>
+</section>
+
+<section id="sources">
+<h2>Open Sources / Further Reading</h2>
+<p class="small">HTTPS public sources consulted on 5 November 2026, mostly as search-result extracts (not full documents). Secondary sources are labelled. <strong>Verification limits:</strong> the hydrogen-maser frequency, the optical-clock species list (beyond NIST's strontium example), the exact days of IRNSS-1H (2017) and IRNSS-1I (2018), the IRNSS-1A launch day, the NavIC S-band frequency, MediaTek support, Mappls' use of NavIC and any newer gig-workforce estimate were not confirmed; no official UPSC paper was opened.</p>
+<ol>
+<li id="s-isronav"><a href="https://www.isro.gov.in/SatelliteNavigationServices.html">ISRO: Satellite Navigation Services (NavIC)</a> - 3 GEO + 4 IGSO slots, 1,500 km, 50 ns, L5/S and L1 plans.</li>
+<li id="s-isroprog"><a href="https://www.isro.gov.in/IRNSS_Programme.html">ISRO: IRNSS Programme</a> - primary and extended service areas; satellite list.</li>
+<li id="s-isronvs2"><a href="https://www.isro.gov.in/ISRO_EN/NVS-02_Advancing_Navigation_Capabilities.html">ISRO: NVS-02 - Advancing navigation capabilities (24 Jan 2025)</a> - better than 20 m (2-sigma), better than 40 ns; five NVS satellites.</li>
+<li id="s-isrof15"><a href="https://www.isro.gov.in/ISRO_EN/GSLV-F15_NVS-02_Mission.html">ISRO: GSLV-F15/NVS-02 mission</a> - 100th Sriharikota launch; valves did not open.</li>
+<li id="s-isrof12"><a href="https://www.isro.gov.in/GSLV_F12_Landingpage.html">ISRO: GSLV-F12/NVS-01 (29 May 2023)</a> - first indigenous atomic clock.</li>
+<li id="s-isrol1"><a href="https://www.isro.gov.in/pressRelease_NavIC_L1.html">ISRO: NavIC L1 signal press release</a> - consumer location services; Qualcomm chipsets.</li>
+<li id="s-isronvs3f"><a href="https://www.isro.gov.in/Final_Orbit_manoeuvring_of_NVS03_spacecraft.html">ISRO: Final orbit manoeuvring of NVS-03 (4 Nov 2026)</a> - four manoeuvres, 35,765 x 36,196 km, 29.98 degrees, health normal.</li>
+<li id="s-isroapps"><a href="https://www.isro.gov.in/MobileApps.html">ISRO: Mobile apps</a> - MapmyIndia NavIC message-receiver app.</li>
+<li id="s-cag"><a href="https://cag.gov.in/webroot/uploads/download_audit_report/2018/Chapter_7_Department_Of_Space_of_Report_No.2_of_2018_%E2%80%93_Compliance_Audit_on_Scientific_and_Environmental_MinistriesDepartments_Union_Government.pdf">CAG Report No. 2 of 2018, Chapter 7 (Department of Space)</a> - May 2006 sanction, Rs 1,420 crore.</li>
+<li id="s-pib2016"><a href="https://www.pib.gov.in/newsite/PrintRelease.aspx?relid=142413">PIB: Text of PM's statement after the launch of IRNSS-1G (28 Apr 2016, Hindi)</a> - name NavIC; services for SAARC neighbours.</li>
+<li id="s-isroc33"><a href="https://www.isro.gov.in/ISRO_EN/C33Successfull.html">ISRO: PSLV-C33 launches IRNSS-1G (28 Apr 2016)</a> - constellation complete; launch dates of IRNSS-1A to 1F; NavIC dedication.</li>
+<li id="s-bspti"><a href="https://www.business-standard.com/article/pti-stories/irnss-launch-pm-names-new-navigation-system-as-navic-116042801342_1.html">Business Standard/PTI: PM names system NAVIC (28 Apr 2016)</a> - SAARC offer.</li>
+<li id="s-pib2013"><a href="https://pib.gov.in/newsite/erelcontent.aspx?relid=96275">PIB: ISRO Navigation Centre, Byalalu (29 May 2013)</a> - timing facility.</li>
+<li id="s-et2013"><a href="https://economictimes.indiatimes.com/isro-navigation-centre-near-bangalore-unveiled/articleshow/20316015.cms">Economic Times/PTI: ISRO navigation centre unveiled (28 May 2013)</a> - "better than 10 metres" expectation.</li>
+<li id="s-et2023"><a href="https://economictimes.indiatimes.com/tech/technology/navic-support-to-become-must-for-all-smartphones/articleshow/103672135.cms">Economic Times: NavIC support to become must for smartphones (15 Sep 2023)</a>.</li>
+<li id="s-gpsw"><a href="https://www.gpsworld.com/3-atomic-clocks-fail-on-1-indian-satellite-replacement-prepped/">GPS World: 3 atomic clocks fail on Indian satellite (30 Jan 2017)</a> - Spectratime (Switzerland).</li>
+<li id="s-toi2017"><a href="https://timesofindia.indiatimes.com/science/three-atomic-clocks-of-desi-gps-satellites-stop-working/articleshow/59116886.cms">Times of India: Three atomic clocks stop working (13 Jun 2017)</a>.</li>
+<li id="s-tribune"><a href="https://www.tribuneindia.com/news/science-technology/nvs-01-indigenously-developed-rubidium-atomic-clock-used-for-the-first-time-in-2g-navigation-satellite-512366">The Tribune: NVS-01 indigenous rubidium atomic clock (May 2023)</a> - developed by SAC Ahmedabad.</li>
+<li id="s-blnvs2"><a href="https://www.thehindubusinessline.com/news/science/isro-identifies-pyro-valve-signal-failure-behind-nvs-02-orbit-raising-glitch/article70678100.ece">BusinessLine: Pyro-valve signal failure behind NVS-02 (26 Feb 2026)</a>.</li>
+<li id="s-rti"><a href="https://www.indianspaceflight.in/rti/isro-april-2026-rti-update-fac-findings-on-gsat-6a-failure-nvs-02-status-and-navic-health">Indian Spaceflight: ISRO RTI update (Apr 2026)</a> (secondary) - 3 PNT satellites, 5 messaging-only; IRNSS-1H fairing.</li>
+<li id="s-eoirnss"><a href="https://www.eoportal.org/satellite-missions/irnss">eoPortal: IRNSS</a> (secondary) - figure-of-8 (lemniscate) ground tracks.</li>
+<li id="s-bipm"><a href="https://www.bipm.org/en/si-base-units/second">BIPM: SI base unit - second</a> - Cs-133 definition.</li>
+<li id="s-bipmrb"><a href="https://www.bipm.org/en/publications/mises-en-pratique/standard-frequencies">BIPM: Recommended values of standard frequencies</a> - Rb-87 value (CCTF 2025) (page reported by research, not opened directly).</li>
+<li id="s-nist"><a href="https://www.nist.gov/how-do-you-measure-it/how-do-you-measure-second">NIST: How do you measure a second? (updated 27 May 2026)</a> - quartz 15 s/month; caesium and strontium clocks.</li>
+<li id="s-novatelerr"><a href="https://novatel.com/an-introduction-to-gnss/gnss-error-sources">NovAtel: GNSS error sources</a> - error budget; 10 ns = 3 m.</li>
+<li id="s-novateldop"><a href="https://docs.novatel.com/OEM7/Content/Logs/PSRDOP.htm">NovAtel OEM7: PSRDOP (dilution of precision)</a>.</li>
+<li id="s-pibgig"><a href="https://pib.gov.in/PressReleasePage.aspx?PRID=1837277">PIB: NITI Aayog report on the gig and platform economy (27 Jun 2022)</a> - 7.7 million to 23.5 million.</li>
+<li id="s-pibraksha"><a href="https://pib.gov.in/PressReleasePage.aspx?PRID=2306256">PIB: MoD 'RAKSHA' document (3 Sep 2026)</a> - net security provider in the IOR.</li>
+<li id="s-etarms"><a href="https://economictimes.indiatimes.com/news/defence/made-in-india-deployed-abroad-the-expanding-map-of-indias-arms-exports/articleshow/132047378.cms">Economic Times: India's arms exports (29 Jun 2026)</a> - BrahMos Philippines deliveries; Vietnam.</li>
+<li id="s-claws"><a href="https://claws.co.in/brahmos-goes-to-southeast-asia-indias-missile-diplomacy-with-vietnam-and-indonesia/">CLAWS: BrahMos goes to Southeast Asia</a> (secondary).</li>
+<li id="s-reuters"><a href="https://www.reuters.com/world/asia-pacific/indias-modi-meet-indonesias-prabowo-talks-defence-food-security-2026-07-07/">Reuters: Modi-Prabowo talks; BrahMos contract (7 Jul 2026)</a>.</li>
+<li id="s-cernhadron"><a href="https://opendata.cern.ch/glossary/Hadron">CERN Open Data: Hadron (glossary)</a>.</li>
+<li id="s-cernlhc"><a href="https://home.cern/science/accelerators/large-hadron-collider/">CERN: The Large Hadron Collider</a> - 27 km, 100 m, 2008, beams, magnets, detectors.</li>
+<li id="s-ice"><a href="https://www.ice.org.uk/what-is-civil-engineering/infrastructure-projects/civil-engineering-at-cern">Institution of Civil Engineers: Civil engineering at CERN</a> - depth 50-175 m.</li>
+<li id="s-cernrun3"><a href="https://home.cern/third-run-large-hadron-collider-has-successfully-started/">CERN: Third run of the LHC has started (5 Jul 2022)</a> - 13.6 TeV.</li>
+<li id="s-atlashiggs"><a href="https://atlas-public.web.cern.ch/Discover/Physics/Higgs">ATLAS (CERN): The Higgs boson</a> - 4 Jul 2012; Nobel 2013.</li>
+<li id="s-aps"><a href="https://physics.aps.org/articles/v11/118">APS Physics: Where does the proton's mass come from? (2018)</a>.</li>
+<li id="s-cerndm"><a href="https://home.cern/science/physics/dark-matter/">CERN: Dark matter</a> - 27% and 68%.</li>
+<li id="s-cernlhcb"><a href="https://home.cern/new-piece-matter-antimatter-puzzle/">CERN: A new piece in the matter-antimatter puzzle (16 Jul 2025)</a> - LHCb baryon CP violation.</li>
+<li id="s-cerngold"><a href="https://home.cern/alice-detects-conversion-lead-gold-lhc/">CERN: ALICE detects the conversion of lead into gold (8 May 2025)</a> - quark-gluon plasma.</li>
+<li id="s-nasa"><a href="https://www.nasa.gov/universe/nasas-fermi-catches-thunderstorms-hurling-antimatter-into-space/">NASA: Fermi catches thunderstorms hurling antimatter into space</a>.</li>
+<li id="s-cernindia"><a href="https://home.cern/india-becomes-associate-member-state-cern/">CERN: India becomes Associate Member State (16 Jan 2017)</a>.</li>
+<li id="s-etvb"><a href="https://www.etvbharat.com/en/technology/proud-moment-for-india-iit-jodhpur-gets-full-time-membership-of-world-largest-particle-physics-lab-pioneer-in-world-wide-web-enn26070106111">ETV Bharat: IIT Jodhpur gets CMS membership (Jul 2026)</a> (news).</li>
+<li id="s-courier"><a href="https://cerncourier.com/the-lhc-completes-its-third-run/">CERN Courier: The LHC completes its third run (2026)</a>.</li>
+<li id="s-cernls3"><a href="https://home.cern/cern-bids-farewell-to-the-lhc-and-enters-long-shutdown-3/">CERN: CERN enters Long Shutdown 3 (29 Jun 2026)</a> - HL-LHC from 2030.</li>
+<li id="s-pyq18"><a href="https://www.insightsonindia.com/2018/06/14/insights-ias-final-answer-key-with-detailed-explanations-to-upsc-csp-2018/">Insights IAS: answer key, CSP 2018</a> (secondary).</li>
+<li id="s-pyq15"><a href="https://www.insightsonindia.com/2015/12/21/upsc-mains-2015-general-studies-question-paper-3/">Insights IAS: Mains 2015 GS Paper 3</a> (secondary).</li>
+<li id="s-pyq15b"><a href="https://www.unlockias.in/upsc-mains-pyq/gs-paper-3/it-space-biotech-and-ipr/what-do-you-understand-by-standard-positioning-systems-2015-gs3-q11">UnlockIAS: 2015 GS3 Q11</a> (secondary) - marks and word limit.</li>
+<li id="s-pyq13"><a href="https://compass.rauias.com/current-affairs/higgs-boson/">Rau's IAS Compass: Higgs boson (2013 Prelims PYQ)</a> (secondary).</li>
+<li id="s-pyq09"><a href="https://easemyprep.in/pyq/prelims/science-tech/2009/2009_9_D_25">EaseMyPrep: 2009 Prelims CERN question</a> (secondary).</li>
+<li id="s-pyq12"><a href="https://www.pmfias.com/antimatter-anti-helium-upsc-prelims-pyq-2012/">PMF IAS: 2012 Prelims antimatter question</a> (secondary).</li>
+<li id="s-pyq17"><a href="https://vajiramandravi.com/upsc-exam/the-terms-event-horizon-singularity-string-theory-and-standard-model-are-sometimes-seen-in-the-news-in-the-context-of/">Vajiram and Ravi: 2017 Prelims question</a> (secondary).</li>
+<li id="s-pyq17b"><a href="https://thinqias.com/upsc-prelims-2017-solution-answer-key/gs-paper-1/the-terms-event-horizon-singularity-string-theory-and-standard-model-are-sometimes">ThinQ IAS: 2017 Prelims question</a> (secondary).</li>
+<li>Official papers: <a href="https://upsc.gov.in/examinations/previous-question-papers">UPSC previous question papers</a> (not opened in this session).</li>
+<li>Previous note: <a href="Science%20and%20Technology%20-%20Class%2011-04-2026.html">Science and Technology - Class 11-04-2026</a> (communication satellites, satellite internet, spectrum, navigation principles, Figure 50).</li>
+</ol>
+</section>
+</main>
+</body>
+</html>
