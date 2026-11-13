@@ -97,11 +97,12 @@ Visuals are drawn as lightweight inline SVG so they print cleanly. Maps are simp
 
 The notes are published as a website at `https://yeshwanth371.github.io/Personal/`. The source `.html` files are never edited for the site; `tools/build-site.mjs` builds a copy in `_site/` that adds:
 
-- a home page and one index page per subject, with classes listed in date order;
+- a home page with subject cards, recently added classes, and a **search box that finds topics across all notes**;
+- one page per subject, with classes grouped by month and each class showing its **topics** as links that jump straight to that section of the note, plus a filter box;
 - **Home / Subject / Previous class / Next class** links at the top and bottom of each class note (dated class notes only; consolidated and additional notes are listed on the subject page);
 - a viewport tag for any note that lacks one, and a link check that reports broken internal links and anchors.
 
-Publishing is automatic: push to `main` and the `Deploy notes to GitHub Pages` workflow rebuilds and deploys the site. New notes need no extra steps provided they follow the file naming above.
+Publishing is automatic: push to `main` and the `Deploy notes to GitHub Pages` workflow rebuilds and deploys the site. New notes need no extra steps provided they follow the file naming above. Topics are read from each note's `<h2>` headings (the closing Key Facts, Mains Points, PYQ and similar sections are skipped), and the page styles and subject icons live in `tools/site-ui.mjs`.
 
 One-time setup: in the repository, go to **Settings → Pages** and set **Source** to **GitHub Actions**.
 

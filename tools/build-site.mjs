@@ -3,16 +3,11 @@
 import { promises as fs } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { CSS as SITE_CSS, esc, urlPath, renderHome, renderSubject } from "./site-ui.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const NOTES = path.join(ROOT, "Notes");
 const OUT = path.join(ROOT, "_site");
-
-const MONTHS = ["January", "February", "March", "April", "May", "June", "July",
-  "August", "September", "October", "November", "December"];
-
-const esc = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
-const urlPath = (p) => p.split("/").map(encodeURIComponent).join("/");
 
 async function walk(dir) {
   const out = [];
@@ -33,7 +28,34 @@ function classify(file) {
   return { date, kind, base };
 }
 
-const prettyDate = (d) => `${d.getUTCDate()} ${MONTHS[d.getUTCMonth()]} ${d.getUTCFullYear()}`;
+// Closing/revision sections that are not subject topics.
+const NON_TOPIC = /^(key facts|mains points|open sources|common traps|previous year|corrections made|\d+-second revision|rapid revision|visual representations|pictorial representations|personalities, organisations|timeline for quick|map-based revision|data and trends|contents$|syllabus map|sources)/i;
+
+const decode = (s) => s
+  .replace(/&mdash;/g, "-").replace(/&ndash;/g, "-").replace(/&amp;/g, "&").replace(/&lt;/g, "<").replace(/&gt;/g, ">")
+  .replace(/&quot;/g, '"').replace(/&#39;|&rsquo;|&lsquo;/g, "'").replace(/&nbsp;/g, " ")
+  .replace(/&#(\d+);/g, (_, c) => String.fromCodePoint(+c));
+
+// Gives every <h2> an id (without touching existing ids) and returns the topic list.
+function processHeadings(html) {
+  const used = new Set([...html.matchAll(/\bid\s*=\s*["']([^"']+)["']/gi)].map((m) => m[1]));
+  const topics = [];
+  let n = 0;
+  const out = html.replace(/<h2([^>]*)>([\s\S]*?)<\/h2>/gi, (full, attrs, inner) => {
+    let id = attrs.match(/\bid\s*=\s*["']([^"']+)["']/i)?.[1];
+    let tag = full;
+    if (!id) {
+      do { id = `sec-${++n}`; } while (used.has(id));
+      used.add(id);
+      tag = `<h2${attrs} id="${id}">${inner}</h2>`;
+    }
+    const text = decode(inner.replace(/<[^>]+>/g, "")).replace(/\s+/g, " ").trim()
+      .replace(/^\d+(?:\.\d+)*[.)]?\s+/, "").replace(/^[A-Z]\.\s+/, "");
+    if (text && !NON_TOPIC.test(text)) topics.push({ text, id });
+    return tag;
+  });
+  return { html: out, topics };
+}
 
 function extractTitle(html, fallback) {
   const m = html.match(/<title>([\s\S]*?)<\/title>/i);
@@ -48,15 +70,6 @@ const CSS = `
 .site-nav .pn{display:flex;gap:16px}
 .site-nav .off{color:#999}
 @media print{.site-nav{display:none}}
-`;
-
-const PAGE_CSS = `
-body{font-family:Calibri,Arial,sans-serif;font-size:12pt;line-height:1.6;max-width:900px;margin:0 auto;padding:20px;color:#202124}
-h1{border-bottom:2px solid #333;padding-bottom:4px}h2{margin-top:28px;border-bottom:1px solid #ddd}
-a{color:#005ea6}ul{padding-left:22px}li{margin:4px 0}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;padding:0;list-style:none}
-.grid li{border:1px solid #c9dcef;border-radius:6px;background:#f5f9fd;padding:10px 14px;margin:0}
-.grid a{font-weight:700;text-decoration:none}.muted{color:#666;font-size:10.5pt}
 `;
 
 function navBar({ homeHref, subjectHref, subject, prev, next, sequenced }) {
@@ -81,13 +94,6 @@ function inject(html, top, bottom) {
   return out;
 }
 
-const page = (title, body) => `<!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>${esc(title)}</title><style>${PAGE_CSS}</style></head><body>
-${body}
-</body></html>
-`;
-
 async function main() {
   await fs.rm(OUT, { recursive: true, force: true });
   const files = (await walk(NOTES)).sort();
@@ -97,8 +103,9 @@ async function main() {
     const rel = path.relative(NOTES, file).split(path.sep);
     const html = await fs.readFile(file, "utf8");
     const { date, kind, base } = classify(file);
-    notes.push({ rel: rel.join("/"), subject: rel[0], name: rel[rel.length - 1], html, date, kind,
-      title: extractTitle(html, base) });
+    const { html: withIds, topics } = processHeadings(html);
+    notes.push({ rel: rel.join("/"), subject: rel[0], name: rel[rel.length - 1], html: withIds, date, kind,
+      topics, title: extractTitle(html, base) });
   }
 
   const subjects = [...new Set(notes.map((n) => n.subject))].sort();
@@ -129,34 +136,12 @@ async function main() {
   }
 
   for (const s of subjects) {
-    const classes = classesOf(s);
-    const extras = bySubject.get(s).filter((n) => !classes.includes(n)).sort((a, b) => a.rel.localeCompare(b.rel));
-    const href = (n) => urlPath(n.rel.slice(s.length + 1));
-    const item = (n, label) => `<li><a href="${href(n)}">${esc(label)}</a></li>`;
-    let body = `<p><a href="../../index.html">&larr; Home</a></p><h1>${esc(s)}</h1>
-<p class="muted">${classes.length} class note${classes.length === 1 ? "" : "s"}${extras.length ? `, ${extras.length} additional/consolidated` : ""}.</p>`;
-    if (classes.length) {
-      body += `<p><a href="${href(classes[0])}"><strong>Start reading from the first class &rarr;</strong></a></p>
-<h2>Classes (in order)</h2><ul>${classes.map((n) => item(n, prettyDate(n.date))).join("")}</ul>`;
-    }
-    if (extras.length) {
-      body += `<h2>Additional &amp; consolidated notes</h2><ul>${extras.map((n) => item(n, n.rel.slice(s.length + 1).replace(/\.html$/, ""))).join("")}</ul>`;
-    }
-    await fs.writeFile(path.join(OUT, "Notes", s, "index.html"), page(`${s} - Notes`, body));
+    await fs.writeFile(path.join(OUT, "Notes", s, "index.html"), renderSubject({ subject: s, notes: bySubject.get(s) }));
   }
 
-  const cards = subjects.map((s) => {
-    const classes = classesOf(s);
-    const last = classes[classes.length - 1];
-    return `<li><a href="${urlPath(`Notes/${s}/index.html`)}">${esc(s)}</a><div class="muted">${classes.length} classes${last ? ` &middot; latest ${prettyDate(last.date)}` : ""}</div></li>`;
-  }).join("");
-  const recent = notes.filter((n) => n.date).sort((a, b) => b.date - a.date || a.name.localeCompare(b.name)).slice(0, 10)
-    .map((n) => `<li><a href="${urlPath(`Notes/${n.rel}`)}">${esc(n.title)}</a></li>`).join("");
-  const home = `<h1>Personal Notes</h1>
-<p>UPSC Civil Services study notes, one dated note per class. Pick a subject and read the classes in order using the Previous/Next links.</p>
-<h2>Subjects</h2><ul class="grid">${cards}</ul>
-<h2>Recently added</h2><ul>${recent}</ul>`;
-  await fs.writeFile(path.join(OUT, "index.html"), page("Personal Notes", home));
+  await fs.mkdir(path.join(OUT, "assets"), { recursive: true });
+  await fs.writeFile(path.join(OUT, "assets", "site.css"), SITE_CSS);
+  await fs.writeFile(path.join(OUT, "index.html"), renderHome({ subjects, bySubject, notes }));
   await fs.writeFile(path.join(OUT, ".nojekyll"), "");
 
   console.log(`Built ${notes.length} notes, ${subjects.length} subjects -> ${path.relative(ROOT, OUT)}`);
