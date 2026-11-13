@@ -93,6 +93,20 @@ Visuals are drawn as lightweight inline SVG so they print cleanly. Maps are simp
 4. Use the PYQ section of each note to practise, and the Sources section to go deeper.
 5. Before an exam, search for `[Verification Required]` across a subject folder to find points that still need checking.
 
+## Reading online (GitHub Pages)
+
+The notes are published as a website at `https://yeshwanth371.github.io/Personal/`. The source `.html` files are never edited for the site; `tools/build-site.mjs` builds a copy in `_site/` that adds:
+
+- a home page and one index page per subject, with classes listed in date order;
+- **Home / Subject / Previous class / Next class** links at the top and bottom of each class note (dated class notes only; consolidated and additional notes are listed on the subject page);
+- a viewport tag for any note that lacks one, and a link check that reports broken internal links and anchors.
+
+Publishing is automatic: push to `main` and the `Deploy notes to GitHub Pages` workflow rebuilds and deploys the site. New notes need no extra steps provided they follow the file naming above.
+
+One-time setup: in the repository, go to **Settings → Pages** and set **Source** to **GitHub Actions**.
+
+To build locally (Node 18 or later): `node tools/build-site.mjs`, then open `_site/index.html`. Set `STRICT_LINKS=1` to make broken links fail the build.
+
 ## Git workflow
 
 The `Personal/` folder is a Git repository. The `.git` directory holds repository metadata: do not move or edit it.
