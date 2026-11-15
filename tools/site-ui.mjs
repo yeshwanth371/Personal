@@ -25,7 +25,7 @@ export const subjectMeta = (s) => {
 };
 
 export const CSS = `
-:root{--bg:#f4f6fb;--card:#fff;--ink:#1b2333;--muted:#5b6880;--line:#e2e8f2;--brand:#2563eb;--soft:#eef3ff;--shadow:0 1px 2px rgba(16,24,40,.06),0 4px 14px rgba(16,24,40,.06)}
+:root{color-scheme:light dark;--bg:#f4f6fb;--card:#fff;--ink:#1b2333;--muted:#5b6880;--line:#e2e8f2;--brand:#2563eb;--soft:#eef3ff;--shadow:0 1px 2px rgba(16,24,40,.06),0 4px 14px rgba(16,24,40,.06)}
 @media(prefers-color-scheme:dark){:root{--bg:#0e131f;--card:#161d2d;--ink:#e8edf7;--muted:#97a6c0;--line:#25304a;--brand:#8aaeff;--soft:#1b2540;--shadow:0 1px 2px rgba(0,0,0,.4),0 4px 14px rgba(0,0,0,.3)}}
 *{box-sizing:border-box}html{scroll-behavior:smooth}
 body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 "Segoe UI",Calibri,system-ui,-apple-system,Arial,sans-serif}

@@ -95,7 +95,7 @@ Visuals are drawn as lightweight inline SVG so they print cleanly. Maps are simp
 
 ## Reading online (GitHub Pages)
 
-The notes are published as a website at `https://yeshwanth371.github.io/Personal/`. The source `.html` files are never edited for the site; `tools/build-site.mjs` builds a copy in `_site/` that adds:
+The notes are published as a website at `https://yeshwanth371.github.io/Personal/`. The site and its reading navigation follow the device's light/dark appearance; printing remains light. The source `.html` files are never edited for the site; `tools/build-site.mjs` builds a copy in `_site/` that adds:
 
 - a home page with subject cards, recently added classes, and a **search box that finds topics across all notes**;
 - one page per subject, with classes grouped by month and each class showing its **topics** as links that jump straight to that section of the note, plus a filter box;
