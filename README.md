@@ -102,7 +102,7 @@ The notes are published as a website at `https://yeshwanth371.github.io/Personal
 - **Home / Subject / Previous class / Next class** links at the top and bottom of each class note (dated class notes only; consolidated and additional notes are listed on the subject page);
 - a viewport tag for any note that lacks one, and a link check that reports broken internal links and anchors.
 
-Shaded correction, additional, verification, exam, answer and related boxes use dark backgrounds, readable text and colour-coded borders in dark mode, including topic tiles and inline-shaded flow boxes. Their light-mode and print styling stays unchanged.
+Shaded correction, additional, verification, exam, answer and related boxes use dark backgrounds, readable text and colour-coded borders in dark mode, including blue quote/answer blockquotes, topic tiles and inline-shaded flow boxes. Their light-mode and print styling stays unchanged.
 
 Publishing is automatic: push to `main` and the `Deploy notes to GitHub Pages` workflow rebuilds and deploys the site. New notes need no extra steps provided they follow the file naming above. Topics are read from each note's `<h2>` headings (the closing Key Facts, Mains Points, PYQ and similar sections are skipped), and the page styles and subject icons live in `tools/site-ui.mjs`.
 

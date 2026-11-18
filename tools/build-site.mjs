@@ -87,10 +87,10 @@ figcaption,.small{color:var(--reading-muted)}
 .site-nav .off{color:var(--nav-muted)}
 @media screen and (prefers-color-scheme:dark){:root{--reading-bg:#101318;--reading-text:#e5e7eb;--reading-heading:#f3f4f6;--reading-subheading:#dbe2ea;--reading-muted:#aab4c0;--reading-border:#59616d;--reading-rule:#424b57;--reading-table-head:#252c35;--reading-callout:#302a1b;--reading-important:#321f27;--reading-answer:#1d2935;--reading-correction:#302518;--reading-additional:#1d2c22;--reading-panel:#202833;--reading-figure:#171d25;--nav-bg:#171d25;--nav-border:#424b57;--nav-link:#8ab4f8;--nav-muted:#aab4c0}}
 @media screen and (prefers-color-scheme:dark){
-  .note,.exam,.verification,.marker,.important,.answer,.formula,.correction,.additional,.lead,.ca,.imp,.tile,.flow,.flow .box,.model,.map-card,.stage,.topic-block,nav.toc{color:var(--reading-text)}
+  blockquote,.note,.exam,.verification,.marker,.important,.answer,.formula,.correction,.additional,.lead,.ca,.imp,.tile,.flow,.flow .box,.model,.map-card,.stage,.topic-block,nav.toc{color:var(--reading-text)}
   .note,.exam,.verification,.marker{border-color:#e9b65b}
   .important,.tile.p4{background:var(--reading-important);border-color:#f28b91}
-  .answer,.formula,.ca,.tile,.tile.p2{background:var(--reading-answer);border-color:#79b8f3}
+  blockquote,.answer,.formula,.ca,.tile,.tile.p2{background:var(--reading-answer);border-color:#79b8f3}
   .correction,.tile.p3{background:var(--reading-correction);border-color:#f4ad66}
   .additional,.lead,.tile.p1{background:var(--reading-additional);border-color:#81c995}
   .imp{background:#2c2238;border-color:#c5a0e6}
