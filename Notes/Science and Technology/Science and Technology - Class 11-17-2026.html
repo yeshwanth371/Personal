@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Science and Technology - Class Notes | 17 November 2026</title>
+<style>
+  * { box-sizing: border-box; }
+  body { font-family: Calibri, sans-serif; font-size: 11pt; line-height: 1.6; max-width: 900px; margin: 20px auto; padding: 0 20px; color: #202124; }
+  h1 { font-size: 20pt; color: #1a1a1a; border-bottom: 2px solid #333; padding-bottom: 4px; margin-top: 30px; }
+  h2 { font-size: 16pt; color: #2b2b2b; margin-top: 28px; border-bottom: 1px solid #ddd; padding-bottom: 3px; }
+  h3 { font-size: 13pt; color: #3a3a3a; margin-top: 18px; }
+  p { margin: 8px 0; }
+  ul, ol { margin: 6px 0; padding-left: 28px; }
+  li { margin: 4px 0; }
+  a { color: #005ea6; overflow-wrap: anywhere; }
+  table { border-collapse: collapse; width: 100%; margin: 10px 0; table-layout: fixed; }
+  caption { text-align: left; font-weight: bold; margin-bottom: 6px; }
+  th, td { border: 1px solid #999; padding: 6px 10px; text-align: left; vertical-align: top; overflow-wrap: anywhere; }
+  th { background: #f0f0f0; }
+  .table-wrap { overflow-x: auto; }
+  .note, .exam, .verification { background: #fff8e1; border-left: 3px solid #f5a623; padding: 8px 12px; margin: 10px 0; overflow-wrap: anywhere; }
+  .correction { background: #fff3e0; border-left: 3px solid #ef6c00; padding: 8px 12px; margin: 10px 0; }
+  .additional, .lead { background: #e8f5e9; border-left: 3px solid #2e7d32; padding: 8px 12px; margin: 10px 0; }
+  .flow { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 10px; padding: 12px 0; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; }
+  .flow span { text-align: center; max-width: 100%; }
+  .flow .box { border: 1px solid #888; background: #f7f7f7; padding: 6px 10px; border-radius: 4px; flex: 1 1 120px; }
+  figure { margin: 16px 0; padding: 12px; border: 1px solid #bbb; background: #fff; }
+  figure h3 { margin-top: 0; text-align: center; }
+  figcaption { margin-top: 8px; color: #555; font-size: 9.5pt; }
+  svg { max-width: 100%; height: auto; display: block; margin: 0 auto; }
+  .cols2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  .cols3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+  .cols4 { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
+  .tile { border: 1px solid #888; border-radius: 4px; padding: 8px; background: #f5f9fd; font-size: 10.5pt; }
+  .tile.p1 { background: #e8f5e9; border-color: #2e7d32; }
+  .tile.p2 { background: #f5f9fd; border-color: #0078d4; }
+  .tile.p3 { background: #fff3e0; border-color: #ef6c00; }
+  .tile.p4 { background: #fdecea; border-color: #c62828; }
+  .small { color: #555; font-size: 9.5pt; }
+  .answer { margin: 10px 0; padding: 6px 12px; border-left: 3px solid #0078d4; background: #f5f9fd; }
+  @media (max-width: 650px) {
+    body { padding: 0 12px; }
+    .cols2, .cols3, .cols4 { grid-template-columns: 1fr; }
+    .flow { flex-direction: column; align-items: stretch; }
+    .flow .box { flex: none; }
+    th, td { padding: 6px; }
+  }
+  @media print {
+    @page { size: A4; margin: 14mm; }
+    body { max-width: none; margin: 0; padding: 0; }
+    h1, h2, h3 { break-after: avoid; }
+    figure, tr, .answer, .tile { break-inside: avoid; }
+    thead { display: table-header-group; }
+    .table-wrap { overflow: visible; }
+    a { color: inherit; text-decoration: none; }
+    p, li { orphans: 3; widows: 3; }
+  }
+</style>
+</head>
+<body>
+<main>
+<header>
+<h1>Science and Technology - Class Notes | 17 November 2026</h1>
+<p><strong>Topic:</strong> Space: Lunar Exploration.</p>
+<ul>
+<li><strong>Origin of the Moon</strong>: the giant-impact hypothesis.</li>
+<li><strong>Why the lunar south pole</strong>: water ice, permanently shadowed regions, peaks of near-constant light, the Moon as a launch pad, the South Pole-Aitken basin.</li>
+<li><strong>India's Chandrayaan programme</strong>:
+<ul>
+<li>Chandrayaan-1, Chandrayaan-2 and Chandrayaan-3;</li>
+<li>Chandrayaan-3's orbiter-versus-propulsion-module contrast, power and its seven payloads;</li>
+<li>Chandrayaan-4 (sample return);</li>
+<li>Chandrayaan-5 (heading only).</li>
+</ul></li>
+<li><strong>Global context</strong>: Artemis II, Chang'e, SLIM, IM-1.</li>
+</ul>
+<p class="small">Note date: <time datetime="2026-11-17">17 November 2026</time> (class notes headed "Date: 17"). <strong>Continuation:</strong> this note continues the <a href="Science%20and%20Technology%20-%20Class%2011-11-2026.html">previous note (file dated 11-11-2026)</a>.</p>
+<ul class="small">
+<li>That note ended with <strong>Section 66 ("Lunar Exploration")</strong> as a placeholder and used Section 67 for its status table.</li>
+<li>Today's material <strong>completes Section 66</strong>, ending with a Chandrayaan-5 placeholder (66.12). The status table is <strong>Section 67</strong>.</li>
+<li>Figures continue from <strong>Figure 76</strong> and corrections from <strong>c109</strong>. Earlier notes are untouched.</li>
+</ul>
+<p class="note"><strong>Reading key:</strong> <strong>[Correction]</strong> repairs a substantive claim; <strong>[Additional]</strong> marks supporting material or study guidance; <strong>[Verification Required]</strong> keeps useful but unresolved material.</p>
+<ul class="small">
+<li><strong>Dates:</strong> sources were consulted on <strong>20 November 2026</strong>, and statuses are stated <strong>as of 20 November 2026</strong>.</li>
+<li><strong>Sources read in relevant part:</strong> ISRO mission pages and science releases, PIB (2024), NASA (Moon formation, SPA basin, Chandrayaan-1, LRO images, Artemis II), JAXA, VSSC, MNRAS, and news reports (Reuters, AP, Times of India, India Today, Mint, The New Indian Express).</li>
+<li><strong>Limits:</strong> most sources were read as <strong>search-result extracts or summaries</strong>, not full documents. Official UPSC papers were not opened. Facts marked <strong>&#8224;</strong> are standard textbook values or details not re-checked in this session.</li>
+<li><strong>Silent fixes:</strong> spelling and typing repairs ("existance", "tie", "coleased", "interplanatory", "gravuty", "Pragyaan", "klander", "viceversa", "Histroy", "determineshort", "unar", "oon", "descne", "travekl", "touch doen") were made without markers.</li>
+</ul>
+</header>
+
+<section id="lunar">
+<h2>66. Lunar Exploration (completes the Section 66 placeholder)</h2>
+<p class="small">The <a href="Science%20and%20Technology%20-%20Class%2011-11-2026.html#lunar">previous note</a> ended with this heading as a placeholder; today's class fills it. Time-sensitive facts are stated <strong>as of 20 November 2026</strong>. Mission statuses are collected in <a href="#status">Section 67</a>.</p>
+
+<h3 id="moon-origin">66.1 Origin of the Moon: the giant-impact hypothesis</h3>
+<ul>
+<li>The Solar System formed about <strong>4.5 billion years ago</strong> (4.57 billion for the oldest solids &#8224;).</li>
+<li>The leading explanation for the Moon is the <strong>giant-impact hypothesis</strong>. A <strong>Mars-sized protoplanet named Theia</strong> struck the young Earth and flung molten and vaporised rock into orbit, and this debris gathered to form the Moon (<a href="#s-nasa-form">NASA</a>).</li>
+<li><strong>Evidence</strong> (<a href="#s-nasa-form">NASA</a>; <a href="#s-pressbook">Planetary Science textbook</a>):
+<ul>
+<li>Apollo rocks have oxygen isotopes that match Earth's too closely to be a coincidence.</li>
+<li>The Moon has a small core and a lower overall density than Earth.</li>
+<li>Its rocks are poor in volatile elements, which fits a high-energy event.</li>
+<li>Anorthosite covers the highlands. This light rock floats to the top of molten rock, so the young Moon must have had a deep <strong>magma ocean</strong>.</li>
+</ul></li>
+<li><strong>Speed of formation:</strong> simulations published in September 2026 suggest the Moon could have gathered within <strong>hours</strong> if both bodies were hot and soft. This is one model outcome, not a measurement (<a href="#s-livesci">Live Science</a>).</li>
+</ul>
+<p class="correction" id="c109"><strong>[Correction]</strong> <strong>"Thea"</strong> is <strong>Theia</strong>, a protoplanet rather than a full planet. <strong>"165-180 million years after the Solar System"</strong>: the timing is <strong>disputed</strong>, and this figure sits at the late end of the range. NASA says Apollo rock ages point to about <strong>60 million years</strong> after the Solar System began to form (<a href="#s-nasa-form">NASA</a>). Orbital models give <strong>37-62 million years</strong>, and hafnium-tungsten dating gives about <strong>50 million years</strong>. However, the oldest lunar crustal rocks crystallised only at about <strong>200 million years</strong> (<a href="#s-lpsc">LPSC 2024 summary</a>). For the exam, write "about 4.5 billion years ago, within roughly the first 100-150 million years".</p>
+
+<figure id="fig76">
+<h3>Figure 76. Giant-Impact Origin of the Moon (schematic, not to scale)</h3>
+<svg viewBox="0 0 900 330" role="img" aria-label="Giant-impact origin of the Moon, schematic and not to scale, in four stages. Stage 1, about 4.5 billion years ago: a Mars-sized protoplanet called Theia strikes the young proto-Earth at a glancing angle. Stage 2: the impact melts and partly vaporises both bodies and throws a disc of molten and vaporised rock, mostly mantle material from Earth and Theia, into orbit; Theia&#x27;s iron core merges with Earth&#x27;s core. Stage 3: the debris disc gathers into the Moon, within hours to years according to models. Stage 4: the young Moon is covered by a magma ocean; light plagioclase crystals float to form the anorthosite crust while dense olivine and pyroxene sink to form the mantle."><defs><marker id="f76-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#555"/></marker></defs><g font-family="Calibri, sans-serif"><text x="115" y="30" font-size="13.5" text-anchor="middle" fill="#202124" font-weight="bold">1. Impact (~4.5 Ga)</text><text x="335" y="30" font-size="13.5" text-anchor="middle" fill="#202124" font-weight="bold">2. Debris disc</text><text x="560" y="30" font-size="13.5" text-anchor="middle" fill="#202124" font-weight="bold">3. Moon gathers</text><text x="785" y="30" font-size="13.5" text-anchor="middle" fill="#202124" font-weight="bold">4. Magma ocean</text><circle cx="95" cy="140" r="60" fill="#ffe0b2" stroke="#e65100" stroke-width="1.5" /><text x="95" y="145" font-size="12" text-anchor="middle" fill="#202124">proto-Earth</text><circle cx="190" cy="85" r="30" fill="#d7ccc8" stroke="#5d4037" stroke-width="1.5" /><text x="190" y="90" font-size="11.5" text-anchor="middle" fill="#202124">Theia</text><line x1="220" y1="60" x2="200" y2="72" stroke="#5d4037" stroke-width="1.5" marker-end="url(#f76-ar)"/><text x="115" y="228" font-size="11.5" text-anchor="middle" fill="#555">Mars-sized body</text><text x="115" y="244" font-size="11.5" text-anchor="middle" fill="#555">glancing blow</text><ellipse cx="335" cy="140" rx="95" ry="26" fill="#ffccbc" stroke="#e64a19" stroke-width="1.2" stroke-dasharray="4 3"/><circle cx="335" cy="140" r="52" fill="#ffab91" stroke="#bf360c" stroke-width="1.5" /><text x="335" y="145" font-size="12" text-anchor="middle" fill="#202124">molten Earth</text><text x="335" y="228" font-size="11.5" text-anchor="middle" fill="#555">vapour + melt disc</text><text x="335" y="244" font-size="11.5" text-anchor="middle" fill="#555">(Earth + Theia mantle)</text><circle cx="530" cy="140" r="52" fill="#ffccbc" stroke="#bf360c" stroke-width="1.5" /><text x="530" y="145" font-size="12" text-anchor="middle" fill="#202124">Earth</text><circle cx="635" cy="110" r="20" fill="#cfd8dc" stroke="#455a64" stroke-width="1.5" /><text x="635" y="74" font-size="12" text-anchor="middle" fill="#202124" font-weight="bold">Moon</text><path d="M600,160 Q640,170 655,130" stroke="#455a64" stroke-width="1.2" fill="none" stroke-dasharray="3 3"/><text x="560" y="228" font-size="11.5" text-anchor="middle" fill="#555">hours to years</text><text x="560" y="244" font-size="11.5" text-anchor="middle" fill="#555">(model-dependent)</text><circle cx="785" cy="140" r="62" fill="#ff8a65" stroke="#bf360c" stroke-width="1.5" /><circle cx="785" cy="140" r="40" fill="#8d6e63" stroke="#4e342e" stroke-width="1.2" /><circle cx="785" cy="140" r="14" fill="#616161" stroke="#212121" stroke-width="1.2" /><text x="785" y="70" font-size="11.5" text-anchor="middle" fill="#555">anorthosite crust floats</text><text x="785" y="228" font-size="11.5" text-anchor="middle" fill="#555">olivine/pyroxene sink</text><text x="785" y="244" font-size="11.5" text-anchor="middle" fill="#555">&#8594; mantle; small core</text><line x1="240" y1="140" x2="262" y2="140" stroke="#555" stroke-width="1.5" marker-end="url(#f76-ar)"/><line x1="445" y1="140" x2="470" y2="140" stroke="#555" stroke-width="1.5" marker-end="url(#f76-ar)"/><line x1="675" y1="140" x2="700" y2="140" stroke="#555" stroke-width="1.5" marker-end="url(#f76-ar)"/><text x="450" y="285" font-size="11.5" text-anchor="middle" fill="#555">Evidence: Apollo rocks match Earth's oxygen isotopes; small lunar core; global anorthosite crust (magma ocean); volatile-poor rocks.</text><text x="450" y="305" font-size="11.5" text-anchor="middle" fill="#555">Timing is debated: ~4.5 billion years ago, tens of millions to ~150 million years after the first solids (see Section 66.1).</text></g></svg>
+<figcaption>The four stages are impact, debris disc, gathering and magma ocean. This is an original drawing based on <a href="#s-nasa-form">NASA</a> and <a href="#s-pressbook">an open planetary-science textbook</a>. The size of Theia and the impact geometry are illustrative.</figcaption>
+</figure>
+
+<ul>
+<li><strong>The Moon and the origin of life (class point).</strong> The Moon may have helped life arise by creating conditions for prebiotic chemical reactions.</li>
+</ul>
+<p class="correction" id="c110"><strong>[Correction]</strong> This is a <strong>hypothesis, not established fact</strong>. The ideas usually cited are listed below &#8224;. None is proven, and life could have arisen without them. Write it in an answer as "may have contributed".
+<br/>(1) A closer young Moon raised strong tides, and the wet-dry cycles of tidal pools may have concentrated organic molecules.
+<br/>(2) The Moon steadies the tilt of Earth's axis, which keeps the climate relatively stable.</p>
+
+<h3 id="moon-sp">66.2 Why the focus has shifted to the lunar south pole</h3>
+<ol>
+<li><strong>Water ice in polar cold traps.</strong>
+<ul>
+<li>Crater floors near the poles never see the Sun and can be colder than about <strong>-200 &#176;C</strong> (NASA, cited by <a href="#s-reuters-ce7">Reuters</a>). They trap water ice and other volatiles.</li>
+<li>The ice could supply <strong>drinking water</strong>, <strong>oxygen</strong> for breathing (by splitting water) and <strong>hydrogen-oxygen rocket propellant</strong> (<a href="#s-reuters-ce7">Reuters</a>).</li>
+<li>Making these on the Moon is called <strong>in-situ resource utilisation (ISRU)</strong>. It avoids lifting every kilogram out of Earth's deep gravity well.</li>
+</ul></li>
+<li><strong>The Moon as a fuel depot and launch pad.</strong>
+<ul>
+<li>Lunar gravity is about <strong>one-sixth</strong> of Earth's, and escape velocity is about <strong>2.4 km/s against 11.2 km/s</strong> on Earth &#8224;.</li>
+<li>So a rocket fuelled on the Moon needs much less thrust to leave. This is the logic of the Moon as a "gas station" for missions to Mars.</li>
+</ul></li>
+<li><strong>Near-constant sunlight on high ground.</strong>
+<ul>
+<li>The Sun stays close to the horizon at the poles. Some crater rims and peaks are therefore lit for most of the year (<a href="#s-reuters-ce7">Reuters</a>). They are popularly called "peaks of eternal light".</li>
+<li>Solar panels there could run almost continuously and power <strong>electrolysis</strong> of ice-water into H<sub>2</sub> and O<sub>2</sub>.</li>
+<li>The polar day-night cycle is milder than at the equator, where a night lasts about 14 Earth days (<a href="#s-reuters-ce7">Reuters</a>).</li>
+</ul></li>
+<li><strong>Science.</strong>
+<ul>
+<li>Polar ice may record water delivered by comets and asteroids, and early volcanic gases (<a href="#s-aljaz">Al Jazeera</a>).</li>
+<li>The South Pole-Aitken basin may expose deep crust and possibly mantle (<a href="#spa">Section 66.3</a>).</li>
+<li>Such samples help date the Solar System's early bombardment, show how rocky planets differentiated into core, mantle and crust, and show which commercially useful elements are present.</li>
+</ul></li>
+</ol>
+<p class="correction" id="c111"><strong>[Correction]</strong> <strong>"Billions of tons of frozen water"</strong>: the <strong>quantity is not known</strong>. Researchers commenting on China's Chang'e-7 mission in August 2026 noted that we know some form of water exists. What we still do not know is how much accessible ice the shadowed craters hold, how deep it lies or in what form (<a href="#s-phys-ce7">Phys.org, R. de Grijs, 21 Aug 2026</a>). Older radar-based estimates, such as "at least 600 million tonnes" in north-polar craters from Chandrayaan-1's Mini-SAR &#8224;, are model-dependent. Write "large but unquantified deposits".</p>
+<p class="correction" id="c112"><strong>[Correction]</strong> <strong>"Peaks of eternal light"</strong> is a popular name. Reuters describes the rims as receiving <strong>"near-constant"</strong> sunlight (<a href="#s-reuters-ce7">Reuters</a>). The best-lit sites are illuminated for most, but not all, of the year &#8224;, so no confirmed spot is lit 100% of the time.</p>
+<p class="correction" id="c113"><strong>[Correction]</strong> <strong>"PSRs with frozen water could be used as human settlements"</strong>: permanently shadowed regions (PSRs) are the <strong>resource sites</strong>, not the living sites. They are pitch-dark, colder than about -200 &#176;C and hard to reach (<a href="#s-phys-ce7">Phys.org</a>). Bases are planned on the <strong>sunlit rims and ridges next to PSRs</strong>, which offer a relatively stable thermal climate and steady solar power (<a href="#s-reuters-ce7">Reuters</a>). Robots or crews would make short trips into the craters to mine ice.</p>
+
+<figure id="fig77">
+<h3>Figure 77. Why the Lunar South Pole Matters: Lit Peaks, Shadowed Ice and Resources (schematic cross-section, not to scale)</h3>
+<svg viewBox="0 0 900 420" role="img" aria-label="Why the lunar south pole matters, schematic cross-section not to scale. The Sun stays very low on the horizon, so its rays arrive almost horizontally. High crater rims and peaks are lit for most of the year, called peaks of near-eternal light, and suit solar panels. The floors of deep craters never receive direct sunlight; these permanently shadowed regions are colder than about minus 200 degrees Celsius and act as cold traps for water ice. Ice could be melted for drinking water and split by solar electricity into hydrogen and oxygen, giving breathable oxygen and rocket propellant. Because lunar gravity is one-sixth of Earth&#x27;s and escape velocity is about 2.4 kilometres per second against 11.2 on Earth, the Moon could serve as a refuelling stop and launch pad."><defs><marker id="f77-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#555"/></marker></defs><g font-family="Calibri, sans-serif"><path d="M20,300 L150,300 L230,170 L270,165 L300,190 L360,330 L520,330 L590,180 L625,172 L660,200 L720,300 L880,300 L880,400 L20,400 Z" stroke="#6d4c41" stroke-width="1.2" fill="#d7ccc8"/><path d="M300,190 L360,330 L520,330 L590,180 Z" stroke="none" stroke-width="1" fill="#455a64"/><rect x="380" y="318" width="120" height="12" fill="#e3f2fd" stroke="#1565c0" stroke-width="1"/><text x="440" y="290" font-size="12.5" text-anchor="middle" fill="#ffffff" font-weight="bold">Permanently Shadowed Region</text><text x="440" y="308" font-size="11.5" text-anchor="middle" fill="#ffffff">colder than about -200 &#176;C</text><text x="440" y="352" font-size="11.5" text-anchor="middle" fill="#0d47a1">water ice trapped in crater floor</text><circle cx="45" cy="60" r="24" fill="#ffeb3b" stroke="#f9a825" stroke-width="1.5" /><text x="45" y="104" font-size="11.5" text-anchor="middle" fill="#202124">Sun low on</text><text x="45" y="118" font-size="11.5" text-anchor="middle" fill="#202124">horizon</text><line x1="75" y1="52" x2="215" y2="157" stroke="#f9a825" stroke-width="1.2" marker-end="url(#f77-ar)"/><line x1="75" y1="62" x2="215" y2="167" stroke="#f9a825" stroke-width="1.2" marker-end="url(#f77-ar)"/><line x1="75" y1="72" x2="215" y2="177" stroke="#f9a825" stroke-width="1.2" marker-end="url(#f77-ar)"/><line x1="75" y1="62" x2="600" y2="168" stroke="#f9a825" stroke-width="1.2" marker-end="url(#f77-ar)"/><rect x="240" y="145" width="36" height="10" rx="1" fill="#1565c0" stroke="#0d47a1" stroke-width="1" /><line x1="258" y1="155" x2="258" y2="167" stroke="#333" stroke-width="1.5"/><rect x="605" y="152" width="36" height="10" rx="1" fill="#1565c0" stroke="#0d47a1" stroke-width="1" /><line x1="623" y1="162" x2="623" y2="174" stroke="#333" stroke-width="1.5"/><text x="250" y="113" font-size="12" text-anchor="middle" fill="#e65100" font-weight="bold">peak / rim lit</text><text x="250" y="128" font-size="11.5" text-anchor="middle" fill="#e65100">most of the year</text><text x="680" y="140" font-size="12" text-anchor="middle" fill="#e65100" font-weight="bold">solar panels on lit rims</text><rect x="728" y="190" width="160" height="100" rx="6" fill="#e8f5e9" stroke="#2e7d32" stroke-width="1.5" /><text x="808.0" y="217.0" font-size="11.5" text-anchor="middle" fill="#202124" font-weight="bold">Ice &#8594; resources</text><text x="808.0" y="235.0" font-size="11.5" text-anchor="middle" fill="#202124">drinking water</text><text x="808.0" y="253.0" font-size="11.5" text-anchor="middle" fill="#202124">electrolysis &#8594; O2 + H2</text><text x="808.0" y="271.0" font-size="11.5" text-anchor="middle" fill="#202124">propellant (LOX/LH2)</text><rect x="640" y="330" width="240" height="62" rx="6" fill="#fff8e1" stroke="#f9a825" stroke-width="1.5" /><text x="760.0" y="348.0" font-size="11.5" text-anchor="middle" fill="#202124" font-weight="bold">Moon as launch pad</text><text x="760.0" y="365.0" font-size="11.5" text-anchor="middle" fill="#202124">gravity 1/6 of Earth</text><text x="760.0" y="382.0" font-size="11.5" text-anchor="middle" fill="#202124">escape v ~2.4 vs 11.2 km/s</text><rect x="30" y="320" width="230" height="62" rx="6" fill="#fbe9e7" stroke="#bf360c" stroke-width="1.5" /><text x="145.0" y="338.0" font-size="11.5" text-anchor="middle" fill="#202124" font-weight="bold">South Pole-Aitken basin</text><text x="145.0" y="355.0" font-size="11.5" text-anchor="middle" fill="#202124">~2,500 km wide, over 8 km deep</text><text x="145.0" y="372.0" font-size="11.5" text-anchor="middle" fill="#202124">oldest, deepest lunar basin</text></g></svg>
+<figcaption>Low-angle sunlight lights the rims but never reaches the crater floors. Ice survives in the permanently shadowed regions (PSRs), and solar power is available on the rims next to them. This is an original drawing based on <a href="#s-reuters-ce7">Reuters/NASA</a>, <a href="#s-planetary-ce7">the Planetary Society</a> and <a href="#s-spa">NASA (SPA basin)</a>. The escape velocities and the one-sixth gravity are standard values &#8224;.</figcaption>
+</figure>
+
+<h3 id="spa">66.3 The South Pole-Aitken (SPA) basin</h3>
+<ul>
+<li>The SPA basin is the <strong>Moon's largest impact feature</strong>, more than <strong>2,500 km</strong> across and covering nearly a quarter of the Moon. It is among the largest known impact craters in the Solar System (<a href="#s-spa">NASA</a>).</li>
+<li>Location: the <strong>far side</strong>, stretching from Aitken crater to the south pole. It is <strong>more than 8 km deep</strong> (NASA gives about 10 km on average) and is the <strong>deepest and oldest</strong> lunar basin, formed about 4 billion years ago or earlier (<a href="#s-spa">NASA</a>; <a href="#s-spa2">NASA/LOLA</a>).</li>
+<li>Because it is so deep, the <strong>lower crust may be exposed</strong> there, something seen nowhere else on the Moon (<a href="#s-spa2">NASA</a>). Some mantle material may also have been dug up.</li>
+<li><strong>Link to Chandrayaan-3:</strong> PRL scientists propose that the extra sulphur at the Chandrayaan-3 site came from primitive mantle material. In their view, the SPA impact excavated this material about 4.3 billion years ago (<a href="#s-apxs">ISRO, 30 Apr 2025</a>; <a href="#ch3-payloads">Section 66.10</a>).</li>
+<li><strong>Why sample it:</strong> SPA rocks could date the Moon's oldest large impact and the early bombardment, which bears on when Earth became habitable (<a href="#s-spa">NASA</a>). They also show how the Moon differentiated, help pin down the timeline of the early Solar System and reveal its chemistry, including potentially useful elements.</li>
+</ul>
+<p class="correction" id="c114"><strong>[Correction]</strong> <strong>"Aitken basin, one of the deepest craters in the entire Solar System, where crust and some mantle are exposed"</strong>:
+<br/><strong>Name:</strong> the correct name is the <strong>South Pole-Aitken basin</strong>. It is the <strong>largest, deepest and oldest basin on the Moon</strong> and one of the largest in the Solar System.
+<br/><strong>Mantle exposure:</strong> this is <strong>inferred</strong>, not directly confirmed (<a href="#s-spa2">NASA</a>).
+<br/><strong>Samples:</strong> China's <strong>Chang'e-6 (2024)</strong> has already returned the first far-side samples, collected inside the SPA basin (<a href="#s-ap-ce7">AP</a>). Chandrayaan-4 aims to bring back samples from the <strong>south polar region</strong>, the first from there (<a href="#ch4">Section 66.11</a>).</p>
+
+<h3 id="isro-moon">66.4 India's lunar exploration programme at a glance</h3>
+<div class="table-wrap"><table>
+<caption>The Chandrayaan series (status as of 20 November 2026)</caption>
+<thead><tr><th scope="col" style="width:13%">Mission</th><th scope="col" style="width:17%">Launch and vehicle</th><th scope="col" style="width:22%">Elements</th><th scope="col">Objective and result</th><th scope="col" style="width:17%">Status</th></tr></thead>
+<tbody>
+<tr><td>Chandrayaan-1</td><td>22 Oct 2008, PSLV-C11 (PSLV-XL)</td><td>Orbiter (100 km polar orbit) + Moon Impact Probe (MIP)</td><td>Chemical, mineral and terrain mapping. Water and hydroxyl detected (NASA's M3; ISRO's CHACE on the MIP) (<a href="#s-nasa-ch1">NASA</a>).</td><td>Ended 28-29 Aug 2009; ~95% of objectives met (<a href="#s-nasa-ch1">NASA</a>)</td></tr>
+<tr><td>Chandrayaan-2</td><td>22 Jul 2019, GSLV Mk III-M1</td><td>Orbiter + Vikram lander + Pragyan rover</td><td>Soft landing failed (Sep 2019). The orbiter is a success.</td><td>Orbiter <strong>operating</strong> (Sep 2026) (<a href="#s-toi-ch2">TOI</a>)</td></tr>
+<tr><td>Chandrayaan-3</td><td>14 Jul 2023, LVM3-M4</td><td>Propulsion module + Vikram lander + Pragyan rover</td><td><strong>Soft landing near the south pole, 23 Aug 2023</strong>; roving; in-situ science (<a href="#s-ch3pm">ISRO</a>).</td><td>Completed. Lander and rover dormant since Sep 2023</td></tr>
+<tr><td>Chandrayaan-4</td><td>Two LVM3 launches; target 2027-28</td><td>5 modules</td><td>First Indian <strong>sample return</strong>; docking, ascent and re-entry demonstrations (<a href="#s-pib-ch4">PIB</a>).</td><td><strong>Approved</strong> 18 Sep 2024; <strong>not launched</strong></td></tr>
+<tr><td>Chandrayaan-5 (LUPEX)</td><td>Japanese H3 rocket; JAXA lists FY2028</td><td>ISRO lander + JAXA rover</td><td>Polar water: quantity, form and distribution (<a href="#s-lupex-jaxa">JAXA</a>).</td><td><strong>Approved</strong> (Mar 2025); in development</td></tr>
+</tbody></table></div>
+
+<figure id="fig78">
+<h3>Figure 78. Timeline of India's Lunar Programme, 2008-2040 (schematic)</h3>
+<svg viewBox="0 0 900 300" role="img" aria-label="Timeline of India&#x27;s lunar programme, schematic. Filled markers are completed events; open markers are planned. 2008: Chandrayaan-1 orbiter and Moon Impact Probe on PSLV-C11; water and hydroxyl detected. 2019: Chandrayaan-2 on GSLV Mk III-M1; orbiter still working; Vikram lander crashed. 2023: Chandrayaan-3 on LVM3-M4; soft landing near the south pole on 23 August 2023. 2024 to 2025: SpaDeX docking demonstration. About 2027 to 2028: Chandrayaan-4 sample return, approved, on two LVM3 launches. About 2028: Chandrayaan-5 or LUPEX with JAXA on a Japanese H3 rocket, approved. 2035: Bharatiya Antariksh Station goal. 2040: Indian landing on the Moon goal."><defs><marker id="f78-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#555"/></marker></defs><g font-family="Calibri, sans-serif"><line x1="40" y1="140" x2="870" y2="140" stroke="#333" stroke-width="2" marker-end="url(#f78-ar)"/><circle cx="80" cy="140" r="8" fill="#0078d4" stroke="#0078d4" stroke-width="2" /><text x="80" y="60" font-size="13" text-anchor="middle" fill="#0078d4" font-weight="bold">2008</text><text x="80" y="77" font-size="12" text-anchor="middle" fill="#202124" font-weight="bold">Chandrayaan-1</text><text x="80" y="93" font-size="11" text-anchor="middle" fill="#202124">orbiter + MIP</text><text x="80" y="108" font-size="11" text-anchor="middle" fill="#555">PSLV-C11</text><circle cx="185" cy="140" r="8" fill="#0078d4" stroke="#0078d4" stroke-width="2" /><text x="185" y="175" font-size="13" text-anchor="middle" fill="#0078d4" font-weight="bold">2019</text><text x="185" y="192" font-size="12" text-anchor="middle" fill="#202124" font-weight="bold">Chandrayaan-2</text><text x="185" y="208" font-size="11" text-anchor="middle" fill="#202124">orbiter works;</text><text x="185" y="223" font-size="11" text-anchor="middle" fill="#555">lander lost</text><circle cx="290" cy="140" r="8" fill="#0078d4" stroke="#0078d4" stroke-width="2" /><text x="290" y="60" font-size="13" text-anchor="middle" fill="#0078d4" font-weight="bold">2023</text><text x="290" y="77" font-size="12" text-anchor="middle" fill="#202124" font-weight="bold">Chandrayaan-3</text><text x="290" y="93" font-size="11" text-anchor="middle" fill="#202124">soft landing</text><text x="290" y="108" font-size="11" text-anchor="middle" fill="#555">23 Aug 2023</text><circle cx="395" cy="140" r="8" fill="#0078d4" stroke="#0078d4" stroke-width="2" /><text x="395" y="175" font-size="13" text-anchor="middle" fill="#0078d4" font-weight="bold">2024-25</text><text x="395" y="192" font-size="12" text-anchor="middle" fill="#202124" font-weight="bold">SpaDeX</text><text x="395" y="208" font-size="11" text-anchor="middle" fill="#202124">docking</text><text x="395" y="223" font-size="11" text-anchor="middle" fill="#555">demonstrated</text><circle cx="500" cy="140" r="8" fill="#ffffff" stroke="#0078d4" stroke-width="2" /><text x="500" y="60" font-size="13" text-anchor="middle" fill="#ef6c00" font-weight="bold">~2027-28</text><text x="500" y="77" font-size="12" text-anchor="middle" fill="#202124" font-weight="bold">Chandrayaan-4</text><text x="500" y="93" font-size="11" text-anchor="middle" fill="#202124">sample return</text><text x="500" y="108" font-size="11" text-anchor="middle" fill="#555">2 x LVM3</text><circle cx="605" cy="140" r="8" fill="#ffffff" stroke="#0078d4" stroke-width="2" /><text x="605" y="175" font-size="13" text-anchor="middle" fill="#ef6c00" font-weight="bold">~2028</text><text x="605" y="192" font-size="12" text-anchor="middle" fill="#202124" font-weight="bold">Chandrayaan-5</text><text x="605" y="208" font-size="11" text-anchor="middle" fill="#202124">LUPEX with</text><text x="605" y="223" font-size="11" text-anchor="middle" fill="#555">JAXA (H3)</text><circle cx="710" cy="140" r="8" fill="#ffffff" stroke="#0078d4" stroke-width="2" /><text x="710" y="60" font-size="13" text-anchor="middle" fill="#ef6c00" font-weight="bold">2035</text><text x="710" y="77" font-size="12" text-anchor="middle" fill="#202124" font-weight="bold">BAS</text><text x="710" y="93" font-size="11" text-anchor="middle" fill="#202124">Indian space</text><text x="710" y="108" font-size="11" text-anchor="middle" fill="#555">station goal</text><circle cx="815" cy="140" r="8" fill="#ffffff" stroke="#0078d4" stroke-width="2" /><text x="815" y="175" font-size="13" text-anchor="middle" fill="#ef6c00" font-weight="bold">2040</text><text x="815" y="192" font-size="12" text-anchor="middle" fill="#202124" font-weight="bold">Indian on Moon</text><text x="815" y="208" font-size="11" text-anchor="middle" fill="#202124">crewed</text><text x="815" y="223" font-size="11" text-anchor="middle" fill="#555">landing goal</text><circle cx="300" cy="268" r="7" fill="#0078d4" stroke="#0078d4" stroke-width="2" /><text x="312" y="272" font-size="11.5" text-anchor="start" fill="#202124">completed</text><circle cx="420" cy="268" r="7" fill="#ffffff" stroke="#0078d4" stroke-width="2" /><text x="432" y="272" font-size="11.5" text-anchor="start" fill="#202124">approved / planned (dates are targets)</text></g></svg>
+<figcaption>Filled markers are completed events and open markers are targets. Sources: <a href="#s-nasa-ch1">NASA</a> (Chandrayaan-1), <a href="#s-ch2upd">ISRO</a> (Chandrayaan-2), <a href="#s-ch3pm">ISRO</a> (Chandrayaan-3), <a href="#s-pib-ch4">PIB</a> (Chandrayaan-4, the BAS 2035 goal and the 2040 crewed-landing goal) and <a href="#s-it-ch4">India Today</a>/<a href="#s-lupex-jaxa">JAXA</a> (target years). The SpaDeX docking date is &#8224;. Target dates have slipped before and may slip again.</figcaption>
+</figure>
+
+<h3 id="ch1">66.5 Chandrayaan-1 (2008): orbiter and Moon Impact Probe</h3>
+<ul>
+<li><strong>Agency:</strong> ISRO. <strong>Launch:</strong> 22 October 2008 on <strong>PSLV-C11</strong> (the XL version) from Sriharikota. <strong>Orbit:</strong> about 100 km polar lunar orbit (<a href="#s-nasa-ch1">NASA</a>).</li>
+<li><strong>Payloads:</strong> 11 instruments, 5 Indian and 6 from the USA, UK, Germany, Sweden and Bulgaria. They included NASA's <strong>Moon Mineralogy Mapper (M3)</strong> and <strong>Mini-SAR</strong> (<a href="#s-nasa-ch1">NASA</a>).</li>
+<li><strong>Moon Impact Probe (MIP):</strong> a 29 kg probe released on <strong>14 November 2008</strong>. It crashed near <strong>Shackleton crater</strong> at the south pole (<a href="#s-nasa-ch1">NASA</a>).
+<ul>
+<li>Its mass spectrometer <strong>CHACE</strong>, from SPL/VSSC, gave <strong>direct evidence of water (H<sub>2</sub>O) in the sunlit lunar exosphere</strong> (<a href="#s-chace">VSSC</a>).</li>
+<li>The probe carried the Indian flag to the surface.</li>
+</ul></li>
+<li><strong>Most important result:</strong> evidence of <strong>water and hydroxyl (OH)</strong> on the lunar surface.
+<ul>
+<li>M3 found it across much of the surface, with the strongest signals at the poles (<a href="#s-nasa-ch1">NASA</a>). It was announced in September 2009.</li>
+<li>Chandrayaan-1 data were later used to map polar surface ice.</li>
+</ul></li>
+<li><strong>End:</strong> contact was lost on 28-29 August 2009, likely from power-supply failure caused by overheating. This was short of the planned two years, but ISRO said <strong>about 95%</strong> of objectives were met (<a href="#s-nasa-ch1">NASA</a>).</li>
+</ul>
+<p class="correction" id="c115"><strong>[Correction]</strong> <strong>"Discovery of water on Moon"</strong> needs nuance.
+<br/>(1) The surface detection came mainly from <strong>NASA's M3</strong> instrument flying on Chandrayaan-1. India's own <strong>CHACE</strong> detected water in the thin <strong>exosphere</strong> during the MIP's descent (<a href="#s-chace">VSSC</a>).
+<br/>(2) What was found was mostly <strong>water and hydroxyl bound in or adsorbed on the soil</strong>, in small amounts, plus signs of ice in polar cold traps. It was not lakes or free water.
+<br/>(3) "Helped in the <strong>quantification</strong> of water at the poles" overstates it. Chandrayaan-1 <strong>mapped and indicated</strong> polar water, and reliable quantities are still unknown (<a href="#c111">see above</a>).</p>
+
+<h3 id="ch2">66.6 Chandrayaan-2 (2019): orbiter, lander and rover</h3>
+<ul>
+<li><strong>Launch:</strong> 22 July 2019 on <strong>GSLV Mk III-M1</strong> (now LVM3). <strong>Elements:</strong> orbiter, <strong>Vikram</strong> lander and <strong>Pragyan</strong> rover (<a href="#s-ch2upd">ISRO</a>).</li>
+<li><strong>What went wrong:</strong> Vikram's descent was normal down to about <strong>2.1 km</strong> altitude. Communication was then lost, and the lander <strong>crash-landed</strong> on 6-7 September 2019. Pragyan was still inside Vikram, so the rover never deployed (<a href="#s-ch2upd">ISRO</a>).</li>
+<li><strong>What went right:</strong> ISRO said 90-95% of mission objectives were accomplished.
+<ul>
+<li>Precise launch gave the orbiter fuel for about <strong>7 years</strong> instead of the planned one (<a href="#s-ch2upd">ISRO</a>).</li>
+<li>Its <strong>Orbiter High Resolution Camera (OHRC)</strong> is among the sharpest lunar cameras, at about 0.25-0.32 m per pixel. It helped choose the Chandrayaan-3 landing site (<a href="#s-toi-ch2">TOI, 11 Sep 2026</a>).</li>
+<li>The orbiter served as a <strong>backup relay</strong> for Chandrayaan-3 (<a href="#s-toi-link">TOI</a>).</li>
+</ul></li>
+</ul>
+<p class="correction" id="c116"><strong>[Correction]</strong> <strong>"The lander and the rover crashed"</strong>: the <strong>lander crashed with the rover still inside it</strong>. The rover was never deployed. Chandrayaan-2 is better described as a <strong>partial success</strong>. Its <strong>orbiter is still working in 2026</strong> (<a href="#s-toi-ch2">TOI</a>), and that is why Chandrayaan-3 needed no new orbiter.</p>
+
+<h3 id="ch3">66.7 Chandrayaan-3 (2023): soft landing near the south pole</h3>
+<ul>
+<li><strong>Launch:</strong> 14 July 2023 on <strong>LVM3-M4</strong> from SDSC-SHAR, Sriharikota (<a href="#s-ch3pm">ISRO</a>).</li>
+<li><strong>Objectives:</strong>
+<ul>
+<li>demonstrate a safe and soft landing;</li>
+<li>demonstrate a rover moving on the Moon;</li>
+<li>conduct in-situ experiments (<a href="#s-ch3det">ISRO</a>).</li>
+</ul>ISRO says all were "completely met" (<a href="#s-ch3pm">ISRO</a>).</li>
+<li><strong>Elements:</strong> a <strong>Propulsion Module (PM)</strong> plus a <strong>Lander Module</strong> (Vikram), with the 26 kg <strong>Pragyan rover</strong> inside the lander. Total mass was 3,900 kg (<a href="#s-ch3det">ISRO</a>).</li>
+<li><strong>Landing:</strong> Vikram touched down on <strong>23 August 2023 at about 6:04 pm IST</strong> (<a href="#s-toi-link">TOI</a>; exact second &#8224;).
+<ul>
+<li>The site is about <strong>69.37&#176; S, 32.3&#176; E</strong> (<a href="#s-ch3det">ISRO</a>), named <strong>Shiv Shakti point</strong>.</li>
+<li>23 August is now <strong>National Space Day</strong> (<a href="#s-cosmos">CosmosLens</a>).</li>
+</ul></li>
+<li><strong>Firsts:</strong> India became the <strong>fourth country to soft-land on the Moon</strong>, after the USSR, the USA and China. It was also the <strong>first to land in the lunar south polar region</strong> (<a href="#s-apxs">ISRO</a>).</li>
+<li><strong>[Additional] Engineering extras</strong> (the hop and the PM return were rehearsals for Chandrayaan-4):
+<ul>
+<li>Vikram did a short <strong>"hop"</strong>: it re-fired its engines, rose about 40 cm and landed again nearby &#8224;.</li>
+<li>The PM was later flown back from lunar orbit to an Earth orbit (<a href="#s-ch3pm">ISRO</a>).</li>
+</ul></li>
+<li><strong>[Additional] Compared with Chandrayaan-2</strong>, the lander was made "failure-tolerant": stronger legs, more fuel, a larger landing zone (4 km &#215; 2.4 km) and extra sensors such as a laser Doppler velocimeter (<a href="#s-ch3det">ISRO</a>).</li>
+</ul>
+<p class="correction" id="c117"><strong>[Correction]</strong> <strong>"Landed in the south pole region on 23 Aug at 3 past 6 pm, making India the first country to land at the south pole; the second was Japan"</strong>. Four points need fixing:
+<br/><strong>Time:</strong> about <strong>6:04 pm IST</strong>.
+<br/><strong>Place:</strong> Vikram landed at about <strong>69.4&#176; S</strong>, in the <strong>south polar region (southern high latitudes)</strong>, about 600 km from the pole itself. It did not land at the pole.
+<br/><strong>Japan:</strong> Japan's <strong>SLIM</strong> (19 January 2024) made Japan the <strong>fifth country</strong> to soft-land on the Moon. Its site was about <strong>13.3&#176; S</strong> near Shioli crater, not the south pole (<a href="#s-slim">NASA</a>).
+<br/><strong>Second south-polar landing:</strong> this was the US company Intuitive Machines' <strong>IM-1 "Odysseus"</strong> (22 February 2024). It landed at <strong>80.13&#176; S</strong>, closer to the pole than Vikram, but tipped over (<a href="#s-im1">NASA</a>).</p>
+<p class="correction" id="c118"><strong>[Correction]</strong> <strong>"One lunar day is equal to 14 days on Earth"</strong>: a full lunar day (sunrise to sunrise) lasts about <strong>29.5 Earth days</strong> &#8224;. That is roughly <strong>14 Earth days of daylight followed by about 14 days of night</strong>. Vikram and Pragyan were designed for <strong>one lunar daytime, about 14 Earth days</strong> (<a href="#s-ch3det">ISRO</a>). They were put to sleep in early September 2023 and did not wake after the lunar night (<a href="#s-cosmos">CosmosLens</a>).</p>
+
+<h3 id="orb-pm">66.8 Orbiter versus propulsion module</h3>
+<div class="table-wrap"><table>
+<caption>Chandrayaan-2 orbiter compared with the Chandrayaan-3 propulsion module</caption>
+<thead><tr><th scope="col" style="width:22%">Feature</th><th scope="col">Orbiter (Chandrayaan-2)</th><th scope="col">Propulsion Module (Chandrayaan-3)</th></tr></thead>
+<tbody>
+<tr><td>Transport</td><td>Carried the lander (with rover) from Earth orbit to lunar orbit</td><td>Same job: carried the lander from the launcher's parking orbit to a <strong>100 km circular lunar polar orbit</strong>, then separated (<a href="#s-ch3det">ISRO</a>)</td></tr>
+<tr><td>Communication role</td><td>Designed as a relay between the lander and Earth</td><td><strong>No relay role.</strong> It talks only to the Indian Deep Space Network (IDSN). The lander talks directly to IDSN, with the <strong>Chandrayaan-2 orbiter as a contingency link</strong> (<a href="#s-ch3det">ISRO</a>)</td></tr>
+<tr><td>Science</td><td>A full science platform with eight payloads, including OHRC, IIRS and DFSAR &#8224;</td><td>One "value-addition" payload, <strong>SHAPE</strong> (<a href="#s-ch3det">ISRO</a>)</td></tr>
+<tr><td>Life</td><td>Designed for years in lunar orbit (still operating)</td><td>Ferry stage. Leftover fuel (over 100 kg) let ISRO move it back to Earth orbit (<a href="#s-ch3pm">ISRO</a>)</td></tr>
+</tbody></table></div>
+<p class="correction" id="c119"><strong>[Correction]</strong> The class contrast is right that both carry the lander and that the orbiter is a <strong>communication link</strong> and an independent science platform. Two refinements are needed.
+<br/>(1) <strong>Communication chain.</strong> In Chandrayaan-3 the chain was <strong>rover &#8594; lander &#8594; Earth (IDSN)</strong>, with the old Chandrayaan-2 orbiter only as a backup. The chain "rover &#8594; lander &#8594; orbiter &#8594; Earth" describes Chandrayaan-2's design.
+<br/>(2) <strong>Rover link.</strong> The rover talks <strong>only</strong> to the lander (<a href="#s-ch3det">ISRO</a>; <a href="#s-toi-link">TOI</a>).</p>
+
+<figure id="fig79">
+<h3>Figure 79. Chandrayaan-3: Modules, Seven Payloads and Communication Links (schematic)</h3>
+<svg viewBox="0 0 900 450" role="img" aria-label="Chandrayaan-3 configuration, payloads and communication links, schematic. The propulsion module carried the lander from the launcher&#x27;s parking orbit to a 100 kilometre circular lunar polar orbit, then separated; it carried the SHAPE payload that observes Earth and two radioisotope heating units from BARC, and was later moved back to an Earth orbit. The Vikram lander carried ChaSTE, ILSA, RAMBHA-LP and NASA&#x27;s passive Laser Retroreflector Array. The Pragyan rover carried APXS and LIBS. The rover talks only to the lander. The lander talks directly to the Indian Deep Space Network at Byalalu and, as a contingency link, to the Chandrayaan-2 orbiter. The propulsion module talks to the Indian Deep Space Network. Chandrayaan-2&#x27;s planned chain was rover to lander to orbiter or ground."><defs><marker id="f79-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#555"/></marker></defs><g font-family="Calibri, sans-serif"><rect x="320" y="20" width="260" height="72" rx="6" fill="#e3f2fd" stroke="#1565c0" stroke-width="1.5" /><text x="450.0" y="43.0" font-size="12" text-anchor="middle" fill="#202124" font-weight="bold">Earth: IDSN, Byalalu</text><text x="450.0" y="60.0" font-size="12" text-anchor="middle" fill="#202124">Indian Deep Space Network</text><text x="450.0" y="77.0" font-size="12" text-anchor="middle" fill="#202124">(ISTRAC, Bengaluru)</text><rect x="30" y="120" width="250" height="110" rx="6" fill="#fff3e0" stroke="#ef6c00" stroke-width="1.5" /><text x="155.0" y="145.0" font-size="11.5" text-anchor="middle" fill="#202124" font-weight="bold">Propulsion Module (PM)</text><text x="155.0" y="162.0" font-size="11.5" text-anchor="middle" fill="#202124">ferries lander to 100 km orbit</text><text x="155.0" y="179.0" font-size="11.5" text-anchor="middle" fill="#202124">payload: SHAPE (views Earth)</text><text x="155.0" y="196.0" font-size="11.5" text-anchor="middle" fill="#202124">2 RHUs (BARC), heat only</text><text x="155.0" y="213.0" font-size="11.5" text-anchor="middle" fill="#202124">re-orbited to Earth, Nov 2023</text><rect x="620" y="120" width="250" height="92" rx="6" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="1.5" /><text x="745.0" y="144.5" font-size="11.5" text-anchor="middle" fill="#202124" font-weight="bold">Chandrayaan-2 orbiter</text><text x="745.0" y="161.5" font-size="11.5" text-anchor="middle" fill="#202124">in lunar orbit since 2019</text><text x="745.0" y="178.5" font-size="11.5" text-anchor="middle" fill="#202124">contingency relay for Vikram</text><text x="745.0" y="195.5" font-size="11.5" text-anchor="middle" fill="#202124">OHRC: ~0.25 m imagery</text><rect x="300" y="250" width="300" height="110" rx="6" fill="#e8f5e9" stroke="#2e7d32" stroke-width="1.5" /><text x="450.0" y="275.0" font-size="11.5" text-anchor="middle" fill="#202124" font-weight="bold">Vikram lander (4 payloads)</text><text x="450.0" y="292.0" font-size="11.5" text-anchor="middle" fill="#202124">ChaSTE - soil temperature probe</text><text x="450.0" y="309.0" font-size="11.5" text-anchor="middle" fill="#202124">ILSA - seismic vibrations (MEMS)</text><text x="450.0" y="326.0" font-size="11.5" text-anchor="middle" fill="#202124">RAMBHA-LP - near-surface plasma</text><text x="450.0" y="343.0" font-size="11.5" text-anchor="middle" fill="#202124">LRA (NASA) - passive laser marker</text><rect x="640" y="330" width="230" height="80" rx="6" fill="#fffde7" stroke="#f9a825" stroke-width="1.5" /><text x="755.0" y="357.0" font-size="11.5" text-anchor="middle" fill="#202124" font-weight="bold">Pragyan rover (2 payloads)</text><text x="755.0" y="374.0" font-size="11.5" text-anchor="middle" fill="#202124">APXS - elemental chemistry</text><text x="755.0" y="391.0" font-size="11.5" text-anchor="middle" fill="#202124">LIBS - laser spark spectra</text><line x1="155" y1="120" x2="330" y2="92" stroke="#ef6c00" stroke-width="1.5" marker-end="url(#f79-ar)"/><text x="195" y="98" font-size="11.5" text-anchor="middle" fill="#ef6c00">PM &#8596; IDSN</text><line x1="450" y1="250" x2="450" y2="92" stroke="#2e7d32" stroke-width="2" marker-end="url(#f79-ar)"/><text x="462" y="180" font-size="11.5" text-anchor="start" fill="#2e7d32">direct link</text><line x1="560" y1="250" x2="680" y2="212" stroke="#7b1fa2" stroke-width="1.5" marker-end="url(#f79-ar)" stroke-dasharray="5 4"/><text x="640" y="245" font-size="11.5" text-anchor="middle" fill="#7b1fa2">backup</text><line x1="745" y1="120" x2="580" y2="70" stroke="#7b1fa2" stroke-width="1.5" marker-end="url(#f79-ar)" stroke-dasharray="5 4"/><line x1="640" y1="370" x2="600" y2="330" stroke="#f9a825" stroke-width="1.5" marker-end="url(#f79-ar)"/><text x="560" y="395" font-size="11.5" text-anchor="middle" fill="#8d6e00">rover talks only to lander</text><text x="450" y="432" font-size="11.5" text-anchor="middle" fill="#555">Seven science payloads in all: 1 on PM + 4 on lander + 2 on rover. Mission life of lander and rover: one lunar day (~14 Earth days).</text></g></svg>
+<figcaption>The solid lines are the primary links and the dashed lines are the contingency link through the Chandrayaan-2 orbiter. This is an original drawing based on ISRO's specification table (<a href="#s-ch3det">ISRO</a>), the ISRO note on the PM's return (<a href="#s-ch3pm">ISRO</a>), the RHU report (<a href="#s-rhu">TOI</a>) and the OHRC figure (<a href="#s-toi-ch2">TOI</a>).</figcaption>
+</figure>
+
+<h3 id="ch3-power">66.9 Why the lander and rover stopped: solar versus nuclear power</h3>
+<ul>
+<li><strong>Solar power and the lunar night.</strong>
+<ul>
+<li>Vikram (738 W) and Pragyan (50 W) ran on <strong>solar panels and batteries</strong> (<a href="#s-ch3det">ISRO</a>).</li>
+<li>During the ~14-day lunar night they get no sunlight. Near-surface temperatures at night fall below about <strong>100 K (about -173 &#176;C)</strong> at the equator (<a href="#s-chaste-mnras">MNRAS</a>), and lower in polar shadows.</li>
+<li>Electronics that are not kept warm can crack or fail, which is why the mission was planned for <strong>one lunar day</strong>.</li>
+</ul></li>
+<li><strong>Radioisotope Thermoelectric Generator (RTG):</strong> converts the <strong>heat released by radioactive decay</strong>, usually of plutonium-238, into <strong>electricity</strong> using thermocouples. It works day and night for decades &#8224;. Examples are the Curiosity and Perseverance rovers and the Voyagers &#8224;.</li>
+<li><strong>Radioisotope Heating Unit (RHU):</strong> gives <strong>heat only</strong>, about 1 W each from a Pu-238 pellet, to keep hardware warm (<a href="#s-rhu">TOI</a>).
+<ul>
+<li>Chandrayaan-3's <strong>propulsion module carried two RHUs built by BARC</strong>. ISRO officials called it the first major joint ISRO-BARC project.</li>
+<li>They were not fitted on Vikram or Pragyan because of the extra mass (<a href="#s-rhu">TOI</a>).</li>
+</ul></li>
+<li><strong>[Additional] Way forward:</strong> work is under way on systems that let landers survive the 14-day night (<a href="#s-toi-ch2">TOI</a>). LUPEX's rover reportedly plans special insulation rather than RHUs (<a href="#s-lupex-wiki">Wikipedia</a>, secondary).</li>
+</ul>
+<p class="correction" id="c120"><strong>[Correction]</strong> <strong>"RTGs produce current by using the radioactivity during lunar night"</strong>: an RTG does not use radiation directly. It turns the <strong>heat of decay</strong> into electricity through the <strong>thermoelectric (Seebeck) effect</strong>, and it does so <strong>continuously</strong>, not only at night. An RHU gives heat, not electricity. <strong>"Temperature below -100 &#176;C"</strong> is true but understated: at night it drops to about <strong>-170 &#176;C</strong> or lower (<a href="#s-chaste-mnras">MNRAS</a>), and below -200 &#176;C in shadowed craters (<a href="#s-reuters-ce7">Reuters</a>).</p>
+
+<h3 id="ch3-payloads">66.10 Chandrayaan-3 payloads and findings</h3>
+<div class="table-wrap"><table>
+<caption>The seven science payloads of Chandrayaan-3 (ISRO specification) and their main results</caption>
+<thead><tr><th scope="col" style="width:9%">Module</th><th scope="col" style="width:20%">Payload</th><th scope="col" style="width:25%">What it does</th><th scope="col">Key result (date, source)</th></tr></thead>
+<tbody>
+<tr><td>PM</td><td><strong>SHAPE</strong>: Spectro-polarimetry of HAbitable Planet Earth</td><td>Spectral and polarimetric measurements of <strong>Earth seen from lunar orbit</strong> (<a href="#s-ch3det">ISRO</a>)</td><td>Operated from lunar orbit and later from Earth orbit, including a special run during the lunar eclipse of 28 Oct 2023 (<a href="#s-ch3pm">ISRO</a>)</td></tr>
+<tr><td rowspan="4">Lander</td><td><strong>ChaSTE</strong>: Chandra's Surface Thermophysical Experiment</td><td>A probe with <strong>10 temperature sensors</strong> pushed up to <strong>10 cm</strong> into the soil. It measures temperature and thermal conductivity (<a href="#s-chaste-tnie">TNIE</a>)</td><td>First temperature profile at the lunar south polar region (27 Aug 2023), showing a steep fall with depth (<a href="#fig80">Figure 80</a>). A 2025 study found the regolith is a good insulator (<a href="#s-chaste-mnras">MNRAS</a>). Modelling suggests ice could lie a few cm below steep slopes that face away from the Sun (<a href="#s-cosmos">CosmosLens</a>, secondary)</td></tr>
+<tr><td><strong>ILSA</strong>: Instrument for Lunar Seismic Activity</td><td>A <strong>MEMS</strong> seismometer, the first on the Moon. Six accelerometers record ground vibrations from moonquakes, impacts and the rover (<a href="#s-ilsa">Mint</a>)</td><td>Recorded rover movement and a "seemingly natural" event on 26 Aug 2023 (<a href="#s-ilsa">Mint</a>). A later study counted over 250 signals, about 50 of them unexplained (<a href="#s-cosmos">CosmosLens</a>, secondary)</td></tr>
+<tr><td><strong>RAMBHA-LP</strong>: Langmuir Probe</td><td>Measures the density and energy of <strong>near-surface plasma</strong> (charged particles)</td><td>First in-situ measurement: <strong>380-600 electrons per cm<sup>3</sup></strong> with kinetic temperatures of 3,000-8,000 K. Driven by the solar wind, or by Earth's magnetotail when the Moon passes through it (<a href="#s-rambha">ISRO, 9 Dec 2025</a>)</td></tr>
+<tr><td><strong>LRA</strong>: Laser Retroreflector Array (NASA)</td><td>A <strong>passive</strong> 20 g array of 8 corner-cube reflectors. It works as a <strong>location marker</strong> for laser ranging from orbit (<a href="#s-lra">ISRO</a>)</td><td>NASA's LRO "pinged" it on <strong>12 Dec 2023</strong>. It is the only LRA near the south pole and will serve as a long-term geodetic point (<a href="#s-lra">ISRO</a>; <a href="#s-lra-nasa">NASA</a>)</td></tr>
+<tr><td rowspan="2">Rover</td><td><strong>LIBS</strong>: Laser-Induced Breakdown Spectroscope (LEOS, Bengaluru)</td><td>A laser pulse turns a speck of soil into hot plasma. The colours of light it emits identify the elements (<a href="#s-libs">ISRO</a>)</td><td><strong>Sulphur confirmed "unambiguously"</strong> by in-situ measurement, along with Al, Ca, Fe, Cr, Ti, Mn, Si and O. Hydrogen was still being checked (<a href="#s-libs">ISRO</a>)</td></tr>
+<tr><td><strong>APXS</strong>: Alpha Particle X-ray Spectrometer (PRL, Ahmedabad)</td><td>Alpha particles and X-rays excite the soil, and the X-rays it emits give the elemental composition</td><td>Soil is mostly ferroan anorthosite, which <strong>supports the magma-ocean hypothesis</strong> (Nature, 2024). Sodium and potassium are low and <strong>sulphur is high</strong>, pointing to mantle material excavated by the SPA impact (<a href="#s-apxs">ISRO, 30 Apr 2025</a>)</td></tr>
+</tbody></table></div>
+<p class="note"><strong>Count:</strong> 1 (PM) + 4 (lander) + 2 (rover) = <strong>7 payloads</strong>, matching the class figure (<a href="#s-ch3det">ISRO</a>).</p>
+<p class="correction" id="c121"><strong>[Correction]</strong> <strong>SHAPE "is looking to discover life on exoplanets"</strong>: SHAPE observes <strong>Earth</strong> from lunar orbit (<a href="#s-ch3det">ISRO</a>). Earth is the only planet known to host life. Its light, especially polarised light, acts as a <strong>reference signature of a habitable planet</strong> &#8224;. Future telescopes could compare distant exoplanets against that signature. SHAPE itself does not observe exoplanets. The PM's move back to Earth orbit was made partly <strong>to keep SHAPE observing Earth</strong> and partly to rehearse return manoeuvres for a sample-return mission (<a href="#s-ch3pm">ISRO</a>).</p>
+<p class="correction" id="c122"><strong>[Correction]</strong> <strong>"ChaSTE drilled the surface; at 8 cm depth the temperature dropped by 60 &#176;C"</strong>:
+<br/><strong>Method:</strong> ChaSTE <strong>pushed a probe</strong> in with a controlled penetration mechanism. It did not drill.
+<br/><strong>Values:</strong> ISRO's first graph (27 Aug 2023), as reported, showed about <strong>50 &#176;C at the surface</strong> and about <strong>-10 &#176;C at 80 mm depth</strong> (<a href="#s-chaste-tnie">TNIE</a>). That is a fall of roughly <strong>60 &#176;C within 8 cm</strong>, so the class point holds in substance.
+<br/><strong>Caution:</strong> the readings were affected by heat from the lander itself (<a href="#s-chaste-mnras">MNRAS</a>).
+<br/><strong>Conclusion:</strong> lunar regolith has very low thermal conductivity and insulates the layers below, so the class conclusion stands.</p>
+<p class="correction" id="c123"><strong>[Correction]</strong> The LRA is a <strong>NASA</strong> instrument. It is passive, needs no power and lasts for decades (<a href="#s-lra">ISRO</a>). It does more than mark Vikram's location. It acts as a <strong>fiducial (reference) point</strong> that helps refine the lunar coordinate system and pin down orbiter positions. It also gives clues to the Moon's dynamics and interior (<a href="#s-lra">ISRO</a>).</p>
+<p class="correction" id="c124"><strong>[Correction]</strong> <strong>ILSA "finds out how stable the Moon is compared to Earth"</strong>: ILSA is a <strong>seismometer</strong>. It measures <strong>ground vibrations from moonquakes, meteoroid impacts and artificial sources</strong> (<a href="#s-ilsa">Mint</a>). The data help work out the structure of the crust and mantle. Seismic activity does say something about how "quiet" the Moon is, but the instrument's purpose is <strong>lunar seismicity</strong>.</p>
+<p class="correction" id="c125"><strong>[Correction]</strong> <strong>"Discovered sulphur on Moon, which supports volcanism"</strong>:
+<br/>(1) Sulphur was <strong>already known</strong> from Apollo samples. Chandrayaan-3 made the <strong>first in-situ measurement near the south pole</strong> and found it at higher levels than expected (<a href="#s-libs">ISRO</a>).
+<br/>(2) Its <strong>origin is debated</strong>. Volcanic outgassing is one possibility. Others are meteorite impacts and frost condensing from the thin atmosphere in cold polar soil.
+<br/>(3) PRL's 2025 analysis favours a different source. It concluded that <strong>sulphur-rich primitive mantle material (troilite, FeS) was dug up by the SPA basin impact</strong>. It ruled out meteorites alone and cold-trapping as sufficient (<a href="#s-apxs">ISRO</a>).
+<br/>Write "sulphur confirmed in situ; source under study (mantle, volcanic or impact)".</p>
+
+<figure id="fig80">
+<h3>Figure 80. ChaSTE: First Temperature-Depth Profile Near the Lunar South Pole (schematic plot, approximate values)</h3>
+<svg viewBox="0 0 900 360" role="img" aria-label="ChaSTE first temperature profile near the lunar south pole, schematic plot of values read from ISRO&#x27;s graph of 27 August 2023 as reported by newspapers, approximate. Temperature on the horizontal axis from minus 20 to plus 80 degrees Celsius; depth on the vertical axis from 20 millimetres above the surface to 100 millimetres below. Near the surface the temperature was about 50 to 60 degrees Celsius, around 5 to 10 degrees at 60 millimetres depth, and about minus 10 degrees at 80 millimetres depth. Lunar soil is a very poor conductor of heat, so it insulates the layers below."><defs><marker id="f80-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#555"/></marker></defs><g font-family="Calibri, sans-serif"><rect x="150" y="104.0" width="650" height="220.0" rx="0" fill="#efebe9" stroke="#efebe9" stroke-width="0" /><line x1="150" y1="104.0" x2="800" y2="104.0" stroke="#6d4c41" stroke-width="2"/><text x="805" y="108.0" font-size="11.5" text-anchor="start" fill="#6d4c41">surface</text><line x1="150" y1="60.0" x2="150" y2="324.0" stroke="#333" stroke-width="1.5"/><line x1="150" y1="324.0" x2="800" y2="324.0" stroke="#333" stroke-width="1.5"/><line x1="150.0" y1="324.0" x2="150.0" y2="329.0" stroke="#333" stroke-width="1"/><text x="150.0" y="344.0" font-size="11.5" text-anchor="middle" fill="#202124">-20</text><line x1="280.0" y1="324.0" x2="280.0" y2="329.0" stroke="#333" stroke-width="1"/><text x="280.0" y="344.0" font-size="11.5" text-anchor="middle" fill="#202124">0</text><line x1="410.0" y1="324.0" x2="410.0" y2="329.0" stroke="#333" stroke-width="1"/><text x="410.0" y="344.0" font-size="11.5" text-anchor="middle" fill="#202124">20</text><line x1="540.0" y1="324.0" x2="540.0" y2="329.0" stroke="#333" stroke-width="1"/><text x="540.0" y="344.0" font-size="11.5" text-anchor="middle" fill="#202124">40</text><line x1="670.0" y1="324.0" x2="670.0" y2="329.0" stroke="#333" stroke-width="1"/><text x="670.0" y="344.0" font-size="11.5" text-anchor="middle" fill="#202124">60</text><line x1="800.0" y1="324.0" x2="800.0" y2="329.0" stroke="#333" stroke-width="1"/><text x="800.0" y="344.0" font-size="11.5" text-anchor="middle" fill="#202124">80</text><line x1="145" y1="60.0" x2="150" y2="60.0" stroke="#333" stroke-width="1"/><text x="140" y="64.0" font-size="11.5" text-anchor="end" fill="#202124">-20</text><line x1="145" y1="104.0" x2="150" y2="104.0" stroke="#333" stroke-width="1"/><text x="140" y="108.0" font-size="11.5" text-anchor="end" fill="#202124">0</text><line x1="145" y1="148.0" x2="150" y2="148.0" stroke="#333" stroke-width="1"/><text x="140" y="152.0" font-size="11.5" text-anchor="end" fill="#202124">20</text><line x1="145" y1="192.0" x2="150" y2="192.0" stroke="#333" stroke-width="1"/><text x="140" y="196.0" font-size="11.5" text-anchor="end" fill="#202124">40</text><line x1="145" y1="236.0" x2="150" y2="236.0" stroke="#333" stroke-width="1"/><text x="140" y="240.0" font-size="11.5" text-anchor="end" fill="#202124">60</text><line x1="145" y1="280.0" x2="150" y2="280.0" stroke="#333" stroke-width="1"/><text x="140" y="284.0" font-size="11.5" text-anchor="end" fill="#202124">80</text><line x1="145" y1="324.0" x2="150" y2="324.0" stroke="#333" stroke-width="1"/><text x="140" y="328.0" font-size="11.5" text-anchor="end" fill="#202124">100</text><text x="475" y="350" font-size="12.5" text-anchor="middle" fill="#202124" font-weight="bold">Temperature (&#176;C)</text><text x="60" y="192.0" font-size="12.5" text-anchor="middle" fill="#202124" font-weight="bold">Depth (mm)</text><text x="60" y="208.0" font-size="11" text-anchor="middle" fill="#202124">(negative = above)</text><path d="M683,60 L618,104 L332,236 L215,280" stroke="#c62828" stroke-width="2.2" fill="none"/><circle cx="683" cy="60" r="4" fill="#c62828" stroke="#c62828" stroke-width="1" /><circle cx="618" cy="104" r="4" fill="#c62828" stroke="#c62828" stroke-width="1" /><circle cx="332" cy="236" r="4" fill="#c62828" stroke="#c62828" stroke-width="1" /><circle cx="215" cy="280" r="4" fill="#c62828" stroke="#c62828" stroke-width="1" /><text x="606.0" y="96.0" font-size="11.5" text-anchor="end" fill="#c62828">~50 &#176;C at surface; >60 &#176;C at 20 mm above</text><text x="344.0" y="240.0" font-size="11.5" text-anchor="start" fill="#c62828">~5-10 &#176;C at 60 mm</text><text x="227.0" y="284.0" font-size="11.5" text-anchor="start" fill="#c62828">~ -10 &#176;C at 80 mm</text><text x="560" y="258.0" font-size="12" text-anchor="middle" fill="#4e342e" font-weight="bold">steep fall over a few cm:</text><text x="560" y="274.0" font-size="12" text-anchor="middle" fill="#4e342e">regolith is a good insulator</text><text x="475" y="40" font-size="11.5" text-anchor="middle" fill="#555">Approximate values from ISRO's 27 Aug 2023 graph (as reported); not a calibrated dataset.</text></g></svg>
+<figcaption>The four points are read from ISRO's 27 August 2023 graph as reported by <a href="#s-chaste-tnie">The New Indian Express</a>. They are joined by straight lines for illustration. This is not the calibrated published dataset; for that, see <a href="#s-chaste-mnras">MNRAS 2025</a>, which also notes that the lander's own heat affected the readings. A negative depth means the probe tip was above the surface during insertion.</figcaption>
+</figure>
+
+<h3 id="ch4">66.11 Chandrayaan-4: lunar sample return</h3>
+<ul>
+<li><strong>Approval:</strong> Union Cabinet, <strong>18 September 2024</strong>; cost <strong>Rs 2,104.06 crore</strong>. The cost covers the spacecraft, <strong>two LVM3 launches</strong>, deep-space network support and special tests. The mission was to be completed within 36 months of approval (<a href="#s-pib-ch4">PIB</a>).</li>
+<li><strong>Purpose:</strong> demonstrate technologies for <strong>docking and undocking, landing, lunar ascent, sample collection and safe return to Earth</strong>. These are building blocks for an <strong>Indian landing on the Moon by 2040</strong> and fit the goal of the <strong>Bharatiya Antariksh Station by 2035</strong> (<a href="#s-pib-ch4">PIB</a>).</li>
+<li><strong>Five modules</strong> (<a href="#s-it-ch4">India Today</a>):
+<ul>
+<li><strong>Propulsion Module (PM)</strong>, <strong>Descender Module (DM)</strong> and <strong>Ascender Module (AM)</strong>;</li>
+<li><strong>Transfer Module (TM)</strong> and <strong>Re-entry Module (RM)</strong>.</li>
+</ul>They are launched as <strong>two stacks on two LVM3 rockets</strong> and <strong>docked in Earth orbit</strong>. A single LVM3 cannot lift the roughly 9,200-9,600 kg spacecraft (<a href="#s-sn-ch4">SpaceNexus</a>; mass per secondary sources).</li>
+<li><strong>Sequence</strong> (class description, consistent with public reports; see <a href="#fig81">Figure 81</a>):
+<ol>
+<li>The two stacks dock in Earth orbit. The PM raises the combined craft towards the Moon and then separates.</li>
+<li>In lunar orbit, the DM carrying the AM lands in the <strong>south polar region</strong>. The TM and RM stay in orbit.</li>
+<li>The DM <strong>drills and scoops regolith</strong> (reportedly up to about 3 kg) into a <strong>vacuum-sealed container</strong> in the AM (<a href="#s-it-ch4">India Today</a>).</li>
+<li>The AM lifts off and <strong>docks with the TM in lunar orbit</strong>. The container moves to the RM, and the AM is discarded.</li>
+<li>The TM and RM return to Earth. The RM separates, re-enters and lands with the samples.</li>
+</ol></li>
+<li><strong>Precursor:</strong> <strong>SpaDeX</strong>, launched 30 December 2024, demonstrated docking in Earth orbit before Chandrayaan-4 relies on it (<a href="#s-sn-ch4">SpaceNexus</a>; docking achieved January 2025 &#8224;). The Chandrayaan-3 PM's return and Vikram's hop were earlier rehearsals.</li>
+<li><strong>Advantages of sample return</strong> (class points, expanded):
+<ol>
+<li><strong>Preservation:</strong> samples can be curated for decades and re-studied with future instruments. Apollo samples are still being analysed today.</li>
+<li><strong>Sharing:</strong> they can be shared with other countries' laboratories, which builds scientific diplomacy.</li>
+<li><strong>Better analysis:</strong> large lab instruments on Earth, such as electron microscopes, mass spectrometers and isotope-dating labs, can do much deeper analysis than anything that can be flown (<a href="#s-sn-ch4">secondary summary</a>).</li>
+<li><strong>[Additional] Infrastructure:</strong> the mission will set up Indian sample-curation facilities as "national assets" (<a href="#s-pib-ch4">PIB</a>).</li>
+</ol></li>
+</ul>
+<p class="verification" id="vr-ch4"><strong>[Verification Required]</strong> These details are not in the PIB release, which names neither the modules nor the stacks:
+<br/>(1) <strong>Stack split.</strong> The class says stack 1 is PM + TM + RM and stack 2 is AM + DM. A launch tracker lists the first launch as DM + AM and the second as TM + RM + PM (<a href="#s-sls-ch4">Space Launch Schedule</a>). The groupings agree, but the launch order and the exact point where the PM separates (Earth orbit or lunar orbit) are not settled in official sources.
+<br/>(2) <strong>Landing site.</strong> A fan site reports that OHRC imagery was used in February 2026 to choose a site on <strong>Mons Mouton</strong>; this is unconfirmed.</p>
+<p class="correction" id="c126"><strong>[Correction / Status]</strong> As of 20 November 2026, Chandrayaan-4 is <strong>approved but not launched</strong>.
+<br/><strong>Target dates:</strong> a Rajya Sabha committee report (March 2026) gives <strong>October 2027</strong> (<a href="#s-it-ch4">India Today</a>). The ISRO chairman said in December 2025 that it would fly <strong>"by 2028"</strong> (<a href="#s-sn-ch4">SpaceNexus</a>).
+<br/><strong>Spending:</strong> the committee noted slow spending, with Rs 34.60 crore of Rs 150 crore spent by January 2026 (<a href="#s-it-ch4">India Today</a>).
+<br/><strong>False claim:</strong> some exam websites claim Chandrayaan-4 "was launched on 12 August 2026". No official source supports this. Treat it as false.</p>
+
+<figure id="fig81">
+<h3>Figure 81. Chandrayaan-4 Sample-Return Sequence (schematic flowchart; details subject to change)</h3>
+<svg viewBox="0 0 900 500" role="img" aria-label="Chandrayaan-4 lunar sample-return mission sequence, schematic, as described in class and in public reports; details are subject to change. Two LVM3 launches carry five modules: one stack with the Descender and Ascender modules, the other with the Propulsion, Transfer and Re-entry modules. The stacks dock in Earth orbit. The Propulsion Module raises the combined spacecraft towards the Moon and is then separated. In lunar orbit the Descender plus Ascender separate and land in the south polar region while the Transfer plus Re-entry modules stay in orbit. The Descender drills and scoops regolith into a sealed container in the Ascender. The Ascender lifts off, docks with the Transfer Module and hands over the container, which goes into the Re-entry Module; the Ascender is discarded. The Transfer Module brings the Re-entry Module back towards Earth, and the Re-entry Module separates and lands with the samples."><defs><marker id="f81-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#555"/></marker></defs><g font-family="Calibri, sans-serif"><rect x="30" y="30" width="260" height="120" rx="6" fill="#f5f9fd" stroke="#0078d4" stroke-width="1.5" /><text x="160.0" y="65.5" font-size="11.5" text-anchor="middle" fill="#202124" font-weight="bold">1. Two LVM3 launches</text><text x="160.0" y="84.5" font-size="11.5" text-anchor="middle" fill="#202124">Stack A: Descender + Ascender</text><text x="160.0" y="103.5" font-size="11.5" text-anchor="middle" fill="#202124">Stack B: Propulsion + Transfer</text><text x="160.0" y="122.5" font-size="11.5" text-anchor="middle" fill="#202124">+ Re-entry</text><rect x="320" y="30" width="260" height="120" rx="6" fill="#f5f9fd" stroke="#0078d4" stroke-width="1.5" /><text x="450.0" y="65.5" font-size="11.5" text-anchor="middle" fill="#202124" font-weight="bold">2. Docking in Earth orbit</text><text x="450.0" y="84.5" font-size="11.5" text-anchor="middle" fill="#202124">stacks join into one</text><text x="450.0" y="103.5" font-size="11.5" text-anchor="middle" fill="#202124">5-module spacecraft</text><text x="450.0" y="122.5" font-size="11.5" text-anchor="middle" fill="#202124">(tested by SpaDeX, 2025)</text><rect x="610" y="30" width="260" height="120" rx="6" fill="#f5f9fd" stroke="#0078d4" stroke-width="1.5" /><text x="740.0" y="65.5" font-size="11.5" text-anchor="middle" fill="#202124" font-weight="bold">3. Trip to the Moon</text><text x="740.0" y="84.5" font-size="11.5" text-anchor="middle" fill="#202124">Propulsion Module raises orbit,</text><text x="740.0" y="103.5" font-size="11.5" text-anchor="middle" fill="#202124">then separates</text><text x="740.0" y="122.5" font-size="11.5" text-anchor="middle" fill="#202124">[stage: Verification Required]</text><rect x="610" y="190" width="260" height="120" rx="6" fill="#f5f9fd" stroke="#0078d4" stroke-width="1.5" /><text x="740.0" y="225.5" font-size="11.5" text-anchor="middle" fill="#202124" font-weight="bold">4. Split in lunar orbit</text><text x="740.0" y="244.5" font-size="11.5" text-anchor="middle" fill="#202124">Descender + Ascender land</text><text x="740.0" y="263.5" font-size="11.5" text-anchor="middle" fill="#202124">near south pole;</text><text x="740.0" y="282.5" font-size="11.5" text-anchor="middle" fill="#202124">Transfer + Re-entry orbit</text><rect x="320" y="190" width="260" height="120" rx="6" fill="#f5f9fd" stroke="#0078d4" stroke-width="1.5" /><text x="450.0" y="225.5" font-size="11.5" text-anchor="middle" fill="#202124" font-weight="bold">5. Sampling on surface</text><text x="450.0" y="244.5" font-size="11.5" text-anchor="middle" fill="#202124">drill / robotic arm scoop</text><text x="450.0" y="263.5" font-size="11.5" text-anchor="middle" fill="#202124">sealed container</text><text x="450.0" y="282.5" font-size="11.5" text-anchor="middle" fill="#202124">placed in Ascender</text><rect x="30" y="190" width="260" height="120" rx="6" fill="#f5f9fd" stroke="#0078d4" stroke-width="1.5" /><text x="160.0" y="225.5" font-size="11.5" text-anchor="middle" fill="#202124" font-weight="bold">6. Ascent and docking</text><text x="160.0" y="244.5" font-size="11.5" text-anchor="middle" fill="#202124">Ascender lifts off, docks</text><text x="160.0" y="263.5" font-size="11.5" text-anchor="middle" fill="#202124">with Transfer Module;</text><text x="160.0" y="282.5" font-size="11.5" text-anchor="middle" fill="#202124">container to Re-entry Module</text><rect x="30" y="350" width="260" height="120" rx="6" fill="#f5f9fd" stroke="#0078d4" stroke-width="1.5" /><text x="160.0" y="385.5" font-size="11.5" text-anchor="middle" fill="#202124" font-weight="bold">7. Return to Earth</text><text x="160.0" y="404.5" font-size="11.5" text-anchor="middle" fill="#202124">Ascender discarded;</text><text x="160.0" y="423.5" font-size="11.5" text-anchor="middle" fill="#202124">Transfer + Re-entry</text><text x="160.0" y="442.5" font-size="11.5" text-anchor="middle" fill="#202124">fly back to Earth</text><rect x="320" y="350" width="260" height="120" rx="6" fill="#f5f9fd" stroke="#0078d4" stroke-width="1.5" /><text x="450.0" y="385.5" font-size="11.5" text-anchor="middle" fill="#202124" font-weight="bold">8. Re-entry and recovery</text><text x="450.0" y="404.5" font-size="11.5" text-anchor="middle" fill="#202124">Re-entry Module separates,</text><text x="450.0" y="423.5" font-size="11.5" text-anchor="middle" fill="#202124">enters atmosphere,</text><text x="450.0" y="442.5" font-size="11.5" text-anchor="middle" fill="#202124">lands with samples</text><line x1="290" y1="90" x2="318" y2="90" stroke="#555" stroke-width="1.8" marker-end="url(#f81-ar)"/><line x1="580" y1="90" x2="608" y2="90" stroke="#555" stroke-width="1.8" marker-end="url(#f81-ar)"/><line x1="740" y1="150" x2="740" y2="188" stroke="#555" stroke-width="1.8" marker-end="url(#f81-ar)"/><line x1="608" y1="250" x2="582" y2="250" stroke="#555" stroke-width="1.8" marker-end="url(#f81-ar)"/><line x1="318" y1="250" x2="292" y2="250" stroke="#555" stroke-width="1.8" marker-end="url(#f81-ar)"/><line x1="160" y1="310" x2="160" y2="348" stroke="#555" stroke-width="1.8" marker-end="url(#f81-ar)"/><line x1="290" y1="410" x2="318" y2="410" stroke="#555" stroke-width="1.8" marker-end="url(#f81-ar)"/><rect x="610" y="350" width="260" height="120" rx="6" fill="#e8f5e9" stroke="#2e7d32" stroke-width="1.5" /><text x="740.0" y="385.5" font-size="11.5" text-anchor="middle" fill="#202124" font-weight="bold">Why sample return?</text><text x="740.0" y="404.5" font-size="11.5" text-anchor="middle" fill="#202124">bigger, newer lab instruments</text><text x="740.0" y="423.5" font-size="11.5" text-anchor="middle" fill="#202124">samples kept for decades</text><text x="740.0" y="442.5" font-size="11.5" text-anchor="middle" fill="#202124">shared with other countries</text></g></svg>
+<figcaption>Follow the boxes in order: 1-2-3 across the top, 4-5-6 right to left, then 7-8. This is an original flowchart combining the class description with <a href="#s-pib-ch4">PIB</a> (objectives, two LVM3 launches) and <a href="#s-it-ch4">India Today</a> (five modules, docking in Earth orbit, 3 kg of regolith). Step 3 carries a verification marker (<a href="#vr-ch4">see above</a>).</figcaption>
+</figure>
+
+<h3 id="ch5">66.12 Chandrayaan-5</h3>
+<p class="note"><strong>[Placeholder]</strong> The rough notes end at the heading <strong>"Chandrayaan 5"</strong>. The class content will be added with the next set of notes.</p>
+<ul>
+<li><strong>[Additional] Basics for orientation:</strong>
+<ul>
+<li>Chandrayaan-5 is the <strong>Lunar Polar Exploration Mission (LUPEX)</strong>, a joint mission of <strong>ISRO and JAXA</strong>.</li>
+<li>JAXA lists launch in <strong>Japan's fiscal year 2028</strong> on an <strong>H3</strong> rocket from Tanegashima, with a mission of about 100 days (up to a year) in the south polar region (<a href="#s-lupex-jaxa">JAXA</a>).</li>
+<li><strong>ISRO builds the lander and JAXA the rover</strong>. The aim is to find out how much water is present, in what form and where.</li>
+<li>India approved the mission in <strong>March 2025</strong> (<a href="#s-lupex-wiki">Wikipedia</a>, secondary).</li>
+<li>JAXA announced on 6 November 2026 that NASA's neutron spectrometer will fly on the rover (<a href="#s-lupex-jaxa">JAXA</a>).</li>
+</ul></li>
+</ul>
+
+<h3 id="moon-world">66.13 [Additional] The wider lunar race, issues and way forward</h3>
+<div class="table-wrap"><table>
+<caption>Recent and upcoming lunar missions relevant to the south-pole focus (status as of 20 November 2026)</caption>
+<thead><tr><th scope="col" style="width:22%">Mission</th><th scope="col">Key fact</th><th scope="col" style="width:22%">Source</th></tr></thead>
+<tbody>
+<tr><td>Luna-25 (Russia)</td><td>Aimed at the south pole. It <strong>crashed in August 2023</strong>, days before Chandrayaan-3 landed</td><td><a href="#s-aljaz">Al Jazeera</a></td></tr>
+<tr><td>SLIM (Japan)</td><td>"Moon Sniper", a pinpoint landing on 19 Jan 2024 at 13.3&#176; S. Japan became the <strong>fifth</strong> country to soft-land</td><td><a href="#s-slim">NASA</a></td></tr>
+<tr><td>IM-1 Odysseus (USA, commercial)</td><td>Landed 22 Feb 2024 at <strong>80.13&#176; S</strong>. It was the first commercial landing and tipped over</td><td><a href="#s-im1">NASA</a></td></tr>
+<tr><td>Chang'e-6 (China)</td><td>Returned the <strong>first far-side samples</strong> (2024), from the SPA basin</td><td><a href="#s-ap-ce7">AP</a></td></tr>
+<tr><td>Artemis II (USA, with Canada; ESA service module)</td><td>First crewed lunar flyby since 1972: launched <strong>1 Apr 2026</strong>, splashed down <strong>10 Apr 2026</strong>. It set the human distance record of 406,771 km. Artemis III (2027) is to test landing hardware in Earth orbit; a crewed landing is planned on Artemis IV (2028)</td><td><a href="#s-artemis2">NASA</a>; <a href="#s-brit-a2">Britannica</a></td></tr>
+<tr><td>Chang'e-7 (China)</td><td>A south-pole orbiter, lander, rover and <strong>hopper</strong> to look for ice near Shackleton crater. It was <strong>postponed on 23 Aug 2026</strong> ("does not meet launch conditions"), with no new official date</td><td><a href="#s-ap-ce7">AP</a>; <a href="#s-planetary-ce7">Planetary Society</a></td></tr>
+</tbody></table></div>
+<ul>
+<li><strong>Issues:</strong>
+<ul>
+<li><strong>Resource rights.</strong> The 1967 Outer Space Treaty bars national ownership of the Moon but leaves resource extraction unclear (<a href="#s-aljaz">Al Jazeera</a>).</li>
+<li><strong>Rival blocs.</strong> The US-led Artemis Accords (India signed in 2023 &#8224;) compete with the China-Russia International Lunar Research Station.</li>
+<li><strong>Crowding and harm.</strong> Many missions target the few best-lit polar sites. Debris, dust and the contamination of pristine ice are concerns.</li>
+<li><strong>Cost and delays.</strong> For example, the slow spending on Chandrayaan-4.</li>
+</ul></li>
+<li><strong>Way forward for India:</strong>
+<ul>
+<li>Keep the series going: Chandrayaan-4 and -5, then a crewed landing by 2040.</li>
+<li>Develop power for the lunar night, such as RHUs, RTGs and better insulation.</li>
+<li>Build sample-curation laboratories.</li>
+<li>Use partnerships (JAXA, NASA, ESA) while keeping indigenous core technologies.</li>
+<li>Help shape norms on resource use and safety zones.</li>
+</ul></li>
+</ul>
+</section>
+
+
+<section id="status">
+<h2>67. Status as of 20 November 2026 (linkage to the news)</h2>
+<div class="table-wrap"><table>
+<caption>Time-sensitive facts used in this note</caption>
+<thead><tr><th scope="col" style="width:20%">Item</th><th scope="col">Status and date</th><th scope="col" style="width:24%">Source</th></tr></thead>
+<tbody>
+<tr><td>Chandrayaan-2 orbiter</td><td>Operating in lunar orbit, 7+ years after launch; its OHRC is used to plan later missions (statement of 11 Sep 2026)</td><td><a href="#s-toi-ch2">TOI</a>; <a href="#s-ch2upd">ISRO</a></td></tr>
+<tr><td>Chandrayaan-3</td><td>Objectives met in 2023. Lander and rover dormant since Sep 2023. PM moved to a high Earth orbit (Nov 2023). Science papers are still appearing (RAMBHA-LP, Dec 2025; APXS, Apr 2025)</td><td><a href="#s-ch3pm">ISRO</a>; <a href="#s-rambha">ISRO</a>; <a href="#s-apxs">ISRO</a></td></tr>
+<tr><td>Chandrayaan-4</td><td>Approved 18 Sep 2024 (Rs 2,104.06 crore). <strong>Not launched.</strong> Target October 2027 (Rajya Sabha committee, Mar 2026) or "by 2028" (ISRO chairman, Dec 2025)</td><td><a href="#s-pib-ch4">PIB</a>; <a href="#s-it-ch4">India Today</a>; <a href="#s-sn-ch4">SpaceNexus</a></td></tr>
+<tr><td>Chandrayaan-5 / LUPEX</td><td>Approved (Mar 2025). JAXA lists launch in Japan's FY2028 on H3. NASA neutron spectrometer added to the rover (JAXA, 6 Nov 2026)</td><td><a href="#s-lupex-jaxa">JAXA</a>; <a href="#s-lupex-wiki">Wikipedia</a></td></tr>
+<tr><td>Artemis</td><td>Artemis II flew 1-10 Apr 2026 (crewed flyby). Artemis III (2027) to test landing hardware in Earth orbit; Artemis IV crewed landing planned for 2028</td><td><a href="#s-artemis2">NASA</a>; <a href="#s-brit-a2">Britannica</a></td></tr>
+<tr><td>Chang'e-7</td><td>Postponed on 23 Aug 2026 out of its 2026 window; no new official date (a 2027 window is expected by observers)</td><td><a href="#s-ap-ce7">AP</a></td></tr>
+<tr><td>Indian goals</td><td>Bharatiya Antariksh Station by 2035; Indian landing on the Moon by 2040 (government vision)</td><td><a href="#s-pib-ch4">PIB</a></td></tr>
+</tbody></table></div>
+</section>
+
+<section id="prelims">
+<h2>Key Facts for Prelims</h2>
+<ul>
+<li><strong>Moon's origin</strong>: giant impact of the Mars-sized protoplanet <strong>Theia</strong> with proto-Earth, about 4.5 billion years ago. Evidence: matching oxygen isotopes, small core, magma-ocean anorthosite crust.</li>
+<li><strong>South pole draw</strong>: water ice in <strong>PSRs</strong> (colder than about -200 &#176;C); rims with near-constant sunlight; ISRU (water, O<sub>2</sub>, H<sub>2</sub> propellant); escape velocity ~2.4 km/s versus 11.2 km/s.</li>
+<li><strong>South Pole-Aitken basin</strong>: ~2,500 km across, more than 8 km deep; the largest, deepest and oldest lunar basin; on the far side. <strong>Chang'e-6 (2024)</strong> returned samples from it.</li>
+<li><strong>Chandrayaan-1</strong>:
+<ul>
+<li>Launched 22 Oct 2008 on PSLV-C11; 11 payloads.</li>
+<li>Moon Impact Probe hit near Shackleton crater on 14 Nov 2008; its CHACE detected water in the exosphere.</li>
+<li>NASA's M3 found water and OH on the surface. Contact lost Aug 2009.</li>
+</ul></li>
+<li><strong>Chandrayaan-2</strong>: launched 22 Jul 2019 on GSLV Mk III-M1. Vikram crashed (communication lost at about 2.1 km altitude), with Pragyan still inside. The orbiter still works; its <strong>OHRC</strong> gives about 0.25 m imagery.</li>
+<li><strong>Chandrayaan-3</strong>:
+<ul>
+<li>Launched 14 Jul 2023 on LVM3-M4. Landed <strong>23 Aug 2023</strong>, about 6:04 pm IST, at <strong>69.37&#176; S</strong> (Shiv Shakti point).</li>
+<li>India was the <strong>4th country to soft-land</strong> and the <strong>first in the south polar region</strong>. 23 August is National Space Day.</li>
+</ul></li>
+<li><strong>Chandrayaan-3 payloads (7)</strong>:
+<ul>
+<li>PM: <strong>SHAPE</strong>.</li>
+<li>Lander: <strong>ChaSTE, ILSA, RAMBHA-LP, LRA (NASA)</strong>.</li>
+<li>Rover: <strong>APXS, LIBS</strong>.</li>
+</ul>The PM carried <strong>2 RHUs from BARC</strong>.</li>
+<li><strong>Chandrayaan-3 findings</strong>:
+<ul>
+<li>Sulphur confirmed in situ (LIBS).</li>
+<li>Soil supports the magma-ocean hypothesis (APXS).</li>
+<li>~50 &#176;C at the surface but ~-10 &#176;C at 8 cm (ChaSTE).</li>
+<li>First MEMS seismometer on the Moon (ILSA).</li>
+<li>LRA pinged by NASA's LRO on 12 Dec 2023.</li>
+</ul></li>
+<li><strong>Chandrayaan-4</strong>:
+<ul>
+<li>Sample return. Approved 18 Sep 2024; Rs 2,104.06 crore; <strong>two LVM3 launches</strong>.</li>
+<li><strong>5 modules</strong>: Propulsion, Descender, Ascender, Transfer, Re-entry. Docking in Earth orbit and in lunar orbit.</li>
+<li>Not launched; target 2027-28.</li>
+</ul></li>
+<li><strong>Chandrayaan-5 = LUPEX</strong>: ISRO lander + JAXA rover, Japanese H3 rocket, about FY2028.</li>
+<li><strong>Other landers</strong>:
+<ul>
+<li>Japan's <strong>SLIM</strong> (Jan 2024) made Japan the 5th country to soft-land, at 13.3&#176; S, not the pole.</li>
+<li><strong>IM-1</strong> (Feb 2024) was the first commercial landing, at 80.13&#176; S.</li>
+</ul></li>
+<li><strong>Artemis II</strong> (1-10 Apr 2026): the first crewed lunar flyby since 1972.</li>
+</ul>
+</section>
+
+<section id="mains">
+<h2>Mains Points</h2>
+<ul>
+<li><strong>Why the south pole matters strategically</strong>:
+<ul>
+<li>Water ice enables ISRU and lowers the cost of long-term presence; the Moon becomes a refuelling stop on the way to Mars.</li>
+<li>The few well-lit, ice-adjacent sites will be contested (US Artemis versus the China-Russia ILRS).</li>
+<li>Being early (Chandrayaan-3, LUPEX) gives India data, prestige and a voice in shaping norms.</li>
+</ul></li>
+<li><strong>Chandrayaan as a model of learning from failure</strong>:
+<ul>
+<li>Chandrayaan-2's crash led to Chandrayaan-3's "failure-tolerant" design: stronger legs, more fuel, a wider landing zone, extra sensors.</li>
+<li>The Chandrayaan-2 orbiter carried on and helped Chandrayaan-3. This frugal, step-by-step approach is the way forward.</li>
+</ul></li>
+<li><strong>Technology ladder</strong>:
+<ul>
+<li>Orbiting (Chandrayaan-1), then landing and roving (Chandrayaan-3).</li>
+<li>Docking, ascent and re-entry (SpaDeX, then Chandrayaan-4).</li>
+<li>Long-duration polar operations (LUPEX), then a crewed landing by 2040.</li>
+</ul>Each step de-risks the next. The capabilities also serve Gaganyaan and the Bharatiya Antariksh Station.</li>
+<li><strong>Science gains</strong>: water in the exosphere and on the surface; a polar thermal profile; near-surface plasma; sulphur and mantle clues from the SPA impact. These are first-of-their-kind data from the south polar region, published in Nature, MNRAS and other journals.</li>
+<li><strong>Constraints</strong>:
+<ul>
+<li>Lunar-night survival, which needs RHUs/RTGs and nuclear-safety and regulatory capacity.</li>
+<li>Heavy-lift limits: two LVM3 launches for Chandrayaan-4; NGLV is still years away.</li>
+<li>Slow spending and delays.</li>
+<li>Reliance on foreign partners for some instruments (M3, LRA, the LUPEX rover).</li>
+</ul></li>
+<li><strong>Governance</strong>:
+<ul>
+<li>The Outer Space Treaty (1967) bars sovereignty claims, but rules on resource use are unsettled.</li>
+<li>India is in the Artemis Accords and works with JAXA and NASA. It should press for transparent norms on safety zones, debris and protecting pristine ice.</li>
+</ul></li>
+<li><strong>Way forward</strong>:
+<ul>
+<li>Fund Chandrayaan-4 on time.</li>
+<li>Build sample-curation labs and nuclear power and heating units for space.</li>
+<li>Involve industry and start-ups (the PIB stresses industry participation).</li>
+<li>Diversify partnerships while keeping core technologies indigenous.</li>
+</ul></li>
+</ul>
+</section>
+
+<section id="traps">
+<h2>Common Traps / Confusions</h2>
+<ul>
+<li><strong>"Landed at the south pole"</strong>: Chandrayaan-3 landed at about <strong>69.4&#176; S</strong>, in the south <strong>polar region</strong>, about 600 km from the pole. IM-1 landed closer (80.13&#176; S) in 2024.</li>
+<li><strong>"Second was Japan"</strong>: SLIM made Japan the <strong>fifth country to soft-land</strong>, at 13.3&#176; S. It was not a south-pole landing.</li>
+<li><strong>India's rank</strong>: India was the 4th country to soft-land (after the USSR, USA, China) but the <strong>first</strong> near the south pole.</li>
+<li><strong>Chandrayaan-1 water</strong>: Chandrayaan-1 did not "land" (the MIP was a deliberate crash). The surface detection was by NASA's <strong>M3</strong>; ISRO's <strong>CHACE</strong> found water in the exosphere.</li>
+<li><strong>Orbiter vs PM</strong>: Chandrayaan-3 had <strong>no new orbiter</strong>. Its propulsion module was not a relay; the <strong>Chandrayaan-2 orbiter</strong> served as backup.</li>
+<li><strong>SHAPE</strong>: it looks at <strong>Earth</strong>, not at exoplanets.</li>
+<li><strong>RTG vs RHU</strong>: an RTG gives electricity, an RHU only heat. Chandrayaan-3 carried RHUs only, on the PM.</li>
+<li><strong>LRA</strong>: it is <strong>NASA's</strong> and passive. It is not an Indian instrument.</li>
+<li><strong>Lunar day</strong>: about 29.5 Earth days in full; the mission lasted one lunar daytime of about 14 Earth days.</li>
+<li><strong>Chandrayaan-4 status</strong>: not launched as of Nov 2026. Claims of an August 2026 launch are false.</li>
+<li><strong>Chandrayaan-5</strong>: it is LUPEX, launched on <strong>Japan's H3</strong>, not on an ISRO rocket.</li>
+<li><strong>SPA basin</strong>: it is on the <strong>far side</strong>. Chang'e-6, not Chandrayaan, returned the first SPA samples.</li>
+</ul>
+</section>
+
+<section id="thirty">
+<h2>30-Second Revision</h2>
+<ul>
+<li><strong>Moon</strong>: formed after Theia hit Earth, about 4.5 billion years ago. The young Moon had a magma ocean.</li>
+<li><strong>South pole</strong>:
+<ul>
+<li>Permanently shadowed regions (PSRs) hold ice and are colder than about -200 &#176;C. Lit rims beside them suit solar power and bases.</li>
+<li>ISRU turns ice into water, O<sub>2</sub> and propellant.</li>
+<li>The SPA basin is the largest, deepest and oldest lunar basin.</li>
+</ul></li>
+<li><strong>Chandrayaan-1</strong> (2008, PSLV-C11): an orbiter plus the Moon Impact Probe, and evidence of water.</li>
+<li><strong>Chandrayaan-2</strong> (2019, GSLV Mk III): the lander crashed, but the orbiter still works.</li>
+<li><strong>Chandrayaan-3</strong> (2023, LVM3):
+<ul>
+<li>Landed 23 Aug 2023 at 69.37&#176; S. India was the 4th country to soft-land and the first in the south polar region.</li>
+<li>Seven payloads: SHAPE; ChaSTE, ILSA, RAMBHA-LP, LRA; APXS, LIBS.</li>
+<li>Found sulphur; the surface is ~50 &#176;C but ~-10 &#176;C at 8 cm.</li>
+<li>The PM carried 2 BARC RHUs and went back to Earth orbit.</li>
+</ul></li>
+<li><strong>Chandrayaan-4</strong>: sample return; 5 modules, 2 LVM3 launches, docking; Rs 2,104 crore. Not yet launched; target 2027-28.</li>
+<li><strong>Chandrayaan-5</strong>: LUPEX with JAXA on an H3 rocket, about 2028.</li>
+<li><strong>Goals</strong>: the Bharatiya Antariksh Station by 2035 and an Indian on the Moon by 2040.</li>
+</ul>
+</section>
+
+<section id="pyqs">
+<h2>Previous Year Questions (PYQs)</h2>
+<p class="small"><strong>Source status:</strong> no official UPSC paper was opened. The question text comes from secondary compilations, which agree with each other. The answer approach is <strong>[Additional]</strong> study guidance, not an official marking scheme.</p>
+<p><strong>Prelims (GS Paper I):</strong> <strong>[No verified PYQ found for this topic]</strong>. Secondary write-ups say UPSC has tested Chandrayaan-1's water discovery. However, no question text with a year and answer could be confirmed in the sources searched, so none is reproduced. The search was not exhaustive.</p>
+<div class="answer" id="pyq-2023m">
+<p><strong>2023 | UPSC CSE Mains | General Studies Paper III | 15 marks</strong> (marks per <a href="#s-pyq23b">IAS Board</a> and <a href="#s-pyq23">SuperKalam</a>; both secondary)</p>
+<p>"What is the main task of India's third moon mission which could not be achieved in its earlier mission? List the countries that have achieved this task. Introduce the subsystems in the spacecraft launched and explain the role of the 'Virtual Launch Control Centre' at the Vikram Sarabhai Space Centre which contributed to the successful launch from Sriharikota."</p>
+<p><strong>Suggested answer approach [Additional]</strong> (study guidance, not an official scheme):</p>
+<ol>
+<li><strong>Main task</strong>: a safe <strong>soft landing and roving</strong>. Chandrayaan-2's Vikram crashed in 2019 (<a href="#ch2">Section 66.6</a>).</li>
+<li><strong>Countries</strong>: USSR/Russia, USA, China, then India (23 Aug 2023), and later Japan (Jan 2024). India was the first in the south polar region (<a href="#ch3">Section 66.7</a>).</li>
+<li><strong>Subsystems</strong>: the propulsion module (SHAPE), the Vikram lander with its sensors (laser Doppler velocimeter, hazard-avoidance camera, throttleable 800 N engines) and four payloads, and the Pragyan rover with two payloads (<a href="#orb-pm">Section 66.8</a>; <a href="#ch3-payloads">Section 66.10</a>; <a href="#fig79">Figure 79</a>).</li>
+<li><strong>Virtual Launch Control Centre (VLCC)</strong>: located at VSSC, Thiruvananthapuram. It let launch-vehicle teams carry out checkouts of the LVM3 and monitor telemetry remotely, in step with Sriharikota. This adds redundancy and saves time (secondary model answers; not covered in class) &#8224;.</li>
+</ol>
+</div>
+</section>
+
+<section id="corrections">
+<h2>Corrections Made</h2>
+<p>Substantive changes are marked where they occur and listed here. Spelling repairs are listed in the header.</p>
+<ol start="109">
+<li><a href="#c109">c109</a> - Theia (a protoplanet), not "Thea"; the impact timing is disputed (about 50-60 million years after the Solar System began on most estimates); 165-180 million years is at the late end.</li>
+<li><a href="#c110">c110</a> - The Moon's role in the origin of life (tides, a stable axial tilt) is a hypothesis.</li>
+<li><a href="#c111">c111</a> - The amount of polar ice is unknown; "billions of tons" is not established.</li>
+<li><a href="#c112">c112</a> - "Peaks of eternal light" receive near-constant, not permanent, sunlight.</li>
+<li><a href="#c113">c113</a> - PSRs are ice-resource sites; bases are planned on the sunlit rims beside them.</li>
+<li><a href="#c114">c114</a> - South Pole-Aitken basin: the largest, deepest and oldest lunar basin; mantle exposure is inferred; Chang'e-6 has already returned SPA samples.</li>
+<li><a href="#c115">c115</a> - Chandrayaan-1 water: surface detection by NASA's M3, exosphere water by ISRO's CHACE; mostly bound water and hydroxyl; not quantified.</li>
+<li><a href="#c116">c116</a> - Chandrayaan-2: the lander crashed with the rover still inside; the orbiter still works (partial success).</li>
+<li><a href="#c117">c117</a> - Chandrayaan-3 landed at about 6:04 pm IST at about 69.4 deg S (south polar region, not the pole); Japan's SLIM (13.3 deg S) was the 5th country to soft-land; IM-1 (80.13 deg S) was the next south-polar landing.</li>
+<li><a href="#c118">c118</a> - A full lunar day is about 29.5 Earth days; daylight lasts about 14 Earth days.</li>
+<li><a href="#c119">c119</a> - Chandrayaan-3 chain: rover to lander to IDSN directly, with the Chandrayaan-2 orbiter as backup; the PM had no relay role.</li>
+<li><a href="#c120">c120</a> - An RTG converts decay heat to electricity (Seebeck effect) continuously; an RHU gives heat only; nights fall to about -170 deg C or lower.</li>
+<li><a href="#c121">c121</a> - SHAPE observes Earth as a reference habitable planet; it does not search exoplanets for life.</li>
+<li><a href="#c122">c122</a> - ChaSTE pushed a probe in (it did not drill): about 50 deg C at the surface to about -10 deg C at 80 mm; the regolith is a good insulator.</li>
+<li><a href="#c123">c123</a> - The LRA is a NASA passive fiducial marker for laser ranging and geodesy.</li>
+<li><a href="#c124">c124</a> - ILSA is a MEMS seismometer for moonquakes and impacts, not a measure of "stability".</li>
+<li><a href="#c125">c125</a> - Sulphur confirmed in situ; its origin is debated; PRL (2025) favours mantle material dug up by the SPA impact, not simply volcanism.</li>
+<li><a href="#c126">c126</a> - Chandrayaan-4 is approved but not launched (target October 2027 / "by 2028"); the claim of a 12 August 2026 launch is false.</li>
+</ol>
+</section>
+
+<section id="visuals">
+<h2>Visual Representations Required / Recommended</h2>
+<ul>
+<li><strong>Included:</strong>
+<ul>
+<li><a href="#fig76">Figure 76</a>: the giant-impact origin of the Moon;</li>
+<li><a href="#fig77">Figure 77</a>: why the south pole matters (PSRs, lit rims, resources);</li>
+<li><a href="#fig78">Figure 78</a>: timeline of India's lunar programme;</li>
+<li><a href="#fig79">Figure 79</a>: Chandrayaan-3 modules, payloads and communication links;</li>
+<li><a href="#fig80">Figure 80</a>: ChaSTE temperature-depth profile (approximate);</li>
+<li><a href="#fig81">Figure 81</a>: Chandrayaan-4 sample-return sequence;</li>
+<li>tables in Sections 66.4, 66.8, 66.10, 66.13 and 67.</li>
+</ul></li>
+<li><strong>Not included:</strong> ISRO's photographs of Vikram, Pragyan and the landing site are external, so schematic drawings are used instead.</li>
+</ul>
+<p><strong>[All necessary visual representations included]</strong> (no required or recommended markers are outstanding).</p>
+</section>
+
+<section id="sources">
+<h2>Open Sources / Further Reading</h2>
+<p class="small">HTTPS public sources consulted on 20 November 2026, mostly as search-result extracts or summaries (not full documents). Secondary sources are labelled. <strong>Verification limits:</strong> values marked &#8224; were not re-checked:</p>
+<ul class="small">
+<li><strong>physical constants:</strong> escape velocities, one-sixth gravity, the 29.5-day synodic month, how RTGs work;</li>
+<li><strong>mission details:</strong> Mini-SAR ice estimate, Vikram's hop, the exact landing second, the SpaDeX docking date, the Chandrayaan-2 payload count, India joining the Artemis Accords;</li>
+<li><strong>science and PYQ notes:</strong> the polarisation rationale for SHAPE, the role of the Virtual Launch Control Centre.</li>
+</ul>
+<p class="small">No official UPSC paper was opened.</p>
+<ol>
+<li id="s-nasa-form"><a href="https://science.nasa.gov/moon/formation/">NASA Science: Moon Formation</a> - Theia giant impact; about 60 million years after the Solar System began, from Apollo rock ages; magma ocean; oxygen-isotope match.</li>
+<li id="s-lpsc"><a href="https://phys.org/news/2024-04-earliest-moon.html">Phys.org/Universe Today (4 Apr 2024): What's the earliest the Moon could have formed?</a> - LPSC 2024: 37-62 Myr (orbital), ~50 Myr (Hf-W), crust ~200 Myr. Secondary summary.</li>
+<li id="s-pressbook"><a href="https://ecampusontario.pressbooks.pub/ersc1p94/chapter/giant-impact-hypothesis/">Introduction to Planetary Science (open textbook): Giant Impact Hypothesis</a> - evidence list and lunar magma ocean.</li>
+<li id="s-livesci"><a href="https://www.livescience.com/space/the-moon/the-moon-may-have-formed-in-just-5-hours-new-simulations-suggest">Live Science (9 Sep 2026): The Moon may have formed in just 5 hours</a> - simulation study; one model outcome.</li>
+<li id="s-spa"><a href="https://science.nasa.gov/moon/lunar-craters/what-is-the-south-pole-aitken-basin/">NASA Science: What is the South Pole-Aitken Basin?</a> - over 2,500 km; ~10 km average depth (NASA figure); ~4 billion years; buried dense mass.</li>
+<li id="s-spa2"><a href="https://science.nasa.gov/image-detail/20100409/">NASA Science: South Pole-Aitken Basin (LOLA map)</a> - deepest basin, more than 8 km; lower crust may be exposed.</li>
+<li id="s-reuters-ce7"><a href="https://www.reuters.com/science/china-hunts-lunar-ice-one-solar-systems-coldest-places-2026-08-21/">Reuters (21 Aug 2026): China hunts for lunar ice</a> - PSRs down to -203 &#176;C (NASA); near-constant sunlight on rims; resources; outpost logic.</li>
+<li id="s-phys-ce7"><a href="https://phys.org/news/2026-08-china-moon-mission-ice.html">Phys.org (21 Aug 2026), R. de Grijs: China is launching a moon mission to find water ice</a> - amount, depth and form of the ice unknown; below -200 &#176;C; IM-2 hopper.</li>
+<li id="s-aljaz"><a href="https://www.aljazeera.com/news/2026/8/22/chinas-new-moon-mission-could-unlock-secret-of-lunar-ice-why-that-matters">Al Jazeera (22 Aug 2026): China's new moon mission could unlock secret of lunar ice</a> - Luna-25 crash; Outer Space Treaty; uses of ice.</li>
+<li id="s-planetary-ce7"><a href="https://www.planetary.org/space-missions/change-7">The Planetary Society: Chang'e-7</a> - orbiter, lander, rover, hopper; Shackleton rim; ILRS.</li>
+<li id="s-ap-ce7"><a href="https://apnews.com/article/china-space-lunar-probe-mission-ae23e66a64dadfdea1c7baadcc1f4da8">AP (23 Aug 2026): China postpones Chang'e-7 launch</a> - "cannot take place during the planned window this year"; Chang'e-6 far-side samples.</li>
+<li id="s-nasa-ch1"><a href="https://science.nasa.gov/mission/chandrayaan-1/">NASA Science: Chandrayaan-1 / Moon Impact Probe</a> - launch 22 Oct 2008 on PSLV-C11; 100 km orbit; MIP impact 14 Nov 2008; instruments; end 28 Aug 2009; ~95% of objectives met.</li>
+<li id="s-chace"><a href="https://www.vssc.gov.in/CHACE_payload.html">VSSC: CHACE on Chandrayaan-1</a> - direct evidence of H<sub>2</sub>O in the sunlit lunar exosphere.</li>
+<li id="s-ch2upd"><a href="https://www.isro.gov.in/Chandrayaan%20-%202%20Latest%20Update.html">ISRO: Chandrayaan-2 Latest Update (Sep 2019)</a> - descent normal to about 2 km; 90-95% of objectives; orbiter life ~7 years.</li>
+<li id="s-toi-ch2"><a href="https://timesofindia.indiatimes.com/india/chandrayaan-2-orbiter-is-still-alive-and-helping-in-subsequent-future-lunar-missions-sr-indian-scientist/articleshow/134027901.cms">Times of India (11 Sep 2026): Chandrayaan-2 orbiter still alive</a> - PRL director; OHRC 0.25-0.32 m; lunar-night heating work.</li>
+<li id="s-ch3det"><a href="https://www.isro.gov.in/Chandrayaan3_Details.html">ISRO: Chandrayaan-3 Details</a> - objectives; modules; masses; power; communication links; payload list; landing site 69.367621 S, 32.348126 E.</li>
+<li id="s-ch3pm"><a href="https://www.isro.gov.in/ISRO_EN/Ch3_Propulsion_Module_moved_from_Lunar_orbit_to_Earth_orbit.html">ISRO (4 Dec 2023): Chandrayaan-3 Propulsion Module moved from lunar orbit to Earth orbit</a> - launch on LVM3-M4; objectives met; SHAPE; over 100 kg of fuel left; sample-return rehearsal.</li>
+<li id="s-toi-link"><a href="https://timesofindia.indiatimes.com/city/bengaluru/welcome-buddy-vikram-linked-with-ch-2-orbiter/articleshow/102921557.cms">Times of India (22 Aug 2023): Vikram linked with the Chandrayaan-2 orbiter</a> - landing scheduled for 6.04 pm; communication roles of each module.</li>
+<li id="s-rhu"><a href="https://timesofindia.indiatimes.com/science/nuclear-energy-keeps-chandrayaan-3-propulsion-module-going/articleshow/104834737.cms">Times of India (31 Oct 2023): Nuclear energy keeps Chandrayaan-3 propulsion module going</a> - two BARC RHUs on the PM; not on the lander or rover because of mass.</li>
+<li id="s-chaste-tnie"><a href="https://www.newindianexpress.com/states/karnataka/2023/aug/27/isro-releases-graph-of-temperature-variation-on-lunar-surface-measured-by-chandrayaan-3s-payload-2609247.html">The New Indian Express (27 Aug 2023): ISRO releases graph of lunar temperature variation</a> - probe to 10 cm; 10 sensors; ~-10 &#176;C at 80 mm; ~50 &#176;C at the topsoil.</li>
+<li id="s-chaste-mnras"><a href="https://academic.oup.com/mnras/article/538/4/2330/8052793">Renju et al., MNRAS 538 (2025): High-resolution thermal profiles from ChaSTE</a> - 69.36&#176; S; gradient 3.8 K/cm; lander effects ~40%; night below 100 K at the equator.</li>
+<li id="s-ilsa"><a href="https://www.livemint.com/science/news/chandrayaan3-lander-instruments-detect-natural-movement-details-here-11693495035695.html">Mint (31 Aug 2023): Chandrayaan-3 lander instruments detect "natural" movement</a> - ILSA is a MEMS instrument with six accelerometers; event of 26 Aug; RAMBHA-LP first measurements.</li>
+<li id="s-rambha"><a href="https://www.isro.gov.in/Chandrayaan3RAMBHALP_GroundTruth.html">ISRO (9 Dec 2025): RAMBHA-LP delivers ground truth on the Moon's plasma environment</a> - 380-600 electrons per cm<sup>3</sup>; 3,000-8,000 K; magnetotail.</li>
+<li id="s-lra"><a href="https://www.isro.gov.in/Chandrayaan-3_lander_Instrument.html">ISRO (19 Jan 2024): Instrument on Chandrayaan-3 lander serving as a location marker</a> - NASA LRA; 8 corner cubes; 20 g; LRO ranging on 12 Dec 2023.</li>
+<li id="s-lra-nasa"><a href="https://science.nasa.gov/missions/lro/laser-instrument-on-nasas-lro-successfully-pings-indian-moon-lander/">NASA (18 Jan 2024): LRO successfully "pings" Indian Moon lander</a></li>
+<li id="s-libs"><a href="https://www.isro.gov.in/ISRO_EN/LIBSResults.html">ISRO (Aug 2023): LIBS confirms sulphur on the lunar surface</a> - elements found; developed at LEOS.</li>
+<li id="s-apxs"><a href="https://www.isro.gov.in/Ch3_APXS_volatile_measurements.html">ISRO (30 Apr 2025): Primitive mantle material revealed by Chandrayaan-3 APXS</a> - sulphur excess; SPA-excavated troilite; Nature 2024 magma-ocean result; first landing in the south polar region.</li>
+<li id="s-cosmos"><a href="https://www.cosmoslens.com/articles/chandrayaan-3-findings-explained">CosmosLens (10 Nov 2026): What Chandrayaan-3 found</a> - secondary summary of ChaSTE (2025), ILSA (Icarus) and sleep in early Sep 2023; used only where marked secondary.</li>
+<li id="s-slim"><a href="https://www.nasa.gov/missions/lro/nasas-lro-spots-japans-moon-lander/">NASA (26 Jan 2024): LRO spots Japan's Moon lander</a> - SLIM at 13.3160&#176; S; Japan the fifth nation to soft-land.</li>
+<li id="s-im1"><a href="https://www.nasa.gov/missions/lro/nasas-lro-images-intuitive-machines-odysseus-lander/">NASA (26 Feb 2024): LRO images Intuitive Machines' Odysseus</a> - 80.13&#176; S, near Malapert A.</li>
+<li id="s-pib-ch4"><a href="https://pib.gov.in/PressReleasePage.aspx?PRID=2055989">PIB (18 Sep 2024): Cabinet approves Chandrayaan-4</a> - Rs 2,104.06 crore; two LVM3 launches; 36 months; BAS by 2035 and a landing by 2040; curation facilities.</li>
+<li id="s-it-ch4"><a href="https://www.indiatoday.in/science/story/isro-mission-timeline-chandrayaan-4-nglv-venus-orbiter-bas-moon-landing-2040-bharatiya-antarikish-station-2888691-2026-03-29">India Today (29 Mar 2026): ISRO's mission timeline</a> - Chandrayaan-4 in October 2027 per the Rajya Sabha committee; five modules; up to 3 kg; spending lag.</li>
+<li id="s-sn-ch4"><a href="https://spacenexus.us/moon/missions/chandrayaan-4">SpaceNexus: Chandrayaan-4 launch date and status (reviewed 3 Nov 2026)</a> - "by 2028" (ISRO chairman, 11 Dec 2025); secondary tracker.</li>
+<li id="s-sls-ch4"><a href="https://www.spacelaunchschedule.com/launch/lvm-3-chandrayaan-4-first-launch/">Space Launch Schedule: Chandrayaan-4 first launch</a> - first launch DM + AM, second TM + RM + PM; secondary.</li>
+<li id="s-lupex-jaxa"><a href="https://humans-in-space.jaxa.jp/future/lupex/">JAXA: LUPEX special site (Japanese)</a> - FY2028 on H3; ~100 days (up to 1 year); NASA NS on the rover (6 Nov 2026 notice).</li>
+<li id="s-lupex-wiki"><a href="https://en.wikipedia.org/wiki/Lunar_Polar_Exploration_Mission">Wikipedia: Lunar Polar Exploration Mission</a> - Indian approval March 2025; H3-24L; no RHU on the rover; secondary.</li>
+<li id="s-artemis2"><a href="https://www.nasa.gov/mission/artemis-ii/">NASA: Artemis II</a> - launched 1 Apr 2026; splashdown 10 Apr 2026; crew.</li>
+<li id="s-brit-a2"><a href="https://www.britannica.com/topic/Artemis-II">Britannica: Artemis II (updated Nov 2026)</a> - 406,771 km record; Artemis III 2027 and Artemis IV 2028 plans.</li>
+<li id="s-pyq23"><a href="https://superkalam.com/upsc-mains/previous-year-question-paper/2023/what-is-the-main-task-of-indias-third-moon-mission-which-could-not-be-achieved-in-its-earlier-mission-list-the-countries-4699a901-2272-4113-b9bd-83fd991a5481">SuperKalam: UPSC Mains 2023 GS-III question on the third moon mission</a> - secondary; 15 marks.</li>
+<li id="s-pyq23b"><a href="https://iasboard.com/pyq/mains/gs3/2023">IAS Board: UPSC Mains 2023 GS Paper 3, all 20 questions</a> - secondary; Q9, 15 marks.</li>
+</ol>
+</section>
+</main>
+</body>
+</html>

@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Science and Technology - Class Notes | 11 November 2026</title>
+<style>
+  * { box-sizing: border-box; }
+  body { font-family: Calibri, sans-serif; font-size: 11pt; line-height: 1.6; max-width: 900px; margin: 20px auto; padding: 0 20px; color: #202124; }
+  h1 { font-size: 20pt; color: #1a1a1a; border-bottom: 2px solid #333; padding-bottom: 4px; margin-top: 30px; }
+  h2 { font-size: 16pt; color: #2b2b2b; margin-top: 28px; border-bottom: 1px solid #ddd; padding-bottom: 3px; }
+  h3 { font-size: 13pt; color: #3a3a3a; margin-top: 18px; }
+  p { margin: 8px 0; }
+  ul, ol { margin: 6px 0; padding-left: 28px; }
+  li { margin: 4px 0; }
+  a { color: #005ea6; overflow-wrap: anywhere; }
+  table { border-collapse: collapse; width: 100%; margin: 10px 0; table-layout: fixed; }
+  caption { text-align: left; font-weight: bold; margin-bottom: 6px; }
+  th, td { border: 1px solid #999; padding: 6px 10px; text-align: left; vertical-align: top; overflow-wrap: anywhere; }
+  th { background: #f0f0f0; }
+  .table-wrap { overflow-x: auto; }
+  .note, .exam, .verification { background: #fff8e1; border-left: 3px solid #f5a623; padding: 8px 12px; margin: 10px 0; overflow-wrap: anywhere; }
+  .correction { background: #fff3e0; border-left: 3px solid #ef6c00; padding: 8px 12px; margin: 10px 0; }
+  .additional, .lead { background: #e8f5e9; border-left: 3px solid #2e7d32; padding: 8px 12px; margin: 10px 0; }
+  .flow { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 10px; padding: 12px 0; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; }
+  .flow span { text-align: center; max-width: 100%; }
+  .flow .box { border: 1px solid #888; background: #f7f7f7; padding: 6px 10px; border-radius: 4px; flex: 1 1 120px; }
+  figure { margin: 16px 0; padding: 12px; border: 1px solid #bbb; background: #fff; }
+  figure h3 { margin-top: 0; text-align: center; }
+  figcaption { margin-top: 8px; color: #555; font-size: 9.5pt; }
+  svg { max-width: 100%; height: auto; display: block; margin: 0 auto; }
+  .cols2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  .cols3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+  .cols4 { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
+  .tile { border: 1px solid #888; border-radius: 4px; padding: 8px; background: #f5f9fd; font-size: 10.5pt; }
+  .tile.p1 { background: #e8f5e9; border-color: #2e7d32; }
+  .tile.p2 { background: #f5f9fd; border-color: #0078d4; }
+  .tile.p3 { background: #fff3e0; border-color: #ef6c00; }
+  .tile.p4 { background: #fdecea; border-color: #c62828; }
+  .small { color: #555; font-size: 9.5pt; }
+  .answer { margin: 10px 0; padding: 6px 12px; border-left: 3px solid #0078d4; background: #f5f9fd; }
+  @media (max-width: 650px) {
+    body { padding: 0 12px; }
+    .cols2, .cols3, .cols4 { grid-template-columns: 1fr; }
+    .flow { flex-direction: column; align-items: stretch; }
+    .flow .box { flex: none; }
+    th, td { padding: 6px; }
+  }
+  @media print {
+    @page { size: A4; margin: 14mm; }
+    body { max-width: none; margin: 0; padding: 0; }
+    h1, h2, h3 { break-after: avoid; }
+    figure, tr, .answer, .tile { break-inside: avoid; }
+    thead { display: table-header-group; }
+    .table-wrap { overflow: visible; }
+    a { color: inherit; text-decoration: none; }
+    p, li { orphans: 3; widows: 3; }
+  }
+</style>
+</head>
+<body>
+<main>
+<header>
+<h1>Science and Technology - Class Notes | 11 November 2026</h1>
+<p><strong>Topics:</strong> Physics and astronomy:</p>
+<ul>
+<li><strong>gravitational waves</strong>: general relativity and its tests, sources, why they matter;</li>
+<li><strong>detectors</strong>: LIGO and how it works, the global network, LIGO-India, LILA, LISA (eLISA), pulsar timing arrays;</li>
+<li><strong>life cycle of stars and formation of black holes</strong>: giants and supergiants, white dwarfs, core-collapse supernovae, neutron stars, pulsars and magnetars;</li>
+<li><strong>black holes</strong>: parts, Event Horizon Telescope images, active galactic nuclei, quasars and neutrinos;</li>
+<li>Lunar Exploration (heading only).</li>
+</ul>
+<p class="small">Note date: <time datetime="2026-11-11">11 November 2026</time>. <strong>Continuation:</strong> this note continues the <a href="Science%20and%20Technology%20-%20Class%2011-10-2026.html">previous note (file dated 11-10-2026)</a>.</p>
+<ul class="small">
+<li>That note ended with <strong>Section 64 ("Gravitational Waves")</strong> as a placeholder and used Section 65 for its status table.</li>
+<li>Today's material therefore <strong>completes Section 64</strong> and adds <strong>Section 65</strong> (stars and black holes) and <strong>Section 66</strong> ("Lunar Exploration", a placeholder for the next class). The status table is <strong>Section 67</strong>.</li>
+<li>Figures continue from <strong>Figure 70</strong> and corrections from <strong>c90</strong>. Earlier notes are untouched.</li>
+</ul>
+<p class="note"><strong>Reading key:</strong> <strong>[Correction]</strong> repairs a substantive claim; <strong>[Additional]</strong> marks supporting material or study guidance; <strong>[Verification Required]</strong> keeps useful but unresolved material.</p>
+<ul class="small">
+<li><strong>Dates:</strong> the class date is 11 November 2026. Sources were consulted on <strong>20 November 2026</strong>, and statuses are stated <strong>as of 20 November 2026</strong>.</li>
+<li><strong>Sources read in relevant part:</strong> LIGO/Caltech, GWOSC, NobelPrize.org, PIB (2023), the IGWN observing-plan page (15 Nov 2026), KAGRA, ESA (LISA), Vanderbilt and arXiv (LILA), APS Physics and arXiv (PTA, GW250114), EHT and MIT News, IceCube, OpenStax Astronomy and the IAU Office of Astronomy for Development.</li>
+<li><strong>Limits:</strong> most sources were read as <strong>search-result extracts or summaries</strong>, not full documents. Official UPSC papers were not opened. Facts marked <strong>&#8224;</strong> are standard textbook values not re-checked in this session.</li>
+<li><strong>Silent fixes:</strong> spelling and typing repairs ("Ligo", "Livingstone, Luisiana", "Reiner S Weis", "Bary", "elngate", "propisitions", "erpendicular", "potot", "consecuently", "Scheaarzchild", "acresion", "egiant", "gallactic", "magnetor", "starte", "Hmm of the universe") were made without markers.</li>
+</ul>
+</header>
+
+<section id="gw">
+<h2>64. Gravitational Waves and LIGO (completes the Section 64 placeholder)</h2>
+<p class="small">The <a href="Science%20and%20Technology%20-%20Class%2011-10-2026.html#gw">previous note</a> ended with this heading as a placeholder; today's class fills it.</p>
+
+<h3 id="gw-gr">64.1 General relativity - gravity as curved space-time</h3>
+<ul>
+<li>According to Einstein's <strong>general theory of relativity (1915)</strong>, gravity is not a force acting at a distance. It is the <strong>curvature of space-time produced by mass and energy</strong>, and objects move along the curves. Light bent by gravity was already covered in <a href="Science%20and%20Technology%20-%20Class%2011-10-2026.html#fig63">previous note, Figure 63</a>.</li>
+</ul>
+<div class="table-wrap"><table>
+<caption>Evidence for general relativity named in class, with corrected wording</caption>
+<thead><tr><th scope="col" style="width:26%">Evidence</th><th scope="col">What is observed</th></tr></thead>
+<tbody>
+<tr><td>1. Gravitational redshift</td><td>Light climbing out of a strong gravitational field loses energy, so its wavelength becomes longer. This is different from the <strong>cosmological</strong> redshift caused by expansion (<a href="Science%20and%20Technology%20-%20Class%2011-10-2026.html#de-evidence">previous note, Section 60.9</a>).</td></tr>
+<tr><td>2. Gravitational lensing</td><td>Mass bends the path of light from a source behind it (<a href="Science%20and%20Technology%20-%20Class%2011-10-2026.html#fig63">previous note, Figure 63</a>).</td></tr>
+<tr><td>3. Precession of Mercury's perihelion</td><td>The point of Mercury's orbit closest to the Sun shifts slightly every orbit. Newton's theory could not fully explain the shift; general relativity accounts for the extra amount (about 43 arc-seconds per century &#8224;).</td></tr>
+<tr><td>4. Gravitational waves</td><td>Indirect evidence came from the Hulse-Taylor binary pulsar (found in 1974; Nobel Prize 1993). The first direct detection was <strong>GW150914</strong> in 2015 (<a href="#s-gw150914">LIGO</a>).</td></tr>
+<tr><td>[Additional] Others</td><td>The radar time delay of signals passing the Sun (Shapiro delay) and frame dragging &#8224;. Black-hole images match general relativity (<a href="#eht">Section 65.8</a>).</td></tr>
+</tbody></table></div>
+<p class="correction" id="c90"><strong>[Correction]</strong> <strong>"Red shift"</strong>: the general-relativity test is the <strong>gravitational</strong> redshift. The redshift of distant galaxies shows that the universe is expanding, not that general relativity is correct. <strong>"Change in the orbit of Mercury"</strong>: the test is the <strong>precession (slow rotation) of Mercury's perihelion</strong>, not any change in the orbit.</p>
+
+<h3 id="gw-what">64.2 What gravitational waves are</h3>
+<ul>
+<li><strong>Gravitational waves (GWs)</strong> are <strong>ripples in space-time</strong> produced when masses accelerate. Nobel Prize material describes them as <strong>"like ripples in a four-dimensional spacetime that occur when objects with mass accelerate"</strong> (<a href="#s-weiss">NobelPrize.org</a>).</li>
+<li><strong>Analogy:</strong> an accelerating electric charge radiates electromagnetic waves; an accelerating mass radiates gravitational waves. The analogy has a limit: the mass must accelerate <strong>unevenly (asymmetrically)</strong>. A perfectly spherical collapse or a smooth, symmetric spinning body emits none &#8224;.</li>
+<li><strong>Properties:</strong>
+<ul>
+<li>They travel at the <strong>speed of light</strong>.</li>
+<li>They are <strong>transverse</strong>: they stretch and squeeze space at right angles to their direction of travel.</li>
+<li>They have two polarisations, called "plus" and "cross".</li>
+<li>They pass through matter almost unaffected, so they carry undistorted information about their source.</li>
+<li>The effect is tiny: the <strong>strain</strong> (h = &#916;L/L) at Earth is about <strong>10<sup>-21</sup></strong> (<a href="#s-gw250114b">APS Physics</a>).</li>
+</ul></li>
+<li><strong>Worked numbers:</strong> &#916;L = h &#215; L = 10<sup>-21</sup> &#215; 4,000 m = 4 &#215; 10<sup>-18</sup> m. That is about one-thousandth of a proton's diameter, which is how LIGO describes the 2015 signal (<a href="#s-gw150914">LIGO</a>).</li>
+<li>Gravitational waves from many unresolved sources overlap all the time, forming a <strong>background</strong> that "washes" through the universe continuously (<a href="#gw-pta">Section 64.12</a>).</li>
+</ul>
+<p class="correction" id="c91"><strong>[Correction]</strong> <strong>"Grav waves are repulse of space time"</strong>: they are <strong>ripples</strong> (oscillating distortions) of space-time. Nothing is repelled. Space is alternately stretched and squeezed.</p>
+
+<figure id="fig70">
+<h3>Figure 70. How a Passing Gravitational Wave Distorts a Ring of Free Particles (plus polarisation; schematic, hugely exaggerated)</h3>
+<svg viewBox="0 0 900 300" role="img" aria-label="Effect of a passing gravitational wave on a ring of free test particles, plus polarisation, schematic and hugely exaggerated. The wave travels into the page, perpendicular to the ring. Over one cycle the ring goes from circle, to stretched horizontally and squeezed vertically, back to circle, to stretched vertically and squeezed horizontally, and back to circle. Stretching and squeezing are perpendicular to each other and to the direction of travel."><defs><marker id="f70-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#555"/></marker></defs><g font-family="Calibri, sans-serif"><ellipse cx="95" cy="130" rx="60.0" ry="60.0" fill="#f5f9fd" stroke="#0078d4" stroke-width="1.5" stroke-dasharray="3 3"/><circle cx="155.0" cy="130.0" r="4.5" fill="#ef6c00" stroke="#bf360c" stroke-width="1" /><circle cx="147.0" cy="160.0" r="4.5" fill="#ef6c00" stroke="#bf360c" stroke-width="1" /><circle cx="125.0" cy="182.0" r="4.5" fill="#ef6c00" stroke="#bf360c" stroke-width="1" /><circle cx="95.0" cy="190.0" r="4.5" fill="#ef6c00" stroke="#bf360c" stroke-width="1" /><circle cx="65.0" cy="182.0" r="4.5" fill="#ef6c00" stroke="#bf360c" stroke-width="1" /><circle cx="43.0" cy="160.0" r="4.5" fill="#ef6c00" stroke="#bf360c" stroke-width="1" /><circle cx="35.0" cy="130.0" r="4.5" fill="#ef6c00" stroke="#bf360c" stroke-width="1" /><circle cx="43.0" cy="100.0" r="4.5" fill="#ef6c00" stroke="#bf360c" stroke-width="1" /><circle cx="65.0" cy="78.0" r="4.5" fill="#ef6c00" stroke="#bf360c" stroke-width="1" /><circle cx="95.0" cy="70.0" r="4.5" fill="#ef6c00" stroke="#bf360c" stroke-width="1" /><circle cx="125.0" cy="78.0" r="4.5" fill="#ef6c00" stroke="#bf360c" stroke-width="1" /><circle cx="147.0" cy="100.0" r="4.5" fill="#ef6c00" stroke="#bf360c" stroke-width="1" /><circle cx="95" cy="130" r="3" fill="#555" stroke="#555" stroke-width="1" /><text x="95" y="40" font-size="13" text-anchor="middle" fill="#202124" font-weight="bold">Phase 0</text><text x="95" y="222" font-size="11.5" text-anchor="middle" fill="#555">circle</text><ellipse cx="272" cy="130" rx="79.2" ry="40.8" fill="#f5f9fd" stroke="#0078d4" stroke-width="1.5" stroke-dasharray="3 3"/><circle cx="351.2" cy="130.0" r="4.5" fill="#ef6c00" stroke="#bf360c" stroke-width="1" /><circle cx="340.6" cy="150.4" r="4.5" fill="#ef6c00" stroke="#bf360c" stroke-width="1" /><circle cx="311.6" cy="165.3" r="4.5" fill="#ef6c00" stroke="#bf360c" stroke-width="1" /><circle cx="272.0" cy="170.8" r="4.5" fill="#ef6c00" stroke="#bf360c" stroke-width="1" /><circle cx="232.4" cy="165.3" r="4.5" fill="#ef6c00" stroke="#bf360c" stroke-width="1" /><circle cx="203.4" cy="150.4" r="4.5" fill="#ef6c00" stroke="#bf360c" stroke-width="1" /><circle cx="192.8" cy="130.0" r="4.5" fill="#ef6c00" stroke="#bf360c" stroke-width="1" /><circle cx="203.4" cy="109.6" r="4.5" fill="#ef6c00" stroke="#bf360c" stroke-width="1" /><circle cx="232.4" cy="94.7" r="4.5" fill="#ef6c00" stroke="#bf360c" stroke-width="1" /><circle cx="272.0" cy="89.2" r="4.5" fill="#ef6c00" stroke="#bf360c" stroke-width="1" /><circle cx="311.6" cy="94.7" r="4.5" fill="#ef6c00" stroke="#bf360c" stroke-width="1" /><circle cx="340.6" cy="109.6" r="4.5" fill="#ef6c00" stroke="#bf360c" stroke-width="1" /><circle cx="272" cy="130" r="3" fill="#555" stroke="#555" stroke-width="1" /><text x="272" y="40" font-size="13" text-anchor="middle" fill="#202124" font-weight="bold">Quarter cycle</text><text x="272" y="222" font-size="11.5" text-anchor="middle" fill="#c62828">stretch left-right</text><text x="272" y="238" font-size="11.5" text-anchor="middle" fill="#1565c0">squeeze up-down</text><ellipse cx="449" cy="130" rx="60.0" ry="60.0" fill="#f5f9fd" stroke="#0078d4" stroke-width="1.5" stroke-dasharray="3 3"/><circle cx="509.0" cy="130.0" r="4.5" fill="#ef6c00" stroke="#bf360c" stroke-width="1" /><circle cx="501.0" cy="160.0" r="4.5" fill="#ef6c00" stroke="#bf360c" stroke-width="1" /><circle cx="479.0" cy="182.0" r="4.5" fill="#ef6c00" stroke="#bf360c" stroke-width="1" /><circle cx="449.0" cy="190.0" r="4.5" fill="#ef6c00" stroke="#bf360c" stroke-width="1" /><circle cx="419.0" cy="182.0" r="4.5" fill="#ef6c00" stroke="#bf360c" stroke-width="1" /><circle cx="397.0" cy="160.0" r="4.5" fill="#ef6c00" stroke="#bf360c" stroke-width="1" /><circle cx="389.0" cy="130.0" r="4.5" fill="#ef6c00" stroke="#bf360c" stroke-width="1" /><circle cx="397.0" cy="100.0" r="4.5" fill="#ef6c00" stroke="#bf360c" stroke-width="1" /><circle cx="419.0" cy="78.0" r="4.5" fill="#ef6c00" stroke="#bf360c" stroke-width="1" /><circle cx="449.0" cy="70.0" r="4.5" fill="#ef6c00" stroke="#bf360c" stroke-width="1" /><circle cx="479.0" cy="78.0" r="4.5" fill="#ef6c00" stroke="#bf360c" stroke-width="1" /><circle cx="501.0" cy="100.0" r="4.5" fill="#ef6c00" stroke="#bf360c" stroke-width="1" /><circle cx="449" cy="130" r="3" fill="#555" stroke="#555" stroke-width="1" /><text x="449" y="40" font-size="13" text-anchor="middle" fill="#202124" font-weight="bold">Half cycle</text><text x="449" y="222" font-size="11.5" text-anchor="middle" fill="#555">circle</text><ellipse cx="626" cy="130" rx="40.8" ry="79.2" fill="#f5f9fd" stroke="#0078d4" stroke-width="1.5" stroke-dasharray="3 3"/><circle cx="666.8" cy="130.0" r="4.5" fill="#ef6c00" stroke="#bf360c" stroke-width="1" /><circle cx="661.3" cy="169.6" r="4.5" fill="#ef6c00" stroke="#bf360c" stroke-width="1" /><circle cx="646.4" cy="198.6" r="4.5" fill="#ef6c00" stroke="#bf360c" stroke-width="1" /><circle cx="626.0" cy="209.2" r="4.5" fill="#ef6c00" stroke="#bf360c" stroke-width="1" /><circle cx="605.6" cy="198.6" r="4.5" fill="#ef6c00" stroke="#bf360c" stroke-width="1" /><circle cx="590.7" cy="169.6" r="4.5" fill="#ef6c00" stroke="#bf360c" stroke-width="1" /><circle cx="585.2" cy="130.0" r="4.5" fill="#ef6c00" stroke="#bf360c" stroke-width="1" /><circle cx="590.7" cy="90.4" r="4.5" fill="#ef6c00" stroke="#bf360c" stroke-width="1" /><circle cx="605.6" cy="61.4" r="4.5" fill="#ef6c00" stroke="#bf360c" stroke-width="1" /><circle cx="626.0" cy="50.8" r="4.5" fill="#ef6c00" stroke="#bf360c" stroke-width="1" /><circle cx="646.4" cy="61.4" r="4.5" fill="#ef6c00" stroke="#bf360c" stroke-width="1" /><circle cx="661.3" cy="90.4" r="4.5" fill="#ef6c00" stroke="#bf360c" stroke-width="1" /><circle cx="626" cy="130" r="3" fill="#555" stroke="#555" stroke-width="1" /><text x="626" y="40" font-size="13" text-anchor="middle" fill="#202124" font-weight="bold">Three-quarter</text><text x="626" y="222" font-size="11.5" text-anchor="middle" fill="#c62828">stretch up-down</text><text x="626" y="238" font-size="11.5" text-anchor="middle" fill="#1565c0">squeeze left-right</text><ellipse cx="803" cy="130" rx="60.0" ry="60.0" fill="#f5f9fd" stroke="#0078d4" stroke-width="1.5" stroke-dasharray="3 3"/><circle cx="863.0" cy="130.0" r="4.5" fill="#ef6c00" stroke="#bf360c" stroke-width="1" /><circle cx="855.0" cy="160.0" r="4.5" fill="#ef6c00" stroke="#bf360c" stroke-width="1" /><circle cx="833.0" cy="182.0" r="4.5" fill="#ef6c00" stroke="#bf360c" stroke-width="1" /><circle cx="803.0" cy="190.0" r="4.5" fill="#ef6c00" stroke="#bf360c" stroke-width="1" /><circle cx="773.0" cy="182.0" r="4.5" fill="#ef6c00" stroke="#bf360c" stroke-width="1" /><circle cx="751.0" cy="160.0" r="4.5" fill="#ef6c00" stroke="#bf360c" stroke-width="1" /><circle cx="743.0" cy="130.0" r="4.5" fill="#ef6c00" stroke="#bf360c" stroke-width="1" /><circle cx="751.0" cy="100.0" r="4.5" fill="#ef6c00" stroke="#bf360c" stroke-width="1" /><circle cx="773.0" cy="78.0" r="4.5" fill="#ef6c00" stroke="#bf360c" stroke-width="1" /><circle cx="803.0" cy="70.0" r="4.5" fill="#ef6c00" stroke="#bf360c" stroke-width="1" /><circle cx="833.0" cy="78.0" r="4.5" fill="#ef6c00" stroke="#bf360c" stroke-width="1" /><circle cx="855.0" cy="100.0" r="4.5" fill="#ef6c00" stroke="#bf360c" stroke-width="1" /><circle cx="803" cy="130" r="3" fill="#555" stroke="#555" stroke-width="1" /><text x="803" y="40" font-size="13" text-anchor="middle" fill="#202124" font-weight="bold">Full cycle</text><text x="803" y="222" font-size="11.5" text-anchor="middle" fill="#555">circle</text><text x="450" y="272" font-size="13" text-anchor="middle" fill="#202124" font-weight="bold">Wave travels INTO the page (perpendicular to the ring): GWs are transverse.</text><text x="450" y="292" font-size="11.5" text-anchor="middle" fill="#555">Real strain at Earth ~10^-21: a 4 km arm changes by ~10^-18 m. Distortion shown is exaggerated about 10^20 times.</text></g></svg>
+<figcaption>Over one wave cycle, the ring stretches along one direction while it squeezes along the perpendicular one, then the reverse. Both effects are perpendicular to the direction of travel (into the page). An L-shaped detector with perpendicular arms is built to catch exactly this pattern (<a href="#fig72">Figure 72</a>). This is an original drawing based on the standard description (<a href="#s-weiss">NobelPrize.org</a>; <a href="#s-gw150914">LIGO</a>). The strain is exaggerated about 10<sup>20</sup> times.</figcaption>
+</figure>
+
+<h3 id="gw-src">64.3 Sources of gravitational waves</h3>
+<div class="table-wrap"><table>
+<caption>Sources named in class, grouped by signal type, with detection status as of 20 Nov 2026</caption>
+<thead><tr><th scope="col" style="width:24%">Signal type</th><th scope="col">Sources (class list A-F)</th><th scope="col" style="width:30%">Detected?</th></tr></thead>
+<tbody>
+<tr><td><strong>Compact binary inspiral and merger</strong> ("chirp")</td><td>
+<ul>
+<li>(A) and (F): black holes orbiting each other and colliding (binary black holes).</li>
+<li>(B): a neutron star merging with a black hole.</li>
+<li>(C): two neutron stars (binary neutron stars).</li>
+</ul></td><td><strong>Yes</strong>:
+<ul>
+<li>Binary black holes since 2015.</li>
+<li>Binary neutron stars: GW170817 (2017), also seen in light &#8224;.</li>
+<li>Neutron star-black hole mergers, for example GW230529 (<a href="#s-o4end">Gravity Spy</a>).</li>
+</ul></td></tr>
+<tr><td><strong>Continuous</strong></td><td>(D) A <strong>pulsar</strong> (spinning neutron star) with a small bump or asymmetry</td><td>Predicted; <strong>no confirmed detection</strong> in the sources consulted</td></tr>
+<tr><td><strong>Burst</strong></td><td>(E) A core-collapse <strong>supernova</strong> if the explosion is asymmetric; also unknown sources</td><td>Predicted; <strong>no confirmed detection</strong></td></tr>
+<tr><td><strong>Stochastic background</strong> [Additional]</td><td>Many supermassive black-hole binaries; possibly the early universe</td><td><strong>Evidence</strong> from pulsar timing arrays in 2023, not yet a 5-sigma detection (<a href="#gw-pta">64.12</a>)</td></tr>
+</tbody></table></div>
+<p class="correction" id="c92"><strong>[Correction]</strong> Two corrections to the source list:</p>
+<ul>
+<li><strong>"Two neutron stars known as binary star"</strong>: the correct term is a <strong>binary neutron star</strong>. A "binary star" is any pair of stars orbiting each other.</li>
+<li><strong>"Motion of black holes around each other"</strong> (F) is the <strong>inspiral</strong> phase of the same black-hole collision listed as (A), not a separate source.</li>
+</ul>
+<p>Pulsars and supernovae are expected sources, but none had been detected as of the note date.</p>
+
+<h3 id="gw-why">64.4 Why gravitational waves matter</h3>
+<ul>
+<li><strong>Study compact objects:</strong> black holes, neutron stars and pulsars. Black-hole mergers give off no light, so gravitational waves are the only way to see them.</li>
+<li><strong>Test general relativity</strong> in strong gravity. Examples:
+<ul>
+<li>GW250114 (signal of 14 Jan 2025, published 10 Sep 2025) was the clearest signal yet. It confirmed <strong>Hawking's area theorem (1971)</strong> and that the remnant behaves like a <strong>Kerr (spinning) black hole</strong> (<a href="#s-gw250114">APS</a>).</li>
+<li>Its signal-to-noise ratio was 80, compared with 26 for GW150914 (<a href="#s-gw250114b">APS Physics</a>).</li>
+</ul></li>
+<li><strong>Matter under extreme temperature, pressure and density:</strong> neutron-star mergers probe the neutron-star "equation of state". GW170817 linked such mergers to the formation of heavy elements such as gold (kilonova) &#8224;.</li>
+<li><strong>Cosmology - dark energy and dark matter [Additional]:</strong> gravitational waves give the distance to their source directly ("standard sirens"), which gives an independent Hubble-constant measurement (<a href="#s-lisa">ESA</a>). Mass-gap and sub-solar-mass searches test dark-matter ideas such as primordial black holes (<a href="#s-lila">LILA white paper</a>). This is an indirect tool; gravitational waves do not "see" dark matter.</li>
+<li><strong>Multi-messenger astronomy [Additional]:</strong> the same event is studied through gravitational waves, light and neutrinos (<a href="#bh-agn">Section 65.9</a>).</li>
+</ul>
+
+<h3 id="gw-det">64.5 Ways to detect gravitational waves - the four options</h3>
+<div class="table-wrap"><table>
+<caption>Detector families compared (bands approximate)</caption>
+<thead><tr><th scope="col" style="width:15%">Detector</th><th scope="col" style="width:14%">Where</th><th scope="col" style="width:17%">Shape and baseline</th><th scope="col" style="width:16%">Band</th><th scope="col">Main sources</th><th scope="col" style="width:16%">Status (20 Nov 2026)</th></tr></thead>
+<tbody>
+<tr><td><strong>LIGO</strong>, Virgo, KAGRA (LIGO-India)</td><td>Ground</td><td>L-shaped; 3-4 km arms</td><td>~10 Hz to a few kHz</td><td>Stellar-mass black-hole and neutron-star mergers</td><td>Operating since 2015; between runs</td></tr>
+<tr><td><strong>LILA</strong></td><td>Moon's surface</td><td>L-shaped ~5 km (Pioneer), then ~40 km triangle (Horizon)</td><td>~0.1-10 Hz ("mid-band")</td><td>Early warning of mergers; intermediate-mass black holes</td><td><strong>Proposed</strong></td></tr>
+<tr><td><strong>LISA</strong> (eLISA in older texts)</td><td>Space, orbiting the Sun</td><td>Triangle of 3 spacecraft; 2.5 million km arms</td><td>~0.1 mHz-1 Hz</td><td>Merging massive black holes; white-dwarf binaries in the Milky Way</td><td>Adopted 2024; launch planned 2035</td></tr>
+<tr><td><strong>PTA</strong></td><td>Radio telescopes timing pulsars</td><td>Earth-pulsar distances (thousands of light-years)</td><td>Nanohertz</td><td>Supermassive black-hole binaries (background)</td><td>Evidence 2023</td></tr>
+</tbody></table></div>
+<p class="correction" id="c93"><strong>[Correction]</strong> The class names need three fixes:</p>
+<ul>
+<li><strong>"Lila"</strong> is <strong>LILA</strong>.</li>
+<li><strong>"eLisa"</strong> was the 2013-era name of the design. The mission ESA adopted in 2024 is called <strong>LISA</strong> (<a href="#s-lisa">ESA</a>).</li>
+<li><strong>LISA observes low frequencies (millihertz)</strong>. The <strong>extremely low</strong> (nanohertz) band belongs to pulsar timing arrays.</li>
+</ul>
+
+<figure id="fig71">
+<h3>Figure 71. The Gravitational-Wave Spectrum and the Detector for Each Band (logarithmic frequency axis; schematic)</h3>
+<svg viewBox="0 0 900 360" role="img" aria-label="The gravitational-wave spectrum and the detector that covers each band, schematic, logarithmic frequency axis from 10 to the minus 9 hertz to 10 to the 4 hertz. Pulsar timing arrays cover nanohertz, from supermassive black hole binaries, status evidence since 2023. LISA covers about 0.1 millihertz to 1 hertz, from massive black hole mergers and galactic white dwarf binaries, adopted by ESA in 2024 with launch planned for 2035. LILA, a proposed lunar detector, covers about 0.1 to 10 hertz. Ground detectors LIGO, Virgo, KAGRA and LIGO-India cover about 10 hertz to a few kilohertz, from stellar-mass black hole and neutron star mergers, operating since 2015."><defs><marker id="f71-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#555"/></marker></defs><g font-family="Calibri, sans-serif"><line x1="70" y1="250" x2="870" y2="250" stroke="#333" stroke-width="1.5" marker-end="url(#f71-ar)"/><line x1="70.0" y1="246" x2="70.0" y2="254" stroke="#333" stroke-width="1.2"/><text x="70.0" y="272" font-size="11" text-anchor="middle" fill="#202124">10^-9</text><line x1="130.0" y1="246" x2="130.0" y2="254" stroke="#333" stroke-width="1.2"/><line x1="190.0" y1="246" x2="190.0" y2="254" stroke="#333" stroke-width="1.2"/><text x="190.0" y="272" font-size="11" text-anchor="middle" fill="#202124">10^-7</text><line x1="250.0" y1="246" x2="250.0" y2="254" stroke="#333" stroke-width="1.2"/><line x1="310.0" y1="246" x2="310.0" y2="254" stroke="#333" stroke-width="1.2"/><text x="310.0" y="272" font-size="11" text-anchor="middle" fill="#202124">10^-5</text><line x1="370.0" y1="246" x2="370.0" y2="254" stroke="#333" stroke-width="1.2"/><line x1="430.0" y1="246" x2="430.0" y2="254" stroke="#333" stroke-width="1.2"/><text x="430.0" y="272" font-size="11" text-anchor="middle" fill="#202124">10^-3</text><line x1="490.0" y1="246" x2="490.0" y2="254" stroke="#333" stroke-width="1.2"/><line x1="550.0" y1="246" x2="550.0" y2="254" stroke="#333" stroke-width="1.2"/><text x="550.0" y="272" font-size="11" text-anchor="middle" fill="#202124">10^-1</text><line x1="610.0" y1="246" x2="610.0" y2="254" stroke="#333" stroke-width="1.2"/><text x="610.0" y="272" font-size="11" text-anchor="middle" fill="#202124">1</text><line x1="670.0" y1="246" x2="670.0" y2="254" stroke="#333" stroke-width="1.2"/><text x="670.0" y="272" font-size="11" text-anchor="middle" fill="#202124">10^1</text><line x1="730.0" y1="246" x2="730.0" y2="254" stroke="#333" stroke-width="1.2"/><line x1="790.0" y1="246" x2="790.0" y2="254" stroke="#333" stroke-width="1.2"/><text x="790.0" y="272" font-size="11" text-anchor="middle" fill="#202124">10^3</text><line x1="850.0" y1="246" x2="850.0" y2="254" stroke="#333" stroke-width="1.2"/><text x="850.0" y="272" font-size="11" text-anchor="middle" fill="#202124">10^4</text><text x="450" y="296" font-size="13" text-anchor="middle" fill="#202124" font-weight="bold">Frequency (Hz), logarithmic scale  &#8594;</text><rect x="70.0" y="70" width="120.0" height="56" rx="6" fill="#7e57c2" stroke="#7e57c2" stroke-width="1" fill-opacity="0.15"/><line x1="70.0" y1="126" x2="70.0" y2="246" stroke="#7e57c2" stroke-width="1" stroke-dasharray="3 3"/><line x1="190.0" y1="126" x2="190.0" y2="246" stroke="#7e57c2" stroke-width="1" stroke-dasharray="3 3"/><text x="130.0" y="87" font-size="12" text-anchor="middle" fill="#7e57c2" font-weight="bold">Pulsar Timing Arrays</text><text x="130.0" y="103" font-size="11.5" text-anchor="middle" fill="#202124">nanohertz</text><text x="130.0" y="119" font-size="11" text-anchor="middle" fill="#555">SMBH binaries</text><rect x="370.0" y="70" width="240.0" height="56" rx="6" fill="#1565c0" stroke="#1565c0" stroke-width="1" fill-opacity="0.15"/><line x1="370.0" y1="126" x2="370.0" y2="246" stroke="#1565c0" stroke-width="1" stroke-dasharray="3 3"/><line x1="610.0" y1="126" x2="610.0" y2="246" stroke="#1565c0" stroke-width="1" stroke-dasharray="3 3"/><text x="490.0" y="87" font-size="12" text-anchor="middle" fill="#1565c0" font-weight="bold">LISA (ESA-NASA, space)</text><text x="490.0" y="103" font-size="11.5" text-anchor="middle" fill="#202124">~0.1 mHz - 1 Hz</text><text x="490.0" y="119" font-size="11" text-anchor="middle" fill="#555">massive BH mergers; WD binaries</text><rect x="550.0" y="150" width="120.0" height="56" rx="6" fill="#ef6c00" stroke="#ef6c00" stroke-width="1" fill-opacity="0.15"/><line x1="550.0" y1="206" x2="550.0" y2="246" stroke="#ef6c00" stroke-width="1" stroke-dasharray="3 3"/><line x1="670.0" y1="206" x2="670.0" y2="246" stroke="#ef6c00" stroke-width="1" stroke-dasharray="3 3"/><text x="610.0" y="167" font-size="12" text-anchor="middle" fill="#ef6c00" font-weight="bold">LILA (Moon, proposed)</text><text x="610.0" y="183" font-size="11.5" text-anchor="middle" fill="#202124">~0.1 - 10 Hz</text><text x="610.0" y="199" font-size="11" text-anchor="middle" fill="#555">mid-band; early warning</text><rect x="670.0" y="70" width="162.0" height="56" rx="6" fill="#2e7d32" stroke="#2e7d32" stroke-width="1" fill-opacity="0.15"/><line x1="670.0" y1="126" x2="670.0" y2="246" stroke="#2e7d32" stroke-width="1" stroke-dasharray="3 3"/><line x1="832.0" y1="126" x2="832.0" y2="246" stroke="#2e7d32" stroke-width="1" stroke-dasharray="3 3"/><text x="751.0" y="87" font-size="12" text-anchor="middle" fill="#2e7d32" font-weight="bold">LIGO / Virgo / KAGRA</text><text x="751.0" y="103" font-size="11.5" text-anchor="middle" fill="#202124">~10 Hz - few kHz</text><text x="751.0" y="119" font-size="11" text-anchor="middle" fill="#555">stellar BH and NS mergers</text><text x="450" y="330" font-size="11.5" text-anchor="middle" fill="#555">Lower frequency = heavier, slower systems; longer baselines are needed (km on Earth, million km in space, kpc for pulsars).</text><text x="450" y="350" font-size="11.5" text-anchor="middle" fill="#555">Band edges are approximate; LILA band per its proposers; LIGO-India (under construction) joins the ground band.</text></g></svg>
+<figcaption>Each detector family listens to a different frequency band, much as radio, optical and X-ray telescopes cover different parts of the electromagnetic spectrum. Bands and sources are from <a href="#s-lisa">ESA (LISA)</a>, <a href="#s-lila">the LILA proposers</a>, <a href="#s-pta">APS Physics (PTA)</a> and <a href="#s-gw150914">LIGO</a>. Band edges are approximate, and LILA is a proposal.</figcaption>
+</figure>
+
+<h3 id="gw-net">64.6 LIGO and the global ground network</h3>
+<ul>
+<li><strong>LIGO</strong> (Laser Interferometer Gravitational-wave Observatory) is funded by the US NSF and run by Caltech and MIT. It has <strong>two L-shaped detectors with 4 km arms</strong>, one at <strong>Hanford (Washington state)</strong> and one at <strong>Livingston (Louisiana)</strong>, operated as one observatory (<a href="#s-weissdeath">LIGO Lab</a>).</li>
+<li><strong>Why more than one detector?</strong> Several detectors make it possible to:
+<ul>
+<li>reject local noise, because a real signal appears in every detector;</li>
+<li>locate the source in the sky by comparing arrival times (triangulation). GW150914 reached Livingston about 7 ms before Hanford (<a href="#s-gw150914">LIGO</a>).</li>
+</ul></li>
+</ul>
+<div class="table-wrap"><table>
+<caption>Ground-based laser-interferometer detectors</caption>
+<thead><tr><th scope="col" style="width:18%">Detector</th><th scope="col" style="width:30%">Location</th><th scope="col" style="width:14%">Arm length</th><th scope="col">Note</th></tr></thead>
+<tbody>
+<tr><td>LIGO Hanford</td><td>Hanford, Washington (USA)</td><td>4 km</td><td>Twin of Livingston</td></tr>
+<tr><td>LIGO Livingston</td><td>Livingston, Louisiana (USA)</td><td>4 km</td><td>About 3,000 km from Hanford</td></tr>
+<tr><td>Virgo</td><td>Cascina, near Pisa, <strong>Italy</strong></td><td>3 km &#8224;</td><td>European collaboration</td></tr>
+<tr><td>GEO600</td><td>Near Hannover, <strong>Germany</strong></td><td>600 m &#8224;</td><td>German-UK; tested key Advanced LIGO technologies (<a href="#s-gw150914">LIGO</a>)</td></tr>
+<tr><td>KAGRA</td><td>Kamioka, <strong>Japan</strong></td><td>3 km &#8224;</td><td>Underground and cryogenic &#8224;. Damaged by the Noto earthquake (1 Jan 2024); rejoined O4 on 12 Jun 2025 (<a href="#s-kagra">KAGRA</a>).</td></tr>
+<tr><td><strong>LIGO-India</strong></td><td>Aundha, <strong>Hingoli district, Maharashtra</strong></td><td>4 km</td><td>Under construction (<a href="#ligo-india">64.8</a>)</td></tr>
+</tbody></table></div>
+<p class="correction" id="c94"><strong>[Correction]</strong> Three location fixes:</p>
+<ul>
+<li><strong>"Geo in Italy"</strong>: GEO600 is in <strong>Germany</strong>. Virgo is the Italian detector.</li>
+<li><strong>"Hanford near Washington"</strong>: Hanford is in <strong>Washington state</strong> (north-western USA), not near Washington, D.C.</li>
+<li>The correct spellings are <strong>Livingston, Louisiana</strong>.</li>
+</ul>
+<p>KAGRA (Japan) is also part of the network.</p>
+
+<h3 id="gw-ligo">64.7 How LIGO works</h3>
+<p>The <strong>principle</strong> is laser interferometry, as in a Michelson interferometer: two light beams that have travelled equal distances recombine, and their interference pattern reveals a tiny change in either path.</p>
+<ol>
+<li><strong>Laser source</strong>: a stable, single-colour laser beam enters the instrument.</li>
+<li><strong>Beam splitter</strong> at the corner where the two arms meet: it sends half the light down each arm.</li>
+<li><strong>Two perpendicular arms</strong>, each 4 km long, enclosed in <strong>ultra-high-vacuum tubes</strong> so that air molecules do not disturb the light.</li>
+<li><strong>Mirrors (test masses)</strong>:
+<ul>
+<li>a mirror at the <strong>far end of each arm</strong> reflects the light back;</li>
+<li>input mirrors near the corner make the light bounce back and forth many times (a <strong>Fabry-Perot cavity</strong>), which lengthens the effective path;</li>
+<li>the mirrors hang as multi-stage pendulums, isolated from ground vibration &#8224;.</li>
+</ul></li>
+<li><strong>Recombination</strong>: the returning beams meet again at the beam splitter.</li>
+<li><strong>Photodetector</strong> at the output measures the light that reaches it.</li>
+</ol>
+<ul>
+<li><strong>No wave:</strong> the arms are tuned so that the two returning beams arrive <strong>exactly out of step</strong>. They cancel by <strong>destructive interference</strong>, and the photodetector stays (almost) <strong>dark</strong>.</li>
+<li><strong>Wave passes:</strong>
+<ol>
+<li>One arm lengthens while the other shortens (<a href="#fig70">Figure 70</a>), by about 10<sup>-18</sup> m.</li>
+<li>The two beams now travel <strong>unequal distances</strong>, so they no longer cancel exactly.</li>
+<li>Some light reaches the photodetector. Its rising and falling brightness traces the wave as a <strong>"chirp"</strong> pattern.</li>
+</ol></li>
+<li><strong>[Additional] Recent upgrades:</strong>
+<ul>
+<li>"<strong>Squeezed light</strong>" (a quantum technique) reduces laser noise across LIGO's band.</li>
+<li>AI tools help detect signals and automate operations (<a href="#s-ligoindia">Caltech, Apr 2026</a>).</li>
+</ul></li>
+</ul>
+<p class="correction" id="c95"><strong>[Correction]</strong> <strong>"...the laser beams will travel unequal distance to avoid the destructive interference and some of them will pass through the beam splitter to strike photo detector"</strong>: the correct sequence is as follows.</p>
+<ol>
+<li>Normally the beams <strong>do</strong> interfere destructively, so the output is dark.</li>
+<li>The wave makes the paths unequal, which <strong>spoils</strong> that cancellation.</li>
+<li>Light then leaks to the photodetector and produces the signal.</li>
+</ol>
+<p>The "vacuum tube with a mirror" is in each arm, with the mirror at the <strong>far end</strong>.</p>
+
+<figure id="fig72">
+<h3>Figure 72. Working of a LIGO-Type Laser Interferometer (schematic, not to scale) - the figure requested in class</h3>
+<svg viewBox="0 0 900 470" role="img" aria-label="Schematic of a LIGO-type laser interferometer, not to scale. A laser beam enters a beam splitter at the corner of an L. The beam splitter sends half the light along each of two perpendicular arms, 4 kilometres long, inside ultra-high-vacuum tubes. Suspended mirrors called test masses at each end reflect the light back; input mirrors near the corner form Fabry-Perot cavities that bounce light many times. The returning beams recombine at the beam splitter. With no wave, the arms are tuned so the beams cancel by destructive interference and the photodetector stays dark. A passing gravitational wave lengthens one arm and shortens the other by about 10 to the minus 18 metres, the beams no longer cancel exactly, and a flickering signal reaches the photodetector."><defs><marker id="f72-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#555"/></marker></defs><g font-family="Calibri, sans-serif"><rect x="230" y="316" width="600" height="28" rx="14" fill="#eceff1" stroke="#90a4ae" stroke-width="1.2" /><rect x="186" y="40" width="28" height="260" rx="14" fill="#eceff1" stroke="#90a4ae" stroke-width="1.2" /><line x1="200" y1="330" x2="820" y2="330" stroke="#e53935" stroke-width="2.2"/><line x1="200" y1="330" x2="200" y2="52" stroke="#e53935" stroke-width="2.2"/><line x1="40" y1="330" x2="200" y2="330" stroke="#e53935" stroke-width="2.2" marker-end="url(#f72-ar)"/><rect x="20" y="308" width="70" height="44" rx="6" fill="#fff3e0" stroke="#ef6c00" stroke-width="1.5" /><text x="55" y="335" font-size="12.5" text-anchor="middle" fill="#202124" font-weight="bold">LASER</text><rect x="186" y="327" width="28" height="6" fill="#0078d4" transform="rotate(-45 200 330)"/><text x="138" y="304" font-size="12.5" text-anchor="end" fill="#202124" font-weight="bold">Beam splitter</text><line x1="140" y1="300" x2="188" y2="322" stroke="#555" stroke-width="1"/><rect x="826" y="304" width="12" height="52" rx="2" fill="#90caf9" stroke="#0d47a1" stroke-width="1.5" /><text x="832" y="378" font-size="12" text-anchor="middle" fill="#202124" font-weight="bold">End mirror</text><text x="832" y="392" font-size="11.5" text-anchor="middle" fill="#202124">(test mass)</text><rect x="174" y="30" width="52" height="12" rx="2" fill="#90caf9" stroke="#0d47a1" stroke-width="1.5" /><text x="240" y="32" font-size="12" text-anchor="start" fill="#202124" font-weight="bold">End mirror (test mass)</text><rect x="260" y="310" width="8" height="40" rx="2" fill="#bbdefb" stroke="#0d47a1" stroke-width="1" /><text x="264" y="368" font-size="11" text-anchor="middle" fill="#202124">Input mirror</text><rect x="180" y="260" width="40" height="8" rx="2" fill="#bbdefb" stroke="#0d47a1" stroke-width="1" /><text x="226" y="268" font-size="11" text-anchor="start" fill="#202124">Input mirror</text><text x="560" y="306" font-size="12" text-anchor="middle" fill="#37474f">X arm: 4 km vacuum tube (laser bounces many times: Fabry-Perot cavity)</text><text x="176" y="190" font-size="12" text-anchor="middle" fill="#37474f" transform="rotate(-90 176 190)">Y arm: 4 km vacuum tube</text><line x1="200" y1="330" x2="200" y2="400" stroke="#e53935" stroke-width="2.2" marker-end="url(#f72-ar)"/><rect x="160" y="404" width="80" height="34" rx="6" fill="#e8f5e9" stroke="#2e7d32" stroke-width="1.5" /><text x="200" y="426" font-size="12" text-anchor="middle" fill="#202124" font-weight="bold">Photodetector</text><rect x="330" y="385" width="540" height="72" rx="6" fill="#fff8e1" stroke="#f5a623" stroke-width="1.5" /><text x="600.0" y="409.0" font-size="12" text-anchor="middle" fill="#202124">No wave: beams cancel (destructive interference) &#8594; detector dark</text><text x="600.0" y="425.0" font-size="12" text-anchor="middle" fill="#202124">Wave passes: one arm longer, other shorter by ~10^-18 m</text><text x="600.0" y="441.0" font-size="12" text-anchor="middle" fill="#202124">&#8594; path difference &#8594; light leaks to detector &#8594; 'chirp' signal</text><text x="560" y="70" font-size="12.5" text-anchor="middle" fill="#202124" font-weight="bold">Both arms perpendicular; a GW</text><text x="560" y="88" font-size="12.5" text-anchor="middle" fill="#202124" font-weight="bold">stretches one while squeezing the other</text><text x="560" y="112" font-size="11.5" text-anchor="middle" fill="#555">Mirrors hang as multi-stage pendulums</text><text x="560" y="128" font-size="11.5" text-anchor="middle" fill="#555">to isolate them from seismic noise</text></g></svg>
+<figcaption>Labelled parts (as listed in class):
+<ul>
+<li>laser source;</li>
+<li>beam splitter at the junction of the two arms;</li>
+<li>two perpendicular 4 km vacuum arms with input and end mirrors;</li>
+<li>photodetector.</li>
+</ul>
+Original drawing based on <a href="#s-gw150914">LIGO</a> and <a href="#s-ligoindia">Caltech</a> descriptions. Real arms are 4 km long; the beam-splitter-to-mirror spacing and sizes are not to scale.</figcaption>
+</figure>
+
+<h3 id="ligo-india">64.8 LIGO-India</h3>
+<ul>
+<li><strong>What it is:</strong> the <strong>third LIGO detector</strong> and the <strong>fifth</strong> gravitational-wave observatory of the global network (<a href="#s-ligoindia">Caltech</a>).
+<ul>
+<li>It is identical in design to the US detectors: an <strong>Advanced LIGO interferometer with two 4 km arms</strong>.</li>
+<li>It sits on a <strong>174-acre site chosen for low seismic noise</strong> at <strong>Aundha, Hingoli district, Maharashtra</strong>.</li>
+</ul></li>
+<li><strong>Approval and agencies:</strong>
+<ul>
+<li>The Union Cabinet approved it in <strong>April 2023</strong> at an estimated cost of <strong>Rs 2,600 crore</strong> (<a href="#s-pibligo2">PIB, 14 Apr 2023</a>).</li>
+<li>The <strong>Department of Atomic Energy is the lead agency</strong>, with the Department of Science and Technology. The US NSF and LIGO Lab supply the interferometer components and designs.</li>
+<li>After completion it will be run as a <strong>national facility</strong> (<a href="#s-pibligo">PIB, 10 Aug 2023</a>).</li>
+</ul></li>
+<li><strong>Status:</strong>
+<ul>
+<li>The foundation stones were laid in 2023.</li>
+<li><strong>Construction broke ground on 23 April 2026</strong> (<a href="#s-ligoindia">Caltech</a>).</li>
+</ul></li>
+<li><strong>Why India matters for the network:</strong> a detector far from the US and European sites:
+<ul>
+<li>sharply improves <strong>sky localisation</strong> by triangulation;</li>
+<li>resolves wave <strong>polarisation</strong> better because of its different orientation;</li>
+<li>adds observing time when other detectors are down (<a href="#s-ligoindia">Caltech</a>).</li>
+</ul></li>
+<li><strong>Spin-offs [Additional]:</strong> skills in ultra-high vacuum, lasers and optics, seismic isolation, control systems and large-scale data analysis. IUCAA Pune, RRCAT Indore and IPR Gandhinagar are commonly named as lead institutions &#8224;.</li>
+</ul>
+<p class="verification" id="vr-ligoindia"><strong>[Verification Required]</strong> <strong>Completion target:</strong></p>
+<ul>
+<li>PIB (14 Apr 2023) said construction was "expected to be completed by 2030".</li>
+<li>The IGWN observing plan (15 Nov 2026) says only that schedules beyond 2032 will be revised "as LIGO-India nears observing".</li>
+</ul>
+<p>No official 2026 date for first observations was found.</p>
+<p class="correction" id="c96"><strong>[Correction]</strong> <strong>"3 Ligo will come up at MH Hingoli"</strong>: correct in substance. It is the <strong>third LIGO detector</strong> (after Hanford and Livingston), at <strong>Aundha in Hingoli district</strong>. Construction began on 23 Apr 2026; it is not yet operating.</p>
+
+<h3 id="gw-first">64.9 The first detection (GW150914) and the 2017 Nobel Prize</h3>
+<ul>
+<li><strong>GW150914</strong>:
+<ul>
+<li>Detected on <strong>14 September 2015</strong> (09:50:45 UTC) by both LIGO detectors and announced on <strong>11 February 2016</strong>. The name means "gravitational wave, 2015-09-14" (<a href="#s-gwosc">GWOSC</a>).</li>
+<li>Source: two black holes of about <strong>36 and 29 solar masses</strong> merging about <strong>1.3 billion light-years</strong> away. About <strong>3 solar masses</strong> were converted into gravitational-wave energy (<a href="#s-gw150914">LIGO</a>).</li>
+</ul></li>
+<li><strong>Nobel Prize in Physics 2017</strong> "for decisive contributions to the LIGO detector and the observation of gravitational waves":
+<ul>
+<li>one half to <strong>Rainer Weiss</strong> (MIT);</li>
+<li>the other half jointly to <strong>Barry C. Barish</strong> and <strong>Kip S. Thorne</strong> (Caltech).</li>
+</ul>
+Weiss died on <strong>25 August 2025</strong> (<a href="#s-weiss">NobelPrize.org</a>).</li>
+<li><strong>Since then [Additional]:</strong>
+<ul>
+<li>Detections have become routine. The fourth observing run (<strong>O4</strong>, 24 May 2023-18 Nov 2025) alone gave <strong>about 300 significant candidates</strong> (<a href="#s-kagra">KAGRA</a>; Gravity Spy counts over 250).</li>
+<li>O4 included the most massive merger so far, <strong>GW231123</strong> (<a href="#s-o4end">Gravity Spy</a>).</li>
+</ul></li>
+</ul>
+<p class="correction" id="c97"><strong>[Correction]</strong> <strong>Nobel 2017 names and shares</strong>:</p>
+<ul>
+<li>The names are Ra<strong>i</strong>ner Weiss, Barry C. <strong>Barish</strong> and Kip S. Thorne.</li>
+<li>The prize was <strong>not split in three equal parts</strong>: Weiss received one half, and Barish and Thorne shared the other half.</li>
+</ul>
+
+<h3 id="gw-lila">64.10 LILA - Laser Interferometer Lunar Antenna</h3>
+<ul>
+<li><strong>What it is:</strong> a <strong>proposed US-led programme</strong>, led from Vanderbilt University's Lunar Labs Initiative. Universities, NASA centres, industry and international partners take part. It aims to make the Moon a site for gravitational-wave science (<a href="#s-lila">Vanderbilt</a>).</li>
+<li><strong>Link to NASA:</strong> it is designed to fit NASA's <strong>Commercial Lunar Payload Services (CLPS) and Artemis</strong> programmes (<a href="#s-lilawp">LILA white paper</a>). It is not an approved NASA mission.</li>
+<li><strong>Why the Moon?</strong> The class reasons are correct:
+<ul>
+<li><strong>no human (anthropogenic) noise</strong>;</li>
+<li><strong>no atmosphere</strong>, so no wind, pressure or humidity noise;</li>
+<li><strong>very low seismic noise</strong>.</li>
+</ul>
+Two further advantages [Additional]:
+<ul>
+<li>A natural hard vacuum means no vacuum tubes are needed over kilometres.</li>
+<li>The Moon's own vibration modes amplify low-frequency waves (<a href="#s-lilanoise">arXiv 2508.18437</a>).</li>
+</ul></li>
+<li><strong>Design in two phases</strong> (<a href="#s-leag">LEAG 2025</a>):
+<ul>
+<li><strong>LILA-Pioneer</strong>: an <strong>L-shaped</strong> set of three modules about <strong>5 km apart</strong>, deployed by lander and lunar terrain vehicle.</li>
+<li><strong>LILA-Horizon</strong>: a <strong>triangular</strong> observatory with <strong>~40 km arms</strong>.</li>
+</ul></li>
+<li><strong>The "bridge":</strong> it would open the <strong>0.1-10 Hz "mid-band"</strong> between LIGO (above ~10 Hz) and LISA (millihertz). Signals in this band would give <strong>days to months of warning</strong> before neutron-star mergers (<a href="#s-lilawp">white paper</a>).</li>
+</ul>
+<p class="correction" id="c98"><strong>[Correction]</strong> Two fixes to the LILA notes:</p>
+<ul>
+<li><strong>"Initiative of NASA"</strong>: LILA is a <strong>proposal led by Vanderbilt University</strong> and its partners. It is aligned with NASA's lunar programmes but is not a NASA-approved mission.</li>
+<li><strong>"One L-shaped, other equilateral triangle"</strong>: these are two <strong>successive phases</strong>, not two simultaneous observatories. The L-shaped LILA-Pioneer comes first; the triangular LILA-Horizon follows.</li>
+</ul>
+
+<h3 id="gw-lisa">64.11 LISA (formerly eLISA) - the space observatory</h3>
+<ul>
+<li><strong>Agency and status:</strong>
+<ul>
+<li>LISA is <strong>led by ESA</strong> with NASA and an international consortium.</li>
+<li>It was selected as ESA's third large-class mission (L3) on <strong>20 June 2017</strong> and <strong>adopted on 25 January 2024</strong>.</li>
+<li><strong>Launch is planned for 2035 on an Ariane 6</strong> rocket (<a href="#s-lisa">ESA</a>; <a href="#s-lisafs">ESA factsheet</a>).</li>
+</ul></li>
+<li><strong>Design:</strong>
+<ul>
+<li><strong>Three spacecraft</strong> form an <strong>equilateral triangle</strong> with <strong>2.5 million km sides</strong>, more than six times the Earth-Moon distance.</li>
+<li>The triangle <strong>trails Earth in its orbit around the Sun</strong> (heliocentric orbit), about <strong>50 million km</strong> from Earth.</li>
+<li>Free-floating <strong>gold-platinum test cubes</strong> sit inside each spacecraft. Lasers track changes in their separation "down to a few billionths of a millimetre" (<a href="#s-lisa">ESA</a>).</li>
+</ul></li>
+<li><strong>Heritage:</strong> <strong>LISA Pathfinder</strong> (launched December 2015, operated until mid-2017) proved that test masses can be kept in almost perfect free fall (<a href="#s-lisafs">ESA factsheet</a>). The class phrase "successor of LISA Pathfinder" is correct.</li>
+<li><strong>Science:</strong>
+<ul>
+<li>mergers of <strong>massive black holes</strong> at galaxy centres;</li>
+<li>tens of thousands of compact binaries in the Milky Way;</li>
+<li>"extreme mass-ratio inspirals";</li>
+<li>the expansion rate of the universe;</li>
+<li>a possible early-universe background (<a href="#s-lisafs">ESA factsheet</a>).</li>
+</ul></li>
+</ul>
+<p class="correction" id="c99"><strong>[Correction]</strong> <strong>"eLISA ... scheduled for 2034 ... arm at least 1M km"</strong> gives outdated figures. The 1 million km arm and 2034 launch belonged to the earlier eLISA concept, which is the version quoted in the 2020 PYQ (<a href="#pyq-2020">below</a>). The adopted mission uses:</p>
+<ul>
+<li>the name <strong>LISA</strong>;</li>
+<li><strong>2.5 million km arms</strong>;</li>
+<li>a <strong>launch planned for 2035</strong>.</li>
+</ul>
+<p>"The whole system will revolve around the Sun" is correct.</p>
+
+<h3 id="gw-pta">64.12 Pulsar Timing Arrays (PTA) - the galaxy as a detector</h3>
+<ul>
+<li><strong>Principle:</strong>
+<ul>
+<li><strong>Millisecond pulsars</strong> are rapidly spinning neutron stars. They sweep radio beams past Earth with a "ticking" that <strong>rivals atomic clocks</strong>, which is why pulsars are called nature's most accurate clocks (<a href="#s-pta">APS Physics</a>).</li>
+<li>A passing nanohertz wave stretches and squeezes space between a pulsar and Earth. Pulses then arrive slightly <strong>early or late</strong>.</li>
+<li>Timing <strong>tens of pulsars together</strong> separates a real wave from the noise of any single pulsar.</li>
+</ul></li>
+<li><strong>Signature:</strong> the timing shifts of pulsar pairs are correlated in a way that depends on the angle between them, described by the <strong>Hellings-Downs curve</strong> (1983). Seeing this pattern is the "telltale signature" of a gravitational-wave background (<a href="#s-pta">APS Physics</a>).</li>
+<li><strong>29 June 2023 result:</strong>
+<ul>
+<li>Four collaborations reported <strong>evidence</strong> for a nanohertz <strong>gravitational-wave background</strong>:
+<ul>
+<li><strong>NANOGrav</strong> (North America);</li>
+<li><strong>EPTA</strong> together with the <strong>Indian PTA (InPTA)</strong>;</li>
+<li>the <strong>Chinese PTA</strong>;</li>
+<li>the <strong>Parkes PTA</strong> (Australia).</li>
+</ul></li>
+<li>The statistical confidence was <strong>3-4.6 sigma</strong>, below the usual 5-sigma "discovery" threshold (<a href="#s-pta">APS Physics</a>).</li>
+<li>NANOGrav alone used <strong>67 pulsars</strong> over 15 years (<a href="#s-nanograv">arXiv 2306.16213</a>).</li>
+<li>The leading explanation is <strong>pairs of supermassive black holes</strong>. Early-universe or dark-matter origins cannot yet be excluded.</li>
+</ul></li>
+<li><strong>India's role:</strong> InPTA uses the <strong>upgraded Giant Metrewave Radio Telescope (uGMRT)</strong> near Pune, run by NCRA-TIFR &#8224;. The "hum of the universe" in class refers to this background; physicists call the rising low-frequency noise a "red hum" (<a href="#s-pta">APS Physics</a>).</li>
+</ul>
+<p class="correction" id="c100"><strong>[Correction]</strong> Four fixes to the PTA notes:</p>
+<ul>
+<li><strong>"Japanese PTA"</strong>: the June 2023 results came from NANOGrav, EPTA/InPTA, CPTA and PPTA. No Japanese PTA was among them.</li>
+<li><strong>"Around a dozen pulsars"</strong>: each array timed <strong>tens of pulsars</strong> (NANOGrav: 67).</li>
+<li><strong>"Unanimous conclusion"</strong>: the results were consistent <strong>evidence</strong> at 3-4.6 sigma, not a confirmed detection.</li>
+<li><strong>"Delay in arrival of light"</strong>: radio pulses arrive <strong>early or late</strong>, in a pattern correlated across pulsars.</li>
+</ul>
+<p>The "Nanograv from USA" member is the <strong>NANOGrav</strong> collaboration (North America), which uses US and Canadian telescopes &#8224;.</p>
+<p class="correction" id="c101"><strong>[Correction]</strong> <strong>"The radio telescopes work on the principle of very long baseline interferometry"</strong>: PTAs work by <strong>precise timing</strong> of pulses, which individual telescopes can do. They do not need VLBI.</p>
+<ul>
+<li>The class description of <strong>VLBI</strong> is itself correct: widely separated dishes are combined into a virtual aperture as wide as the distance between the farthest dishes.</li>
+<li>VLBI is the technique of the <strong>Event Horizon Telescope</strong>, which imaged black holes (<a href="#eht">Section 65.8</a>).</li>
+</ul>
+
+<figure id="fig73">
+<h3>Figure 73. How a Pulsar Timing Array Senses Nanohertz Gravitational Waves (schematic, not to scale)</h3>
+<svg viewBox="0 0 900 380" role="img" aria-label="Pulsar timing array, schematic, not to scale. Several millisecond pulsars spread across the Milky Way send regular radio pulses to radio telescopes on Earth. A passing nanohertz gravitational wave, with a wavelength of light-years, stretches and squeezes space between the pulsars and Earth, so pulses arrive a little early or late by tens to hundreds of nanoseconds. The timing shifts of pulsar pairs are correlated according to the angle between them, the Hellings-Downs curve, which is the signature of a gravitational-wave background."><defs><marker id="f73-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#555"/></marker></defs><g font-family="Calibri, sans-serif"><circle cx="450" cy="215" r="34" fill="#bbdefb" stroke="#1565c0" stroke-width="2" /><text x="450" y="220" font-size="13" text-anchor="middle" fill="#202124" font-weight="bold">Earth</text><text x="450" y="267" font-size="11.5" text-anchor="middle" fill="#555">radio telescopes:</text><text x="430" y="282" font-size="11.5" text-anchor="middle" fill="#555">uGMRT (India), Parkes, FAST...</text><line x1="120" y1="80" x2="410.4" y2="198.8" stroke="#7e57c2" stroke-width="1.3" marker-end="url(#f73-ar)" stroke-dasharray="6 5"/><circle cx="120" cy="80" r="9" fill="#ede7f6" stroke="#4527a0" stroke-width="1.5" /><text x="120" y="65" font-size="12" text-anchor="middle" fill="#4527a0" font-weight="bold">PSR A</text><line x1="780" y1="70" x2="489.6" y2="197.6" stroke="#7e57c2" stroke-width="1.3" marker-end="url(#f73-ar)" stroke-dasharray="6 5"/><circle cx="780" cy="70" r="9" fill="#ede7f6" stroke="#4527a0" stroke-width="1.5" /><text x="780" y="55" font-size="12" text-anchor="middle" fill="#4527a0" font-weight="bold">PSR B</text><line x1="130" y1="330" x2="411.6" y2="228.8" stroke="#7e57c2" stroke-width="1.3" marker-end="url(#f73-ar)" stroke-dasharray="6 5"/><circle cx="130" cy="330" r="9" fill="#ede7f6" stroke="#4527a0" stroke-width="1.5" /><text x="130" y="315" font-size="12" text-anchor="middle" fill="#4527a0" font-weight="bold">PSR C</text><line x1="790" y1="330" x2="490.8" y2="228.8" stroke="#7e57c2" stroke-width="1.3" marker-end="url(#f73-ar)" stroke-dasharray="6 5"/><circle cx="790" cy="330" r="9" fill="#ede7f6" stroke="#4527a0" stroke-width="1.5" /><text x="790" y="315" font-size="12" text-anchor="middle" fill="#4527a0" font-weight="bold">PSR D</text><line x1="450" y1="40" x2="450.0" y2="194.0" stroke="#7e57c2" stroke-width="1.3" marker-end="url(#f73-ar)" stroke-dasharray="6 5"/><circle cx="450" cy="40" r="9" fill="#ede7f6" stroke="#4527a0" stroke-width="1.5" /><text x="450" y="25" font-size="12" text-anchor="middle" fill="#4527a0" font-weight="bold">PSR E</text><path d="M60,170 L66,173.0 L72,175.9 L78,178.6 L84,181.1 L90,183.3 L96,185.1 L102,186.6 L108,187.5 L114,188.0 L120,187.9 L126,187.4 L132,186.4 L138,184.9 L144,183.0 L150,180.8 L156,178.2 L162,175.5 L168,172.5 L174,169.5 L180,166.6 L186,163.7 L192,161.0 L198,158.5 L204,156.4 L210,154.6 L216,153.3 L222,152.4 L228,152.0 L234,152.1 L240,152.7 L246,153.8 L252,155.4 L258,157.3 L264,159.6 L270,162.2 L276,165.0 L282,167.9 L288,170.9 L294,173.9 L300,176.7 L306,179.4 L312,181.8 L318,183.9 L324,185.6 L330,186.9 L336,187.7 L342,188.0 L348,187.8 L354,187.1 L360,186.0 L366,184.4 L372,182.4 L378,180.0 L384,177.4 L390,174.6 L396,171.6 L402,168.6 L408,165.7 L414,162.8 L420,160.2 L426,157.8 L432,155.8 L438,154.2 L444,153.0 L450,152.2 L456,152.0 L462,152.3 L468,153.0 L474,154.2 L480,155.9 L486,158.0 L492,160.3 L498,163.0 L504,165.8 L510,168.8 L516,171.8 L522,174.7 L528,177.6 L534,180.2 L540,182.5 L546,184.5 L552,186.0 L558,187.2 L564,187.8 L570,188.0 L576,187.7 L582,186.8 L588,185.5 L594,183.8 L600,181.7 L606,179.3 L612,176.6 L618,173.7 L624,170.7 L630,167.7 L636,164.8 L642,162.0 L648,159.5 L654,157.2 L660,155.3 L666,153.8 L672,152.7 L678,152.1 L684,152.0 L690,152.4 L696,153.3 L702,154.7 L708,156.5 L714,158.6 L720,161.1 L726,163.8 L732,166.7 L738,169.7 L744,172.7 L750,175.6 L756,178.4 L762,180.9 L768,183.1 L774,185.0 L780,186.4 L786,187.4 L792,187.9 L798,187.9 L804,187.5 L810,186.5 L816,185.1 L822,183.2 L828,181.0 L834,178.5 L840,175.7" stroke="#ef6c00" stroke-width="2.5" fill="none"/><text x="240" y="152" font-size="12" text-anchor="middle" fill="#ef6c00" font-weight="bold">nanohertz gravitational wave (wavelength: light-years)</text><rect x="600" y="232" width="200" height="70" rx="6" fill="#fff" stroke="#bbb" stroke-width="1" /><text x="700" y="252" font-size="12" text-anchor="middle" fill="#202124">Expected tick:  |   |   |   |</text><text x="700" y="272" font-size="12" text-anchor="middle" fill="#c62828">Observed tick:  |  |    |   |</text><text x="700" y="292" font-size="11.5" text-anchor="middle" fill="#555">early / late by ~10-100 ns</text><text x="450" y="372" font-size="12" text-anchor="middle" fill="#202124" font-weight="bold">Correlated timing shifts across many pulsars follow the Hellings-Downs curve = GW background signature.</text></g></svg>
+<figcaption>Pulsars act as clocks spread across the galaxy. A passing wave with a wavelength of light-years shifts pulse arrival times. The Hellings-Downs correlation across pairs of pulsars marks the shifts as a gravitational-wave background. The tick marks and the 10-100 ns range are illustrative. Based on <a href="#s-pta">APS Physics (29 Jun 2023)</a> and <a href="#s-nanograv">NANOGrav</a>.</figcaption>
+</figure>
+</section>
+
+<section id="bh">
+<h2>65. Life Cycle of Stars and the Formation of Black Holes</h2>
+
+<h3 id="bh-eq">65.1 A stable star - hydrostatic equilibrium</h3>
+<ul>
+<li>A star forms when a cloud of gas and dust (a nebula) collapses under gravity until its core is hot enough for <strong>hydrogen fusion</strong>. This needs at least about 0.08 solar masses (<a href="#s-astro4edu">IAU OAE</a>).</li>
+<li>On the <strong>main sequence</strong>, the outward pressure from fusion heat balances the inward pull of gravity. This balance is called <strong>hydrostatic equilibrium</strong>, and it is the class idea of "expansion due to heat balanced by gravity".</li>
+<li>Heavier stars burn their fuel faster and live shorter lives (<a href="#s-astro4edu">IAU OAE</a>).</li>
+</ul>
+
+<h3 id="bh-giant">65.2 Hydrogen runs out - giants and supergiants</h3>
+<ol>
+<li>When the <strong>core's hydrogen is exhausted</strong>, fusion there stops and gravity wins: the core contracts and heats up.</li>
+<li>Hydrogen keeps fusing into helium in a <strong>shell around the core</strong> (the class "periphery").</li>
+<li>The hotter core then <strong>fuses helium into carbon</strong> (and oxygen), while the outer layers swell and cool.</li>
+</ol>
+<ul>
+<li>An average (Sun-like) star becomes a <strong>red giant</strong>.</li>
+<li>A massive star becomes a <strong>red supergiant</strong>. The most massive ones may become blue supergiants after losing their outer layers (<a href="#s-astro4edu">IAU OAE</a>).</li>
+</ul>
+
+<h3 id="bh-low">65.3 End of low- and intermediate-mass stars (below about 8 solar masses)</h3>
+<ul>
+<li>When the core's helium is used up, the star is left with a <strong>carbon-oxygen core</strong>. The core is not hot enough to fuse carbon, so fusion there stops.</li>
+<li>Unstable burning shells make the star pulsate. It <strong>throws off its outer layers</strong> as a glowing <strong>planetary nebula</strong> (not related to planets).</li>
+<li>The core remains as a <strong>white dwarf</strong> held up by electron degeneracy pressure (<a href="#s-astro4edu">IAU OAE</a>). A white dwarf cannot exceed the <strong>Chandrasekhar limit (~1.4 solar masses)</strong> (<a href="Science%20and%20Technology%20-%20Class%2011-10-2026.html#de-evidence">previous note, Section 60.9</a>; <a href="Science%20and%20Technology%20-%20Class%2011-10-2026.html#fig67">previous note, Figure 67</a>).</li>
+<li>Our <strong>Sun</strong> will follow this path.</li>
+</ul>
+<p class="correction" id="c102"><strong>[Correction]</strong> <strong>"In red giant, lack of enough carbon, the fusion will stop at oxygen"</strong>: fusion stops because the core is <strong>not hot enough</strong> to ignite carbon, not because carbon is lacking. The core is mostly carbon and oxygen. "Loses matter layer by layer as a planetary nebula, leaving a white dwarf" is correct.</p>
+
+<h3 id="bh-massive">65.4 End of massive stars (above about 8 solar masses) - core-collapse supernova</h3>
+<ol>
+<li><strong>Onion shells:</strong> each time a fuel runs out, the core contracts, heats and ignites the next fuel: <strong>carbon &#8594; neon &#8594; oxygen &#8594; silicon &#8594; iron</strong>. The star ends up like an onion, with an <strong>iron core</strong> surrounded by shells of silicon, oxygen, neon, carbon, helium and hydrogen (<a href="#s-openstax">OpenStax</a>).</li>
+<li><strong>Why iron is the end:</strong> iron is the <strong>most tightly bound nucleus</strong>. Fusing it <strong>absorbs</strong> energy instead of releasing it, so the core loses its support (<a href="#s-openstax">OpenStax</a>).</li>
+<li><strong>Collapse:</strong> electrons are squeezed into nuclei. <strong>Electrons and protons combine into neutrons and neutrinos</strong>, and the core collapses in a fraction of a second (<a href="#s-openstax">OpenStax</a>).</li>
+<li><strong>Supernova:</strong> the rebound and the flood of neutrinos blast the outer layers away in a <strong>core-collapse (Type II) supernova</strong>. A different process from the Type Ia supernova of <a href="Science%20and%20Technology%20-%20Class%2011-10-2026.html#fig67">previous note, Figure 67</a>.</li>
+</ol>
+<p class="correction" id="c103"><strong>[Correction]</strong> <strong>"Compression will cause fusion of carbon into iron; the helium from the periphery will come to the core to fuse and form carbon; at this point there will be a supernova"</strong> gives the wrong cause.</p>
+<ul>
+<li>Carbon becomes iron through <strong>several stages</strong> (neon, oxygen, silicon).</li>
+<li>Shell helium does <strong>not</strong> fall into the core to trigger anything.</li>
+<li>The supernova happens because <strong>iron fusion yields no energy</strong>, so the iron core collapses.</li>
+</ul>
+
+<h3 id="bh-rem">65.5 What is left - neutron star, (quark star?) or black hole</h3>
+<div class="table-wrap"><table>
+<caption>Remnant by initial mass of the star (approximate; depends on mass loss, metallicity, rotation and binary companions)</caption>
+<thead><tr><th scope="col" style="width:22%">Initial mass (Sun = 1)</th><th scope="col" style="width:22%">Remnant</th><th scope="col">Key facts</th></tr></thead>
+<tbody>
+<tr><td>Below ~8</td><td><strong>White dwarf</strong></td><td>Earth-sized carbon-oxygen core; at most about 1.4 solar masses</td></tr>
+<tr><td>~8 to ~20-25</td><td><strong>Neutron star</strong></td><td>Several solar masses squeezed into a few kilometres to ~20 km; supported by <strong>neutron degeneracy pressure</strong> (<a href="#s-astro4edu">IAU OAE</a>)</td></tr>
+<tr><td>Above ~20-25</td><td><strong>Black hole</strong></td><td>The core is too massive for any pressure to stop the collapse (<a href="#s-astro4edu">IAU OAE</a>)</td></tr>
+<tr><td>(No accepted band)</td><td>Quark star</td><td><strong>Hypothetical</strong>: a compact object made of deconfined quark matter, proposed in theory but never confirmed (<a href="#s-quark">arXiv 2601.09529</a>)</td></tr>
+</tbody></table></div>
+<p class="correction" id="c104"><strong>[Correction]</strong> <strong>"5-8 times the Sun &#8594; neutron star; 8-20 &#8594; quark star; 20 or more &#8594; black hole"</strong> uses the wrong bands.</p>
+<ul>
+<li>Stars below about 8 solar masses end as <strong>white dwarfs</strong>.</li>
+<li>About 8 to 20-25 solar masses leaves <strong>neutron stars</strong>.</li>
+<li>Above about 20-25 solar masses leaves <strong>black holes</strong>.</li>
+<li><strong>Quark stars are hypothetical</strong> and have no accepted mass band.</li>
+</ul>
+<p>The thresholds are approximate.</p>
+<p class="verification" id="vr-qgp"><strong>[Verification Required]</strong> <strong>"Neutrons break down into quarks and gluons to form the 7th state of matter"</strong>:</p>
+<ul>
+<li><strong>Quark-gluon plasma</strong> is real. It has been created briefly in heavy-ion collisions at RHIC and the LHC &#8224;.</li>
+<li>There is <strong>no standard numbering</strong> of "states of matter", so the label "7th state" is a textbook convention only.</li>
+<li>Whether such matter exists inside any star is unproven.</li>
+</ul>
+
+<h3 id="bh-ns">65.6 Neutron stars, pulsars and magnetars</h3>
+<ul>
+<li><strong>Neutron star</strong>: the collapsed core of a massive star, made mostly of neutrons. It is extremely dense (<a href="#s-astro4edu">IAU OAE</a>).</li>
+<li><strong>Pulsar</strong>: a <strong>rapidly spinning, magnetised neutron star</strong> that sends beams of radiation (mainly radio) from its magnetic poles. As the beams sweep past Earth, they appear as regular pulses (<a href="#s-pta">APS Physics</a>). This matches <a href="Science%20and%20Technology%20-%20Class%2011-10-2026.html#pyq-2023">PYQ 2023 (previous note)</a>.</li>
+<li><strong>Magnetar</strong>: a neutron star with the <strong>strongest magnetic field</strong> known, about 10<sup>14</sup>-10<sup>15</sup> gauss &#8224;. It emits bursts of X-rays and gamma rays &#8224;.</li>
+</ul>
+<p class="correction" id="c105"><strong>[Correction]</strong> <strong>"Light-emitting neutron stars are known as pulsars"</strong> is too loose: all hot neutron stars emit some radiation. A pulsar is defined by its <strong>beamed, periodic emission produced by rotation</strong>, mostly at radio wavelengths.</p>
+
+<figure id="fig74">
+<h3>Figure 74. Life Cycle of Stars by Initial Mass - White Dwarf, Neutron Star or Black Hole (flowchart; approximate thresholds)</h3>
+<svg viewBox="0 0 900 470" role="img" aria-label="Life cycle of stars by initial mass, flowchart, approximate thresholds. All stars form in a nebula, become protostars and then main-sequence stars fusing hydrogen into helium in hydrostatic equilibrium. Stars below about 8 solar masses become red giants, fuse helium into carbon and oxygen, shed their envelopes as planetary nebulae and leave white dwarfs below the Chandrasekhar limit of about 1.4 solar masses. Stars above about 8 solar masses become red supergiants, fuse successively heavier elements up to an iron core, then the core collapses in a core-collapse supernova. Initial mass about 8 to 20 or 25 solar masses leaves a neutron star, seen as a pulsar or magnetar. Above about 20 to 25 solar masses the remnant is a black hole. Quark stars are hypothetical."><defs><marker id="f74-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#555"/></marker></defs><g font-family="Calibri, sans-serif"><rect x="20" y="20" width="150" height="56" rx="6" fill="#f5f9fd" stroke="#0078d4" stroke-width="1.5" /><text x="95.0" y="44.0" font-size="12.5" text-anchor="middle" fill="#202124" font-weight="bold">Nebula</text><text x="95.0" y="60.0" font-size="12.5" text-anchor="middle" fill="#202124">gas + dust cloud</text><rect x="210" y="20" width="150" height="56" rx="6" fill="#f5f9fd" stroke="#0078d4" stroke-width="1.5" /><text x="285.0" y="44.0" font-size="12.5" text-anchor="middle" fill="#202124" font-weight="bold">Protostar</text><text x="285.0" y="60.0" font-size="12.5" text-anchor="middle" fill="#202124">gravity collapse</text><rect x="400" y="20" width="200" height="56" rx="6" fill="#e8f5e9" stroke="#2e7d32" stroke-width="1.5" /><text x="500.0" y="44.0" font-size="12.5" text-anchor="middle" fill="#202124" font-weight="bold">Main-sequence star</text><text x="500.0" y="60.0" font-size="12.5" text-anchor="middle" fill="#202124">H &#8594; He fusion; pressure = gravity</text><line x1="170" y1="48" x2="206" y2="48" stroke="#555" stroke-width="1.5" marker-end="url(#f74-ar)"/><line x1="360" y1="48" x2="396" y2="48" stroke="#555" stroke-width="1.5" marker-end="url(#f74-ar)"/><line x1="500" y1="76" x2="500" y2="100" stroke="#555" stroke-width="1.5"/><line x1="230" y1="100" x2="700" y2="100" stroke="#555" stroke-width="1.5"/><line x1="230" y1="100" x2="230" y2="124" stroke="#555" stroke-width="1.5" marker-end="url(#f74-ar)"/><line x1="700" y1="100" x2="700" y2="124" stroke="#555" stroke-width="1.5" marker-end="url(#f74-ar)"/><text x="230" y="94" font-size="12" text-anchor="middle" fill="#1565c0" font-weight="bold">initial mass &lt; ~8 Msun</text><text x="700" y="94" font-size="12" text-anchor="middle" fill="#c62828" font-weight="bold">initial mass &gt; ~8 Msun</text><rect x="110" y="128" width="240" height="64" rx="6" fill="#fff3e0" stroke="#ef6c00" stroke-width="1.5" /><text x="230.0" y="148.0" font-size="12.5" text-anchor="middle" fill="#202124" font-weight="bold">Red giant</text><text x="230.0" y="164.0" font-size="12.5" text-anchor="middle" fill="#202124">core He &#8594; C, O; H-burning shell</text><text x="230.0" y="180.0" font-size="12.5" text-anchor="middle" fill="#202124">envelope swells</text><rect x="560" y="128" width="280" height="64" rx="6" fill="#fff3e0" stroke="#ef6c00" stroke-width="1.5" /><text x="700.0" y="148.0" font-size="12.5" text-anchor="middle" fill="#202124" font-weight="bold">Red supergiant</text><text x="700.0" y="164.0" font-size="12.5" text-anchor="middle" fill="#202124">C &#8594; Ne &#8594; O &#8594; Si &#8594; Fe (onion layers)</text><text x="700.0" y="180.0" font-size="12.5" text-anchor="middle" fill="#202124">iron fusion absorbs energy</text><line x1="230" y1="192" x2="230" y2="224" stroke="#555" stroke-width="1.5" marker-end="url(#f74-ar)"/><line x1="700" y1="192" x2="700" y2="224" stroke="#555" stroke-width="1.5" marker-end="url(#f74-ar)"/><rect x="90" y="228" width="280" height="64" rx="6" fill="#e3f2fd" stroke="#1565c0" stroke-width="1.5" /><text x="230.0" y="248.0" font-size="12.5" text-anchor="middle" fill="#202124" font-weight="bold">Planetary nebula + white dwarf</text><text x="230.0" y="264.0" font-size="12.5" text-anchor="middle" fill="#202124">C-O core; electron degeneracy</text><text x="230.0" y="280.0" font-size="12.5" text-anchor="middle" fill="#202124">mass below ~1.4 Msun (Chandrasekhar)</text><rect x="540" y="228" width="320" height="64" rx="6" fill="#fdecea" stroke="#c62828" stroke-width="1.5" /><text x="700.0" y="248.0" font-size="12.5" text-anchor="middle" fill="#202124" font-weight="bold">Core collapse &#8594; SUPERNOVA (Type II)</text><text x="700.0" y="264.0" font-size="12.5" text-anchor="middle" fill="#202124">e- + p &#8594; n + neutrinos; outer layers blasted</text><text x="700.0" y="280.0" font-size="12.5" text-anchor="middle" fill="#202124"></text><line x1="700" y1="292" x2="700" y2="312" stroke="#555" stroke-width="1.5"/><line x1="580" y1="312" x2="820" y2="312" stroke="#555" stroke-width="1.5"/><line x1="580" y1="312" x2="580" y2="336" stroke="#555" stroke-width="1.5" marker-end="url(#f74-ar)"/><line x1="820" y1="312" x2="820" y2="336" stroke="#555" stroke-width="1.5" marker-end="url(#f74-ar)"/><text x="580" y="330" font-size="11.5" text-anchor="end" fill="#555" font-weight="bold">~8 to 20-25 Msun</text><text x="828" y="330" font-size="11.5" text-anchor="start" fill="#555" font-weight="bold">&gt; ~20-25</text><rect x="470" y="340" width="220" height="74" rx="6" fill="#ede7f6" stroke="#4527a0" stroke-width="1.5" /><text x="580.0" y="365.0" font-size="12.5" text-anchor="middle" fill="#202124" font-weight="bold">Neutron star</text><text x="580.0" y="381.0" font-size="12.5" text-anchor="middle" fill="#202124">~1.4-2+ Msun in ~20 km</text><text x="580.0" y="397.0" font-size="12.5" text-anchor="middle" fill="#202124">pulsar / magnetar</text><rect x="710" y="340" width="170" height="74" rx="6" fill="#263238" stroke="#000" stroke-width="1.5" /><text x="795.0" y="365.0" font-size="12.5" text-anchor="middle" fill="#ffffff" font-weight="bold">Black hole</text><text x="795.0" y="381.0" font-size="12.5" text-anchor="middle" fill="#ffffff">event horizon</text><text x="795.0" y="397.0" font-size="12.5" text-anchor="middle" fill="#ffffff">nothing escapes</text><rect x="470" y="424" width="220" height="34" rx="6" fill="#fafafa" stroke="#9e9e9e" stroke-width="1.2" stroke-dasharray="4 3"/><text x="580" y="446" font-size="12" text-anchor="middle" fill="#555">Quark star: hypothetical only</text><rect x="20" y="330" width="420" height="84" rx="6" fill="#fff8e1" stroke="#f5a623" stroke-width="1.5" /><text x="230.0" y="352.0" font-size="12" text-anchor="middle" fill="#202124" font-weight="bold">Thresholds are approximate</text><text x="230.0" y="368.0" font-size="12" text-anchor="middle" fill="#202124">depend on mass loss, metallicity, rotation, binarity</text><text x="230.0" y="384.0" font-size="12" text-anchor="middle" fill="#202124">~1.4 Msun = max white dwarf; Sun &#8594; white dwarf</text><text x="230.0" y="400.0" font-size="12" text-anchor="middle" fill="#202124">Msun = mass of the Sun</text></g></svg>
+<figcaption>Flowchart summarising Sections 65.1-65.6. Thresholds follow the <a href="#s-astro4edu">IAU Office of Astronomy for Development</a> diagram (8 and 25 solar masses), and the fusion sequence follows <a href="#s-openstax">OpenStax Astronomy</a>. Some texts place the neutron star-black hole boundary near 20 solar masses. The quark star box is drawn dashed because the object is hypothetical.</figcaption>
+</figure>
+
+<h3 id="bh-parts">65.7 Parts of a black hole</h3>
+<div class="table-wrap"><table>
+<caption>Anatomy of a black hole, from the centre outward (see Figure 75)</caption>
+<thead><tr><th scope="col" style="width:22%">Part</th><th scope="col">Meaning</th></tr></thead>
+<tbody>
+<tr><td><strong>Singularity</strong></td><td>The centre, where general relativity predicts infinite density. The theory breaks down here.</td></tr>
+<tr><td><strong>Event horizon</strong></td><td>The boundary of no return. From inside it nothing, not even light, can escape. It is not a material surface.</td></tr>
+<tr><td><strong>Schwarzschild radius</strong> R<sub>s</sub></td><td>The radius of the event horizon of a non-rotating black hole, R<sub>s</sub> = 2GM/c<sup>2</sup>, where:
+<ul>
+<li>G = gravitational constant;</li>
+<li>M = mass;</li>
+<li>c = speed of light.</li>
+</ul>
+For one solar mass, R<sub>s</sub> &#8776; 2 &#215; 6.67&#215;10<sup>-11</sup> &#215; 1.99&#215;10<sup>30</sup> / (3&#215;10<sup>8</sup>)<sup>2</sup> &#8776; <strong>2.95 km</strong>. For Sgr A* (~4 million solar masses), it is about 1.2 &#215; 10<sup>7</sup> km &#8776; 0.08 AU.</td></tr>
+<tr><td><strong>Photon sphere</strong></td><td>Just <strong>outside</strong> the horizon, at 1.5 R<sub>s</sub> for a non-rotating hole. Here gravity bends light into circular orbits. It produces the bright ring seen around the "shadow" &#8224;.</td></tr>
+<tr><td><strong>Ergosphere</strong></td><td>Exists only in a <strong>rotating (Kerr) black hole</strong>. It is a region outside the horizon where space-time is dragged around so strongly that nothing can stay still. Objects can still escape from it &#8224;.</td></tr>
+<tr><td><strong>Accretion disc</strong></td><td>Gas and dust (for example, from a star being torn apart) spiral inward. Friction heats them to millions of degrees, so they glow in <strong>X-rays</strong>. Charged particles moving in the hole's magnetic field also radiate (synchrotron emission) &#8224;.</td></tr>
+<tr><td><strong>Relativistic jets</strong></td><td>Beams of charged particles at nearly light speed, launched along the <strong>spin axis from the poles</strong> and shaped by magnetic fields. M87*'s jet is seen across thousands of light-years (<a href="#s-quanta">Quanta</a>).</td></tr>
+</tbody></table></div>
+<p class="correction" id="c106"><strong>[Correction]</strong> The class order needs a fix: "photon sphere beyond event horizon and a rotating part called ergosphere followed by accretion disk".</p>
+<ul>
+<li>The <strong>ergosphere is not a rotating part of every black hole</strong>. It exists only around <strong>spinning</strong> black holes, as a region of dragged space-time just outside the horizon.</li>
+<li>The photon sphere and the ergosphere both lie <strong>outside</strong> the event horizon. Their relative positions depend on spin.</li>
+</ul>
+<p>The class spelling "Scheaarzchild" should read <strong>Schwarzschild</strong>.</p>
+
+<figure id="fig75">
+<h3>Figure 75. Anatomy of a Rotating Black Hole (schematic, not to scale)</h3>
+<svg viewBox="0 0 1000 470" role="img" aria-label="Anatomy of a rotating black hole, schematic, not to scale. At the centre is the singularity. Around it is the event horizon, the boundary from inside which nothing, not even light, escapes; its radius for a non-rotating black hole is the Schwarzschild radius, 2GM over c squared, about 3 kilometres per solar mass. Outside it lies the ergosphere, present only in rotating black holes, where space-time is dragged so strongly that nothing can stay still. The photon sphere, at 1.5 Schwarzschild radii for a non-rotating hole, is where light can orbit. A flattened accretion disc of hot plasma spirals inward and glows in X-rays. Relativistic jets of charged particles shoot out along the rotation axis from the poles."><defs><marker id="f75-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#555"/></marker></defs><g font-family="Calibri, sans-serif"><ellipse cx="280" cy="240" rx="250" ry="46" fill="#ffcc80" stroke="#ef6c00" stroke-width="1.5" fill-opacity="0.7"/><ellipse cx="280" cy="240" rx="150" ry="28" fill="#ffe0b2" stroke="#ef6c00" stroke-width="1" fill-opacity="0.8"/><ellipse cx="280" cy="240" rx="112" ry="68" fill="#cfd8dc" stroke="#546e7a" stroke-width="1.5" stroke-dasharray="2 3" fill-opacity="0.8"/><circle cx="280" cy="240" r="93" fill="none" stroke="#f9a825" stroke-width="2" stroke-dasharray="7 4"/><circle cx="280" cy="240" r="62" fill="#000" stroke="#000" stroke-width="1" /><circle cx="280" cy="240" r="3" fill="#fff" stroke="#fff" stroke-width="1" /><path d="M280,170 L266,35 L294,35 Z" stroke="#7b1fa2" stroke-width="1" fill="#ce93d8"/><path d="M280,310 L266,445 L294,445 Z" stroke="#7b1fa2" stroke-width="1" fill="#ce93d8"/><line x1="286" y1="70" x2="614" y2="62" stroke="#555" stroke-width="0.9"/><text x="620" y="66" font-size="12" text-anchor="start" fill="#202124">Relativistic jets from the poles</text><line x1="326" y1="159" x2="614" y2="142" stroke="#555" stroke-width="0.9"/><text x="620" y="146" font-size="12" text-anchor="start" fill="#202124">Photon sphere: ~1.5 Rs; light can orbit</text><line x1="372" y1="202" x2="614" y2="202" stroke="#555" stroke-width="0.9"/><text x="620" y="206" font-size="12" text-anchor="start" fill="#202124">Ergosphere: rotating BH only; space dragged</text><line x1="340" y1="226" x2="614" y2="252" stroke="#555" stroke-width="0.9"/><text x="620" y="256" font-size="12" text-anchor="start" fill="#202124">Event horizon: radius Rs = 2GM/c^2</text><line x1="283" y1="243" x2="614" y2="302" stroke="#555" stroke-width="0.9"/><text x="620" y="306" font-size="12" text-anchor="start" fill="#202124">Singularity: density &#8594; infinite (GR breaks down)</text><text x="620" y="86" font-size="12" text-anchor="start" fill="#555">along the spin axis (magnetic fields)</text><line x1="80" y1="262" x2="120" y2="330" stroke="#555" stroke-width="0.9"/><text x="20" y="345" font-size="12" text-anchor="start" fill="#202124">Accretion disc: hot plasma &#8594; X-rays</text><text x="20" y="363" font-size="11.5" text-anchor="start" fill="#555">(star torn apart = tidal disruption event)</text><text x="620" y="370" font-size="12" text-anchor="start" fill="#202124" font-weight="bold">Rs: 1 Msun ~ 3 km; Sgr A* ~ 0.08 AU</text><text x="620" y="392" font-size="12" text-anchor="start" fill="#202124">EHT 'image' = shadow + bright ring of bent light,</text><text x="620" y="408" font-size="12" text-anchor="start" fill="#202124">not the horizon itself</text><text x="500" y="462" font-size="11.5" text-anchor="middle" fill="#555">Schematic: sizes and spacing not to scale; disc seen edge-on.</text></g></svg>
+<figcaption>Parts named in class, from the centre outward:
+<ul>
+<li>singularity;</li>
+<li>event horizon (radius R<sub>s</sub> for a non-rotating hole);</li>
+<li>photon sphere;</li>
+<li>ergosphere (spinning holes only);</li>
+<li>accretion disc;</li>
+<li>polar relativistic jets.</li>
+</ul>
+Original drawing; R<sub>s</sub> values computed in Section 65.7. The Event Horizon Telescope images show the shadow and bright ring, not the horizon itself (<a href="#s-mitsgr">MIT News</a>).</figcaption>
+</figure>
+
+<h3 id="eht">65.8 First images of black holes - the Event Horizon Telescope</h3>
+<ul>
+<li>The <strong>Event Horizon Telescope (EHT)</strong> links radio observatories across the planet into one <strong>"Earth-sized" virtual telescope</strong> using <strong>very-long-baseline interferometry (VLBI)</strong>. It observes at a wavelength of 1.3 mm (<a href="#s-eht">EHT</a>; <a href="#s-quanta">Quanta</a>).
+<ul>
+<li>The virtual aperture equals the distance between the farthest dishes. That is the class VLBI point.</li>
+<li>Eight observatories took part in the 2017 observations.</li>
+</ul></li>
+</ul>
+<div class="table-wrap"><table>
+<caption>The two black holes imaged so far (both from April 2017 observations)</caption>
+<thead><tr><th scope="col" style="width:16%">Black hole</th><th scope="col" style="width:22%">Where</th><th scope="col" style="width:18%">Mass</th><th scope="col" style="width:16%">Distance</th><th scope="col">Image released</th></tr></thead>
+<tbody>
+<tr><td><strong>M87*</strong></td><td>Centre of the giant elliptical galaxy <strong>Messier 87</strong></td><td><strong>6.5 billion</strong> solar masses</td><td>~53-55 million light-years</td><td><strong>2019</strong>: the <strong>first-ever</strong> black-hole image (<a href="#s-mitsgr">MIT News</a>)</td></tr>
+<tr><td><strong>Sagittarius A* (Sgr A*)</strong></td><td>Centre of our <strong>Milky Way</strong></td><td>~<strong>4 million</strong> solar masses</td><td>~27,000 light-years</td><td><strong>12 May 2022</strong> (<a href="#s-eht">EHT</a>)</td></tr>
+</tbody></table></div>
+<p class="correction" id="c107"><strong>[Correction]</strong> <strong>"M-87 6-5 bn times the Sun ... in Messier galaxy"</strong>: M87* has <strong>6.5 billion</strong> solar masses. It lies in the galaxy <strong>Messier 87</strong>; "Messier" is a catalogue of many objects, not one galaxy. Sgr A*'s mass of 4 million is correct.</p>
+
+<h3 id="bh-agn">65.9 Active galactic nuclei, quasars and neutrinos</h3>
+<ul>
+<li><strong>Active galactic nucleus (AGN):</strong> the bright core of a galaxy where most radiation comes from <strong>material falling into a supermassive black hole</strong>, not from stars (<a href="#s-icecube">IceCube</a>).</li>
+<li><strong>Quasar:</strong> the <strong>most luminous</strong> type of AGN. The class word "egiant" refers to this.</li>
+<li><strong>Blazar:</strong> an AGN whose jet points almost straight at Earth.</li>
+<li><strong>Tidal disruption event:</strong> a star that strays too close to a black hole is torn apart. This produces a temporary flare.</li>
+<li><strong>Neutrinos from black-hole engines (IceCube, South Pole):</strong>
+<ul>
+<li>In <strong>2018</strong>, IceCube identified the first high-energy neutrino source, the blazar <strong>TXS 0506+056</strong>.</li>
+<li>In <strong>2022</strong>, it reported evidence (4.2 sigma) of neutrinos from the active galaxy <strong>NGC 1068 (Messier 77)</strong> (<a href="#s-icecube">IceCube</a>).</li>
+<li>IceCube was introduced in the <a href="Science%20and%20Technology%20-%20Class%2011-06-2026.html#pyq-2015">previous note (PYQ 2015)</a>.</li>
+</ul></li>
+</ul>
+<p class="correction" id="c108"><strong>[Correction]</strong> <strong>"When this engulfs a star it results in an active galactic nucleus"</strong> confuses two things.</p>
+<ul>
+<li>An AGN is powered by a <strong>supermassive</strong> black hole <strong>steadily accreting gas</strong> at a galaxy's centre over long periods.</li>
+<li>A single star being swallowed causes a short-lived <strong>tidal disruption event</strong>.</li>
+</ul>
+
+<h3 id="bh-india">65.10 India's instruments for black-hole and neutron-star science [Additional]</h3>
+<ul>
+<li><strong>AstroSat</strong> (ISRO, 2015): India's first multi-wavelength space observatory &#8224;.</li>
+<li><strong>XPoSat</strong> (ISRO, launched 1 January 2024): India's first X-ray polarimetry mission. It studies black holes and neutron stars &#8224;.</li>
+<li><strong>uGMRT</strong> (NCRA-TIFR, near Pune): used for pulsar timing in InPTA (<a href="#gw-pta">64.12</a>).</li>
+<li><strong>LIGO-India</strong>: under construction (<a href="#ligo-india">64.8</a>).</li>
+<li>Indian scientists take part in the LIGO Scientific Collaboration &#8224;.</li>
+</ul>
+</section>
+
+<section id="lunar">
+<h2>66. Lunar Exploration</h2>
+<p class="note"><strong>[Placeholder]</strong> The rough notes end at the heading <strong>"Lunar exploration:"</strong>. The class content will be added with the next set of notes.</p>
+</section>
+
+
+<section id="status">
+<h2>67. Status as of 20 November 2026 (linkage to the news)</h2>
+<div class="table-wrap"><table>
+<caption>Time-sensitive facts used in this note</caption>
+<thead><tr><th scope="col" style="width:20%">Item</th><th scope="col">Status and date</th><th scope="col" style="width:24%">Source</th></tr></thead>
+<tbody>
+<tr><td>LIGO-Virgo-KAGRA</td><td>O4 ran 24 May 2023-18 Nov 2025 (~300 significant candidates). O4a catalogue (GWTC-4.0) is published; GWTC-5.0 (O4b) appeared in May 2026; the final O4 catalogue is due in Dec 2026. The detectors are being upgraded. A <strong>six-month run "IR1" targets mid-January 2027</strong>; the O5 timeline is under discussion (15 Nov 2026 update).</td><td><a href="#s-kagra">KAGRA</a>; <a href="#s-o4cat">arXiv</a>; <a href="#s-igwn">IGWN</a></td></tr>
+<tr><td>LIGO-India</td><td>Approved Apr 2023 (Rs 2,600 crore; DAE lead). <strong>Ground broken 23 Apr 2026</strong> at Aundha, Hingoli. Completion was "expected by 2030" (2023 statement) [Verification Required].</td><td><a href="#s-pibligo2">PIB</a>; <a href="#s-ligoindia">Caltech</a></td></tr>
+<tr><td>LISA</td><td>Adopted 25 Jan 2024; construction from 2025; <strong>launch planned 2035</strong> (Ariane 6)</td><td><a href="#s-lisa">ESA</a></td></tr>
+<tr><td>LILA</td><td><strong>Proposed</strong>; the proposers aim for a pathfinder within this decade</td><td><a href="#s-lila">Vanderbilt</a></td></tr>
+<tr><td>Pulsar timing arrays</td><td>Evidence for a nanohertz background, 29 Jun 2023 (3-4.6 sigma); not yet a 5-sigma detection</td><td><a href="#s-pta">APS Physics</a></td></tr>
+<tr><td>GW250114</td><td>Clearest signal yet (signal-to-noise ratio 80); Hawking area theorem confirmed; published 10 Sep 2025</td><td><a href="#s-gw250114">APS</a></td></tr>
+<tr><td>Event Horizon Telescope</td><td>M87* image 2019; Sgr A* image 12 May 2022 (both from 2017 data)</td><td><a href="#s-eht">EHT</a></td></tr>
+</tbody></table></div>
+</section>
+
+<section id="prelims">
+<h2>Key Facts for Prelims</h2>
+<ul>
+<li><strong>GR tests</strong>: gravitational redshift, gravitational lensing, Mercury's perihelion precession, gravitational waves. GWs are <strong>ripples</strong> of space-time from <strong>accelerating mass</strong>; they move at light speed and are transverse; strain ~10<sup>-21</sup>.</li>
+<li><strong>GW150914</strong>: 14 Sep 2015, announced 11 Feb 2016; black holes of 36 + 29 solar masses; 1.3 billion light-years; ~3 solar masses radiated. <strong>Nobel 2017</strong>: Weiss (half), Barish and Thorne (half).</li>
+<li><strong>Detectors</strong>:
+<ul>
+<li>LIGO: Hanford, Washington and Livingston, Louisiana; 4 km arms.</li>
+<li>Virgo: Italy. GEO600: <strong>Germany</strong>. KAGRA: Japan.</li>
+<li><strong>LIGO-India</strong>: Aundha, Hingoli, Maharashtra; Rs 2,600 crore; DAE lead with DST; ground broken 23 Apr 2026.</li>
+</ul></li>
+<li><strong>Frequency bands</strong>: ground detectors ~10 Hz-kHz; <strong>LILA</strong> (Moon, proposed) 0.1-10 Hz; <strong>LISA</strong> (ESA, 3 spacecraft, 2.5 million km, launch 2035) mHz; <strong>PTA</strong> nHz (InPTA uses uGMRT; evidence 2023).</li>
+<li><strong>Stars</strong>:
+<ul>
+<li>Below ~8 solar masses: red giant &#8594; planetary nebula &#8594; white dwarf (at most ~1.4 solar masses).</li>
+<li>Above ~8 solar masses: red supergiant &#8594; iron core &#8594; core-collapse supernova &#8594; neutron star (~8-20/25) or black hole (above ~20-25).</li>
+<li>Quark star: hypothetical. Pulsar: rotating neutron star. Magnetar: strongest magnetic field.</li>
+</ul></li>
+<li><strong>Black hole</strong>:
+<ul>
+<li>Parts: singularity; event horizon; Schwarzschild radius 2GM/c<sup>2</sup> (~3 km per solar mass); photon sphere (1.5 R<sub>s</sub>); ergosphere (spinning holes only); accretion disc; polar jets.</li>
+<li>EHT images (VLBI): <strong>M87*</strong> (6.5 billion solar masses, 2019) and <strong>Sgr A*</strong> (4 million, 2022).</li>
+<li>IceCube neutrino sources: TXS 0506+056 (2018), NGC 1068 (2022).</li>
+</ul></li>
+</ul>
+</section>
+
+<section id="mains">
+<h2>Mains Points</h2>
+<ul>
+<li><strong>Gravitational-wave astronomy - a new sense:</strong>
+<ul>
+<li>It sees events that emit no light, such as black-hole mergers.</li>
+<li>It tests general relativity in strong gravity (Hawking's area theorem, GW250114).</li>
+<li>It gives independent cosmic distances (standard sirens).</li>
+<li>Combined with light and neutrinos, it creates multi-messenger astronomy.</li>
+</ul></li>
+<li><strong>LIGO-India - significance:</strong>
+<ul>
+<li>It improves sky localisation and polarisation measurement for the whole network.</li>
+<li>India becomes a host, not only a partner, of a frontier facility.</li>
+<li>It builds skills in ultra-high vacuum, lasers, seismic isolation, controls and big-data analysis that carry over to industry.</li>
+<li>It strengthens Indo-US science ties.</li>
+</ul></li>
+<li><strong>LIGO-India - concerns:</strong>
+<ul>
+<li>Long gestation: concept in 2011-16, approval in 2023, ground broken in 2026.</li>
+<li>It depends on imported core hardware.</li>
+<li>It must keep pace with LIGO upgrades so it is not obsolete when it starts.</li>
+<li>It needs a long-term operating budget and a trained workforce.</li>
+</ul></li>
+<li><strong>India in multi-band GW science:</strong>
+<ul>
+<li>InPTA (uGMRT) contributed to the 2023 nanohertz evidence.</li>
+<li>Indian groups can seek roles in LISA data analysis and in proposed lunar (LILA-type) and next-generation detectors.</li>
+<li>Chandrayaan-era lunar capability could later host science payloads.</li>
+</ul></li>
+<li><strong>Way forward:</strong>
+<ul>
+<li>Fix and publish a LIGO-India commissioning timeline.</li>
+<li>Indigenise vacuum and optics supply chains.</li>
+<li>Fund national computing for GW data.</li>
+<li>Integrate GW alerts with Indian telescopes (GMRT, AstroSat, XPoSat) for multi-messenger follow-up.</li>
+<li>Expand university training through the IndIGO consortium.</li>
+</ul></li>
+</ul>
+</section>
+
+<section id="traps">
+<h2>Common Traps / Confusions</h2>
+<ul>
+<li><strong>Gravitational waves are not electromagnetic waves.</strong> LIGO uses laser light only as a ruler. The graviton has not been detected.</li>
+<li><strong>GEO600 is in Germany</strong>, not Italy. <strong>Hanford is in Washington state.</strong></li>
+<li><strong>LIGO-India</strong> is the <strong>third LIGO</strong> detector but the <strong>fifth</strong> observatory in the network. It is under construction, not operating.</li>
+<li><strong>eLISA</strong> (old name; 1 million km; 2034) versus <strong>LISA</strong> (adopted 2024; 2.5 million km; 2035). Exam questions may use either set of figures.</li>
+<li><strong>LILA</strong> is a proposal (Vanderbilt-led), not a NASA mission. It covers the mid-band, while LISA covers mHz and PTA covers nHz.</li>
+<li><strong>PTA 2023 = evidence, not discovery.</strong> PTAs use timing, not VLBI. The EHT uses VLBI.</li>
+<li><strong>Two different supernovae</strong>: Type Ia is an exploding white dwarf; Type II is the core collapse of a massive star.</li>
+<li><strong>Quark stars are hypothetical.</strong> A pulsar is a kind of neutron star, not a separate remnant. The ergosphere exists only around spinning black holes.</li>
+<li>The EHT images show the black hole's <strong>shadow and ring</strong>, not the event horizon itself. M87* (2019) was first; Sgr A* (2022) came second.</li>
+</ul>
+</section>
+
+<section id="thirty">
+<h2>30-Second Revision</h2>
+<p><strong>GWs</strong>: ripples of space-time from accelerating mass; transverse; light speed; strain 10<sup>-21</sup>. GR tests: gravitational redshift, lensing, Mercury perihelion, GWs. Sources: binary black holes, neutron star-black hole, binary neutron stars (detected); pulsars, supernovae (not yet). <strong>LIGO</strong>: L-shaped, 4 km; Hanford and Livingston; beam splitter, vacuum arms, mirrors, photodetector; normally dark, a wave lets light leak. GW150914 (14 Sep 2015), Nobel 2017 Weiss/Barish/Thorne. Virgo (Italy), GEO600 (Germany), KAGRA (Japan). <strong>LIGO-India</strong>: Aundha, Hingoli; Rs 2,600 crore; DAE; ground broken 23 Apr 2026. <strong>LILA</strong>: Moon, proposed, 0.1-10 Hz. <strong>LISA</strong>: ESA, 3 spacecraft, 2.5 million km, 2035. <strong>PTA</strong>: nHz; NANOGrav, EPTA+InPTA (uGMRT), PPTA, CPTA; evidence 29 Jun 2023. <strong>Stars</strong>: below 8 solar masses: red giant, planetary nebula, white dwarf (1.4); above 8: supergiant, iron core, Type II supernova; neutron star (8-20/25) or black hole (above 20-25); quark star hypothetical. <strong>Black hole</strong>: singularity, horizon (R<sub>s</sub> = 2GM/c<sup>2</sup>, 3 km per solar mass), photon sphere, ergosphere (spinning only), disc, jets. EHT/VLBI: M87* 6.5 billion (2019), Sgr A* 4 million (2022). AGN, quasar, TDE; IceCube TXS 0506+056 (2018), NGC 1068 (2022).</p>
+</section>
+
+<section id="pyqs">
+<h2>Previous Year Questions (PYQs)</h2>
+<p class="small"><strong>Source status:</strong> no official UPSC paper or answer key was opened; the question text and answers come from the secondary compilations named for each. The links to today's notes are <strong>[Additional]</strong> study guidance, not an official marking scheme.</p>
+<div class="answer" id="pyq-2017e">
+<p><strong>2017 | UPSC CSE Prelims | General Studies Paper I</strong> (Q87 per UnlockIAS)</p>
+<p>What is the purpose of 'evolved Laser Interferometer Space Antenna (eLISA)' project?<br/>(a) To detect neutrinos (b) To detect gravitational waves (c) To detect the effectiveness of missile defence system (d) To study the effect of solar flares on our communication systems</p>
+<p><strong>Answer: (b)</strong> (<a href="#s-pyq17e">UnlockIAS</a>; <a href="#s-pyq17e2">PMF IAS</a>; both secondary). <strong>Link [Additional]:</strong> Section 64.11. The mission is now called LISA (<a href="#c99">c99</a>). Neutrinos are detected by IceCube-type detectors (Section 65.9).</p>
+</div>
+<div class="answer" id="pyq-2019">
+<p><strong>2019 | UPSC CSE Prelims | General Studies Paper I</strong></p>
+<p>Recently, scientists observed the merger of giant 'blackholes' billions of light-years away from the Earth. What is the significance of this observation?<br/>(a) 'Higgs boson particles' were detected. (b) 'Gravitational waves' were detected. (c) Possibility of inter-galactic space travel through 'wormhole' was confirmed. (d) It enabled the scientists to understand 'singularity'.</p>
+<p><strong>Answer: (b)</strong> (<a href="#s-pyq19">PMF IAS</a>; <a href="#s-pyq19b">SuperKalam</a>; both secondary). <strong>Link [Additional]:</strong> GW150914 and later mergers (Sections 64.3 and 64.9). Mergers do not reveal the singularity, which stays hidden behind the horizon (Section 65.7).</p>
+</div>
+<div class="answer" id="pyq-2020">
+<p><strong>2020 | UPSC CSE Prelims | General Studies Paper I</strong></p>
+<p>"The experiment will employ a trio of spacecraft flying in formation in the shape of an equilateral triangle that has sides one million kilometres long, with lasers shining between the craft." The experiment in question refers to<br/>(a) Voyager-2 (b) New Horizons (c) LISA Pathfinder (d) Evolved LISA</p>
+<p><strong>Answer: (d)</strong> (<a href="#s-pyq20">LotusArise</a>; <a href="#s-pyq20b">Testbook</a>, which labels it the official paper; both secondary). <strong>Link [Additional]:</strong> Section 64.11. The 1 million km figure belongs to the eLISA design; the adopted LISA uses 2.5 million km. LISA Pathfinder was a single technology-demonstration spacecraft.</p>
+</div>
+<p><strong>Also relevant (in the previous note):</strong> <a href="Science%20and%20Technology%20-%20Class%2011-10-2026.html#pyq-2017">PYQ 2017</a> (event horizon, singularity: cosmology vocabulary of Section 65.7) and <a href="Science%20and%20Technology%20-%20Class%2011-10-2026.html#pyq-2023">PYQ 2023</a> (pulsars are neutron stars: Section 65.6).</p>
+<p><strong>Mains (GS Paper III):</strong> <strong>[No verified PYQ found for this topic]</strong>. No GS-III question on gravitational waves, LIGO-India, pulsar timing or black holes was found in the secondary lists searched. The search was not exhaustive, and no official paper was opened.</p>
+</section>
+
+<section id="corrections">
+<h2>Corrections Made</h2>
+<p>Substantive changes are marked where they occur and listed here. Spelling repairs are listed in the header.</p>
+<ol start="90">
+<li><a href="#c90">c90</a> - General-relativity tests: gravitational (not cosmological) redshift; precession of Mercury's perihelion, not a "change in orbit".</li>
+<li><a href="#c91">c91</a> - Gravitational waves are ripples (alternate stretching and squeezing) of space-time, not a "repulse".</li>
+<li><a href="#c92">c92</a> - "Binary neutron star", not "binary star"; black holes orbiting each other is the inspiral of the same merger; pulsar and supernova GWs not yet detected.</li>
+<li><a href="#c93">c93</a> - LILA; "eLISA" is now LISA; LISA is millihertz - the nanohertz band belongs to PTAs.</li>
+<li><a href="#c94">c94</a> - GEO600 is in Germany (Virgo is Italian); Hanford is in Washington state; Livingston, Louisiana; KAGRA in Japan.</li>
+<li><a href="#c95">c95</a> - LIGO output is normally dark by destructive interference; a GW makes the paths unequal and light leaks to the photodetector.</li>
+<li><a href="#c96">c96</a> - LIGO-India: third LIGO detector at Aundha, Hingoli; ground broken 23 Apr 2026; not operating.</li>
+<li><a href="#c97">c97</a> - Nobel 2017: half to Rainer Weiss, half jointly to Barry C. Barish and Kip S. Thorne; spellings.</li>
+<li><a href="#c98">c98</a> - LILA is a Vanderbilt-led proposal aligned with NASA lunar programmes, not a NASA mission; L-shaped Pioneer and triangular Horizon are successive phases.</li>
+<li><a href="#c99">c99</a> - LISA (not eLISA): adopted 25 Jan 2024, launch planned 2035, 2.5 million km arms (1 million km / 2034 were eLISA-era figures).</li>
+<li><a href="#c100">c100</a> - PTA members in 2023: NANOGrav, EPTA/InPTA, CPTA, PPTA (no Japanese PTA); tens of pulsars; evidence at 3-4.6 sigma; pulses arrive early or late.</li>
+<li><a href="#c101">c101</a> - PTAs rely on pulse timing, not VLBI; VLBI is the Event Horizon Telescope technique.</li>
+<li><a href="#c102">c102</a> - Low-mass stars stop at a carbon-oxygen core because it is not hot enough to burn carbon, not for lack of carbon.</li>
+<li><a href="#c103">c103</a> - Massive stars burn C to Ne, O, Si and Fe; collapse happens because iron fusion yields no energy, not because shell helium falls in.</li>
+<li><a href="#c104">c104</a> - Remnant bands: below ~8 Msun white dwarf, ~8-20/25 neutron star, above ~20-25 black hole; quark stars hypothetical.</li>
+<li><a href="#c105">c105</a> - A pulsar is a rotating, magnetised neutron star with beamed periodic (mainly radio) emission.</li>
+<li><a href="#c106">c106</a> - Ergosphere only in rotating black holes, outside the horizon; photon sphere at 1.5 Rs; "Schwarzschild".</li>
+<li><a href="#c107">c107</a> - M87* = 6.5 billion solar masses in the galaxy Messier 87; Sgr A* ~4 million.</li>
+<li><a href="#c108">c108</a> - AGN = supermassive black hole steadily accreting gas; one star being swallowed is a tidal disruption event; quasar = most luminous AGN.</li>
+</ol>
+</section>
+
+<section id="visuals">
+<h2>Visual Representations Required / Recommended</h2>
+<ul>
+<li><strong>Included:</strong>
+<ul>
+<li><a href="#fig70">Figure 70</a>: GW stretch-squeeze;</li>
+<li><a href="#fig71">Figure 71</a>: GW spectrum and detectors;</li>
+<li><a href="#fig72">Figure 72</a>: LIGO interferometer, the figure requested in class;</li>
+<li><a href="#fig73">Figure 73</a>: pulsar timing array;</li>
+<li><a href="#fig74">Figure 74</a>: stellar life cycle;</li>
+<li><a href="#fig75">Figure 75</a>: black-hole anatomy;</li>
+<li>tables in Sections 64.1, 64.3, 64.5, 64.6, 65.5, 65.7, 65.8 and 67.</li>
+</ul></li>
+<li><strong>Not included:</strong> the EHT photographs of M87* and Sgr A* are external or copyrighted, so schematic Figure 75 is used instead.</li>
+</ul>
+<p><strong>[All necessary visual representations included]</strong> (no required or recommended markers are outstanding).</p>
+</section>
+
+<section id="sources">
+<h2>Open Sources / Further Reading</h2>
+<p class="small">HTTPS public sources consulted on 20 November 2026, mostly as search-result extracts or summaries (not full documents). Secondary sources are labelled. <strong>Verification limits:</strong> values marked &#8224; were not re-checked:</p>
+<ul class="small">
+<li><strong>general relativity:</strong> Mercury's 43 arc-seconds, Shapiro delay and frame dragging;</li>
+<li><strong>detectors:</strong> the arm lengths of Virgo, GEO600 and KAGRA; mirror suspensions; KAGRA's underground and cryogenic design;</li>
+<li><strong>GW events:</strong> the GW170817 kilonova and gold; the absence of continuous and burst detections;</li>
+<li><strong>India:</strong> the lead LIGO-India institutions; uGMRT and NCRA; the AstroSat and XPoSat dates; Indian membership of the LSC; NANOGrav's telescopes;</li>
+<li><strong>stars and black holes:</strong> magnetar field strengths and bursts; ergosphere and photon-sphere details; synchrotron emission; quark-gluon plasma at RHIC and the LHC.</li>
+</ul>
+<p class="small">The GW170817 and GW231123 details rely on secondary sources. No official UPSC paper was opened.</p>
+<ol>
+<li id="s-gw150914"><a href="https://www.ligo.caltech.edu/page/press-release-gw150914">LIGO Lab (Caltech): GW150914 press release (11 Feb 2016)</a> - 29 and 36 solar masses, 1.3 billion years, 3 solar masses radiated, 7 ms delay, GEO, Hulse-Taylor.</li>
+<li id="s-gwosc"><a href="https://gwosc.org/events/GW150914/">GWOSC: GW150914 data release</a> - 09:50:45 UTC, 5.1 sigma, parameters.</li>
+<li id="s-weiss"><a href="https://www.nobelprize.org/prizes/physics/2017/weiss/facts/">NobelPrize.org: Rainer Weiss - Facts</a> - prize share 1/2, died 25 Aug 2025, Barish and Thorne half.</li>
+<li id="s-weissdeath"><a href="https://www.ligo.caltech.edu/news/ligo20250827">LIGO Lab (27 Aug 2025): passing of Rainer Weiss</a> - Hanford and Livingston operated as one observatory.</li>
+<li id="s-ligoindia"><a href="https://www.caltech.edu/about/news/ligo-india-breaks-ground-on-new-observatory">Caltech (23 Apr 2026): LIGO-India breaks ground</a> - Aundha, Hingoli; 174 acres; 4 km arms; fifth detector; localisation and polarisation; squeezing; over 200 confirmed detections by early 2026.</li>
+<li id="s-pibligo"><a href="https://pib.gov.in/PressReleasePage.aspx?PRID=1947441">PIB (10 Aug 2023): LIGO-India approved at Rs 2,600 crore, DAE lead agency</a> - national facility after completion.</li>
+<li id="s-pibligo2"><a href="https://pib.gov.in/PressReleasePage.aspx?PRID=1916521">PIB (14 Apr 2023): Cabinet approval of LIGO-India; completion expected by 2030</a>.</li>
+<li id="s-igwn"><a href="https://observing.docs.ligo.org/plan/">IGWN: LIGO, Virgo and KAGRA observing run plans (15 Nov 2026 update)</a> - IR1 targeting mid-January 2027; O5 under discussion.</li>
+<li id="s-kagra"><a href="https://gwcenter.icrr.u-tokyo.ac.jp/en/archives/2069">KAGRA (19 Nov 2025): Completion of the fourth observing run</a> - about 300 significant signals; Noto earthquake; rejoined 12 Jun 2025.</li>
+<li id="s-o4end"><a href="https://blog.gravityspy.org/2025/12/15/the-end-of-o4/">Gravity Spy blog (15 Dec 2025): The end of O4</a> - over 250 candidates; GW231123, GW230529 (secondary).</li>
+<li id="s-o4cat"><a href="https://arxiv.org/abs/2609.03859">arXiv 2609.03859 (Sep 2026): A catalogue of insights from O4</a> - final O4 catalogue due Dec 2026.</li>
+<li id="s-gw250114"><a href="https://www.aps.org/about/news/2025/09/clearest-signal-hawkings-area-theorem">APS press release (10 Sep 2025): GW250114 and Hawking's area theorem</a>.</li>
+<li id="s-gw250114b"><a href="https://link.aps.org/doi/10.1103/Physics.18.160">APS Physics 18, 160 (10 Sep 2025): Landmark black hole test</a> - strain 10<sup>-21</sup>, signal-to-noise ratio 26 to 80, Kerr.</li>
+<li id="s-lisa"><a href="https://www.esa.int/Science_Exploration/Space_Science/LISA/Capturing_the_ripples_of_spacetime_LISA_gets_go-ahead">ESA (25 Jan 2024): LISA gets go-ahead</a> - adoption; three spacecraft; 2.5 million km; launch 2035 on Ariane 6.</li>
+<li id="s-lisafs"><a href="https://www.esa.int/Science_Exploration/Space_Science/LISA/LISA_factsheet">ESA: LISA factsheet</a> - L3 selection 20 Jun 2017; 50 million km from Earth; LISA Pathfinder 2015-2017.</li>
+<li id="s-lila"><a href="https://www.vanderbilt.edu/lunarlabs/lila/">Vanderbilt Lunar Labs Initiative: LILA</a> - proposed US-led programme; 0.1-10 Hz; why the Moon; timeline.</li>
+<li id="s-lilawp"><a href="https://arxiv.org/abs/2508.11631">arXiv 2508.11631: LILA white paper</a> - mid-band gap; CLPS/Artemis alignment; early warning.</li>
+<li id="s-lilanoise"><a href="https://arxiv.org/abs/2508.18437">arXiv 2508.18437: LILA noise and sensitivity</a> - Pioneer L-shaped 3-5 km; Horizon 40 km triangle; Moon as a resonant amplifier.</li>
+<li id="s-leag"><a href="https://www.hou.usra.edu/meetings/leag2025/pdf/5058.pdf">LEAG Oct 2025 abstract 5058: Detector plans for LILA</a> - Pioneer 5 km arms; Horizon 40 km.</li>
+<li id="s-pta"><a href="https://physics.aps.org/articles/v16/118">APS Physics 16, 118 (29 Jun 2023): Gravitational-wave background with pulsar "antennae"</a> - NANOGrav, EPTA/InPTA, CPTA, PPTA; Hellings-Downs; 3-4.6 sigma.</li>
+<li id="s-nanograv"><a href="https://arxiv.org/abs/2306.16213">arXiv 2306.16213 (28 Jun 2023): NANOGrav 15-year evidence for a GW background</a> - 67 pulsars; about 3-4 sigma.</li>
+<li id="s-eht"><a href="https://eventhorizontelescope.org/blog/astronomers-reveal-first-image-black-hole-heart-our-galaxy">EHT (12 May 2022): First image of the black hole at the heart of our galaxy</a> - 4 million solar masses; 27,000 light-years; eight observatories.</li>
+<li id="s-mitsgr"><a href="https://news.mit.edu/2022/first-supermassive-black-hole-sagitarrius-0512">MIT News (12 May 2022): Sgr A* image</a> - M87* 6.5 billion solar masses, 53 million light-years; ring outside the horizon.</li>
+<li id="s-quanta"><a href="https://www.quantamagazine.org/black-hole-image-reveals-sagittarius-a-20220512/">Quanta Magazine (12 May 2022): Black hole image reveals Sagittarius A*</a> - VLBI at 1.3 mm; M87 jet (secondary).</li>
+<li id="s-icecube"><a href="https://icecube.wisc.edu/news/press-releases/2022/11/icecube-neutrinos-give-us-first-glimpse-into-the-inner-depths-of-an-active-galaxy/">IceCube (3 Nov 2022): Neutrinos from NGC 1068</a> - TXS 0506+056 (2018); active galaxies.</li>
+<li id="s-openstax"><a href="https://openstax.org/books/astronomy/pages/23-2-evolution-of-massive-stars-an-explosive-finish">OpenStax Astronomy 23.2: Evolution of massive stars</a> - onion shells, iron, core collapse.</li>
+<li id="s-astro4edu"><a href="https://astro4edu.org/resources/diagram/nE461I80fc87/">IAU Office of Astronomy for Development: Stellar evolution diagram</a> - 0.08, 0.4-8, 8-25 and more than 25 solar-mass paths.</li>
+<li id="s-quark"><a href="https://arxiv.org/abs/2601.09529">arXiv 2601.09529 (Jan 2026): Strange quark stars</a> - described as "hypothetical compact objects".</li>
+<li id="s-pyq17e"><a href="https://www.unlockias.in/upsc-prelims-pyq/science-technology/space-technology-and-astronomy/2017-purpose-evolved-laser-interferometer-space-antenna-elisa-project">UnlockIAS: UPSC 2017 Q87 (eLISA)</a> (secondary).</li>
+<li id="s-pyq17e2"><a href="https://www.pmfias.com/elisa-gravitational-waves-mission-pyq-2017/">PMF IAS: eLISA PYQ 2017</a> (secondary).</li>
+<li id="s-pyq19"><a href="https://www.pmfias.com/black-hole-merger-gravitational-waves-pyq-2019/">PMF IAS: Black-hole merger PYQ 2019</a> (secondary).</li>
+<li id="s-pyq19b"><a href="https://superkalam.com/upsc-prelims/previous-year-question-paper/2019/recently-scientists-observed-the-merger-of-giant-blackholes-billions-of-lightyears-away-from-the-earth-what-is-the-signi-4ed0027b-b4cb-4aa3-a1a9-ef81978415b4">SuperKalam: PYQ 2019</a> (secondary).</li>
+<li id="s-pyq20"><a href="https://lotusarise.com/qna/upsc/q-the-experiment-will-employ-a-trio-of-spacecraft-flying-in-formation-in-the-shape-of-an-equilateral-triangle-that-has-sides-one-million-kilometres-long-with-lasers-shining-between-the">LotusArise: PYQ 2020 (Evolved LISA)</a> (secondary).</li>
+<li id="s-pyq20b"><a href="https://testbook.com/question-answer/the-experiment-will-employ-a-trio-of-spacecraft-flyin--5fccdbbd02d6075be7571a24">Testbook: PYQ 2020 (Evolved LISA)</a> (secondary).</li>
+</ol>
+</section>
+</main>
+</body>
+</html>
