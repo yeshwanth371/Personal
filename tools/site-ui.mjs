@@ -11,6 +11,7 @@ export const SUBJECTS = {
   "Polity":  { icon: "🏛️", paper: "GS II", color: "#7c3aed", blurb: "Constitution, institutions and governance." },
   "Indian Economy": { icon: "📈", paper: "GS III", color: "#059669", blurb: "Concepts, data, policy and trends." },
   "Indian Geography": { icon: "🗺️", paper: "GS I", color: "#d97706", blurb: "Physical and human geography of India, with maps." },
+  "Indian Society": { icon: "👥", paper: "GS I", color: "#be123c", blurb: "Social structure, diversity and issues in Indian society." },
   "World Geography": { icon: "🌍", paper: "GS I", color: "#0891b2", blurb: "Physical and regional geography of the world." },
   "Modern History": { icon: "📜", paper: "GS I", color: "#b45309", blurb: "Modern Indian history and its world context." },
   "Modern World History": { icon: "🌐", paper: "GS I", color: "#2563eb", blurb: "Revolutions, industrialisation, empires and ideologies." },
